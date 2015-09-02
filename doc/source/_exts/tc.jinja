@@ -1,0 +1,6 @@
+{{ election.capitalize() }} TC Candidates
+======================
+
+{% for candidate in candidates['TC'] %}
+  * `{{ candidate.split('/')[-1][:-4] }} <http://git.openstack.org/cgit/openstack/election/plain/{{ candidate }}>`_
+{% endfor %}

@@ -1,0 +1,13 @@
+.*sw?
+*~
+.tox
+doc/build
+*.egg-info
+pbr*.egg
+reference/projects/*.rst
+*.pyc
+AUTHORS
+ChangeLog
+candidates/ptl.rst
+candidates/tc.rst
+.projects.yaml
