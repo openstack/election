@@ -1,0 +1,52 @@
+Hey everyone,
+
+After contributing consistently to Keystone since the Grizzly release, I'd
+like to run for the Keystone PTL position for the Mikata release cycle.
+
+I've been a core contributor to Keystone since Icehouse and have largely
+been focused on improving Keystone’s ability to integrate with enterprise
+environments. I was a significant contributor to Keystone’s federation
+support, adding capabilities such as SAML and OpenID Connect enablement,
+Keystone to Keystone federation support, and I have had the pleasure of
+collaborating with folks from CERN, RackSpace, HP, Red Hat, and U. Kent
+on all these initiatives. In addition I have added cloud auditing support
+to Keystone. In my spare time, I have served as a core contributor to
+OpenStackClient, Oslo Policy, Oslo Cache and pyCADF. I’ve also contributed
+small patches to various other OpenStack projects, such as Docs, Horizon,
+Oslo, Infra, DevStack and whatever else was needed at the time.
+
+All of this would be for not if it wasn’t without the exceptional Keystone
+core team and its extended team. They are truly fantastic folks, and I’ve
+been honored to serve under Morgan and Dolph for the last two and a half
+years. Thanks to their mentoring I feel this is the right time for me to serve
+as PTL. I am fortunate enough to work for an employer that would allow me to
+focus 100% of my time on the role of PTL.
+
+I've also helped many new developers contribute to OpenStack and Keystone, and
+have always tried to be available to other OpenStack teams to ensure the other
+projects have the support from Keystone they need in order to succeed.
+
+Some of my goals for the Mikata cycle are:
+
+  - Continue our track record of striving to be an extremely stable project
+  - Stride to make v3 the go-to API and finally deprecate v2.0!
+  - Improvements on the federated identity use-cases
+  - Continue the work being done in Hierarchical multi-tenancy and Reseller
+  - Release a version of keystoneclient that no longer includes the
+    session/auth/CLI code
+  - General cleanup and paying down technical debt:
+    - Deprecate PKI tokens in favor of Fernet tokens
+    - Remove the concept of extensions, and instead mark features as
+      experimental or stable
+    - Create a functional test suite for more advanced Keystone configurations
+
+Finally, I think it’s important that as PTL time is spent on non-technical
+duties such as improving the growth and vitality of the OpenStack community in
+the following ways:
+
+  - Actively seek out the input and feedback from operators and deployers
+  - Mentoring others to become future core contributors and project team leads
+  - Ensuring I act as a point of contact for other OpenStack projects
+  - Continue to foster the healthy environment we have created in the Keystone
+    team and OpenStack as a whole
+
