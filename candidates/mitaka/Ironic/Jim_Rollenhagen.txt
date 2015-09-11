@@ -1,0 +1,83 @@
+Hi friends,
+
+I'd like to throw in my hats (yes, all of them, I'll get to that shortly) for
+the Ironic PTL election. In case you don't immediately recognize me,
+I'm 'jroll' on IRC, where you can always find me.
+
+I've been working on the Ironic project for a year and a half now, as one of
+an architect of the first public cloud deployment of Ironic. It's
+amazing to see how far we've come. When I joined the project, it could boot a
+server. Now we have a laundry list of hardware drivers, support for cleaning
+a node after teardown, ironic-python-agent, Bifrost, UEFI support, and so on
+and so on, with plenty more on the way.
+
+Over the last cycle or so, I've helped lead the charge on moving the project
+even faster. It took much debate, but we now have fine-grained API versioning
+that helps us advance our API faster and signal changes to users. We're also
+beginning to embark on our new release model, which I have great hopes for:
+we shipped 23 bug fixes in the 16 days between 4.0 and 4.1. I'd like to
+continue serving our users by releasing frequently.
+
+Back to the hats: I've worn many while working on Ironic, so I think I have
+a unique perspective on the different aspects of the project.
+
+With my deployer/operator hat on:
+
+* Let's make deployments easier. Deploying Ironic with the rest of OpenStack
+  is complex, and we need to improve the docs and tools around that. We should
+  also point people at Bifrost more often, where they just need the Cobbler use
+  case of spinning up a bunch of metal.
+
+* Let's make operator's lives better. Ironic has cases where things can get
+  into bad states. Let's document those (or better yet, fix them!). We should
+  also make it easier for operators to get an insight into their environment.
+  Some of our logs are vague or hard to find; we need to improve that. We
+  should also work on the metrics spec to give ops insight into Ironic's
+  performance.
+
+With my developer hat on:
+
+* Let's build a good devref, similar to Nova's. It's difficult for new or
+  casual contributors to find their way around the project, because we don't
+  have docs on how we develop code and the conventions around doing so. For
+  example, when does a patch need to bump the API version? Cores know this;
+  is it documented?
+
+* I'd also love to see us grow our core reviewer team. We mostly do a good
+  job at keeping reviews timely. However, our reviewers are also fantastic
+  developers, and it would be great if they had more time to write code. I
+  think we should evaluate giving more people +2 power, and trusting them
+  not to land code if they aren't familiar with that part of the system.
+
+With my leader hat on:
+
+* Let's collaborate better with Nova. In the past, we haven't done a good
+  job of this, and there was even some animosity between the projects. We now
+  have two Nova liasions that help out by bring patches to nova-core's
+  attention. It's a good start, but I think we need people working on Ironic
+  that follow development in Nova that could impact us; truly collaborating
+  to make sure Nova doesn't break us, and vice-versa. These folks should be
+  actively reviewing Nova specs and code to ensure it doesn't break our model,
+  and working to bring our model back in line with what Nova expects.
+
+* Let's also start paying better attention to cross-project initiatives in
+  OpenStack; collaborating with the API working group, cross-project specs,
+  etc. I've started doing this, but the community needs more people doing it.
+  We should be reviewing specs from these teams and making sure we implement
+  those initiatives in a timely fashion. Most recent example: Keystone v3.
+  We're way behind on getting that work done.
+
+There's other things I'd like to accomplish as well, but those are the main
+pieces. As for my downstream hat, it won't be getting as much use if I'm
+elected. You can look at my history as one of the most active Ironic
+developers on IRC, helping people solve problems, reviewing code, and helping
+design large features. I've confirmed with my employer that if I'm elected
+PTL, nearly 100% of my focus will be upstream, and you'll be seeing more of
+me, for better or worse. :)
+
+Regardless of the outcome, I'm looking forward to serving the Ironic community
+during Mitaka.
+
+Thanks for reading,
+
+// jim
