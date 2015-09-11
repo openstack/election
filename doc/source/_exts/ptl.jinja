@@ -4,7 +4,7 @@
 * `{{ project.replace('_', ' ') }} <http://git.openstack.org/cgit/openstack/election/plain/candidates/{{ election }}/{{ project }}>`_
 
 {% for candidate in candidates[project] %}
-  * `{{ candidate.split('/')[-1][:-4].replace('_', ' ') }} <http://git.openstack.org/cgit/openstack/election/plain/{{ candidate }}>`_
+  * `{{ candidate.split('/')[-1][:-4].replace('_', ' ').title() }} <http://git.openstack.org/cgit/openstack/election/plain/{{ candidate }}>`_
 {% endfor %}
 
 {% endif %}{% endfor %}
