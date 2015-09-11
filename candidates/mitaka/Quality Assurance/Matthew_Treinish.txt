@@ -1,0 +1,33 @@
+Hi Everyone,
+
+I'd like to throw my hat into the ring for another cycle as the PTL for the QA
+program/team/group/project/whatever it's called. (it'll always be program to me)
+
+This past cycle has been a very exciting one for the QA program. We've made a
+bunch of progress on numerous work items to improve the growing number of
+projects under the QA umbrella. We've been continuing our work to make the QA
+projects more modular and to enable other projects to take a more self-service
+approach to using them. This has led to things like the introduction of plugin
+interfaces to both tempest and grenade. We also have clearly defined the scope
+of what should be a plugin vs what should be in tree this past cycle.
+
+Moving into Mitaka I'd like to see us finish up the last pieces of the modular
+decoupling work, which is mainly to put into use all the interfaces we've worked
+on adding over the few cycles. Then I feel like the other big goal for the
+upcoming cycle is to work on the usability side for QA projects.
+
+We've had a lot of work go into this already especially during liberty with some
+of the CLI and user workflow improvements we've made to Tempest, documentation
+improvements across the board, the work on aggregate test result tracking, and
+the new work starting up around visualizing a devstack tempest run. I expect
+that during Mitaka we'll continue this work and take it even further into new
+directions.
+
+It's been my honor to serve as the QA PTL for the past 3 cycles and I'm looking
+forward to helping make Liberty another great cycle. I hope to have the
+opportunity to continue leading the QA program as PTL and work towards making
+a better OpenStack with the rest of the community.
+
+Thanks,
+
+Matt Treinish
