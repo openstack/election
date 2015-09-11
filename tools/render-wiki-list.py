@@ -19,11 +19,12 @@ def main(argv):
         candidates_list['projects'] = ['TC']
 
     for project in candidates_list['projects']:
-        print "* %s" % project
+        print "* %s" % project.replace('_', ' ')
         for candidate in candidates_list['candidates'][project]:
+            candidate_name = candidate.split('/')[-1][:-4].replace('_', ' ')
             print "** [%s/%s %s]" % (GIT_BASE,
                                      candidate.replace(' ', '%20'),
-                                     candidate.split('/')[-1][:-4])
+                                     candidate_name)
 
 if __name__ == "__main__":
     main(sys.argv)
