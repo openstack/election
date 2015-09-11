@@ -1,0 +1,52 @@
+It's time for the Community App Catalog to go through an
+official election cycle, and I'm putting my name in for PTL.
+I've been filling that role provisionally since before the
+App Catalog was launched at the Vancouver summit, and I
+would like to continue service as PTL officially.  Now that
+we've joined the Big Tent[1], having a committed leader is
+more important than ever :) .
+
+I believe the App Catalog has tremendous potential for
+helping the end-users of OpenStack clouds find and share
+things they can deploy on those clouds.  To that end, I've
+been working with folks on extending the types of assets
+that can live in the catalog and also trying to make finding
+and consuming those assets easier.
+
+Since we announced the Community App Catalog I've done
+everything I could to deliver on the "community" part.  With
+the help of the OpenStack Infra team, we moved the site to
+OpenStack infrastructure as quickly as possible.  All
+planning and coordination efforts have happened on IRC
+(#openstack-app-catalog), the dev and operators mailing
+list, and during the weekly IRC meetings[2].  I've also been
+working to get more people engaged and involved with the
+Community App Catalog project while attempting to raise the
+profile and exposure whenever possible.
+
+Speaking of community, I know being part of the OpenStack
+community at a broad level is one of the most important
+things for a PTL.  On that front I'm active and always
+available on IRC (docaedo), and do my best to stay on top of
+all the traffic on the dev mailing list.  I also work with
+Richard Raseley to organize the OpenStack meetup in Portland
+in order to reach, educate (and entertain) people who want
+to learn more about OpenStack.
+
+The next big thing we will do for the Community App Catalog
+is to build out the backend so it becomes a more engaging
+experience for the users, as well as makes it easier for
+other projects to contribute and consume the assets.  In
+addition to the Horizon plugin[3][4] (check it out with
+devstack, it's pretty cool!) we are thinking through the API
+side of this and will eventually contribute the code to
+search, fetch and push from the OpenStack Client.
+
+All of this is to say that I'm eager and proud to serve as
+the Community App Catalog PTL for the next six months if
+you'll have me!
+
+[1] https://review.openstack.org/#/c/217957/
+[2] https://wiki.openstack.org/wiki/Meetings/app-catalog
+[3] https://github.com/stackforge/apps-catalog-ui
+[4] https://github.com/openstack/app-catalog-ui
