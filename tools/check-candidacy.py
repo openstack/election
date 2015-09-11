@@ -24,12 +24,21 @@ def check_date(date):
         return True
     return False
 
+
+def escape_author(author):
+    author = author.replace(' ', '+')
+    author = author.replace('_', '+')
+
+    return author
+
 try:
     project_name = os.path.basename(os.path.dirname(sys.argv[1]))
-    author = os.path.basename(sys.argv[1])[:-4].replace(' ', '+')
+    author = os.path.basename(sys.argv[1])[:-4]
 except:
     print "usage: %s candidacy_file" % sys.argv[0]
     exit(1)
+
+author = escape_author(author)
 
 if not os.path.isfile('.projects.yaml'):
     open('.projects.yaml', 'w').write(
@@ -56,7 +65,7 @@ for project in project_list:
                 if "commit/?id=" not in l:
                     continue
                 try:
-                    url = ('http://git.openstack.org/%s' %
+                    url = ('http://git.openstack.org%s' %
                            re.search("href='([^']*)'", l).groups()[0])
                     date = re.search('<td>([^<]*)</td>', l).groups()[0]
                     if not check_date(date):
