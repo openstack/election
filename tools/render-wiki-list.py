@@ -22,6 +22,7 @@ def main(argv):
         print "* %s" % project.replace('_', ' ')
         for candidate in candidates_list['candidates'][project]:
             candidate_name = candidate.split('/')[-1][:-4].replace('_', ' ')
+            candidate_name = candidate_name.title()
             print "** [%s/%s %s]" % (GIT_BASE,
                                      candidate.replace(' ', '%20'),
                                      candidate_name)
