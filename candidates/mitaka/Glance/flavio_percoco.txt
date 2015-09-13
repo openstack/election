@@ -1,0 +1,70 @@
+Greetings,
+
+I'd like to raise my hand and send my candidacy for Glance's PTL
+position. If you've heard my name, it's entirely possible that you
+hear it either for my Zaqar's PTL position or my current TC position.
+
+Before I go forward with my candidacy, allow me to say that I won't be
+running for Zaqar's PTL position and that it's my intention to be
+entirely focused on Glance[0]. I take being a PTL seriously[1] and I
+strongly believe in the importance of focus when it comes to making
+progress, which is what I'd like to base my candidacy on.
+
+Glance may seem a simple service but it's not as simple as many folks
+think. It's small compared to many other projects but it's still
+exciting to work on. Perhaps, even more important than how exciting it
+is, we should all remember the impact this project has on the rest of
+the community and how it impacts all the OpenStack deployments out
+there. In addition to this, Glance remains one of the projects that
+are considered part of the starting kit and it serves a very important
+task in a cloud deployment.
+
+The reason I'm bringing the above up is because I believe we've
+derailed a bit from that and that we should bring focus back on what's
+the most important task for Glance, which is to serve cloud images in
+a resilent, consistent and reliable way. This is not to say that
+innovation should be stopped but it certainly shouldn't affect this
+mission.
+
+I believe these are some of the most important topics that our team
+should focus on are:
+
+- Collaboration with other projects to migrate OpenStack to use
+- Glance's V2 API Collaborate with the defcore team to define a clear
+view and support of what Glance provides and is.
+- Increase V2 API stability and awareness.
+- Improve Glance's gate story to make sure we cover enough scenarios
+  that are representative of existing deployments and use cases.
+
+By reading the above four points, it's clear that I think that lots of
+our work should go on cross-project collaboration. However, I'd like
+to extend that to cross-team collaboration. One of the things that I
+believe has affected Glance a lot is the lack of interaction with
+other teams, especially with OPs, when it came down to working on new
+features that had an impact on users. Therefore, I'd like to help
+increasing cross-team collaboration in Glance's team.
+
+As far as my involvement in Glance goes, I've been part of the team
+since I started working on OpenStack. For the upcoming cycle, I'm
+ready to dedicate my PTL duties entirely on the project and completely
+focused on what's important to bring back focus and keep the project
+growing but stable.
+
+As some of you know already, I'm also part of the Technical Committee
+and I'll be up for election next April, which means I'll be part of
+the TC for, at least, 6 more months. Being part of the TC takes time
+and this is something you should keep in mind (as much as I
+do). However, if I were to be elected as Glance's PTL, I'll dedicate
+all my efforts and time - consider that my current job allows me to be
+full time upstream - to just these to roles.
+
+It'd be a great honor for me to work together with the Glance team and
+to keep sharing knowledge, experiences and work as I've been doing so
+far but this time as a PTL.
+
+Thanks for reading thus far and for considering this candidacy,
+Sincerely, Flavio
+
+
+[0] http://lists.openstack.org/pipermail/openstack-dev/2015-September/074212.html
+[1] http://lists.openstack.org/pipermail/openstack-dev/2015-September/073986.html
