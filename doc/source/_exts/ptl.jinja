@@ -1,7 +1,7 @@
 {{ election.capitalize() }} PTL Candidates
 ======================
 {% for project in projects %}{% if project != 'TC' %}
-* `{{ project.replace('_', ' ') }} <http://git.openstack.org/cgit/openstack/election/plain/candidates/{{ election }}/{{ project }}>`_
+* {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}
   * `{{ candidate.split('/')[-1][:-4].replace('_', ' ').title() }} <http://git.openstack.org/cgit/openstack/election/plain/{{ candidate }}>`_

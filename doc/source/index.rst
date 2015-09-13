@@ -3,6 +3,7 @@
 ====================
 
 This page track OpenStack Elections candidates list.
+Below is the official list of candidates for the current round.
 
 .. include:: ./candidates/ptl.rst
 
