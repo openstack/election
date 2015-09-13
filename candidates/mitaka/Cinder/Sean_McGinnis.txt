@@ -1,0 +1,43 @@
+Hello everyone,
+
+I'm announcing my candidacy for Cinder PTL for the Mitaka release.
+
+The Cinder team has made great progress. We've not only grown the
+number of supported backend drivers, but we've made significant
+improvements to the core code and raised the quality of existing
+and incoming code contributions. While there are still many things
+that need more polish, we are headed in the right direction and
+block storage is a strong, stable component to many OpenStack clouds.
+
+Mike and John have provided the leadership to get the project where
+it is today. I would like to keep that momentum going.
+
+I've spent over a decade finding new and interesting ways to create
+and delete volumes. I also work across many different product teams
+and have had a lot of experience collaborating with groups to find
+a balance between the work being done to best benefit all involved.
+
+I think I can use this experience to foster collaboration both within
+the Cinder team as well as between Cinder and other related projects
+that interact with storage services.
+
+Some topics I would like to see focused on for the Mitaka release
+would be:
+
+ * Complete work of making the Cinder code Python3 compatible.
+ * Complete conversion to objects.
+ * Sort out object inheritance and appropriate use of ABC.
+ * Continued stabilization of third party CI.
+ * Make sure there is a good core feature set regardless of backend type.
+ * Reevaluate our deadlines to make sure core feature work gets enough
+   time and allows drivers to implement support.
+
+While there are some things I think we need to do to move the project
+forward, I am mostly open to the needs of the community as a whole
+and making sure that what we are doing is benefiting OpenStack and
+making it a simpler, easy to use, and ubiquitous platform for the 
+cloud.
+
+Thank you for your consideration!
+
+Sean McGinnis (smcginnis)
