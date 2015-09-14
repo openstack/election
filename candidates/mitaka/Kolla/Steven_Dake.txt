@@ -1,0 +1,45 @@
+My Peers,
+
+Liberty for Kolla was fantastically successful!  We held our first in person
+mid-cycle and entered the Big Tent governance process.  We successfully
+released 3 milestone releases within 3 days of deadline with increasing
+functionality.  I believe our Kolla release of rc1 on September 25th will
+deliver on the promises I made in my PTL candidacy which was to deliver a
+container deployment system that could deploy 100 node OpenStack cluster with
+controller, compute, storage and networking roles.  I wouldn’t have been able
+to do it alone, or even with the small team we had heading into Liberty.  A
+big thank you goes out to our community for your strong commitment to our
+success! 
+
+A leader’s job is to take the community on the trip they want to go on.  I’ve
+done a good job of balancing the various interests in Kolla to lead us to
+where I think people wanted us to be at the end of the cycle.  I think we are
+a bit ahead on all measures except functional testing.
+
+For Liberty I wish to directly contribute to or facilitate the
+following actions:
+* Continue to encourage diversity in our Community.
+* Obtain real-world production deployments using Kolla.
+* Grow out community of developers, reviewers, and operators.
+* Execute functional testing of Kolla deployment by using a baby-steps
+  strategy, first executing AIO, then two nodes, growing to ~5 node
+  multi-node deployments.
+* Containerize and deliver all Big Tent server projects with our Ansible
+  deployment tooling.
+* Radically improve our documentation to match the standards set by mature
+  OpenStack Big Tent projects.
+* Make the image building and functional gating voting(!) by delivering
+  mirrors of our upstream software dependencies internally in OpenStack
+  Infrastructure.
+* Continue to provide excellent project management and improve our processes
+  so that we may grow to use the release_managed[2] tag in the N release.
+
+I am pleased to accept your vote and serve as your PTL for the Mitaka
+release cycle.  As a Community I am certain we can make Mitaka as successful
+as Liberty!
+
+Regards
+-steve
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2015-March/058930.html
+[2] https://github.com/openstack/governance/blob/master/reference/tags/release_managed.rst
