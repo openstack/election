@@ -1,0 +1,61 @@
+Howdy folks,
+
+I'd like to propose myself for oslo PTL for the mitaka cycle,
+
+For those that don't know me I've been involved in openstack for ~4 years,
+
+Have worked at yahoo! for ~7 years, ~4 of the last years have been getting openstack adopted in
+yahoo! (where it is now used by everyone, and is a common  word/name/project all employees know
+about, quite a change from when 3 other engineers and myself started investigating it 4 years ago).
+It has been quite the  journey (for myself, others and yahoo! in general) and I've been pretty
+active in oslo for ~2 years so I thought it might be a good time to try to run and see how I  can
+help in a PTL role (this also ensures nobody else in oslo-core burns out).
+
+I contribute to many projects (inside and outside of openstack):
+
+- http://stackalytics.com/report/users/harlowja
+
+Created/maintain/co-maintain/contributor/core to the following:
+
+(not directly openstack, generally useful to all)
+- https://kazoo.readthedocs.org
+- https://redis-py.readthedocs.org
+- https://cloudinit.readthedocs.org
+- https://fasteners.readthedocs.org
+- https://pymemcache.readthedocs.org
+- https://pypi.python.org/pypi/zake
+- https://pypi.python.org/pypi/doc8
+- https://pypi.python.org/pypi/retrying
+(mainly created for usage by openstack, but not limited to)
+- https://anvil.readthedocs.org
+- http://docs.openstack.org/developer/futurist/
+- http://docs.openstack.org/developer/automaton/
+- http://docs.openstack.org/developer/debtcollector/
+- http://docs.openstack.org/developer/taskflow/
+- http://docs.openstack.org/developer/tooz/
+(created for usage by openstack)
+- oslo.messaging
+- oslo.utils
+- oslo.serialization
+- oslo.service
+- (all the other 'oslo.*' libraries)
+(and more...)
+
+I feel I can help bring a unique viewpoint to oslo and openstack in general; one of increasing
+exposure and general usefulness of oslo libraries outside of  openstack; fostering community inside
+and outside and continuing to make oslo and openstack the best it can be.
+
+Some of the things that I would like to focus on (not inclusive of all the things):
+
+- Increasing outreach to consuming projects so that they can benefit from the oslo libraries, code and
+knowledge (and patterns) that have been built up by these  libraries; perhaps some kind of bi-weekly blog
+about oslo?
+- Improving our outreach to others in the wider world (even ones not in the big tent); the python community
+is a big world and it'd be great to make sure we do our  part there as well.
+- Being jolly.
+- Asking the hard questions.
+
+Thanks for considering me,
+
+-Joshua Harlow
+
