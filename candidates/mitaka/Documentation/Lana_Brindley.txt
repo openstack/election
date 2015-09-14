@@ -1,0 +1,36 @@
+I am seeking re-election as Documentation PTL for Mitaka.
+
+I had a great time as incoming PTL for Liberty, and would love another term,
+if you'll have me.
+
+Liberty was a great release for documentation. Our main achievement was
+converting four more books to RST, with the Install Guide happening almost
+completely over a 48 hour period. This has had some great feedback from the
+community, with a lot of developers who haven't contributed to documentation
+before now doing so. For Mitaka, I would like to continue the RST conversion,
+with plans to migrate the Operations and Architecture Guides next.
+
+One of the things I wanted to focus on during the Liberty cycle was the
+information architecture of our books, to ensure we're delivering content that
+our readers can really use. To this end, I'm happy to report that we completed
+an overhaul of the User Guides during the Liberty Release,. We also made some
+significant changes to the Installation Guide, including changing the way we
+document networking scenarios, one of the trickiest parts of the installation.
+
+Since the Kilo release in April, the documentation team has released fixes for
+493 bugs. We've also focused on squashing some old bugs. Through a concerted
+effort we've managed to kill all bugs older than a year (with a few wishlist
+exceptions), and closed a lot of the year old ones. I've also been working
+with Foundation on an organised effort to continue this process of paying down
+technical debt and improve on the work we've done through Liberty. I'll be
+making some exciting announcements about this at Summit.
+
+I was very excited to meet so many of the documentation team in Vancouver,
+and had the privilege of welcoming a couple of new Docs ATCs during the
+Summit. I can't wait to see you all again in Tokyo, and hope to meet some new
+faces there.
+
+I'd love to have your support for the PTL role for Mitaka, and I'm looking
+forward to continuing to grow the documentation team.
+
+Lana (@Loquacities)
