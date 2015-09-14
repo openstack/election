@@ -1,0 +1,70 @@
+Greetings,
+
+After contributing consistently to Mistral since the Kilo dev cycle, I'd
+like to run for the Mistral PTL position for the Mikata release cycle.
+In case you don't immediately recognize me, I'm 'xylan_kong' on IRC,
+where you can always find me.
+
+Although I know that I have served as Mistral core reviewer for only
+less than 1 year, I make myself almost full-time dedicated to Mistral
+upstream work, to make it more feature-riched, more stable, more
+scalable, and align with the whole community rules, etc. I've also
+helped many new developers contribute to Mistral project, and have tried
+to always be available on IRC and mailing list, in the position to help.
+
+Of course, I'd like to thanks to all the fantastic folks of Mistral core
+team, although it's a really small team, but I've been honored to serve
+under Renat, Nokolay, Winson and many others for this year, thanks all
+to your mentoring, and now I feel I could try to serve as PTL, I am
+fortunate enough to work for an employer that would allow me to focus
+100% of my time on the role of PTL.
+
+Some of my thoughts about Mistral for the Mikata cycle are as follows:
+
+* Improving the growth and vitality of Mistral project
+People of Mistral team may know that there are not a lot of contributors
+interested in Mistral, it¡¯s important that as PTL, spent time on
+non-technical duties besides technical effort, such as actively seek out
+the input and feedback from users, operators and deployers, as well as
+mentoring others to become future core contributor and even project team
+leads, and acting as a point of contact for other OpenStack projects.
+
+* Continuing to improve Mistral UI and Mistral documentation
+Thanks to all the talent guys for their tremendous efforts for UI and
+doc (you know who what I mean :-)), we have already make a big progress
+for Mistral UI work and doc reference. However, We still need to put
+more efforts on that, since UI is so important to Mistral usage, no
+matter for end users usage or for PoC scenarios.
+
+* Participating in cross-project initiatives and discussion in OpenStack
+Actions involved in like: collaborating with the API working group,
+cross-project specs, QA team, release team, etc. We should be reviewing
+specs from these teams and making sure we implement those initiatives in
+a timely fashion. For example: designing our new API version according
+to API guideline, keeping with pace with other projects before the
+release schedule deadline, integrating with OpenStack client, showing we
+are part of community as a whole like many other official projects, etc.
+
+* Introducing spec repository for Mistral (or something else we think it
+better for tracking design details)
+As I mentioned before, Mistral is a small project compared to many other
+projects, but that doesn't mean we could do anything 'freely'. A good
+thing recently is, we started to use etherpad to bring new features for
+discussion before people decide to implement. However, etherpad is so
+fragile that we may lose the 'history' of feature evolvement process,
+I'd like to propose we use a specific git repository (*-specs) or
+something like that to propose, discuss, iterate and track approvals on
+specifications using Gerrit instead of Launchpad, like other projects,
+which is very useful for new comers to learn how Mistral evolves, where
+we are, and where we're going.
+
+* Last but not least, bringing more and more useful features to Mistral,
+increasing Mistral stability at the same time.
+
+There are other things I'd like to accomplish as well, but those are the
+main pieces in my mind when I decide to run for PTL. I know the chance
+is very small for me to be elected, but I still wanna have a try,
+regardless of the outcome.
+
+I'm looking forward to serving the Mistral community during Mitaka, as I
+always did before.
