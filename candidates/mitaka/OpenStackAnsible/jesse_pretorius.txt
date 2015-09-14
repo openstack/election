@@ -1,0 +1,39 @@
+Hi everyone,
+
+We've come a long way in the last cycle, taking us on a challenging journey
+which is starting to reap rewards. I would like the opportunity to serve the
+community as PTL in the Mitaka cycle with the following aims:
+
+1. Grow the community
+   I would like to increase our community participation through the engagement
+   with other OpenStack Projects and the Operator community. I believe that
+   it's crucial to the success of the project to increase the diversity of
+   contributors and I'd like this to be a focus for the cycle.
+
+2. Improve modularity
+   The project has built Ansible roles which are re-usable outside of the
+   defined use-cases which we do integration testing with. This, however, is
+   not obvious to anyone unless they spend a fair amount of time investigating
+   the playbooks and roles. I would like to reduce this barrier to entry by
+   moving towards a 'Big Tent' concept for our roles, with each role being
+   in its own repository, tested independently and fully re-usable in
+   a design of the deployers choosing.
+
+3. Improve platform support enablement
+   Fairly common feedback from deployers has been that they like the project,
+   but would prefer to deploy on an alternative Operating System. While the
+   door has always been open for a contributor to put a patch up for review,
+   it is important that we acknowledge that this is not as simple a task as it
+   could be. I would like us to put some energy into lowering the barrier to
+   entry for this task to make it simpler to achieve.
+
+4. Improve usability
+   Through improvements to our playbooks, roles and documentation, I believe
+   that OpenStack-Ansible can be made simpler and easier to develop for, to
+   deploy and to operate.
+
+I look forward to working with you all for the next cycle and hope that we can
+meet our lofty goals!
+
+Jesse
+IRC: odyssey4me
