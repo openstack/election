@@ -1,0 +1,42 @@
+Greeting,
+
+I'd like to announce my candidacy for the Zaqar PTL in Mikata.
+
+I've been working on and contributing to Zaqar since Icehouse release as a core
+developer. That said, I really understand the ups and downs which Zaqar went
+through and I know the blueprints, direction and pains of this project.
+
+For Mikata release, there are some items that I feel are important for
+us to focus on:
+
+1. Collaboration with other OpenStack projects
+   We did a great job in Liberty for the integration of Heat and Zaqar. And I
+believe there are some other projects could be benefited by Zaqar. For
+example, the notification middleware of Swift, Zaqar's websocket transport for
+Horizon, communicating with guests agents via Zaqar for Sahara/Trove, etc.
+
+2. Real-world deployment
+   puppet-zaqar is on the way. It could be an great deployment tool for
+operator who want to deploy Zaqar. So in next release, we will continually
+provide more support for the project to get a stable release ASAP. Interlock
+and provide more support for potential cloud providers who have shown interest
+for Zaqar.
+
+3. API improvement
+   We have released three API versions. The API of key functions are more and
+more stable. But given the bug fix and new features, it's time to review the
+overall API of v2 to make it more stable.
+
+4. Encourage diversity in our Community
+   We're still a small team and obviously we need more new blood to join the
+team. And meanwhile, we would like to see the new comers from different
+organizations so that we can get different feedback from a wide range of users
+and industries. Not only developers, but also reviewers and operators.
+
+It's a fantastic experience working with this amazing team and I know without
+the dedication and hard work of everyone who has contributed to Zaqar we can't
+make those success stories of Liberty happen. So the PTL of this smart team is
+most like a facilitator, coordinator and mentor. I would be pleased to serve
+as PTL for Zaqar for the Mikata cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
