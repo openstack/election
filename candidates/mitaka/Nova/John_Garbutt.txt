@@ -1,0 +1,55 @@
+I would like to continue as the Nova PTL, if you will have me.
+
+I have enjoyed serving the Nova community over the last few years, and
+I thank you for this last few months serving the community as PTL.
+My employer assures me, that if elected, I can continue to make the
+Nova PTL my full time job.
+
+As a project, I feel we are starting to improve how we communicate our
+existing mission and goals to new members of our community. We are sharing
+more of "why" behind what we do, and where we are going. This alignment
+is key to us welcoming to new members, and helping to quickly integrate
+those people into our community, and is key to scaling out our community.
+
+Now we have most of the infrastructure in place to evolve our API, we will
+be able to focus on both supporting the ecosystem that is building up around
+our API, and work on improving the user experience for those using our API.
+
+I love the user focus of our community. We fight to make sure every thing
+we do is helping all of our users. I hope to foster more of that as we
+start the Feature Classification effort. Our recent step change in upgrades
+show how we as a community are able to deliver on some of the hardest
+capabilities that our users demand. Feature Classification should help us
+work hard to clearly communicate how complete, how well tested and how well
+documented that group of features are. Basically expanding the scope of the
+hypervisor support matrix to include documentation and testing. This knowledge
+should also help make it easier to communicate what areas of the codebase need
+more attention.
+
+We are still facing massive review bandwidth challenges. While we are doing
+OK at keeping up the quality of the reviews, there are still lots of
+potentially great fixes and features not able to merge.
+Our effort to help subteams recommend patches to the core team, in a scalable
+way, is starting to work. Our explicit mentoring of reviewers is starting to
+help build a much better pipeline of reviewer, some of whom could soon join
+nova-core. At the same time, we are better documenting our process, to help
+stop important patches falling through the cracks, and making a big push to
+encourage all contributors to spend more time doing code and spec reviews.
+
+We have now better documented the scope of Nova, to help ensure we don't grow
+any bigger. Our focus on key technical debt will help make it easier to
+maintain and evolve what we have. While efforts such as adopting os-brick
+and the ideas around the Neutron VIF library, are important so we can safely
+and quickly adapt to changes in the projects we depend on.
+
+Leading Nova is truly a team effort. Thank you all those who are stepping up
+to take the lead in lots of different areas of the project. Without your help
+we would not be able to have made it to where we are today. Long may this
+sharing of responsibilities continue, and hopefully continue to expand.
+
+Thank you for reading.
+
+John Garbutt
+
+IRC: johnthetubaguy
+Principal Engineer at Rackspace
