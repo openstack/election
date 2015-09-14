@@ -1,0 +1,35 @@
+Hello everyone!
+
+Heat project is one of the most interesting, in my opinion, projects. I have
+had a great opportunity to be a contributor and core-member of this project.
+This experience allowed to me to become a part of the amazing OpenStack
+community. Honestly it would not be possible without support of our friendly
+and kind Heat community. I think that it's the main reason why I want to raise
+my hand and propose my candidacy for PTL.
+   I think that the Team and Project helped me a lot to develop. So I'd like
+to provide reciprocal service. I want to continue to improve the Heat project
+as a part of the Big Tent.
+   During the last couple of releases we started the huge architecture change
+(code named 'convergence'). One of my aims is to continue this work and collect
+more feedback from all our users and especially from Level up projects, like
+Sahara, TripleO, Murano, etc. with the aim of enabling convergence by default.
+   Besides convergence work, the Heat team spends a lot of time making Heat
+more user-friendly. There are couple of good examples of this work: improving
+deprecation process and related documentation, providing more user oriented
+features - conditional resource exposure, other template functionality,
+filtering and sorting client improvements. I personally like to hear feedback
+from users about this functionality. And I think we should continue improving
+our documentation, functionality for end-users and especially for new
+contributors, who will be happy to work with clear and pleasant code base.
+   Another important part of code is testing, which should be improved. Heat
+already has a pretty good test coverage, but I suppose, that we should not
+forget about it and continue to add more unit tests and functional
+tests :)
+The last, but the not less important theme for me is scalability of Heat.
+In my opinion it's an important topic for all of the Big Tent community. So I'd
+like to help Heat gather more feedback from real usage examples and improve
+this area. I think, that guys from Sahara and TripleO teams have a lot of
+experience in this area and may collaborate with us to build the best solution.
+   In closing, I'd like to ensure that everyone knows I will continue with the
+successful tradition of consensus building. We have a very strong team
+(with many previous PTL's) that I hope I can rely on for support.
