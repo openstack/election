@@ -1,0 +1,11 @@
+I'd like to announce my candidacy for the Mitaka cycle as Neutron PTL. 
+
+While not currently a Neutron core, I've been looking at hard at Neutron for several cycles now and I feel that while we've accomplished a great deal, more consolidation at this point will be desirable. Therefore, if elected, my goals for the Mitaka cycle will be:
+
+1. Continue the decomposition efforts that Kyle has championed up through the Liberty cycle.
+2. Improve the performance and reliability of existing reference solutions so that operators can be more confident when deploying neutron.
+3. Like Liberty, we have a large list of new items for the design summit [1], which we will work to pare down into items that can be delivered in Mitaka
+
+Thanks,
+Ryan Moats
+IRC handle: regXboi
