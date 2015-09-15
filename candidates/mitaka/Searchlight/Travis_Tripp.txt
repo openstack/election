@@ -1,0 +1,58 @@
+
+Hello friends,
+
+We are now going into our first official PTL election for Searchlight and I
+would be honored if you’ll allow me to continue serving in the PTL role.
+
+Searchlight became a new project in Liberty after being split out from its
+initial experimental days in Glance. Since then we’ve been we’ve been moving
+at a relatively fast pace towards fulfilling our mission: To provide advanced
+and scalable indexing and search across multi-tenant cloud resources.
+
+It would be a huge understatement to say that accomplishing this mission is
+important to me. I believe that search is critical to enabling a better
+experience for OpenStack users and operators alike.
+
+In Liberty, we have made tremendous progress thanks to a small, but
+passionate team who believes in the vision of Searchlight. At the Mitaka
+summit we’ll be able to demonstrate a Horizon panel plugin able to search
+across Glance, Nova, and Designate.
+
+I believe that the PTL role is a commitment to the community to act as a
+steward for the project. As PTL for an early stage project like searchlight,
+I believe that some of these responsibilities are to:
+
+* Evangelize the project across the OpenStack ecosystem
+* Provide technical guidance and contribution
+* Facilitate collaboration across the community
+* Enable all developers to contribute effectively
+* Grow a community of potential future project PTLs
+* And perhaps most importantly, enable the project to release
+
+I believe software must be developed with a clear demonstration of its
+value. With Searchlight, I do believe that a UI is one of the most effective
+ways to bring the value of Searchlight to OpenStack users. This is why
+from day 1, I have been actively evangelizing Searchlight with Horizon. Once
+users are able to actually take advantage of Searchlight, I believe
+Searchlight will become a must have component of any OpenStack deployment.
+
+From a feature standpoint, I believe all of the following are great
+candidate goals for us to pursue in Mitaka and I look forward to working
+with the community as establish priorities.
+
+* (Obviously) Extend search indexing to as many projects as possible
+** With a priority on the original integrated release projects
+* Provide reference deployment architectures and deployment tooling as needed
+* Establish performance testing
+* Work towards cross-region search support
+* Enable pre-defined quick queries for the most common searches
+* Release the horizon search panel either in Horizon master or on its own
+* Enable horizon top nav search to become a reality [0]
+
+Thank you for your consideration in allowing me to continue serving as PTL
+for the Mitaka cycle.
+
+Thank you,
+Travis
+
+[0] https://invis.io/6Z3T72NXW
