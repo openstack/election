@@ -1,0 +1,44 @@
+hi folks,
+
+less than six months ago, i decided to run for PTL of Ceilometer where my main
+goal was to support the community of contributors that exists within OpenStack
+with interests in telemetry[1]. it is under that tenet which i will run again
+for team lead of Ceilometer. as mentioned previously, we have a diverse set of
+contributors from across the globe working on various aspects of metering and
+monitoring and it is my goal to ensure nothing slows them down
+(myself included).
+
+that said, as we look forward to Mitaka, i hope to follow along the path of
+stability, simplicity and usability. some items i'd like to target are:
+
+- rolling upgrades - having a fluid upgrade path for operators is critical to
+providing a highly available cloud environment for their users. i would like
+to have a viable solution in Ceilometer that can provide this functionality
+with zero/minimal performance degradation.
+
+- building up events - we started work on adding inline event alarming in Aodh
+during Liberty, this is something i'd like to improve upon by adding multiple
+worker support and broader alarming evaluations. also, a common use case for
+events is to analyse the data for BI. while we allow the ability to query and
+alarm on events. one useful tool would be the ability to run statistics on
+events such as the number of instances launched.
+
+- optimising collection - we improved ease of use by adding declarative
+notification support in Liberty. it'd be great if this work could be adopted by
+projects producing metrics. additionally, we currently have a extremely tight
+coupling between resource metadata and measurement data. i'd like to evaluate
+how to loosen this so our data collection and storage is more flexible.
+
+- continuing the refactoring - removing deprecated/redundant functionality; it
+was nice deprecating/deleting stuff, let's keep doing it (within reason)! one
+possible target would be splitting storage/api, while starting the initial
+deprecation of v2 metering api.
+
+- functional and integration testing -  we now have integration and functional
+test living within our repositories. this should allow us to develop testing
+easier so it'd be good to broaden the coverage.
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2015-April/060536.html
+
+cheers,
+
