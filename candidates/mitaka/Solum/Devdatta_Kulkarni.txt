@@ -1,0 +1,81 @@
+Hi,
+
+I would like to announce my candidacy for the PTL position of Solum for Mitaka.
+
+In my view the challenges in front of us are twofold, which I have outlined below.
+I believe that I will be able to help us take concrete steps
+towards addressing these challenges in this cycle.
+
+Our first challenge is to continue developing and evolving Solum's feature set
+so that the project becomes a valuable option for operators to offer
+it in their OpenStack installations.
+Particularly, in my opinion, following features need to be completed in this regard:
+
+(a) Consistency between API and CLI:
+    Currently Solum API and CLI have slightly different abstractions preventing
+    consistency of usage when using CLI vs. directly using the REST API.
+    We have started working on changing this[1], which needs to be completed.
+
+(b) Ability to scale application instances:
+    For this, we need to investigate how we can use Magnum for satisfying
+    Solum's application-instance scaling and scheduling requirements.
+
+(c) Insight into application building and deployment process:
+    This includes, collecting fine-grained logs in various Solum services,
+    ability to correlate logs across Solum services,
+    collecting and maintaining historical information about user actions
+    to build and deploy applications on Solum.
+
+(d) Ability to build and deploy multi-tier applications:
+    One idea here is to investigate if something like Magnum's Pod abstraction
+    can be leveraged for this.
+
+As PTL, I will work towards helping the team move the story forward on these features.
+Also, whenever required, I will work closely with other OpenStack projects, particularly Magnum,
+to ensure that our team's requirements are adequately represented in their forum.
+
+
+The second challenge for us is to increase community involvement in and around Solum.
+Some ideas that I have in this regard are as follows:
+
+(1) Bug squash days:
+    My involvement with OpenStack started three years ago when I participated
+    in a bug squash day organized by Anne Gentle at Rackspace Austin [2].
+    I believe we could organize similar bug squash days for Solum to attract new contributors.
+
+    Also, there could be experienced Solum contributors whose current priorities might
+    not be allowing them to participate in Solum development,
+    but who might still like to continue contributing to Solum.
+    Bug squash days would provide them a dedicated time and place to participate again in Solum development.
+
+(2) Increasing project visibility:
+    Some of the actionable items here are:
+    - Periodic emails to openstack-dev mailing list giving updates on project's status, achievements, etc.
+    - Periodic blog posts
+    - Presentations at meetup events
+
+(3) Growing community:
+    - Reaching out to folks who are interested in application build and deployment story on OpenStack,
+      and inviting them to join Solum IRC meetings and mailing list discussions.
+    - Reviving mid-cycle meetups
+
+As PTL, I will take actions on some of the above ideas towards helping build and grow our community.
+
+
+About my background -- I have been involved with Solum since the beginning of the project.
+In this period, I have contributed to the project in several ways including,
+designing and implementing different features, fixing bugs, performing code reviews,
+helping debug gate issues, helping maintain a working Vagrant environment,
+maintaining community engagement through various avenues (IRC channel, IRC meetings, emails), and so on.
+More details about my participation and involvement in the project can be found here:
+http://stackalytics.com/?module=solum
+http://stackalytics.com/?module=python-solumclient
+
+I hope you will give me an opportunity to serve as Solum's PTL for Mitaka.
+
+Best regards,
+Devdatta Kulkarni
+
+[1] https://github.com/openstack/solum-specs/blob/master/specs/liberty/app-resource.rst
+
+[2] http://www.meetup.com/OpenStack-Austin/events/48406252/
