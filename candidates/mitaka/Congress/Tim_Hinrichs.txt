@@ -1,0 +1,30 @@
+Hi all,
+
+I’m writing to announce my candidacy for Congress PTL for the Mitaka cycle.  I’m 
+excited at the prospect of continuing the development of our community, our code 
+base, and our integrations with other projects.
+
+This past cycle has been exciting in that we saw several new, consistent 
+contributors, who actively pushed code, submitted reviews, wrote specs, 
+and participated in the mid-cycle meet-up.  Additionally, our integration 
+with the rest of the OpenStack ecosystem improved with our move to running 
+tempest tests in the gate instead of manually or with our own CI.  The code 
+base matured as well, as we rounded out some of the features we added near 
+the end of the Kilo cycle.  We also began making the most significant 
+architectural change in the project’s history, in an effort meet our 
+high-availability and API throughput targets.
+
+I’m looking forward to the Mitaka cycle.  My highest priority for the code 
+base is completing the architectural changes that we began in Liberty.  These 
+changes are undoubtedly the right way forward for production use cases, but 
+it is equally important that we make Congress easy to use and understand for 
+both new developers and new end users.  I also plan to further our integration 
+with the OpenStack ecosystem by better utilizing the plugin architectures that 
+are available (e.g. devstack and tempest).  I will also work to begin (or 
+continue) dialogues with other projects that might benefit from consuming 
+Congress.  Finally I’m excited to continue working with our newest project 
+members, helping them toward becoming core contributors.
+
+See you all in Tokyo!
+Tim   
+
