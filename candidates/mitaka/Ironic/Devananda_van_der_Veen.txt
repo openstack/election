@@ -1,0 +1,70 @@
+Hi all,
+
+It's that time again, where encumbent PTLs are supposed to write about what
+features or changes they accomplished and what goals they have for the next
+cycle.
+
+I'm not going to do that this time.
+
+Even you though you may have read similar things from others (either in this or
+in previous cycles) I'm going to reiterate something. Contrary to being the
+technical lead, OpenStack requires the PTL to do a whole slew of less glamorous
+things (or delegate them to other people).
+
+- launchpad monkey
+- midcycle coordinator
+- release coordinator 
+- public speaker 
+- cross project liaison 
+- vendor buffer 
+- cat wrangler
+
+Historically, PTL meant "project technical lead", but as OpenStack grew, we /
+the TC realized that it is more^D^D^D^Ddifferent than that, and so now the
+acronym is defined as "project team lead" [0]. And that is much more
+representative of the responsibilities a PTL has today. In short, being PTL and
+the lead architect for a successful/sizable project at the same time == two
+full time jobs.
+
+Even before I was doing anything internal at HP, it seemed like my upstream
+work was never done since I was trying to be both the team and tech leads for
+Ironic. That said, it was also extremely rewarding to found this project and
+exercise my social and organizational skills in building a community around it.
+I could not be more satisfied with the results -- all of you make Ironic much
+more awesome than I could have done alone. That's the point, after all :)
+
+Last election cycle, I stepped down from the TC so that I could have more time
+for my roles as tech and team lead, and to focus on some internal work (yup,
+still three jobs). That other work, for better or for worse, took a greater tax
+on me than I had anticipated, and my activity upstream has suffered (sorry!).
+This has created room for many of the other core developers, who've been around
+the project almost as long as I have, to come forward and fill in the gaps I
+left in the project management. And that's really awesome. Thank you all.
+
+I am thrilled that more of the project responsibilities are being handled by
+Jim, Ruby, Chris, Lucas, and everyone else now. They are all leading different
+areas in their own ways. As PTLs, each would bring a different viewpoint to the
+project's day-to-day operations, and if they were to run, I would support all
+of them (even though we disagree some times). Today, there are multiple people
+who could run the project in my stead, and that makes me very happy.
+
+If elected, I promise to continue enabling the core team to do more without my
+direct involvement, to continue leading in the technical vision for the
+project, and liaising with vendors and operators to ensure the project matures
+in such a way that it meets their needs.
+
+If you believe I've done a great job as PTL and want me to continue doing
+what I've been doing, then please re-elect me. (*)
+
+If you'd like to see a change of pace, please don't hesitate to elect another
+PTL :)
+
+Thank you, Devananda
+
+
+(*) If you think I haven't done a great job as PTL, I invite you to tell me how
+you think I could do better. For the sake of the election archives, please
+don't reply to this email.
+
+[0]
+https://github.com/openstack/governance/commit/319fae1ea13775d16f865f886db0388e42cd0d1b
