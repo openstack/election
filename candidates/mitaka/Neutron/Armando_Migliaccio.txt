@@ -1,0 +1,84 @@
+I would like to propose my candidacy for the Neutron PTL.
+
+If you are reading this and you know me, then you probably know what I
+have been up to up until now, what I have done for the project, and what
+I may continue to do. If you do not know me, and you are still interested
+in reading, then I will try not bore you.
+
+As member of this project, I have been involved with it since the early
+days, and I have served as core developer since Havana. If you are wondering
+whether I am partially to blame for the issues that affect Neutron, well you
+may have a point, but keep reading...
+
+I believe that Neutron itself is a unique project and as such has unique
+challenges. We have grown tremendously mostly propelled by a highly opinionated
+vendor perspective. This has caused us some problems and we set foot a cycle
+or so ago to fix these, but at the same time stay true to the nature of our
+mission: define logical abstractions, and related implementations to
+provide on-demand, cloud oriented networking services.
+
+As any other project in OpenStack, we are software and we mostly implement
+'stuff' in software, and because of that we are prone to all the issues that
+a software project may have. To this aim, going forward I would like us to
+improve the following:
+
+* Stability is the priority: new features are important, but complete and well
+  tested existing features are more important; we gotta figure out a way to
+  bring the number of bugs down to a manageable number, just like nations
+  are asked to keep their sovereign debt below a certain healthy threshold.
+* Narrow the focus: now that the Neutron 'stadium' is here with us, external
+  plugins and drivers can integrate with Neutron in a losely manner, giving the
+  core the opportunity to be more razor focus at getting better at what we do:
+  logical abstractions and pluggability.
+* Consistency is paramount: having grown the review team drastically over the
+  past cycle, it is easy to skew quality in one area over an other. We need to
+  start defining common development and reviewer practices so that, even though
+  we deal are made of many sub-projects and modules, we operate, feel and look
+  like one...just like OpenStack :)
+* Define long term strategy: we need to have an idea where Neutron starts and
+  where Neutron ends. At some point, this project will reach enough maturity
+  where we feel like we are 'done' and that's okay. Some of us will move on to
+  the next big thing.
+* Keep developers and reviewers _aware_: we all have to work collectively towards
+  a common set of goals, defined by the release cycle. We will have to learn to
+  push back on _random_ forces that keep distracting us.
+* I would like to promote a 'you merge it, you own it' type of mentality: even
+  though we are pretty good at it already, we need a better balance between
+  reviews and contributions. If you bless a patch, you got to be prepared to
+  dive into the issues that it may potentially causes. If you bless a patch, you
+  got to be prepared to improve the code around it, and so on. You will be a
+  better reviewer if you learn to live with the pain of your mistakes. This
+  is he only way to establish a virtuous cycle where quality improves time
+  over time.
+
+And last but not least:
+
+* Improve the relationships with other projects: Nova and QA primarily. We
+  should allocate enough bandwidth to address integration issues with Nova and
+  the other emerging projects, so that we stay plugged with them. QA is also
+  paramount so that no-one is gonna hate us because we send the gate belly up.
+  As for nova-network, I must admit I am highly skeptical by now: if our
+  community were a commercial enterprise trying to solve that problem we would
+  have ran out of money long time ago.
+  We tried time and time again to crack this nut open, and even though we made
+  progress in a number of areas, we haven't really budged where some people
+  felt it mattered. We need to recognize that the problem is not just technical
+  ...it is social; no-one, starting from the developers and the employers behind
+  them, seems to be genuinely concerned with the need of making nova-network a
+  thing of the past. They have other priorities, they are chasing new customers,
+  they want to disrupt Amazon. None of this nova-network deprecation drama fits
+  with their agendas and furthermore, even if we found non-corporate sponsored
+  developers willing to work on it, let's face it migration is a problem that
+  is really not that interesting to solve. So where do we go from here?
+  I do not have a clear answer yet. However, I think we all agree that the
+  Neutron team wants to make Neutron a better product, more aligned with the
+  needs of our users, but we must recognized that _better_ does not mean *like*
+  nova-network, because the two products are not the same and they never will be.
+
+Ok, now that you read this, you are ready to know whether you may want to
+vote for me. Having said that, if you think that I am doing a fine job as core
+reviewer, you trust my technical in-depth contribution, and you're worried
+that my PTL duties may take that away from you...exercise your vote right!
+
+Thanks for reading and forgive the typos!
+Armando Migliaccio (aka armax)
