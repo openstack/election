@@ -1,0 +1,58 @@
+Hello everyone,
+
+I'd like to announce my candidacy for the Keystone PTL for the Mitaka cycle.
+The project has had great leadership the entire time I have been involved and
+I want to keep up the tradition.
+
+I've been working on Keystone for the past 2 years and I'd like to step up
+and take more of a leadership role. I have a long track record of technical
+leadership that can be directly applied to Keystone. This includes everything
+from project management to application architecture and many things in
+between.
+
+My thoughts on the direction of the project really boil down to landing the
+features we have already committed to, taking our experimental features and
+making them stable, improving general project stability and expanding our
+community.
+
+Goals for this cycle:
+
+* Land the features
+
+  Several features that are very beneficial to the community are currently
+  in development. We need to get them stable and shipped for Mitaka. This
+  includes, but is not limited to federation, reseller, and centralized
+  policy. There is also additional work that needs to be done with
+  federation to take it from experimental to stable, like helping other
+  projects adapt to the new requirements and making it a first class OpenStack
+  feature.
+
+* Fix the bugs
+
+  We have 293 bugs (at the time of this writing) that need some attention.
+  Many have patches that need some work or just need reviews. Others need
+  to be investigated and fixed. I'd like to cut this number in half. To do
+  that I'd like to get people to focus more on them through activities such
+  as bug reviews and bug days (more on that below).
+
+* Expand out testing
+
+  Over the last two cycles we have made some significant advances in our
+  testing practices. We need to expand on this cultural shift and even expand
+  the focus on testing.
+
+  The full test runtime needs to be cut by at least 50% to improve developer
+  workflow. Near immediate test feedback is important for not breaking flow
+  when writing code. This can be accomplished by refactoring test code to
+  reduce unnecessary setup and focus on the code being tested.
+
+* Expand our community
+
+  Being PTL isn't about me making all of the decisions or calling all of the
+  shots. It's about facilitating the design and development of Keystone by
+  working with the community. Through mentoring we can get more developers
+  ready to be core to speed up our review pace. We need to work together to
+  find ways to give more people the ability to contribute upstream. I do
+  believe it's possible to make our thriving community even better.
+
+Thanks you for voting for me as your PTL for the Mitaka release cycle.
