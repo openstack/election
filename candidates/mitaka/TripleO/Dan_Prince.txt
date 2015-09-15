@@ -1,0 +1,48 @@
+Hi TripleO,
+
+My name is Dan Prince and I'm running for the Mitaka TripleO PTL. I've
+been working on TripleO since Grizzly and OpenStack since Bexar. I care
+deeply about the project and would like to continue the vision of
+deploying OpenStack w/ OpenStack.
+
+TripleO has come a long way over the past few years. I like how the
+early vision within the project set the stage for how you can deploy
+OpenStack with OpenStack. I also like how we are continuing to transform
+the OpenStack deployment landscape by using OpenStack, with all its API
+goodness, alongside great technologies like Puppet and Docker. Using the
+best with the best... that is why I like TripleO.
+
+A couple of areas I'd like to see us focus on for Mitaka:
+
+CI: The ability to land code upstream is critical right now. We need to
+continue to refine our CI workflow so that it is both faster, more
+reliable, and gives us more coverage.
+
+Upgrades: Perhaps one of the most important areas of focus is around
+upgrades. We've made some progress towards minor updates but we've got
+plenty of work to be able to support minor updates and full upgrades.
+
+Composibility: Better composability within the Heat templates would make
+the 3rd party integration even easier and also give us better and more
+flexible role flexibility. Role flexibility in particular may become
+more desirable as we take steps towards supporting a more containerized
+deployment model.
+
+Validations: The extensibility of our low level network infrastructure
+is very flexible. But it isn't easy to configure. I would like to see us
+continue adding validations at key points to make this easier.
+Additionally validations are critical for integration with any sort of
+external resource like a Ceph cluster or load balancers.
+
+Features: New network features like IPv6 support and better support for
+spine/leaf deployment topoligies. We are also refining how Tuskar works
+with Heat and continuing to refine Tuskar UI around a common library
+that can better leverage the installation workflows OpenStack requires.
+
+Lots of exciting stuff to work on and a great team of developers who are
+driving many of these goals. As PTL I would be honored to help organize
+and drive forward the efforts of the team where needed.
+
+Thanks for your consideration.
+
+Dan Prince
