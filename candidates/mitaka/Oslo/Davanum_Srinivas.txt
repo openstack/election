@@ -1,0 +1,8 @@
+Hi,
+
+It's been a great privilege to be the Oslo PTL for Liberty and getting to know and learn a whole lot of things. I hope i have helped move the Oslo project along its path in the process. Things we should be proud about include the fact that oslo-incubator is almost empty. We have a whole bunch of new libraries both general purpose outside of OpenStack and those who are specific to openstack. We as a team, have greatly stabilized core libraries like oslo.db and oslo.messaging etc as well. We have grown both the oslo core team and the cores for individual oslo projects to inject new blood into the project. Another aspect we really pushed hard is to make sure we did a lot of testing before we released code to reduce the chances of breaking projects as well as making sure that we stuck to a schedule of releases every week to release things early. 
+
+For Mitaka, i would like to focus on Documentation. This has been a sore spot for a while and folks have to end up reading code quickly when things fail. I'd also like the team to finally get rid of the remnants in the oslo-incubator and spearhead adoption of the oslo libraries in various projects. Shadowing Doug in the previous cycle helped me along the way in liberty, so i'd love to show and help hand over the duties to the next ptl for the N release. Happy to do this even if there is a new PTL for the Mitaka release. As mentioned in the oslo meeting today, it would be great to have a VOTE and thanks for Joshua (and anyone else who may throw their hat) for making it a race :) Looking forward to new oslo libraries, more drivers for existing libraries and working together to make the OpenStack ecosystem more vibrant and welcoming to everyone. 
+
+Thanks,
+Dims
