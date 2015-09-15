@@ -1,0 +1,66 @@
+Hi,
+
+My name is Renat Akhmerov. I decided to run for Mistral PTL for Mitaka release cycle.
+
+This is the first time when I’m doing it officially after Mistral was accepted into Big Tent.
+In fact, I’ve been driving the project for just a little less than 2 years by now and I've put
+a lot of my energy into this initiative by designing its architecture, coding (including initial
+PoC versions), reviewing nearly every single patch coming in and presenting Mistral at every
+conference that I could including OpenStack summits. Of course, I wasn’t doing it alone and I
+couldn’t find enough words to express how thankful I am to folks from Mirantis, StackStorm,
+Huawei, Alcatel-Lucent, HP, Ericsson and other companies. You all have done a great work and
+I’m proud to be a part of such a great team.
+
+Although a lot has been done so far and we certainly have achievements in the form of users who
+use Mistral in production, there’s a lot more ahead. And below is what I think we need to focus
+on during Mitaka cycle.
+
+* HA and maturity
+
+Making Mistral truly stable and mature technology capable of running in HA mode. I have to admit
+that so far we haven’t been paying enough attention to high-load testing and tuning. And my belief
+that it’s a high time we started doing it. Some of the issues are known to us and we know how we
+should be fixing them. Some have to be discovered. In my opinion, what we’re missing now is a
+comprehensive understanding of, believe it or not, how Mistral works :) This may sound strange,
+but I really mean is that we need to know in very tiny detail how every Mistral transaction works
+in terms of potential race conditions, isolation level, concurrency model etc. In my strong opinion,
+this is a prerequisite for everything else. Having said that, I am going to bring more expertise
+on the project to fill this gap: either by attracting corresponding people and by planning more
+time for the current team members to work on that.
+
+Apart from that I find it very important to stop developing two many new features in workflow engine
+and do a proper refactoring of it. In my strong opinion, Mistral engine started suffering from
+squeezing more and more functionality into it. It’s generally normal but I believe that we need to
+simplify the code base by cleaning it up wisely and at the same time improving test coverage
+accounting for all kind of corner cases and negative scenarios.
+
+* Use cases
+
+This is probably the most tricky part about this project and I believe I personally should have done
+much better job of clearly explaining Mistral value for the industry. I plan to change the situation
+drastically by providing battle proven scenarios where it’s hard or nearly impossible to avoid using
+Mistral. Also recording screencasts and writing cookbooks is part of the plan.
+
+* UI
+
+Thanks to engineers from Huawei and Alcatel Lucent who’ve done a good job in Liberty to move Mistral
+UI to a much better state. Most of basic CRUD functionality is there and this work keeps going on.
+However, I still see a lot of ways how to advance Mistral UI and make it really remarkable.
+For example, one specific thing that I’d really like to work on is workflow graph visualisation
+(for both editing and monitoring running workflows).
+
+I find it very important particularly because having good UI would help us to build even larger
+community around the project. Just because it would be easier to deliver a message of what the
+project goal is.
+
+* What else
+
+Other things that I’d like to pay attention to:
+ * Solving guest VMs access problem
+ * More intellectual task scheduling mechanism accounting for workflow priorities (FIFO but on
+   workflow level)
+ * New REST API (don’t confuse with DSL, or workflow language) on which we’ve almost agreed within
+   the team
+ * Improving significantly CLI so that it becomes truly convenient and fun to use
+
+Eventually, my goal is to build a really useful and beautiful technology
