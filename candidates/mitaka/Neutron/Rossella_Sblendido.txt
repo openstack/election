@@ -1,0 +1,56 @@
+Hi everyone,
+
+I decided to run for the Neutron PTL position for the Mitaka release cycle.
+
+I have been contributing to Neutron since Havana and I am a member of the
+control plane core review team. During these years I have touched most parts
+of the Neutron code and in the last cycle my main focus has been
+to restructure the OVS agent, adding the ability to use events provided by
+ovsdb client and making it more resilient to failures.
+
+Mentoring people and spreading knowledge about Neutron have been high
+priorities for me in these years. I am a regular speaker at OpenStack events
+(local meetups, Openstack days and summits), where my talks have had high
+attendance and good feedback.
+I have been a mentor for the Outreachy program [1] and the OpenStack upstream
+training.
+
+If I become PTL these are my main objectives for Mitaka:
+
+* Make the community even more welcoming.
+Neutron is still facing a big challenge in terms of review bandwidth.
+Good features can't get merged because of this limit. Even if the introduction
+of the Lieutenant system [2] has improved scalability, we still need to create
+a better way to share knowledge.
+In addition to improving the existing documentations and tutorials I'd like to
+create a team of mentors that can help new contributors (the quality of the
+proposed patches should increase so that the review time needed to merge them
+should decrease) and form new reviewers (more good people, more bandwidth).
+
+* Keep working hard to increase the stability.
+The introduction of functional tests and full stack tests was great, we just
+need to keep going in that direction. Moreover I'd love to produce and store
+some benchmark data so that we can also keep track of the performance of
+Neutron during time.
+
+* Continue getting feedback from operators.
+I think it's very important to hear the opinions of the actual Neutron users
+and to understand their concerns.
+
+* Paying down technical debt
+Introduce oslo versioned objects to improve RPC and keep refactoring Neutron
+code to make it more readable and understandable.
+
+Before proposing my candidacy I made sure I have the full support of my employer
+for this role.
+
+Neutron has a great team of contributors and great leaders, it would be an
+honor for me to be able to coordinate our efforts and push Neutron forward.
+
+
+Thanks for reading so far and for considering this candidacy,
+
+Rossella (rossella_s)
+
+[1] https://wiki.openstack.org/wiki/Outreachy
+[2] http://docs.openstack.org/developer/neutron/policies/core-reviewers.html#core-review-hierarchy
