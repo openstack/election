@@ -1,0 +1,5 @@
+I'd like ton continue to be the PTL for Debian packaging. I feel sorry
+that it didn't move fast enough during Liberty, hopefully, we'll get to
+some result during the Mitaka cycle.
+
+Thomas Goirand (zigo)
