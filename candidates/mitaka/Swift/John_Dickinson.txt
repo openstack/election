@@ -1,0 +1,26 @@
+I would be honored if you would allow me to continue to serve as PTL for Swift for the Mitaka cycle.
+
+My goals for Mitaka:
+ * Measured progress balanced between multi-cycle efforts and smaller, single-cycle efforts.
+ * Growth in the number of active code contributors and patch reviewers.
+ * Increased support for application devs by improving support for CLI and SDK tools.
+
+We've got a ton of stuff going on in the community right now. Here's a short list:
+    * wrapping up erasure code support
+    * supporting data-at-rest encryption
+    * container sharding
+    * hummingbird
+    * implementing fast-POST
+    * improving replication cycle times
+    * improving global clusters
+    * metadata indexing and search
+    * improving swiftclient
+    * policy management
+
+And, of course, there's a lot of the "normal" day-to-day bugs, small features, and refactoring work that's going on. To sum up, there's plenty to do.
+
+During this calendar year, there's been a noticeable uptick in the number of contributors active in Swift at any one time. While this is great for the community overall (especially given the list of stuff above), it brings with it new challenges to keep the community unified in vision, scope, and ability to focus on high-priority items to get stuff done efficiently.
+
+I love that new people are joining the project, and I want to see more of that. In order to help keep up working efficiently as a team, we've implemented a few changes in our workflow, and I want to find other ways to improve contributors' efficiency. Two areas to examine are how priorities are set as a group and the effectiveness of specs.
+
+Ultimately Swift is in service to the end users--those who are writing apps that consume the storage Swift implements. This is the whole reason Swift exists: to offload the hard problems of storage so that apps don't have to worry about it and can focus on being really great apps. To do that, we need to provide tools (SDKs) to app developers that make Swift trivially easy to consume. We have one official SDK today, and we need to continue to improve its ability to use all Swift's features. This improvement will increase Swift's usage both inside and outside of the OpenStack ecosystem.
