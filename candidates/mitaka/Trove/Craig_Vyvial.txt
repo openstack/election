@@ -1,0 +1,18 @@
+Hello,
+
+My name is Craig Vyvial and I'd like run for Mitaka Trove PTL. I've been working on Trove for about 4 years and a core member for about 2 years. Over the this time, Trove has continued to evolve and the community has grown. My passion is to help make sure that Trove continues this trend and guide Trove to be a world class database as a service for OpenStack.
+
+Trove started just provisioing a single MySQL instance and has grown to a total of 12 datastores to date with a few datastores supporting clustering. I think there are a few areas that make sense with this kind of growth that we should focus on during Mitaka.
+
+* Add CI tests for other datastores with third patry CI systems. With so many new datastores available within Trove, we need to make sure that we stabilize tests on multiple datastores.
+
+* Advance the features of Trove for all datastores.
+
+* Simplify the installation of Trove that includes install, upgrades, building guest images, and management operations.
+
+* Continue the trend of growing the trove community.
+
+As PTL of Trove, I will help the project move forward by looking to the community for input and making sure we take steps toward making OpenStack a better platform as well as Trove the ideal solution for users looking for a database as a service solution.
+
+Thanks,
+- Craig Vyvial
