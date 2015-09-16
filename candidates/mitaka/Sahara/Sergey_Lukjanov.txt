@@ -1,0 +1,32 @@
+Hi,
+
+I'd like to announce my intention to continue being PTL of the Data
+Processing program (Sahara).
+
+I’m working on Sahara (ex. Savanna) project from scratch, from the
+initial proof of concept implementation and till now. I have been the
+acting/elected PTL since Sahara was an idea. Additionally, I’m
+contributing to other OpenStack projects, especially Infrastructure
+for the last four releases where I’m core/root teams member now.
+
+My high-level focus as PTL is to coordinate work of subteams, code
+review, release management and general architecture/design tracking.
+
+During the Liberty cycle we successfully continued using the specs system.
+There were many new contributors during the cycle and we've renewed a lot
+the core reviewer team as well. Tons of operability and supportability
+improvements were done as well as number of interesting features.
+
+For Mitaka cycle my focus is to keep going in the same direction and
+to ensure that everything we're working on is related to the end users
+needs. So, in a few words it's about continuing moving forward in
+implementing scalable and flexible Data Processing aaS for OpenStack
+ecosystem by investing in quality, usability and new features. I'd like
+to highlight the following areas that I think very important for Sahara
+project in the Mitaka cycle: security of Sahara and Hadoop as well,
+scalability (first of all of Sahara itself) and EDP enchancements.
+
+A few words about myself: I’m Principle Software Engineer in Mirantis.
+I was working a lot with  Big Data projects and technologies (Hadoop,
+HDFS, Cassandra, Twitter Storm, etc.) and enterprise-grade solutions
+before (and partially in parallel) working on Sahara in OpenStack ecosystem.
