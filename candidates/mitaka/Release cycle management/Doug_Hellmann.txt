@@ -1,0 +1,30 @@
+I am announcing my candidacy for PTL for the Release Management team
+for the Mitaka release cycle.
+
+Although I only formally joined the release management team during the
+Liberty cycle, I have been active in release-related activities for
+much longer while serving as the PTL for Oslo. I worked with the
+release and infrastructure teams to develop the release tools and
+processes we use for Oslo libraries, and applying them to other
+projects that now manage libraries. I am a core reviewer on the
+requirements repository, and this cycle I started the work on
+automating project releases using the new openstack/releases
+repository. I was also involved in the process of moving server
+projects away from date-based versioning to using quasi-semantic
+versioning. Late in the Liberty cycle I started building reno, a new
+release note management tool, based on some requirements we gathered
+within the release team.
+
+My goal for the release team during Mitaka is to automate more of the
+work with a review process that allows projects to be self-service,
+with some lightweight oversight to manage release timing, version
+numbers, and messaging. I would like to complete the work we have
+started in the releases repository to allow project teams to ask for
+releases at any point in the cycle, thereby encouraging them to shift
+from a milestone-based to “intermediate” release model. Changing
+release models will reduce the effort required to create a release by
+removing some of the pressure to synchronize the activities of all
+projects on milestones and make it easier to release more often, while
+still giving us the benefits of stable branches for longer-term
+maintenance of selected versions. Milestones can become guidelines,
+rather than hard deadlines.
