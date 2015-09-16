@@ -1,0 +1,54 @@
+I would like to announce my candidacy for Horizon PTL for Mitaka.
+
+I've been contributing to Horizon since the Grizzly cycle and I've had the
+honor of serving as PTL for the past four cycles.
+
+Over the past couple of releases, our main goal has been to position Horizon
+for the future while maintaining a stable, extensible project for current
+installations and providing a smooth path forward for those installations.
+Which is proving a delicate balancing act. In Kilo, we added a great deal
+of toolkit for AngularJS based content and took a first pass at some AngularJS
+driven content in Horizon. Much of the Liberty cycle was spent applying the
+lessons we learned from the Kilo work and correcting architectural issues.
+While the amount of AngularJS based content is not growing quickly in Horizon,
+we have created a framework that plugins are building on.
+
+We've had several successes in the Liberty cycle.
+    We have a more complete plugin framework to allow for an increasing number
+    of projects in the big tent to create Horizon content. The plugin framework
+    works for both Django based and AngularJS based plugins.
+
+    Theming improvements have continued and is now far more powerful.
+
+    Many improvements in the AngularJS tooling. Including: sensible
+    localization support for AngularJS code; a more coherent foundation for
+    JavaScript code; better testing support; and an implemented JS coding
+    style.
+
+Areas of focus for the Mitaka cycle:
+    Stability. Continue to balance progress and stability.
+
+    Finding a better way to allow forward progress on AngularJS content inside
+    of Horizon. I've been advocating the use of feature branches for some time
+    and will look to push work there to help establish the patterns for
+    Angular in Horizon.
+
+    Continue progress in moving separable content out of the Horizon source
+    tree. This will benefit both service teams to make faster progress, while
+    reducing the overall scope of the Horizon project.
+
+    Focus work on areas of high benefit. There are a several reasons we chose
+    to adopt AngularJS. Most were around scaling, usability and access to
+    data. Let's focus on the areas with the greatest upside first.
+
+    Provide better guidance for plugins in the form of testing and style
+    guidelines.
+
+I'm still driven to continue the challenging work the Horizon community has
+undertaken to improve and look forward. If you'll have me, I'd like to continue
+enabling the talented folks doing the heavy lifting while balancing the needs
+of existing users. I believe if we continue to work through some of these
+transitional pains, we'll make significant progress in Mitaka.
+
+Thanks for your consideration,
+David Lyle
