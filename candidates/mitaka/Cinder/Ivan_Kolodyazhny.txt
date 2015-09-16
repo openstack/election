@@ -1,0 +1,42 @@
+Hello everyone,
+
+I'm announcing my candidacy for Cinder PTL for the Mitaka release.
+
+First of all, I would like to thank John and Mike for their great and hard
+work making Cinder such a great project with good and a big community.
+
+As a Cinder community we made a great progress not only with new features,
+but with improving Cinder quality too. Our community grows quickly and
+we are glad to see new contributors again and again.
+
+I've started work with OpenStack since Diablo release. I’ve been an active
+contributor to Cinder since Juno cycle [1].
+
+As a Cinder PTL I would like to focus on the following areas of improvements
+for the next release cycle:
+
+* Finally move all projects to Cinder API v2 and prepare to remove v1 API.
+
+* Better Cinder integration with other OpenStack projects like Nova and
+  Ironic, support Keystone API v3.
+
+* Continue to work on Cinder backups improvements like: scaling, performance,
+  etc.
+
+* Work with driver vendors to stabilize third party CI. I believe,
+  every PTL candidate will have this item on the list.
+
+* Improve Cinder test coverage and quality: we need to get functional tests,
+  better Tempest and Rally coverage, make our unit tests better
+
+We need to continue to be open for developers community and operators
+needs. Improving quality and growing the community are the tasks which should
+be done indefinitely. But we need to keep balance between new features
+development and support of existing ones by all drivers and stability of
+Cinder project.
+
+[1] http://stackalytics.com/report/contribution/cinder/180
+
+Thank you,
+Ivan Kolodyazhny (e0ne)
+
