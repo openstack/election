@@ -1,0 +1,41 @@
+My name is Boris.
+
+I'm announcing my candidacy for Rally PTL for the Mitaka release.
+
+Few years ago I started Rally to help OpenStack community to simplify
+performance/load/scale/volume testing of OpenStack and actually make it simple
+to answer on question: "How OpenStack perform (in ones very specific case)".
+
+Rally team did a terrific job to make from just a small initial 100 line
+script, project that you can see now.
+
+It covers most of the user cases, has plugins for most of the projects, high
+quality of code & docs, as well it's simple to install/use/integrate and it
+works quite stable.
+
+However we are in the middle of our path and there are plenty of places that
+should be improved:
+
+* New input task format - that address all current issues
+    https://github.com/openstack/rally/blob/master/doc/specs/in-progress/new_rally_input_task_format.rst
+
+* Multi scenario load generation
+     That will allow us to do the monitoring with testing, HA testing under
+     load and load from many "different" types of workloads.
+
+* Scaling up Rally DB
+     This will allow users to run non stop  workloads for days or generate
+     really huge distributed load for a quite long amount of time
+
+* Distributed load generation
+     Generation of really huge load like 100k rps
+
+* Workloads framework
+    Benchmarking that measures performance of Servers, VMs, Network and Volumes
+
+* ...infinity list from here:
+   https://docs.google.com/spreadsheets/u/1/d/16DXpfbqvlzMFaqaXAcJsBzzpowb_XpymaK2aFY2gA2g/edit#gid=0
+
+
+In other words I would like to continue to work as PTL of Rally until
+we get all this done.
