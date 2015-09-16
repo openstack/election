@@ -1,0 +1,39 @@
+
+Hi,
+
+I'd like to announce my candidacy for the RPM Packaging for OpenStack PTL.
+During the Liberty cycle I've been co-PTL'ing this together with Haïkel
+Guemar as a bootstrap. For the Mitaka cycle we've been notified that this
+setup needs to be adjusted to a single PTL. Therefore we discussed this
+and decided that I'd be announcing the candicacy.
+
+We've been mostly quiet on the mailing lists so far because we've been
+working together on unifying our existing packaging in order to iron out the
+differences for the benefit of being able to develop a common, standardized
+packaging for OpenStack on RPM base. As such, the work was mostly on the
+side of downstream adjustments in order to have a common state that can be
+maintained upstream. We have also spent significant amount of time in
+designing a solution that fits for all interested parties, and are just
+starting to upstream the bits for it. For us it is important that
+we can continue to work as we do right now under the OpenStack Big Tent in
+order to reach a critical mass in the project during the next cycle.
+
+My goal for the next cycle is to support the "bootstrapping" phase as much
+as possible by ensuring that we can develop a common packaging standard
+across all rpm based OpenStack distributions and are actually converging
+the downstream effort into those common packagings. For that we have many
+open action items that I'm aware of:
+
+* Improve documentation and transparency of the project
+* Foster collaboration on the existing spec files and motivate relevant
+  groups to contribute back to us
+* Design and Implement a gating policy on changes to the project
+* Reach the critical mass for the project so that it can self-sustain
+  in the future
+
+I'd like to work on all of them together with the other core members
+and anyone who is interested in contributing to the project during
+the next cycle.
+
+Thanks,
+Dirk
