@@ -1,0 +1,29 @@
+I am running again for the position of Manila PTL.
+
+I've been proud to serve as PTL for Manila for the first 4 releases and I while
+the project has been hugely successful and continues to grow, I still see areas
+where more work is needed to make Manila a world-class project.
+
+If elected PTL, my agenda for Mitaka will be:
+
+Alleviate Developer Pain - Too much time is wasted with unstable gate tests and
+slow test jobs. My first priority will be to make it easier and faster to get
+work done.
+
+Continue Expanding Community - The community has grown a lot and we are
+highly diverse, but I think more can be done to welcome new developers and
+to make it easier for people to get involved.
+
+Clean Up the Code - Manila has evolved somewhat from it's origins as a fork
+of Cinder, and we still carry about some old cruft. This is confusing to users
+and developers and makes it hard for new vendors to figure how how to write
+a driver. I propose fixing some longstanding inconsistencies and improving
+the interface between the Share Manager and the drivers.
+
+Deployer Quality of Life Features - While vendors will always push for features
+that show off fancy capabilities of their storage controllers, we have a
+responsibility to address the needs of deployers, such as scalability, high
+availability, and upgradeability. I would like most of the new feature work in
+Mitaka to be oriented around these areas.
+
+-Ben Swartzlander
