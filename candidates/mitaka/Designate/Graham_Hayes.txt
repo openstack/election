@@ -1,0 +1,42 @@
+Hi All,
+
+We have had a few cycles recently of massive technical churn. We moved 
+away from an API, an method of updating DNS entries on the servers, got
+incubated and survived the move to the big tent, and are now getting much more
+integrated into the OpenStack ecosystem with Heat resources, Neutron work, 
+among other things.
+
+We have had great leadership for this period, I am sorry to see Kiall leave 
+the PTL role he has performed so well over these cycles.
+
+I have been contributing to Designate since the Havana release, and was made a 
+member of core quite a while ago. We have managed to bring together a great 
+group of people who contribute to Designate, and I would hope to keep growing 
+our community over the next cycle.
+
+I want to focus on a few things this cycle, which I think will help us move 
+onward and upward:
+
+- Documentation
+
+We have some great code, but sometimes we lack instructions would that allow 
+others to use it to their full potential
+
+- Drivers
+
+We have a few Drivers for different DNS servers, and while we currently have
+a grading scheme, I think we need to ensure they are all fully tested, either 
+in the gate or in 3rd party testing.
+
+- The Big Rename
+
+We need to do this asap (as soon as we go into M development), and remove all 
+trace of "domains" from the code base.
+
+If elected I would try to work on these issues, and any others that may 
+(aka will) pop up in the cycle, while trying to get more people into the
+designate community.
+
+Thank you,
+
+Graham
