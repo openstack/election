@@ -1,0 +1,60 @@
+Hi everyone,
+
+I'm announcing my candidacy as ChefOpenStack PTL for the Liberty/Mitaka release.
+In case you are wondering why I wrote 'Liberty/Mitaka' and not just 'Mitaka',
+we are not directly coupled to the official release cycle and have just started
+to work on our stable/liberty release and will continue this for a while until
+we can start with Mitaka.
+
+Since we moved to the big tent a couple of months ago, we have made some
+significant
+changes and adaptions in our workflow and are now beginning to get back to speed
+with our main goals for Liberty and Mitaka.
+
+During the Kilo cycle we have started to establish a full integration testing of
+the OpenStack deployment with our cookbooks and the openstack-chef-repo to avoid
+any conflicts which may arise from the complexity of handling multiple cookbook
+repositories. We need to keep this as one of our focus points for the next
+release cycles. Although these initial steps where already quite helpful, we are
+still running into a lot of problems due to this mentioned complexity and
+interdependency between our cookbooks and the cookbooks depended on in
+these.
+
+My main goal for the next release cycle is to reduce this complexity and start
+the refactoring process for the most important cookbooks deploying the core
+OpenStack services. One big part in this process will be the refactoring of the
+service configuration templates and the reduction of partially redundant
+attributes used and redefined in multiple cookbooks. To simplify the handling of
+the cookbooks especially for new users, I also think it is necessary to
+refactor our libraries and move them at least partially into light-weight
+resources.
+
+Apart from this big refactoring topic, I would like to shorten our release
+cycles to get closer to the official release cycles and allow users to deploy
+the current OpenStack release with our cookbooks as soon as the OpenStack
+service projects release a newer version.
+
+Last but not least, I think we need to start focussing on advertising the Chef
+OpenStack project itself to get more of the users to contribute their adaptions
+into the 'official' project instead of forking it. A big part in this process
+will be the simplification of the process for new contributors. We might need a
+better documentation, faster reviews or amazingly fluffy green unicorns here, 
+but we definitely need to focus on this to get more people involved in the
+project
+as active contributors if we want to keep up with the constant changes and
+especially all the new and interesting projects arising.
+
+I have had the pleasure to be part of the Chef OpenStack project for
+about 2 years as a contributor and have also been a core reviewer for over a
+year now. I
+would like to focus a bit more on some organisational tasks in this project and
+continue some ideas I had during the last year as a core reviewer watching and
+reading some very interesting suggestions and concepts from people using and
+contributing to the project.
+
+Thank you for your time and consideration,
+
+    Jan Klare
+
+irc: jklare
+mail: j.klare@cloudbau.de
