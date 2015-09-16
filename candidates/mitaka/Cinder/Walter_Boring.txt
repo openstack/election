@@ -1,0 +1,43 @@
+Cinder community,
+
+I am announcing my candidacy for Cinder PTL for the Mitaka release.
+
+Cinder is a fundamental piece of the puzzle for the success
+of OpenStack.  I've been lucky enough to work on Cinder since the
+Grizzly release cycle.  The Cinder community has grown every release,
+and we've gotten a lot of great features implemented as well as many
+new drivers.  We've instituted a baseline requirement for third party
+CI, which is critical to the quality of Cinder.  I believe this goes
+a long way to proving to deployers that Cinder is dedicated to building
+a quality product.
+
+I believe the single best component of the project, is the diverse 
+community itself.  We have people from all over the world helping
+Cinder grow.  We have companies that compete directly with each other,
+in the marketplace for customers, working together to solve complex
+problems.  
+
+I would like to continue to encourage more driver developers to get
+involved in Cinder core features.   This is the future of the
+community itself and the lifeblood of Cinder.  We also need to get more
+active in Nova to ensure that the interactions are stable.
+
+The following is a list of a few areas of focus that I would
+like to encourage the community to consider over the next release.
+
+* Solidify all/any deadlines milestone deadlines early in the release
+* Iron out the Nova <--> Cinder interactions
+* Get active-active c-vol services working
+* Get driver bug fixes into previous releases
+* Continue the stabilization of the 3rd party CI system.
+* Support any efforts to integrate with Ironic
+
+
+There is always a long list of cool stuff to work on and issues to fix
+in Cinder, and the more participation we have with Cinder core the better.
+We have a strong and vibrant community and I look forward to working on 
+Cinder for many releases ahead.
+
+Thank you for considering me.
+
+Walter A. Boring IV (hemna)
