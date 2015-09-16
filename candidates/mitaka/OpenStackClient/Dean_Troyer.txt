@@ -1,0 +1,15 @@
+I would like to announce my candidacy for OpenStackClient PTL for the Mitaka release cycle.
+
+In the past cycle we added to the core contributor group and some additional regular contributors; I would like to thank them for their hard work. And also to encourage anyone else with a desire to improve this corner of the OpenStack user's experience to get involved.
+
+The highlights from the Liberty release timeframe include:
+
+* adding support for Volume v2 commands
+* major improvements to Image v1 and v2 commands
+* addition of the --os-cloud configuration support using os-client-config
+
+OSC is poised to undergo a major internal change in the coming months with the adoption of the OpenStack Python SDK.  This long-awaited development will ultimately let us remove a large number of dependencies and simplify the internal client manager and command implementations.  Ideally this will go unnoticed by the user community, aside from the availability of new Object Store and Network commands that have so far been unimplemented.
+
+Also, I would also like to thank the OSC team and everyone for your patience during my recent absence and recovery, and particularly to Steve Martinelli who 'watched the store' for us while I was away.
+
+I would be honored to have your support.
