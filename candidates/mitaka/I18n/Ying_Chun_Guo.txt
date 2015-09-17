@@ -1,0 +1,48 @@
+I, also known as "Daisy", would like to continue as the I18n PTL,
+if you will have me.
+
+I had a great time as the I18n PTL in Liberty,
+working with the whole team to make important changes happen.
+I would like to have another term to stabilize them.
+
+In June, I18n project became an official project.
+Translation contributors are treated the same as code contributors.
+30+ active translators are regarded as ATC's in Liberty.
+It is a great milestone for I18n team and translators.
+We are getting more official and more visible.
+
+In July, we started the trial of the new tool -Zanata,
+which is a open source based and OpenStack hosted traslation website.
+After a long time evaluation and improvement, in September,
+we officially migrated translations to Zanata.
+49 language teams are created and 130+ translators have been registered.
+Now we are running Liberty translation there.
+
+In September, we kicked off Liberty translation, which is under
+processing now. It's the first time that we translate on top of Zanata,
+the first time that we include Nova in the translation plan,
+and the first time we formally use two phases of string freeze.
+I'm trying my best to make sure everything is running well.
+When Liberty translation is done, we could review how we did and how
+to make them better.
+
+In Mitaka, I'm going to focus on blew items:
+
+1. Get official recognization to translators
+I'm going to add translation metric in stackalytics,
+and automate the process to award active translators "ATC"
+
+2. Improve translation quality
+I'm going to improve the list of translation terminologies, promote
+its broad adoption in all language teams.
+I'm going to boost the enablement of translation check website.
+
+3. Better cooperation with development team and documentation team
+
+I welcome any good ideas which could help the team to achieve
+these goals. Hope to get your support for my PTL role in Mitaka.
+I am honored to work with everyone to build up a better I18n project.
+
+Thank you.
+Daisy
+
