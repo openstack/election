@@ -1,0 +1,41 @@
+I respectfully respect your support to continue as your Magnum PTL.
+
+Here are are my achievements and OpenStack experience and that make
+me the best choice for this role:
+
+* Founder of the OpenStack Containers Team
+* Established vision and specification for Magnum
+* Served as PTL for Magnum since inception in November 2014
+* Successful addition of Magnum to the official OpenStack projects
+* Planned/led two successful Magnum Midcycle meetups in 2015
+* 4 terms of experience as elected PTL for Solum
+* Involved with OpenStack since Austin Design Summit in 2010
+
+What background and skills help me to do this role well:
+
+* 20 years of experience in technical leadership positions
+* Considerable experience leading milti-organization collaborations
+* Diplomacy skills for inclusion of numerous viewpoints
+* Ability to drive consensus and shared vision
+* Considerable experience in public speaking
+* Experience running design summit sessions
+* Deep belief in Open Source/Development/Design/Community
+* I love OpenStack and I love containers
+
+What to expect in the Liberty release cycle:
+
+We will continue to focus on making the best Containers-as-a-Service
+solution for cloud operators. This requires a valuable vertical
+integration of container management tools with OpenStack. Magnum is
+quickly maturing. Here are key focus areas that I believe are important
+for us to work on during our next release:
+
+* Functional testing, and unit test code coverage
+* Overlay networking
+* Storage features, including a shared storage solution
+
+I look forward to your vote, and to helping us succeed together.
+
+Thanks,
+
+Adrian Otto
