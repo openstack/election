@@ -1,0 +1,30 @@
+Hi all,
+
+I would like to announce my candidacy for the PTL position of Magnum.
+
+I involved in Magnum project starting from December 2014. At that time, Magnum's code base is much smaller than right now. Since then, I worked with a diverse set of team members to land features, discuss the roadmap, fix the gate, do pre-release test, fix the documentation, etc.. Thanks to our team efforts, in the past a few months, I saw important features were landed one after another, which I really proud of.
+
+To address the question why I am a good candidate for Magnum, here are the key reasons:
+* I contributed a lot to Magnum's code base and feature set.
+* I am familiar with every aspects of the project, and understand both the big picture and technical details.
+* I will have time and resources to take the PTL responsibility, mostly because I am a full time allocated to this project.
+* I love container.
+* I care the project.
+Here is more details of my involvement in the project:
+http://stackalytics.com/?module=magnum-group
+https://github.com/openstack/magnum/graphs/contributors
+
+In my opinion, Magnum needs to focus on the following in the next cycle:
+* Production ready: Work on everything that are possible to make it happen.
+* Baremetal: Complete and optimize our Ironic integration to enable running containers on baremetal.
+* Container network: deliver a network solution that is high performance and customizable.
+* UI: Integrate with Horizon to give users a friendly interface to use Magnum.
+* Pluggable COE: A pluggable design is a key feature for users to customize Magnum, which is always the case.
+* Grow community: Attract more contributors to contribute to Magnum.
+
+If elected, I will strictly follow the principal of being a OpenStack project, especially the four opens. The direction of the project will be community-driven as always.
+
+I hope you will give me an opportunity to serve as Magnum's PTL in the next cycle.
+
+Best regards,
+Hongbin
