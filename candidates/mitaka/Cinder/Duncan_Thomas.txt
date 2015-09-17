@@ -1,0 +1,65 @@
+Hi
+
+I'd like to announce my candidacy for Cinder PTL.
+
+I've been actively involved in Cinder as a core since it was split out of Nova,
+and with nova-volume before that. I've been involved in mentoring new people,
+reviews, code and community discussions all of that time. I've been an operator
+of Cinder in a large public cloud, including being called out at 4am when
+something breaks, giving me a great deal of sympathy for operational matters.
+Cinder has grown and matured at an impressive rate, and I now feel the project
+is at an important decision point about what we want to be going forward. With
+that in mind, my main aims as a PTL would be as follows:
+
+- Make the ideology of Cinder - standard features, good discoverability where
+  universal implementation of a feature isn;t possible, and keeping the tenant
+  experience as clean as possible - the admin experience should be as clean as
+  possible without compromising the tenant experience.
+
+- Matching our bleeding edge velocity with our trailing edge velocity - we
+  merged a bunch of features that only work in a very, very limited number of
+  drivers. We need to push implementation of these features as widely as
+  possible, and where a reasonable generic implementation can be made then we
+  need to push that as a requirement for adding the feature.
+
+- Stability and quality - our unit test test coverage has not improved
+  significantly in terms of lines of code or quality of tests, and our tempest
+  coverage has got worse. I suggest that we push for more tempest tests to go
+  with new features. The reliability and usability of third party CI can also
+  be incrementally improved - we've got nearly every driver being tested now,
+  lets make the test output more useful to developers.
+
+- Communication - Mike demonstrated the great value of clear, regular and open
+  communication and I intend to keep building on this example
+
+- Less bureaucracy that gets in the way - I think that the way we did
+  prioritisation in Liberty, while a good first attempt, can be improved,
+  particularly with dropping the review priority of tasks that are blocked
+  waiting for rework, so that more smaller patches can bubble up the priority
+  list. I'd also like to look at using review priority to encourage good
+  community behaviour (reviews of other people's code, bug fixes and triage,
+  test writing, documentation, etc)
+
+- Finishing open work before starting more work - we have a large list of
+  part-implemented tasks, so we should avoiding taking on new work that doesn't
+  drive these goals forward.
+
+
+
+
+The things I'd like to see finished in the M release:
+
+- Replication. At least 5 drivers implementing it.
+
+- Smooth upgrade experience - even if we can't get it to zero downtime, I'd
+  like a well documented, tested upgrade path and a well understood list of
+  work to be finished..
+
+- H/A - I believe we can have and should have a cinder experience where the
+  failure of any one node does not affect the externals of cinder, without
+  requiring pacemaker.
+
+
+
+Thank you for your consideration.
+
