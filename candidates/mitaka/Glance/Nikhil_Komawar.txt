@@ -1,0 +1,73 @@
+Hello everyone,
+
+I would like to herewith propose my candidacy for the role of Glance PTL for the Mitaka release cycle.
+
+I. Personal Commitment
+
+I am a full time upstream OpenStacker at IBM and have recently transitioned into this role with the condition that I will be given 100% time to focus on community issues, development and help solve upstream challenges. I am also committed to giving my full attention to Glance. Not too long ago, I have had a few conversations with the PTLs of other projects for either help them better use Glance or for dissolving the issues they were facing in their projectsw. However, in this cycle I would like to work with some of you in the capacity of inter-project liaisons to help better understand the usage and stability of Glance in respective areas and yet be involved with you in addressing those issues. I know this is added work that must not go unrewarded so, I would like to work out a plan with you that will enable distribution of power (if with more power comes more responsibility, visa versa must true, making it true claim). It has been enabled in Glance to some extent & I have learnt other bigger projects implementing this. I would like to make it a complete reality in Glance. I am also committed to documenting and improving the current specs process and criterion that will enable quicker turnaround time.
+
+At IBM, I have the pleasure of being part of team that has some of the most outstanding OpenStackers and I hope to collaborate more with them in Mitaka for solving (hard) problems.
+
+II. Liberty
+
+a) Stability
+
+Over 100 bugs were fixed in Liberty (including python-glanceclient, glance_store and Glance servers) with a relatively small review team. Glance is gradually improving momentum to help the different code proposals get time-justice for code reviews. Some features in Kilo introduced a number security bugs beyond expectations so, the further development of those features has been slowed down and focus has been shifted to fix the functionality, making it more stable and secure. Experimental features showed a smooth progress and close to no issues of such sort. A close eye on the reviews was kept to ensure so. Any spec proposals that showed potential security risks, shake stability or performance or refactor major parts of the code base were given a wait signal.
+
+b) Performance
+
+I consider them as systematic optimizations and sometimes systematic improvisations. Major disagreements on the path forward for optimizing streaming workflows for images data have been sorted out. Many new proposals were made however, due to lack of early time commitment from developers they were unable to be seen through. Continued feedback should be expected for similar proposals for glance_store in early Mitaka.
+
+c) Cross project communications & Process Evolution
+
+I have made an attempt to continually evolve our process to make it more engaging and community friendly. Now there are three meetings weekly that are a good place for collaboration on different aspects of Glance. Either me or a member of the Glance community is at the weekly CPL meeting to gather feedback from horizontal teams, cross project decision/efforts etc. as well as input has been provided using Glance’s perspective. I have had regular chats with Nova PTL on the outstanding issues of the Images APIs and adoption of v2 Images API by Nova. Feedback was provided at the DefCore mid-cycle as well as a welcoming hand was presented for attending Glance mid-cycle (even virtually) for those who could not make it.  In Mitaka, I hope to continue collaborating with the interested members there as well as in the other projects. I would like to pay close personal attention to the pressing matters that need short team resolution like the adoption of v2 API by Nova and Images API suitable for DefCore. Unfortunately, any of the existing (half) attempts at fixing this issue have been wasted as they were breaking some of the fundamental aspects of project. This matter would need wider input for a fine resolution and a change that would not break the world; of-course compromise is very likely for some but doesn’t need to be fundamentally disjoint with the newly established DefCore standard. It was realized early that a half baked attempt of making such a critical change would break core of Glance so, I have been contemplating on the future of the project. More clarity of thought has been accomplished during the conversations with the TC members, PTLs, Product WG liaisons etc. and I will continue to gather more feedback in Mitaka. It has been a pleasure to be part of (collaborating with) teams that help build very large cloud deployments and I find that experience valuable for solving this complicated matter. Not only upstream but at IBM too, I plan to closely interact with the technical and product leaders of the Public and Private cloud deployment to help solve such issues. My team at IBM enables me to have such interactions with veterans of OpenStack.
+
+III. Direction
+
+a) Short Term Goals
+There are four short team goals that seem important right away: DefCore requirements; Nova and Cinder v2 adoption/stability; cadence between developer and reviewer bandwidth; better collaboration via documentation, CPL & inter project liaisons power distribution.
+
+b) Mid Term Goals
+I think it’s vital that we pin down subtle aspects of v2 API in mid-term, primarily focus on Images however, at the same time ensure that all of our APIs are efficient and performant.
+
+The concept of tasks needs to have a clear picture in all the developers as well as operators viewpoints. There are equally compelling arguments to make them user centric only, admin only and open to both. Most important use cases will be taken into account and a plan for tasks will be setup.
+
+Some of the operators and active developers wish to focus on performance improvement and reliaiblity of image data delivery — so this will be another very important mid-term goal.
+
+Definition of core fundamentals like immutability of images & Glance architecture seems critical. Also, it is necessary to be aware about the side-effects of feature proposals that can potentially lead to breaking changes. It has come to my notice that many a times such proposals are made and the proposers find it difficult to grasp how the change could affect Glance. We will try to solve this issue via collaboration and documentation.
+
+c) Long Term Goals
+
+The long term goals follow the mid-term goals. Solidification of the Images v2 API and planning long term support for the same. There’s already some work happening to set a direction for this.
+
+Artifacts and a generic repository — as per Glance’s mission statement, this is an important goal. A generic data asset service would be an excellent one stop shop for users. Possibly evolving in to a Marketplace like stage for many of OpenStack assets (Artifacts).
+
+Addressing storage and retrieval of Images issues for smaller size data (Image record in DB) and for larger blobs of data (stored in the backend store) — this may be termed as performance problem but as a long term objective it will be a clear separation of concerns and give ability to operators to work on image or artifact data in a efficient manner.
+
+VII. Community
+
+Glance community has been traditionally known to be friendly to help new developers join and it avoids the influx vs. outflux issues. Keeping the long term objectives in mind this remains important. I will try to keep it a conducive environment for all concerned individuals. Without losing hind sight help focus on the short term goals, I will enable specific individuals to make important calls if it helps move forward with pressing issues.
+
+VIII. Solving Hard Problems
+
+a) Collaboration
+
+The tradition of pre-summit, within cycle video and face-to-face syncs will be continued. Inputs of the CPLs, inter-project liaisons will be encouraged and welcomed. Glance representatives will engage in certain important projects regarding images related subject matter. Artifacts representatives will engage in other working groups to make the API more usable and adoptable. I plan to keep working with the DefCore committee and PTLs to help bridge the gap of overlapping issues. OpenStack is a diverse community and so is the Glance team. So, we will focus on keeping weekly syncs addressing important issues interactively. Overall, collaboration will be one of the most vital component of this cycle.
+
+b) Themed Focus
+
+The most important themes that come to mind at this point of time are: getting a standard API for DefCore, interaction with Nova team to enable v2 adoption, documentation of the features and processes (this will also help with collaboration), Artifacts and it’s API, performance and reliablilty & stability. A sub-team leader would be chosen for each of these themes and periodic sync would be made effective for a good team effort.
+
+c) Core reviewer bandwidth, their influx and outflux
+
+Glance has had the mis-fortune for losing important and talented developers time and again due to commitment changes (and not a result of drive away from the team). We will continue to keep the doors open for them and if any of the super active OpenStackers wish to become core in short window, there will be a easier process of doing so. This will help fix any outstanding bugs, keep the gate steady and help a good momentum for the release of libraries. Good collaborators have always been good drivers & it would be wise to continue in that direction. Good developers have been engaged in Liberty to become part of Glance and I will continue to do so for Mitaka.
+
+d) One OpenStack
+
+No matter how easy it is to define solo project priorities, we all live in the single OpenStack realm. Operators have to deploy Glance alongside other OpenStack services and there is a level of understanding that will be put in into action while defining Glance priorities so that other projects are not severely affected. I believe in ‘One OpenStack & a unified vision’ and hope you are with me.
+
+
+
+Thank you for your consideration in allowing me to continue serving as PTL for Mitaka cycle.
+
+Nikhil Komawar
