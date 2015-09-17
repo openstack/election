@@ -1,0 +1,30 @@
+Hello everyone,
+
+I have had the pleasure to be involved with the RefStack team at a
+very early state and to witness its growth from a Stackforge project
+to a "Big Tent" project!  The RefStack project has come a long way
+and has made significant progress.  Still, there are tons of work
+that need to be continued and challenges that need to be overcome on
+this long journey to make OpenStack Interoperability a reality.  This
+is the reason why I want to raise my hand again and propose my
+candidacy for RefStack PTL.
+
+Thanks to a small but dedicated team, we have accomplished our initial
+goals in:
+1) Providing a simple and easy to use test harness to enable users/vendors
+   to run tests on their clouds.
+2) Building a test result collection and reporting service to support
+   the DefCore testing process.
+
+In the Mitaka cycle, I see our priorities being:
+1) Grow the RefStack team.
+2) Expand refstack-client test coverage by including in-tree gate tests
+   which are runnable under Tempest.
+3) Implement a vendor registration process to facilitate the publishing of
+   results data with vendor association.
+4) Statistics analysis of the collected result data.
+
+I appreciate your vote,  and I am looking forward to bringing our team and
+project to the next successful level.
+
+Catherine
