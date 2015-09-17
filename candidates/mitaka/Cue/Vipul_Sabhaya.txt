@@ -1,0 +1,27 @@
+Hello,
+
+This will be the first official PTL election for Cue, and I would be
+honored to serve another term leading the project for the M Cycle.
+
+Cue is a relatively new project in Openstack, and was approved into the
+Big Tent during Liberty.  I have been involved with Cue from the
+beginning, from initial POC to having a product that is production
+worthy.  In my past life, i’ve been a member of the Trove Core team.
+
+During the Liberty Cycle, Cue has become a solid product with a
+control plane that can manage per-tenant RabbitMQ Clusters.  We spent
+a lot of time beefing up our tests, and boast >90% unit test coverage.
+We also added Tempest tests, and Rally tests, including gating jobs
+for both.  Our documentation has also been revamped considerably, and
+allows new contributors to ramp up quickly with the project.
+
+During the M cycle, I would like to focus on building a community and
+getting additional contributors to Cue.  I would also like to focus
+the team on multi-broker support, including adding Kafka as a broker
+that is managed by Cue.
+
+I believe Cue has come a long ways in a short time, and going forward
+has the opportunity accelerate the growth in terms of features,
+quality, and adoption.
+
+Thanks for your consideration!
