@@ -1,0 +1,25 @@
+Friends,
+
+After discussing this with a number of you and once again reaffirming support
+from my employer it gives me great pleasure to announce my candidacy for
+leadership of OpenStack Security Project
+
+The evolution from an informal security group to the recognized security
+project for OpenStack has been a tremendous one. With an established mid-cycle
+process and massive leaps forward in terms of capability I'm incredibly proud
+of what we have managed to achieve in the last 6 months and eagerly look
+forward to what the next release cycle will bring.
+
+We have more external contribution to our projects than ever before, more
+community engagement and general awareness of security. We have developers
+referencing security guidelines and contributing to our book - The OpenStack
+Security Guide as well as adopting projects such as Bandit which has been a
+major success.
+
+You all know me and many of you have been with me from the start. We've really
+built the security project into something to be proud of and it would make me
+incredibly proud to be given the opportunity to lead the team once again.
+
+Thanks,
+
+-Rob
