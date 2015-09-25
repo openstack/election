@@ -1,0 +1,69 @@
+I am announcing my candidacy for a position on the OpenStack Technical
+Committee.
+
+I am currently employed by HP to work 100% upstream on OpenStack. I
+started contributing to OpenStack in 2012, not long after joining
+Dreamhost. In the time since, I have worked on a wide variety of
+projects within the community. I am one of the founding members of the
+Ceilometer and unified command line projects. I am also part of the
+team working on the Python 3 transition, and have contributed to
+several of the infrastructure projects. I formally joined the Release
+Management team at the start of Liberty, and have been working on
+updating processes and tools to make releases easier for all project
+teams. I will be PTL of the Release Management team for the Mitaka
+cycle.  I served as PTL for the Oslo project for three terms, and I
+have served on the Technical Committee for the last two years. In
+addition to my technical contributions, I helped to found and still
+help to organize the OpenStack meetup group in Atlanta, Georgia.
+
+I characterize most of my recent work as enabling others in the
+community. As Oslo PTL I helped the team complete its transition from
+copy-and-paste sharing to true shared libraries by creating new
+processes and tools. Ceilometer was one of the earliest projects to
+need to interact with a significant number of the other projects at a
+code level, and my experience on that team led me to establish the
+Oslo liaison program when we recognized a similar need as adoption of
+Oslo libraries expanded. That pattern has been reused by many of the
+other cross-project teams to establish formal lines of communication
+to address our community’s growth. The self-service release review
+tools the release management and infrastructure teams are building now
+are another effort to remove process bottlenecks by enabling project
+teams to manage their own releases.
+
+During my past terms on the TC, I worked to find compromise positions
+and clarity, incorporating the views of other committee members while
+tempering them with my own. Several times I wrote the first draft of
+policy changes on contentious topics, moving abstract arguments to
+discussions of concrete terms. This was especially true for the shift
+from the incubation to “big tent” governance models late in 2014. I
+prepared several alternate versions of the policy changes before an
+approach was found that appealed to all committee members.  Iteration
+for the win.
+
+All of these experiences have given me a unique cross-project
+perspective into OpenStack, and reinforced for me the importance of
+communication between project teams to smooth out the integration
+points and remove friction.  Improving communication and cross-project
+efforts is a key role for the Technical Committee. For example, during
+Mitaka I will be working to support the interoperability goals of the
+community by ensuring the DefCore committee have and understand all of
+the input from project contributors to set the right technical
+direction, and that the contributors in turn understand the issues
+raised from within the DefCore committee so we can add or modify
+features to improve interoperability between OpenStack deployments.
+
+The OpenStack community is the most exciting and welcoming group I
+have interacted with in more than 20 years of contributing to open
+source projects. I'm looking forward to continuing to being a part of
+the community and serving the project.
+
+Thank you,
+Doug
+
+Review history: https://review.openstack.org/#/q/reviewer:2472,n,z
+Commit history: https://review.openstack.org/#/q/owner:2472,n,z
+Stackalytics: http://stackalytics.com/?user_id=doug-hellmann
+Foundation: http://www.openstack.org/community/members/profile/359
+OpenHUB: https://www.openhub.net/accounts/doughellmann
+Freenode: dhellmann
+Website: https://doughellmann.com
