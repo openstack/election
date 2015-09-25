@@ -1,0 +1,31 @@
+Hello!  I would like to submit my candidacy for the TC election.
+
+I work for Red Hat where I am focused upstream on OpenStack and related
+technologies.  I've been involved in open source development for over 10
+years.  I've been involved in OpenStack development since the Fall of
+2011. I've been a TC member since the Fall of 2012.  Earlier on in
+my time in OpenStack I worked on Nova, Oslo, and the Vulnerability
+Management team.  I also served as the PTL of Nova for the Havana and
+Icehouse releases.  Lastly, I've been an elected individual
+representative on the OpenStack Foundation board of directors since
+January of 2015.
+
+Most recently I have been working on OpenStack networking.  I've been
+looking into a lot of open source networking developments that could
+help improve our networking story for bare metal, VMs, and containers.
+This has included contributing to Neutron as well as OVN in the Open
+vSwitch project.
+
+I believe I'm well positioned to help continue to provide guidance to
+cross project issues as a TC member.  I've built up strong cross project
+perspective by contributing to different parts of OpenStack and talking
+to many people from different organizations consuming and contributing
+to OpenStack.
+
+It would be an honor to continue my role on the TC for another year.
+
+Thank you,
+
+--
+Russell Bryant
+IRC: russellb
