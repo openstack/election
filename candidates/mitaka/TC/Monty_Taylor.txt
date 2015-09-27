@@ -1,0 +1,48 @@
+I would like to continue serving on the TC, if you'll have me.
+
+Although past performance is no guarantee of future profits, I think it's
+worth noting that I've been doing this for a while now. I was on the
+precursor to the TC, the Project Policy Board. Over the time I've been
+the instigator or a key player in several major initiatives, such as
+Stackforge, the Project Testing Interface and The Big Tent.
+
+Thing is, that really doesn't matter, because while understanding the past is
+important if you want to avoid re-learning the same lessons, we need to be
+firmly focused on the future, and to be willing to make changes as needed to
+accomodate the reality we find ourselves in.
+
+I think it's time for the TC to take a more active position on technical
+design issues.
+
+This past cycle, Sean and Anne wrote up a spec that came from the last summit
+around standardization of the keystone catalog data. Doug dove in to issues
+around Glance upload. Both are instances where clear technical leadership
+and design was needed, and in both instances we understand that it goes hand in
+hand with being clear to our deployers and end users about what it is that
+we expect via interaction with DefCore.
+
+I want to see more things likethat, and I'd like to be involved with moving
+the TC another step down the road from being a "policy board" to being a
+"technical committee".
+
+On the social side, I'd like to work with people on figuring out how to
+expand our capacity for trust across the project. We set up all of our
+systems and culture initially to protect against bad-faith and antagonistic
+behavior - but we've been doing this long enough now that I think the
+assumption of bad and protective behavior is counter productive. We're never
+going to get the big issues fixed if we can't land hard patches.
+
+Finally, I think we need to re-think our mission.
+
+   The OpenStack Mission: to produce the ubiquitous Open Source Cloud
+   Computing platform that will meet the needs of public and private clouds
+   regardless of size, by being simple to implement and massively scalable. 
+
+That mission is about clouds, and I think it has completely forgotten a key
+ingredient - users. Focusing on meeting the needs of the clouds themselves
+has gotten us to an amazing place, but in order to take the next step we
+have to start putting the consumers of OpenStack Clouds front and center in
+our thinking.
+
+Thank you for the trust you've placed in me so far, and I hope I've lived up
+to it well enough for you to keep me around.
