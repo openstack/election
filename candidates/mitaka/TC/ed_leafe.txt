@@ -1,0 +1,24 @@
+Greetings Stackers! I'm announcing my candidacy for the Technical Committee
+Elections.
+
+Those of you who have been involved in OpenStack most likely know me, as I was
+part of the original team from Rackspace that created OpenStack in 2010. For
+the past year or so I have been employed at IBM to work on 100% upstream
+OpenStack development. Part of that time has been spent getting a good overview
+of both the project and the community behind it. I've also placed some of my
+focus on the groups of people working *with* OpenStack, and not just those
+developing it. And to that end I've been working with the current TC as much as
+possible, especially in the areas of API standardization and consistency. I'm
+always lurking on the regular TC meetings (and sometimes throwing in my two
+cents), and reviewing as much of the material as I can. I believe that I can
+have a much greater impact as part of the TC instead of just being that
+occasional voice from the back of the room.
+
+There are some good reasons not to vote for me: the other TC candidates. I wish
+I could run on a "throw out the bums" platform, but that's simply not possible.
+I know all the current members, and they have all done an excellent job this
+past year, and would all represent the community well if re-elected. I can only
+promise that if elected, I will work hard to have at least as much positive
+impact on the community as the TC member I might replace. That will be a
+difficult task indeed, but I believe that I have the long-term experience to
+help guide OpenStack as it continues to grow and thrive in the future.
