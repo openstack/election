@@ -1,0 +1,43 @@
+I'd like to announce my candidacy for the TC election.
+
+A bit about me and my involvement with OpenStack: I've been
+involved with OpenStack for a long time now in various capacities.
+Most recently, I was the PTL for Neutron for the Juno, Kilo and
+Liberty cycles. I've been a core reviewer on Neutron since July of
+2013. I helped to write the Project Team Guide [1] by participating
+in the sprint during it's creation. I founded and continue to lead
+the Minnesota OpenStack Meetup [2]. I've spoken at many OpenStack
+conferences and other Open Source conferences.
+
+Given the "Big Tent" governance model we now find ourselves under,
+my experience in leading Neutron as it adopted the "Neutron Stadium"
+is very relevant to the current state of OpenStack. While leading
+Neutron, the "Neutron Stadium" allowed many new project teams to
+develop and grow. I hope to be able to work with new OpenStack
+projects and guide them as they grow into OpenStack projects. I'd
+also like to ensure the uniqueness which each projects brings to the
+table isn't lost when it becomes an OpenStack project. While I
+firmly believe each project must adopt the Four Opens [3] in order
+to become an OpenStack project, it's important to not lose the
+original spark which was lit to start these projects as they move
+into the Big Tent.
+
+If I'm elected, I will continue to dedicate time to work upstream
+and help new and old projects. I'll work hard to assist anyone who
+requests my help. And I'll continue to strive to do what I can
+to ensure OpenStack's future success.
+
+OpenStack has been an amazing community to be involved in. I am
+fortunate to have been a part of this community for a long time now,
+and should I be elected, I look forward to the chance to help guide
+it while serving on the TC for the next two cycles!
+
+Thank you!
+
+--
+Kyle Mestery
+IRC: mestery
+
+[1] http://docs.openstack.org/project-team-guide/
+[2] http://www.meetup.com/Minnesota-OpenStack-Meetup/
+[3] http://docs.openstack.org/project-team-guide/introduction.html#the-four-opens
