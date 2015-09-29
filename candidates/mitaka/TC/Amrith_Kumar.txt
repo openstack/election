@@ -1,0 +1,116 @@
+Greetings,
+
+I’m writing to submit my candidacy for election to the OpenStack
+Technical Committee.
+
+By way of introduction, my name is Amrith Kumar, I am the Chief
+Technology Officer[1] at Tesora[2], a company focused on
+Database-as-a-Service and the OpenStack Trove project.
+
+As OpenStack evolves, so too should the Technical Committee. I believe
+that the Technical Committee has a very high representation from the
+core (nova, cinder, swift, glance, neutron, ...) projects, and there
+needs to be more representation of the other projects in OpenStack
+that are not part of this core (trove, sahara, ...). I believe that
+the future success of OpenStack depends heavily on the successful
+integration of these non-core projects, and the ease with which people
+can deploy the core and non-core components of OpenStack.
+
+If elected, I would bring a different perspective to the TC, one that
+would broaden the representation of the non-core projects on the
+Technical Committee.
+
+Here is a quick summary of what I do relative to OpenStack, and why I
+believe that you should consider my candidacy for TC
+
+   - active contributor and member of the core review team for Trove,
+     and spend all of my time on upstream development activities
+     related to OpenStack Trove. I am also a periodic contributor to
+     Oslo and the Trove liaison to Oslo
+
+   - authored the book on OpenStack Trove[3] along with Doug Shelley,
+     a co-worker and contributor to the Trove project
+
+   - OpenStack evangelism and outreach activities include
+
+          - Frequent participant and speaker at a variety of technical
+            events where I have spoken about OpenStack in general, and
+            sometimes Trove in particular
+
+          - Frequent participant in the Boston OpenStack Meetup,
+            presenter at a number of OpenStack Meetups all over the
+            country
+
+	  - Actively promoting an initiative called “OpenStack in the
+            Classroom” [4] that I shared on the mailing list several
+            months ago. I have had good luck promoting it to a number
+            of colleges in the Boston area
+
+    - chosen by the OpenStack Foundation to serve as part of a global
+      committee of OpenStack experts developing a list of Domains and
+      Tasks essential for OpenStack administration professionals.
+
+I believe firmly that the long term success of OpenStack depends on
+the ease with which users are able to deploy and bring a cloud into
+production. The big tent proposal was a very important step in that
+direction but much remains to be done.
+
+It is essential that we make it easier for users to deploy and use
+other projects that are not part of the “core”, projects like Trove,
+Sahara, Magnum, and so on.
+
+A current example of the kind(s) of issues that I believe to exist
+relates to the creation of protected ‘service resources’ that make it
+possible for services to provision servers and storage in tenant
+context while making it impossible for tenants to manipulate these
+resources other than through the service that provisioned them
+[5],[6].
+
+This is an example of a specific initiative that I have been working
+with members of the community to address.
+
+This is a feature that will have to be provided by the core projects
+and the beneficiaries are the non-core projects that request these
+'service resources'.
+
+I believe that it is imperative that the Technical Committee take a
+leadership role in addressing these kinds of issues, as it did in the
+big-tent approach.
+
+The activities of the TC align closely with my own skills and past
+experience which include architecting and implementing complex
+computer architecture, with flexible and extensible API's and then
+working with diverse teams to deliver the software that implements
+these. I work very effectively as a facilitator of teams and in
+helping groups of people work together.
+
+I believe that I will be able to work with the rest of the team and
+drive this kind of activity to successful completion. I am committed
+to the success of OpenStack and would like to contribute further as a
+member of the Technical Committee.
+
+I look forward to your support in the upcoming election, and I thank
+the outgoing members of the TC for their hard work and the solid
+foundation that they have laid for future committees.
+
+Here are some more links:
+
+     Official Candidacy: [this review]
+     Review history: https://review.openstack.org/#/q/reviewer:9664,n,z
+     Commit history: https://review.openstack.org/#/q/owner:9664,n,z
+     Stackalytics: http://stackalytics.com/?user_id=amrith&release=all
+     Foundation: http://www.openstack.org/community/members/profile/15733
+     Freenode: amrith
+     LinkedIn: http://www.linkedin.com/in/amrith
+
+Thank you,
+
+-amrith
+
+[1] http://www.tesora.com/people/amrith-kumar/
+[2] http://www.tesora.com/
+[3] http://www.apress.com/9781484212226
+[4] http://openstack.markmail.org/thread/ukckrielspbrjejp
+[5] https://review.openstack.org/#/c/186357/
+[6] https://review.openstack.org/#/c/203880/
+
