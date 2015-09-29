@@ -1,0 +1,56 @@
+I'd like to submit my candidacy for the TC Election.
+
+I've been involved with OpenStack since the beginning of the Folsom
+release. We may have worked together on parts of Nova, Tempest,
+DevStack, Grenade, or in generally debugging failures in the upstream
+gate in OpenStack. Or from things like the gerrit-dash-creator that
+makes it easy for teams to build custom review dashboards.
+
+I'm a strong believer in the Big Tent approach to OpenStack. I was one
+of the early instigators of that conversation [1], which as with all
+things got better with more smart people involved in it. I'm also a
+strong believer that the longevity of the OpenStack project is about
+having a solid and small on ramp that gets OpenStack in as many places
+as possible. And a clear path to expand it over time. This was one of
+the reasons I believed the compute-starter-kit was an important tag
+that the TC bless [2].
+
+Over the past year I've spent time on decomposing and modularizing
+OpenStack components. We no longer test all the projects and all the
+libraries in one giant gate queue. We now have a plugin framework for
+DevStack and Grenade that makes it easier for people to expand on top
+of it.
+
+I've also been focussing on the API side of OpenStack. In the API
+working group, and on the Nova project. I helped define the
+Micro-version approach that is used in Nova, and has been adopted by
+other projects in OpenStack [3]. This has openned up a new way for
+projects to evolve their API while not breaking existing applications.
+
+Over the next couple of cycles my focus is going to be interop, with
+an eye on the Service Catalog and the API of projects. I hope to do
+that work with a broad range of contributors to make the end user
+experience of OpenStack much better.
+
+In my role at Hewlett Packard I've got the freedom to work on many of
+these larger issues in the way that works best for the community.
+
+If this is the kind of voice that you would like on the TC, please
+feel free to vote for me. It would be my honor and pleasure to
+continue to represent you, and the mission to expand OpenStack's
+reach, on the TC.
+
+       -Sean
+
+--
+Sean Dague
+irc: sdague
+
+1. https://dague.net/2014/08/26/openstack-as-layers/
+2. http://governance.openstack.org/reference/tags/compute_starter_kit.html
+3. https://dague.net/2015/06/05/the-nova-api-in-kilo-and-beyond-2/
+
+Review history: https://review.openstack.org/#/q/reviewer:2750,n,z
+Commit history: https://review.openstack.org/#/q/owner:2750,n,z
+Stackalytics: http://stackalytics.com/?user_id=sdague
+OpenHUB: https://www.openhub.net/accounts/sdague
