@@ -1,0 +1,53 @@
+Greetings Stackers,
+
+Some of you I know, some of you I'm meeting for the first time.
+
+Through the last 3 years, since I got involved with OpenStack, I've
+seen it grow and mature, and I want to make sure it continues to as we
+all raise the bar on what we expect from the not so little cloud engine
+that could.
+
+I've been involved with some controversial projects, and been pleased
+to watch our community handle most of the controversy by simply choosing
+to make our developers' actions uncontroversial with the big tent. I aim
+to continue this trend of being inclusive and supportive of the efforts
+of everyone who wants to throw their hat in as an OpenStack project.
+
+I intend to put users first, and operators second, with our beloved
+developers third. I consider myself "all of the above", and I think that
+should bring useful perspective to the TC. This isn't an area I think
+OpenStack has failed in, but I believe it requires constant vigilance.
+
+I do have a specific agenda for all of OpenStack, and which I will use
+my TC seat to advance whenever possible:
+
+- Streamline everything. There are parts of OpenStack that scale to
+the moon, and parts that don't. I think OpenStack should try hard for
+everything with the OpenStack moniker on it to put performance and
+stability above all else.
+
+- Measure efficiency. We don't necessarily measure how efficient OpenStack
+is, or how much each change is affecting its efficiency. We have blog
+posts, and anecdotes, but I want to have actual graphs that belong to
+the community and show us if we're living up to our goals.
+
+- Resiliency. Once we're streaminling things, and measuring our progress,
+we should be able to separate performance problems for reliability
+problems, and make OpenStack more resilient in general. This serves
+users and operators alike, but it may be hard for developers. That's ok,
+we like hard stuff, right?
+
+- No sacred cows. I feel like sometimes the tech we have chosen is
+either begrudgingly kept because there's nothing good enough to change,
+or hallowed as "the way this works." I would like to challenge some of
+those cows and see if we can't do a little bit of work toward streamlining
+and resilience by challenging conventional wisdom.
+
+I'm going to work on these things from outside the TC anyway. However,
+with the added influence that a seat on the TC provides, I can certainly
+work on these things even more.
+
+Thank you for your time!
+
+Clint Byrum
+IBM
