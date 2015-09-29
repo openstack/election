@@ -1,0 +1,36 @@
+I am writing to let you know I am running for a position on the TC.
+
+Here is my candidacy statement for your review.
+
+I am not your typical candidate, which is one reason that I am asking for your vote. I have a technical background,
+with over a decade of software development experience. I have a marketing background, with over a decade of 
+Technology, Product and Brand marketing experience. I have a business development background and have been 
+an entrepreneur. I have been a product manager and a software planner. It is this combination of experiences 
+that I have accumulated during my almost 35 years in the technology industry that I believe will enable me to 
+provide unique value as a member of the TC.
+
+I have been an active member in the community since 2013, working with Community teams to understand market-segment 
+needs and/or barriers to their deployment of OpenStack and bringing that information to the Community in the form 
+of specs, blueprints, prototypes and user stories (win the enterprise work group, enterprise work group, product 
+work group). These teams have brought resources to develop these capabilities (one example is improving upgrade 
+capabilities through versioned objects implementation) and have been able to close gaps resulting in expanding 
+Enterprise deployments of OpenStack. 
+
+As a TC member, I will work to support our success by utilizing my project/program management experience. 
+Specifically, I will:
+1) Tap the collective market knowledge within our Community to identify innovative capabilities that will define
+the defacto cloud computing platform of the future.
+2) Work to bring projects together to define and implement cross-project capabilities and initiatives.
+3) Continue the development of a multi-release roadmap process.
+
+I believe that a diverse Community will enable us to develop more innovative software that will meet the needs
+of global markets. I work with both the Diversity Work Group and the Women of OpenStack to help strengthen the 
+diversity of our Community. 
+
+As cross-project coordination needs expand and concepts like big tent stretch our capabilities, I believe 
+that my skill-sets, experiences, and values align well with the emerging needs within our community. 
+
+I would appreciate the opportunity to further my contributions to our Community and thank you for your 
+consideration.
+
+Carol Barrett
