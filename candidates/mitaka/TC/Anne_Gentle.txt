@@ -1,0 +1,50 @@
+I have worked at Rackspace on the OpenStack collection of projects for five
+years now, working primarily on documentation. Rackspace is one of the founding
+organizations and currently running and supporting both public and private
+clouds. I work on the developer experience team at Rackspace where we advocate
+for the cloud developer through support, tools, outreach in the community, and
+documentation.
+
+In that time I've learned a lot about the people and projects that make up
+OpenStack, and I've served the project in capacities that are often lacking in
+open source -- documentation, communication, API standards, and on-boarding
+newcomers, especially under-represented groups such as women in technology.
+
+The growth of OpenStack as a whole has been phenomenal. That growth and
+attention has afforded us some experimentation with community, collaborative
+documentation. In 2012 we assembled a team of operators to write the OpenStack
+Operations Guide that now is available as an O'Reilly book. We copied that
+model successfully twice now with the Security Guide and the Architecture and
+Design Guide. Now project teams are completing focused documentation efforts.
+In 2014 the docs team implemented a new RST-based web design that makes the
+docs.openstack.org site more usable and also easier to contribute to. In the
+Kilo release we saw the highest number of docs contributors were for the REST
+API documentation. In the past six months I've been writing blog entries with
+fellow TC members in order to offer a line of communication beyond the mailing
+lists. This year my focus has been on API documentation and cross-project work,
+all the while supporting Docs PTL Lana Brindley in continuing the many
+documentation efforts.
+
+Why should I earn your vote? Vote for me if you care about cross-project
+collaboration and communication especially. In the next year I want to find
+innovative solutions to hard problems as OpenStack matures and continues to
+strive for interoperability.
+
+My expertise and experience in end-user support including useful and consistent
+REST APIs lends itself well to working on the Technical Committee. I have an
+extensive network of relationships with both public and private cloud experts
+at Rackspace and beyond.
+
+I am interested in the long-term viability of OpenStack as a whole. I intend to
+continue working hard for the community. I believe the Technical Committee is
+the best place for me to work with others to keep OpenStack on the right track
+to offering an open source cloud for the world.
+
+Get to know me and my work:
+OpenStack profile: https://www.openstack.org/community/members/profile/87
+OpenStack blog: https://www.openstack.org/blog/author/annegentle/
+Stackalytics: http://stackalytics.com/?user_id=annegentle
+Reviews: https://review.openstack.org/#/q/reviewer:%22Anne+Gentle%22,n,z
+Commits: https://review.openstack.org/#/q/owner:%22Anne+Gentle%22,n,z
+IRC: annegentle
+Blog: http://justwriteclick.com/
