@@ -1,0 +1,43 @@
+Hello to you all.
+
+I would like to propose myself as a candidate for the Technical Committee for
+the upcoming term. The reasons for running in the last election [1]
+are still relevant for this election of the TC.
+
+Since the last election my involvement in OpenStack has increased with a
+spotlight on the Operators aspect of the community:
+
+    - Focusing on the ops-tags-team[2] helping to create tags with the intent of
+      creating information relevant to Operators.
+    - Helping to vet and review submissions to the OpenStack Planet[3] and
+      contributing as a core in openstack-planet-core.
+    - Participating in the Item Writing Committee of the first Foundation
+      initiative for the inaugural OpenStack Certification Exam Program.
+
+As an OpenStack community we have made some huge steps in the right direction,
+and are bringing more and more of the Operator and User community into our
+midst. Operators and Users should also be represented in the
+Technical Committee.
+
+It is my hope that the electorate accept that there is a huge benefit,
+and also a clear need, to have representation from all aspects of OpenStack, not
+only from the developer community. When this happens - the disconnect (and
+sometimes tension) that we have between these different parts will cease to be
+an issue and we as a community will continue to thrive and grow.
+In order to finally bridge this gap, it is time to open the ranks, bring an
+Operator into the TC and to become truly inclusive.
+
+I humbly ask for your selection so that I may represent Operators in the
+Technical Committee for the next term.
+
+Thank you for your consideration.
+
+Some more information about me:
+OpenStack profile: https://www.openstack.org/community/members/profile/15265
+Reviews: https://review.openstack.org/#/q/reviewer:%22Maish+Saidel-Keesing%22,n,z
+IRC: maishsk
+Blog: http://technodrone.blogspot.com
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2015-April/062372.html
+[2] https://review.openstack.org/#/q/status:open+project:stackforge/ops-tags-team,n,z
+[3] https://wiki.openstack.org/wiki/AddingYourBlog
