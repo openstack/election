@@ -1,0 +1,26 @@
+I hereby announce my candidacy for the OpenStack Technical Committee election.
+
+I am currently employed by Red Hat and spend all my time working on upstream
+OpenStack development. Something I've been doing since 2011. Those last years,
+I ran the Ceilometer project as a PTL and already served the TC a few cycles
+ago. I did many contributions to OpenStack as a whole, and I'm one of the top
+contributors of the project[1] – hey I contributed to 72 OpenStack projects!
+
+My plan here is to bring some of my views of the OpenStack world to the
+technical committee, which actually does not seem to do much technical stuff
+nowadays – much more bureaucracy. Maybe we should rename it?
+
+I'm glad we now have a "big tent" approach of our community. I was one of the
+first and only at the TC to say we should not push back projects for bad
+reasons, and now we are accepting 10× times more. The tag system we are now
+using and that has been imagined is nice, but as a new user of the tags, I find
+them annoying and not always completely thought-through. I'm in favor of a more
+agile and more user-oriented development, and I'd love bringing more of that.
+
+I would also like to bring some of my hindsight about testing, usability and
+documentation on the table. I've been, with part of the Telemetry team, able to
+build a project that has a good and sane community, that works by default, has
+a well-designed REST API and a great up-to-date documentation and is simple to
+deploy and use. I wish the rest of OpenStack was a bit more like that.
+
+[1] http://stackalytics.com/?metric=commits&user_id=jdanjou&release=all
