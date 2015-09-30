@@ -1,0 +1,92 @@
+Hi all!
+
+I'm announcing my candidacy for a position on the OpenStack Technical
+Committee.
+
+On October 1st I will be employed by the OpenStack Foundation as
+a Cross-Project Developer Coordinator to help bring focus and support to
+cross-project initiatives within the cross-project specs, Def Core, The Product
+Working group, etc.
+
+I feel the items below have enabled others across this project to strive for
+quality. If you would all have me as a member of the Technical Committee, you
+can help me to enable more quality work in OpenStack.
+
+* I have been working in OpenStack since 2010. I spent a good amount of my time
+  working on OpenStack in my free time before being paid full time to work on
+  it. It has been an important part of my life, and rewarding to see what we
+  have all achieved together.
+
+* I was PTL for the Cinder project in the Kilo and Liberty releases for two
+  cross-project reasons:
+  * Third party continuous integration (CI).
+  * Stop talking about rolling upgrades, and actually make it happen for
+    operators.
+
+* I led the effort in bringing third party continuous integration to the
+  Cinder project for more than 60 different drivers. [1]
+  * I removed 25 different storage drivers from Cinder to bring quality to the
+    project to ensure what was in the Kilo release would work for operators.
+    I did what I believed was right, regardless of whether it would cost me
+    re-election for PTL [2].
+  * In my conversations with other projects, this has enabled others to want to
+    follow the same effort. Continuing this trend of quality cross-project will
+    be my next focus.
+
+* During my first term of PTL for Cinder, the team, and much respect to Thang
+  Pham working on an effort to end the rolling upgrade problem, not just for
+  Cinder, but for *all* projects.
+  * First step was making databases independent from services via Oslo
+    versioned objects.
+  * In Liberty we have a solution coming that helps with RPC versioned messages
+    to allow upgrading services independently.
+
+* I have attempted to help with diversity in our community.
+  * Helped lead our community to raise $17,403 for the Ada Initiative [3],
+    which was helping address gender-diversity with a focus in open source.
+  * For the Vancouver summit, I helped bring in the ally skills workshops from
+    the Ada Initiative, so that our community can continue to be a welcoming
+    environment [4].
+
+* Within the Cinder team, I have enabled all to provide good documentation for
+  important items in our release notes in Kilo [5] and Liberty [6].
+  * Other projects have reached out to me after Kilo feeling motivated for this
+    same effort. I've explained in the August 2015 Operators midcycle meetup
+    that I will make this a cross-project effort in order to provide better
+    communication to our operators and users.
+
+* I started an OpenStack Dev List summary in the OpenStack Weekly Newsletter
+  (What you need to know from the developer's list), in order to enable others
+  to keep up with the dev list on important cross-project information. [7][8]
+
+* I created the Cinder v2 API which has brought consistency in
+  request/responses with other OpenStack projects.
+  * I documented Cinder v1 and Cinder v2 API's. Later on I created the Cinder
+    API reference documentation content. The attempt here was to enable others
+    to have somewhere to start, to continue quality documentation with
+    continued developments.
+
+Please help me to do more positive work in this project. It would be an honor
+to be member of your technical committee.
+
+
+Thank you,
+Mike Perez
+
+
+Review History: https://review.openstack.org/#/q/reviewer:170,n,z
+Commit History: https://review.openstack.org/#/q/owner:170,n,z
+Stackalytics: http://stackalytics.com/?user_id=thingee
+Foundation: https://www.openstack.org/community/members/profile/4840
+IRC Freenode: thingee
+Website: http://thing.ee
+
+
+[1] - http://lists.openstack.org/pipermail/openstack-dev/2015-January/054614.html
+[2] - https://review.openstack.org/#/q/status:merged+project:openstack/cinder+branch:master+topic:cinder-driver-removals,n,z
+[3] - http://lists.openstack.org/pipermail/openstack-dev/2014-October/047892.html
+[4] - http://lists.openstack.org/pipermail/openstack-dev/2015-May/064156.html
+[5] - https://wiki.openstack.org/wiki/ReleaseNotes/Kilo#OpenStack_Block_Storage_.28Cinder.29
+[6] - https://wiki.openstack.org/wiki/ReleaseNotes/Liberty#OpenStack_Block_Storage_.28Cinder.29
+[7] - http://www.openstack.org/blog/2015/09/openstack-community-weekly-newsletter-sept-12-18/
+[8] - http://www.openstack.org/blog/2015/09/openstack-weekly-community-newsletter-sept-19-25/
