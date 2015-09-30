@@ -1,0 +1,36 @@
+Hello! I would like to announce my candidacy for the TC election.
+
+A bit about me and my involvement with OpenStack: I have been involved with
+OpenStack since the Bexar days. I have contributed over that time to most of
+the pre-big-tent 'integrated release' projects. Through this time, I have
+strived to represent issues and features for the Operator Persona. It is
+amazing to see just how far OpenStack has come in this short time. When i first
+started, it took numerous animal sacrifices to get a working cloud deployed.
+Now there are numerous distributions and projects that exist to make installing
+a cloud easy-ish, and tons of healty innovation happening on top of the IaaS
+platform components.
+
+I work for Rackspace in the Private Cloud business unit, deploying and managing
+OpenStack clouds for all sizes of customers all over the world. Over the course
+of the last 5 years, I have trodden the path of bespoke hand-rolled clouds all
+the way to standardized/repeatable clouds. This process has given me a
+foundational understanding of the core IaaS projects within the Big-Tent. I
+have also helped start up the chef-openstack and openstack-ansible projects,
+which both center around establishing a standard deployment process for
+OpenStack. I have also been involved in the DefCore project for quite some
+time, and have been an advocate for Rackspace's public cloud to move back to
+upstream code and a removal of non-community bits.
+
+It would be an honor to serve on the TC. If elected I will focus on bringing an
+Operators point of view to the conversation, as well as a strong focus on
+manageability, stability and scalability.
+
+Thank you,
+
+--
+Justin Shepherd
+IRC: galstrom
+
+Review history: https://review.openstack.org/#/q/reviewer:%22Justin+Shepherd%22,n,z
+Commit history: https://review.openstack.org/#/q/owner:%22Justin+Shepherd%22,n,z
+Stackalytics: http://stackalytics.com/?user_id=jshepher&release=all&project_type=all
