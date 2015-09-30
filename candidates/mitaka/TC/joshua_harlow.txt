@@ -1,0 +1,68 @@
+Hi folks,
+
+I'd like to propose my candidacy for the technical committee
+elections.
+
+I've been involved in OpenStack for around ~four~ years now, working
+to help integrate it into various Yahoo! systems and infrastructure.
+I've been involved with integration and creation (and maturation) of
+many projects (and libraries); for example rpm and venv packaging (via
+anvil), cloud-init (a related tool), doc8 (a doc checking tool),
+taskflow (an oslo library), tooz (an oslo library), automaton (an oslo
+library), kazoo (a dependent library) and more.
+
+As mentioned above, my contributions to OpenStack have been at the
+project and library level. My experience in oslo (a group of
+folks that specialize in cross-project libraries and reduction of
+duplication across projects) has helped me grow and gain knowledge
+about how to work across various projects. Now I would like to help
+OpenStack projects become ~more~ excellent technically. I'd like to
+be able  to leverage (and share) the experience I have gained at
+Yahoo! to help make OpenStack that much better (we have tens of
+thousands of VMs and thousands of hypervisors, tens of
+thousands of baremetal instances split across many clusters with
+varying network topology and layout).
+
+I'd like to join the TC to aid some of the on-going work that helps
+overhaul pieces of OpenStack to make them more scalable, more fault
+tolerant, and in all honesty more ~modern~. I believe we (as a TC)
+need to perform ~more~ outreach to projects and provide more advice
+and guidance with respect to which technologies will help them scale
+in the long term (for example instead of reinventing service discovery
+solutions and/or distributed locking, use other open source solutions
+that provide it already in a battle-hardened manner) proactively
+instead of reactively.
+
+I believe some of this can be solved by trying to make sure the TC is
+on-top of: https://review.openstack.org/#/q/status:open+project:openstack
+/openstack-specs,n,z and ensuring proposed/accepted cross-project
+initiatives do not linger. (I'd personally rather have a cross-project
+spec be reviewed and marked as not applicable vs. having a spec
+linger.)
+
+In summary, I would like to focus on helping this outreach and
+involvement become better (and yes some of that outreach goes beyond
+the OpenStack community), helping get OpenStack projects onto scalable
+solutions (where applicable) and help make OpenStack become a cloud
+solution that can work well for all (instead of work well for small
+clouds and not work so well for large ones). Of course on-going
+efforts need to conclude (tags for example) first but I hope that as a
+TC member I can help promote work on OpenStack that helps the long
+term technical sustainability (at small and megascale) of OpenStack
+become better.
+
+TLDR; work on getting TC to get more involved with the technical
+outreach of OpenStack; reduce focus on approving projects and tags
+and hopefully work to help the focus become on the long term technical
+sustainability of OpenStack (at small and megascale); using my own
+experiences to help in this process //
+
+Thanks for considering me,
+
+Joshua Harlow
+
+------
+
+Yahoo!
+
+http://stackalytics.com/report/users/harlowja
