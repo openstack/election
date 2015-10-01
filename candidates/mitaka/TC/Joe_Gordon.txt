@@ -1,0 +1,37 @@
+Hi Everyone,
+
+I'd like to announce my candidacy for OpenStack Technical Committee. I've been involved with OpenStack since 2011 and
+am a top 0.5% contributor to Openstack. This is also regardless of which meaningless metric you decide to highlight
+as import. No matter which metric you put weight behind I've likely been a top contributor looking at it through
+that lens. For example:
+
+ * Commits: http://stackalytics.com/?release=all&user_id=jogo&metric=commits
+ * Reviews: http://stackalytics.com/?release=all&user_id=jogo&metric=marks
+ * Emails: http://stackalytics.com/?release=all&user_id=jogo&metric=emails
+ * Patch Sets: http://stackalytics.com/?release=all&user_id=jogo&metric=patches
+ * Or the absurdly ridiculous person-day effort (which is completely meaningless from what I can tell):
+   http://stackalytics.com/?release=all&user_id=jogo&metric=person-day
+
+I also have been a core team member for nova, QA (grenade), infra (elastic-recheck) and hacking
+
+During my time contributing to OpenStack I have led several several key initiatives in a variety of different roles.
+From doing things like starting and serving as the maintainer for the hacking project, starting the elastic-recheck
+project with the help of the excellent Matthew Treinish, being one of the few people actually willing to
+help debug gate issues, and helping set up multinode devstack jobs so we can finally test  things like live migration
+(just to name a few in a very long list). Through this experience I've see a lot of what OpenStack has to offer at
+it's best, but also where things don't work so well. It is leveraging this experience that I think provides me with
+real technical knowledge and insight into what OpenStack is and how it works that I think is necessary to sit on the
+TC. (because let's be honest here, the T is for technical, not talking-head)
+
+As a member of the TC I'd really like to accomplish two things during my tenure, change the OpenStack mission
+statement (it currently doesn't mention the single most important persona in OpenStack, the end user); and move the
+conversation away from the silly 'what is OpenStack' to 'why use OpenStack' and figure out how we execute on the
+resulting vision.
+
+While my activity in the community has decreased slightly in recent months, this is not an indication of a decrease
+in my commitment to the OpenStack project or a lack of interest in seeing it succeed. It would be my honor and
+privilege to serve the community if I'm lucky enough to be a elected to the TC.
+
+May the odds be ever in your favor,
+
+Joe Gordon
