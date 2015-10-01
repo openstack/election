@@ -1,0 +1,44 @@
+Hello Peers,
+
+I would be pleased to serve on the Technical Committee with your vote.  I have
+a very relevant background to serving you in the Technical Committee in that
+I have done the following during OpenStack development:
+
+1. Led the development, incubation, and integration of Heat for the first
+   project to enter what would be a precursor to the Big Tent.
+2. Wrote most of the initial commits and contributed heavily to the first
+   Big Tent project Magnum.
+3. Solving the most complex problem OpenStack faces, Deploying the Big Tent,
+   by serving as PTL of Kolla which I have led from first commit through the
+   Big Tent process.
+4. Top 10 contributor by Person-day effort for Liberty.  Top 1% by Person-day
+   effort  for Kilo.  Top 1% by Person-day effort for OpenStack project
+   overall.
+
+My experience with Heat, Magnum, and Kolla directly relate to the Technical
+Committee's charter which is to serve as technical oversight for the OpenStack
+project.  I am highly interested in growth management of my peers and the
+systems and people I involve myself with.  I believe it is one of the core
+responsibilities of the Technical Committee to provide effective growth
+management for the OpenStack ecosystem, in partnership with the OpenStack
+Board.
+
+I can confirm that the original incubation track that Heat executed was highly
+painful and very challenging.  It was not very inclusive, not documented, and
+highly subjective.
+
+The new Big Tent process is far improved.  It is almost completely objective
+and measurable which in my opinion leads to high growth in individuals and
+systems during their evaluation.
+
+Most of the work the Technical Committee has done over the last year has been
+to make OpenStack more obecjtive and measurable by anyone.  I personally feel
+this change is fantastic and has unstuck the Technical Committeee.  This work
+facilitates the growth of OpenStack in general and new projects in particular.
+
+I want to bring my experience creating new things for OpenStack to bear to
+create New Things for the Technical Committee to further acclerate growth.
+I would happily accept your vote for the Technical Committee election.
+
+Regards,
+-steve
