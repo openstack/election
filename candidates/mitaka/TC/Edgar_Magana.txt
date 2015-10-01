@@ -1,0 +1,44 @@
+Hello Team!  I would like to submit my candidacy for the TC election.
+
+I have been involved in OpenStack activities since April 2011, when I became
+part one of the founders of the networking project known as Quantum at that
+time. I have been a core reviewer for Neutron since November 2011. I helped
+to create the networking guide and contributed to multiple chapters. I have
+spoken at many OpenStack summits, meet-ups and conferences. I have been very
+active in the Operators meet-up moderating multiple sessions. In few words
+"I love to evangelize OpenStack".
+
+Last four years I have gained experience on project management and leadership
+from different team perspectives like technology vendors, networking start-up
+and over a year as OpenStack operator. This last one has been very interesting
+compare with my previous ones because of my focus on a production ready
+cloud powered by OpenStack. Running a high-scale production cloud is giving me
+a different perspective on how the platform should be delivered as a product
+ready to use and that is what I will be bringing to the TC and to all project
+members and PTLs.
+
+As a TC member my main focus will be to close any existing gap between the
+development teams and their customers who are the OpenStack users and operators
+between others. In my operator role I have validated documentation and best
+practices on OpenStack deployment and operations and I have been provided all
+possible feedback and I want to do more on this area. I believe we can make
+OpenStack better if we open the TC to members who have deployed pure OpenStack
+with no vendor specific guidelines or any specific distribution influence.
+
+I strongly believe we will make OpenStack more solid and integrated. I will
+work as cross-project liaison in order to reach this goal. I will continue my
+work of evangelizing the newest OpenStack projects and guide them to have the
+best adoption process by the community and also I will help them to have the
+best integration with any other open-source technologies.
+
+No matter what is the result of the election I will continue my work on
+OpenStack with passion and courage. This is the best project ever and it can
+be even better. Let's inject some fresh ideas to the TC, let's keep making
+this platform the de-facto cloud management system for all operators either
+public, private or hybrid clouds.
+
+Thank you so much for reading and considering my humble aspiration to the TC!
+
+--
+Edgar Magana
+IRC: emagana
