@@ -1,0 +1,67 @@
+Hello People!
+
+I am tossing one of my hats into the ring to run for TC.  Yes, I believe you
+could call me a "diversity candidate" as I'm not much of a developer any more,
+but I think my skills would be a great addition to the excellent people who are
+on the TC (past and present).
+
+My background:  I am currently an architect with Huawei Technologies.  My role
+is "OpenStack" and as such, I am liaison to many areas an groups in the
+OpenStack community and I am liaison to Huawei engineers and management for the
+OpenStack community.  I focus energy on all parts of Software products that
+aren't directly writing code.  I am an advocate for quality, for effective and
+efficient process, and for the downstream stakeholders (Ops, Apps developers,
+Users, Support Engineers, Docs, Training, etc).  I am currently active in:
+•   DefCore
+•   RefStack
+•   Product Working Group
+•   Logging Working Group (cofounder)
+•   Ops community
+•   Peripherally, Tailgaters
+•   Women of OpenStack
+•   Diversity Working Group
+
+What I would like to help the TC and the community with:
+•   Interoperability across deployed clouds begins with cross project
+communications and the realization that  each engineer and each project is
+connected and influential in how the OpenStack ecosystem works, responds, and
+grows. When OpenStack was young, there were two projects and everyone knew
+each other, even if they didn't live in the same place.  Just as processes
+become more formal when startups grow to be mid-sized companies, OpenStack
+has formalized much as it has exploded in number of participants.  We need to
+continue to transform Developer, Ops and other community lore into useful
+documentation. We are at the point where we really need to focus our energies
+and our intelligence on how to effectively span projects and communities via
+better communications.  I'm already doing this to some extent.  I'd like to
+help the TC do that to a greater extent.
+•   In the past two years, I've seen the number of "horizontal" projects grow
+almost as significantly as the "vertical" projects.  These cross functional
+projects, with libraries, release, configuration management, docs, QA, etc.,
+have also grown in importance in maintaining the quality and velocity of
+development.  Again, cross-functional needs are being address, and I want to
+help the TC be more proactive in identifying needs and seeding the teams with
+senior OpenStack developers (and user community advisors where useful).
+•   The TC is the conduit between, translator of and champion for the
+developers to the OpenStack Board.  They have a huge responsibility and not
+enough time, energy or resources to address all the challenges.  I am ready to
+work on the challenges and help develop the strategic vision needed to keep on
+top of the current and new opportunities always arising and always needing some
+thoughtful analysis and action.
+
+That said, I have my own challenges to address.  I know my company will support
+me in my role as a TC member, but they will also demand more of my time,
+opinions, presence and participation specifically because of the TC position.
+I also am still struggling to make inroads on the logging issues I've been
+attempting to wrangle into better shape.  I've gotten lots of support from the
+community on this (thanks, folks, you know who you are;-), but it still gives
+me pause for thought that I, myself need to keep working on my effectiveness.
+
+Whether on the TC or not, I will continue to contribute as much as I can to the
+community in the ways that I do best.  and you will continue to see me at the
+summits, the midcycles, the meetups, the mailing lists and IRC (hopefully more
+there as I'm trying to educate my company how they can provide us the access we
+need without compromising their corporate rules).
+
+Thank you for reading this far and considering me for service on the TC.
+
+--Rocky
