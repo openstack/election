@@ -30,6 +30,7 @@ extensions = [
     'sphinx.ext.extlinks',
     'oslosphinx',
     'candidates',
+    'events',
 ]
 
 todo_include_todos = True
@@ -67,7 +68,8 @@ copyright = u'2015, OpenStack'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', 'candidates/ptl.rst', 'candidates/tc.rst']
+exclude_patterns = ['_build', 'candidates/ptl.rst', 'candidates/tc.rst',
+                    'candidates/events.rst']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None

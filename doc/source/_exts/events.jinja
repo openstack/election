@@ -1,0 +1,21 @@
+.. raw:: html
+
+    <span id="eventname"></span>
+    <span id="eventtimer"></span>
+    <script>
+        var events_timeline = [
+            {% for event in events %}
+                { date: "{{ event['date'] }}", name: "{{ event['name'] }}" },
+            {% endfor %}
+        ];
+    </script>
+    <br /><br />
+
+
++--------------------------------+---------------------------------+
+| Events                         | Date                            |
++================================+=================================+
+{% for event in events %}
+| {{ "%29s" % event['name'] }}  | {{ "%29s" % event['date_str'] }}   |
++--------------------------------+---------------------------------+
+{% endfor %}
