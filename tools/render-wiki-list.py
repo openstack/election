@@ -11,7 +11,7 @@ def main(argv):
     if len(argv) != 2 or argv[1] not in ("PTL", "TC"):
         print "usage: %s PTL|TC" % argv[0]
         return
-    candidates_list = build_candidates_list("mitaka")
+    candidates_list = build_candidates_list("newton")
 
     if argv[1] == "PTL":
         candidates_list['projects'].remove('TC')

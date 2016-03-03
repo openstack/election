@@ -4,6 +4,8 @@
 
 .. include:: ./candidates/events.rst
 
+See PTL_details_ and TC_details_.
+
 Below is the official list of candidates for the current round.
 
 .. include:: ./candidates/ptl.rst
@@ -21,3 +23,5 @@ Election Officials
   election process.
 
 .. _Election_Officiating_Guidelines: https://wiki.openstack.org/wiki/Election_Officiating_Guidelines
+.. _PTL_details: https://wiki.openstack.org/wiki/PTL_Elections_March_2016
+.. _TC_details:  https://wiki.openstack.org/wiki/TC_Elections_April_2016
