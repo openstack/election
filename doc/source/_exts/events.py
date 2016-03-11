@@ -18,9 +18,9 @@ import yaml
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
-from docutils import nodes
 
 PATH_PREFIX = 'candidates'
+
 
 def build_timer(app):
     app.add_javascript("event_timer.js")
@@ -35,7 +35,8 @@ def build_timer(app):
         loader = FileSystemLoader(template_dir)
         env = Environment(trim_blocks=True, loader=loader)
         template = env.get_template("events.jinja")
-        out.write(template.render({'events':data}))
+        out.write(template.render({'events': data}))
+
 
 def setup(app):
     if not os.path.isfile("events.yaml"):

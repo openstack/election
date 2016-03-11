@@ -28,7 +28,8 @@ now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc,
 def check_atc_date(atc):
     if 'expires-in' not in atc:
         return False
-    expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y').replace(tzinfo=pytz.utc)
+    expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y')
+    expires_in = expires_in.replace(tzinfo=pytz.utc)
     return now < expires_in
 
 
