@@ -7,12 +7,13 @@ import urllib
 import re
 import datetime
 
-DATE_MIN = '2014-09-18'
-DATE_MAX = '2015-09-18'
+DATE_MIN = '2015-03-04'
+DATE_MAX = '2016-01-03'
 
 BASE_URL = 'https://git.openstack.org/cgit'
-PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
-                (BASE_URL))
+PROJECTS_TAG = 'march-2016-elections'
+PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml?%s' %
+                (BASE_URL, PROJECTS_TAG))
 
 date_min = datetime.datetime.strptime(DATE_MIN, '%Y-%m-%d').strftime('%s')
 date_max = datetime.datetime.strptime(DATE_MAX, '%Y-%m-%d').strftime('%s')
