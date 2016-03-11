@@ -14,7 +14,8 @@ def main(argv):
     candidates_list = build_candidates_list("newton")
 
     if argv[1] == "PTL":
-        candidates_list['projects'].remove('TC')
+        if 'TC' in candidates_list['projects']:
+            candidates_list['projects'].remove('TC')
     else:
         candidates_list['projects'] = ['TC']
 
