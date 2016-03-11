@@ -7,6 +7,7 @@ import urllib
 import re
 import datetime
 import pytz
+import string
 
 DATE_MIN = '2015-03-04'
 DATE_MAX = '2016-01-03'
@@ -53,7 +54,6 @@ except:
     print "usage: %s candidacy_file" % sys.argv[0]
     exit(1)
 
-project_name = project_name.replace('_', ' ')
 author = author.replace('_', ' ')
 
 if not os.path.isfile('.projects.yaml'):
@@ -61,15 +61,22 @@ if not os.path.isfile('.projects.yaml'):
         urllib.urlopen(PROJECTS_URL).read()
     )
 projects = yaml.load(open('.projects.yaml'))
+project_list = None
 
 if project_name == "TC":
     project_list = projects.values()
 else:
-    try:
-        project_list = [projects[project_name]]
-    except:
-        print "Can't find project [%s] in %s" % (project_name, projects.keys())
-        exit(1)
+    for key in projects.keys():
+        for dirname in [key, string.capwords(key, '-'),
+                        key.replace(' ', '_'),
+                        string.capwords(key.replace(' ', '_'), '_')]:
+            if dirname == project_name:
+                project_list = [projects[key]]
+                break
+
+if project_list is None:
+    print "Can't find project [%s] in %s" % (project_name, projects.keys())
+    exit(1)
 
 for project in project_list:
     if 'extra-atcs' in project:
