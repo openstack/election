@@ -39,6 +39,7 @@ except:
     print "usage: %s candidacy_file" % sys.argv[0]
     exit(1)
 
+project_name = project_name.replace('_', ' ')
 author = escape_author(author)
 
 if not os.path.isfile('.projects.yaml'):
