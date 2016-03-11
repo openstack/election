@@ -1,0 +1,52 @@
+This is my announcement of candidacy for PTL of the Infrastructure project
+during the Newton cycle.
+
+With a background in Linux systems administration stretching back nearly a
+decade, I've been working on the Infrastructure team for just over three years
+and have spent the last year as core and root member of the team. Throughout my
+tenure on the team I've worked to support my fellow team mates and beyond
+through mentorship (including participation in formal programs like Outreachy)
+and one-on-one help with the components of our infrastructure. I've reached out
+and worked with teams like the i18n team to evaluate and determine how infra
+can support them.
+
+I've also spent a considerable amount of time through talks at conferences,
+articles and interviews sharing the mission, goals and innovative ways our
+operations team functions in an open fashion. I'm a firm believer in open
+source and very proud of how our team works. I have even started building
+relationships with other open source projects where they are adopting or have
+adopted an open model for infrastructure. I'm eager to see what we can learn
+from each other.
+
+I think we're in a very exciting time for the Infrastructure team. Our team is
+steadily growing with additional root and core members and we have projects
+like infra-cloud bringing in the interest and talents of even more contributors
+who bring a diversity of skills and backgrounds to our team. Additionally,
+efforts are continuing on projects like Zuulv3 to improve scalability and
+flexibility of our gating system, which is essential as the OpenStack community
+continues to grow. We're also continuing to make progress on the evaluation and
+launching of a new issue and task tracker. Making these and other projects feel
+supported and included is very important to me.
+
+My conversations with contributors, potential contributors and our downstreams
+over the past year has also made me keenly aware that effort by some of our
+team members could be well spent on our contribution story. Contributing to our
+Infrastructure team will never be easy, but my hope and belief is that there
+are ways we can make it a better experience with just some small adjustments.
+First we need data, so I'd like to solidly identify the pain points through
+discussion and candid feedback.
+
+Prior to and concurrent with my role on the infrastructure team, I spent six
+years on the Ubuntu Community Council, the community governance body for the
+Ubuntu project. Over this past cycle in the Infrastructure team I have worked
+with the current PTL, Jeremy Stanley, to fill in as meeting chair when he's
+unavailable and have assisted with some of the administrative work that keeps
+our team running.
+
+I have some big shoes to fill when reflecting on the excellent work and
+successes our past and current PTLs, but I am in a good position to handle the
+expectations and duties of Infrastructure PTL.
+
+I appreciate your consideration.
+
+Elizabeth K. Joseph (pleia2)
