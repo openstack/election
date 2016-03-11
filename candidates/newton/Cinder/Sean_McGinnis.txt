@@ -1,0 +1,76 @@
+Hey everyone,
+
+Wow, how six months flies! I'd like to announce my candidacy to continue on as
+Cinder PTL for the Newton release cycle.
+
+A lot has been accomplished in the Mitaka cycle. After a lot of work by many
+folks, over a couple development cycles, we now have what we consider a "tech
+preview" of rolling upgrades. It just hasn't had enough runtime and testing for
+us to say it's "official". We will likely need to fix a few minor things in the
+Newton timeframe before it's fully baked and reliable. But it has come a long
+way and I'm really happy with the progress that has been made.
+
+Another priority we had identified for Mitaka was active/active high
+availability of the c-vol service. We were not able to complete that work, but
+many pieces have been put in place to support that in Newton. We fixed several
+API races and added the ability to use something like tooz for locking. These
+are foundation pieces for us to be able to start breaking out things and
+running in a reliable active/active configuration.
+
+Microversion support has been added and there is now a new v3 API endpoint.
+This was a bit of a controversy as we really had just started to get folks to
+move off of v1 to v2. To be safe though I decided it would protect end users
+better to have a clearly separate new API endpoint for the microversion
+compatibility. And now hopefully it is our last.
+
+Replication was another slightly controversial feature implemented. Late in
+Liberty we finally agreed on a spec for a v2 version of replication. The v2
+spec was approved so late that no one actually had time to implement it for
+that release. As we started to implement it for Mitaka we found that a lot of
+compromises had crept in during the spec review that it had the risk of being
+too complex and having some of the issues we were trying to get rid of by
+moving away from replication v1. At our midcycle we had a lot of discussion on
+replication and finally decided to change course before it was too late.
+Whether that ends up being the best choice when we look back a year from now or
+not, I'm proud of the team that we were willing to put on the brakes and make
+changes - even though it was more work for us - before we released something
+out to end users that would have caused problems or a poor experience.
+
+Other than that, there's mostly been a lot of good bug fixes. Eight new drivers
+have been added from (I think) five different vendors. The os-brick library is
+now 1.0 (actually 1.1.0) and is in use by both Cinder and Nova for common
+storage management operations so there is not a duplication and disconnect of
+code between the two projects. We were also able to add a Brick cinder client
+extension to be able to perform storage management on nodes without Nova (bare
+metal, etc.).
+
+None of this goodness was from me.
+
+We have a bunch of smart and active members of the Cinder community. They are
+the ones that are making a difference, working across the community, and
+making sure Cinder is a solid component in an OpenStack cloud.
+
+Being part of the Cinder community has been one of the best and most engaging
+parts of my career. I am lucky enough to have support from my company to be
+able to devote time to being a part of this. I would love the opportunity to
+continue as PTL to not just contribute where I can, but to make sure the folks
+doing the heavy lifting have the support and project organization they need to
+avoid distractions and be able to focus on getting the important stuff done.
+
+I think in Newton we need to continue the momentum and get Active/Active Cinder
+volume service support implemented. We need to continue to work closely with
+the Nova team to make sure our interaction is correct and solid. But also work
+to make Cinder a useful storage management interface in environments without
+Nova. I will continue to encourage developer involvement and vendor support.
+We need to improve the user experience with better error reporting when things
+go wrong. And last, but definitely not least, we need to continue to expand our
+testing - unit, functional, and tempest - to make sure we can avoid those
+errors and deliver a high quality and solid solution.
+
+I really feel I'm just getting into the swing of things. I would love the
+opportunity to serve as PTL for the Newton release.
+
+Thank you for your consideration.
+
+Sean McGinnis (smcginnis)
+
