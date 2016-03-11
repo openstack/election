@@ -6,6 +6,7 @@ import sys
 import urllib
 import re
 import datetime
+import pytz
 
 DATE_MIN = '2015-03-04'
 DATE_MAX = '2016-01-03'
@@ -17,6 +18,18 @@ PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml?%s' %
 
 date_min = datetime.datetime.strptime(DATE_MIN, '%Y-%m-%d').strftime('%s')
 date_max = datetime.datetime.strptime(DATE_MAX, '%Y-%m-%d').strftime('%s')
+now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc,
+                                         hour=0,
+                                         minute=0,
+                                         second=0,
+                                         microsecond=0)
+
+
+def check_atc_date(atc):
+    if 'expires-in' not in atc:
+        return False
+    expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y').replace(tzinfo=pytz.utc)
+    return now < expires_in
 
 
 def check_date(date):
@@ -40,7 +53,7 @@ except:
     exit(1)
 
 project_name = project_name.replace('_', ' ')
-author = escape_author(author)
+author = author.replace('_', ' ')
 
 if not os.path.isfile('.projects.yaml'):
     open('.projects.yaml', 'w').write(
@@ -58,9 +71,14 @@ else:
         exit(1)
 
 for project in project_list:
+    for atc in project['extra-atcs']:
+        if atc['name'] == author and check_atc_date(atc):
+            print "Valid extra ATC record", atc
+            exit(0)
     for deliverable in project['deliverables'].values():
         for repo_name in deliverable["repos"]:
-            url = '%s/%s/log/?qt=author&q=%s' % (BASE_URL, repo_name, author)
+            url = '%s/%s/log/?qt=author&q=%s' % (BASE_URL, repo_name,
+                                                 escape_author(author))
             print "Querying: %s" % url
             found = False
             for l in urllib.urlopen(url).read().split('\n'):
