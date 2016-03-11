@@ -15,6 +15,8 @@
 
 import os
 import yaml
+import calendar
+import time
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
@@ -26,9 +28,23 @@ def build_timer(app):
     app.add_javascript("event_timer.js")
     data = yaml.load(open("events.yaml").read())
     # add better text for tabulatted planning
+    now = time.time()
+    outdated = '*'
     for ev in data:
         d, h = ev['date'].split('T')
-        ev['date_str'] = "%s, %s UTC" % (d, h)
+        epoch_time = calendar.timegm(
+            time.strptime(ev['date'], "%Y-%m-%dT%H:%M"))
+        ev['status'] = 'past'
+        if epoch_time > now:
+            if outdated == '*':
+                # Mark upcoming event as bold
+                ev['status'] = 'current'
+                outdated = '**'
+            else:
+                ev['status'] = 'future'
+                outdated = ''
+        ev['date_str'] = "%s%s, %s UTC%s" % (outdated, d, h, outdated)
+        ev['name_str'] = "%s%s%s" % (outdated, ev['name'], outdated)
     output_file = os.path.join(PATH_PREFIX, "events.rst")
     with open(output_file, "w") as out:
         template_dir = os.path.join(".", "doc", "source", "_exts")
