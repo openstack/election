@@ -1,0 +1,31 @@
+Hi all,
+
+I'm writing to announce my continued candidacy for Congress PTL.
+
+In the Mitaka cycle we've been working hard and making great progress
+on a number of things.  The largest change is a new distributed architecture 
+built on top of oslo-messaging.  That architecture is key to enabling us 
+to meet the high-availability and high throughput demands that we've 
+heard from the field.  We also saw the first new mechanism since the 
+project's inception for injecting data into Congress, so that external 
+systems can push data, instead of Congress pulling it.  In Mitaka, 
+we also completed the transition to Python3, and implemented the plugin 
+interface for both tempest and devstack.  It's also exciting that over 
+the last two cycles, we have seen longer-term commitments to Congress
+from the community, with 1 new core reviewer this cycle, and two other
+incredibly active contributors.
+
+In Newton, my primary technical goal is to complete the migration to
+our new distributed architecture.  I also hope to have Congress 
+leverage that new architecture to provide high-availability and 
+high-throughput solutions.  I plan to continue discussions with 
+other projects to understand how and where Congress can be useful.
+Finally, I'm looking forward to stengthening the developer
+community around Congress.
+
+Tim
+
+
+
+
+
