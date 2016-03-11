@@ -1,0 +1,49 @@
+It's time again for the PTL elections, and I'm throwing my hat in the
+ring to lead the Community App Catalog project
+(https://apps.openstack.org).
+
+During the last election cycle I made a few promises which I believe
+I've delivered on.  We've continued to operate entirely in the open
+including holding weekly meetings on IRC along with bringing a few
+issues to the mailing list when I felt we could benefit from opinions
+of a broader audience. Another bit of success is that we've adjusted
+the schema to support additional asset types, and have received our
+first in this category in the form of a TOSCA template[1].  We still
+have work to do on the web site in order to actually show additional
+asset types in addition to adding that capability to the App Catalog
+Horizon plugin, but that work is in progress.
+
+The other significant effort was to implement a legitimate API, which
+is now showing promise via the work to implement GLARE as the back
+end[2].  In fact we will have a working PoC by the summit in Austin -
+and we'll certainly complete that work before the following summit. I
+will do everything I can to make sure the folks working on this get
+all the support they need.
+
+Looking ahead to the next cycle, the two biggest things the Community
+App Catalog needs are a clarified mission and a whole lot more
+publicity.  I'm guilty of living in my own bubble here, assuming
+everybody must wake up thinking about the catalog after dreaming about
+it all night long (just like me!)  But it turns out there are plenty
+of people in the community who haven't even *heard* of the Community
+App Catalog. I realize I need to work a lot harder to bring attention
+to our efforts here.  What we've built can benefit most OpenStack
+projects, and should become the standard place to host assets noted in
+our documentation. There are many other ways we can all be using the
+Community App Catalog to benefit OpenStack as a whole, and I'll start
+to discuss and debate my ideas on the mailing lists in the weeks and
+months to come.
+
+Speaking of clarified mission, I intend to work within our own
+community to build consensus around what we mean when we say "an
+OpenStack App".  I believe if we can start to agree on that, and agree
+on the best way(s) to package and distribute such things, the
+Community App Catalog will become much more valuable to a larger
+audience very quickly.
+
+I think the Community App Catalog has tremendous potential; if you'll
+have me as PTL again I'll keep working my hardest to deliver!
+
+[1]: https://review.openstack.org/289132
+[2]: https://review.openstack.org/276857
+
