@@ -1,0 +1,39 @@
+Howdy,
+
+I am announcing my candidacy as Chef OpenStack PTL for the Newton release cycle.
+
+In the Mitaka cycle, we've accomplished quite a bit, with an incredible velocity.
+The core cookbooks underwent a significant refactor, removing some 18k lines of
+code and refactoring another 4k lines. We also saw the introduction of
+integration tests in our gates, as well as some third-party vendor support
+in Liberty. With the initial round of refactoring completed for Mitaka, we have
+a more streamlined set of cookbooks upon which to build additional features.
+
+Being under the big tent is not easy, and we have great challenges in front
+of us. My main goal for the Newton cycle is to further reduce the barrier to
+entry to the cookbooks, so that we can more easily welcome new contributors
+and hopefully more adoption.
+
+- Documentation
+I'd like to place an emphasis on more documentation. I believe that this
+will enable downstream developers and operators to better uptake newer releases
+as well as contribute back to the project. Our users need better guidance when
+it comes to best practices when using the cookbooks.
+
+- Continuous Integration
+We've done a lot on CI, with the integration jobs, but we must also test
+different deployment scenarios as proof of concept that a downstream user can
+take these same cookbooks and deploy a production-ready OpenStack cluster.
+
+- Community engagement
+I would like to further our collaboration with other projects, notably
+OpenStack Infra and upstream packagers (Ubuntu Cloud Archive and RDO), but also
+other OpenStack projects like Heat, TripleO, Magnum, Tempest and Documentation.
+This collaboration makes the OpenStack ecosystem better by providing more
+freedom of choice for users when deploying OpenStack. We must continue that
+with coordination and maintaining strong lines of communication.
+
+I would greatly appreciate your support for the PTL role for the Newton cycle,
+and I'm looking forward to growing the Chef OpenStack team.
+
+Samuel Cassiba (sc`)
