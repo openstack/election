@@ -1,0 +1,88 @@
+I am submitting my candidacy for Swift PTL for the Newton cycle.
+
+### Community growth
+
+During the Mitaka cycle, we've seen the community grow from about 440
+contributors to 531 today. That's a 20% growth in the last six months.
+This growth rate is huge, and I'm really happy to see all the new
+people coming into the community. New contributors bring new ideas,
+new use cases, and fresh eyes on old problems. This is the hallmark of
+a healthy community.
+
+New contributors reflect the broader picture of what's going on with
+Swift, too. When we see new contributors from companies who are
+already actively participating in the community, it shows that they
+are using Swift more. When new companies join the community for the
+first time, it shows new places where Swift is being used to solve
+real-world storage problems. Both situations are exciting. Swift is
+growing. More people are using it to store more data and solve more
+storage problems.
+
+As I've said many times before, my vision for Swift is that it will be
+used by everyone, every day, even if people don't realize it.
+Community growth is one way we can see that this is happening today.
+
+### Tracking the community
+
+One thing I've been working on over the last year is tracking our
+community and finding ways to understand it and help it continue to
+grow. You can see some of this work in the graphs below.
+
+http://d.not.mn/total_contribs.png
+http://d.not.mn/active_contribs.png
+
+I've been working on a few more interesting graphs and metrics too.
+I've shared one of these before: visualizing individual contributor
+activity over time. You can see the results at
+http://d.not.mn/contrib_activity.png. This is a rather large graph,
+but it's fairly simple to read. The x-axis is time (from Swift's
+initial release to today). Each line on the y-axis is a person's
+activity in Swift. Blue boxes are for authoring a patch; green boxes
+are for a review. This graph has been invaluable in helping understand
+who is contributing to the project and what activity active
+contributors are engaged in. One thing I've learned is that there is a
+class of contributor who has been involved for a long time, but is
+only active infrequently. Most of these people are operators who are
+normally running production clusters but occasionally need to submit a
+patch or review upstream.
+
+Another thing I've worked on is a way to find out what the community
+as a whole thinks is important. We can start to find a lot of this
+info from information we already have. For example, we can get a list
+of every patch that every contributor has starred to see if there is
+any commonality between them. The patches that are more often starred
+are likely to be more important, from the community perspective.
+
+I've taken that basic idea, along with some further parsing of
+information from gerrit, and created a review dashboard. It's going to
+keep changing, but you can see its current incarnation at
+http://not.mn/swift/swift_community_dashboard.html (and linked in
+the #openstack-swift channel topic). So far, I've seen this dashboard
+result in a dramatic decrease in the number of unreviewed patches, and
+as the dashboard improves, I expect it to lead to a similar
+improvement in review times for important patches.
+
+### Current struggles
+
+Tracking the community (both with metrics like above and from simply
+talking to people) shines a light on common problems in the community.
+Two of the most-often raised issues are that of long patch review
+times and review prioritization. We've been improving both of these
+with several tools in the past, and we're currently in a much better
+place than we've been in the past. As PTL, I feel it's my duty to
+enable the community to solve these problems. I will continue to
+improve the tools we have and create new tools as necessary so that we
+know what's going on, what to work on, and make every contributor
+effective.
+
+### Goals for newton
+
+Looking forward to the Newton cycle, I want to see three things happen.
+
+  1. Increased contributor growth
+  2. Progress on significant code efforts, including crypto, improved
+     global clusters, and improved performance
+  3. Better tools and info for community prioritization and community tracking
+
+The community is well-positioned to meet these goals, and I will be
+honored to continue to serve you as PTL for OpenStack Swift.
