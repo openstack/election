@@ -1,0 +1,27 @@
+I am announcing my candidacy for PTL for the Release Management team
+for the Newton release cycle.
+
+My goal for the release team during Mitaka was to automate more of the
+work with a review process that allows projects to be self-service,
+with some lightweight oversight to manage release timing, version
+numbers, and messaging. We made excellent progress on that work,
+standardizing the implementation of release tagging so that release
+managers only have to type a few easy commands to process a
+release. We dropped our use of Launchpad milestones in favor of the
+new http://releases.openstack.org site, which provides a new central
+place to learn about all of the components of a release. We have
+standardized most teams on one of two release models, clearly
+communicating to contributors and consumers of the projects what sorts
+of releases are expected and how the release schedule affects the
+project. We also rolled out reno for managing release notes, and have
+already started seeing success with projects communicating upgrade
+impact, deprecations, and new features early and clearly.
+
+My goals for the Newton cycle are to finish the release automation by
+working with the Infrastructure team so that approving a release
+request in gerrit triggers the release and there are no more manual
+steps. I also propose, when that work is complete, to expand the
+release automation's use beyond managed projects to be used by default
+for all official projects. Finally, I plan to implement translations
+for release notes, an important feature we had for past releases but
+that did not make it into this release.
