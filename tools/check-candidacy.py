@@ -72,10 +72,11 @@ else:
         exit(1)
 
 for project in project_list:
-    for atc in project['extra-atcs']:
-        if atc['name'] == author and check_atc_date(atc):
-            print "Valid extra ATC record", atc
-            exit(0)
+    if 'extra-atcs' in project:
+        for atc in project['extra-atcs']:
+            if atc['name'] == author and check_atc_date(atc):
+                print "Valid extra ATC record", atc
+                exit(0)
     for deliverable in project['deliverables'].values():
         for repo_name in deliverable["repos"]:
             url = '%s/%s/log/?qt=author&q=%s' % (BASE_URL, repo_name,
