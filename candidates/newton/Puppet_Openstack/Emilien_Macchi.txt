@@ -1,0 +1,20 @@
+This is my candidacy for PTL role in the Puppet OpenStack team
+for the Newton release cycle.
+
+Puppet OpenStack is a great example of project where collaboration works
+between developers and operators. Expect me to continue being a liaison
+between different groups so our community can successfully build
+production-ready OpenStack Clouds deployed with our modules.
+I'll continue to facilitate our team work, to coordinate cross-project tasks,
+to mentor our contributors who want to learn more and also
+the most important for me: keep being open.
+
+I had the tremendous pleasure [1] to lead our team during the last cycle and
+I would like to continue my role of PTL during Newton.
+Thank you for your consideration,
+
+
+    Emilien Macchi
+    https://wiki.openstack.org/wiki/User:Emilienm
+
+[1] http://my1.fr/blog/puppet-openstack-mitaka-success
