@@ -7,10 +7,9 @@ import urllib
 import re
 import datetime
 import pytz
-import string
 
 DATE_MIN = '2015-03-04'
-DATE_MAX = '2016-01-03'
+DATE_MAX = '2016-03-03'
 
 BASE_URL = 'https://git.openstack.org/cgit'
 PROJECTS_TAG = 'march-2016-elections'
@@ -67,12 +66,9 @@ if project_name == "TC":
     project_list = projects.values()
 else:
     for key in projects.keys():
-        for dirname in [key, string.capwords(key, '-'),
-                        key.replace(' ', '_'),
-                        string.capwords(key.replace(' ', '_'), '_')]:
-            if dirname == project_name:
-                project_list = [projects[key]]
-                break
+        if key.title().replace(' ', '_') == project_name:
+            project_list = [projects[key]]
+            break
 
 if project_list is None:
     print "Can't find project [%s] in %s" % (project_name, projects.keys())
