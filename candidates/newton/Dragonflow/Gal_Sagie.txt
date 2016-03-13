@@ -1,0 +1,63 @@
+I would like to propose my candidacy for Dragonflow PTL position.
+
+Dragonflow has recently joined OpenStack big-tent but i have been working
+on it from the start even before the Kilo release.
+Leading the open design/architecture of the project and doing most of the
+implementation in the first stages of the project.
+
+Recently many new people joined to work on this project both internally
+and externally and i am making sure the project runs transparently while
+constantly receiving community feedback.
+
+My goal for Dragonflow is to make it a reference architecture to implement
+networking and distributed networking services in an easy and simple manner
+while supporting production grade and large scale requirements.
+
+I think that Dragonflow pluggable architecture is proving to be a strong
+choice we made and is even being considered at other OpenStack networking
+projects.
+I also believe that our simplicity can be very appealing to users that
+want a simple network virtualization solution part of OpenStack.
+
+An important goal is to keep Dragonflow an integral part of OpenStack
+and make sure to address the various use cases of OpenStack deployments
+in terms of networking.
+
+My missions for the next release:
+
+* Stability and Scale testing, making sure what we have and the road we picked
+  actually address the milestones we set for our self.
+
+* Work with the community to define testing standards for both control and
+  data plane testing and measurements that can help OpenStack users pick the
+  best fit solution for their networking.
+  I would also like to work on defining quality standards for DB consistency and
+  correct solution and feature sets definition for the various different plugins.
+
+* Work with a wider OpenStack community and additional different users, i personally see
+  Dragonflow as a community effort and put a strong emphasise on diversity and
+  solutions to more different use cases the wider community has.
+
+* Service Injection and Chaining - this topic describe our extension model and how
+  different users can use external applications and even controllers to work hand
+  in hand with Dragonflow and be able to insert logic to our pipeline.
+  This concept is very important to keep Dragonflow simple but also be able to easily
+  extend it and be able to address various different use cases.
+
+* Containers networking and close integration with project Kuryr, making sure
+  Dragonflow can be used as a solution for nested containers and bare metal.
+
+* More advance distributed networking services like IGMP, Load balancer, DNS
+  service and more that can be reference architecture for building distributed
+  networking services on one infrastructure.
+
+* Keep writing blogs and conducting meetups for new contributors and users, enhance
+  our project documentation and best practices and sharing our experience with the
+  wider community.
+
+
+As you can see i am planning a very challenging release but i believe that we can
+do it and i would like to help this happen.
+
+Thanks
+Gal.
