@@ -1,0 +1,47 @@
+Hi All!
+
+I am proposing myself for PTL of the Designate project.
+
+In the last 6 months we have had a smaller amount of changes into 
+the project, but this has not nesissarly been a bad thing for us.
+
+We have stabalised some of the changes that have been filtering through
+over the last year or so, and have this cycle had a chance to evaluate 
+what we have completed, and what needs to change.
+
+I think we now have a solid base to add new features for end users 
+(like ALIAS) and operators (MiniDNS simplifiaction + possible replacement
+in a sane language, IXFR).
+
+As we progress we will need to get more integrated into the community, 
+like we have with Nova, Neutron and Designate integration that has merged
+this cycle. We should build on this to add content to the shared Docs, 
+API reference site and other projects.
+
+Next cycle we need to focus on 3 items:
+
+1.  Docs. Docs. Docs. 
+
+    We have gotten better at writing docs, and the addition of reno has help our
+    release notes a lot, but there is always room for improvement. We need to ensure
+    that we also remove old docs at the same time as writing new ones.
+
+2.  Worker Model.
+
+    Migration to the worker model improves a lot of our scaling story. It allows use to 
+    remove the extra code that went into MiniDNS and remove RPC from MiniDNS entirely. 
+    This in turn makes MiniDNS much more reimplementable in a language that is more 
+    suited to parsing and building DNS packets.
+
+3.  Horizon Updates (Read: replacement)
+
+    Our horizon panels are ... dated, use the deprecated API, and lack most of the new 
+    features that we have added to designate. Part of our time in newton needs to be
+    getting these panels updated, and availible to the community.
+
+I see myself as a good person to lead these 3 priorities, and appriciate your 
+support for PTL.
+
+Thanks,
+
+Graham Hayes
