@@ -1,0 +1,67 @@
+Hi everyone,
+
+The Mitaka cycle for OpenStack-Ansible (OSA) has had the following successes:
+
+1. Our community has grown. The activity in the IRC channel has shown that we
+   now have more people making use of OSA to deploy both private and public
+   OpenStack clouds. Our development team now includes two non-Rackspace core
+   team members who are comitted to ensuring that OSA's development process
+   has more diversity in its inputs and outputs.
+   We have also increased the breadth of roles available to our deployers. Most
+   importantly they were developed by non-core development team members.
+
+2. The roles are more modular. We've split out the Ansible roles into
+   composable units which are usable without the dynamic inventory, LXC and
+   without the general playbook tooling which has been implemented in the
+   integrated build OSA repository.
+
+3. Multi-OS platform support enablement has progressed. Several of the roles
+   in our stable are already passing the CentOS-based gate check, even though
+   this work was very low priority in the cycle.
+
+4. Usability has improved. We've done an amazing job of improving install guide
+   documentation, improving developer documentation, and adding release notes
+   for the Mitaka release and retrospectively for the Liberty release.
+
+It would be my honour to serve as PTL for the Newton cycle to continue the
+journey along the following themes:
+
+1. Grow the community
+   I would like to continue to increase our community participation through the
+   engagement with other OpenStack Projects and the Operator community. I
+   believe that it's crucial to the success of the project to increase the
+   diversity of contributors. Our work in the Mitaka cycle has laid a good
+   foundation on which I'd like to build through active engagement with the
+   respective communities to share how OSA can meet the needs of both the
+   Developer and Operator communities.
+
+2. Improve testing
+   In the Mitaka cycle we laid the foundation for broader and deeper testing
+   for each role and for the integrated tests. In the Newton cycle we need
+   to complete that work in order to ensure that we have greater confidence
+   that every patch submitted produces a functional build and does not
+   introduce regressions in existing deployments.
+   We need to ensure that each role is tested both in terms convergence and in
+   terms of function.
+   We also need to ensure that we have integrated testing for a broader variety
+   of scenario's to ensure that each scenario that is considered a supported
+   deployment design is tested.
+
+3. Improve usability
+   While OSA is reasonably simple to use to deploy OpenStack, a barrier to
+   most new users is understanding how to customise the inventory and how to
+   prepare the host networking.
+   I'd like us to reduce this barrier to entry in the Newton cycle in order
+   to further simplify an OpenStack deployment for a new user.
+
+4. Improve platform support enablement
+   In the Newton cycle we have agreed to ensure that we take advantage of
+   Ansible 2.x and that we also implement support for Ubuntu 16.04 LTS. This
+   work will implement the patterns which make it much easier to add more Linux
+   distributions to our supported platform list.
+
+I look forward to working with you all for the next cycle and hope that we can
+meet our lofty goals!
+
+Jesse
+IRC: odyssey4me
