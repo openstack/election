@@ -1,0 +1,36 @@
+I haven't burned out yet! I'm running for reelection to a second
+term for the post of Infrastructure PTL. I've been a core reviewer
+and root sysadmin for OpenStack's community-maintained project
+infrastructure since October 2012. In that time it's been my
+pleasure to help further the tremendous growth we've experienced as
+a team and within the OpenStack community as a whole.
+
+    https://wiki.openstack.org/user:fungi
+
+As a free software idealist I'm proud not only of what we accomplish
+but how we manage to do so without compromising on our standards of
+transparency and openness, even when it may inconveniently highlight
+new problems we also need to solve. The Infrastructure team serves
+as a shining example of how communities can effectively collaborate
+and produce while not relying on crutches of proprietary, commercial
+tools. Expect me to continue encouraging our community to make the
+hard choice in favor of free tools, of being a helpful downstream
+for the communities of the tools we use, and of acting as a
+responsible upstream to those who wish to reuse the tools we've
+written to make our own work possible.
+
+In the past cycle the team has worked together to connect four new
+service providers into our donated CI resource pool, performed a
+major version-skip upgrade to our code review system, rolled out a
+unified mirror network for a variety of package types used in CI
+jobs, and brought a number of other new services online to make our
+developer community's lives more convenient. We've also made great
+strides on many other major specs, including nearing production on
+Infra-Cloud and phasing out our old and inconsistent snapshot-based
+worker images. I'm continually amazed at what this team is able to
+accomplish together in such a short span of time, and have hopes the
+coming cycle will hold at least as many amazing accomplishments.
+
+The PTL's role is that of a communicator, facilitator, coordinator
+and mentor; that's how I intent to continue spending my time in
+support of our team, if you'll have me.
