@@ -1,0 +1,45 @@
+Hi everyone,
+
+I'd like to announce my candidacy for PTL of the Quality Assurance
+team for the Newton release cycle. I have joined into the OpenStack
+community since 2012 as a developer, and you can see my activities on
+the following metric:
+
+ * Review: http://stackalytics.com/?release=all&user_id=oomichi&metric=marks
+ * Commit: http://stackalytics.com/?release=all&user_id=oomichi&metric=commits
+
+I have concentrated on solving bugs on both QA and Nova sides in long
+term, my contribution has created Nova V2.1 API as a result. The API
+is necessary to solve both API inconsistencies and wrong behaviors of
+the existing API without clients' pain. Now many projects start to use
+its mechanism (API microversions) for solving these own issues.
+In Mitaka cycle, we have implemented the testing framework for the API
+microversions in Tempest to be used in all projects. The fact is my
+pleasure because we can work together to solve the same issues between
+whole OpenStack projects. That is a strong point of our OpenStack
+community.
+
+In Newton cycle, I'd like to finish service client development which
+makes it easy to implement Tempest-like tests for non-core projects.
+That will be helpful for OpenStack big-tent. We have already implemented
+many clients as stable interfaces, but some clients still remain.
+I believe we can finish that with folks in the cycle. On the other hand,
+tempest-resources feature also is one of that I want to concentrate on
+in the cycle. That will make Tempest easier to be used on production
+environments. If implementing it, we can involve more users in our
+upstream development and debugging. One more thing is OpenStack health
+dashboard, that attracts people to QA project. We can see current test
+situation easily from the dashboard. The dashboard is already great, but
+there are still several ideas for improving. I want to see the improved
+one in the cycle.
+
+I don't want to enforce something on folks. The door of QA project
+should be always open as previous PTLs did. New ideas are welcome for
+improving test coverage and easy debugging, this is open source project.
+
+I am glad that this chance is given to all developers, this community
+is really open. Regardless of the election result, I will do my best
+in this project.
+
+Thanks
+Ken'ichi Ohmichi
