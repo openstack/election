@@ -1,0 +1,61 @@
+My name is Sridhar Ramaswamy and I'd like to announce my candidacy as
+Tacker PTL for the upcoming Newton cycle.
+
+Tacker is a newly minted big-tent project. I was involved in Tacker
+right from the days when it used to be a Neutron ServiceVM project and
+during its transition to the NFV Orchestration use case. I was leading
+the project in an informal PTL role over the last two cycles. We had
+the goal of getting into the big tent in Mitaka and few weeks back we
+successfully got accepted - woot! Credit goes to the amazing community
+that believed in Tacker and taken it this far.
+
+Mitaka cycle was a quite packed. We are landing many features -
+TOSCA-parser integration, MultiSite VNF placement, Enhanced VNF
+placement (using Nova NFV smarts) and automatic resource creation. We
+also did tons of code clean up to detach Tacker from its original
+Neutron roots. Beyond all this I'm really proud of growing the team
+that is quite diverse for an early stage project [1]. We also
+increased our core team size in Mitaka.
+
+Still we have lot more to do in front of us and if elected I'll work
+towards the following goals for Newton:
+
+Features: NFV Orchestration is a broad space. We have a lot to build.
+However, we got to pace ourselves as we go through this journey. We
+have many interesting features in the radar like Network Services
+Descriptor (NSD) to orchestrate a sequence of VNFs to stand up a
+network service and VNF Scaling - another highly sought out feature.
+I also support the recent decision to use networking-sfc APIs for
+Tacker VNF Forwarding Graph. I'm confident we would be able to land
+this in Newton.
+
+Technical Debt: We did lots of code cleanup over Mitaka cycle. Still
+we mostly focused on getting new features. In the Newton cycle, we
+need to increase our investment in refactoring the aging code that we
+forked off from Neutron. Some of the possible refactorings in our
+sights are in wsgi layer (pecan), in APIs (micro-versioning) and heat
+driver modularity. Decomposing Tacker server into subcomponents is a
+stretch goal which we should get started in the Newton cycle.
+
+Release sanity:  Now that we are under big tent we need to adhere to
+proper cycle deadlines and milestones. We are learning quickly the
+knobs in the area of release management. I'll work towards getting
+our release pipeline in order in Newton.
+
+Gate test: We have a decent amount of gate tests. However, we need to
+keep adding more. I'll work towards increasing the number of gate
+tests particularly using VNFs like OpenWRT.
+
+Community: Growing the community is one of the top goals in Newton. We
+need to increase our core team as well. As always I'll do my best to
+welcome new community members, vendors, and operators to join Tacker.
+
+Overall we need to balance out our investments between new features
+and technical debt / project stabilization in Newton.
+
+Thanks for your consideration.
+- Sridhar
+IRC: sridhar_ram
+
+[1] http://stackalytics.com/?release=all&module=tacker-group&metric=patches
+
