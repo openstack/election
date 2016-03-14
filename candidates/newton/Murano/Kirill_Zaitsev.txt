@@ -1,0 +1,51 @@
+I would like to announce my candidacy for murano PTL
+
+Those of you, who joined Murano during lastest couple of cycles probably bumped
+into me on the IRC. And those of you, who have been with Murano for a long time
+probably know me as an active reviewer/contributor and release manager for
+Mitaka cycle. I hope this allows me to spare the introductions =)
+
+Working on Murano and being part of Murano and larger OpenStack communities is
+definitely the most engaging and exciting things I’ve ever done in my career.
+I’m really excited to work with all the smart folks, who put their hard work
+into making murano robust and mature OpenStack project as well as guiding the
+newcomers and seeing new talents join our communities. I’m feeling lucky to
+have the opportunity to dedicate my time and efforts to Murano as a PTL.
+
+Here are a few topics I would like murano project to concentrate on during
+Newton cycle:
+
+Tighter integration with Glare and wider adoption of app versioning. We’ve had
+murano-glare integration implemented in Kilo and in Newton I would like to see
+Glare become the default storage option for murano application packages. This
+would include glare-related integration jobs and closer communication with
+glare community to track and reflect on changes, that are coming to glare
+project. That is going to be one substantial step further to allow Murano apps
+and more importantly Core Library be versioned and distributed in such manner.
+Tighter integration with Community App Catalog. From the very beginning of the
+Community App Catalog project I believed, that integration with it is essential
+for Murano’s growth and further development. I’ve been working on implementing
+a fully fledged API for Community App Catalog and plan to continue those
+efforts. This should allow murano to replace current repository-based
+integration with a more robust and mature API approach. Another important
+integration point is the UIs of the murano-dashboard and app-catalog-ui. Seeing
+those work and evolve together is something I’m keen to see.  Continue with
+multi-region and multi-cloud efforts. In Mitaka cycle we’ve made it possible to
+deploy murano environments into particular region of an OS cloud with Murano.
+That’s a great start, but there is a long road ahead. We would need to add more
+fine-grained control, allow deploying particular apps of the environment into
+different regions, allow single app to spawn resources in different regions as
+well as different clouds. We would need to add UI for this features. The road
+ahead is long, yet exciting!  OSC client integration. I’ve been extremely happy
+to serve as Outreachy mentor for Murano this cycle. We’ve managed to build a
+foundation of an OSC plugin, which I believe should be turned into a full-grown
+OSC integration and become the default CLI interface to Murano in Newton.
+Finalise py3 transition. Not much to say here. We’ve done great job from not
+supporting py3 in Liberty to having client and dashboard py3 compatible in
+Mitaka. The finish line is just a few steps ahead and I’m intending to make
+those steps in Newton.
+
+I’m feeling that Murano as a project has gained some substantial momentum and
+I’m excited to have the opportunity to push us forward.
+
+Cheers, Kirill (kzaitsev)
