@@ -1,0 +1,37 @@
+Hello everyone,
+
+I'd like to announce my candidacy for I18n PTL.
+
+I'm one of the most active translators since July 2013
+when I18n team is a just working group, not an official project.
+Also, I'm one of Japanese coordinators.
+Japanese translation team is the most active team in I18n team.
+We sometimes share a few tips from our experience to I18n team.
+
+I18n team have spent a very great time for a long time.
+Especially, after we became an official project,
+we have became more collaborative in cross-language activity,
+such as building dashboard translation check site.
+I appreciate the current I18n PTL Daisy.
+She made our team become an official project.
+
+In the Newton cycle, I'd like to
+
+* support dashboard and its plug-ins tranlation into more languages,
+
+* facilitate documentation tranlation into more languages,
+
+* design and improve translation process, glossary management,
+  translation bug triage process, and so on.
+
+Also, I'd like to feedback our experience to the translation
+system Zanata and cooperate with Zanata and Infra team to improve
+our translation efficiency.
+
+I think user facing contents translation is essential to improve
+user experience to the people having various language background.
+I believe I18n activity is necessary for OpenStack to become
+more and more universal.
+
+Best regards,
+KATO Tomoyuki (katomo)
