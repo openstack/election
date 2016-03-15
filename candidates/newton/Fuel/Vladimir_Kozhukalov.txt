@@ -1,0 +1,80 @@
+Hi all,
+
+I'd like to announce my candidacy to be Fuel PTL for the Newton cycle.
+I've been a member of Fuel team since the very beginning of the project.
+Fuel started as a proprietary deployment tool for OpenStack, but since
+that we have been smothly moving towards being more and more open and
+more and more community oriented. In the beginning of Mitaka cycle Fuel
+was approved to become an official OpenStack project under Big Tent.
+But being an offcial project is not enough. 95% of Fuel contributions
+during Mitaka are from Mirantis [1].
+
+Fuel is huge and it is hard for companies and individuals to catch
+tendencies in Fuel project and thus it is hard for them to decide how,
+what and why they could contribute. One of the biggest problems I see is
+Fuel is not modular enough.
+
+Some Fuel components have already been brought out of Fuel and now they
+are fully independent. These are Bareon and Packetary. Bareon is a fork of
+Fuel-agent and is to become a generic OS provisioning tool. It already has
+third party contributions. Fuel is to switch to Bareon in Newton cycle.
+Packetary is a former part of Fuel-mirror. It is to become a generic tool
+to deal with DEB and RPM repositories and packages, so its use case
+is much broader than Fuel.
+
+Some current Fuel components are quite generic and thus they could
+be brought out of Fuel project. For example, Shotgun is a tool for
+collecting log files and commands output from an environment, but this
+functionality could potentially be useful for other projects.
+The same is about Network-checker.
+
+Some Fuel components strictly depend on Fuel but their purpose is generic.
+We could put some efforts to make these components fully data driven and
+thus expand their use case. For example, Fuel-menu is a tool that provides
+user configuration dialog. Why should it be Fuel specific? Could we make it
+data driven and expand its use case? The same is about Fuel-virtualbox, which
+is just a set of configurable shell scripts that could be used for non-Fuel
+virtualbox environments. Fuel-ostf also could be potentially used out of Fuel.
+
+Some Fuel components could potentially be substituted with generic community
+tools. For example, Fuel-nailgun-agent is a discovery/inventory tool.
+Ironic-inspector does the same. Ironic itself could be used as a power
+management tool. Perhaps Neutron could be used for network allocation and
+configuration. Anyway, we should put more efforts in integrating with
+other OpenStack projects.
+
+Besides, Fuel development process is feature driven. Contributors are
+encouraged to merge changes that implement a feature but they are not
+encoureged to think of how maintainable that change is and how it is
+related to the component architecture. Last couple cycles we suffered a lot
+when many features were to be merged by feature freeze. There were many feature
+freeze exceptions, we merged features that had not been tested well.
+
+My suggestion for Newton cycle is to switch from feature driven approach
+to component driven. All components should have dedicated teams that should plan
+components roadmap taking into account not only feature requests but also tech
+debt and components architecture. It is better when people are focused on their
+particular field like REST API, network configuration, OS provisioning, etc.
+That is going to make feature planning more predictable and avoid feature
+freeze rush. Component teams should also be responsible for thorough test
+coverage (including functional and system/integration tests) and for
+promotion of their components.
+
+If we make Fuel components as much independent and generic as
+possible, that will help us to expand component use cases and thus
+to to attract third party contributors.
+
+My primary goals for Newton cycle are:
+1) Switch to component driven development approach
+   (i.e. by-component teams, by-component releases)
+2) Introduce by-component and cross-component functional testing
+3) Attract third party contributors, so they contribute at least 10%
+
+There are lots of things that I'd like to be implemented (integrating with
+OpenStack packaging, UEFI support, torrent based OS provisioning,
+OpenStack deployment from source code, power management, LCM, etc.)
+but I'm going to rely on component teams opinions in such particular fields.
+
+Thanks for reading. If you like the plan, please vote.
+
+[1] http://stackalytics.com/?module=fuel-group&metric=commits
