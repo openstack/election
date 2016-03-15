@@ -1,0 +1,79 @@
+I would like to propose my candidacy for Kuryr PTL position.
+
+Kuryr has only recently joined OpenStack big-tent and i would like to
+receive the official trust of the community and continue serving as the
+PTL for a full release cycle.
+
+I think that Kuryr serve an important role in current OpenStack eco-system
+and solve new problems that many users are facing starting to deploy
+containers environments mixed with OpenStack.
+
+Kuryr is a relatively new project but i am proud to say that we already have
+a very diverse community and feel that we operate openly and advancing in the
+right direction.
+I would like us to keep doing that and advance even faster in the next cycle, I
+have and will continue to devote time to bring more new contributors and users
+into Kuryr.
+
+Kuryr is at first a team effort, me and Toni (apuimedo) from Midokura are doing
+this together all the way from the start and hopefully continue so in the future.
+I would also like to thank all the great people and contributors helping and
+working together with us on Kuryr, you guys are doing great job!
+
+My goals for Kuryr to the next release are:
+
+* Stability, Test coverage and benchmarking - This is important for every
+  project but especially for Kuryr that is facing and working with models and
+  frameworks that are experimental and changing quite often.
+  As more users considering deploying Kuryr, our quality assurance become more
+  and more critical but also our advantage over existing solutions.
+
+* Kubernetes Integration - This effort has already started and we already have
+  what seems to be a good design and a POC implementation of this, i would like
+  us to keep that great work from Antoni Segura Puimedon, Irena Berezovsky,
+  Taku Fukushima and Jaume Devesa.
+  We also need to start looking at providing extra enhancement and policy to the
+  deployments, working together with the Kubernetes and Neutron communities to
+  accomplish this.
+
+* Magnum and Nested containers - We have a great spec and proposal for this
+  done by Fawad Khaliq and i hope to soon be able to bring more interested resources
+  to work on this with him and hopefully myself as well.
+  To me, the goal is for Kuryr to be the default Magnum networking driver and
+  this is one big step in this direction which we do openly with the Magnum team.
+
+* Operators / users - I would like for us to be more involved and responsive for
+  users needs and requirements, Mike Spreitzer from IBM is helping us drive this effort.
+  I am working on providing more reference architecture of such mixed environments
+  which will help us prioritize and find the best use cases to focus on.
+  I am also working internally in Huawei trying to bring these operational requirements.
+
+  I think packaging and Kolla integration are major part of this effort and makes the
+  process of deploying Kuryr simple and easy, we need to continue all the good work that
+  was done on this front and add support for more and more existing Neutron plugins
+
+* Containers storage - My plan is to expand Kuryr mission statement to also bridge between
+  containers orchestration engines and models and the various storage and backup projects
+  in OpenStack to provide simplified management and extra added value features for
+  containers deployment.
+  I hope that we will start these discussions, designs and work during the next
+  release and do it hand in hand with all of these projects.
+
+* Added value features - Like being able to attach to existing networks/ports,
+  a very use full feature for production use cases that i hear is needed quite a lot and is being
+  implemented by Mohammad Banikazemi.
+  We need to identify any other feature that simplify and improve containers networking
+  and work to provide it.
+
+* Increase visibility - Put focus on providing more documentation, blog posts and arrange
+  meetups and talks for all of us to spread the word about Kuryr.
+  I feel that operational documentation is very important for our first users.
+
+* New contributors - I personally hope that more companies (like RedHat and Mirantis) will
+  join our effort and share their vision with us in order to provide a better solution
+  to the community.
+  I am also working on more active involvement from Huawei and hopefully from other
+  companies just as well.
+
+Thanks
+Gal.
