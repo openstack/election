@@ -1,0 +1,19 @@
+I would like to announce my candidacy for OpenStackClient PTL for the Newton
+release cycle.
+
+We have continued to grow the core team for OpenStackClient and have picked
+up the pace from even more new contributors.
+
+OSC reached a couple of major milestones during the Mitaka timeframe:
+* introduction of the OpenStack SDK as a dependency
+* a significant number of NetworkAPI commands implemented (many more to go
+  though) using the SDK
+* expansion of the unit test and functional test coverage
+
+The upcoming releases will include additional Network commands as well as
+some significant Volume v2 additions for features beyond our initial
+v1-equivalent support.  I also think we need to greatly expand our
+documentation to actually explain what the commands accomplish on the
+server, with examples, and not just map to the server API documentation.
+
+I would be honored to have your support.
