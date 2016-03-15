@@ -1,0 +1,73 @@
+I would like to announce my candidacy to run as PTL for the Fuel project
+during the Newton cycle. Over the Mitaka cycle the Fuel project has
+accomplished a lot ranging from joining Big-tent, to reducing code
+duplication in puppet-openstack to increased collaboration with other
+projects.
+
+Going forward, I'd like to help drive Fuel to continue to be a community
+focused OpenStack installer. To further this I want to focus the project on:
+
+* Plugins as first class citizen. Fuel plugins have been a success by many
+measures [0], but there are still many things that can only be done in Fuel's
+core. To help remove these barriers, I would continue to push for more
+interfaces to be in the scope of plugins (releases, and serializers, network
+scheme) and at the same time move the core implementations to plugins. This
+will put plugin interfaces into the primary concern for implementation and
+prevent it from being an after thought. The result will greatly increase the
+flexibility of the plugins interfaces as well as ensure heaver testing. In
+the end, there should be no difference in functionality for a plugin
+developed as part of the core product or by others.
+
+[0] http://lists.openstack.org/pipermail/openstack-dev/2016-February/085636.html
+
+* Community collaboration. We've really stepped up here already. We've moved
+from being effectively duplicate, hard-fork of the puppet-openstack project
+to removal of code duplication, to heavy participation. Going forward, we
+need to continue towards tight-integration in puppet-openstack and increase
+participation with other projects, such as openstack-resource-agents, infra,
+and others.
+
+* Fuel community. We have an open community, and even downstreams, such as
+OPNFV[1]. While we have lots of documentation and awesome operations guides,
+we still have development areas that comprise of tribal knowledge. We have areas such as documenting API changes from version to version (Nailgun and
+Plugin APIs) where we completely fall down on. We need to work to clarify
+and document these areas with a special focus to on-boarding new developers.
+At the same time we need to also improve processes that we have already
+defined, such as design and spec approval so that we can both enhance
+on-boarding and minimize release risks such as FFE.
+
+[1]https://wiki.opnfv.org/fuel_opnfv
+
+* Day 2 support: Life cycle management. In the Newton cycle we will need to
+focus heavily on operations besides initial deployment, these so called
+"day 2 operations" or "life cycle management". This focus on managing
+deployed OpenStack clusters will greatly enhance the usefulness of fuel as
+well as better take advantage of the underlying systems to manage a deployed
+environment.
+
+* Unlocking Fuel for downstream and customization. Over the course of the
+development of Fuel, we have tended to limit certain actions because we don't
+want to address either the complication tied to this, or don't have the
+resources to test it enough to be confident with afore mentioned
+complications. However when this happens, we tend to limit this in a
+hard-coded capacity. This in turn creates restrictions that limit users and
+downstreams alike that are willing, or capable of addressing (or accepting)
+these implications. To this end I want to drive preventing the creation of
+new hard-restrictions, and the driving design that allows for these to be
+customized when desired.
+
+* CI performance and reliability. While we have a complex and thorough CI
+system for testing Fuel, we still have gaps, mostly due to execution timing,
+and less often, due to reliability. I'd like to see increased focus on
+granular execution of tests and the reuse of already tested artifacts. This
+should help with performance as it would reduce the test set to the minimal
+necessary to cover the change. For example we can drop a number of the python
+fuel projects (fuel-web) from running full deployment tests (2.5-3 hrs), if
+instead we properly validated the data in something like Noop which currently
+takes less than half the time to run (1.2 hours). At the same time a more
+granular scope of testing will lead to increased precision of floating
+failures. I would still drive more focus on isolating and resolving a number
+of floating issues like those that plague fuel-web so that we can increase
+developer velocity.
+
+Thanks for your consideration, and I look forward to being your PTL in Newton.
