@@ -1,0 +1,28 @@
+I would like to announce my candidacy for PTL of the Packaging-deb project.
+
+This might surprise some people, as it's not an area I'm sure many of you
+associate me with. So I figure I should enumerate my qualifications:
+
+First and foremost - I am the only ATC in the project currently.
+
+Before that, I believe I qualify as a good candidate by having been one of the
+maintainers of the last set of distro packages (Ubuntu at the time) that were
+produced by the project.
+
+Before we had devstack, and indeed before we had Gerrit, we used to use a
+system for the gate that consisted of a program called Tarmac, the predecessor
+to Jenkins which was called Hudson, bzr branches on Launchpad - and a set of
+PPAs containing packages. Changes to projects were tested against distro
+packaged dependency sets, and the way that one expressed a new dependency
+was to land a change to the Build-Depends of the project in question.
+
+It wasn't a great system - but it served us for that period of time. In any
+case, the majority of the effort I spent on OpenStack in the Austin-Diablo
+period was dealing with the debian packaging related to that.
+
+So as the only human who has landed patches in the current project repository
+AND the only one of those to have maintained packages for the project, I think
+I bring a singular set of qualifications to the job.
+
+I will try, should I be elected by the electorate, to ensure that we do not
+reach the next PTL election with an electorate of one.
