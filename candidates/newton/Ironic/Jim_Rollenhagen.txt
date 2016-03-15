@@ -1,0 +1,41 @@
+Hi all,
+
+I've had the pleasure of serving the ironic community as PTL for the
+Mitaka cycle, and I'd like to do it again for the Newton cycle, if
+you'll have me. We've done some amazing things over the past 6 months
+and I think we can do even more over the next 6 months.
+
+Things I'd like to do:
+
+* Bring on more core reviewers. I've noticed some people interacting
+  more with the community, as well as reviewing more, and I'd like
+  for us to mentor them to get them to a place where they will be an
+  effective core.
+
+* Finish the neutron integration. I failed during this cycle to
+  sufficiently herd cats to help get this done, but we're almost there
+  and it should be easy to finish this early in Newton. We should also
+  start working on the even bigger plan of fully decoupling the
+  user-facing neutron networking from physical infrastructure.
+
+* Begin working on boot-from-volume. This is an often requested feature
+  that will take a long time to get right. We should start working on
+  it now to make sure we can deliver it in Newton or Ocata.
+
+* Seriously, make our gate better. We keep talking about this, and
+  while we continue to make small improvements, I'd like our gate
+  to be rock-solid with substantial coverage (including upgrades!) by
+  the end of Newton.
+
+* Get the work done in Nova to move to a multiple compute service
+  model. This is the cause of a number of pain points. We need to get
+  the ironic side to enable this done ASAP, and I hope to also have
+  the nova code done by Newton, though I honestly wouldn't be surprised
+  if it lagged to Ocata.
+
+Whether or not you elect me as PTL, I look forward to contributing to
+all of these items and more during the Newton cycle. :)
+
+Thanks for reading,
+
+// jim
