@@ -1,0 +1,51 @@
+My name is Adam Young and I am running for Keystone Project Technical Lead.
+
+Why I am running:  I've been part of this project since it was in
+incubation.  During that time, I've received the benefit of several
+dedicated PTLs.  It is time for me to offer to do the hard work
+necessary to make Keystone successful.
+
+
+The Keystone project gets its name from the block on an arch that is
+put into position to make the whole structure self supporting. Remove
+any piece of the arch and the whole thing collapses.  What is notable
+about a Keystone is that it has the highest degree of pressure of any
+block in the arch.
+
+
+The Keystone project fills that same role in OpenStack.  It provides
+the means to make OpenStack capable of architectural feats not
+previously possible.  But it also is the highest risk piece from a
+security perspective, and it is here that, as PTL, I will focus my
+attentions.
+
+
+My goals for Keystone:
+
+1.  Removing the bearer aspects of tokens
+2.  Better delegation mechanisms to scale the management of OpenStack.
+3.  Improving stability, scale, and performance.
+4.  Simplify integration with external identity sources
+
+As a member of the team, I have been frustrated by our inability to
+make progress on some of these key aspects due to workflow
+constraints.  As PTL, I will look to restructuring the code approval
+process to increase development throughput while increasing the
+emphasis on quality.
+
+
+I've been blogging since before I started on Keystone.  It has been
+one of the key ways that I have communicated the design, criticism,
+and techniques essential for Keystone's continued success.  As PTL, I
+will continue to communicate, and to aid the other team members to
+communicate.  Keystone needs to work with the rest of the OpenStack
+project teams.
+
+
+Here's the most important part;  I'm, going to do this all anyway. It
+does not matter if I am PTL or not, this is how I will work.
+
+
+I'm hoping by running that I inspire other Keystone Developers to run
+as well.  We've got a great crew, and I am looking forward to being
+part of it in this upcoming release.
