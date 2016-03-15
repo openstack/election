@@ -1,0 +1,70 @@
+Hi everyone, this is my announcement to run for Nova PTL in the Newton cycle.
+
+First off, I see the Nova PTL role as a service position to the rest of the
+team. The job of the PTL is to organize the release schedule, help people
+coordinate and do a lot of the administrative work with the release team and
+other project teams to try and keep things as smooth as possible for developers
+to do what they do best, with as little distraction as possible. Given Nova's
+maturity and existing strong technical development team, I see the PTL now as
+less of a technical overlord and as more of a manager, and that's how I'd try
+to work.
+
+I've noticed more sub-teams organizing within Nova in the last cycle or two and
+really want to continue to foster that model. For example, there were dedicated
+sub-teams around priorities like cells v2, live migration, notifications and
+the scheduler. Those sub-teams were holding regular meetings and bringing forth
+issues and status to the broader team as necessary. I think this makes those
+priority efforts more productive since we work better when focused for shorter
+periods of time on specific goals.
+
+John did a great job of fostering others to own parts of the work via CPLs,
+the bug triage team, and bringing up potential nova core additions. I want to
+continue that work since I think having different people in these roles helps
+them grow within the project and the community. I'd like to also get Nova more
+involved with the operator community, which probably starts with a CPL
+attending the operator meeting and bringing back news to the Nova team. It
+amazes me how much we still generally work in silos and don't effectively
+communicate issues across groups of teams and I want to make that better.
+
+Which brings me to my main focus for Newton, which is cross-project priorities.
+There are several items that need to make progress in Newton to move not only
+Nova but other projects forward. These include:
+
+* Get-me-a-network (Nova/Neutron)
+* os-vif integration (Nova/Neutron)
+* os-brick + privsep integration (Nova/Cinder)
+* Volume multiattach (Nova/Cinder)
+* Glance v2 integration (Nova/Glance)
+
+We also have to continue moving forward with Cells V2 and the scheduler /
+resource tracker work. We already have sub-teams/owners for a few of these
+items but some are going to require renewed focus, and as PTL I'd be working
+with other projects on setting up plans/goals on how to accomplish these in
+Newton and then communicating those back to the broader team so we can all be
+on the same page. I loved seeing the status updates in the mailing list toward
+the end of Mitaka and want to continue seeing that type of communication.
+
+We need to do _something_ about the release scheduling for blueprints, meaning
+priority and non-priority, and also having time at the end to stabilize and get
+bugs fixed. We spend a lot of time reviewing specs (like most of the first
+milestone), then non-priority features, and finally trying to sprint on the
+things we said were priorities but we for some reason schedule to work on at
+the end of the release, when everyone is tired and time is short to make big
+changes if necessary. I think we need to flip that somehow so that priorities
+actually get treated like priorities early in the cycle and have focused effort
+by the core team.
+
+And last but not least, QA is always a special focus of mine because if the
+gate is busted or we're landing busted code for a lack of testing, it doesn't
+really matter what else we do. That's why we need to get a Ceph job back voting
+reliably on Nova (and Cinder/Glance), along with a trunk libvirt job we've been
+talking about since Kilo - which will also feed into a dedicated live migration
+job. So as PTL those would be things I'd want to help move forward.
+
+If you've made it through all of this, thanks and congratulations! Regardless
+of the election I plan to do my best to serve the project and the people
+working on it in Newton.
+
+Thanks,
+
+Matt Riedemann
