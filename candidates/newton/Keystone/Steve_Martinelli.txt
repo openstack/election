@@ -1,0 +1,16 @@
+Hey everyone,
+
+I'd like to continue to serve as the Keystone PTL for the Newton release. I found serving as PTL for the Mitaka release to be an extremely rewarding experience where I learned a lot about myself and the project. I’d like to continue what I’ve learned and serve as PTL again. I am also fortunate enough to work for an employer where I can dedicate 100% of my time to upstream contributions. With all that said, I believe I'm even more prepared to go at it again! 
+
+We met a lot of goals from my original mission statement [0] and snuck in a few other features that were not listed, you can read the Mitaka recap here [1]. We completed 16 blueprints; ended Mitaka with a very low bug count (down from over 300 to 107); and nominated two new core members. I'm very proud of the work the entire team did during the Mitaka development cycle. I know it's been said many times before but this is a really special team and I'm lucky to be a part of it.
+
+For the Newton development cycle I'd like to continue down the path of making Keystone more enterprise ready by advocating for solid, well-defined and realistic use cases for features that actually help end users. This includes support for Multi-Factor Authentication.
+
+Within Keystone I think it's critical that we finally deliver on our promise of a functional tests for our advanced features such as federated identify, notifications and multiple backends (LDAP and SQL).
+
+Lastly, we have clear cross-project deficiencies that need to be addressed. Creating a new standardized Service Catalog to improve interoperability, and changing our Policy and Authorization for a better user experience are critical.  These are huge cross-project efforts that will need a lot of time and dedicated resources.
+
+I think we're getting closer to all of these goals with each passing release and would like to continue to take us there. Our core team is fantastic and experienced, I like to think I bring organization, structure and direction to the team. I’d like to continue to play to my strengths and accomplish the goals I have stated above.
+
+[0] https://review.openstack.org/#/c/222766/1/candidates/mitaka/Keystone/Steve_Martinelli.txt
+[1] http://lists.openstack.org/pipermail/openstack-dev/2016-March/089387.html
