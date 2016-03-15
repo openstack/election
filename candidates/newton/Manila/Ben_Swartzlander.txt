@@ -1,0 +1,27 @@
+I am running again for the position of Manila PTL.
+
+Since the self nomiation period is in the middle of bugfixing I'm not going
+to write up a long campaign speech.
+
+Mitaka has seen a lot of successes:
+* Continued growth of the community
+* More new drivers (first party and 3rd party)
+* Major new feature merged (share replication)
+* Infrastruture improvements needed for migration
+
+There have been some challenges too:
+* Gate is still not reliable
+* Overwhelming number of bugs
+* Distro-related problems with new first party drivers
+
+If elected PTL for Newton I plan to prioritize finishing the things we've
+started over starting new things. We have overwhelming evidence that big
+things take more than 6 months to get completely right and the experimental
+API approach we started in Liberty is paying off.
+
+I want to wrap up migration and replication. I want to solve the issues
+related to our first party drivers. I want to drive bugs down to a
+manageable level. And I want to start promoting experimental things to
+supported APIs.
+
+-Ben Swartzlander
