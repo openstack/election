@@ -1,0 +1,42 @@
+Hi,
+
+My name is Renat Akhmerov. I decided to run for Mistral PTL for Newton release cycle.
+
+I've been working on the project since its initiation. I've been driving it, designing
+architecture and did a lot of coding, especially in the first year. I try to review all
+the patches coming in. I've also been presenting the project at lots of conferences
+including OpenStack summits for more than two years. I think we've done a great work
+together with the team to put Mistral to where it is now. Thanks to everyone who worked
+with us. Special thanks to folks from Mirantis, StackStorm, Huawei, Catalyst IT, Nokia,
+Alcatel-Lucent, 99Cloud, RedHat and Nec.
+
+Mitaka was really the first cycle when I felt huge growth of interest to the project
+in the community. The number of emails and people coming to our IRC channel became
+really impressive. I'm now completely convinced that what we're doing is demanded.
+
+As far as technical contribution, I should admit that Mitaka was not the best cycle
+for us. And I'm taking responsibility for it. I didn't have a chance to work on the
+project significant part of my time, hence not so many things were done in the project
+from what we planned in Tokyo. Despite that, we were able to fix a number of important
+issues and added several important new features as "Resource sharing between tenants"
+and new actions for some of the OpenStack projects that we didn't support: Barbican,
+Swift, Trove etc. Now Mistral is integrated natively with almost all core OpenStack
+services. As far as my personal contribution, I again have an opportunity to spend
+significant time working on Mistral. I'm still passionate about the technology we're
+making, have lots of ideas that I'm willing to get implemented and I feel hunger to
+work on all of that. I'm still seeing that one of the most important pieces of work
+is making Mistral work in HA mode reliably. We now have a certain plan for it and
+started working on its implementation.
+
+Other things that I'd love to address during the Newton cycle are:
+* Implement RESTful API and CLI of version 3 that would fix all visible downsides of
+  version 2
+* Significantly improve Mistral usability when using both CLI and UI
+* Significantly improve Mistral documentation
+* Provide clear guidance and tooling for developing custom actions
+
+What I am already proud of is the workflow language that we've designed. I don't
+see many ways how we should be improving it. In my opinion, it balances simplicity
+with power very well and for that reason it is perceived by users very positively.
+
+My goal is still to build a really useful and beutiful technology.
