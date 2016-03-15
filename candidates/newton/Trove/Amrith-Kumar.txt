@@ -1,0 +1,55 @@
+Greetings,
+
+I am writing to submit my candidacy for election for Project Team Lead
+for the Trove project. I have been an active technical contributor to
+the Trove project since just before the Icehouse release when Trove
+was integrated into OpenStack. I have also contributed code[1] and
+reviews[2] to some other OpenStack projects. I am one of the two
+authors of the book on Trove[3], the other author is my colleague and
+a fellow Trove contributor, Doug Shelley.
+
+Over the past two years, Trove has come a very long way, adding
+support for a dozen databases, and providing users the ability to
+orchestrate complex topologies of these databases, and manage them
+through their lifecycle. In the Mitaka release we have seen the
+addition of a number of exciting and new capabilities for databases
+like Cassandra, CouchDB, MariaDB, MongoDB, Percona XtraDB Cluster, and
+Vertica.
+
+Looking ahead to Newton and Ocata, I think the project has some
+specific areas where focus is needed. These include:
+
+   * paying down the technical debt both in shipping code and tests,
+
+   * strenghtening the community and adding more contributors,
+     reviewers and core reviewers,
+
+   * addressing issues with the review backlog,
+
+   * improve integrations with other projects (specifically Cinder,
+     Manila, Ironic, Magnum and Sahara),
+
+   * continuing to extend the capabilities of trove especially in the
+     area of some specific requirements from large enterprises, and
+
+   * making it easier to use Trove, to make guest images, and other
+     commonly reported problems.
+
+All of these are things that have come up from within the community
+and I look forward to working to continue to make progress on these
+efforts.
+
+Thank you, and I would appreciate your vote in the election.
+
+-amrith
+
+--
+Amrith Kumar
+Email: amrith@tesora.com
+IRC: amrith
+GPG: 0x5e48849a9d21a29b
+
+[1] http://stackalytics.com/?user_id=amrith&release=all&metric=commits
+[2] http://stackalytics.com/?user_id=amrith&release=all&metric=marks
+[3] http://www.apress.com/9781484212226
+
