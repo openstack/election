@@ -1,0 +1,31 @@
+Hi there,
+
+The Telemetry project had a tremendous run so far, and I'm willing to help it
+continue on that trajectory. We have an awesome community, and we had the
+chance to be led by great leaders so far, which directed the team and projects
+in an open and enthusiast manner.
+
+Our previous PTL helped the community to grow in a fabulous way over the last 2
+cycles, and I'm glad to be able to follow his footsteps. As you may know, I've
+already been Ceilometer PTL during the Havana and Icehouse cycles, and it'd be
+with a great pleasure that I would take up the torch again. I'll continue to
+manage the project in a transparent way and do everything I can to grow our
+community and make people feel welcome.
+
+Looking forward to Newton, I hope we'll be able to continue improving our
+deliverables. Some items I'd like to target are:
+
+- Continue splitting Ceilometer into smaller parts. Aodh has been a success,
+  it's time to create another one.
+
+- Continue code refactoring and technical debt addressing. We're probably one
+  of the most aggressive and efficient project on that, but that gives us an
+  amazing outlook.
+
+- Reduce Ceilometer hard-coupling to OpenStack projects.
+  We applied this strategy from scratch to Gnocchi, and to some extent to Aodh,
+  with great success. Let's continue that.
+
+Cheers,
+
+jd
