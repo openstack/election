@@ -1,0 +1,26 @@
+I am announcing my candidacy for PTL for the TripleO team for the Newton
+release cycle.
+
+Over the last development cycle, I've been heavily involved with evolving the
+TripleO release model to better enable consuming TripleO in the context of
+OpenStack coordinated release.
+
+We've had our share of challenges supporting the new stable/liberty branches,
+such as CI capacity and an overload of backports, but I still think improving
+the experience for both upstream users and downstream consumers of TripleO
+remains one of the most important challenges we face, and I intend to commit
+further time to this task in the Newton timeframe.
+
+The other area I'd like to help improve is refining our template model to
+better support integration with vendor drivers, and potentially giving more
+operator choice in terms of the configuration management workflow.  We've
+made slow progress on this during Mitaka, but I think improving composability
+and enabling more operator choice remains very important, and I'd like to help
+fix our branch model and free up capacity so we can make progress on this.
+
+My view of the PTL role is that it's as much about release coordination as it
+is about technical leadership, so I'd like to step up and offer to take on this
+workload (with the help of our community!) for Newton.
+
+Thanks for your consideration!
+
