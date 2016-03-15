@@ -1,0 +1,47 @@
+Hi,
+
+I would like to submit my candidacy to continue as PTL of Solum for the Newton cycle.
+
+In Mitaka we accomplished several things including,
+- completion of app and workflow API model
+- ability to scale application instances
+- ability to deploy pre-built application containers
+- made Solum's devstack and vagrant development environments stable
+- kept up with upstream in regards to release tools and various plugins
+- got new contributors
+
+For Newton cycle, I believe we have following challenges in front of us.
+- Code stability
+  We need to focus on adding more tests towards improving code stability
+
+- Documentation
+  Our getting started guide can be improved considerably so that
+  it further lowers the barrier for new contributors to get a working
+  Solum environment. We need to improve documentation for sample applications
+  that we provide within solum repository.
+
+- Horizon plugin
+  We have a horizon plugin, but we have not actively maintained it in last
+  few cycles. Now that the new API is in place,
+  it is time for us to revisit the plugin and get it working again.
+
+- Deprecating plans and assemblies
+  When we started Solum, the abstractions of plans and assemblies provided good
+  starting points for modeling applications and their deployments. Over time
+  it was felt by the team that these abstractions did not align with
+  similar abstractions from other systems. Hence the team developed and implemented
+  abstractions of 'app' and 'workflow'. Time has come for us to deprecate plans and
+  assemblies. This will greatly simplify our codebase.
+
+- Migrate off of oslo incubator
+  Currently we are lagging behind in adoption of oslo libraries. In the current
+  cycle we got help from several members of the Oslo team towards migrating some parts
+  of our code to use oslo libraries. I am really grateful to them for this help,
+  and plan to engage with their team more on this in the future.
+
+- Multi-container apps
+  We need to enhance Solum to build and deploy multi-container applications, which may
+  follow different kinds of container patterns.
+
+Best regards,
+Devdatta Kulkarni
