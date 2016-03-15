@@ -1,0 +1,15 @@
+I'm announcing my candidacy for PTL of the Security project during the
+Newton release cycle.
+
+As one of the founders of the Security project I believe I have a strong
+base from which to continue developing and enhancing security within
+OpenStack.
+
+The security project has taken great strides during this release cycle.
+In future we will deliver on stronger security controls, foster more
+security innovations and deliver a comprehensive threat analysis
+process.
+
+https://review.openstack.org/292538
+
+-Rob
