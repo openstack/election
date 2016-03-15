@@ -1,0 +1,52 @@
+Hi everyone,
+
+I am seeking re-election as Documentation PTL for Newton. I have now been the
+docs PTL for two releases (Liberty and Mitaka), and would love another term in
+the middle of the alphabet! We've achieved a lot this time around, including
+an almost complete conversion to RST, quite a few structural overhauls of
+popular books, and some fundamental toolchain improvements. There is still
+lots to be done, though, and I would love your support to achieve this in
+Newton.
+
+During Liberty we got the bulk of our books migrated away from Docbook XML and
+into RST. In Mitaka, we completed that work (with only the Ops Guide remaining
+to be converted in Newton). For the last couple of releases, we've also had a
+focus on improving the information architecture of our books, and have now
+successfully completed overhauls of our most popular books, with the
+Architecture Guide also well underway. All of these tasks will be carried over
+to Newton, with many of them finally coming to completion. In Newton, I would
+also like to address some of the larger issues around the organisation of our
+documentation suite, making it easier for developers to contribute quality
+code to our docs, and better welcoming and introducing new big tent projects
+to the documentation team.
+
+At the Mitaka summit in Tokyo, we decided to make a concerted effort to pay
+down a lot of our tech debt, and one of the main ways we chose to do that was
+to change the way we handled the DocImpact flag in our bugs. We merged those
+changes to DocImpact about a month ago now, and it is already having a
+significant impact on the amount of untriaged bugs outstanding. We're now much
+more able to keep on top of our bug queue, which is giving us a much greater
+ability to pay down tech debt. In this vein, we also have put a lot of effort
+into ensuring new contributors have a better onboarding experience to docs,
+with the creation of our new Contributor Guide which replaces a lot of old
+wiki-based content, a great 'get started with docs' campaign at the last
+Summit (which resulted in a hard copy article in the Summit edition of
+SuperUser, and Anne and I on SuperUser TV), and a general willingness to
+respond to questions on the mailing lists and help out new users wherever we
+find them.
+
+In the Liberty release cycle, we closed just over 600 bugs, and we're very
+close to matching that number for Mitaka, with 505 bugs closed as I write
+this. Again, we've managed to keep on top of the aging bugs as well, with all
+bugs older than a year now closed. In the Mitaka release, we managed to close
+16 blueprints, which is a massive increase over Liberty's 7.
+
+I'm very excited about making the trek to Austin soon for the Newton summit,
+to catch up with old friends, and hopefully meet some of our newest
+contributors. Please be sure to stop for a chat if you see me around :)
+
+I'd love to have your support for the PTL role for Newton, and I'm looking
+forward to continuing to grow the documentation team.
+
+Thanks,
+Lana (@loquacities)
