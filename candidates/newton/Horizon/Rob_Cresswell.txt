@@ -1,0 +1,31 @@
+Hi folks,
+
+I'm announcing my candidacy for PTL for Horizon for the Newton release cycle.
+
+My main goals for the cycle are:
+
+- Remove roadblocks from AngularJS development so that the code can
+  mature. This means optimistically approving patches in the experimental
+  disabled panels, so that it can be rapidly iterated. The Swift rewrite is a
+  fantastic example of how focused reviews and dropping the demand for
+  absolute perfection allow for a dramatically improved experience via
+  AngularJS.
+
+- Work on scale issues, and improve non-performant content. There are a number
+  of panels in Horizon that are often unused (especially in the Admin
+  dashboard). We need to apply the existing tools available to us such as
+  pagination and filtering, as well as investigate other proposals.
+
+- Improve bug management and project organisation. In the past few cycles, the
+  bugs and blueprints on launchpad have been quickly growing while triage work
+  dwindles. In Mitaka, we've run several bug days as well as holding a Horizon
+  Drivers meeting every other week to analyse blueprints as a group. I'd like
+  to continue the focus on bringing our tooling back to useable state, so that
+  we correctly address current issues and customer needs.
+
+Finally, I believe one of the most important parts of being a PTL is community
+engagement, and will continue to build an active and positive developer
+community.
+
+Thanks,
+Rob
