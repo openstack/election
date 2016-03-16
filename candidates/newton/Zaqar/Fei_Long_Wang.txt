@@ -1,0 +1,41 @@
+Hi all,
+
+I've had the pleasure of serving the Zaqar community as PTL for the
+Mitaka cycle, and I'd like to continue for Newton cycle, if
+you'll have me.
+
+For Newton release, things I'd like to do:
+
+1. Real-world deployment
+   Puppet Zaqar is ready. Ansible Zaqar role is on the way. So we need to get
+the ansible work done ASAP,  and then interlock and provide more support for
+potential cloud providers who have shown interest for Zaqar.
+
+2. Notification service
+   We got notification service alive since Liberty and fixed several bugs in
+Mitaka. But we do still have things to do to make it fully functioning.
+Such as subscription confirm and more drivers, etc.
+
+2. Docs
+   The config reference doc has been done in Mitaka which is an fantastic
+milestone. And in Newton, I would like to complete API reference document
+and admin guide for Zaqar.
+
+4. Collaboration with other OpenStack projects
+   We did a great job in Mitaka for the integration with Aodh, Mistral and
+Tripleo. And I believe there are some other projects could be benefited by
+Zaqar. For example, the notification middleware of Swift, Zaqar's websocket
+transport for Searchlight/Horizon etc.
+
+5. Encourage diversity in our Community
+   We got some new members joined the team in Mitaka. And one of them has been
+nominated as core reviewer who grew very fast. It's really awesome. In
+Newton, I would like to encourage more people/organizations to join Zaqar
+community.
+
+It's a fantastic experience working with this amazing team and I know without
+the dedication and hard work of everyone who has contributed to Zaqar we can't
+make those success stories of Mitaka happen. I would be pleased to serve
+as PTL for another cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
