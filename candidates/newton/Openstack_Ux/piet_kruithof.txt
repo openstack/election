@@ -1,0 +1,15 @@
+I’m interested in continuing my role as PTL for the OpenStack UX project.
+
+Over the past six months, the team has been able to support multiple design and research efforts
+including the ironic, swift, LBaaS, DBaaS, and the mobile client.  In addition, we were also able
+to add UI content guidelines to the OpenStack Documentation Contributor Guide.   Finally, the team
+will be redesigning the Horizon Overview panel and running a usability on the OpenStack Client
+before the Austin Summit.
+
+Following the summit, the project is planning to create a GUI for both installation and
+configuration from bare metal to the user launching their first VM and propose design concepts to
+improve operator experience for managing quotas.  In addition, the project is also planning to
+replace the Invision mock review tool with an open source solution.  Finally, we are also hoping to
+create a cross project specification for the OpenStack personas.
+
+Of course, none of this would be possible without the significant efforts of the OpenStack UX team.
