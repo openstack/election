@@ -1,0 +1,69 @@
+Hi,
+
+I would like to announce my candidacy for the PTL position of Magnum.
+
+To introduce myself, my involvement in Magnum began in December 2014, in which
+the project was at a very early stage. Since then, I have been working with the
+team to explore the roadmap, implement and refine individual components, and
+gradually grow the feature set. Along the way, I’ve developed comprehensive
+knowledge of the architecture and has led me to take more leadership
+responsibilities. In the past release cycle, I started taking some of the PTL
+responsibilities when the current PTL was unavailable. I believe my past
+experience shows that I am qualified for the Magnum PTL position.
+
+In my opinion, Magnum's key objective is to pursue tight integration between
+OpenStack and the various Container Orchestration Engines (COE) such as
+Kubernetes, Docker Swarm, and Apache Mesos. Therefore, I would suggest to give
+priority to the features that will improve the integration in this regard.
+In particular, I would emphasize the following features:
+
+* Neutron integration: Currently, Flannel is the only supported network driver
+  for providing connectivity between containers in different hosts. Flannel is
+  mostly used for overlay networking, and it has significant performance
+  overhead. In the Newton cycle, I would suggest we collaborate with the Kuryr
+  team to develop a non-overlay network driver.
+* Cinder integration: Magnum supports using Cinder volume for storing container
+  images. We should add support for mounting Cinder volumes to containers as
+  data volumes as well.
+* Ironic integration: Add support for Ironic virt-driver to enable support for
+  high-performance containers on baremetal servers. We identified this feature
+  as a key feature in a few release cycles previously but unfortunately it
+  hasn't been fully implemented yet.
+
+In addition, I believe the items below are important and need attention in
+the Newton cycle:
+
+* Pluggable architecture: Refine the architecture to make it extensible. As a
+  result, third-party vendors can plugin their own flavor of COEs.
+* Quality assurance: Improve coverage of integration and unit tests.
+* Documentation: Add missing documents and enhance existing documents.
+* Remove hard dependency: Eliminate hard dependency on Barbican by implementing
+  a functional equivalent replacement. Note that this is a technical debt [1]
+  and should be clean up in Newton cycle.
+* Horizon UI: Enhance our Horizon plugin.
+* Grow the community: Attract new contributors to Magnum.
+
+In the long term, I hope to work towards the goal of making OpenStack become
+a compelling platform for hosting containerized applications. To achieve this
+goal, we need to identify and develop unique capabilities that could
+differentiate Magnum from its competitors, thus attracting users to move their
+container workloads to OpenStack. As an initial start, below is a list
+features that I believe we could explore. Please don't consider it as final
+decisions and we will definitely debate each of them. Also, you are always
+welcome to contribute your own list of requirements:
+
+* Resource interconnection and orchestration: Support dynamically connecting
+  COE-managed resources (i.e. a container) to OpenStack-managed resources
+  (i.e. a Neutron network), thus providing the capabilities to link
+  containerized applications to existing OpenStack infrastructure. By doing
+  that, we enable orchestrations across COE-managed resources and
+  OpenStack-managed resources through a Heat template.
+* Integrated authentication system: Integrate COE authentication system with
+  Keystone, thus eliminating the pain of handling multiple authentication
+  mechanism.
+* Standard APIs: Hide the heterogeneity of various COEs and expose a unified
+  interface to manage resources of various kinds.
+
+Thank you for considering my PTL candidacy.
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2015-July/069130.html
