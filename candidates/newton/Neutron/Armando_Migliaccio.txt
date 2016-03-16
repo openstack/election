@@ -1,0 +1,73 @@
+I would like to propose my candidacy for the Neutron PTL.
+
+I have been the Neutron PTL for the Mitaka release, and I would
+like to continue the journey on which I have embarked upon a little
+over six months ago.
+
+Back then, I had a number of objectives which I wanted to achieve with
+the help of the Neutron team, and with this candidancy statement I
+would like to take the opportunity to look back and see what we have
+accomplished and what else is waiting ahead of us:
+
+* Stability is the priority: I have introduced a rotation mechanism for
+  triaging and staying on top of bugs; with that, we have a very little
+  percentage of bugs that go unacknowledged, and even though we only
+  managed to fix only 60% of all bugs reported in the Mitaka timeframe,
+  some might regard this as a remarkable achievement. I also made sure
+  the Neutron projects was amongst the most stable one, by aggressively
+  addressing intermittent failures, and by ensuring that failures did not
+  impact the integrated gate. As of today, the success rate for Neutron
+  (alone) is at >98%. We also worked hard to extend test coverage to DVR,
+  Linuxbridge and Grenade multinode. Going forward, I'd like to focus on
+  improving the stability of multinode jobs, and look at how we can do
+  more reliable and exhaustive performance testing on a more regular basis.
+* Narrow the focus: we all know by now my attempt to address the needs
+  and the issues of the Stadium, and the team effort aimed at standing up
+  neutron-lib to allow for Neutron projects to loosely couple together.
+  The journey is far from being over and I will continue to work towards
+  a resolution that strikes a good compromise for everybody. On the other
+  end, I worked hard with the rest of the drivers team members to ensure
+  a coherent strategy and vision when assessing and approving RFE's. I
+  proposed process changes to ensure that reviewers and contributors can
+  be more focussed and work together towards a well defined goal.
+* Consistency is paramount: promoting the documentation of our practices
+  (like our deputy, blueprint/rfe guidelines and release postmortem), as
+  well as starting the 'Effective Neutron' guide have been two key areas
+  that allowed our developers to have a common understanding on how we
+  operate, review, develop and manage our project. More needs to be done
+  to ensure we become 'more predictable' in terms of the software we
+  produce and the quality associated with it, including end-user facing
+  documentation.
+* Define long term strategy: when I started looking at this area, Neutron
+  had 400+ blueprints targeted. I tried to put some sanity back into the
+  feature submission process by limiting who can actually submit feature
+  proposals (the drivers team) and by cleaning up the huge backlog of
+  blueprints we had (currently we have 15 blueprints and 19 RFEs). That
+  said this is an area where I feel I have not made enough of a dent to
+  be satisfied. This is somewhat tangential to the needs of the Stadium,
+  but I think we need more time to execute a plan of action that can
+  yield positive results.
+* Keep developers and reviewers _aware_: I worked relentlessly to remind
+  our reviewers to stay focussed and review what matters for a given release.
+  I think we have achieved this with mixed success, and I know that some
+  of us worked hard to give us the tools to help us stay more aware.
+* I would like to promote a 'you merge it, you own it' type of mentality:
+  this is typically done by leading by example, and I am pleased to see
+  that many of us take great pride in the code they review and merge. We
+  need to continue to promote this attitude.
+
+And last but not least:
+
+* Improve the relationships with other projects: Nova and QA primarily.
+  I personally feel that we went a long way to improve these relationships,
+  from the technical front (for example by improving the provisioning
+  workflow of networking resources for Nova instances - aka get-me-a-network,
+  and by tackling the testing issues affecting Neutron) to the the social
+  front, by having a good representation of contributors across multiple
+  projects at the various mid-cycle events. There is always room for
+  improvement, of course!
+
+If you liked what I did/said, then allow me to continue.
+
+Thanks for reading and, as usual, forgive the typos!
+Armando Migliaccio (aka armax)
