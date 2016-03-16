@@ -1,0 +1,53 @@
+Hi everyone,
+
+I'd like to be considered for Glance PTL.
+
+First: thanks (again) to Flavio for his leadership over the last cycle.
+
+Glance is in pretty good shape right now: we have a coherent team which
+is focussed on a well defined set of priorities. It's a relatively small
+team, but we're fortunate to have a good range of strengths; every one
+brings something valuable.
+
+I've been contributing to Glance since Essex. I've probably touched
+most areas of the code at some point since then, and I hope I've built
+up a good understanding of the code base, the thinking behind most of it
+... and the quirks too. I can't claim to know all the OpenStack code base
+(who can?) but I've good relationships with folks from a bunch of other
+projects I can reach out to, especially the ones Glance interacts with
+(Keystone, Swift, Cinder etc).
+
+For several years I was also an operator. Starting from Diablo (back when
+we were still using integers, not uuids) I was responsible for running
+Glance in HP's Public Cloud (24x7x365). That gave me a good understanding
+of the issues operators face and, where I can, I've contributed back
+based on my experience.
+
+As a developer and operator my goal has been the same: to give the best
+possible experience for users.
+
+If elected I will be able to devote myself full time to the project,
+be available on IRC, and hope to increase my own review rate.
+
+Priorities for the Newton cycle:
+
+* Image import refactor
+
+We need to do everything we can to ensure DefCore can include an image
+upload capability.
+
+* v2 API adoption
+
+We need to make it possible to deploy OpenStack without enabling Glance's
+v1 API. There were some heroic efforts on the Nova side of this during
+Mitaka (thanks Mike).
+
+* Maintain focus.
+
+Yes, we will work on other things during the cycle. But we shouldn't
+commit to anything that could impact on our priorities. It's ok to say
+"no" now and again. There will be other cycles.
+
+Thanks for your consideration.
+
+-Stuart
