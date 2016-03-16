@@ -1,0 +1,27 @@
+Hi everyone,
+
+I'm happy to announce my candidacy for PTL of Heat for the Newton cycle.
+
+The project and the community are in a good place in my opinion currently, both
+diverse and active. As much as possible I'd like to continue encourage and
+improve that.
+
+Heat is being used more and more by projects inside OpenStack. As we know first
+hand, being broken by other projects is not a great experience, so I want to
+make sure we don't do this. I believe it goes by being proactive (taking care
+of compatibility, making sure gates are not broken before merging) and reactive
+(handle issues promptly, not being afraid of reverts).
+
+On the other hand, I also want to reach application deployment outside of
+OpenStack itself, with a focus on documentation, and improving our
+heat-templates repository.
+
+I don't believe we should work much on particular features outside of
+continuing our resource coverage. Pushing convergence, and working on
+scalability and performance sounds like what we should aim for in the near
+future.
+
+All of that said, being PTL is also a lot about release coordination, which I
+hope to learn with the help of our successful lineage of PTLs.
+
+Thanks!
