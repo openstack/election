@@ -1,0 +1,84 @@
+Hello everyone,
+
+I would like to announce my candidacy for the role of PTL of Glance for Newton.
+
+1. Personal Commitment
+My employer will be giving me 100% time to focus on this role and I do not
+intend to take other roles within the community for the sake of focusing on the
+development and progress of our project. I am as much of a community developer
+as I like being a software one and of late, I've been focusing hard on the
+first more. Thanks to this community I was given the challenging yet
+interesting task of leading Glance through a difficult phase of an identity
+crisis during Kilo timeframe. We've come quite far, addressed many concerns and
+are making good progress therein. However, there's a lot ahead of us like the
+recent image locations usage confusion, where tasks are heading and what do
+image sharing plans look like. This keeps me driven and interested in the
+development of Glance.
+
+2. Themed Focus
+For newton, we already have over a dozen solid proposals for summit sessions
+[1] and I expect a few more. While we welcome all the feedback that we can
+possibly get in such face to face conversations, it will be essential deriving
+priorities out of them. Without a doubt, we've import refactor work, Nova's
+support of v2 API as top priorities. Those will be the encompassing
+development goals for Newton. However, any software project has some general
+changes that sometimes become critical if not fixed in a limited time frame and
+we've seen that happen multiple times over the history of the project. I would
+like to divide those into the following focus areas: security, stability,
+feature additions, performance, maintenance, testing, usability, and
+cross-project. Not all the dimensions of the project will have proposal talks,
+we will still encounter refactors and bugs for each. Sometimes those bugs are
+heavy to handle with multiple hundred lines of code per review. Historically
+Glance core being a overall low bandwidth team, we are likely to get
+bottlenecked in one of these areas. I would like to work with the team during
+the summit to help prioritize an item for each dimension so that everyone is
+aware and thinking of what's coming their way for reviews. This will be a
+discussion that involves themed focus to help establish a good review cadence.
+
+3. Enablement
+Always! I've always been a fan of enabling folks to do their job, discover
+their interest in the project and help move OpenStack as a whole in a positive
+direction. I think processes help but sometimes they become too hard to deal
+with. I believe the most productive environments are the ones where people who
+are driven & active get opportunities to take important decisions in their
+focus areas while being hit with appropriate trade-offs from partners and the
+vantage point is provided by the PTL.
+
+4. Collaboration
+Glance being a service consumed by many OpenStack services, we are a team that
+needs to be actively engaged in cross-project meetings, initiatives, and ad-hoc
+syncs. Import refactor work, deprecation of v1 API and building of
+compatibility layer for Glance requires a ton of cross-project involvement with
+DefCore committee, Nova team, etc. Also, the momentum Glare is getting with its
+consumers will need quite active participation in the respective syncs. I have
+recently taken a co-lead role for the cross project effort on quotas mainly
+with the objective of shaping the right quotas semantics for Glance but also to
+help the bigger OpenStack community in the process. I will give up this co-lead
+role and help the members with a smooth transition and keep myself involved
+from purely Glance perspective to ensure my full attention to the project.
+However, I hope to achieve more collaboration with the help of other team
+members in all the different areas.
+
+5. Finding equity to the unbalance
+I believe we've had a good number of drives in OpenStack, developer driven
+cycles, operator driven cycles, and user-driven cycles. There's a ton of value
+to each of these three legs of the tripod on which OpenStack services stand.
+Nonetheless, in a core OpenStack service like Glance, I strongly believe that
+we need to find the center of gravity of this tripod in order to balance the
+development dance. In Newton, I plan to start a broadcast communication channel
+for the use of all the three legs namely developers, operators, and users. We
+already have the MLs and IRC media of communication that fulfill the unicast
+and multicast requirements. I find blogs to be more representatives of personal
+opinions rather than a medium of project updates. I plan to interview the
+active developers, interested operators & users on their work & perspectives;
+publish the update transcripts publicly on non-textual media for a hands-free
+consumption. The most important reason for this proposed initiative being
+communication of intent and not just of the information, and my observation is
+that lack of communication of intent is an important reason for many livelocks
+in the OpenStack people problem realm.
+
+[1] https://etherpad.openstack.org/p/newton-glance-summit-planning
+
+Thank you for reading and for your consideration.
+
+Nikhil Komawar
