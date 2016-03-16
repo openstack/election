@@ -1,0 +1,64 @@
+My Peers,
+
+Kolla in Mitaka introduced many significant features, and in my opinion
+is the first version of Kolla to offer a fully functional deployment system.
+Our community has completely decoupled Kolla from various upstream releases
+of Docker>=1.10.0, resolved the data container data loss problem with
+named volumes, implemented a fantastic upgrade implementation, added
+reconfiguration, improved security via dropping root and TLS implementations
+on the external network, implemented the start of a rockin' diagnostics
+system, dramatically improved our gating, and most importantly accepted
+with open arms the work of various community members around kicking off
+a Mesos based implementation of Kolla in addition to our existing
+implementation in Ansible.  Most important to me personally is that we
+have done all of this work without harming our diversity, which
+remains consistently strong and protects our community and implementation.
+
+I don't personally take credit for this work; Mitaka Kolla is the hard work
+of everyone in the community working together towards a common goal.  Every
+metric that can be pulled out of Stackalytics shows our project has
+doubled in committers, reviewers, commits, reviews, and IC project
+interaction.
+
+A leader's job is to take the community on the trip they want to go on.  I
+personally feel I've done a done a good job of balancing the various interests
+in Kolla to maintain a high quality implementation while maintaining
+diversity.
+
+I view the role of PTL as a facilitator rather than giving directives.  My
+personal growth in this area is only because of on the job training over
+the last twenty years of development leadership, coupled with the rockin'
+teams I've led and recruited, including Corosync, Heat, Magnum, and now
+Kolla.
+
+For Newton I wish to directly contribute to or facilitate the following
+activities:
+
+* Continue to deliver diversity in our Community.
+* Implement reno support and obtain the release:managed tag [1].
+* Obtain the vulnerability:managed tag [2].
+* Obtain real-world production deployments using Kolla.
+* Grow out community of developers, reviewers, and operators.
+* Turn our leaky functional testing gate into an Iris [3].
+* Implement plugin support for Horizon, Neutron, Nova, and Cinder both
+  from source and from binary.
+* Implement BiFrost integration.
+* Expand on our diagnostics system.
+* Release a production-ready implementation of kolla-mesos.
+* Containerize and deliver more Big Tent server projects.
+* Make the image building and functional gating voting(!) by delivering
+  mirrors of our upstream software dependencies internally in OpenStack
+  Infrastructure.  This work was partially done in Mitaka but more work
+  is required.
+* Continue to provide excellent project management and improve our processes.
+
+I am pleased to accept your vote and serve as your PTL for the Newton
+release cycle.  As a Community I am certain we can make Newton as successful
+as Kilo, Liberty, and Mitaka have been!
+
+Warm regards,
+-steve
+
+[1] https://github.com/openstack/governance/blob/master/reference/tags/release_managed.rst
+[2] https://github.com/openstack/governance/blob/master/reference/tags/vulnerability_managed.rst
+[3] https://www.reddit.com/r/DIY/comments/3iw44k/i_made_an_iris_aperture_engagement_ring_box/
