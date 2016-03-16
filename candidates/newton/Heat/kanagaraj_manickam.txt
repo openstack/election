@@ -1,0 +1,54 @@
+Dear all,
+
+I am announcing my candidacy for PTL role in heat for Newton release.
+
+I started to work in heat from Juno release and got opportunities to work on
+various features in Heat services and it's echo-system like CI, documentation.
+It helped me to get confident with heat service and community. Based on this,
+I would like to announce my candidacy and will assure to continue the team
+success formula "consensus building".
+
+My goal is to increase the existing user and developer experiences in heat
+to the next height, by working with us on following aspects in Newton release:
+
+Features:
+========
+* Work with Product WG to understand their road-map and bring the required
+features in heat. It helps to align with big-tent's over-all road-map.
+
+* Complete the Convergence initiative and bring greater value out-of it. It
+helps for greater scalability.
+
+* Heat is being consumed in OpenStack by TripleO, Tacker, Magnum, Murano, etc.
+Provide best support to these project communities for their needs in heat
+project. It helps to expand the foot-print of heat and enhance these services.
+
+* Implement existing and new blue-prints. It helps to strengthen heat's
+muscular power.
+
+* Implement hot-parser in similar line with XML parser, YAML parser, etc. It
+helps those open-source and closed-source solutions use the HOT template. (Once
+python flavor is established, other language such as java-script could be
+aimed.)
+
+* Over the releases, heat-templates git repo is grown up with many templates
+and some of them might be absolute as well. Investigate templates in this repo
+and make them organized based on heat features, use-cases, etc. Also make sure
+all are *valid* templates. It helps to make it better manageable and usable.
+
+CI:
+==
+* Continue the test-case improvements and identify the gaps/improvements in
+build jobs and test automations and fix them. It helps to reduce the
+turn-around time of authors and improves the existing heat quality further.
+
+Documentations:
+===============
+* Make Orchestration api-refs, developer and user guides to be in sync with
+heat master code base. It helps to easy/enhance the heat user's life.
+
+Thanks for your considerations,
+Kanagaraj Manickam
+
+IRC: KanagarajM
+Launchpad: kanagaraj-manickam
