@@ -1,0 +1,42 @@
+I announce my candidacy [1] for, and respectfully respect your support to continue as your Magnum PTL.
+
+Here are are my achievements and OpenStack experience and that make me the best choice for this role:
+
+* Founder of the OpenStack Containers Team
+* Established vision and specification for Magnum
+* Served as PTL for Magnum since the first line of code was contributed in November 2014
+* Successful addition of Magnum to the official OpenStack projects list on 2015-03-24
+* Led numerous mid cycle meetups as PTL
+* 3 terms of experience as elected PTL for Solum
+* Involved with OpenStack since Austin Design Summit in 2010
+
+What background and skills help me to continue this role well:
+
+* Over 20 years of experience in technical leadership positions
+* Unmatched experience leading multi-organization collaborations
+* Diplomacy skills for inclusion of numerous viewpoints, and ability to drive consensus and shared vision
+* Considerable experience in public speaking, including two keynotes at OpenStack Summits, and numerous appearances at other events.
+* Leadership of collaborative OpenStack design summit sessions
+* Deep belief in Open Source, Open Development, Open Design, and Open Community
+* I love OpenStack and I love containers, probably more than anyone else in the world in this combination.
+
+I come from a unique perspective of working with a team that released the first OpenStack based container solution in any public cloud: Carina by Rackspace. The operational lessons learned from operating our cloud at scale are profoundly informative for the direction we should head in Magnum as a compelling solution for cloud operators who want something that will work not just in a lab, but at scale with real production workloads. I am proud of this team and our accomplishments, and hope to share our experience and insight by leading open source contributions in OpenStack.
+
+Those of you who have seem me in action know that I excel in a collaborative environment. I encourage discussion, raise minority viewpoints for consideration, and steer respectfully from my depth of experience. I strive to be inclusive, and to grow our community because I believe that our diversity makes us strong.
+
+What to expect in the Newton release cycle:
+
+We will continue to focus on developing a compelling combination OpenStack infrastructure and Container Orchestration software. We aim to combine the very best of both of these complimentary worlds. This requires a valuable vertical integration of container management tools with OpenStack. Here are key focus areas that I believe are important for us to work on during our next release:
+
+* Furthering Magnum's production readiness. More documentation, more security hardening, more operational focus.
+* Making Magnum more modular and extensible to allow for more choice for cloud operators.
+* Storage integration. Leverage Cinder volumes for use by containers, and explore shared filesystem capability.
+* Networking integration. Further leverage Neutron through Kuryr, and demonstrate ways to integrate alternative options.
+
+I look forward to your vote, and to continued success together.
+
+Thanks,
+
+Adrian Otto
+
+[1] https://review.openstack.org/293729
