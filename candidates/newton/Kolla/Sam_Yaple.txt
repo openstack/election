@@ -1,0 +1,43 @@
+I would like to announce my candidacy for PTL for the Kolla team for the Newton
+release cycle.
+
+I have been heavily involved with Kolla since the Liberty cycle. A few of my
+major technical contributions include:
+
+ * Bringing Ansible to Kolla
+ * Containerized host dependencies (kolla-toolbox)
+ * Named volumes for data in Docker
+ * The kolla_docker.py Ansible module
+ * The initial build.py (kolla-build) script
+ * Making Neutron "thin" containers work
+
+Some of the things I would like to see us focus on for the Newton cycle:
+
+ * Separation of the Ansible code from the kolla repo into kolla-ansible
+ * kolla-mesos and kolla-ansible testing, along with gating procedures leading
+   the way for other deployment utilities to use Kolla containers (such as
+   saltstack and kubernetes)
+ * Stabilization of our stable branches. As a deployment project, I would like
+   to see us increase our focus on the usability of our project. This means a
+   much stronger focus on keeping our stable branches stable
+ * Better use of the bug tracker for master and stable branches
+ * Stronger documentation across the board
+ * Better gates for testing deployment and upgrades from stable branches
+
+My desire for this cycle is to focus on making Kolla usable to the people that
+matter most to our project, the Operators. Several of us were operators
+ourselves at one time and know the struggle of being forced to use unstable and
+unintuitive software. The feedback we have received real-world usage has been
+the most useful, I don't expect that trend to stop.
+
+I am also very active within the Kolla community. I provided the highest number
+of reviews and commits in both the Liberty and Mitaka cycles [0]. This has
+given me a deep understanding of the codebase and inner workings of Kolla. For
+these reasons, I have a strong vision of the direction we can take Kolla over
+the next cycle.
+
+Thanks for your contributions and consideration. I look forward to continuing
+to work closely with our community!
+- Sam Yaple
+
+[0] http://stackalytics.com/?project_type=all&module=kolla&metric=commits
