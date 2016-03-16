@@ -1,0 +1,32 @@
+I'm announcing my candidacy for PTL for rally for the Newton release cycle.
+
+* My goals are the same
+
+- Work on road map to capture everybody's use cases and align them
+- Continue working on improving our review process and CI
+- Concentrate efforts on addressing tech debt
+  (fixing bugs, cleaning up architecture and making it more testable)
+- Make contribution to Rally even more open (make road map more open)
+- Do the regular 1 per 2 weeks releases
+
+* Plans for the next release
+
+- Finish work that addresses Rally scalability issues
+  (only one task left storing chunks of results to DB)
+- Finish distributed runner
+  (we did all changes in framework except storing results in chunks, we will need just to
+   implement new runner plugin)
+- Finish generalization of Rally
+  (make Rally suitable for testing of everything, not only OpenStack)
+- Split Rally Core & Rally OpenStack plugins into 2 repos
+- Finish work on workload framework
+  (create tests for network and disk testing)
+- Improve Rally Certification Tasks
+- Finish work on rally task v2 format
+- Implement mutliscenario load
+- Rally as a Service
+- Rally task Trends and Compare reports
+- Rally export results functionality (CLI and plugins for many systems)
+- Disaster cleanup
+  (be able to cleanup env no matter what happened)
+- .... many other interesting tasks
