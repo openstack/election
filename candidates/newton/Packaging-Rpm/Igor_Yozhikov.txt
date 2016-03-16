@@ -1,0 +1,41 @@
+This is my candidacy for PTL role in the Packaging-Rpm OpenStack team
+for the Newton release cycle.
+
+I’m working on creating, building, polishing and maintaining Linux packages for
+OpenStack projects with  various dependencies for few years since IceHouse
+launch. It allowed me to accumulate deep knowledge base about core OpenStack
+functionality. My first project was Murano in the very early state of
+development even before incubation. I successfully started to maintain Murano
+project packages specifications for those period of time.
+The main goal for the Packaging-Rpm project, as I see it, is to unify and
+simplify approaches Linux package maintainers use in their work day by day.
+It is very important that availability of publicly published and suitable for
+different flavors of rpm based Linux distros package specifications makes
+package building process untied with mainstream vendors.
+I wish my experience as package maintainer could help developers all over the
+world to make their work easier and more transparent with efficiency pushed to
+higher level.
+I’m very eager to make it happen and I’m going to dedicate a lot of my time and
+efforts as Packaging-RPM’s PTL.
+
+
+There are a few topics to concentrate on during Newton cycle:
+
+Move forward to finish with already started initiative for initial filling of
+projects’ templates for a common OpenStack dependencies like oslo,
+python clients. This should create basis for further work and should unlock
+development of package specification templates for core OpenStack projects.
+
+Continue with development of automation tooling for packaging. Creation and
+publishing package specifications for renderspec, pymod2pkg and openstack-macros
+will makes maintenance easier for all who require to build and use these tools
+from packages.
+
+CI checks. At the present moment only SUSE was added it to the project.
+This is not enough because it covers cases only for one vendor. Adding more 3rd
+party CIs (Eg: Mirantis or Fedora/RDO) will improve tests and use-cases
+coverage.
+
+
+Regards, Igor Yozhikov (IgorYozhikov)
+iyozhikov@mirantis.com
