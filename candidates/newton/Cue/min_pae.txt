@@ -1,0 +1,14 @@
+I am submitting myself as a candidate as Cue PTL for the Newton cycle.
+
+I have been involved in the Cue project since its inception and would like to help continue its development to make it a production ready message broker provisioning/management service.
+
+Some things I’d like to work on for Newton:
+
+- Improve reliability of the broker cluster creation process
+- Improve monitoring of broker instances to detect failures in broker cluster members
+- Introduce healing functions for recovering failed clusters
+
+As a stretch goal I would also like to see a second broker type be introduced alongside RabbitMQ, as Cue was never intended to be a "RabbitMQ vending machine”.
+
+Thank you,
+- Min Pae
