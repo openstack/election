@@ -57,6 +57,14 @@ def load_exceptions():
         exceptions[e.split(':')[0]] = " ".join(e.split(':')[1:])[:-1].strip()
 
 
+def get_event(event_name):
+    for e in conf['timelines']:
+        if e['name'] == event_name:
+            d = datetime.datetime.strptime(e['date'], "%Y-%m-%dT%H:%M")
+            return d.replace(tzinfo=pytz.utc)
+    raise ValueError("Couldn't find event_name %s" % event_name)
+
+
 # Gerrit functions
 def gerrit_datetime(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S %z')
