@@ -1,0 +1,32 @@
+I would like to announce my candidacy for Astara PTL for the Newton release
+cycle.
+
+Over the past several years, I've been heavily involved as an active
+contributor and core reviewer in the Astara orchestrator service and Astara
+router appliance.  My contributions and lengthy experience working with and
+deploying Astara at DreamHost have equipped me for the role of PTL.  A few goals
+I'd like to aim for in the Newton release include:
+
+Increased Community Growth
+==========================
+New contributors are starting to express interest in the Astara project - I'd
+like to continue to foster this interest in the project and grow the size of our
+community.
+
+Finalize VPNaaS
+===============
+We made leaps and bounds with VPNaaS development in Mitaka - my goal for Newton
+is for this functionality to be production-ready.
+
+Add Support for Additional Drivers
+==================================
+I'd like to expand on our work in Mitaka and Liberty by incorporating drivers
+for additional network functions (including growing links with other
+network-related projects within the OpenStack community).
+
+Support Python 3
+================
+It's time to embrace Python 3 as the default language of choice for Astara.  I'd
+like for Astara in Newton to be fully supported in Python 3.
+
+I would be honored to have your support.
