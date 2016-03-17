@@ -1,0 +1,28 @@
+Hi everyone,
+
+I'm announcing my candidacy for PTL of the CloudKitty team during the Newton
+cycle.
+
+Some of the features and improvements of the project I envisioned are not yet
+ready and contributed and there is more to come. But due to lack of
+contributor's time we'll need more time to make them a reality.
+That's why I'd like to apply for a second cycle to help the project get these
+features and keep the project going forward.
+My main focus during this cycle will be to improve project communication and
+community development.
+
+As we are about to get released as part of Mitaka, I hope it will help the
+CloudKitty project get a better focus from other people and increase
+contributions.
+
+During the Newton cycle I'd like to keep the project focused on these specific
+points:
+
+- Improve code QA and global test coverage, Mikata was a good step forward but
+  we can go further.
+
+- Improve internal data modeling and global user experience with new APIs.
+
+- Improve performances and scaling.
+
+Cheers
