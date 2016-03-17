@@ -1,0 +1,62 @@
+Dear All,
+
+With this mail I'm nominating myself as the PTL of the Senlin project
+for the Newton cycle.
+
+It has been an honor and a pleasure to work with developers who share
+the same passion to make Senlin a useful and usable service to users.
+Senlin is still at its infancy after joining the big tent family. We
+still have a lot of work to do going forward although we are feeling
+very happy it is pretty stable and usable now.
+
+If I'm getting an opportunity to continue serving the team for its very
+first official cycle, I'd strive to work with the team on the following
+items:
+
+- Better alignment with community
+
+  * Getting API micro-versioning in place so that future revisions to
+    the API can be better managed;
+  * Completing API/scenario tests using Tempest plugins, e.g. we are
+    to test not only how the API works normally but also how it fails;
+  * Supports to live upgrade thus paving the way for future development;
+  * Advanced filters for listing operations;
+
+  etc.
+
+- Full support to high-availability
+
+  * A flexible, usable health policy;
+  * Event/message listeners for node failure events;
+  * Fencing logic regarding compute, network and storage;
+  * Customizability of this feature for various usage scenarios;
+
+- Support to container clusters
+
+  * Enabler functions to create/manage containers in VMs / Bare-metals;
+  * Simple placement policy to schedule containers based on dynamic
+    resource measurements;
+  * Evaluate options for network and storage provisioning;
+
+- Cross-project collaborations
+
+  * Continue working with Heat regarding Senlin resource types;
+  * Start working with Zarqar with respect to message queue receivers;
+  * Engage with Tacker to support its autoscaling use case;
+  * Work with Telemetry and Metering on event notifications and metrics;
+  * Explore interaction with Mistral and Congress on workflow and
+  * conformance (could be a policy?)
+  * Explore Tooz for large-scale deployments
+
+- Improvement to usability and scalability
+
+Right. We have a lot work to do. We do perfer a PTL rotation practice
+as some projects do and we do have strong candidates in the team.
+However, when I asked around, I got the feeling that most are at the
+moment over-committed in their daily jobs. Before stepping up as a PTL
+candidate, one has to secure enough bandwidth for the job. Fortunately,
+I am still enjoying such a support. That is the reason behind this post.
+
+Regards,
+  Qiming
+
