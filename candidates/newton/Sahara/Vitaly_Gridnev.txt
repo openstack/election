@@ -1,0 +1,44 @@
+Hello everyone!
+
+I'd like to announce my candidacy for PTL position of the Data
+Processing program (Sahara).
+
+I'm working on Sahara project since Juno release, and since Mitaka release
+I'm the member of the Sahara core reviewer team.
+
+In Mitaka release Sahara team did the great job:
+
+* important improvements are done in Sahara Dashboard side;
+* sahara scenario framework was moved outside of Sahara repository;
+* finally Sahara moved to use Heat as a default provisioning engine;
+* secret storage improved using castellan implementation;
+* OpenStack Client integration added;
+* health checks for clusters and so on.
+
+Also Sahara community continues growing, new folks from Intel, Mirantis,
+Red Hat and other companies joined us and it's great! New folks from Outreachy program
+joined us, and it's also important!
+
+For Newton cycle our team should keep going:
+
+* continue improvements in our user interface;
+* make important features in security for Sahara itself and in Hadoop;
+* more flexible and stable CI, improve our integration tests coverage;
+* continue efforts in implementing API v2;
+* collect user experience about Sahara and start implementing features
+  based on this experience;
+* prepare new tasks for the Outreachy program, so that new folks who
+  join us will have an interesting task to pick up.
+
+My focus as a PTL will be coordination of all work above, managing
+Sahara releases, and tracking all activities related to new features
+in Sahara.
+
+Also I'd like to thank the previous Sahara PTL Sergey Lukjanov, who did
+the great job in managing and improving Sahara! I think that together with
+Sahara team we can make Newton release great as we did in the previous
+release cycles.
+
+Best regards, Vitaly Gridnev
+e-mail: vgridnev@mirantis.com
+IRC: vgridnev, Launchpad: vgridnev.
