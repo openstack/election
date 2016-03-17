@@ -1,0 +1,28 @@
+Hello everyone,
+
+I would like to announce my candidacy to continue to serve as RefStack PTL for
+the Newton release.
+
+Over the last Mitaka development cycle, we have made a lot of progress in
+delivering numerous new features to improve the stability and usability of
+RefStack website and RefStack client.  The top features are:
+
+1) Associated test data to users instead of user keys.
+2) Associated specific DefCore Guideline and OpenStack Target Program to a test
+   result set.
+3) Provided option to allow uploading data in subunit data format.
+4) Enabled running in-tree tests that implemented Tempest Plugin Interface.
+
+In the past couple of months, we also have started working on providing
+additional features to allow vendor and product registration at RefStack. These
+are very important features because they are the foundation for the future
+features such as: enabling centralized testing, perform statistical analysis of
+the collected result data, etc.  Hence we have spent a lot of time to document
+the requirements, use cases, data model and data privacy concern before coding.
+However, there are still a lot of work that needs to be continued to keep moving
+the progress forward.
+
+I hope to have the opportunity to continue leading the RefStack team as PTL and
+make Newton another successful cycle for RefStack.
+
+Catherine Diep
