@@ -1,0 +1,53 @@
+Hello Team,
+
+It's a big honor for me be a part of the our Cinder community and I do my best
+to make Cinder better. That's why I'm I'm announcing my candidacy for
+Cinder PTL for the Mitaka release. That doesn't mean that I'm working at half
+strength now. It means that I would like to give as much benefits to Cinder and
+OpenStack as I can.
+
+We as cinder community did great job to have Rolling Upgrades landed in Mitaka.
+It's really cool. We introduced new Replication v2.1 version in the middle of
+cycle but we've already got few drivers which implemented it. API microversions
+are also very useful thing. It allows us to change our API faster and do not
+break any existing API user. We started work on Active/Active HA for
+cinder-volume process. I really hope that we'll have this feature implemented
+in the next release.
+
+
+As PTL I would like to bring more attention to the following areas during
+Newton release cycle. These things are important not only for Cinder community
+but for any Cinder users and other OpenStack projects too.
+
+
+* Cinde quality and stability. I don't say that Cinder is not stable enough. I
+  mean that it would be great if we'll improve our test coverage and testing
+  strategy including 3-rd party CI. See my mail in openstack-dev mailing list
+  for details [1].
+
+* We've got a lot of technical debt and Newton could be a good time to fix it:
+  finish started features like A/A HA, get more Replication v2.1
+  implementations from vendors, fix architectural issues which do not allow us
+  to implement new features faster, fix Cinder-Nova related issues.
+
+* Make Cinder viable as a stand-alone volume manager. It means, Cinder will
+  work without Nova and you'll be available to attach volumes to any host. We
+  finished first part of this task in Mitaka, now we have to continue work on
+  it.
+
+* Ironic integration: We talk with Ironic team about it for several last
+  summits. I started work on attach feature in scope of 'Cinder Without Nova'
+  initiative. Full integration with Ironic is very important for every Cinder
+  and Ironic user. Let's do it.
+
+
+Last but not least, I do understand that being PTL is full-time job which will
+require a lot of communications in a different time-zones. I'd like to say,
+I'm ready for it.
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2016-March/088034.html
+
+Thank you,
+Ivan Kolodyazhny (e0ne)
+
+
