@@ -1,0 +1,20 @@
+Hi guys,
+
+I'd like to announce my candidacy for newton PTL of Telemetry program.
+
+I've been a Ceilometer core for several cycles, looking Ceilometer growing
+from a small project to a umbrella program containing 3 managed projects
+and multiple externally managed projects, thanks to the great works of the
+community and previous PTLs.
+
+Looking forward to the newton cycle, I'd like to improve the deliverables
+with the community, with the following focuses:
+
+ * Refine the Ceilometer's polling mechanism, including decouple polling
+   logic from pipeline, etc.
+
+ * Do some performance test and find the potential reference architecture
+   debt to tackle with.
+
+Best Regards,
+- Lianhao Lu
