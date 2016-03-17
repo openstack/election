@@ -1,0 +1,35 @@
+Hi everyone,
+
+I'm happy to announce my candidacy to be the Freezer PTL for the Newton release
+cycle.
+
+The Freezer developper team grew a lot during the Mitaka timeframe and I think
+we can be proud of the work we accomplished now that we are part of the Big
+Tent.
+
+I want for Newton to be the cycle where we mature and stabilize Freezer in
+order to drive acceptance and grow our community.
+
+In order to achieve that, I think we should focus on:
+
+* Refactoring the freezer-agent, in order to implement multiple plugin
+  layers as agreed during the midcycle meetup.
+
+* Integration tests. We need to increase the work done on testing. This will
+  help to stabilize Freezer.
+
+* Documentation. We should target for a split, refactoring and global
+  improvement of our docs, which is a required step to increase the size of our
+  community.
+
+* Integration of Oslo components. We are still missing oslo.policy as well as
+  oslo.logging in some components.
+
+* Block-based incremental engine. This is how we will improve the backup of
+  rapidly changing files.
+
+
+I would be honored to have your support.
+
+Thanks,
+Pierre (slashme)
