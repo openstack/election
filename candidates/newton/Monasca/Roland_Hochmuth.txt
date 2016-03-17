@@ -1,0 +1,28 @@
+I would like to propose my candidacy for the Monasca PTL. 
+
+I have been acting as the PTL on Monasca for the Mitaka release, and I would
+like to continue.
+
+My goals and objectives for the project in the Newton release are as follows:
+
+* Add new incremental features that are important for operational monitoring
+use cases such as to help with visualization or integrate with other projects. 
+Recently, there has been a lot of great work in this area, but it will
+probably continue.
+
+* Add significant new functionality such as the logging API as well as work
+with other organizations on adding advanced analytics for alarm clustering
+and anomaly detection.
+
+* Improve performance and scalability. Although Monasca is extremely performant
+new bottlenecks always seem to occur and there are always interesting ways to
+address them.
+
+* Integrate with other OpenStack projects better, such as Heat, Congress, 
+Vitrage, and the recently added Broadview project for network monitoring.
+
+* Evangelize Monasca and grow the developer and operator base.
+
+* Facilitate the development eco-system.
+
+* Write more code.
