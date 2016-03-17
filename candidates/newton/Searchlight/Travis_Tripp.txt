@@ -1,0 +1,55 @@
+Hello Friends,
+
+We are now going into the Newton cycle of Searchlight and I would be honored
+if you’ll allow me to continue serving in the PTL role.
+
+Searchlight has come a long way in the Mitaka cycle and it is certainly due
+to some passionate work from a small, but expanding team of contributors.
+
+With the release of Mitaka, we will have:
+
+* Unified search across:
+  * Nova instances
+  * Glance images, snapshots, metadefs
+  * Cinder volumes, snapshots
+  * Neutron networks, ports, subnets, routers
+  * Designate (DNS) Zones, recordsets
+  * Swift container and object search (Experimental)
+* Horizon search panel (plugin)
+* CLI via an OpenStack client plugin
+* Zero downtime re-indexing
+
+In Newton, I believe our goals are to:
+
+* Do everything we can to make Searchlight performant and production ready.
+
+We need to work with other service teams to improve the notifications they
+send so that we can reduce the number of API callbacks. In addition, we need
+to improve the functional and integration test coverage. Finally, this also
+means that we need to make tough decisions regarding features.
+
+* Make search a central part of the Horizon UI experience.
+
+In Mitaka, the Horizon Searchlight panel introduced an entirely
+new experience for Horizon which opened a lot of eyes to how
+impactful search can be to the entire development paradigm. At the
+OpenStack bug smash day, I delivered a presentation detailing
+this direction and I encourage everybody interested in Searchlight and
+Horizon to watch it.
+
+https://www.youtube.com/watch?v=ExzULavwvNQ
+
+* Expand our searchable content
+
+* Finish the notification forwarding work
+
+* Enable new contributors and build build our core team
+
+Last cycle I posted my thoughts on what being a PTL meant. Others, such as
+Flavio have very eloquently written about the PTL role. In this email,
+I will simply say that I am not the only person on the team who could do
+a great job as PTL for the Newton cycle, but I thank you for your consideration
+in allowing me to continue serving in this role.
+
+Thank you,
+Travis
