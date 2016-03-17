@@ -1,0 +1,11 @@
+I would like to announce my candidacy for Barbican PTL for the Newton cycle.
+
+I've been a part of the Barbican team since the beginning of the project, and
+I've had the opportunity to serve as PTL for the last three cycles.  I'm proud
+of the work we've done, and I would be honored to continue to be your PTL.
+
+For the Newton cycle I would like to see our team continue to mature the
+Barbican project.  I'd especially like to focus on improving our documentation
+for both Barbican and Castellan so that operators and developers can better
+understand how these projects can help improve the security of their OpenStack
+clouds.
