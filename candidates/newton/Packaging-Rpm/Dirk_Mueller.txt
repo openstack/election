@@ -1,0 +1,42 @@
+
+Hi everyone,
+
+I'd like to announce my candidacy for the RPM Packaging for OpenStack PTL. I
+am putting up the candidacy because I would feel honored to continue doing the
+PTL role, but I'm also fine with passing on the torch. At the end of the
+day what matters is that the project becomes successful and relevant and
+I'm happy to contribute my share to that.
+
+During the Mitaka cycle I've been working closely with our small but motivated
+contributor group to reach a critical mass of package spec files to self-sustain
+the project. While we haven't reached the full goal the trend is up[1] and I still
+very much care about the idea and implementation. We're at least in a
+state where the spec file templates are already in actual production use
+by one of the vendors (SUSE), and both Red Hat and Mirantis are considering it.
+
+We've reached a lot by diligently working through the various RPM packaging
+vendors packaging requirements and abstracting them in a way that allows
+them to feel "native" to the platform while still sharing the bulk of the
+work on packaging openstack and I'd be happy to work on that further with
+the help from the other contributors.
+
+Obviously all that I did so far I would like to continue and make sure that
+we build something that everyone can embrace.
+
+For Newton I would like to focus on:
+
+* Extend package spec template set to cover the bulk of packages that define
+  an OpenStack distribution and are maintained in the OpenStack git/gerrit
+
+* Foster collaboration with downstream packaging vendors (Mirantis/RDO/SUSE) to
+  switch to the common packaging by working through barriers that prevent
+  adoption and contributions.
+
+* Work with downstream packaging vendors to contribute extra CI for their platform,
+  as currently only SUSE invested the effort in adding a check CI step.
+
+
+Thanks,
+Dirk
+
+[1] = http://stackalytics.com/?module=rpm-packaging
