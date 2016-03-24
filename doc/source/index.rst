@@ -10,7 +10,7 @@ See PTL_details_ and TC_details_.
 
 Below is the official list of candidates for the current round.
 
-.. include:: ./candidates/ptl.rst
+.. include:: ./candidates/tc.rst
 
 
 Election Officials
