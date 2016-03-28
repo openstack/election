@@ -1,0 +1,80 @@
+Hi everyone,
+
+I'd like to submit my candidacy for reelection on the Technical Committee.
+For those who don't know me yet, my name is Thierry Carrez, I use "ttx" as
+my IRC nickname. I'm currently employed by the OpenStack Foundation as its
+Director of Engineering, which basically means I'm running the team in
+charge of ensuring the long-term health of the upstream OpenStack open source
+project and its governance. Handling the Technical Committee is my primary
+activity: 6 months ago I left the PTL role for the Release Management Team in
+order to be able to focus as much as possible on the TC.
+
+One year ago I ran for election with the goal of having the TC "step out of
+the way"[1]. The idea was to remove the TC from the critical path of getting
+things done, and encourage a "ask for forgiveness, rather than permission"
+attitude in our community. I like to think we were successful at this. Project
+teams can now more easily add git repositories as they need them, they also
+end up asserting some tags by themselves, and the TC has generally moved to
+being an appeals board in case of disputes, rather than a procedural barrier
+in getting things done.
+
+Here are the three priorities for my upcoming mandate, if the electorate
+chooses to reelect me to the TC:
+
+1/ Cleaning up the big tent
+
+The transition to the "big tent" governance model is now finished, with all
+the expected projects now officially part of the OpenStack community. The
+big tent is all about community: answering the "are you one of us" question.
+Our approach there was to be inclusive and assume good faith, especially as
+we caught up on documenting what we meant by "the OpenStack Way". Over the
+past year we created the Project Team Guide[2], which clearly explains what is
+expected of official project teams. I think it's time for us to look back at
+all those projects we have in the tent, reach out to those who are lacking,
+and not hesitate to remove the ones that are not following our common community
+practices from the list of official project teams. Demoting a project used to
+be particularly painful, with costly git repository renames crating disruption
+on the demoted projects. But now that all projects hosted under our
+infrastructure (official and unofficial) use the same namespace, this cost and
+disruption are very limited, so cleaning up the big tent is now possible.
+
+2/ Defining the limits of the big tent
+
+The TC recently had two project team applications for which we had no good
+answer: Poppy and Tacker. Those resulted in close (and somewhat arbitrary)
+votes as each TC member tried to interpret the mission statement words and
+what we stand for. In the case of Poppy, there was the question of whether a
+service that proxies to non-OpenStack commercial services could be considered
+part of "OpenStack", without an open source reference implementation to do
+end-to-end testing against. In the case of Tacker, there was the question
+of a service standing on top of other OpenStack services to present a
+domain-specific API tailored to a specific use case or industry. Should
+that still be "OpenStack", or just something that consumes OpenStack ? I'd
+like the TC to take a step back and explore those two questions, without the
+pressure of a specific project team addition. Clarifying the rules may result
+in some official projects to be demoted to "unofficial" status as they would
+not fit the rules anymore.
+
+3/ Launching the new separated event for project team members
+
+We recently started the discussion[3] on splitting the "design summit" into
+wider community feedback / requirements-gathering sessions (that would
+happen at the main Summit) and a specific event for project team members
+to gather in a co-located venue to come up with a plan and organize its
+execution. We still have a long way to go (and not that much time) to discuss
+the format and the timing of this new event, and I expect the Newton membership
+of the TC to help with taking quick decisions there. The next step here will
+be a cross-project workshop at the Design Summit in Austin to discuss the
+current plan and go deeper in the details.
+
+Those are my three priorities for Newton and Ocata, and this is what I'll push
+the Technical Committee towards if I'm elected.
+
+Thank you all for your consideration !
+
+[1] http://ttx.re/stepping-out-of-the-way.html
+[2] http://docs.openstack.org/project-team-guide/
+[3] http://ttx.re/splitting-out-design-summit.html
+
+-- 
+Thierry Carrez (ttx)
