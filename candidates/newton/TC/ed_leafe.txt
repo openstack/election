@@ -1,0 +1,66 @@
+Greetings!
+
+I am announcing my candidacy for the OpenStack Technical Committee. As a
+long-time developer, I have been part of projects that have succeeded and
+others that have not; in either event, I always learned something to apply to
+the next endeavor. I would like to use that experience to help guide OpenStack
+forward as part of the TC.
+
+For those who may not know me, my name is Ed Leafe (edleafe on IRC), and I have
+been involved in OpenStack since the very beginning as part of the original
+Nova team. I am currently employed by IBM to work 100% of my time on upstream
+OpenStack, so I would have the freedom to devote as much time as needed to my
+TC duties. I have been participating in the TC meetings for over a year, and am
+familiar with the issues that come before it. I believe that I could contribute
+a lot more as a member of the TC, and that's why I'm asking for your vote.
+
+Here are some of the issues that I would like to focus on:
+
+* Improving the user experience
+
+Part of my current job is mentoring fellow IBMers who are new to OpenStack in
+what it is, how to use it, etc. Have you ever tried to explain how to set up
+and configure OpenStack to anyone? Then you know just how difficult it is.
+That's one of the reasons I have been involved in groups such as the API
+working group, the Nova API team, and the Configuration Option cleanup efforts,
+as they represent places where OpenStack needs improvement. The recent efforts
+to open dialogs between ops and devs is a great start, and I'd certainly like
+to build on that. As a TC member, I would promote efforts to make all of
+OpenStack more manageable to deploy and maintain, since the coolest software in
+the world is useless if people can't get it running.
+
+* Adding clarity to the Big Tent
+
+Opening up the OpenStack world to projects without having to go through the
+incubation and co-gating requirements was a huge step forward, but the feedback
+I've heard about the resulting mix is that it is confusing. A few months ago
+the TC added the 'starter-kit' tag to the baseline projects you would need to
+install to get OpenStack running; this was a good first step, but I think we
+need is a way to separate the "guts" of OpenStack from the parts that are built
+on top of that core. Is a project part of OpenStack itself? Or is it something
+that works on top of OpenStack (or any other cloud)? I'd like to see projects
+clearly separated into those that provide 'cloud' services, and those that work
+with those cloud pieces to make them easier to deploy/manage/report. Why is
+this distinction important? Because I feel that OpenStack should only have a
+single project for any particular service, and if someone has an idea for
+making it better, they need to work with the existing project, not compete. But
+in the world of projects built on top of OpenStack services, I say let's invite
+competition! There doesn't have to be a single "winner", as these will more
+likely tend to be solving particular use cases. Forcing these to be in a single
+project usually results in bloated, inefficient code.
+
+* Promoting consistency across OpenStack projects
+
+There is some inconsistency within a single project like Nova, but when you
+work with multiple projects, the inconsistencies are glaring. And while the TC
+is not a strong-arm enforcer of standards, it does have considerable influence
+on how projects evolve, and I would like to see the TC push harder at
+establishing standards, as the API Working Group is doing, and then encouraging
+adoption of those standards across projects. The sanity of our operators is at
+stake!
+
+In closing, I'd like to say that anyone who cares enough about OpenStack to
+want to be a part of the TC will certainly be worth your vote. I hope that I've
+presented enough to earn your vote.
+
+
