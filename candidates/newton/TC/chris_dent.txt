@@ -1,0 +1,38 @@
+
+Hello,
+
+A few weeks ago I made a [blog posting][1] in which I wrote about the
+issues I would consider important to address if I were a member of the
+Technical Committee. Several people encouraged me to act on my concerns
+and actually run.
+
+[1]: https://anticdent.org/if-i-were-on-the-openstack-tc.html
+
+Therefore, I'd like to submit my candidacy for election to the Technical
+Committee. I think the health of the TC and OpenStack in general is
+dependent on a diversity of strong opinions from people who are willing
+to be convinced they may be incorrect. I like to think I have plenty of
+opinions. I am eager to have the interactions that will weaken some
+opinions and strengthen others.
+
+To summarize the blog posting linked above: I am concerned with not just
+maintaining but increasing the quality of the OpenStack experience for
+the people who install and use it and, critically, for the people who
+build it. To achieve this we need to have a clear idea about what
+OpenStack is and who it is for. Trying to be everything to all people
+results in diffuse effort and difficulty making decisions when,
+inevitably, compromises and sacrifices must be made in our resource
+constrained world.
+
+By being more clear to ourselves and others about what OpenStack is we
+can be more effective about what we are doing and more useful when
+building bridges with other communities.
+
+In practical terms this will require determining the constraints on
+the big tent. I expect this will be the major work of the TC in the
+immediate future and I'd like to be a part of it as a representative of
+the community.
+
+If you have specific questions about my goals, my background or anything
+else, please feel free to ask. I'm on IRC as cdent or send some email.
+Thank you for your consideration.
