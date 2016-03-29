@@ -1,0 +1,45 @@
+Fellow Stackers,
+
+I would like to announce my candidacy for the OpenStack Technical Committee
+election.
+
+Currently i am employed by Mirantis and take manage a couple teams, one working
+primarily on Oslo/RabbitMQ/ZMQ and the other on Keystone. My other job is
+contributing upstream where i can including several Oslo projects, Nova,
+Requirements and Release team. I have served as PTL for Oslo for the last
+two terms and am proud of our accomplishments including getting rid of the
+oslo-incubator, building up our test matrix for better backwards compatibility
+testing and increasing the number of people invested in different Oslo projects.
+
+We have a lot of challenges including figuring out how to balance
+stability/innovation, fostering new talent, target our limited resources
+to make OpenStack even better than it is today. I would like to offer some
+ideas as part of the technical committee based on my previous experiences
+at ASF, a startup from scratch, working at Big Blue etc.
+
+While working on Oslo as PTL, gave me a lot of insight into how different
+projects go about their work. Being part of the Requirements and Release
+team has helped me understand the day-to-day challenges of how we pull in
+different directions but still end up moving forward. Spending time looking
+at gate issues and setting up CI jobs has given me a lot of appreciation
+around how many things there are we could work on and fix. As part of
+the technical committee, i am hoping to help with:
+
+- Cross Project issues, increasing collaboration between projects
+- Backwards compatibility issues and testing
+- Evangelizing great ideas from different projects
+
+Starting with @markmc, @sdague, @dhellmann and a whole of of others i have
+received a lot of support and guidance over the years. I would like to
+pay it forward for the new set of folks who are coming, learning
+our ways and becoming part of our community.
+
+Thanks,
+Davanum Srinivas (aka Dims)
+
+Review history: https://review.openstack.org/#/q/reviewer:dims-v,n,z
+Commit history: https://review.openstack.org/#/q/owner:dims-v,n,z
+Stackalytics: http://stackalytics.com/?user_id=dims-v
+OpenHUB: https://www.openhub.net/accounts/davanum
+Freenode: dims
+Twitter: https://twitter.com/dims
