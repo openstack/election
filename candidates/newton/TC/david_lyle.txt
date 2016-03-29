@@ -1,0 +1,89 @@
+I would like to announce my candidacy for election to the Technical Committee.
+
+You may know me from being the Horizon PTL for the past five releases and a
+member of the OpenStack community since 2012 as an operator, contributor and
+PTL. Over my tenure, I helped guide the Horizon team through growth that has
+paralleled the growth of OpenStack. During this time, I have become sensitized
+to the issues that are facing OpenStack at large and specifically from a
+horizontal project perspective. I decided to step away from the PTL role this
+cycle as I want to focus my efforts toward addressing these issues. The main
+issues I want to see progress on in Newton and Ocata are:
+
+1) Setting and driving technical direction and project vision
+
+I think the Technical Committee should take a more active role in driving the
+direction of OpenStack. OpenStack now contains many, many projects. The
+unified guiding technical direction for those projects is missing. The
+OpenStack mission statement reads:
+
+    "to produce the ubiquitous Open Source Cloud Computing platform that will
+    meet the needs of public and private clouds regardless of size, by being
+    simple to implement and massively scalable"
+
+I will argue that without a unified direction, OpenStack will be many cloudy
+things that, with considerable effort, can be used to deliver a cloud computing
+solution. That delivers more toward the first half of the mission, than the
+latter half. But the technical direction from the TC needs to be more than make
+the mission statement reality. While that is enough for projects to make
+progress, it is insufficient for end users and operators.
+
+The current cross-project model is broken. The idea of cross-project
+initiatives and specs is correct, the problem arises in getting projects to
+    a) participate in that process
+    b) actually have that initiative put items on their roadmap
+    c) actually implement the change
+
+There is no motivation, carrot or stick at this point for projects on
+cross-project initiatives. Currently, any cross-project initiative can
+effectively be pocket vetoed by a project in OpenStack that does not find it a
+priority. Additionally, the cross-project priorities vary per project. Making
+progress currently relies on a few individuals doing the work in all effected
+projects. With 54 projects, 36 of which are service related, this can be
+a prohibitive task. I commend all those who are driving these efforts.
+
+I propose the Technical Committee, working with the user committee and project
+teams define some core objectives per release that define the release goals and
+track to those. With 54 projects in OpenStack, there is not another way to move
+these efforts forward without a lead time of years. One could argue that this
+is the purview of the cross-project liaisons, but the TC is the elected
+technical governing body in OpenStack and the only one actually defined in the
+OpenStack Bylaws.
+
+
+2) Addressing Big Tent ramifications
+
+Having moved away from a relatively narrow and focused scope for OpenStack,
+it is imperative that we improve at functioning as one project. Looking across
+OpenStack, since the big tenting, I see a few issues. First and foremost, the
+problem of maintaining consistency across projects went from bad to worse.
+Previously, consistency problems were centered on APIs, logging, message
+content and structure. Now, we have added items like end user documentation and
+the forced proliferation of plugin formats. The large number and variety of
+projects also makes it difficult to maintain an overall project vision. I think
+that may be the current goal. But if we view OpenStack as a merely a kit, we
+will again be pushing undo burden on end users and operators. The TC should
+formally state whether OpenStack is meant to be a product or a kit,
+understanding that a product can have optional and swappable parts.
+
+
+3) Growth and organization
+
+Many projects are big and unwieldy including the one I lead. The large scope
+of projects and the corresponding number of contributors make these projects
+sluggish and makes contributing difficult. Contributions are being shoved
+through a narrow funnel where priorities are a strange mix of new feature
+development and addressing operator needs. I think we need to reevaluate
+project scope and governance. This is one area that the big tent provides some
+relief, rather than forcing the franken-projects of yore. Breaking out
+separable pieces from larger projects should be a high priority. We started
+doing this work in Horizon. The consequences of not breaking the monoliths is
+that we continue to frustrate new and old developers alike, drown reviewers and
+make little relative forward progress. I believe the TC can help design and
+drive this restructuring effort.
+
+I still believe OpenStack has the potential to deliver on our mission
+statement. And, I think that diverse views being included in the TC is to
+everyone's advantage.
+
+Thank you for your consideration,
+David Lyle
