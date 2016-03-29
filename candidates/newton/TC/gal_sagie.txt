@@ -1,0 +1,67 @@
+Hello All,
+
+I have been working on OpenStack for the past year, currently the PTL of two
+projects part of the big-tent: Dragonflow and Kuryr and contributing to OVN and
+to Neutron core.
+
+The past year is by no doubt the best year of my career, working with the community
+and doing so openly for 100% of my time has been a great experience.
+I fell in love with the OpenStack way and i keep trying to promote open communities by being
+a speaker at Numerous summits, arranging meetups, writing a blog about the
+projects and overall trying to raise awareness for working open source both internally
+at my organization and externally.
+
+I would love to contribute and be part of the TC to share my vision for the road ahead
+with the rest of the TC members and help drive it together with all the
+projects that make OpenStack what it is.
+
+The following points describe my high level vision and what i will pursue in the next
+year:
+
+1) Containers and OpenStack - i think this intersection is a crucial part for the
+   future of OpenStack, more and more workloads are turning into containers and this
+   in my view will only increase.
+   enabling containers engines and OpenStack to work together will be crucial for
+   future deployments, this is one of the reason project Kuryr was started and its my
+   goal to make sure we align a mixed OpenStack containers strategy for all major
+   projects and future projects.
+
+   I am already trying to arrange a containers session at the Ops summit in Austin
+   in order to better understand these environments and their challenges and i
+   believe OpenStack flexibility can show real value to these environments.
+
+2) Big-Tent, Users/Operators - I am all in favor of removing barriers for innovation
+   and being more on the allowing side then dismissing, but i feel the picture of
+   OpenStack as a whole for users and operators is not clear enough.
+   Big number of projects, big number of configuration options and a very hard time
+   deploying OpenStack.
+
+   Grouping projects and interests together and delegating responsibility is
+   important, Neutron big-stadium is a good initiative but it didn't work as planned
+   and i hope to tackle this area both for the project teams but even more importantly for
+   the users and deployers, we need to define quality better and we need to present
+   a better overall picture of what OpenStack is and how its best and simplest deployed.
+
+3) Hybrid Cloud - This is an area OpenStack can show alot of value, it spans across many
+   areas like networking, storage, compute, backup and disaster recovery, orchestration
+   and more.
+   I hope to try and work with the TC members and the project teams to raise
+   awareness for hybrid and multi site enablement in all areas of OpenStack, rather its
+   federation or centralized orchestration we need to solve use cases that are becoming
+   more and more relevant.
+
+4) Application in the middle - i think its important to understand our users use cases
+   and to me, OpenStack users are also the applications that run on top of it.
+   Bridging the gap between the infrastructure and the application needs helps prioritize
+   and deliver better features for our projects and i hope to help in that direction.
+
+
+I plan to work with project teams to raise awareness for the above points
+i dont believe in intervention, i think the TC role is to be a guiding and helping body that
+represent the community voice rather then an enforcer and i plan to keep doing
+things this way.
+
+Thanks
+Gal.
+
+
