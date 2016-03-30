@@ -1,0 +1,79 @@
+Please accept my candidacy for election to the technical committee.
+
+Election season is both a time of intense activity as well as (hopefully) a time
+to self-evaluate and commit or recommit to a personal vision of OpenStack.
+OpenStack is exactly as we define it and I hope many folks are taking a bit of
+time to consider their vision as well as the meaning of one's personal work and
+efforts in that vision.
+
+I'd like to share some of my vision as well as what I find meaningful in my
+daily activities.
+
+Vision: creating cloud software that our users can use
+That's a paraphrase of the OpenStack mission statement (both in its present form
+and in the form that is undergoing amendment currently). The vision that gets me
+up everyday (or middle of the night if it is Tuesday and I'm chairing a third
+party meeting) is that I'm engaged in creating software that makes clouds and
+that our users are using. Now many of my activities may seem far removed from
+the creation of software parts some days but that is the motivation that drives
+my actions.
+
+Some of my daily activities: answering questions in -infra, helping folks debug
+logs, reviewing project-config patches and discussing design of project-config
+related concerns, attending weekly meetings of other teams, chairing two third
+party meetings per week
+
+That might not seem like much, and I used to be able to do more things that I
+could list, but some days it is all I can do to read backscroll and keep up
+with the conversation in channel at the same time. Our incredible growth has put
+us in a position of having to be in fire-fighting mode in what used to be a few
+times per release, to being in fire fighting mode once a week, to being in
+fire fighting mode all the time. I'm concerned that our wonderful, incredible
+growth as an entity is causing some teams to not have the time they need to
+communicate with each other.
+
+I'll add in here a quote I came across the other day from Viktor Frankl,
+Austrian psychiatrist:
+"Freedom, however, is not the last word. Freedom is only part of the story
+and half of the truth. Freedom is but the negative aspect of the whole
+phenomenon whose positive aspect is responsibleness. In fact, freedom is in
+danger of degenerating into mere arbitrariness unless it is lived in terms of
+responsibleness." Now Viktor goes on to say he thinks the United States should
+build another statue, I'm not going to hold my breath on that but I do agree
+with Viktor in as much as the portion I have quoted here.
+
+I think we as a community need to start taking a look at our responsibilities,
+to ourselves as people, to our co-workers and team members and to others in
+the community as well. Businesses don't decide how we treat each other, only we
+can decide that. We are putting an awful lot of pressure on each other and we
+don't seem to be allowing for a pause.
+
+Folks who are able to be effective in these circumstances have all undertaken
+personal choices about how much input they can address at any given time. Yes
+we need new contributors and those willing to teach and mentor them are
+appreciated for their actions, but we also need to start valuing each other
+again on a daily basis, some days for just continuing to show up and do our best.
+
+Good jazz musicians know the basic patterns of jazz but the most important
+quality they have is to listen. To play with the intent of pausing and letting
+someone else take centrestage for 8 or 16 bars, then taking a turn themselves.
+Jazz works because of the ability to pause and listen. I'm concerned we as a
+ group have lost our ability to pause, and by extension to listen.
+
+I don't have solutions, I do have some observations. I also am effective at
+leading and moderating discussions. Any solution our group finds needs to come
+from the group. It is hard to have a group discussion any more, we have moved
+to talking points in order to get things done and that is sad for me to
+witness, as I see listening as a group as a strength. I also consider
+solutions coming from the group as a strength as well.
+
+One last point I will make is that operators are becoming more effective at
+communicating their needs, to each other and also to developers. I think
+there are some good structures in place to foster that communication and I
+see that as a huge benefit to OpenStack.
+
+Thanks for reading.
+
+Please read all the candidate platforms and please vote.
+
+Anita Kuno. (anteaya)
