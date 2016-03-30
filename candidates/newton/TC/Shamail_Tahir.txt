@@ -1,0 +1,77 @@
+Hi everyone,
+
+I would like to announce my candidacy for OpenStack Technical Committee member for
+the upcoming term.
+
+I am currently an offering manager for OpenStack initiatives at IBM and I have been
+involved in the OpenStack community since 2013.  I spend most of my time[1] in our
+working groups including the Product, Enterprise, Application Ecosystem, and Operator
+Tags team..  I have also spent a lot of talking with OpenStack users and organizations
+that are new to open-source and OpenStack in order to help them with their journey into
+becoming community members.  The OpenStack project continues to gain adoption while also
+expanding in scope with new projects and functionality.  These changes continue to make
+considering operator and user experience in strategic and architectural decisions ever
+more critical.  Furthermore, the TC itself is involved in a set of broad topics lately
+(such as changing the mission statement, diversity, and mentoring to name a few) and
+additional perspectives will be good for these discussions.
+
+If elected to be a TC, I would like to focus/highlight on the topics outlined below:
+    * Revisit big-tent workflow for new projects.
+         - The big tent initiative has promoted faster and broader innovation inside
+         the OpenStack community and I believe we should reflect on its first year to
+         build a new set of best practices for both acceptance and on-boarding new
+         projects along with mechanisms to validate that new projects are continuing
+         to follow the four opens.  What worked? What didn't?  Should there be additional
+         criteria based on overall fit/need? And how can we improve this further?
+
+   * Promote a systems architecture point-of-view of the OpenStack cloud platform
+         - There are several initiatives under-way (with more to come) that can benefit
+         multiple OpenStack projects.  Cross project specifications allow us to build best
+         practices and guidelines but they are currently treated as recommendations.  If we
+         could develop a way to make some of the more critical needs a requirement vs.
+         recommendation then we could have a way to ensure that we have a way inside the
+         community to drive architectural changes, as necessary, for better system stability,
+         user experience, or performance.  The other benefit would be to agree on common
+         needs (e.g. the quota service discussion happening right now, the online schema
+         migration work that has taken place in a lot of projects) and guide new projects
+         through adopting the changes as they start development rather than retrofit.
+
+    * Increase user and technical committee exchanges
+        - I would like to propose a regular cadence to discussions between the technical
+        and user committee members so that technical direction, and decision points, can
+        be shared and we could strengthen/expedite feedback from our user community into
+        process as needed.  I have seen both parties appreciate the dialogue and find it
+        valuable, therefore I think anything that can strengthen this feedback loop is a
+        positive thing.
+
+    * Building an ecosystem for next-generation platforms
+        - Over the last couple of years there have been multiple complementary open-source
+        projects/technologies that are catering to similar application design patterns (Mesos,
+        k8s, Cloud Foundry, etc,).  I believe projects such as Kuryr are doing a good job in
+        mapping OpenStack technologies like neutron to other ecosystems (e.g Docker libnetwork)
+        and we should continue to solicit more projects/activity that will help customers/users
+        build an internal platform that meets their objectives as they shift from traditional
+        applications to newer applications.  In the end, we are all trying to meet user needs
+        and the answer probably lies in a complementary view of adjacent technologies versus
+        every need being implemented by a single platform.  A successful approach to building
+        an ecosystem for OpenStack clouds could dramatically increase putting our code to work
+        through an even greater adoption rate and make OpenStack clouds viable for additional
+        workloads/use-cases.
+
+My reason for focusing on these topics is based on my experience and background in the OpenStack
+community.  I am a core member of the Product working group[2], participate regularly in the
+ops-tags-team[3], help with SuperuserTV[4], help with building the community-generated OpenStack
+roadmap[5], and moderate sessions at ops-meetups.
+
+I am passionate about the work our community produces and excited that it has found relevance for
+so many people and organizations around the globe.  I would like to continue to do work that
+further strengthens the feedback loop between the developers and consumers of our open-source
+cloud. I humbly ask for your vote to represent this need as a member of our OpenStack Technical
+Committee.
+
+
+[1] https://review.openstack.org/#/q/owner:ItzShamail%2540gmail.com
+[2] https://wiki.openstack.org/wiki/ProductTeam
+[3] https://review.openstack.org/#/q/project:openstack/ops-tags-team
+[4] http://superuser.openstack.org/articles/section/superuser-tv
+[5] http://www.openstack.org/software/roadmap/
