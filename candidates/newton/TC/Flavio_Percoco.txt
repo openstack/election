@@ -1,0 +1,44 @@
+I'm announcing my candidacy for a position on the OpenStack Tecnical Committee.
+
+I had the honor to have been elected last year for a position on the TC and it'd
+be an honor for me to be re-elected for one more period as a member of this
+committee.
+
+I'm currently employed by Red Hat to work 100% upstream. During my past term I
+served as a member of the Technical Committee and as a PTL for Glance during the
+Mitaka cycle. Prior to that, I served as a PTL for Zaqar since the Icehouse
+cycle till Liberty. I'm also an Oslo contributor and part of the stable
+maintainers team, among other things. For the upcoming cycles, however, my plan
+is to be entirely focused on the Technical Committee matters, if you'd honor me
+with one more period on this role.
+
+During my last term as TC, I set myself some goals to help (new) contributors
+and teams to ramp up as well as keeping the overall OpenStack community informed
+about other topics. To that end, I helped creating what's now known as the
+Project Team Guide and the TC Communications Work group, which I'm still part
+of. The results of these goals can be found here[0] and here[1] respectively.
+Keeping the big tent growing and verifying that new projects would meet the
+minimum requirements was big part of the job for the previous term as well.
+
+Looking forward to Newton and Ocata, I believe we should now start working
+towards a better format to keep our precious big tent sane and clean.
+Specifically, I believe we should start looking into the progress existing
+projects have made, the community status and help those projects to move forward
+when possible or to remove them from the big tent if needed. This is a hard
+topic to touch on and it'll require a study on the current situation and a plan
+forward that is both objective and clear.
+
+My past term as a TC member and my knowledge and involvement on other
+cross-project tasks positions me well to help the community continue to grow
+while still be able to contain the tent and prevent it from falling down. I
+believe it's important for the technical committee to be more involved in
+cross-project, technical, efforts.
+
+One last thing, as a member of the TC I'd keep being part of the communications
+group.
+
+Once again, It would be my honor to continue to represent you. I look forward to
+another year of successes reached by the Openstack community.
+
+[0] Project Team Guide: http://docs.openstack.org/project-team-guide/
+[1] TC Communications Workgroup: http://www.openstack.org/blog/category/technical-committee-updates/
