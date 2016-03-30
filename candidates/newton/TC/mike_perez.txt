@@ -1,0 +1,132 @@
+Hi all!
+
+I Mike Perez aka. thingee, am announcing my candidacy for a position in the
+OpenStack Technical Committee.
+
+I am employed by the OpenStack Foundation as a Developer Coordinator to help
+bring focus/support to cross-project initiatives via the cross-project
+specs, Def Core, The Product Working group, etc.
+
+I feel the items below have enabled others across this project to strive for
+quality. If you would all have me as a member of the Technical Committee, you
+can help me to enable more quality work in OpenStack.
+
+* I have been working in OpenStack since 2010. I spent a good amount of my time
+  working on OpenStack in my free time before being paid full time to work on
+  it. It has been an important part of my life, and rewarding to see what we
+  have all achieved together.
+
+* I was PTL for the Cinder project in the Kilo and Liberty releases.
+
+* I led the effort in bringing third party continuous integration to the
+  Cinder project for more than 60 different drivers. [1]
+  * I removed 25 different storage drivers from Cinder to bring quality to the
+    project to ensure what was in the Kilo release would work for operators.
+    I did what I believed was right, regardless of whether it would cost me
+    re-election for PTL [2].
+  * See epic thread on this once deadline happened [3]
+  * In my conversations with other projects, this has enabled others to want to
+    follow the same effort.
+    - Ironic now has a road map for doing third-party CI. [4][5]
+
+* I have attempted to help with diversity in our community, and I think it's
+  great to have people in the committee that views this as a priority.
+  - Helped lead our community to raise $17,403 for the Ada Initiative [6],
+    which was helping address gender-diversity with a focus in open source.
+  - For the Vancouver summit, I helped bring in the ally skills workshops from
+    the Ada Initiative, so that our community can continue to be a welcoming
+    environment [4].
+  - I have assisted Emily Hugenbruch with the OpenStack mentor program [7].
+  - Based on some of the surveys the diversity working group has been doing,
+    OpenStack's tool chain of IRC, gerrit, and git was expressed as being
+    difficult to get started with. I started writing documentation to provide
+    step-by-step with screen shots to help improve our on-boarding experience
+    [8].
+
+* I started the OpenStack Mailing List Digest, in order to enable others to
+  keep up with the dev list on important information. [9][10]
+
+* When Open Core was being discussed by the TC, numerous times I spoke to the
+  TC about my disagreements with accepting projects in OpenStack's big tent if
+  testing is only possible with a commercial entity. [11][12] I believe
+  OpenStack service APIs should be based off an open source reference
+  implementation that we're able to do integration tests with in gate. Anyone
+  who begins to play with OpenStack should be able to run OpenStack with full
+  features without a commercial entity/driver.
+  - See my discussions with the TC in their meeting in raising quality and
+    being able to fully test projects we're considering in accepting in the big
+    tent [13].
+
+* I have properly established the cross-project team [14] as well as the
+  members that represent each OpenStack project [15].
+
+
+As a TC member I want to bring focus in some areas:
+
+1) Installation Documentation - I think all projects in the big tent should
+   have installation documentation. In order for projects to gain adoption and
+   gather better feedback, operators need to know how to install things. Today
+   majority of projects in the big tent have no installation documentation,
+   some which have existed for more than three years and still nothing. Where
+   are these projects going? In addition I want to make all new projects
+   entering the big tent come with clear documentation for installation. See
+   the beginning discussions I'm starting here [16].
+
+2) As expressed in the earlier point, there are some projects in the big tent
+   that seem to have no clear direction and are lacking adoption after existing
+   for years in the community. I'd like to work with these projects and see how
+   we can move things forward to gain maturity, and some to be accepted in with
+   Defcore and refstack. Otherwise I think these projects should be reevaluated
+   in the value they're bringing to the big tent. This won't be easy, but it
+   needs to be done to make sure community focus and resources we use from the
+   Infra team is spent well. See the TC discussing CI resources VS project
+   growth [17].
+
+3) As expressed in the earlier point, Defcore plays a role in helping us define
+   a set tests that will be ran against deployed OpenStack clouds interested in
+   using the trademark. I'd like to continue working with both individual
+   projects and Defcore/refstack in seeing if it's possible to make other
+   services available in public clouds. For example I'm curious on the future
+   of projects like Heat or Murano being available from one cloud to the next.
+   Today not every public cloud has orchestration available. When I look at the
+   bigger picture of federated clouds, when will I be able to assume a cloud
+   has certain resources/services available? I don't have an answer to this,
+   but I would like to start discussions here and explore.
+
+4) As being someone who is focused on cross-project initiatives, I would like
+   to bring the TC more focused and aware on the efforts done by the
+   cross-project team and the API working group. There's nothing today helping
+   their efforts to bring consistency to OpenStack, see previous conversations
+   with the TC on this issue [18]. The API working group are writing agreed
+   guidelines by the community, I would like to see these moved on from being
+   just optional, especially making new potential big tent projects more aware
+   before they diverge too far. Potentially making these guidelines things we
+   identify as being an OpenStack project and requirement to even be accepted
+   by the TC.
+
+Please help me to do more positive work in this project. It would be an honor
+to be member of your technical committee.
+
+
+Thank you,
+Mike Perez (thingee)
+
+
+[1] - http://lists.openstack.org/pipermail/openstack-dev/2015-January/054614.html
+[2] - https://review.openstack.org/#/q/status:merged+project:openstack/cinder+branch:master+topic:cinder-driver-removals,n,z
+[3] - http://lists.openstack.org/pipermail/openstack-dev/2015-March/thread.html#59453
+[4] - http://lists.openstack.org/pipermail/openstack-dev/2015-December/080867.html
+[5] - https://wiki.openstack.org/wiki/Ironic/Testing#Third_Party_CI
+[6] - http://lists.openstack.org/pipermail/openstack-dev/2014-October/047892.html
+[7] - https://wiki.openstack.org/wiki/Mentor://wiki.openstack.org/wiki/Mentors
+[8] - https://review.openstack.org/#/c/286941/
+[9] - https://www.openstack.org/blog/2016/03/openstack-developer-mailing-list-digest-20160311/
+[10] - https://www.openstack.org/blog/2016/03/openstack-developer-mailing-list-digest-20160304/
+[11] - http://lists.openstack.org/pipermail/openstack-dev/2016-February/086737.html
+[12] - http://lists.openstack.org/pipermail/openstack-dev/2016-February/0861http://eavesdrop.openstack.org/meetings/tc/2016/tc.2016-02-09-20.01.log.html#l-29310.html
+[13] - http://eavesdrop.openstack.org/meetings/tc/2016/tc.2016-02-09-20.01.log.html#l-293
+[14] - http://docs.openstack.org/project-team-guide/cross-project.html
+[15] - https://wiki.openstack.org/wiki/CrossProjectLiaisons#Cross-Project_Spec_Liaisons
+[16] - http://lists.openstack.org/pipermail/openstack-dev/2016-March/090214.html
+[17] - http://eavesdrop.openstack.org/meetings/tc/2016/tc.2016-03-01-20.01.log.html#l-340
+[18] - http://eavesdrop.openstack.org/meetings/tc/2016/tc.2016-02-02-20.01.log.html#l-261
