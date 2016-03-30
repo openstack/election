@@ -1,0 +1,148 @@
+All My Peers:
+
+TL;DR - I will increase adoption of OpenStack by removing governance
+RED TAPE and mentoring individuals interested in these objectives.
+
+A brief history of time:
+
+I started my journey in OpenStack by doing a gap analysis of AWS to
+OpenStack at my previous employer Red Hat, Inc.  This gap analysis
+turned up all kinds of gaps in OpenStack four years ago.  I
+personally believed for OpenStack to be successful, it needed to expand
+beyond a compute kit and deliver a complete IaaS platform.
+
+Four years ago there was not really a way to add projects to OpenStack.
+There was no big tent, but instead an incubation track.  It was very
+poorly defined (half a wiki page), so I went about the efforts of
+solving one of the most fundamental problems in OpenStack: Adding a
+new project to OpenStack.  I did this by combining my previous gap
+analysis with my experience starting and leading Open Source projects
+to solve one of the most fundamental gaps in OpenStack: Orchestration.
+
+This led to the founding of the Heat project with Angus Salkeld of
+which I served as PTL for 18 months.  At the time the bar to add
+projects to OpenStack was stratospheric.  Fortunately the
+dedication and perseverance of the Heat project team resulted
+in the addition of Heat as an incubated and later integrated
+project as did another project Ceilometer led by Nick Barcet
+that also went through the same process at nearly the same time as Heat.
+
+Once Ceilometer and Heat were integrated into the integrated
+release of OpenStack, a herd of projects attempted incubation
+into OpenStack and the technical committee was faced with a dilemma.
+In early 2014, OpenStack governance isolated projects into
+"programs".  The technical committee believed it was necessary
+to integrate all these new projects into existing programs.
+
+The learning process from that led to the origination of the
+Big Tent, of which I am a super hard-core fan.  Once the Big Tent
+was reality, the bar for entry as a legitimate OpenStack project
+was far lowered, creating a framework for new innovative projects
+to flourish, evolve, and add value to the OpenStack community.
+
+In mid 2014 I was feeling a little frustrated after recruiting a
+fantastic diversely affiliated team and community and still
+feeling like a track athlete for jumping all the hurdles in the
+way of making Heat an integrated program.  How could others go
+through this effort without all the hurdles?  I lacked an answer.
+Fortunately the technical committee cut the RED TAPE by introducing
+the Big Tent in late 2014 which re-energized me into solving
+OpenStack's next two major gaps.  The first gap was lack of
+support for container workloads (solved by Magnum), where Adrian
+Otto served a PTL while I recruited a majority of the core
+reviewer team and implemented much of the original architecture.
+
+At the nearly the same time in 2015, I personally believed existing
+deployment of OpenStack was too complex and error prone and formed
+the Kolla project.
+
+I recruited a great core review team with Kolla and trained this
+young team on how to "Open Source".  I feel Kolla is one of OpenStack's
+greatest successes - a team with a high degree of diverse affiliations
+to solve OpenStack's #1 problem: How do I deploy the damn thing!
+
+Now, I as the PTL of Kolla am faced with a problem: RED TAPE!
+The technical committee decided during the Big Tent process that
+projects should be labeled with tags.  Whether tagging is dangerous
+or not to OpenStack projects I leave for a different forum, but
+there is Operator value in the tagging process.
+
+Tags provide a mechanisms to automate information transfer and serve
+as a selection criteria for the OpenStack Operator community who
+represent the folks that are actually going to deploy the software
+the OpenStack developer community creates.
+
+The current tags as they are written are full of RED TAPE [1].  It
+is not easy writing a tag that doesn't require onerous hurdle jumping.
+I wrote a couple type: tags myself [2][3] and it is not the blame of
+the technical committee that the tags can appear so onerous to fresh
+projects like Kolla that have only been in the Big Tent for ten
+months.  It is a complex challenge handling all cases with a
+limited document.  To correct the deficiencies of the governance
+repository, we need to collectively involve the community in the
+governance repository development process.
+
+I don't want to "overthrow" the technical committee as it stands.
+I think they have done a fantastic job of keeping up with rapid
+pace of OpenStack’s growth.  I honestly don't think I could have
+done a better job in the past.  That said, I would appreciate the
+opportunity to contribute to the technical committee’s efforts
+bringing to the table my 4 years of experience as PTL or co-PTL
+of the Heat, Magnum, and Kolla projects as well as my previous
+work in Open Source including leadership positions in the high
+availability community, leading Corosync, and serving as
+an author for the Linux Foundation's Carrier Grade Linux
+specifications.  My professional mission in the past has been
+to make OpenStack and the developers I mentor grow.  I want to
+expand my professional mission with:
+
+“Grow the OpenStack ecosystem by reducing or removing hurdles
+and mentoring individuals interested in these objectives.”
+
+If elected for the technical committee I will deliver on this
+mission by:
+
+* Promoting project affiliation diversity wherever possible.
+* Serve as a Champion for community members wishing someone
+  else would just remove the RED TAPE so they could get on
+  with their jobs by authoring and driving changes to the
+  governance repository at request.
+* Enforce via automated tooling and human intervention an accurate
+  accounting of the tags used in the governance repository so that
+  Operators can actually count on the tags being accurate rather
+  than applied inconsistently.
+* Mentor fresh Project Team Leads how the governance repository
+  operates.
+* Mentor Project Team Leads on the governance repository workflow
+  to solve their own problems.
+* Lead the development of a feedback loop between the technical
+  committee and Project Team Leads relating to tagging and
+  RED TAPE removal.
+* Democratize the governance repository so thirteen individuals
+  don't decide feature tagging of technical projects; rather the
+  project teams feed their ideas into the governance repository
+  directly.  This can already be done today but is rarely undertaken.
+
+I am able to do most of these things today in an unofficial
+capacity.  Becoming a member of the technical committee with your
+vote would help reach a wider audience with my mission and permit
+me to have a bigger impact by helping shape the governance of
+OpenStack.
+
+I would be pleased to accept your vote and serve as your technical
+committee representative and deliver on the commitments made above.
+With my twenty years of R&D development experience coupled with my
+four years of PTL experience and extensive technical involvement
+in the growth of OpenStack [4][5], I believe I am in a fantastic
+position to serve as your voice and mentor others to use theirs.
+
+Warm Regards,
+Steven Dake
+
+My freenode IRC nickname is: sdake
+
+[1] https://review.openstack.org/#/c/294212/
+[2] https://review.openstack.org/#/c/295528/
+[3] https://review.openstack.org/#/c/295971/
+[4] Reviews: http://stackalytics.com/?user_id=sdake&release=all&metric=marks
+[5] Commits: http://stackalytics.com/?user_id=sdake&release=all&metric=commits
