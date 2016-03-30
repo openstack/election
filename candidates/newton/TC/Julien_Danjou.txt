@@ -1,0 +1,22 @@
+Hi folks,
+
+I hereby announce my candidacy for the OpenStack Technical Committee election.
+
+Most of you probably know me by now, and for those who don't yet, let's say
+I've been around for almost 5 years now in the OpenStack community. I am
+currently acting as the PTL for Telemetry. I've been working on that project
+for a while and been tacking technical debt as a member of the Oslo team for a
+long time too.
+
+I wrote a blog post about my view of the current state of the OpenStack project
+as a whole, what I'd like to fix, and how I think the TC should behave.
+
+I invite you to give it a quick read, and if you agree with what I wrote, I'd
+like to encourage you to vote for me. And even to vote for other people whose
+view might join mine. :)
+
+  https://julien.danjou.info/blog/2016/openstack-schizophrenia
+
+Cheers,
+
+Julien
