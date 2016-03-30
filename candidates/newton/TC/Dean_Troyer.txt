@@ -1,0 +1,29 @@
+I am Dean Troyer and would like to nominate myself as a candidate for re-election
+to the Technical Committee.
+
+I have a bit of history with OpenStack: I was early contributor to DevStack, I
+started Grenade to perform basic upgrade testing, and I started the OpenStackClient
+project. I currently work for Intel from the heart of flyover country, Kansas City MO.
+
+As we gained experience with the Big Text transition I believe it has become
+increasingly clear that we need to refine our mission and focus, and get a little
+more specific about what should be part of OpenStack and what should be separate.
+It may be more appropriate to look at OpenStack not as a single large tent, but as
+a group of connected medium-sized tents.
+
+The fundamental idea of the Big Tent is still sound, however, I believe our
+experience shows that we need to refine the application. The core of this has not
+changed in my view, we still must define these tents by the technical relationships
+between projects. As much as some try to deny it, not all projects are created equal.
+For example, Nova will always need Glance, unless Nova grown its own image service.
+
+I believe we need to get our current house (tent!) in order and simplify what we
+have rather than focus on growing the number of projects and features. For the TC,
+one form this takes is in encouraging projects to periodically focus on lowering
+technical debt. Often called a 'stability release' this is unpopular with those
+who measure success by how many features have been added. I think it is up to the
+TC to encourage measuring success by other things that are harder to count, like
+the improvement of operators and users lives by making OpenStack feel like a more
+cohesive collection of projects.
+
+I would be honored to continue serving the community on the Technical Committee.
