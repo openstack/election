@@ -1,0 +1,76 @@
+Hi everyone,
+
+I'd like to submit my candidacy for election to the Technical Committee.
+I use johnthetubaguy as my IRC nickname.
+
+I was the Nova PTL for Liberty and Mitaka. I am currently employed by
+Rackspace as a Principle Engineer, working as an upstream developer.
+Since late 2010 I have had a variety of OpenStack related roles. I started
+building a OpenStack private cloud deployment tool at Citrix, then moved to
+working upstream but focusing on making XenServer work well with OpenStack.
+In early 2013 I moved to Rackspace, doing development for Rackspace's public
+cloud, and more recently looking across all of Rackspace's OpenStack
+contributions. I believe this variety of different experience helps me better
+represent all of the OpenStack technical community.
+
+1. User Experience, Ecosystem and Interoperability
+
+As we evolve OpenStack, I think we must always look towards delivering what
+our users really need from OpenStack as a whole.
+
+Our users need a healthy ecosystem of tools and applications to make OpenStack
+really useful to them. To deliver this we need truly useful interoperability.
+
+DefCore is helping, but we need to focus more on improving, rather than just
+enforcing, interoperability.
+
+2. Ecosystem, not just one tent
+
+There is a lot of talk about tents and festivals. As we step back and look
+again at the limits of the tent. I think we should focus on supporting a
+vibrant ecosystem, that contains various groups of very useful tools.
+The original concerns have not gone away, but I think we are now in a position
+to make a different set of trade offs.
+
+We should focus our attention on helping users understand and navigate the
+ecosystem. We can use things like the project tags as rewards. Users can
+help keep folks honest. Ideally an ecosystem that is a kind of meritocracy.
+I feel it this must be Open to tools built "outside of OpenStack".
+
+Just how each project has a clear mission, it feels like it could be useful
+to have various groups of projects that join together behind a shared mission.
+The current set of "defcore projects" feels like one possible group.
+
+I don't claim to have the answers, but I would like us to help find a solution
+that better supports all of our ecosystem, but ideally also allows for more
+focus on problems users need solving.
+
+3. Improve collaboration, across the globe
+
+There are lots of difficult OpenStack problems that our users need solving
+but we are not making progress. We need to think more about OpenStack as a
+whole rather than a collection of independent projects.
+
+We should build consensus on the most important issues that our users need
+solved, and tell people. We then need to work on getting developers
+"permission" to work on those items. A related example is the product working
+group looking at how to get developers they can help more time for reviews,
+bug triage, etc.
+
+Evolving the Design Summit is an important part of improving our
+collaboration. Going back to permission, as a community we need to make clear
+the importance of contributors meeting face to face to establish and maintain
+the relationships we all need to stay productive. Code reviews are so much
+easier when you have met the person commenting on your work.
+
+Being in the UK, meeting times designed for folks in the west coast of the US
+can really suck, but I know other parts of the globe have an even harder time.
+I have seen staggering synchronous meetings, regular (6 monthly) in person
+meetings, along with asynchronous tools like gerrit to record decisions work
+well at supporting a global community. Lets keep ensuring we keep the
+community Open to folks around the globe.
+
+
+Thank you for reading!
+
+John Garbutt (johnthetubaguy)
