@@ -1,0 +1,35 @@
+hi folks,
+
+i'd like to announce my candidacy for the OpenStack Technical Committee.
+
+as a quick introduction, i've been a contributor in OpenStack for the past few
+years, focused primarily on various Telemetry and Oslo related projects. i was
+recently the Project Team Liaison for the Telemetry project, and currently,
+i'm an engineer at Huawei Technologies Canada where i work with a team of
+developers that contribute to the OpenStack community.
+
+my views on what the next steps for OpenStack are are not unique. i share the
+idea: OpenStack needs to refine its mission. this is not to dissuade
+developers from continuing to build upon and extend the existing projects but i
+think OpenStack should concern itself with the core story first before worrying
+about extended use cases.
+
+Also, i believe that the existing projects in OpenStack are too siloed. coming
+from a project that interacts with all other services, it's quite apparent
+that projects are focused solely on their own offerings and ignoring how it
+works globally. tighter collaboration between projects i believe will help make
+integration easier and more efficient. similar to how services within a project
+just work together, projects should just work together.
+
+in many ways i see the Technical Committee as the Cross Project Liaisons some
+of us are searching for. rather than act as Guardians of "what is OpenStack", i
+think the TC should take a more active role in the projects and work together
+with the PTLs to ensure that the "Cloud" story makes sense. PTLs and TC members
+should work side by side to identify gaps in the story rather than the current
+interaction agreement of "you're in. we'll talk if stuff hits the fan".
+
+understandly the Cloud story is different to many people so i'll employ the
+strategy i've used previously: listen to others, share the decision, share the
+blame, and claim the success.
+
+thanks for you time.
