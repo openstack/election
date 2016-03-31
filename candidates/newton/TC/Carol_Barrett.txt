@@ -1,0 +1,34 @@
+Hi - I am announcing my candidacy for the OpenStack Technical Committee for
+the upcoming term.
+
+Currently, I am a Data Center Software Planner at Intel. I have been an
+active member in the community since 2013, working with Community teams
+to understand market needs and bring that information to the Community
+(in the form of specs, blueprints, prototypes and user stories) and
+developing materials to speed planning for, and adoption of OpenStack
+(multi-release roadmaps, Reference Architectures, Customer Testimonials,
+Evaluation and Deployment guides, etc).
+
+As a TC member, I will work to support our success by utilizing my areas
+of expertise. Specifically, you can expect me to:
+
+1) Collaborate to more tightly integrate requirements from our Markets
+into the Specification, Design and Development processes across projects.
+
+2) Establish a mechanism for tracking the implementation of specifications
+and communicating progress and plans to our Markets and ecosystem.
+
+3) Foster discussion on the future direction for our Community and our
+software. What’s the vision of the Data Center of the Future? What is
+needed to realize that? How do we make sure that OpenStack is the
+preferred Cloud Platform in this future environment?
+
+4) Work to ensure we have a thriving community that welcomes all comers
+and supports them to become contributing members and leaders.
+
+We have a lot of opportunity for growth and success. I would like to
+join the TC to help our Community realize this potential.
+
+Thank you for your consideration
+
+Carol Barrett
