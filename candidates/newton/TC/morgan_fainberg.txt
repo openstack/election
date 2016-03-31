@@ -1,0 +1,74 @@
+Friends, Colleagues, and Fellow Community Members, lend me your ears (or eyes
+as the case may be).
+
+I am pleased to submit for your consideration my candidacy for the technical
+committee (TC).
+
+You may know me from such projects as Keystone, and the “From Camera to Couch”
+segment of Jonathan Bryce’s opening keynote at the Vancouver OpenStack Summit.
+I have been an active contributor to OpenStack and have served in a leadership
+role since August of 2013 (as core contributor for Keystone and PTL for two
+cycles). During my time contributing to OpenStack I have been focused on
+improving the interoperability between clouds, improving the cross
+communication between projects, and collecting (both direct and indirect)
+feedback from the many deployers and users of OpenStack.
+
+With some distance from being PTL of Keystone, I feel that it is time to
+refocus my contributions to OpenStack and work to improve the community in a
+different but also very important manner.
+
+The most important thing we can do as a community is to continue to improve
+the feedback loop from those who are actively using OpenStack. This means
+that we need to continue to clearly hear the deployers and improve the story
+around running OpenStack (at small, medium and large scales). We also need to
+improve the voice of the end user (those who are utilizing the actual APIs
+themselves on a daily basis); as a community we continually improve our
+ability to hear feedback on the projects in the Big Tent, but we must also
+be mindful that the demand for OpenStack (especially by the end users) is
+what makes it more compelling. The TC provides an overarching vision and
+encourages the continued inclusion of the many different facets of our
+community.
+
+I believe that with the initiatives like the API Working Group and the
+Product Working group, we can make OpenStack significant better and more
+compelling. I hope to see the TC continue to encourage cross project
+communication, move the “recommendations” provided from the API Working
+Group from advisory towards a stronger “tenants of OpenStack API design”,
+and work towards codifying a slightly more opinionated OpenStack. These
+changes will serve the project for a long time to come.
+
+So in short here is what aim to do as a member of the TC:
+
+* Encourage a strong vision for OpenStack as a whole, ensuring new projects
+and old are at home in the “Big Tent”; this includes help in eliminating
+bureaucratic red tape for inclusion in OpenStack as possible while making
+sure OpenStack still feels like a cohesive ecosystem
+
+* Continue to encourage and drive solid interoperability between deployments
+(via defcore and working to drive the API working group recommendations to
+something more firm).
+
+* Provide mentorship (both directly and through reaching out to the
+community) to new contributors. As a member of the TC it is important to
+lead by example especially when it comes to bringing in new members to the
+community 
+
+* Continue to be an advocate for both the deployers and the end users and
+working to continue to improve the feedback loop between this part of our
+community and the developers.
+
+* Work with the rest of the TC, the Foundation, and the Board to continue
+solidifying the “what is OpenStack” and how it fits into the needs of the
+many consumers of “cloud” technologies.
+
+Finally, I look forward to continuing to be part of this amazing Open Source
+community for many more development cycles.
+
+Thanks for your time, consideration, and contributions to this community.
+
+Cheers,
+Morgan Fainberg
+
+IRC: "morgan" (or "notmorgan")
+Review History: https://review.openstack.org/#/q/reviewer:morgan.fainberg%2540gmail.com
+Commit History: https://review.openstack.org/#/q/owner:morgan.fainberg%2540gmail.com
