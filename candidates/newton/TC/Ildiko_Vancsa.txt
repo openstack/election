@@ -1,0 +1,90 @@
+Hi All,
+
+I would like to throw my hat in the ring to be part of the OpenStack Technical
+Committee.
+
+I'm working at Ericsson, where I'm coordinating the OpenStack related activities
+across the company. I started to contribute to OpenStack more than two years ago
+by adding rich query functionality to Ceilometer. Since then I got nominated as
+a core reviewer in the project, where beyond other contributions, I became the
+constant voice of usability aspects and backward compatibility. Among other
+projects I'm contributing to Nova and OpenStack Manuals as well[1].
+
+I would like to increase diversity in the TC group, but more importantly my
+goal is to add fresh blood to the forum driving this community. In my
+opinion it is very important to constantly revisit items from a different
+perspective and let new voices articulate their views and ideas in order to see
+the big picture. Long term this can ensure that OpenStack keeps its adaptability
+to continue to be a smoothly functioning ecosystem just as being a stable and
+successful software package.
+
+In the course of my current role within Ericsson I encourage and follow the
+contribution activities of my colleagues, by which I have a good oversight on
+how OpenStack works as a community. Driven by my colleagues' and my own
+experiences I see cross-project collaboration as an area, where notwithstanding
+the already ongoing great work there is still room for further improvements. As
+part of the TC I would like to participate in driving cross-project activities,
+where I plan to focus on the on-boarding aspects. In my opinion it is very
+important to spend time educating newcomers and helping to rapidly build up
+competencies regarding processes likewise in the realm of technology and
+coding abilities and guidelines. As part of this mission I would continue to
+invest energy in bringing sessions on stage at the OpenStack Summits[2][3] to
+share the lessons I learnt during the past two and a half years. It is key to
+explain to people how the community really works beyond the well-documented
+processes and tools that we are using every day. The devil is in the details, as
+always.
+
+I mentioned adaptability earlier, which I feel being a very important aspect as
+it outlines the ability to constantly change when needed. In my view operating
+OpenStack as Big Tent is a good approach, although I think it is important to
+check the principles and review criteria to evaluate the new project
+candidates to rationalize the current review process. I also got the impression
+that the idea behind the tags is being devalued due to proliferation. I have
+similar feelings regarding governance on project level. In my view it is very
+important to give guidelines on how the teams can efficiently operate, but it is
+time consuming and destroys the focus of the TC to spend much energy on giving
+detailed descriptions and regulations on how these groups should work within
+OpenStack. Among others I would like to revisit the aforementioned items to make
+the responsibilities and activities of the TC more clear and make the group even
+more efficient.
+
+As an employee of a Telecom vendor I would like to bring in the NFV mindset to
+OpenStack to be part of the daily discussions as opposed to being a mysterious
+abbreviation that introduces competing priorities. During the past few years I
+saw and experienced the difficulties and even pain of trying to find the common
+language between the two groups and making the contributions happen. I think it
+is very important to help the Telecom industry in the transformation to fit
+into the cloud terminology and the open source era. By this process OpenStack
+can leverage the advantages that this completely different set of priorities
+and requirements could offer, such as increased stability and advanced
+networking functionality.
+
+I'm involved in OPNFV[4] and it is part of my mission to find the connection
+points between the two communities[5] to build a large ecosystem which fits
+OpenStack's current priorities[6] in the sense of actively supporting and being
+the foundation for NFV. As a benefit for us we can use the test environment and
+test frameworks to see how OpenStack operates in a fully integrated environment
+on top of different hardware platforms. OPNFV brings integration and functional
+testing to a different level which is an important feedback to our community and
+a good checkpoint to our users. As more and more Telecom operators are looking
+at OpenStack as a main building block of their systems, I would like to serve as
+a representative in the technical driving force of OpenStack, who can operate as
+a translator to build a common roadmap.
+
+Thank you for reading through my thoughts. It is an honor to be part of
+OpenStack, which is why I would like to take part in bringing this community
+further to provide a package that can serve the whole industry and which is
+backed up by a growing and smoothly functioning ecosystem.
+
+Thank you for your consideration.
+
+Best Regards,
+/Ildikó (ildikov)
+
+
+[1] http://stackalytics.com/?release=all&user_id=ildiko-vancsa&metric=person-day
+[2] https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/tales-from-the-ship-navigating-the-openstack-community-seas
+[3] https://www.openstack.org/summit/austin-2016/summit-schedule/events/8065
+[4] https://www.opnfv.org
+[5] https://www.openstack.org/summit/austin-2016/summit-schedule/events/7510
+[6] http://www.openstack.org/assets/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf
