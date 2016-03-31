@@ -1,0 +1,57 @@
+Hi Everyone,
+
+I'd like to submit my candidacy for the OpenStack Technical Committee.
+
+I've been involved with OpenStack since the Folsom cycle. In that time I've
+worked on a lot of varied parts of OpenStack. During this time I have started
+and led several key initiatives and projects (mostly centered around QA and the
+gate) in OpenStack including:
+
+ * Starting the elastic-recheck project with Joe Gordon
+ * Enabling parallel tempest execution. This made our gate test environment more
+   closely resemble a real environment by having multiple API requests happen at
+   once. It's shook loose a ton of race conditions in projects
+ * Creating tempest-lib and the tempest plugin interface
+ * Creating subunit2sql and starting the openstack-health dashboard
+ * Helping debug gate issues and consistently helping with firefighting blocking
+   gate issues
+
+I also served as the QA PTL for the past 4 cycles from Juno through Mitaka. It
+was in this role that I've interacted with most of the projects/teams in
+OpenStack and gained an appreciation for where OpenStack works at it's best and
+at it's worst.
+
+As a community I see our greatest weaknesses (and strengths) come from having
+a large and diverse platform and ecosystem. While I do believe that for
+OpenStack to succeed we do need a large ecosystem of projects, which the big
+tent was introduced to address, I feel in the process we have lost some
+concentration as a community on having a strong base and clear messaging about
+OpenStack. With everyone distracted by the big tent it often leaves things in
+the small tent, which holds up the entire ecosystem, not getting the attention
+it should.
+
+The other aspect that comes with this is the messaging around OpenStack. I've
+had many conversations with people outside the community about how they choose
+not to use or contribute to OpenStack because it's not clear what it is, where
+to begin, or how to use it. I feel this is largely because we grew quite quickly
+after converting to the big tent and we need to do a better job of helping users
+bridge the gap here. Tags were a start, but I still think there is a way to
+go before we can say we've solved this problem.
+
+As a member of the TC I'd want to bring more focus to these problems. I'd like
+to see the TC take a more active role and take a more hands on approach in the
+technical oversight of projects. I'd also want to work on making our messaging
+about what OpenStack is much clearer.
+
+It would be my honor and privilege to serve the community if I'm lucky enough
+to be a elected to the TC.
+
+Thanks,
+
+Matthew Treinish
+
+IRC: mtreinish
+Review history: https://review.openstack.org/#/q/reviewer:mtreinish%2540kortar.org
+Commit history: https://review.openstack.org/#/q/owner:mtreinish%2540kortar.org
+Stackalytics: http://stackalytics.com/?metric=commits&user_id=treinish
+Blog: http://blog.kortar.org/
