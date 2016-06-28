@@ -2,7 +2,7 @@
 OpenStack Election
 ==================
 
-.. warning:: This is a test for Newton cycle
+.. warning:: This is a test for Ocata cycle
 
 .. include:: ./candidates/events.rst
 
@@ -10,7 +10,7 @@ See PTL_details_ and TC_details_.
 
 Below is the official list of candidates for the current round.
 
-.. include:: ./candidates/tc.rst
+.. include:: ./candidates/ptl.rst
 
 
 Election Officials

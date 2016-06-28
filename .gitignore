@@ -11,4 +11,5 @@ ChangeLog
 candidates/ptl.rst
 candidates/tc.rst
 candidates/events.rst
-.projects.yaml
+.projects*yaml
+.projects*.pkl

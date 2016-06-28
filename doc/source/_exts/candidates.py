@@ -66,8 +66,8 @@ def render_list(list_type, candidates_list):
 
 
 def build_lists(app):
-    # TODO: make newton a parameter
-    election = 'newton'
+    # TODO: make election a parameter
+    election = 'ocata'
     candidates_list = build_candidates_list(election)
     render_list("ptl", candidates_list)
     render_list("tc", candidates_list)
