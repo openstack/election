@@ -1,0 +1,19 @@
+Hi all,
+
+I am the current PTL for the EC2 API project and I'm the one who drove its
+implementation and adoption as a standalone project (previously it was a
+part of nova). I would like to nominate myself as a PTL for the next cycle.
+
+Last cycle we tried to keep up with the changes in Amazon and to contribute
+necessary additions to nova so that we can support some of the lacking
+features. The last part didn't succeed so we'll try again.
+
+The next cycle we'll try to:
+
+1. Again submit required changes to nova.
+2. Fix bugs and support clients.
+3. Consider implementation of some marginal features which we do not support
+yet.
+
+Best regards,
+  Alex Levine
