@@ -1,0 +1,29 @@
+Hi
+
+I would like to announce my candidacy for PTL of the OpenStack Charms project.
+
+I'm the incumbent and first PTL of this project, which joined the OpenStack
+project in July this year;  Right now we have around 30 charms for deploying
+various parts of OpenStack, with an active core team 100% populated by
+Canonical.
+
+We're slowly incubating contribution from outside of this team - this cycle
+I want to focus on changing that; specifically I think we have shortcomings
+in engaging new developers, as getting into OpenStack charm development can
+be high cost - the route to testing your charm change prior to submission
+currently presents various options, and I want to focus on ensuring that
+anyone with a reasonably specified machine can get started deploying
+OpenStack and hacking on the OpenStack charms, enabling both end-users and
+developers to have a better start in using and understanding the OpenStack
+Charms.
+
+I will continue to drive cross charm initiatives; specifically I think
+Python 3 support is a key objective during the Ocata cycle, and we should aim
+to have that in place as early in cycle as possible.
+
+I also look forward to working collaboratively with other deployment projects
+within the OpenStack project.
+
+I look forward to helping steer the project during the Ocata cycle, and
+helping to incubate the developer and user community around the OpenStack
+Charms!
