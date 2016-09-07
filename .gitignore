@@ -13,3 +13,4 @@ candidates/tc.rst
 candidates/events.rst
 .projects*yaml
 .projects*.pkl
+.testrepository

@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-#
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
@@ -17,10 +15,9 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import argparse
-import sys
 
-import check_candidacy
-import utils
+from openstack_election import check_candidacy
+from openstack_election import utils
 
 
 def get_reviews():
@@ -63,7 +60,3 @@ def main():
                 print('[E]: %s is not a valid candidate\n\n' %
                       (owner['email']))
     return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())

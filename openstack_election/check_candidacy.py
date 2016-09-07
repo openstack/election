@@ -17,7 +17,7 @@ from __future__ import unicode_literals
 import datetime
 import os
 
-import utils
+from openstack_election import utils
 
 
 # FIXME: Printing from library function isn't great.
