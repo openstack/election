@@ -40,4 +40,5 @@ for project in project_list + ["TC"]:
     open("%s/.placeholder" % dpath, "w").close()
     print "[+] Created %s" % dpath
 
-print "Done. Now please manually update events.yaml and doc/source/index.rst substitutions"
+print("Done. Now please manually update events.yaml and "
+      "doc/source/index.rst substitutions")

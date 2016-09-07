@@ -2,7 +2,7 @@
 
 import sys
 sys.path.append("doc/source/_exts")
-from candidates import build_candidates_list
+from candidates import build_candidates_list  # noqa: E402
 
 GIT_BASE = 'http://git.openstack.org/cgit/openstack/election/plain/'
 
