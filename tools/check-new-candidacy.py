@@ -1,46 +1,59 @@
 #!/usr/bin/env python
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
 
-import subprocess
-import json
+from __future__ import absolute_import
+from __future__ import print_function
+from __future__ import unicode_literals
 
+import sys
 
-def pread(argv):
-    return subprocess.Popen(argv, stdout=subprocess.PIPE).communicate()[0]
-
-
-def execute(argv):
-    return subprocess.Popen(argv).wait()
+import check_candidacy
+import utils
 
 
 def get_reviews():
-    reviews = pread(["ssh", "-p", "29418", "review.openstack.org", "gerrit",
-                     "query", "--format=JSON", "status:open",
-                     "project:'openstack/election'"]).split('\n')
-    results = []
-    for i in reviews:
-        if "status" not in i:
-            continue
-        review = json.loads(i)
-        if review['status'] == 'NEW':
-            results.append(int(review['number']))
-    return results
+    return utils.get_reviews('is:open project:%s' %
+                             (utils.ELECTION_REPO))
 
 
 def check_reviews():
     for review in get_reviews():
-        if execute(["git", "review", "-d", "%d" % review]):
+        if review['status'] != 'NEW':
             continue
-        print
-        fl = filter(lambda x: x.startswith("candidates/"),
-                    pread(["git", "diff", "--name-only", "HEAD^"]).split('\n'))
-        if not len(fl):
-            print "[E] No candidacy added"
+
+        print('Checking %s/%d' %
+              (utils.GERRIT_BASE, review['_number']))
+
+        if not len(utils.candidate_files(review)):
+            print("[E] No candidacy added")
             continue
-        for candidate in fl:
-            print "[->] https://review.openstack.org/%d  - %s" % (
-                review, candidate)
-            execute(["./tools/check-candidacy.py", candidate])
-    execute(["git", "checkout", "master"])
+
+        owner = review.get('owner', {})
+        try:
+            found = check_candidacy.check_candidacy(review['change_id'],
+                                                    review=review)
+        except Exception as exc:
+            print("[E] %s\n\n" % (exc))
+        else:
+            if found:
+                print('SUCESS: %s is a valid candidate\n\n' %
+                      (owner['email']))
+            else:
+                print('[E]: %s is not a valid candidate\n\n' %
+                      (owner['email']))
+    return 0
+
 
 if __name__ == "__main__":
-    check_reviews()
+    sys.exit(check_reviews())

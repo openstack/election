@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-#
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
@@ -12,15 +10,71 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+from __future__ import absolute_import
+from __future__ import print_function
+from __future__ import unicode_literals
+
+import datetime
+import json
 import os
+import pickle
+import pytz
+import requests
 import time
 import urllib
 import yaml
-import pickle
 
+# Per election constants
+
+SERIES_NAME = 'ocata'
+# 2015-09-05 00:00:00 +0000
+PERIOD_START = datetime.datetime(2015, 9, 5, 0, 0, 0, tzinfo=pytz.utc)
+# 2016-09-04 23:59:59 +0000
+PERIOD_END = datetime.datetime(2016, 9, 4, 23, 59, 59, tzinfo=pytz.utc)
+PROJECTS_TAG = 'sept-2016-elections'
+
+# Library constants
+GERRIT_BASE = 'https://review.openstack.org'
+ELECTION_REPO = 'openstack/election'
 BASE_URL = 'https://git.openstack.org/cgit'
 PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
                 (BASE_URL))
+
+
+# Gerrit functions
+def gerrit_datetime(dt):
+    return dt.strftime('%Y-%m-%d %H:%M:%S %z')
+
+
+def gerrit_query(url):
+    r = requests.get(url)
+    if r.status_code == 200:
+        data = json.loads(r.text[4:])
+    else:
+        data = []
+    return data
+
+
+def get_reviews(query):
+    opts = ['CURRENT_REVISION', 'CURRENT_FILES', 'DETAILED_ACCOUNTS']
+    opts_str = '&o=%s' % ('&o='.join(opts))
+    url = ('%s/changes/?q=%s%s' %
+           (GERRIT_BASE, urllib.quote_plus(query, safe='/:=><'), opts_str))
+    return gerrit_query(url)
+
+
+def candidate_files(review):
+    return list(filter(lambda x: x.startswith("candidates/"),
+                       list(review['revisions'].values())[0]['files'].keys()))
+
+
+# Governance functions
+def check_atc_date(atc):
+    if 'expires-in' not in atc:
+        return False
+    expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y')
+    expires_in = expires_in.replace(tzinfo=pytz.utc)
+    return PERIOD_END < expires_in
 
 
 def get_projects(tag=None):
@@ -35,13 +89,14 @@ def get_projects(tag=None):
     if (not os.path.isfile(cache_file) or
             os.stat(cache_file).st_size < 100 or
             os.stat(cache_file).st_mtime + (7*24*3600) < time.time()):
-        print "[+] Updating %s" % cache_file
+        print("[+] Updating %s" % (cache_file))
         data = yaml.safe_load(urllib.urlopen(url).read())
         pickle.dump(data, open(cache_file, "w"))
 
     return pickle.load(open(cache_file))
 
 
+# Election functions
 def name2dir(name):
     """Convert project name to directory name: only [a-zA-Z_] in camelcase"""
     name = name.replace(' ', '_').replace('-', '_')
@@ -55,3 +110,4 @@ def dir2name(name, projects):
         pname = project_name.lower().replace(' ', '').replace('-', '').lower()
         if name == pname:
             return project_name
+    raise ValueError(('%s does not match any project' % (name)))
