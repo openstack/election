@@ -14,12 +14,20 @@
 """
 
 import os
+import subprocess
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
 
 BASE_URL = "http://git.openstack.org/cgit/openstack/election"
 PATH_PREFIX = 'candidates'
+
+
+def get_fullname(filepath, exceptions):
+    if filepath in exceptions:
+        return exceptions[filepath]
+    return subprocess.Popen(["git", "log", "--format=%aN", filepath],
+                            stdout=subprocess.PIPE).stdout.readlines()[-1][:-1]
 
 
 def render_template(template, data, **kwargs):
@@ -33,17 +41,30 @@ def render_template(template, data, **kwargs):
 def build_candidates_list(election):
     project_list = os.listdir(os.path.join(PATH_PREFIX, election))
     project_list.sort()
+    exceptions = {}
+    for e in open("exceptions.txt").readlines():
+        if e[0] == "#" or ":" not in e:
+            continue
+        exceptions[e.split(':')[0]] = " ".join(e.split(':')[1:])[:-1].strip()
 
     candidates_lists = {}
     for project in project_list:
         project_prefix = os.path.join(PATH_PREFIX, election, project)
-        candidates_list = filter(
+        file_list = filter(
             lambda x: x.endswith(".txt"),
             os.listdir(unicode(project_prefix)),
         )
-        candidates_list = [os.path.join(project_prefix, c)
-                           for c in candidates_list]
-        candidates_list.sort()
+        candidates_list = []
+        for candidate_file in file_list:
+            filepath = os.path.join(project_prefix, candidate_file)
+            candidates_list.append(
+                {
+                    'path': filepath,
+                    'ircname': os.path.basename(filepath)[:-4],
+                    'fullname': get_fullname(filepath, exceptions)
+                })
+
+        candidates_list.sort(key=lambda x: x['fullname'])
         candidates_lists[project] = candidates_list
 
     return {'election': election,
