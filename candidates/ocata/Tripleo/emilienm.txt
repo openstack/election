@@ -1,0 +1,48 @@
+This is my candidacy for PTL role in the TripleO team for the Ocata cycle.
+
+I had the immense pleasure [1] to lead Puppet OpenStack team during 18 months
+and we succeeded in improving Continuous Integration with more coverage,
+accelerating Release management, growing our Community, bringing more
+consistency in the way to configure OpenStack and staying the most-used project
+to deploy OpenStack in production [2]. I plan to re-use this experience for
+TripleO project.
+
+I see the PTL role as a catalyst for the team:
+
+- Release projects early and often. Continue to delegate the release management
+  task to team members, like we did during Newton cycle.
+- Never stop to increase testing coverage and keep finding solutions to
+  scale-up Continuous Integration system. TripleO scenarios were a start,
+  let's continue the efforts and improve it during Ocata [3].
+- Animate collaboration with OpenStack vendors who provide backends and
+  drivers in TripleO [4] to bring testing scenarios so we can actually test
+  their drivers.
+- Continue the efforts to find a consensus on which tool TripleO CI should
+  use with regard to TripleO Quickstart vs tripleo-ci.
+- Welcome new contributors by keeping regular TripleO deep-dive sessions,
+  organizing documentation sprints and making sure help is provided on
+  mailing-lists and IRC channel.
+- Enforcing our feature freeze exception policy and improve communications
+  to better understand the feature we want in a release, and try to stick
+  on it.
+- Help to scale the TripleO team by investigating the creation of upstream
+  squads (similar to Neutron stadium but for TripleO) with different areas
+  of focus (e.g. UI / CLI / upgrades / CI tools / Workflows / ...).
+  PTL role would also be to coordinate the squads together.
+- Being a proxy for OpenStack Technical Committee, Release managers
+  and other OpenStack projects in general, with good communications and
+  open discussions.
+
+We will succeed in all these tasks with advanced teamwork and I would be
+honored to serve our group as PTL.
+
+Thank you for your consideration,
+
+
+    Emilien Macchi
+    https://wiki.openstack.org/wiki/User:Emilienm
+
+[1] http://my1.fr/blog/puppet-openstack-achievements-during-newton-cycle/
+[2] https://www.openstack.org/assets/survey/April-2016-User-Survey-Report.pdf
+[3] http://my1.fr/blog/scaling-up-tripleo-ci-coverage-with-scenarios/
+[4] http://lists.openstack.org/pipermail/openstack-dev/2016-August/102205.html
