@@ -1,104 +1,59 @@
 #!/usr/bin/env python
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
 
-import yaml
-import os
+from __future__ import absolute_import
+from __future__ import print_function
+from __future__ import unicode_literals
+
+import argparse
 import sys
-import urllib
-import re
-import datetime
-import pytz
 
-DATE_MIN = '2015-03-04'
-DATE_MAX = '2016-03-03'
-
-BASE_URL = 'https://git.openstack.org/cgit'
-PROJECTS_TAG = 'march-2016-elections'
-PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml?%s' %
-                (BASE_URL, PROJECTS_TAG))
-
-date_min = datetime.datetime.strptime(DATE_MIN, '%Y-%m-%d').strftime('%s')
-date_max = datetime.datetime.strptime(DATE_MAX, '%Y-%m-%d').strftime('%s')
-now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc,
-                                         hour=0,
-                                         minute=0,
-                                         second=0,
-                                         microsecond=0)
+import check_candidacy
+import utils
 
 
-def check_atc_date(atc):
-    if 'expires-in' not in atc:
-        return False
-    expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y')
-    expires_in = expires_in.replace(tzinfo=pytz.utc)
-    return now < expires_in
+def main():
+    description = ('Check if the owner of a change is a valid candidate as '
+                   'described in the change')
+    parser = argparse.ArgumentParser(description)
+    parser.add_argument(dest='change_id', help=('A valid gerrit change ID'))
+    parser.add_argument('--limit', dest='limit', type=int, default=1,
+                        help=('How many validating changes to report.  '
+                              'A negative value means report many.  '
+                              'Default: %(default)s'))
+    parser.add_argument('--tag', dest='tag', default=utils.PROJECTS_TAG,
+                        help=('The governance tag to validate against.  '
+                              'Default: %(default)s'))
 
+    args = parser.parse_args()
+    review = utils.get_reviews(args.change_id)[0]
+    owner = review.get('owner', {})
+    if args.limit < 0:
+        args.limit = 100
 
-def check_date(date):
-    epoch = datetime.datetime.strptime(date, '%Y-%m-%d').strftime('%s')
-    if epoch > date_min and epoch < date_max:
-        return True
-    return False
+    try:
+        found = check_candidacy.check_candidacy(review['change_id'],
+                                                review=review)
+    except Exception as exc:
+        print("[E] %s\n\n" % (exc))
+    else:
+        if found:
+            print('SUCESS: %s is a valid candidate\n\n' % (owner['email']))
+            return 0
+        else:
+            print('[E]: %s is not a valid candidate\n\n' % (owner['email']))
+            return 1
 
-
-def escape_author(author):
-    author = author.replace(' ', '+')
-    author = author.replace('_', '+')
-
-    return author
-
-try:
-    project_name = os.path.basename(os.path.dirname(sys.argv[1]))
-    author = os.path.basename(sys.argv[1])[:-4]
-except:
-    print "usage: %s candidacy_file" % sys.argv[0]
-    exit(1)
-
-author = author.replace('_', ' ')
-
-if not os.path.isfile('.projects.yaml'):
-    open('.projects.yaml', 'w').write(
-        urllib.urlopen(PROJECTS_URL).read()
-    )
-projects = yaml.load(open('.projects.yaml'))
-project_list = None
-
-if project_name == "TC":
-    project_list = projects.values()
-else:
-    for key in projects.keys():
-        if key.title().replace(' ', '_') == project_name:
-            project_list = [projects[key]]
-            break
-
-if project_list is None:
-    print "Can't find project [%s] in %s" % (project_name, projects.keys())
-    exit(1)
-
-for project in project_list:
-    if 'extra-atcs' in project:
-        for atc in project['extra-atcs']:
-            if atc['name'] == author and check_atc_date(atc):
-                print "Valid extra ATC record", atc
-                exit(0)
-    for deliverable in project['deliverables'].values():
-        for repo_name in deliverable["repos"]:
-            url = '%s/%s/log/?qt=author&q=%s' % (BASE_URL, repo_name,
-                                                 escape_author(author))
-            print "Querying: %s" % url
-            found = False
-            for l in urllib.urlopen(url).read().split('\n'):
-                if "commit/?id=" not in l:
-                    continue
-                try:
-                    url = ('http://git.openstack.org%s' %
-                           re.search("href='([^']*)'", l).groups()[0])
-                    date = re.search('<td>([^<]*)</td>', l).groups()[0]
-                    if not check_date(date):
-                        continue
-                except:
-                    continue
-                print "[%s]: %s" % (date, url)
-                found = True
-            if found:
-                exit(0)
-exit(1)
+if __name__ == "__main__":
+    sys.exit(main())
