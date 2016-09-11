@@ -21,8 +21,9 @@ from openstack_election import utils
 
 
 def get_reviews():
-    return utils.get_reviews('is:open project:%s' %
-                             (utils.ELECTION_REPO))
+    return utils.get_reviews('is:open project:%s file:^%s/%s/.*' %
+                             (utils.ELECTION_REPO, utils.CANDIDATE_PATH,
+                              utils.SERIES_NAME))
 
 
 def main():

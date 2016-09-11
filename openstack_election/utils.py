@@ -34,6 +34,7 @@ PERIOD_END = datetime.datetime(2016, 9, 4, 23, 59, 59, tzinfo=pytz.utc)
 PROJECTS_TAG = 'sept-2016-elections'
 
 # Library constants
+CANDIDATE_PATH = 'candidates'
 GERRIT_BASE = 'https://review.openstack.org'
 ELECTION_REPO = 'openstack/election'
 BASE_URL = 'https://git.openstack.org/cgit'
@@ -64,7 +65,7 @@ def get_reviews(query):
 
 
 def candidate_files(review):
-    return list(filter(lambda x: x.startswith("candidates/"),
+    return list(filter(lambda x: x.startswith(CANDIDATE_PATH),
                        list(review['revisions'].values())[0]['files'].keys()))
 
 
