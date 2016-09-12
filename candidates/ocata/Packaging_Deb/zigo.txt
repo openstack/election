@@ -1,0 +1,22 @@
+I am writing to submit my candidacy for re-election as the PTL for the
+packaging-deb project.
+
+The idea sparked in Vancouver (spring 2015). The project joined the
+big-tent about a year ago (in August 2015, it was approved by the TC)
+But it then took about a year to have it bootstraped. This was long and
+painful bootstrap, but today, I can proudly announce that it was finally
+well launched. Right now, all of Oslo and python-*client are built, and
+it is a mater of days until all services of Newton is completely built
+in OpenStack infra (Keystone is already there in Newton b2 version).
+
+I'll do my best to continue to drive the project, and hope to gather
+more contribution every day. Every contributor counts.
+
+Cheers,
+
+Thomas Goirand (zigo)
+
+P.S: It maybe will be a bit hard to find out who can vote, because only
+the debian/newton branch should count, and currently Stackalytics is
+counting the master which contains upstream commits. Hopefully, we can
+solve the issue before the elections.
