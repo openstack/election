@@ -1,0 +1,31 @@
+Hi Kuryrs,
+
+First of all, I want to thank Gal for the hard work done in the past two cycles
+as PTL for the project and to all of you who have contributed in any and many
+ways, be it either in documentation, code, bugs, design, discussion and usage.
+
+I announce my candidacy to the Kuryr PTL position with the goal of bringing
+Kuryr to fulfill its mission of bringing OpenStack networking and storage to
+the container world. The way in which I believe we should do it is mainly by
+continuing to increase the community participation in the day to day of the
+project evolution.
+
+In order to take Kuryr to the next stage, the goals that I'd like us to focus
+on are:
+
+- Make it easier for people to develop Kuryr with kuryr-kubernetes devstack.
+- Increased testing for kuryr-libnetwork and start to have end to end testing
+for kuryr-kubernetes.
+- Now that we implemented a core contribution specialization in four groups:
+  + fuxi,
+  + kuryr-core,
+  + kuryr-libnetwork,
+  + kuryr-kubernetes.
+  We should get more people familiar enough with each project to be able to
+promote them to core contributors.
+- Increase the attention on bug tracking and release management.
+- Reach Container-in-VM support.
+- Participate more in upstream container orchestration engine communities.
+
+I look forward to work with all of you to make Kuryr into the things all of
+us want and need from it.
