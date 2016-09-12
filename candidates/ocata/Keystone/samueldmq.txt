@@ -1,0 +1,34 @@
+Hello, everyone!
+
+First of all, I would like to thanks all the previous Keystone PTLs,
+core reviewers and contributors who have made OpenStack and Keystone
+what they are today. It is been a pleasure for me to work in this team
+and learn with you all. I would be honored to be your PTL during the
+next development cycle.
+
+That said, I would like to put my name forward as a candidate for PTL
+during the Ocata release.
+
+I have been involved in OpenStack since the Icehouse release and I have
+been a core reviewer on Keystone since the Mitaka release. During the
+Newton cycle, I also served as the Keystone cross-project liaison and
+participated as a mentor for the Outreachy program.
+
+My main focuses have been helping new developers to contribute to the
+project and improving documentation. I have been doing my best to review
+elected priorities, helping the team to deliver what was scoped to the
+release cycle.
+
+Given that the Ocata development window is shorter, my main goal for
+Ocata is to focus on the stability and usability of the project. My
+primary subgoals include a) tackling the issue with long-running
+operations and token expiry, b) keeping up the good work on improving
+api-ref docs and creating the api-guide docs, and c) ensuring Keystone
+is a friendly place for new contributors to get started. Other subgoals
+that are nice to have but still important are d) broadening our tests
+environments to include functional tests for LDAP backends, auditing,
+and federated identity workflows, and e) making the default RBAC
+authorization more granular.
+
+Thank you,
+Samuel de Medeiros Queiroz
