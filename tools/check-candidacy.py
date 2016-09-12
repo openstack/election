@@ -44,6 +44,7 @@ def main():
 
     try:
         found = check_candidacy.check_candidacy(review['change_id'],
+                                                tag=args.tag,
                                                 review=review)
     except Exception as exc:
         print("[E] %s\n\n" % (exc))

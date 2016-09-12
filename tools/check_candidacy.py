@@ -23,7 +23,7 @@ import utils
 # FIXME: Printing from library function isn't great.
 #        change API to return the messages and let the consumer decide what to
 #        do with them
-def check_candidacy(change_id, limit=1, tag=None, review=None):
+def check_candidacy(change_id, limit=1, tag=utils.PROJECTS_TAG, review=None):
     def pretty_datetime(dt_str):
         dt = datetime.datetime.strptime(dt_str.split('.')[0],
                                         '%Y-%m-%d %H:%M:%S')

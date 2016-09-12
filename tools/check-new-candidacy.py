@@ -16,6 +16,7 @@ from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import argparse
 import sys
 
 import check_candidacy
@@ -27,7 +28,15 @@ def get_reviews():
                              (utils.ELECTION_REPO))
 
 
-def check_reviews():
+def main():
+    description = ('Check if the owner of open changes are valid candidates as'
+                   ' described in the change')
+    parser = argparse.ArgumentParser(description)
+    parser.add_argument('--tag', dest='tag', default=utils.PROJECTS_TAG,
+                        help=('The governance tag to validate against.  '
+                              'Default: %(default)s'))
+
+    args = parser.parse_args()
     for review in get_reviews():
         if review['status'] != 'NEW':
             continue
@@ -42,6 +51,7 @@ def check_reviews():
         owner = review.get('owner', {})
         try:
             found = check_candidacy.check_candidacy(review['change_id'],
+                                                    tag=args.tag,
                                                     review=review)
         except Exception as exc:
             print("[E] %s\n\n" % (exc))
@@ -56,4 +66,4 @@ def check_reviews():
 
 
 if __name__ == "__main__":
-    sys.exit(check_reviews())
+    sys.exit(main())
