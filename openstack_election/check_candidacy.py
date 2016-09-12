@@ -36,6 +36,7 @@ def check_candidacy(change_id, limit=1, tag=utils.PROJECTS_TAG, review=None):
     review = review or utils.get_reviews(change_id)[0]
     owner = review.get('owner', {})
     found = 0
+    branch = None
 
     for filename in utils.candidate_files(review):
         _, series, project_name, candidate_file = filename.split(os.sep)
@@ -43,8 +44,9 @@ def check_candidacy(change_id, limit=1, tag=utils.PROJECTS_TAG, review=None):
         if project_name != 'TC':
             project_name = utils.dir2name(project_name, projects)
 
-        if project_name in ['Stable branch Maintenance']:
+        if project_name == 'Stable branch maintenance':
             project_list = projects.values()
+            branch = '^stable/.*'
         else:
             project_list = [projects[project_name]]
 
@@ -64,6 +66,8 @@ def check_candidacy(change_id, limit=1, tag=utils.PROJECTS_TAG, review=None):
                              (utils.gerrit_datetime(utils.PERIOD_START),
                               utils.gerrit_datetime(utils.PERIOD_END),
                               owner['email'], repo_name))
+                    if branch:
+                        query += (' branch:%s' % (branch))
                     print('Checking %s for merged changes by %s' %
                           (repo_name, owner['email']))
                     for review in utils.get_reviews(query):

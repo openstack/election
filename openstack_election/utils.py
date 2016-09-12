@@ -60,7 +60,7 @@ def get_reviews(query):
     opts = ['CURRENT_REVISION', 'CURRENT_FILES', 'DETAILED_ACCOUNTS']
     opts_str = '&o=%s' % ('&o='.join(opts))
     url = ('%s/changes/?q=%s%s' %
-           (GERRIT_BASE, urllib.quote_plus(query, safe='/:=><'), opts_str))
+           (GERRIT_BASE, urllib.quote_plus(query, safe='/:=><^.*'), opts_str))
     return gerrit_query(url)
 
 
