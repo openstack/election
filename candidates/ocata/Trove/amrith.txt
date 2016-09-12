@@ -1,0 +1,52 @@
+I am writing to submit my candidacy for re-election as the PTL for the
+Trove project (Ocata cycle). I have been an active technical
+contributor to the Trove project since just before the Icehouse
+release when Trove was integrated into OpenStack. I have also
+contributed code[1] and reviews[2] to some other OpenStack projects,
+and have been an active participant in the Stewardship Working Group
+[3] (SWG) and a not-so active participant in the Delimiter project.
+
+Ocata is a short cycle, and based on some discussions within the
+community, and feedback from users, I believe that we should continue
+to build on the progress and improvements that we were able to acheive
+in the Newton cycle, and focus on:
+
+- paying down our technical debt, including specifically some long
+  standing items that were listed by the TC at the time when Trove was
+  integrated, and improving our testing, addressing some long standing
+  issues with dependencies between the server and the client, and
+
+- making it easier to use Trove by delivering tools to simplify guest
+  image creation, and improving the commands and API for registering
+  datastores and images, and
+
+- improving the Trove API documentation, and
+
+- strengthen the community and foster new members and companies who
+  wish to contribute to Trove, and work closely with new participants
+  to improve their experiences using Trove, and
+
+- adding support for clustering in some databases (potentially
+  Couchbase), refactoring the guestagent for PostgreSQL, supporting
+  cluster upgrades, anding add support for additional database
+  versions (like MySQL 5.7).
+
+I would also like to take this opportunity to thank all members of the
+development community who helped the Trove project during the Newton
+cycle; those who contributed code and reviews to the project as well
+as members of the infra, release, stable, oslo, docs, dib, and other
+project teams who helped us on innumerable occasions.
+
+Thank you, and I appreciate your support in the election.
+
+-amrith
+
+--
+Amrith Kumar
+Email: amrith@tesora.com
+IRC: amrith
+GPG: 0x5e48849a9d21a29b
+
+[1] http://stackalytics.com/?user_id=amrith&release=all&metric=commits
+[2] http://stackalytics.com/?user_id=amrith&release=all&metric=marks
+[3] https://review.openstack.org/#/c/337895/
