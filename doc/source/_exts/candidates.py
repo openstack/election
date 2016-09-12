@@ -14,6 +14,7 @@
 """
 
 import os
+import urllib
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
@@ -44,9 +45,10 @@ def build_candidates_list(election=utils.SERIES_NAME):
             filepath = os.path.join(project_prefix, candidate_file)
             candidates_list.append(
                 {
-                    'url': '%s/openstack/election/plain/%s' % (utils.CGIT_URL,
-                                                               filepath),
-                    'ircname': os.path.basename(filepath)[:-4],
+                    'url': ('%s/%s/plain/%s' %
+                            (utils.CGIT_URL, utils.ELECTION_REPO,
+                             urllib.quote_plus(filepath, safe='/'))),
+                    'ircname': candidate_file[:-4].replace('`', r'\`'),
                     'fullname': utils.get_fullname(filepath)
                 })
 
