@@ -1,0 +1,62 @@
+Dear Kollagues,
+
+You all hopefully know me as inc0 on IRC. I would like to submit my candidacy
+for the PTL position in the following cycle.
+
+I think we, as a team, did a tremendous job in last cycles, ensuring that Kolla
+is and will be the great project to work on and to use. Opensource project is only
+as good as its community, and Kolla has proven many times over that it excels in
+this front. PTL is just a the first among equals, facilitator for group,
+but it's the group that is important. I would be happy to help our community
+as PTL to grow while keeping its openness, friendliness, equality and diversity.
+
+I have been a developer in operations teams for 5 years now. In my opinion Kolla is
+an operators' tool which means operators' priorities should be also Kolla's top
+priorities. That means stability, careful maintenance of stable branches,
+good documentation, troubleshooting and maintenance procedures.
+
+You might know me by my work, which includes:
+
+* Upgrade playbooks
+* OSIC cluster testing kickoff
+* Customization mechanism for Dockerfiles
+* Parts of HA infrastructure
+* Early logging infrastructure
+
+My hope for our project, first and foremost, is to provide operators way to
+deploy and run OpenStack in a way that will not cost them their nerves. It's my
+aspiration for our community that we make sure that OpenStack can be easily and
+quickly deployed, upgraded, maintained and scalable. I joined Kolla because I
+thought this project holds potential to help achieve these goals (which are
+still the biggest issues in OpenStack, according to user survey), and I believe I
+was right to do so.
+
+As PTL my technical goals for Ocata cycle would be:
+
+* Make Kolla easy to extend - there are lots of snowflakes
+* Ensure that all the tools are present for large scale deployments - 300+ node
+* Provide easier config management and overrides for non-ini configs
+* Work on multi-node CI jobs - to ensure HA
+* Work on upgrade CI jobs
+* Split up kolla-ansible, but keep it as reference implementation for ocata cycle
+* Ensure high security of Kolla-deployed OpenStack
+* Adhere to feedback from our early adopters and evaluators
+* Initial release of Kolla-kubernetes
+
+My goals for our community will include:
+
+* Keep Kolla community diverse. We are one of most diverse project, and we want
+  to keep it. This is sign of healthy community.
+* Extend Kolla's reach to operators and help operators to have their voice and
+  commits included in Kolla project
+* Keep Kolla growing and ensure that as it grows, it won't close up for
+  newcomers, that resonates nicely with diversity
+* Make a "Woot for Kolla" tradition in our weekly meetings:)
+
+I am very grateful for a vote of confidence from You and I promise to do my
+very best to ensure that Kolla remains a great project, friendly community and
+dependable toolset for production OpenStacks.
+
+Regards,
+Michal
+
