@@ -1,0 +1,35 @@
+Hello everyone,
+
+I would like to announce my candidacy to continue as Cinder PTL for the Ocata
+release.
+
+The Cinder project has made great strides over the last several releases
+adding functionality and improving stability. I think we have a very active
+team and love being part of such a strong community.
+
+The Ocata cycle will be a much shorter one than in the past. One thing I would
+like to encourage for this release, as much as makes sense, is to focus on
+being mostly a bug fix and stabilization cycle. One side effect of all of the
+great new work going in recently is there has been a lot of new code introduced
+and changes made. There have been fundamental changes in how some things
+operate with the the change from rootwrap to privsep. I would like to take
+advantage of this shorter concentrated cycle to delay some things in order to
+make sure we have a solid foundation to build on.
+
+Not to say there are any major issues with the project, or that there isn't
+new work that we do want to get in to Cinder. We have an incredible team that
+has been able to introduce some pretty significant code with little to no
+impact on the rest of the system. Folks have done a great job manually testing
+as well as adding unit and other automated testing to ensure high quality. But
+even with code that has been in there untouched for years we still find certain
+conditions that bring out issues. It would be great to find some of these now
+before we build too much more on top.
+
+Between the Summit and holidays for most over this cycle, Ocata will really be
+a short one. But I look forward to seeing how much this team can do, even in
+this quick cycle. This could be a lot of fun!
+
+Thank you for your consideration!
+
+Sean
+
