@@ -1,0 +1,42 @@
+Hi All,
+
+I would like to nominate myself to take the role of Heat PTL for the
+Ocata cycle.
+
+I have been involved with the project since the last few years, first as a
+contributor and then a core reviewer and have had the opportunity to work
+with a great team and community. I strongly believe that with ever
+increasing adoption of Heat, we are well placed to live up to the
+expectations of the end users and OpenStack ecosystem at large, by
+continuously evolving, encouraging participation and consensus building.
+
+We achieved some significant milestones in the newton cycle by making
+convergence the default architecture and improving on some of the key
+non functional areas like stability and performance. I believe we have
+more work to do in these areas, when projects like TriplO start using
+Heat with convergence enabled.
+
+We have the fortune of having a number of experienced and previous PTLs
+in the team that makes the job of a  new PTL easier and I don't see
+the PTL anything more than a communication bridge and a team catalyst.
+
+I believe our focus in the Ocata cycle would include:
+
+- Continuously improve the stability and performance
+- Upgrades with zero downtime
+- Increase/improve the the test coverage without increasing the
+  CI time
+- Convergence Phase-II
+- Validation improvements
+
+And not to mention the run-of-the-mill activities:
+
+- Ensuring that CI jobs are healthy (and we don't break other projects)
+- On time releases with efficient coordination and collaboration
+
+I'm sure we would be able to achieve the goals we set for ourselves and
+would be happy to work as the team catalyst.
+
+Thank you.
+
+Rabi Mishra
