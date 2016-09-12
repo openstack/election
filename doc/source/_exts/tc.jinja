@@ -2,5 +2,5 @@
 ======================
 
 {% for candidate in candidates['TC'] %}
-  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <http://git.openstack.org/cgit/openstack/election/plain/{{ candidate['path'] }}>`_
+  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
 {% endfor %}

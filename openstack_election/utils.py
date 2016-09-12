@@ -20,6 +20,7 @@ import os
 import pickle
 import pytz
 import requests
+import subprocess
 import time
 import urllib
 import yaml
@@ -37,9 +38,21 @@ PROJECTS_TAG = 'sept-2016-elections'
 CANDIDATE_PATH = 'candidates'
 GERRIT_BASE = 'https://review.openstack.org'
 ELECTION_REPO = 'openstack/election'
-BASE_URL = 'https://git.openstack.org/cgit'
+CGIT_URL = 'https://git.openstack.org/cgit'
 PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
-                (BASE_URL))
+                (CGIT_URL))
+
+exceptions = None
+
+
+# Generic functions
+def load_exceptions():
+    global exceptions
+    exceptions = {}
+    for e in open("exceptions.txt").readlines():
+        if e[0] == "#" or ":" not in e:
+            continue
+        exceptions[e.split(':')[0]] = " ".join(e.split(':')[1:])[:-1].strip()
 
 
 # Gerrit functions
@@ -54,6 +67,27 @@ def gerrit_query(url):
     else:
         data = []
     return data
+
+
+def get_email(filepath):
+    return subprocess.Popen(["git", "log", "--format=%aE", filepath],
+                            stdout=subprocess.PIPE).stdout.readlines()[-1][:-1]
+
+
+def get_fullname(filepath):
+    # Check if filepath is an exception
+    if exceptions is None:
+        load_exceptions()
+    if filepath in exceptions:
+        return exceptions[filepath]
+
+    # Otherwise query gerrit using git log email
+    email = get_email(filepath)
+    url = '%s/accounts/%s' % (GERRIT_BASE, email)
+    fullname = gerrit_query(url)['name']
+
+    # Return capitalized name
+    return u" ".join(map(unicode.capitalize, fullname.split()))
 
 
 def get_reviews(query):

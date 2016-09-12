@@ -59,7 +59,7 @@ def check_candidate(project_name, email, projects, limit=1):
                       (repo_name, email))
                 for review in utils.get_reviews(query):
                     url = ('%s/%s/commit/?id=%s' % (
-                            utils.BASE_URL, review['project'],
+                            utils.CGIT_URL, review['project'],
                             review['current_revision']))
                     print('%2d: %s %s' %
                           (found, pretty_datetime(review['submitted']),
