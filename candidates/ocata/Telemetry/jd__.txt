@@ -1,0 +1,26 @@
+Hi!
+
+The Telemetry project continued improving this last cycle, and I'm really glad
+of what the team achieve. We continued to reduce our technical debt a lot, and
+improved various parts of our stack. We're still leading some parts of the
+OpenStack development platform, and I think it's a great achievement for a
+small team like us.
+
+I want us to continue on this trajectory and continue to set the bar higher for
+the projects in general. That's why I'm running again this time to serve the
+team as team lead. I'll continue to manage the project in a transparent way and
+do everything I can to grow our community and make people feel welcome.
+
+The goals I set for Newton have mostly been met: Panko is real, we reduced
+hard-coupling and technical debt, and added some fancy new features here and
+there.
+
+Looking forward to Ocata, I hope we'll be able to continue improving in that
+direction. We still have a lot of things to do, such as improving our
+documentation, API ref, etc and making our stack more solid.
+
+And I know we'll do this!
+
+Cheers,
+
+jd
