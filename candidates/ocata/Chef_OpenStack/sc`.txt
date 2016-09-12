@@ -1,0 +1,31 @@
+Hello everyone,
+
+I would like to announce my candidacy to continue as OpenStack Chef PTL for the Ocata release.
+
+===== State of the Kitchen =====
+
+Over the Newton cycle, we said good bye to some contributors, and hello to others. It slowed our overall output, but Stackalytics shows that we still get through about 2 reviews per day. Not impressive numbers, I know, but like LA traffic, as long as it doesn't come to a stop. Though we're down to just two cores, we're still iterating, and have even gained some new contributors in the process.
+
+In Newton, we had some pretty big deliverables:
+
+- Ubuntu 16.04
+- python-openstackclient
+- Identity v3
+- newer ChefDKs (0.17.17 at the time of this writing)
+- client cookbook based on fog-openstack
+- refactor the telemetry cookbook to introduce Gnocchi
+
+We're slowly gaining momentum again with the close of the Newton cycle upon us. With the Ocata cycle being shorter, we have even less time to get things in shape, but we'll get there.
+
+===== The Future =====
+
+My goals for the Ocata cycle are to:
+- continue getting integration to an unbroken state so that it can be relied upon for upstream and downstream build health
+- furthering the documentation efforts that took place during Mitaka
+- get more people familiar with the project to the point where we can promote some of them to core
+
+As far as process goes, I don't anticipate any big sweeping process changes for the project over the next cycle. The processes that we have agreed to seem to be working thus far.
+
+With this cycle, I want to focus more on engaging new developers and understanding their obstacles, to ensure that people can get started deploying OpenStack and hacking on cookbooks.
+
+I look forward to continuing to steer the OpenStack Chef cookbooks as well as collaborating with other projects within the greater OpenStack project.
