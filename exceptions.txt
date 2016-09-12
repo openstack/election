@@ -1,0 +1,2 @@
+# This file contains exception for manually verified candidates
+# <filename>: <real name>
