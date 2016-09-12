@@ -1,0 +1,172 @@
+Hello everyone,
+
+I would like to announce my candidacy for the role of PTL of Glance for
+the Ocata cycle.
+
+Current State of Glance
+-----------------------
+
+This is a good time to be PTL of Glance.  The project has recently
+served as the incubator for a successful project (Searchlight) and a
+hopefully soon-to-be successful project (Glare), and at this point we
+can focus on being Glance [0].  In Newton, the Images v1 API is being
+deprecated [1] and Nova will be using the v2 API by default [2], which
+allows us to focus even further.
+
+Glance has some important efforts in progress that need to be seen
+through to completion, so given the short upcoming cycle, I anticipate
+quick agreement in determining our Ocata priorities.  In short, I see
+myself as a "continuity" candidate, building on the good work done by
+Flavio and Nikhil in the previous cycles.
+
+Glance Priorities
+-----------------
+
+This is how I see things shaping up for Ocata.
+
+1. Image Import
+
+The Glance image import refactoring proposal [3] has been discussed
+thoroughly through two cycles by all OpenStack groups and individuals
+interested in a discoverable, interoperable means of getting end-user
+created images into OpenStack clouds of various types (public/private,
+large/small).  There are some patches up, and Nikhil has indicated
+that image import is a priority for post RC-1 time; I want us to
+continue that work and deliver image import in Ocata.
+
+2. Community Images
+
+Implementation of the Community Images spec [4], approved for Newton,
+has been delayed, in large part due to reviewer bandwidth issues (which
+I'll address below).  It's a much-requested feature, has several
+patches up, and is a priority to deliver early in Ocata.
+
+3. Rolling Upgrades
+
+The OpenStack Innovation Center has been promoting various operator
+friendly enhancements to OpenStack, one of which is zero-downtime
+control plane upgrades.  Several Glance developers associated with OSIC
+have been working out a strategy (and some alternatives) to make this
+happen in Glance [5,6].  I expect we'll be able to converge on a
+strategy during (or shortly after) the Barcelona Summit with the goal
+of having a zero-downtime Newton-to-Ocata upgrade available in Ocata.
+
+(These three items are high-impact for operators and end users, so are
+appropriately our top three Ocata priorities.  I have serious concerns
+about Glance being able to deliver more than this in Ocata, so please
+notice the caveats attached to the following items.)
+
+4. Community Priorities
+
+The TC recently adopted "community goals" for each cycle [7], and as a
+good community citizen, the Glance project will want to adopt these as
+priorities for Ocata.  The goal "remove copies of incubated Oslo code"
+[8] primarily affects the python-glanceclient.  The goal "support
+python 3.5" [9] is still under discussion in the wider community, with
+some projects reporting that it will be a stretch to implement in
+Ocata.  It will also be a stretch for Glance given our resource
+constraints.  (I think the major impact for Glance will be in getting
+the functional tests to pass under Python 3.5, but I haven't done a
+complete analysis of this.)
+
+5. Other
+
+As noted earlier, this is a short cycle. The above is quite a list,
+though that's mitigated a bit by some of the items already being in
+progress.  There are some other candidates for Glance priorities that
+we can discuss carefully at the Summit [10], in particular, the Glance
+Store Refactor and Hierarchical Image Access.  Personally, I would like
+to see us at least (a) come to a consensus on, and (b) articulate
+clearly the envisioned usage of the glance_store library during the
+Summit as that will be helpful in guiding the refactoring of its API
+and guide its future development (whether or not that development
+happens in Ocata).  Hierarchical Image Access would complete the Glance
+image sharing use cases, and shouldn't be too bad to implement given
+the changes made for the Community Images implementation, but we need
+to make a realistic assessment of this at the Summit.
+
+Finally, the glance-specs repo contains some approved but not
+implemented specs and lite-specs.  These are useful items (or they
+wouldn't have been approved in the first place!).  They will also have
+to be the subject of a realistic assessment during the Summit.
+
+Glance Community
+----------------
+
+I said earlier that this is a good time to be Glance PTL; it's also a
+good time to join the Glance community, particularly for ambitious
+developers who would like to achieve core status on one of the major
+OpenStack projects.  We need more reviewers as, right now, most of the
+core reviewers for Glance have additional commitments.
+
+Although we need more reviewers, I don't want to "clean house" because
+our core reviewers represent a cross-section of the community and bring
+a lot of expertise in varying realms to the project [11].  Neither do I
+want to introduce any kind of "fast track" to becoming a Glance core
+contributor.  So what's this great opportunity I'm talking about?
+
+What I would like to do is request that core reviewers concentrate on
+patches associated with declared Glance priorities, and not review
+other patches unless they already have been +1'd.  That way, our
+priorities get the attention they need, and people working toward core
+can demonstrate the quality of their code reviews independently of a
+core reviewer having already looked at the code.  Further, a thoughtful
+-1 with good suggestions is probably the most useful kind of review, so
+I'd like to allow noncores the first crack at demonstrating their
+competency by posting some thoughtful -1 reviews along the way to a
+patch getting a +1.  Additionally, not all the cross-project liasons
+need to be core reviewers, so where appropriate, serving as a
+cross-project liason is another way for developers who want to
+eventually become cores to step up and take more responsibility for the
+project.  (We'll be reviewing the cross-project liason expectations and
+commitments [12] very early in the Ocata cycle.)
+
+(Basically what I'm saying is that Glance needs some new core
+reviewers, and we're arranging things to help facilitate motivated
+developers in this regard.)
+
+As far as process goes, I don't anticipate any major changes.  The spec
+and spec-lite process for Glance has evolved over the past few cycles
+and seems to be working OK.
+
+About Me
+--------
+
+I've been an ATC to OpenStack since Folsom.  I'm currently a core for
+Glance and Searchlight.  I've worked with Glance both from the
+perspective of a product manager and (currently) as a software
+developer.  I've been around the project for a while and have
+represented Glance in interactions with various teams, for example, the
+API WG, the Product WG, the documentation team, OSIC, and DefCore.  My
+"real life" cloud experience has been working with large scale clouds,
+namely the Rackspace First Generation Cloud and the current OpenStack
+based Rackspace Public Cloud.  I've spoken with my managers and, if
+elected, I will be able to work upstream full time.
+
+I have a real passion for working on OpenStack, especially Glance,
+which I know some people think is crazy, but there it is.  Glance is an
+important part of the OpenStack ecosystem and it has a community of
+high-quality contributors who I've always enjoyed working with.  I'm
+asking you for the opportunity to work with the Glance community in a
+new way as Glance PTL for the Ocata release.
+
+Thanks for reading this far.  Before I shut up, I'd like to thank all
+the Stackers I've spoken with over the past few weeks, as a lot of the
+ideas presented above come from those conversations.
+
+Thank you for your consideration,
+Brian Rosmaita
+
+ [0] http://git.openstack.org/cgit/openstack/governance/commit/?id=0b1da15253d50d6486bf60d87205e5c796662646
+ [1] http://git.openstack.org/cgit/openstack/glance/commit/?id=63e6dbb1eb006758fbcf7cae83e1d2eacf46b4ab
+ [2] http://git.openstack.org/cgit/openstack/nova/commit/?id=f71cd2ca03693655efdbd1109f406ab6f3b58ee6
+ [3] http://specs.openstack.org/openstack/glance-specs/specs/mitaka/approved/image-import/image-import-refactor.html
+ [4] http://specs.openstack.org/openstack/glance-specs/specs/newton/approved/glance/community_visibility.html
+ [5] https://review.openstack.org/#/c/331489/
+ [6] https://review.openstack.org/#/c/331740/
+ [7] http://git.openstack.org/cgit/openstack/governance/commit/?id=5118d1246482b1d44d8960c2b3b89e96d467cb28
+ [8] http://git.openstack.org/cgit/openstack/governance/commit/?id=eacf3167a7b8f2f8808b0168de8528cbd81f61f1
+ [9] https://review.openstack.org/#/c/349069/
+[10] https://etherpad.openstack.org/p/ocata-glance-summit-planning
+[11] http://lists.openstack.org/pipermail/openstack-dev/2016-May/094221.html
+[12] https://wiki.openstack.org/wiki/CrossProjectLiaisons
