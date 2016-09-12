@@ -1,0 +1,62 @@
+Hi Everyone,
+
+I'm excited to announce my candidacy for PTL for Kolla team during the Ocata
+cycle.  
+
+Kolla is a fantastic project. It brings fresh new blood to OpenStack Deployment
+Management. Simplifying the lives of Operators when managing OpenStack is
+essential to OpenStack’s success and I personally believe Kolla as of Liberty
+1.1.0 delivers on that promise. I also deployed several Kolla production
+environment for customers without any problem. I've been a core contributor to
+Kolla since Mitaka. I am full time on Kolla project and have been heavily
+involved with all of my waking hours[0][1].
+
+Over the Newton development cycle, we have implemented numerous new features
+and improved stability and usability. The top features are:
+
+* Introduced the Bifrost and kolla-host to manage the bare metal provision and
+  initialize the node before deploying OpenStack.
+* The introduction of far more services including Aodh, Bifrost, Ceilometer,
+  Cloudkitty, Multipath, Rally, Sahara, Tempest, Watcher.
+* Implemented Dockerfile customization.
+* Launched the kolla-kubernetes project.
+* More robust CI jobs
+
+As a team, the Kolla Community tested 123 nodes for Kolla using osic[2]. The
+results validate Kolla works and scales to a majority of use cases today. The
+major code paths that enable this scalability have been in place since Liberty
+which gives a good indicator of Liberty and Mitaka scalability. As a Kolla
+core reviewer and PTL self-nominee, I find this result to be highly satisfying.
+One of Kolla’s many goals has been executed: Deploying OpenStack at 100+ node
+count fast and easily. 
+
+The kolla community is diversely affiliated, a fantastic crew of contributors,
+and excellent leadership within the core reviewer team.
+
+For Ocata, I'd like the project focused on these objectives:
+
+* Focus on the needs of the Kolla team.
+* Optimize the speed of reconfiguration and upgrade.
+* Implement and integrate with more driver plugins for neutron and cinder.
+* Deliver 1.0.0 of kolla-kubernetes.
+* Implement different CI jobs to test diverse scenarios.I’d like to start out
+  with some really hard CI problems such as testing real upgrades and
+  validating ceph in the CI jobs per commit.
+* Support the implementation of a monitoring stack.
+
+Finally, I know it is important that PTL time is spent on the non-technical
+problem-solving such as mentoring potential core reviewers, scheduling the
+project progress, interacting with other OpenStack projects and many other
+activities a PTL undertakes.  I’d like to work this cycle on scaling those
+activities across the core reviewer team.  I will use my personal strengths and
+rely on the core reviewer team’s personal strengths to make Kolla Ocata the
+best release yet.
+
+Thank you for the considering me to serve as your Kolla PTL.
+
+Regards,
+Jeffrey Zhang
+
+[0] http://stackalytics.com/?release=all&module=kolla&metric=commits
+[1] http://stackalytics.com/?release=all&module=kolla&metric=marks
+[2] https://review.openstack.org/352101
