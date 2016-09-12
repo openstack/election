@@ -48,9 +48,9 @@ def main():
 
         owner = review.get('owner', {})
         try:
-            found = check_candidacy.check_candidacy(review['change_id'],
-                                                    tag=args.tag,
-                                                    review=review)
+            found = check_candidacy.check_candidacy_review(review['change_id'],
+                                                           tag=args.tag,
+                                                           review=review)
         except Exception as exc:
             print("[E] %s\n\n" % (exc))
         else:

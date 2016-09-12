@@ -21,10 +21,13 @@ from openstack_election import utils
 
 
 def main():
-    description = ('Check if the owner of a change is a valid candidate as '
-                   'described in the change')
+    description = ('Check thath the email address is a valid candidate for '
+                   ' the specified project')
     parser = argparse.ArgumentParser(description)
-    parser.add_argument(dest='change_id', help=('A valid gerrit change ID'))
+    parser.add_argument(dest='project_name',
+                        help=('The Project the candidate is applying for'))
+    parser.add_argument(dest='email',
+                        help=('An email address registered to the candidate'))
     parser.add_argument('--limit', dest='limit', type=int, default=1,
                         help=('How many validating changes to report.  '
                               'A negative value means report many.  '
@@ -34,21 +37,19 @@ def main():
                               'Default: %(default)s'))
 
     args = parser.parse_args()
-    review = utils.get_reviews(args.change_id)[0]
-    owner = review.get('owner', {})
     if args.limit < 0:
         args.limit = 100
 
-    try:
-        found = check_candidacy.check_candidacy_review(review['change_id'],
-                                                       tag=args.tag,
-                                                       review=review)
-    except Exception as exc:
-        print("[E] %s\n\n" % (exc))
+    projects = utils.get_projects(tag=args.tag)
+    if args.project_name not in projects.keys():
+        print('[E]: %s not found in: %s' %
+              (args.project_name, ','.join(projects.keys())))
+        return 1
+
+    if check_candidacy.check_candidate(args.project_name, args.email,
+                                       projects, limit=args.limit):
+        print('SUCESS: %s is a valid candidate\n\n' % (args.email))
+        return 0
     else:
-        if found:
-            print('SUCESS: %s is a valid candidate\n\n' % (owner['email']))
-            return 0
-        else:
-            print('[E]: %s is not a valid candidate\n\n' % (owner['email']))
-            return 1
+        print('[E]: %s is not a valid candidate\n\n' % (args.email))
+        return 1

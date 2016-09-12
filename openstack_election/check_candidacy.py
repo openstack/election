@@ -23,60 +23,69 @@ from openstack_election import utils
 # FIXME: Printing from library function isn't great.
 #        change API to return the messages and let the consumer decide what to
 #        do with them
-def check_candidacy(change_id, limit=1, tag=utils.PROJECTS_TAG, review=None):
+def check_candidate(project_name, email, projects, limit=1):
     def pretty_datetime(dt_str):
         dt = datetime.datetime.strptime(dt_str.split('.')[0],
                                         '%Y-%m-%d %H:%M:%S')
         return dt.strftime('%Y-%m-%d')
 
-    projects = utils.get_projects(tag=tag)
-
-    # If there is more than one review that matches this change_id then all
-    # bets are off
-    review = review or utils.get_reviews(change_id)[0]
-    owner = review.get('owner', {})
     found = 0
     branch = None
 
+    if project_name in ['Stable branch maintenance']:
+        project_list = projects.values()
+        branch = '^stable/.*'
+    else:
+        project_list = [projects[project_name]]
+
+    for project in project_list:
+        for atc in project.get('extra-atcs', []):
+            if (atc['email'] == email and utils.check_atc_date(atc)):
+                print("%2d: Valid extra ATC record:\n\t%s" % (found, atc))
+                found += 1
+                if found >= limit:
+                    return found
+
+        for deliverable in project['deliverables'].values():
+            for repo_name in deliverable["repos"]:
+                query = ('is:merged after:"%s" before:"%s" '
+                         'owner:%s project:%s' %
+                         (utils.gerrit_datetime(utils.PERIOD_START),
+                          utils.gerrit_datetime(utils.PERIOD_END),
+                          email, repo_name))
+                if branch:
+                    query += (' branch:%s' % (branch))
+                print('Checking %s for merged changes by %s' %
+                      (repo_name, email))
+                for review in utils.get_reviews(query):
+                    url = ('%s/#/q/%s' %
+                           (utils.GERRIT_BASE, review['change_id']))
+                    print('%2d: %s %s' %
+                          (found, pretty_datetime(review['submitted']),
+                           url))
+                    found += 1
+                    if found >= limit:
+                        return found
+    return found
+
+
+def check_candidacy_review(change_id, limit=1, tag=utils.PROJECTS_TAG,
+                           review=None):
+    projects = utils.get_projects(tag=tag)
+    # If there is more than one review that matches this change_id then all
+    # bets are off
+    review = review or utils.get_reviews(change_id)[0]
+    email = review.get('owner', {}).get('email')
+    found = 0
+
     for filename in utils.candidate_files(review):
         _, series, project_name, candidate_file = filename.split(os.sep)
-
         if project_name != 'TC':
             project_name = utils.dir2name(project_name, projects)
 
-        if project_name == 'Stable branch maintenance':
-            project_list = projects.values()
-            branch = '^stable/.*'
-        else:
-            project_list = [projects[project_name]]
+        found += check_candidate(project_name, email, projects,
+                                 limit=(limit-found))
+        if found >= limit:
+            return True
 
-        for project in project_list:
-            for atc in project.get('extra-atcs', []):
-                if (atc['email'] == owner['email'] and
-                        utils.check_atc_date(atc)):
-                    print("Valid extra ATC record:\n\t%s" % (atc))
-                    found += 1
-                    if found >= limit:
-                        return True
-
-            for deliverable in project['deliverables'].values():
-                for repo_name in deliverable["repos"]:
-                    query = ('is:merged after:"%s" before:"%s" '
-                             'owner:%s project:%s' %
-                             (utils.gerrit_datetime(utils.PERIOD_START),
-                              utils.gerrit_datetime(utils.PERIOD_END),
-                              owner['email'], repo_name))
-                    if branch:
-                        query += (' branch:%s' % (branch))
-                    print('Checking %s for merged changes by %s' %
-                          (repo_name, owner['email']))
-                    for review in utils.get_reviews(query):
-                        url = ('%s/#/q/%s' %
-                               (utils.GERRIT_BASE, review['change_id']))
-                        print('%2d: %s %s' %
-                              (found, pretty_datetime(review['submitted']),
-                               url))
-                        found += 1
-                        if found >= limit:
-                            return True
     return found > 0
