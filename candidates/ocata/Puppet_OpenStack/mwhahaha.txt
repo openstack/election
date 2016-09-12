@@ -1,0 +1,22 @@
+I would like to nominate myself for the PTL role in the Puppet Openstack Team
+for the Ocata release cycle.
+
+I have been involved in the puppet team since Liberty as both a contributor and
+ a downstream consumer.  It has been a pleasure working with the community to
+improve and make the Puppet Openstack projects one of the most mature ways to
+deploy OpenStack.
+
+For the Ocata cycle, I believe we have a few places to continue to focus.
+- Continuing the work that Emilien has promoted, we need to continue to focus
+  on CI integration both upstream and downstream.
+- We need to ensure that the new modules in the project continue to mature and
+  are included in CI.
+- Improving documentation around established patterns and best practices.
+- Ensuring the modules are updated for Ocata changes.
+
+I look forward to working with all of you. I'm open to any suggestions or ideas
+for additional places to improve our processes and modules.
+
+Thanks,
+Alex Schultz
+irc: mwhahaha
