@@ -1,0 +1,18 @@
+I am announcing my candidacy for PTL for the Release Management team
+for the Ocata release cycle.
+
+During Newton we successfully split out the Requirements Management
+team, which now has enough active members to maintain a healthy review
+rate for requirements changes.  The team also made significant
+progress in our automation goals during Newton, and I would like to
+serve again to see that work through the next phase.
+
+My goals for Ocata include automating stable branch creation through
+reviews, as we did with tags; smoothing out a few rough edges in what
+we've already implemented for automating tags and releases; and
+continuing our documentation work to make the end-of-cycle process
+more repeatable and reliable. I would also like for us to finish the
+work in reno and pbr to support embedding the release notes build
+information in our source distributions.
+
+-- Doug Hellmann
