@@ -58,8 +58,9 @@ def check_candidate(project_name, email, projects, limit=1):
                 print('Checking %s for merged changes by %s' %
                       (repo_name, email))
                 for review in utils.get_reviews(query):
-                    url = ('%s/#/q/%s' %
-                           (utils.GERRIT_BASE, review['change_id']))
+                    url = ('%s/%s/commit/?id=%s' % (
+                            utils.BASE_URL, review['project'],
+                            review['current_revision']))
                     print('%2d: %s %s' %
                           (found, pretty_datetime(review['submitted']),
                            url))
