@@ -1,0 +1,21 @@
+I’m writing to announce my candidacy for Congress PTL (Ocata).
+
+First, I’d like to thank Tim for his outstanding leadership since the very
+beginning of the project.  Under his leadership, Congress has grown from an
+interesting idea to a capable service.  I would also like to thank everyone for
+their tremendous support in bringing me along as a Congress contributor, from
+first learning the codebase to leading the high-availability design and
+implementation efforts.  I’m truly grateful to be a part of such a welcoming,
+collaborative and supportive community.
+
+For the Ocata cycle, my main focus for Congress is usability and
+ease-of-adoption.  For example, by shipping Congress with pre-built policies
+and templates, Congress would provide useful policy-based monitoring fresh
+out-of-the-box, its time-to-value improving from weeks to under a day.  I also
+aim to continue prioritizing user engagement, cross-project collaboration, and
+code robustness.  Last but not least, I look forward to supporting our project
+members in their goals and visions for Congress.
+
+Thank you all once again!
+
+-- Eric J. Kao
