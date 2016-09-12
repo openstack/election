@@ -1,0 +1,61 @@
+Hi Everyone, I would like to announce my candidacy for PTL for the Freezer
+Project during the Ocata Cycle.
+
+The Freezer Team has done an amazing job of getting the Freezer Project to
+where it is today. For the last six months, I have been fortunate to have
+been a contributing member of the Team, and have worked with some amazing,
+talented people. I would like to continue that effort to help the Team move
+the project even further along.
+
+I see the PTL role as an enabler of the Team to make the project successful by
+assisting the Team in the following ways:
+
+* Drive the feature set under development to enhance the usefulness of the
+  project across the OpenStack ecosystem.
+
+* Steer the technical architecture of the Project as much as possible with
+  assistance from the Team.
+
+* Facilitate communication between team members by organizing, scheduling, and
+  running team meetings and events.
+
+* Handle OpenStack administrative work to allow the Team to focus on
+  development, reviews, bug fixes, and documentation.
+
+* Create an inviting welcoming project to enlarge the number of contributors to
+  the Team and create a broader community.
+
+* Ensure the quality of the committed code.
+
+* Act as an ambassador to other OpenStack Projects to help facilitate tight
+  integration across OpenStack components.
+
+Top priorities for the Ocata cycle would be:
+
+* Move to a plugin architecture so that users of the Freezer service would be
+  enabled to extend the Freezer functionality to handle their specific backup
+  use cases.
+
+* Begin development on a deduplication feature so that Freezer is on par with
+  industrial-strength backup solutions.
+
+* Replace usage of the Elasticsearch DB with MySQL DB to better align with
+  OpenStack standards and move to a more appropriate relational model for
+  Freezer configuration data.
+
+* Harden the Freezer components so that they are more resilient to failures.
+
+* Continue to improve testing coverage by building out the integration tests
+  that have been recently added in the last cycle.
+
+* Work the Karbor Project to help discover integration possibilities
+  between Freezer and Karbor.
+
+* Engage in Freezer presentations at the OpenStack Design Summits to
+  further Freezer's acceptance and adoption in the OpenStack Community.
+
+I would be honored to have your vote.
+
+Respectfully yours.
+
+Deklan Dieterly (ddieterly)
