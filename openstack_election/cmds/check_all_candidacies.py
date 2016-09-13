@@ -30,6 +30,10 @@ def main():
     description = ('Check if the owner of open changes are valid candidates as'
                    ' described in the change')
     parser = argparse.ArgumentParser(description)
+    parser.add_argument('--limit', dest='limit', type=int, default=1,
+                        help=('How many validating changes to report.  '
+                              'A negative value means report many.  '
+                              'Default: %(default)s'))
     parser.add_argument('--tag', dest='tag', default=utils.PROJECTS_TAG,
                         help=('The governance tag to validate against.  '
                               'Default: %(default)s'))
@@ -50,6 +54,7 @@ def main():
         try:
             found = check_candidacy.check_candidacy_review(review['change_id'],
                                                            tag=args.tag,
+                                                           limit=args.limit,
                                                            review=review)
         except Exception as exc:
             print("[E] %s\n\n" % (exc))
