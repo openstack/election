@@ -1,0 +1,23 @@
+I'd like to continue to serve as the OpenStack Requirements PTL.
+
+Since the Austin summit the requirements team has worked to reduced tech debt
+and improve gating of constraints updates.  This has reduced the number of
+fires after new OpenStack library updates.  We still have several items in
+front of us.  Continuing with the themes for my recent election:
+
+In rough priority order:
+ - Improving communication, often decisions are made in the requirements team
+   that affect many projects, I have a commitment to bringing more experts in
+   for strategic reviews/discussions
+ - Understand how we can work with/enhance pip tooling to create a more
+   satisfactory requirements/constraints experience for OpenStack
+ - Work closely with the release managers as there is still a lot of common
+   issues there.  In that a release of $project will trigger processes in the
+   requirements team.
+ - Getting openstack_requirements *code* to the point it can be installed as a
+   library.  We've seen issues in the past where stable branches need largish
+   backports to work correctly.  Really the *code* and *data* should be treated
+   independently
+ - Testing lower bounds of our supported requirements [lower-constraints.txt]
+
+If the team and community will have me I'm happy to serve again.
