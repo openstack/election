@@ -1,0 +1,25 @@
+Hello everyone,
+
+I would like to announce my candidacy to continue as Watcher PTL for
+the Ocata release.
+
+During the Newton cycle, our main achievement was to enter the
+OpenStack big tent by demonstrating a great diversity of contributors
+and the added-value of an infrastructure optimization service for
+OpenStack.
+
+With around 20 active contributors during the cycle and 15 blueprints
+implemented, I'm very proud to lead this project and welcome new
+contributors every week.
+
+Given that the Ocata development window is shorter, my main goal for
+Ocata is to focus on the stability and usability of Watcher. We also
+need to provide more optimization strategies that will demonstrate
+the capabilities of Watcher. Additionaly, I plan to work with Nova
+on placement API used for scheduling decisions.
+
+I would also like to take this opportunity to thank all members of
+the OpenStack community who helped our team during the Newton cycle.
+
+Thank you,
+Antoine
