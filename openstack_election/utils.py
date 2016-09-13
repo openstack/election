@@ -24,6 +24,7 @@ import subprocess
 import time
 import urllib
 import yaml
+import re
 
 # Per election constants
 
@@ -85,6 +86,11 @@ def get_fullname(filepath):
     email = get_email(filepath)
     url = '%s/accounts/%s' % (GERRIT_BASE, email)
     fullname = gerrit_query(url)['name']
+
+    # Remove parenthesis content
+    fullname = re.sub(r"\([^)]*\)", "", fullname)
+    # Strip double space and trailing spaces
+    fullname = re.sub(r"  ", " ", fullname).strip()
 
     # Return capitalized name
     return u" ".join(map(unicode.capitalize, fullname.split()))
