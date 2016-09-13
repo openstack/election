@@ -70,8 +70,9 @@ def gerrit_query(url):
 
 
 def get_email(filepath):
-    return subprocess.Popen(["git", "log", "--format=%aE", filepath],
-                            stdout=subprocess.PIPE).stdout.readlines()[-1][:-1]
+    cmd = ["git", "log", "--follow", "--format=%aE", filepath]
+    git = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    return git.stdout.readlines()[-1][:-1]
 
 
 def get_fullname(filepath):
