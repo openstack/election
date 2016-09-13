@@ -1,0 +1,38 @@
+Hi,
+
+I would like to announce my candidacy for re-election as Magnum PTL.
+
+My involvement in Magnum began in December 2014, in which the project was at
+a very early stage. Since then, I have been working with the team to explore
+the roadmap, implement and refine individual components, and gradually grow
+the feature set. In the past release cycle, it was my honor to serve as
+Magnum PTL and I am happy to continue the service in the next cycle.
+
+Based on past discussion within the team, I believe Magnum will focus on the
+following items at the new cycle:
+
+* Life-cycle operatons: Add support for several life-cycle operatons for
+  managing long running clusters. In the short-term, we could add support for
+  basic operations like reboot, restart, upgrade, and rebuild. Additional
+  operations can be considered in long-term.
+* Heterogeneous cluster: Magnum currently doesn't support the ability to
+  create a heterogenous cluster, in which worker nodes are allowed to have
+  different configurations (i.e. amount of cpu, memory, or I/O). I believe the
+  problem needs to be addressed in the new cycle. As discussed within the team,
+  we will introduce a new concept, called node group, to represent a collection
+  of nodes with same configuration. As a result, a heterogenous cluster can be
+  represented by a collection of node groups.
+
+In addition, I believe the items below are important and need attention in
+the new cycle:
+
+* Kuryr integration: Continue to collaborate with Kuryr team to deliver a
+  networking solution.
+* Ironic integration: We had great progress at Newton in this area and will
+  continue the work in the new cycle.
+* Quality assurance: Improve coverage of integration and unit tests.
+* Documentation: Enhance documents for operators.
+* Horizon UI: Enhance our Horizon plugin.
+* Grow the community: Attract new contributors to Magnum.
+
+Thank you for considering my PTL candidacy.
