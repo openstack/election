@@ -1,0 +1,36 @@
+I am announcing my candidacy for Horizon PTL.
+
+I've been contributing to Horizon since the Juno cycle and have
+been a core reviewer for the last two cycles. We’ve got a great
+culture in the Horizon team that I’d like to help continue and
+thrive.
+
+I feel we have made good progress in several areas of Horizon that
+improve responsiveness and stability, and believe our focus should
+be on continuing that work. 
+
+My goals for Ocata are:
+
+- Ensure that modernisation of the interface continues with good
+  framework components emerging that are accessible to existing and
+  new developers of Horizon and Horizon plugins. This means
+  continuing to ensure the code is written to good, consistent
+  patterns, but also making sure there is good documentation to
+  accompany it.
+
+- Continue to encourage finding better ways to handle scaling
+  in OpenStack, both in our own filtering and use of data but also
+  liaising with other projects to see how they can help us address
+  scaling bottlenecks. Getting the profiling panel integrated into
+  Horizon’s developer interface is a high priority for Ocata.
+
+- Improve our rate of addressing bugs; I will look at running more
+  of the successful bug days that we had previously. One aspect
+  of this is putting more effort into keeping our dependency
+  compatibilities up to date, both Python and Django, but also
+  the xstatic packages we rely on.
+
+- Improve communication both within the Horizon team and outside
+  so folks can more easily get up to speed or keep up to date with
+  what’s happening in Horizon.
+
