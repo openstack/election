@@ -1,0 +1,15 @@
+I'd like to continue to serve as the Stable branch maintenance PTL.
+
+The role for the Stable team has changed slightly in the last few cycles.  As a result of tooling improvements made in the juno/kilo timeframes the stable gate has been more solid.  This means that the stable team is able to look in slightly different areas.
+
+Here are some of the things on my TODO list for Stable branch maintenance
+ - Work with project teams to understand how decisions taken on master will
+   impact their stable branches.  Specifically projects with a driver model.
+ - Work with project teams to implement constraints support
+ - Growing the project specific, and stable-maint teams
+ - Re-establishing regular team meetings and presence in #openstack-stable
+ - Producing tooling to aid projects teams, release managers and the stable
+   team to keep stable branches current and released with a regular cadence
+ - Producing tooling and procedures to help retire projects as required
+
+If the team and community will have me I'm happy to serve again.
