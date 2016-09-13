@@ -8,14 +8,14 @@
 OpenStack Election
 ==================
 
-.. include:: ./candidates/events.rst
+.. include:: ../../candidates/events.rst
 
 See `Election system`_, `PTL details`_ and `TC details`_.
 
 Below is the official list of candidates for the current round.
 
 .. TODO: Change from ptl.rst to tc.rst when TC rounds starts
-.. include:: ./candidates/ptl.rst
+.. include:: ../../candidates/ptl.rst
 
 .. TODO: Adds TC Results and a link to `TC Candidates list`_ when TC candidacies are over
 .. TODO: Adds PTL Results and a link to `PTL Candidates list`_ when PTL candidacies are over
