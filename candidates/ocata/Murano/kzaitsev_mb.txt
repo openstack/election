@@ -1,0 +1,49 @@
+Hello everyone, here is my announcement to run for Murano PTL for Ocata.
+
+It has been my pleasure to serve as Murano PTL in Newton and I would like to
+offer my services to the team and the community once more. Looking back at all
+the challenges and achievements of Newton cycle I feel very proud to be part of
+Murano. We’ve made a great step forward in integrating with glare and have set
+up (now green) glare-integration jobs for nearly every murano component. Work on
+both multi-region apps and app development framework took a leap forward and
+they’re nearly finished. We’ve started work on supporting and documenting
+installation of murano from RDO and UCA. And those are just the tip of the
+iceberg.
+
+Here are few changes and challenges I’d like to implement in Ocata:
+
+* Switch murano to `release-with-intermediary` model. Probably the biggest
+change on the list. The rationale behind this change is to make releases more
+frequent and less in size to give our users access to new features faster.
+Release automation through openstack/releases repository has dramatically
+reduced the cost of making a release and would allow us to concentrate more on
+features, release often and get user feedback sooner. Secondary activity here
+would be to allow current murano support installations of a previous version of
+OpenStack. This is already the case API-wise, but might pose a certain challenge
+code-wise.
+
+* Continue work and support of murano packages for major distributions. We have
+awesome packages for Debian (thanks zigo!), but we also need to have up-to-date
+UCA and RDO packages. This will be twice as important with the new release
+model. Furthermore we’d need to incorporate these installation guides into our
+documentation. The final goal here is to make them to be the default way to
+install murano.
+
+* Documentation. As a continuation of #2 — there’s quite some work we need to do
+regarding our docs. App Framework, Garbage Collection, Multi-region apps,
+Installation from packages, YAQL library (even though it’s not part of murano) —
+all these features need some documentation love shead onto them.
+
+* Continue with the App Catalog and Glare integrations. We’ve had some progress
+in both directions, but there is still a lot to be done. Hopefuly with glare
+moving to a separate repository and AppCatalog-Glare integration underway we’ll
+be able to finally switch to v1 Glare API in Ocata
+
+* We’re halfway there with the OSC integration and I’d really love to see it
+finished during Ocata and finally release the 1.0.0 client as soon as that is
+done. =)
+
+Regardless of the election result — I’m looking forward to Ocata and would try
+my best to help Murano and the community around it thrive.
+
+Cheers, Kirill (kzaitsev_ws)
