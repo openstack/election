@@ -1,0 +1,46 @@
+I am announcing my candidacy for PTL for the Ironic team for the Ocata release
+cycle. In case you don't know me, I'm dtantsur on IRC. I started working on
+Ironic around late spring or summer 2014, and I'm probably best known as a
+founder of ironic-inspector sub-project.
+
+The Newton cycle was a huge breakthrough for the Bare metal project. Testing
+upgrades in CI, multi-tenant networking, support for multiple compute services
+out of box are just a few great and highly-expected things that have become the
+reality during this cycle.
+
+As for Ocata, I would like to concentrate on unfinished tasks, CI and
+technical dept. To be more precise, if you happen to choose me as your new PTL
+for the Ocata cycle, I would like to shift focus to and be the driving force
+behind these fields of improvement:
+
+* Driver improvements and unification
+
+  First of all, this comprises the driver composition reform - my long-term
+  commitment which I finally plan to fulfill this cycle. However, I would also
+  like us to think more about unification between drivers. Several non-core
+  things very from driver to driver: UEFI support, RAID support and
+  capabilities discovery immediately come to my mind as examples.
+
+  Finally, this involves parting with drivers that do not have 3rd party CI.
+  I am ready to share responsibility for this unpopular move :)
+
+* CI improvements
+
+  The number of our jobs keeps growing, but we still don't cover a lot of
+  features that Ironic provides. We need to figure out the way to increase
+  coverage without increasing load on infra and number of transient failures.
+  A few approaches come to my mind. Using projects like TripleO as 3rdparty CI
+  may cover a few more things specific to its use case. Puppet experience with
+  "scenarios" may also come in handy to replace several jobs with one.
+
+  No matter which approach we take, we will need to make sure that it's still
+  clear (especially to newcomers) what caused a particular CI failure.
+
+* Finishing Newton goals
+
+  We've done great job landing features in Newton, but a few important things
+  are still missing. For example, booting from volume, rescue mode, port
+  groups, rolling upgrades, dealing with automatic maintenance in a more robust
+  way, and some more.
+
+-- Dmitry Tantsur
