@@ -14,23 +14,21 @@
 """
 
 import os
-import yaml
 import calendar
 import time
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
 
-PATH_PREFIX = 'candidates'
+from openstack_election import utils
 
 
 def build_timer(app):
     app.add_javascript("event_timer.js")
-    data = yaml.load(open("events.yaml").read())
     # add better text for tabulatted planning
     now = time.time()
     outdated = '*'
-    for ev in data:
+    for ev in utils.conf['timelines']:
         d, h = ev['date'].split('T')
         epoch_time = calendar.timegm(
             time.strptime(ev['date'], "%Y-%m-%dT%H:%M"))
@@ -45,18 +43,15 @@ def build_timer(app):
                 outdated = ''
         ev['date_str'] = "%s%s, %s UTC%s" % (outdated, d, h, outdated)
         ev['name_str'] = "%s%s%s" % (outdated, ev['name'], outdated)
-    output_file = os.path.join(PATH_PREFIX, "events.rst")
+    output_file = os.path.join(utils.CANDIDATE_PATH, "events.rst")
     with open(output_file, "w") as out:
         template_dir = os.path.join(".", "doc", "source", "_exts")
         loader = FileSystemLoader(template_dir)
         env = Environment(trim_blocks=True, loader=loader)
         template = env.get_template("events.jinja")
-        out.write(template.render({'events': data}))
+        out.write(template.render({'events': utils.conf['timelines']}))
 
 
 def setup(app):
-    if not os.path.isfile("events.yaml"):
-        app.info('No events.yaml found, not loading events_timer extension')
-        return
     app.info('loading events_timer extension')
     app.connect('builder-inited', build_timer)
