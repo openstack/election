@@ -1,0 +1,78 @@
+Hi friends,
+
+I'd like to be the ironic PTL for another cycle, if you'll have me.
+
+Newton, in my opinion, has been Ironic's best cycle yet. We got a ton of work
+done, and made good progress on the work we didn't finish. Some of the
+highlights from this cycle include:
+
+* Upgrade testing. We've struggled to make progress until this cycle, when we
+  really went all-out on getting it done. We also have multinode CI working
+  and awaiting reviews, which is a great thing to have anyway, and also a huge
+  first step to testing rolling upgrades.
+
+* Multitenant networking. This has been our biggest feature request for years,
+  and we've been hacking on it since Liberty. We finally got it done (though
+  of course, there's more to add on top) in both Ironic and Nova this cycle.
+
+* Speaking of Nova, we've made huge progress there. We now support multiple
+  nova-compute services running the Ironic driver. We have a nova-compatible
+  console done in Ironic, with patches ready for Nova to land at the beginning
+  of Ocata. We've laid the groundwork on both sides to make scheduling better,
+  and remove the (host, node) tuple that we plagued Nova with for years. And
+  I believe we've made large strides in how we interact with the Nova team;
+  things seem much more friendlier, and people are willing to help each other
+  out more on both sides.
+
+* Fine-grained keystone policy. This is a huge step in helping operators
+  improve the security of their deployments.
+
+* Our server and client both properly support Keystone v3 now.
+
+* We now have third-party CI for iLO, iRMC, Cisco UCS/CIMC, OneView, PowerKVM,
+  and DRAC. We're on a path to removing drivers without CI. For context, a year
+  ago we had no third-party CI. :)
+
+* ironic-python-agent is now the only supported deploy ramdisk, and the APIs
+  it uses have been promoted to first class APIs.
+
+* Ironic now emits software metrics and has a framework for emitting
+  notifications for use by Searchlight and other systems.
+
+* Existing systems may now be 'adopted' by ironic to help folks migrate their
+  existing environments to be managed by ironic.
+
+There's many more things we've done in the 3 releases we shipped this cycle,
+but this is a PTL nomination, not Newton release notes, so I'll stop there.
+
+Going forward into Ocata, there's a few major things I'd like to focus on:
+
+* Rolling upgrades. Most of the base IaaS has this or will have it soon. We're
+  on a good path to getting it done, and I think it's super important for
+  deployers.
+
+* Continue progress on the networking work. We need to finish portgroups and
+  get a plan (and hopefully some code) together for vlan-aware baremetal
+  instances. This will allow an arbitrary number of Neutron networks to be
+  connected over an arbitrary number of physical NICs, which is incredibly
+  useful to users.
+
+* Driver composition. This will get rid of our ever-increasing driver matrix
+  and help users make more sense of all the driver options. It also helps
+  clean up lots of internal code, so it's important to everyone.
+
+* Boot from volume. This didn't make as much progress as I liked in Newton,
+  so we should keep working on it and try to at least get all the plumbing
+  landed, if not the first implementation. Lots of folks are asking for this,
+  and it's the best path we have to something that looks like 'nova migrate'.
+
+* Above all else, I plan to make it a priority to mentor a few folks that could
+  be the next PTL. I didn't do a good job of this in Newton (though I think
+  some people could do the job now). I think it's important to rotate the
+  leadership, so I hope that the project is in a position where I can step
+  down after Ocata, and write more code in Pike.
+
+Whether I'm elected PTL or not, I plan to be working upstream on ironic
+full-time during Ocata, and look forward to another successful cycle. :)
+
+// jim
