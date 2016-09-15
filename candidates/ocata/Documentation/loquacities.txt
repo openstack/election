@@ -1,0 +1,51 @@
+Hi everyone,
+
+I am seeking re-election as Documentation PTL for Ocata. I have been the docs
+PTL since Liberty, and together we've converted the entire docs suite to RST,
+decommissioned the old DocBook infrastructure, and fundamentally changed the
+way projects document their installation procedures. Ocata is a short cycle,
+so I want to take this opportunity to focus inwards on our community. I would
+love your support to do this in Ocata.
+
+In Mitaka we embarked on an ambitious plan to convert our entire documentation
+suite to RST, and in Newton we put the finishing touches to that project by
+decommissioning the old DocBook infrastructure. With that long-term project
+complete, we have gone on to develop a new publication model that allows
+projects to write documentation in their own repos, and publish seamlessly to
+the docs.openstack.org front page. This project goes live for the Installation
+Guide and API docs with Newton, and means our documentation efforts are
+continuing to scale out to represent a much greater proportion of products,
+contributors, operators, and users. I would like to continue this work in
+Ocata by evaluating the success of the project, and identifying more efficient
+and productive pathways for users to find and use the information provided by
+the docs team. I also want to explore more innovative ways for the
+documentation team to work together, including a review of the speciality team
+and release processes. I want to continue to foster collaboration between
+developers and writers to provide the best possible documentation for the
+entire OpenStack community.
+
+During Newton, in addition to the Installation Guide changes, we focussed on
+streamlining our processes, clarifying the way we operate, consolidating
+guides, and general editing and tidying up. I want to continue this work in
+Ocata to provide a better documentation experience for everyone: writers,
+developers, operators, and users.
+
+In the Liberty release cycle, we closed just over 600 bugs, and in Mitaka we
+closed 645. With the rate of new bug creation rapidly dropping thanks to
+procedural changes we made in Mitaka, our consistent effort has really paid
+down a lot of our technical debt. For Newton so far, we've closed well over
+400 bugs, and we have only 327 bugs in the queue as I write this, so this
+positive trend continues.
+
+I'll be making the trek to Barcelona soon for the Ocata summit, to catch up
+with old friends and hopefully meet some of our newest contributors. Please be
+sure to stop for a chat if you see me around. I'm also excited about the new
+Project Team Gathering coming up in February; I think this will be a great
+opportunity for cross-project teams like docs.
+
+I'd love to have your support for the PTL role for Ocata. I'm looking forward
+to continuing to grow the documentation team and to keep working on these
+incremental improvements to content delivery.
+
+Thanks,
+Lana (@loquacities)
