@@ -1,0 +1,30 @@
+I am announcing my candidacy for election as Searchlight PTL. I've been a
+leading contributor and core reviewer since Searchlight's inception as a
+standalone project in Vancouver.
+
+Under Travis' very capable guidance Searchlight has reached a 1.0 Newton
+release which supports nearly all of the widely-used Openstack services and
+makes it easy to add support for others. We've made great improvements to
+the way that we index data both in terms of use by clients and in reliability
+and performance. 
+
+My goals for Ocata are thus based more around incremental improvement than
+large numbers of features:
+
+- Increasing ease of use and exploring opportunities afforded to user
+  interfaces by Searchlight's querying and aggregation capabilities.
+- Continuing to work on improved coordination with other projects around
+  notifications to make indexing more reliable.
+- Making it easier for developers from other services to write plugins for
+  their services for Searchlight to make use of their greater domain knowledge
+  and increase community involvement; we've made some steps in this direction
+  already with Ironic.
+- Integrating architectural improvements to allow pluggable publishers for data
+  received via notifications. This was a feature originally planned for Newton
+  but that didn't make it in, and allows Searchlight's indexing process to feed
+  destinations other than Elasticsearch (for instance, Zaqar).
+
+Unfortunately I will likely not be at the summit in Barcelona, but if elected
+will work closely with Travis as part of the hand-off to ensure we take care
+of any requests or issues that come up during the summit.
+
