@@ -1,0 +1,72 @@
+I'd be honored to continue to serve as your PTL for OpenStack Swift.
+
+## Looking back at the Newton cycle
+
+During the Newton cycle, the Swift community has delivered at-rest
+encryption. This feature is the culmination of a more than year of
+work, and it enables Swift to be deployed in places where it was
+previously not possible to be used.
+
+The other big thing that's been going on during the Newton cycle is
+our work on a Golang implementation of the object server and
+replication engine. This change not only solved critical issues for
+existing deployments, but it also enables a lot of the future work
+that needs to happen in the years to come (more on that later!).
+
+Golang in Swift is a great OpenStack community success story. An
+existing Swift deployer (Rackspace) was seeing issues in their
+environment. One developer there started playing with Golang and
+reimplemented a small part of Swift. The results were good--very good
+--and the rest of the development team there started focusing on this
+Golang implementation. The developers shared these results with the
+rest of the community, and the Golang code started being developed in
+a feature branch of Swift, where others started playing with this code
+as well. Rackspace has been running this in production with great
+success, and as a community we're bringing into "mainline" Swift so
+that everyone can benefit. It's great to see community members play
+with new ideas, bring those to the rest of the community, and see them
+adopted to solve problems for everyone.
+
+As most people in the Swift community know, and many in the wider
+OpenStack community have seen, there has been a very large debate on
+the use of Golang in OpenStack projects. Much of my time in this cycle
+has been spent working with the TC on this conversation, and I expect
+it to continue into the Ocata cycle as well. I'm not satisfied with
+the current decision by the TC, and I'll keep pushing for including
+Golang inside of OpenStack.
+
+## Looking forward to Ocata and Beyond
+
+Beyond grand debates about programming languages, there's a ton of
+stuff going on in Swift right now. Here's a partial list of things
+people are working on:
+
+- Golang object server and replication
+- Transparent container sharding
+- Increase ring partition power
+- Global erasure codes
+- Policy migrations
+- Symlinks
+- Improvements to encryption functionality
+- Automatic tiering
+- Composite rings
+
+Many of these have been in progress for a while, and I fully expect
+several to be finished within the Ocata cycle. Many of these features
+are related to bigger and bigger clusters. It's tremendously exciting
+to see where Swift is being used today, but we're in no way "done".
+There is a lot more for us to do to continue to solve storage problems
+for users.
+
+Looking much further into the future, there's several things I'd like
+us to work towards.
+
+- Small file optimization
+- Dealing with larger drives and more dense storage servers
+- Using NV memory
+
+The reason I know we'll get this stuff done and continue to make Swift
+the best open source object storage system is because of our
+community. As the Swift PTL, I feel it's my duty to enable the
+community to solve these problems by making every community member
+more productive. This is my focus.
