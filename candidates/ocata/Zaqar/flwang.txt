@@ -1,0 +1,36 @@
+Hi all,
+
+I've had the pleasure of serving the Zaqar community as PTL for the past two
+cycles, and I'd like to continue for Ocata cycle, if you'll have me.
+
+For Ocata release, things I'd like to do:
+
+1. Real-world deployment
+   Puppet and Ansible Zaqar are ready. And we have got many interests for
+Zaqar's production deployment. Some of them are doing evaluation, so we need to
+support them in Ocata and try to make them happen.
+
+2. Notification service
+   We have partially landed the subscription confirmation feature in Newton, so
+let's get it done in Ocata. Notification delivery policy is another good one to
+have.
+
+3. Collaboration with other OpenStack projects
+   We did a great job in Newton to support trust subscriber, which means any
+OpenStack services can be used as a subscriber of Zaqar and being secured.
+And I believe there are some other projects could be benefited by Zaqar from
+their view. For example, the notification middleware of Swift, Zaqar's
+websocket transport for Searchlight/Horizon etc.
+
+4. More contributors
+   We got some new members joined the team in Newton. And some of them has been
+nominated as core reviewer who grew very fast. It's really awesome. In
+Ocata, I would like to encourage more people/organizations to join Zaqar
+community to make sure we have a good coverage.
+
+It's a fantastic experience working with this amazing team and I know without
+the dedication and hard work of everyone who has contributed to Zaqar we can't
+make those success stories of Newton happen. I would be pleased to serve
+as PTL for another cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
