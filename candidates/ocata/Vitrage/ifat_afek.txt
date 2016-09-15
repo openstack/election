@@ -1,0 +1,24 @@
+Hi All,
+
+I would like to announce my candidacy to continue as Vitrage PTL for the Ocata
+release.
+
+I've been leading the Vitrage project development from the day it started, in
+Mitaka. During this time our team has made tremendous progress, and now we have
+a fully-functional RCA service. The project was accepted into the big tent
+seven months after it started, in early June this year.
+
+There are few areas I think we should focus on in the Ocata cycle. I believe
+the main one is to enlarge our community. New contributors are welcome to join!
+To achieve this, we should work on integrations with other OpenStack projects,
+and continue our involvement in OPNFV.
+
+Other goals are to increase the project stability, improve the UI, add new
+datasources, and better support multi-tenancy use cases and templates CRUD.
+The Ocata cycle is very short, but I believe we can achieve most of these
+goals.
+
+Looking forward to continue this exciting journey!
+
+Thank you,
+Ifat Afek
