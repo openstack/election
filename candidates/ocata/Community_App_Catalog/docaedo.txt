@@ -1,0 +1,33 @@
+I'm excited to be running again for Community App Catalog PTL, so I
+better make an official announcement before time runs out!
+
+During the last cycle I've had time to get a lot more involved with
+the folks helping to drive the expansion of the ecosystem around
+application developers using OpenStack.  Through that I've been
+talking to a lot more people who develop cloud-agnostic applications,
+and that's given me a much better perspective on what I believe the
+Community App Catalog should be delivering to the community at large.
+
+The biggest thing we need is to offer an API that will allow people to
+add and manage their submissions programatically.  To that end our
+project has seen a ton of commitment and effort from Kirill Zaitsev,
+Sergey Skripnick and Mike Fedosin (among others).  We still expect to
+transition to using Glare for our backend before the Barcelona summit,
+and believe that will provide a great experience for users who want to
+take advantage of the new features.
+
+Looking ahead to the next cycle, aside from continuing to coordinate
+the efforts on the "transition to Glare" front, we still need to get
+more publicity for the Community App Catalog.  I believe continuing to
+be closely involved with the working groups centered around
+application developers will help with this.  I'm also excited to work
+with Igor Marnat to lay the foundation for a CI/CD pipeline tailored
+to application developers[1].  Aside from those efforts, I always
+welcome suggestions and feedback on how we can continue to build up
+the community of developers using OpenStack clouds.
+
+Hope to see you on IRC (#openstack-app-catalog) and in person in
+Barcelona!
+
+[1]:
+http://lists.openstack.org/pipermail/openstack-dev/2016-May/095917.html
