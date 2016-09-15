@@ -1,0 +1,19 @@
+Hello everyone!
+
+I'd like to announce my candidacy for PTL position of the Data
+Processing program (Sahara).
+
+I'm working on Sahara project since Juno release, and since Mitaka release
+I'm the member of the Sahara core reviewer team. I'm also PTL of Sahara
+for Newton release.
+
+My focus as a PTL will be coordination of reaching community goals, managing
+Sahara releases, and tracking all activities related to new features
+in Sahara. And also I will try to bring new folks in sahara. Stabilization
+of CI is also a high priority for our team.
+
+I hope that Sahara will continue growing in Ocata release.
+
+Best regards, Vitaly Gridnev
+e-mail: vgridnev@mirantis.com
+IRC: vgridnev, Launchpad: vgridnev.
