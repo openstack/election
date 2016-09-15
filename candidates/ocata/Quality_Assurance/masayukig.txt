@@ -1,0 +1,45 @@
+Hi everyone,
+
+I'd like to announce my candidacy for Ocata cycle as the PTL for the Quality
+Assurance program/team/project/etc. First off, I would like to thank you all
+the contributors, core reviewers, PTLs and anyone who involves and makes the
+OpenStack better.
+
+Let me introduce myself, briefly. I have joined the OpenStack community since
+2012 as a developer. Now, I'm a core member of some QA/Infra projects such as
+Tempest, Tempest-lib(deprecated), OpenStack-health, stackviz, subunit2sql[1].
+And I played the mentors/instructors role at the upstream training in Japan
+several times. It was a great experience to know the difficulty of telling
+people how OpenStack community is going.
+
+This Newton cycle has also been a very exciting one for the QA program. New
+QA projects like stackviz and OpenStack-health are emerging and growing. For
+distributed and stable project testing, we have been working on making the
+tempest service clients consistent and migrating it to the lib. It is also an
+excellent job in progress. And we improved Tempest-cli and its user workflow.
+Thanks to the improvements, we can use Tempest in very simple steps now. And I
+especially focused on improving UI side of tempest, OpenStack-health, etc. I
+think this is also a great step for better UX.
+
+In Ocata cycle, I believe cleaning up Tempest/DevStack will be one of the top
+priority works such as making consistency, cleaning up pluggable modules. We
+will continue to do it this cycle, too. And I also think improving UI and UX
+is one of the most important things for QA. For example, OpenStack-health
+should show more variety of data and be improved its performance. And regarding
+the tempest cli, the first implementation phase was almost done, and we need
+to get user feedbacks and improve them.
+
+I think our OpenStack QA work is unique and excellent compare to the other open
+source projects. And as you know, it is very exciting not boring these days. I
+hope more and more contributors will participate in the OpenStack development,
+especially the QA. So I will continue to advertise our great the OpenStack QA
+works and review and make patches for better QA, of course. And any
+contribution like reporting bugs, suggesting a lack of documentations, are
+appreciated, too.
+Join us and happy hacking!
+
+
+[1] http://stackalytics.com/?user_id=igawa
+
+Thanks for your consideration!
+Masayuki Igawa
