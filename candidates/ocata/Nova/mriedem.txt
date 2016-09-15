@@ -1,0 +1,77 @@
+Hi everyone,
+
+This is my self-nomination to continue running as Nova PTL for the Ocata cycle.
+
+Looking back at Newton, the Nova team accomplished a lot. Random things that
+stick out for me:
+
+* Cells v2 in a single-cell deployment plus CI jobs.
+* Placement API for tracking quantitative resources on compute nodes.
+* Dedicated voting live migration CI job.
+* os-vif integration for libvirt (linuxbridge and OVS backends).
+* Glance v2 integration.
+* nova-network deprecation (for real this time!)
+* Server tags support (v2.26).
+* Virtual device tags for libvirt and hyper-v (v2.32).
+* Proxy API deprecation (v2.36).
+* Get me a network (v2.37).
+* API policy defaults in code.
+* api-ref docs in tree and massively cleaned up.
+* Continued cleanup and documentation of the configuration options.
+* Ironic multiple compute host support.
+* Ironic multiple tenant networking support.
+* Libvirt live migration post-copy mode.
+* Vendordata (version 2) API for the metadata service.
+* Several notifications are now versioned.
+* os-brick + oslo.privsep support.
+* Improved third party CI for NFV (Intel and Mellanox).
+* Deferred fixed IP allocation for Neutron ports.
+* gate-tempest-dsvm-lvm job in the experimental queue.
+* plus a lot more (100 approved blueprints, 64 complete or partially complete)
+
+I think we have some momentum going into Ocata, which is a shorter release, to
+continue some of the work from Newton. My personal priorities for Ocata are:
+
+* Continue work on cells v2, specifically around multi-cell support and making
+  cells v2 required in Nova deployments for the Ocata release.
+* Continue work on the placement API, including making it required for Nova
+  deployments by the Ocata release. There will also be work on modeling
+  capabilities for the placement service.
+* The libvirt imagebackend refactor which is a prerequisite for implementing
+  libvirt storage pools is going to need focus in Ocata. This was the one
+  priority from Newton that did not really "make it" and I want to come up with
+  a plan to push that forward, which probably includes dedicated review focus,
+  improved test coverage (non-Tempest integration testing), and milestones to
+  make sure we are staying on track.
+* Discoverable API support which builds off the policy in code and capabilities
+  modeling work.
+* There were several blueprints which were close in Newton but missed the cut
+  due to the non-priority feature freeze and I think we can get those in early
+  in Ocata.
+* Python 3 support since that's a cross-project OpenStack effort for Ocata.
+* We will need to start taking a deeper look at improving workflows between
+  Nova/Cinder and Nova/Neutron. For Cinder this means the simplified API stack
+  that John Griffith has been POCing which is a prerequisite for volume
+  multiattach support. For Neutron this means improved coordination of tasks
+  like during live migration. John Garbutt has already started working with the
+  Neutron team on this.
+
+Like in Newton, I would like to restrict spec reviews mainly to re-approvals
+early so that we can close out things that are nearly already ready to go
+before accepting new work, especially with the shorter cycle.
+
+I will continue to foster the subteams that are working and holding meetings in
+Nova. I think that has been going well and helps focus efforts which do not
+have a dedicated core involved on a daily basis. I want to also continue doing
+regular status checks in the mailing list and recaps of events, be those
+summit sessions or even hangout sessions, so that the entire team is on the
+same page and we have clear communication.
+
+This is definitely not a one person show and I owe a lot to the people working
+in Nova every day. As I said in my Newton nomination I want to be PTL to help
+manage the project forward in Ocata and keep the development team focused on
+getting work done, but I definitely can not and will not do that alone.
+
+Thanks for your consideration,
+
+Matt
