@@ -1,0 +1,33 @@
+Fellow Barbicaneers,
+
+I'd like to nominate myself to serve as Barbican PTL for the Ocata cycle.
+
+After talking it over with Doug (redrobot), I know I have a mentor in place.
+After talking it over with my employer, I know I will have the time and
+resources to dedicate to this position.
+
+I first started working on Barbican in the Kilo release.  You were all
+welcoming and supportive to this stranger who wandered into your midcycle.  I
+was immediately impressed by your dedication to the project and your
+willingness to mentor me in all things OpenStack.
+
+First and foremost, I want to maintain this culture in Barbican.
+
+My goals for the Ocata cycle are:
+
+1) Grow the Barbican team of contributors and core reviewers.
+2) Collaborate with other OpenStack projects with joint blueprints, especially
+   signing as a service (Designate) and container based install (Kolla).
+3) Improve our project maturity index by addressing documentation and process
+   items. [1]
+4) Maintain our high standards for code reviews and unit and functional tests.
+5) Be diligent with backporting bug fixes to stable releases.
+
+Thank you in advance for this opportunity to serve.
+
+Also, thanks to Doug Mendizábal for his leadership over the last four cycles
+and his offer to support me in this endeavor.
+
+--Dave McCowan (dave-mccowan)
+
+[1] https://www.openstack.org/software/releases/mitaka/components/barbican
