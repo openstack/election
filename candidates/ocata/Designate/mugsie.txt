@@ -1,0 +1,24 @@
+Hi Everyone,
+
+I would like to my intention to continue as PTL of the Designate
+project for another cycle.  
+
+We have made great steps forward in Designate over the last few cycles, 
+not just with features, but integrating with the community as a whole.
+
+For Ocata, I have previously proposed, and now am completely behind 
+making this cycle a non feature cycle. We have built up some large amount
+of technical debt, and are in need of some time to just do hardening, bug 
+fixes, and performance improvements.
+
+With Ocata being such a short cycle, I think we have a prime opportunity
+to do that, and with the recent merge of Worker Model, we should not need
+any other major refactors.
+
+I think we have made major progress over the previous 3 or 4 years,
+and have done amazing work, despite (or maybe because of) being a small
+team.
+
+Thanks for reading, and your consideration for PTL.
+
+- Graham
