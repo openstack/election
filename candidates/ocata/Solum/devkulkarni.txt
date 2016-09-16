@@ -1,0 +1,37 @@
+Hey team,
+
+I would like to submit my candidacy to continue as Solum PTL for Ocata cycle.
+
+In Newton cycle we made progress in several key areas. Here are the highlights.
+
+1) We completed work on our Horizon dashboard. It is now possible to perform
+   all languagepack and app operations through the dashboard. I would like to
+   acknowledge and thank Swati Dewan and Zhu Rong for spearheading this work.
+
+2) We continued building and experimenting with different options for doing app builds
+   and deployments. In Mitaka cycle we had worked on a feature that enabled Solum to
+   perform app deployments in tandem with existing CI systems such as Jenkins that can
+   do app builds.
+   In Newton cycle following new ideas were investigated:
+   - Building applications as VM images and deploying such images (thanks Erik Schilling)
+   - Building applications as Unikernels (thanks shivaSR, mvle)
+   - Building applications as Docker containers and deploying to VMs (CoreOS) (thanks Wei Cao)
+   We also completed the feature that enables application build and deploy upon receiving github
+   webhook triggers by Solum.
+
+   You can find screencasts demonstrating these features on Solum wiki
+   (https://wiki.openstack.org/wiki/Solum), under "Resources" section.
+
+3) We gained several new contributors, some of whom are on their way to becoming cores.
+
+For the Ocata cycle, some of the ideas that we can pursue together include:
+- Making it easy for operators to configure and use different build and deployment options
+- Adding support to deploy applications to container orchestration systems
+- Support for using public Docker images, in addition to Solum languagepacks, to build
+  application images
+Along with these, we need to keep working and improving our documentation, test coverage,
+and installation tooling. (If you are interested in helping out with any of these,
+please find us on Solum IRC channel (#solum on chat.freenode.net)).
+
+Best Regards,
+Devdatta Kulkarni
