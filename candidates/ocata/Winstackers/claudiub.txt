@@ -1,0 +1,56 @@
+Hello everyone!
+
+I would like to announce my candidacy for the Winstackers PTL election.
+
+I have been involved in OpenStack since Havana, and even longer with Hyper-V
+and Windows related technologies, and I have been the PTL of Winstackers for 2
+cycles.
+
+In the past cycle, we've added another 2 projects to the list of consumers of
+os-win: os-brick and designate, and we hope to add many more.
+
+We have also added the pieces necessary for various technologies, which are to
+be consumed in the upcomming cycles, such as Fibre Channel support and various utils for Hyper-V Shielded VMs.
+
+And last, but not least, we have added networking-hyperv under Winstackers
+governance.
+
+In the new cycle, there are a couple of things that I'd like us to achieve:
+
+* Expand the list of os-win consumers. At the moment, the projects that are
+  under consideration are monasca and freezer. New suggestions are welcome.
+
+* Improve os-win's performance and how it consumens PyMI and other libraries.
+  PyMI provides a Python native module wrapper over the Windows Management
+  Infrastructure (MI) API, and it is used by os-win in order to interact with
+  Hyper-V and other Microsoft related technologies. Each cycle we improve PyMI
+  and how it is used, increasing the overall performance. These performance
+  increases are observed by running Rally scenarios. For example, comparing
+  Newton to Liberty, the amount of time needed to bind a Neutron port and its
+  security group rules to a Hyper-V vSwtich port has been reduced by at least
+  12 times. And there is still room for improvement.
+
+* Improve how os-win is consumed in nova. It order to make os-win easier to
+  use and evolve, we need to introduce some os-win objects (for example,
+  VirtualMachine objects). Having such objects will also help reduce the amount
+  of WMI queries done (expensive operations) and improve the overall
+  performance especially for spawning instances.
+
+* oslo Windows CI. There were a few several cases in the past when an oslo
+  library release would break Windows / Hyper-V support in some or most
+  projects. Having a voting Windows CI on oslo patches can minimize the chances
+  of this happening. We are already working on this, and we hope to see it up
+  and running soon.
+
+* Add support for new emerging Windows technologies. At the moment, we are
+  looking into Windows Containers and the new Windows Server 2016 networking
+  stack, which will bring support for VXLAN network types. These new
+  technologies will have to fit perfectly into the OpenStack ecosystem.
+
+These are the main objectives I have in mind that I would like to accomplish
+during the Ocata cycle, among other minor goals. New goals may appear during
+the cycle.
+
+Thank you for your consideration,
+
+Claudiu
