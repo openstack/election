@@ -1,0 +1,59 @@
+Hi Tackers,
+
+I would like to announce my candidacy to continue as Tacker PTL for the Ocata
+release.
+
+I'm a member of the Tacker community right from its Neutron ServiceVM days.
+I actively participated in its transition into NFV Orchestration area and its
+graduation into big-tent. Since becoming an official project our developer 
+community has grown and has more diverse [1].
+
+Newton was a packed cycle for us with many stellar achievements from the 
+community: VNF Scaling, Audit Events, VNF Forwarding Graph using Neutron
+Networking-SFC (we are almost there!) and External Alarm-based Monitoring
+using Ceilometer. As usual tons of refactoring work happened to continue 
+to shed the "Neutronisms" in the project. 
+
+Along the way, we have become a better openstack citizen following best
+practices like Reno release-notes, better release processes, and better
+python3 support. We also expanded our core-team with three new members. 
+
+My vision for Tacker Ocata is along the following workstreams identified 
+in the recent weekly meeting. 
+
+* Decomposed VIM drivers:
+We need to enable a healthy ecosystem of VIM drivers beyond the current 
+default openstack VIM driver. Our user community has mixed hypervisor/cloud
+technology in their deployments - with some existing pre-openstack systems 
+(a.la, VMware), some OpenStack based clouds, and, forward looking into 
+Containers and public clouds. All this needs an easy to add VIM driver to
+bolt underneath Tacker. Luckily our architecture is designed with this in
+mind right from day one. We just need to make it easy (a) for developers to
+bring in new VIM drivers and (b) for deployers to quickly add new VIM
+capabilities without requiring a fork-lift upgrade of Tacker for every new
+VIM type.
+
+As part of this workstream, I'd work towards bringing in a Container VIM 
+type interfacing with Magnum / Zun.
+
+Lifecycle Features:
+* Finish left over Newton features - VNFC and NSD
+* Better integration with external EM / FCAPS systems
+* Enable support for VNFs leveraging Neutron's latest VLAN aware VM feature 
+
+Project maintenance:
+ * Doc: API reference guide
+ * Pecan API framework
+ * OSC support
+ * Finish python3x TC goal
+
+Tons of fun things to do! However, Ocata is going to be a short cycle.
+So, over next few weeks, I'll help to continue to groom these topics and
+zoom on those that are implementable in one dev cycle and clearly 
+identify some tracks that would carry over to the next cycle.
+
+In Ocata, given an opportunity to serve as your PTL, I'll continue my role 
+as the "chief enabler" for this amazing community of developers that I'm so 
+proud to lead over the last two cycles. 
+
+- Sridhar Ramaswamy (irc: sridhar_ram)
