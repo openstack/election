@@ -1,0 +1,29 @@
+I would like to propose my candidacy for the Monasca PTL. 
+
+I have been the PTL on Monasca for the Newton release, and I would
+like to continue on. During the Newton cycle we added a significant
+number of new features, improved performance dramatically, completed
+the initial integration of Cassandra, added monasca-transform,
+added monasca-analytics, better integrated with Heat and many others.
+The Monasca community is extremeley productive.
+
+My goals and objectives for the project in the Ocata release are as follows:
+
+* Wrap-up reviews in-progress that improve the performance and
+interactivity of metrics, measurments and statistics queries.
+
+* Continue to work on performance enhancements.
+
+* Continue to enhance the Cassandra implementation by addressing
+performance improvements and compression.
+
+* Continue to develop monasca-analytics and address several use cases in
+more depth.
+
+* Continue to integrate with other OpenStack projects.
+
+* Evangelize Monasca and grow the developer and operator base.
+
+* Facilitate the development eco-system.
+
+* Write more code.
