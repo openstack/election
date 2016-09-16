@@ -1,0 +1,76 @@
+Hello,
+
+I am writing to announce my candidacy for I18n Ocata PTL.
+
+I have participated in OpenStack translations into Korean
+since October 2014. At the first time, I was just a Korean
+translator and used Transifex, the previous translation platform.
+As I got involved more and more, I have experienced and
+learned a lot through the kind help from I18n members and also with
+many I18n activities. I went to previous two Summits and it was so
+happy to meet many I18n members, Zanata members, and Infra team members
+offline. I have committed small patches into Infra, openstack-manuals,
+and Stackalytics repositories for better integration with I18n.
+Now I am an active translator in Korean team, and also an I18n core reviewer.
+I am currently ranked as the third top contributor in Translations [1],
+and I try to leave review comments with details in
+openstack/i18n repository [2].
+
+I18n team has become an official project since June last year [3].
+Indeed, internationalizing OpenStack makes OpenStack ubiquitous
+accessible to much more members all over the world. To accomplish
+our team goal, we have done a lot of things including translation
+platform and infrastructure with the collaboration of OpenStack teams.
+On the other hand, it seems that currently there are still more things
+to do with many translators, language coordinators, and also developers.
+In my opinion, we need to find ways to more focus on translation qualities,
+and keep better track of the change in evolving OpenStack.
+
+I think I18n team is special because team members have different
+language backgrounds and experiences. I like this diversity.
+I truly believe that we can make good synergy with the diversity.
+
+In the Ocata cycle, I would like to work with I18n members for:
+
+* Translations are our first important aspect in I18n team.
+  For better translations, more conversations and discussions
+  with various I18n members are needed. Let's consider the ways
+  to better communicate with language translators and coordinators.
+  I would like to kindly discuss and cooperate with many members
+  to share our good practices and improve OpenStack I18n Guide [4].
+  Also, translation support in OpenStack I18n Guide will make our
+  significant guide internationally accessible.
+
+* Stablizing our on-going work is also important.
+  For example, Stackalytics now shows Translations metric.
+  However, more tunings are needed such as applying language filter,
+  and showing translations on contribution report.
+  Also, we need to apply appropriate ways for translators to regard
+  as ATCs with an automated manner rather than registering as extra ATCs.
+
+* Let's facilitate I18n and Inter-Project Cross-Project Liaisons [5].
+  Lots of members from different project teams helped a lot.
+  Since we have such nice Liaisons relationship with other project teams,
+  facilitating Liaisons will be able to go for positive progress.
+  For example, I really hope that Infrastructure/I18n Liaisons will
+  help successfully land several on-going issues including
+  translations check site and Zanata upgrade.
+
+I would like to appreciate previous and current great help from
+I18n and also many of different team members. Let's continue our effort
+for OpenStack to become more universal! One more thing to mention
+is that I am not fully familiar with all of aspects in I18n team.
+I need help from many members even if I will be nominated for
+I18n Ocata PTL. Please support and encourage me for better I18n project.
+
+
+[1] http://stackalytics.com/?metric=translations
+[2] http://stackalytics.com/report/contribution/i18n/90
+[3] http://lists.openstack.org/pipermail/openstack-i18n/2015-June/001112.html
+[4] http://docs.openstack.org/developer/i18n/
+[5] https://wiki.openstack.org/wiki/CrossProjectLiaisons#I18n
+
+
+With many thanks,
+
+/Ian
