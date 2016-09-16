@@ -1,0 +1,47 @@
+Hello everyone,
+
+I would like to announce my candidacy for PTL of the OpenStack-Ansible project
+for Ocata.
+
+I have been involved in OpenStack-Ansible since its inception, and have been a
+part of the continual growth and improvements that have happened since its
+foundation. During this time, OpenStack-Ansible has transformed from a project
+where the main aim was new features and role growth, to a project where the key
+goal is stability and manageability. This is supported by new and diverse
+contributors recognizing this move towards maturity and getting involved to help
+the project grow.
+
+I view this move towards stability and manageability as key to the success of
+OpenStack-Ansible long term. With that in mind, and with Ocata being a shorter
+cycle, I'd like to have a stronger focus on 2 main areas, that will increase
+stability and manageability:
+
+1. Testing standardization
+
+   During Newton we have built momentum around testing, and I'd like to focus
+   on keeping that momentum going. The implementation and adoption of the single
+   'openstack-ansible-tests' repository is key to this. It will allow us to 
+   efficiently ramp up tests for different scenarios, and standardize the way in
+   which we perform testing on our repositories. The standard framework that
+   this approach creates will help with the implementation of new projects
+   within OpenStack-Ansible, and reduce code duplication.
+
+2. Upgrade process
+
+   I'd like to analyse the current deployment process and look to improve its
+   efficiency. I believe we can improve this by creating a clearer separation
+   between the build, deploy and configuration phases. This has good
+   connotations for how we upgrade deployments, and potentially leads to a more
+   repeatable and reliable upgrade procedure that can be adopted by all
+   operators and deployers of OpenStack-Ansible.
+
+Alongside these two strong focus points, I would like to continually work
+towards maintaining a high level of community efforts around documentation,
+the Ansible 2.x implementation work, uwsgi implementation, amongst other
+important initiatives that the community are driving.
+
+I look forward to working with everybody to continue to improve this project,
+and I'm excited to have the opportunity to lead this dynamic community to a more
+stable and manageable future.
+
+Andy (@andymccr)
