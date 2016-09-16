@@ -1,0 +1,118 @@
+I would like to announce my candidacy for Fuel PTL in the Ocata cycle.
+
+
+** Introduction **
+
+First of all, allow me to introduce myself. I joined the OpenStack Community
+during the Juno release cycle. I started on a "consumer" side - as a Head of
+IT at a media holding I was consuming and bringing Open Source technologies
+to an "Enterprise world" as much as it was possible and OpenStack was there
+as well. I had been investigating OpenStack and finally deployed my first
+private cloud manually. It was Juno 2014.2 and it was a very-very long trip.
+Half a year later I found out that Fuel could do it much more faster! I liked
+Fuel mission, both stated and delivered - make OpenStack installation process
+easier and more streamlined. OpenStack was in a serious need of such a tool,
+as one of prerequisites for lowering adoption barriers.
+
+Finally, I joined Fuel Community as a deployment engineer. Since 2015 I've
+been an active contributor in the very core features of Fuel and have been
+leading a Fuel development team [0] at Mirantis. If you're using or developing
+Fuel - you’ve probably heard of some of the features that we designed and
+implemented:
+Task-based deployment engine [1], Post-deployment plugins installation,
+Deployment History [2][3], Data-driven orchestration [4] with Unlocked
+Settings and Network tabs [5] (aka Fuel LCM), Custom graphs execution [6],
+Release-as-a-Plugin [7] and Everything-as-a-Graph [8].
+
+As you can see, the main goal of this work was to make Fuel more flexible and
+friendly for deployment engineers, based on my and my colleagues’ experience
+from real OpenStack deployments. And I would like to keep doing it
+as a Fuel PTL.
+
+
+** Community **
+
+Fuel, as a part of OpenStack BigTent since November 17 2015, had the first
+design summit at Austin. Vladimir Kozhukalov did a great job organizing it.
+This summit allowed Fuel community to solicit a feedback, to align our goals
+with OpenStack community and, the most important, to start having an open
+design. Open Design was the last of four Opens [9] to be achieved by Fuel
+Community. Unfortunately during the Newton release cycle not all discussions
+and decisions were open and public enough. We need to avoid such behaviour
+in future. Fuel Community will have a very modest representation during
+upcoming Fuel Ocata Design summit at Barcelona and the first Project Teams
+Gathering [10] And that’s the reason to make our goal #1: the expansion of
+the OpenStack Community involvement into Fuel design during the whole release
+cycle. And as a result encourage new contributors, build a healthy community
+around Fuel and achieve the contribution diversity.
+
+
+** Technical challenges **
+
+October 2015 Fuel was the 5th deployment tool for OpenStack with 12% [11]
+but April 2016 Fuel got the 3rd place with 19% [12] right after Puppet and
+Ansible. While SaltStack, Chef and Puppet are visibly going down Fuel is
+taking over the OpenStack deployment world. But we still have a set of
+technical challenges and we must focus on:
+
+* Infrastructure-as-Code (IaC) allows us to provide convenient and familiar UX
+for those user who have experience with dynamic infrastructure in Public
+clouds - it's now easy to control OpenStack configuration and versioning via
+git. Since nailgun extension for IaC [13] became a part of Fuel project [14]
+we should actively support and develop it.
+
+* Lifecycle management. Making changes on already installed clouds is still
+complicated. We’ve done a lot of work in this direction, but we are still not
+there.
+
+* The Upgrades of Fuel itself and OpenStack clusters managed by Fuel still
+need more flexibility and much better UX. We can fix it using the custom
+graphs concept [8].
+
+* Fuel extensions and plugins framework should be polished and provide itself
+with stable API. Moreover extensions and plugins SDK should become
+developer-friendly and support all new features like release-as-a-plugin [7].
+
+* Single Fuel Master node should support multiple different OpenStack releases.
+First step [7] was done. Let’s keep moving.
+
+* Audit, troubleshooting and debugging became easier with Deployment History
+features and dry-run/noop deployments but we are still facing with the
+inconsistent error reporting and diagnostic snapshots. We can improve it using
+graphs.
+
+* Documentation team has done a great job of restructuring Fuel documentation
+and moving it under OpenStack Doc space. However, as subject matter experts,
+we need to proactively review and help the doc team with updates and new
+features documentation [15]
+
+
+** Afterword **
+
+As an epilogue I would like to say: Working closely with OpenStack Community
+I see that PTL is more about how to help people come together and achieve
+goals, how to built horizontal communications between project teams and how
+to keep developers in their zone of maximum performance.
+
+Fuel is a mature project with existing strong development team. And we should
+keep these things in place.
+
+WBR, Alexey Shtokolov
+irc: ashtokolov
+
+[0] https://launchpad.net/~fuel-toolbox/+members
+[1] https://specs.openstack.org/openstack/fuel-specs/specs/8.0/task-based-deployment-mvp.html
+[2] https://specs.openstack.org/openstack/fuel-specs/specs/9.0/store-deployment-tasks-history.html
+[3] https://specs.openstack.org/openstack/fuel-specs/specs/9.0/save-deployment-info-in-database.html
+[4] https://specs.openstack.org/openstack/fuel-specs/specs/9.0/tasks-computable-fields-with-yaql.html
+[5] https://specs.openstack.org/openstack/fuel-specs/specs/9.0/unlock-settings-tab.html
+[6] https://specs.openstack.org/openstack/fuel-specs/specs/9.0/execute-custom-graph.html
+[7] https://specs.openstack.org/openstack/fuel-specs/specs/10.0/release-as-a-plugin.html
+[8] https://specs.openstack.org/openstack/fuel-specs/specs/10.0/graph-concept-extension.html
+[9] https://governance.openstack.org/reference/opens.html
+[10] http://www.openstack.org/ptg
+[11] http://www.openstack.org/assets/survey/Public-User-Survey-Report.pdf Page 26
+[12] https://www.openstack.org/assets/survey/April-2016-User-Survey-Report.pdf Page 37
+[13] https://github.com/openstack/fuel-nailgun-extension-iac
+[14] https://review.openstack.org/#/c/366779/ https://review.openstack.org/#/c/366780/
+[15] http://stackalytics.com/report/contribution/fuel-docs/180
