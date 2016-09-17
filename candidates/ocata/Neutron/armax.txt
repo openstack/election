@@ -1,0 +1,21 @@
+I propose my candidacy for the Neutron PTL for the Ocata cycle.
+
+I am not quite burned out yet, and I have still some incomplete business
+which I would to finish off before I step down.
+
+This is it: I am not writing anymore but that's not because I am becoming
+sloppy. You can look for yourself what we have accomplished since I started
+steering the ship with my mates. Some pointers:
+
+http://docs.openstack.org/releasenotes/neutron/unreleased.html
+http://specs.openstack.org/openstack/neutron-specs/#newton
+http://specs.openstack.org/openstack/neutron-specs/#mitaka
+http://grafana.openstack.org/dashboard/db/neutron-failure-rate
+http://governance.openstack.org/reference/projects/neutron.html
+
+You can see that we have become razor focused and able to deliver on most
+of our committments. I am sure your curiosity can take you elsewhere to
+find out more about how we rock and what we can improve.
+
+Thanks,
+Armando
