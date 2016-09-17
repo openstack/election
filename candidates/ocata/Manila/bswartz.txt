@@ -1,0 +1,15 @@
+I am running again for the position of Manila PTL.
+
+Newton didn't go as well as it could have and I would like
+to make some changes in Ocata (even though it's a short release)
+about how we prioritize work as a community and I would like to
+change the current set of deadlines and processes to help focus
+the team instead of allowing us to be overwhelmed with new
+feature proposals.
+
+I've already started gathering feedback from the core reviewers
+and I will make a proposal after the election. Whether I win or
+lose, I have ideas for how to do less but to do it better, rather
+than trying to do everything and doing nothing well.
+
+-Ben Swartzlander
