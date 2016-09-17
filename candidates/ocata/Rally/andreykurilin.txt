@@ -1,0 +1,29 @@
+I'm happy to announce my candidacy for Rally PTL for the Ocata release cycle.
+
+Quick introduction of myself:
+ - My contribution to OpenStack started > 2.5 years ago
+ - My first commit to Rally was merged ~ 2,5 years ago
+ - I became Rally core ~2.3 years ago
+
+* My goals for the Ocata cycle
+
+Release process:
+ - do regular 3 weeks releases
+ - provide up-to-dated release schedule
+
+Tasks:
+ - simplify review process of Rally plugins(more democracy!)
+ - finish validation refactoring to be more flexible
+ - port rally verification component to plugin base to support different
+   verifiers
+ - provide subunit output for Rally Task
+ - continue work on Rally as a Service
+ - make rally certification even more user-friendly and cover more use-cases
+ - update docs to cover all aspects of Rally
+ - finish work on new entity - hooks, which allow to execute something on
+   specified points of scenario execution
+ - port all plugins to support Keystone V3 and make V3 as default version
+ - provide a way to deliver rally plugins as python packages
+ - split Rally Core and OpenStack related plugins into 2 repos
+ - nested atomics
+ - trends reports for rally verification
