@@ -1,0 +1,39 @@
+I announce my candidacy for PTL of the Packaging Rpm project.
+
+During the Newton cycle, we reached the point where we provide enough
+artefacts to build OpenStack clients usable on all supported platforms.
+
+
+As a PTL, my primary focus would be on:
+
+* 3rd party CI: increase coverage and stability so that we can promote
+  existing CI to voting gates.  Next step would be allowing other
+  projects to consume our packaging for their own CI (mostly installer
+  ones)
+
+* better tooling to generate more native packages, and reduce
+  churn. Also adding python3 support.
+
+* allowing people to deploy a minimal OpenStack from our
+  packages. Rather than focusing on shoving as much services as
+  possible, I'd like us to focus on curating a minimal but high
+  quality set of packages to build upon it. After such milestone,
+  adding more services will be much easier later.
+
+Why? The goal is to produce a production-ready and curated set of
+OpenStack packages for all supported RPM-based platforms (SUSE, RHEL,
+etc.). Such deliverables could be used to seed downstream
+distributions and encourage collaboration between them around
+packaging. It would also help OpenStack installers CI to test against
+fresh OpenStack packages.
+
+
+Off course, I plan to continue supporting these ongoing efforts:
+
+* extending our packages set
+
+* extending our contributors pool (including core)
+
+* last but not least, foster collaboration between downstream vendors.
+
+
