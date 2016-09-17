@@ -1,0 +1,30 @@
+Hello everyone,
+
+I would like to announce my candidacy to continue to serve as RefStack PTL for
+the Ocata cycle.
+
+For the Newton development cycle, we have started implementing new features
+allowing vendor and product registration at RefStack.  These are foundation
+elements for the future features such as: enabling centralized testing, perform
+statistical analysis of the collected result data, etc. Consequently, our team
+has been extremely diligent in reviewing every specifications and their
+implementation to ensure that appropriate approaches were chosen for the
+circumstances.  I would like to take this opportunity to thank everyone for your
+effort and valuable contribution in the Newton cycle!
+
+We have made a lot of progress.  Nevertheless, there are still a lot of work
+that needs to be continued. As such, I would like to serve once again as the
+RefStack team PTL to complete the vendor and product registration
+implementations.
+
+For the Ocata cycle, our focus will be as follows:
+
+1) Complete vendor/product registration implementation.
+2) Establish and implement test result data retention policy.
+3) Add new features to allow vendor (customized) guidelines.
+4) Define centralized testing blueprints, specifications and implementation (if
+   time permits).
+
+I look forward to work with all of you.  Thank you for your consideration!
+
+Catherine Diep
