@@ -1,3 +1,4 @@
 # This file contains exception for manually verified candidates
 # <filename>: <real name>
 candidates/ocata/Congress/ekcs.txt: Eric Kao
+candidates/ocata/Mistral/rakhmerov.txt: Renat Akhmerov
