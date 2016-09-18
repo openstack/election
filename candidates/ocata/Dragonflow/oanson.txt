@@ -1,0 +1,25 @@
+I would like to propose my candidacy for Dragonflow PTL position.
+
+My goal for Dragonflow is to make it a reference architecture to implement
+networking and distributed networking services in an easy and simple manner
+while supporting production grade and large scale requirements.
+
+I think that Dragonflow pluggable architecture is proving to be a strong
+choice we made and is even being considered at other OpenStack networking
+projects.
+I also believe that our simplicity can be very appealing to users that
+want a simple network virtualization solution part of OpenStack.
+
+An important goal is to keep Dragonflow an integral part of OpenStack
+and make sure to address the various use cases of OpenStack deployments
+in terms of networking.
+
+For the next cycle, I would like to see Dragonflow become a viable choice for
+cloud deployments. This means a heavy stress on stabilization, deployment, and
+performance.
+
+I would also like to see new features make it into the release, such as full
+IPv6 support, FWaaS, VPNaaS, and LBaaS.
+
+Thank you,
+Omer Anson.
