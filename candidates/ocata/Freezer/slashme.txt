@@ -1,0 +1,36 @@
+Hi everyone,
+
+I'm happy to announce my candidacy to continue as the Freezer PTL for the
+Ocata release cycle.
+
+I think the Freezer team has done an amazing job again during the Newton cycle,
+making Freezer more stable, reliable and adding some interesting features.
+
+I want for Ocata to be the cycle where we continue to mature and stabilize
+Freezer, but also where we add some meaning full features.
+
+
+In order to achieve that, I think we should focus on:
+
+* Refactoring the freezer-agent, in order to implement multiple plugin layers.
+  This will allow for easy extension of the agent and help support any
+  backup scenario.
+
+* Continue the work done this cycle regarding integration tests. This is a good
+  start, but we need even more features, options and scenarios to be tested.
+
+* Work with the community and integrate with other projects: openstack-ansible,
+  fuel, openstack-puppet, karbor, heat, barbican...
+
+* Documentation. We should aim to continue what we started this cycle and
+  improve our documentation.
+
+* Kick off the work on deduplication, a long requested feature and an
+  interesting engineering challenge.
+
+
+
+I would be honored to have your support again for this cycle.
+
+Thanks,
+Pierre (slashme)
