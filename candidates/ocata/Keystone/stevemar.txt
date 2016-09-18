@@ -1,0 +1,43 @@
+Hey everyone,
+
+I'd like to continue to serve as the PTL of the keystone project for the Ocata
+release. I served as PTL of the keystone project for the Mitaka and Newton
+development cycles. I find the role to be extremely rewarding, and would be
+honoured to continue to serve in the same capacity, if you'll have me.
+
+During the Mitaka development cycle we accomplished many blueprints and hit
+some important goals, here are a few off the top of my head:
+
+  - Python 3 compatibility (for unit tests)
+  - Credential encryption
+  - PCI support for passwords
+  - Running migration tests on non-sqlite backends
+  - API docs are migrated and fully updated
+  - Introduced the `keystone doctor` helper
+
+For the Ocata release I'd like to take advantage the short development cycle
+to aggressively pay down some of the technical debt we've accumulated and
+also improve user and operator experience. I'd like to limit new features to a
+minimum (maybe 3-5) my short list is the following:
+
+  - Multi Factor Auth (MFA) support
+  - Improving the federated identity mapping engine
+  - Tackle the issue with long running operations timing out
+  - Handle federated authentication without apache libraries
+  - Functional tests with non-standard deployments (ldap, federated identity)
+
+With the exception of MFA support, all the features listed above match the
+theme of paying down technical debt or improving user experience.
+
+From a non-technical perspective, I'd like to do the following:
+
+  - Improve communication and engagement with our direct downstream consumers
+    (OSA, tripleo, etc)
+  - Continue to work with operators. Create specifications based on real world
+    use cases that are driven by operators facing issues with performance,
+    usability, scalability, and upgrades.
+  - Appoint a bug czar or perform weekly bug triages and monthly bug squashes
+
+Lastly, I'd like to thank anyone that contributed to keystone during the Newton
+release. I'm very excited for what Ocata will bring and look forward to working
+on it in any capacity.
