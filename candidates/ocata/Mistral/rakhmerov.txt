@@ -1,0 +1,31 @@
+I'm Renat Akhmerov. I would like to announce my candidacy for being a PTL of
+Mistral Workflow Service in Ocata cycle.
+
+I think Mistral now is a pretty mature project which provides really useful
+and cool capabilities. The project now is moving into the phase when technical
+perfection should be the number one priority. In many case Mistral serves as
+one of the central infrastructural components. To be able to build production
+ready solutions on top of Mistral it needs to be reliable, demonstrate
+excellent performance, provide good usability and comprehensive documentation.
+
+Here are my priorities for Ocata cycle:
+
+* Performance. In Newton cycle we made Mistral work about 30 times faster.
+  Now it's able to complete a workflow consisting of hundreds of tasks with
+  highly parallel structure and lots of join operations during tens of
+  seconds or less depending on workflow actions. That's not all, there's
+  still a potential to do even better and also improve Mistral when dealing
+  with parallel loads.
+* Scaling. Although it's now possible to scale Mistral engine tier we still
+  need to improve when having a high load.
+* Extensibility. We started working on Custom Action API which will allow
+  writing custom Mistral actions in a more flexible, elegant and powerful
+  way. We're planning to finish this work in Ocata cycle.
+* Usability and documentation. There are some gaps in Mistral documentation.
+  User experience, especially CLI, also needs to be improved. We finally
+  started gathering ideas for new CLI and API versions in Newton cycle.
+* Building even more robust and diverse community.
+
+I'd like to welcome everyone who wants to help with Mistral development.
+We'll provide all necessary assistance.
+
