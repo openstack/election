@@ -1,0 +1,88 @@
+Ken'ichi Ohmichi (oomichi)
+
+Hi everyone,
+
+Thank you for given chance to run as a PTL in current Newton cycle.
+This experience is exciting and I am glad to work together in the community.
+I'd like to continue running as the PTL in the Ocata cycle.
+
+# Newton Summary
+
+At first, it is nice to summarize the Newton cycle for the next Ocata cycle.
+We have worked for multiple items in this Newton cycle, and the progress is
+amazing. To be honest, my power is not enough to cover all area and this
+achievement has been attained by all contributors in this project.
+Thank you very much for your contributions.
+
+## Tempest
+
+Tempest is a biggest project under OpenStack QA, the commit number is 13th
+of 754 in whole OpenStack[1]. During the Newton cycle, we have provided
+Tempest CLI workflow. Users can use Tempest for different clouds/usecases
+with separated workspaces, then the operation becomes easy.
+
+The other thing is the cleanup. Tempest had deep class hierarchy and some
+magic for resource creation and cleanup. That made investigations hard when
+detecting issues. We have removed such barriers for easy debugging.
+
+Now Tempest provides test frameworks to whole OpenStack projects with stable
+interfaces. The interfaces still are increasing by releasing Tempest for helping
+the other projects. In the Newton cycle, we released 2 versions(12.1.0, 12.2.0)
+and they contain many features as these renos[2]. The other projects switched
+using these stable interfaces, this situation is appreciated.
+
+## Devstack
+
+One of big Devstack changes is Neutron becomes the default. Neutron is the
+direction as the network service instead of nova-net. The change has long
+history like enabling/reverting the default Neutron, and now the activation
+is stable. So we will be able to get feedback about Neutron widely from
+the ecosystem and that will make the quality better in long-term.
+
+The other try is the Devstack code migration for Heat. Devstack provides
+a plugin interface to manage its own Devstack code on each project repo,
+that makes each project development smooth. The Devstack code has been
+implemented in Heat repo and the Heat gate starts running by using that
+in the Newton cycle. In addition, several projects rely on Heat. So these
+projects need to enable Heat on the gate, and Magnum team succeeded to
+do that by working together with Heat team. That is a good collaboration
+across projects.
+
+## OpenStack-Health
+
+OpenStack-Health is a useful tool to know test condition of whole OpenStack
+projects from bird's-eye view. By using much data for showing graphs, the
+performance became issue and we have improved that in this cycle.
+
+The other thing is links to elastic recheck and bug report.
+On last failed tests, we can see related elastic recheck and bug report on
+the same line. That helps developers to investigate gate issues.
+
+# For Ocata
+
+Based on the Newton experience, I think there are several items for the Ocata cycle.
+
+* Help other projects:
+  According to the other projects' PTL candidacies, many future PTLs will work
+  for QA in the next cycle. QA team will continue helping these projects by
+  communicating to the other projects. And it is nice to provide good document
+  which describes how to use new test interfaces of Tempest for the other projects.
+* Continue bug triage:
+  An interesting thing is that bug reports tend to be submitted as Tempest bugs
+  even if they are due to the other projects' issues. So the bug triage of Tempest
+  is important to improve whole OpenStack quality by setting reports to suitable
+  projects. We started some prototype[3] to show bug triage progress of Tempest.
+  Such kind of graph will be helpful to motivate people for the triage. I hope
+  this will be expanded to other projects.
+
+This is my proposal and thanks for giving me a chance to raise my hand again.
+Regardless of the election result, I will do my best in this project for the next cycle.
+
+Thanks
+Ken'ichi Ohmichi
+
+---
+[1]: http://stackalytics.com/?metric=commits&release=newton
+[2]: http://docs.openstack.org/releasenotes/tempest/unreleased.html
+[3]: https://github.com/oomichi/bug-counter#current-graph
+
