@@ -1,0 +1,35 @@
+Hi, All,
+
+I would like to nominate myself for the PTL of Senlin project for Ocata cycle.
+
+I worked on Senlin project since it was setup in Dec. 2014. I'm very pleased
+to work with the team in last two years and very appreciated for the previous
+PTL Qiming's hard work to lead us in correct way and bridge Senlin with other
+projects in the community.
+
+We have achieved several important milestones in Newton cycle including:
+ - Basic health management support
+ - Container cluster support
+ - Micro-versioned API interface
+ - Tempest test for both API, functional and integration scenarios
+ - Complete API reference and user/development document
+
+Hopefully we will have partial support for message type of receiver landed as
+well.
+
+I think our foucs for next release may include:
+ - More complete HA support with practical use case as reference
+ - Versioning support for policy, profile
+ - Unified version management for API, DB, and Senlin resources
+ - Event notification to allow user to track important workflows of Senlin
+   service
+ - Complete support for container cluster and container scheduling
+ - More test cases for integration and benchmarking scenarios
+
+I will be very honored if I can get your support to play the role of PTL in
+Ocata cycle. I believe we will achieve our goals and make Senlin better.
+
+Thanks for your consideration!
+
+Sincerely yours,
+Yanyan Hu
