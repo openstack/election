@@ -1,0 +1,30 @@
+Hello everyone,
+
+I would like to announce my candidacy to become cloudkitty's PTL for
+the Ocata release.
+
+Being present in the OpenStack community since almost its beginning,
+I have been involved at different levels and community (development,
+french community, business side...).
+
+Being of the 2 co-father of cloudkitty, I have followed all the
+steps of that project (from the Proof of Concept we have shown to
+some community members in Atlanta's Summit to the Newton Cycle).
+
+Cloudkitty entered the big tent about a year ago, and we have seen
+some new contributors but we failed so far to keep them so far.
+That is one of the big challenge I want to tackle in the O cycle.
+
+The other one would be to have a more user-centric approach, to both
+ease their usage of the component but also try to have a stronger
+coordination with their needs.
+
+I also want to mention that I have been acting as a PTL for
+cloudkitty for the last few weeks, due to the absence of the
+current one.
+
+I would also like to take this opportunity to thank all members of
+the OpenStack community who helped our team during the lasts cycles.
+
+Thank you,
+Christophe
