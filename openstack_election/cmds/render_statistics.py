@@ -22,13 +22,8 @@ import pytz
 from openstack_election import utils
 
 counts = {'projects': 0, 'nominations': 0, 'with_candidate': 0}
-
-
-def name_fix(name):
-    name = name[:-4]
-    name = name.replace('_', ' ')
-    name = name.title()
-    return name
+need_election = []
+without_candidate = []
 
 
 def as_percentage(progress, total):
@@ -48,16 +43,20 @@ def collect_project_stats(basedir, verbose):
 
     for directory, dirnames, filenames in os.walk(basedir):
         project = directory[len(basedir):]
+        if project == "TC":
+            continue
         candidates = filter(lambda x: x.endswith('.txt'), filenames)
-        candidates = [name_fix(n) for n in candidates]
         candidates_count = len(candidates)
 
         if not filenames == []:
             counts['projects'] += 1
             if candidates_count != 0:
                 counts['with_candidate'] += 1
+            else:
+                without_candidate.append(project)
             if candidates_count >= 2:
                 counts['nominations'] += 1
+                need_election.append(project)
 
             if verbose:
                 print("%-25s : %s" % (project, candidates))
@@ -92,6 +91,9 @@ def main():
     p_candidate = as_percentage(counts['with_candidate'], counts['projects'])
     p_nominations = as_percentage(counts['nominations'], counts['projects'])
 
+    need_election.sort()
+    without_candidate.sort()
+
     if args.verbose:
         print("-" * 51)
     print("%-25s @ %s" % ("Nominations started", as_utctime(start)))
@@ -107,5 +109,10 @@ def main():
     print("%-25s : %5d (%6.2f%%)" % ("Projects with election",
                                      counts['nominations'],
                                      p_nominations))
+    print("-" * 51)
+    print("%-25s : %d (%s)" % ("Need election", len(need_election),
+                               " ".join(need_election)))
+    print("%-25s : %d (%s)" % ("Need appointment", len(without_candidate),
+                               " ".join(without_candidate)))
     print("=" * 51)
     print("%-25s @ %s" % ("Stats gathered", as_utctime(now)))
