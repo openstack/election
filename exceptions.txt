@@ -2,3 +2,7 @@
 # <filename>: <real name>
 candidates/ocata/Congress/ekcs.txt: Eric Kao
 candidates/ocata/Mistral/rakhmerov.txt: Renat Akhmerov
+# Use 'Amrith Kumar' not 'Amrith'
+candidates/ocata/Trove/amrith.txt: Amrith Kumar
+# Use 'Devdatta Kulkarni' not 'Devdatta-kulkarni'
+candidates/ocata/Solum/devkulkarni.txt: Devdatta Kulkarni
