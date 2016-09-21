@@ -49,6 +49,7 @@ def build_candidates_list(election=utils.SERIES_NAME):
                             (utils.CGIT_URL, utils.ELECTION_REPO,
                              urllib.quote_plus(filepath, safe='/'))),
                     'ircname': candidate_file[:-4].replace('`', r'\`'),
+                    'email': utils.get_email(filepath),
                     'fullname': utils.get_fullname(filepath)
                 })
 
