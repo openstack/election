@@ -15,7 +15,9 @@ See `Election system`_, `PTL details`_ and `TC details`_.
 Below is the official list of candidates for the current round.
 
 .. TODO: Change from ptl.rst to tc.rst when TC rounds starts
-.. include:: ../../candidates/ptl.rst
+.. include:: ../../candidates/tc.rst
+
+.. include:: ocata_ptl_results.rst
 
 .. TODO: Adds TC Results and a link to `TC Candidates list`_ when TC candidacies are over
 .. TODO: Adds PTL Results and a link to `PTL Candidates list`_ when PTL candidacies are over
@@ -147,7 +149,7 @@ The candidacy is then confirmed by elections officials through gerrit vote.
 See above `How to submit a candidacy`_ documentation.
 
 
-.. TODO: add PTL Candidates list when PTL elections are over
+.. include:: ocata_ptl_candidates.rst
 .. TODO: add TC Candidates list when TC elections are over
 
 .. seealso::
