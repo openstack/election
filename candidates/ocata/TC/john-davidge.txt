@@ -1,0 +1,69 @@
+Hi everyone,
+
+I’d like to submit my candidacy for the OpenStack Technical Committee. You
+may know me as john-davidge on IRC.
+
+I’ve been an active member of the OpenStack community since 2012 (Folsom).
+I met many of you for the first time while presenting the Curvature Network
+Visualization Dashboard[1] at the Grizzly Summit in Portland. Since then
+I’ve been working 100% upstream, mostly in neutron[2][3], and for a couple
+of different sponsors. Right now I’m employed in the OpenStack Innovation
+Center (OSIC) - a joint venture between Rackspace and Intel - where I’m
+leading a small team contributing to neutron, and helping to shape the OSIC
+development roadmap. Over the years I have seen and participated in a lot
+of the changes that have led our community to where it is today. I’ve
+experienced the things that have improved our lives as developers, and
+operators, as well as the things that have caused us difficulties.
+
+I know where I would like to see OpenStack head in the future, and I feel
+strongly about making it a success. The most important thing that I would
+like to see changed is the overarching framework under which all of
+OpenStack operates:
+
+The Big Tent.
+
+Last year, the TC moved OpenStack away from the Integrated Release, and
+into The Big Tent. This removed the separation between those projects
+considered integral to OpenStack, and those which enhance it. Since then,
+the number of official projects has gone from ~12 to 60. While this was a
+fantastic move for community inclusivity, it has also made life harder for
+operators and customers, and has diminished the focus on OpenStack’s core
+purpose.
+
+Managing every team under one roof has led to issues for both the core and
+the newer projects. The experience so far has taught us that there isn’t a
+single set of rules that can be helpfully applied to both. I believe that
+now is the time to take The Big Tent’s ideas and iterate upon them to
+create a new model that can promote inclusivity, while still preserving a
+clear focus for the core of OpenStack. The main points of this new model
+are:
+
+* Define OpenStack as its core components
+* Introduce a new home for complementary projects - The OpenStack Family
+* Reinstate Stackforge as the primary incubator for new projects
+
+OpenStack will once again be a focused set of closely aligned projects
+working together to provide an operating system for the datacenter. The
+OpenStack Family will provide a home for projects that work to improve the
+experience of an OpenStack cloud (think Ceilometer, Heat, etc), while
+protecting them from some of the more prescriptive rules that go with being
+a core OpenStack component. Stackforge will be the main focus of
+early-stage innovation, with a clearly defined path towards graduation into
+The OpenStack Family. I believe that this model[4] can go a long way
+towards solving many of the pain points that we are seeing with OpenStack
+today.
+
+This transformation is one that I think is very important for the future
+of OpenStack. We have a fantastic project surrounded by a talented
+community, of which I am very proud to call myself a member. Trust me with
+your vote, and I’ll work hard to ensure its continued success.
+
+Thank you for your consideration,
+
+John
+
+[1] https://www.youtube.com/watch?v=pmpRhcwyJIo - Curvature
+[2] https://www.youtube.com/watch?v=GjuF-3fB0IQ - IPv6 Prefix Delegation
+[3] https://www.youtube.com/watch?v=4ag1NiCVBDo - Neutron Purge
+[4] https://johndavidge.wordpress.com/mr-openstack-tear-down-this-tent/
+
