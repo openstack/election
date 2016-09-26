@@ -107,7 +107,7 @@ Ocata PTL
 
 * Monasca
 
-  * `Roland Hochmuth (Roland_Hochmuth) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Monasca/Roland_Hochmuth.txt>`_
+  * `Roland Hochmuth (rhochmuth) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Monasca/rhochmuth.txt>`_
 
 * Murano
 
