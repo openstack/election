@@ -1,0 +1,88 @@
+I am announcing my candidacy for a position on the OpenStack Technical
+Committee.
+
+I have served on the Technical Committee for the last three years and
+as PTL of the Release Management team for the Mitaka and Newton
+cycles.  I will be PTL for the Release Management team again for
+Ocata.
+
+Before the Newton cycle I worked on a wide variety of projects within
+the community, including Ceilometer, and python-openstackclient. I am
+an Oslo team member, and served as PTL for the Icehouse, Juno, and
+Kilo cycles.  I am also part of the team working on the Python 3
+transition, and have contributed to several of the infrastructure
+projects. In addition to my technical contributions, I helped to found
+and still help to organize the OpenStack meetup group in Atlanta,
+Georgia.
+
+I started contributing to OpenStack in 2012, not long after joining
+Dreamhost, and I am currently employed by Red Hat to work on OpenStack
+with a focus on long-term project concerns.
+
+Most of my work on OpenStack has been focused on enabling others in
+the community. From the Oslo library hierarchy, to establishing the
+team liaison system, to reno, to release automation, I have worked on
+tools, processes, and patterns to make incremental improvements in our
+ability to build OpenStack. I view serving on the TC as an extension
+of that work.
+
+My experience has led me to develop a perspective of OpenStack that is
+strongly focused on cross-project concerns, and to reinforce for me
+the importance of communication between project teams to smooth out
+the integration points and remove friction, all key responsibilities
+of the Technical Committee.
+
+During Ocata we will be working on the first iteration of the new
+community-wide goals process [1], defined during Newton. This
+initiative is intended to increase the visibility of important
+community-wide needs and encourage project teams to incorporate them
+into their priority discussions. We have bootstrapped the process by
+identifying several potential goals related to lowering technical
+debt, one of which was approved for Ocata as a trial run [2].  I would
+like to continue to serve on the TC to finish launching this new
+initiative because this is the first time we have attempted anything
+like this, and I expect us to find issues with the process and to need
+to adjust it to incorporate feedback.
+
+Having the TC identify community goals is an important step for us to
+take.  It relies on a view that OpenStack *is* one community, with
+shared values and a commitment to collaborate. This view is not
+universally held among all of our contributors, and I find that
+unfortunate. I believe that shared values, collaboration, and
+consistency are compatible with innovation, experimentation, and
+finding creative solutions to challenging problems. The diversity of
+the projects that already exist in our big tent shows this to be true.
+
+The fact that we are still debating the extent of our unity tells me
+that it is important to document our community principles. As we have
+grown, new community members have joined with an incomplete
+understanding of our history. Even some folks who have been around for
+a long time do not have the whole picture, or disagree with decisions
+made early on.  We have started writing down some of the assumptions
+we have in mind when we discuss topics within the TC [3], in order to
+come to a shared understanding of where we all (not just TC members)
+think we want to be going and how to get there. Without that shared
+understanding for context, some of the TC's decisions may seem to not
+make sense, which also means we are doing a poor job of communicating
+outside of the TC with the rest of the community. I would like to
+continue to serve on the TC as we work on those communication issues
+and resolve the questions about our shared principles.
+
+The OpenStack community is the most exciting and welcoming group I
+have interacted with in more than 20 years of contributing to open
+source projects. I look forward to continuing to be a part of the
+community and serving the project.
+
+Thank you,
+Doug
+
+Review history: https://review.openstack.org/#/q/reviewer:2472,n,z
+Commit history: https://review.openstack.org/#/q/owner:2472,n,z
+Stackalytics: http://stackalytics.com/?user_id=doug-hellmann
+Foundation Profile: http://www.openstack.org/community/members/profile/359
+Freenode: dhellmann
+Website: https://doughellmann.com
+
+[1] http://governance.openstack.org/goals/index.html
+[2] http://governance.openstack.org/goals/ocata/remove-incubated-oslo-code.html
+[3] https://review.openstack.org/#/c/357260/
