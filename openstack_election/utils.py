@@ -102,8 +102,14 @@ def get_fullname(filepath):
     # Strip double space and trailing spaces
     fullname = re.sub(r"  ", " ", fullname).strip()
 
-    # Return capitalized name
-    return u" ".join(map(unicode.capitalize, fullname.split()))
+    # Make sure first letter of first and last component are upper-case
+    s = fullname.split()
+    fullname = (
+        [s[0][0].upper() + s[0][1:]] +
+        s[1:-1] +
+        [s[-1][0].upper() + s[-1][1:]]
+    )
+    return u" ".join(fullname)
 
 
 def get_reviews(query):
