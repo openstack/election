@@ -17,10 +17,12 @@ Below is the official list of candidates for the current round.
 .. TODO: Change from ptl.rst to tc.rst when TC rounds starts
 .. include:: ../../candidates/tc.rst
 
-.. include:: ocata_ptl_results.rst
 
-.. TODO: Adds TC Results and a link to `TC Candidates list`_ when TC candidacies are over
-.. TODO: Adds PTL Results and a link to `PTL Candidates list`_ when PTL candidacies are over
+Previous elections
+==================
+
+.. include:: archive_toc.rst
+
 
 Election Officials
 ==================
@@ -148,9 +150,6 @@ candidates/<cycle>/TC/<candidate_irc_name>.txt.
 The candidacy is then confirmed by elections officials through gerrit vote.
 See above `How to submit a candidacy`_ documentation.
 
-
-.. include:: ocata_ptl_candidates.rst
-.. TODO: add TC Candidates list when TC elections are over
 
 .. seealso::
 

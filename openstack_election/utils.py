@@ -43,6 +43,8 @@ CGIT_URL = 'https://git.openstack.org/cgit'
 PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
                 (CGIT_URL))
 
+PAST_ELECTIONS = ['ocata']
+
 conf = yaml.load(open('configuration.yaml'))
 exceptions = None
 
