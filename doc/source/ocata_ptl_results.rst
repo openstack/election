@@ -15,7 +15,7 @@ Ocata PTL
 
 * Cinder
 
-  * `Sean Mcginnis (smcginnis) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Cinder/smcginnis.txt>`_
+  * `Sean McGinnis (smcginnis) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Cinder/smcginnis.txt>`_
 
 * Cloudkitty
 

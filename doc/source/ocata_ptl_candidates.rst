@@ -13,7 +13,7 @@ Ocata PTL Candidates
 
 * Cinder
 
-  * `Sean Mcginnis (smcginnis) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Cinder/smcginnis.txt>`_
+  * `Sean McGinnis (smcginnis) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Cinder/smcginnis.txt>`_
 
 * Cloudkitty
 
@@ -83,7 +83,7 @@ Ocata PTL Candidates
 
 * Keystone
 
-  * `Samuel De Medeiros Queiroz (samueldmq) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Keystone/samueldmq.txt>`_
+  * `Samuel de Medeiros Queiroz (samueldmq) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Keystone/samueldmq.txt>`_
   * `Steve Martinelli (stevemar) <https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Keystone/stevemar.txt>`_
 
 * Kolla
