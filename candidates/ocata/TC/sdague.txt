@@ -1,0 +1,29 @@
+I'd like to throw my hat into the ring for the TC. I've been involved
+in OpenStack since 2012. We may have interacted when working on Nova,
+Devstack, Grenade, debugging the gate, or other areas of the broader
+OpenStack project.
+
+Upgrades are one of the things I'm passionate about in
+OpenStack. The kinds of places OpenStack gets installed into don't
+always have a change window. Making upgrades painless and boring are
+a precondition for anything else OpenStack wants to do, because if
+operators don't upgrade their OpenStack environments, they'll never
+get any of the new enhancements we are building as a community.
+
+I really want the end user experience with OpenStack to be better. In
+the last cycle I helped spear head the api-ref effort. In a single
+cycle our API docs jumped forward to an accuracy level we haven't seen
+in years. This was a great community win. I've been championing
+getting rid of the extensions mechanism inside Nova, to make it clear
+that there is a single compute API, which we expect to see
+everywhere.
+
+Having worked on many efforts within projects, and across projects, I
+think I bring a perspective to the TC about where process meets
+reality in getting things accomplished. We always need to take steps
+forward to advance the agenda, but if we make the steps too high, we
+can set folks up for failure. Attainable forward progress creates
+success, success creates momentum, and momentum makes more progress
+possible.
+
+I would be honored to serve on the TC again if chosen.
