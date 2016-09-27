@@ -168,3 +168,34 @@ def dir2name(name, projects):
         if name == pname:
             return project_name
     raise ValueError(('%s does not match any project' % (name)))
+
+
+def build_candidates_list(election=SERIES_NAME):
+    project_list = os.listdir(os.path.join(CANDIDATE_PATH, election))
+    project_list.sort()
+    candidates_lists = {}
+    for project in project_list:
+        project_prefix = os.path.join(CANDIDATE_PATH, election, project)
+        file_list = filter(
+            lambda x: x.endswith(".txt"),
+            os.listdir(unicode(project_prefix)),
+        )
+        candidates_list = []
+        for candidate_file in file_list:
+            filepath = os.path.join(project_prefix, candidate_file)
+            candidates_list.append(
+                {
+                    'url': ('%s/%s/plain/%s' %
+                            (CGIT_URL, ELECTION_REPO,
+                             urllib.quote_plus(filepath, safe='/'))),
+                    'ircname': candidate_file[:-4].replace('`', r'\`'),
+                    'email': get_email(filepath),
+                    'fullname': get_fullname(filepath)
+                })
+
+        candidates_list.sort(key=lambda x: x['fullname'])
+        candidates_lists[project] = candidates_list
+
+    return {'election': election,
+            'projects': project_list,
+            'candidates': candidates_lists}
