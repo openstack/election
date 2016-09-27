@@ -1,0 +1,71 @@
+This is my candidacy for a position on the OpenStack Technical
+Committee.
+
+For those who don't know me, it has been 4 years that I have been
+consistently working on OpenStack to make deployments production-ready:
+
+- Puppet OpenStack core contributor, and ex-PTL (18 months).
+
+Writing Puppet modules that allow operators to deploy OpenStack in production.
+
+- TripleO core contributor, and current PTL.
+
+Contribute to TripleO which is an OpenStack installer used by operators to
+deploy and operate OpenStack.
+
+- OpenStack Infrastructure contributor.
+
+Improving Continuous Integration for different projects in OpenStack.
+
+
+Here are some aspects that motivate me to be part of TC:
+
+- Make sure it works outside Devstack.
+
+There is a huge gap between what is tested by Devstack gate and what operators
+deploy on the field.  This gap tends to stretch the feedback loop between
+developers and operators.  As a community, we might want to reduce this gap
+and make OpenStack testing more effective and more realistic.
+That's an area of focus I would like to work and spread over OpenStack
+projects if I'm elected.
+
+
+- Keep horizontal collaboration.
+
+While our technical areas of focus might be different, our main goal is to
+make OpenStack better and it's important our governance reflects it.
+I believe that collaboration works [1] and we have seen positive results over
+the last cycles.  I would like TC to keep supporting such efforts and continue to
+make OpenStack a great forum to work.
+
+
+- Share my experience with Technical Committee.
+
+Being PTL during 18 months, I contributed to drive Puppet OpenStack project to
+success [2] and I learned so much about communication and technical leadership.
+If I'm elected I'll do my best to re-use this experience from my previous roles in
+OpenStack.  I've been learning on the go and plan to continue that way by
+keeping my mind open to feedback.
+
+
+- Represent all family members.
+
+Because I've worked on different areas of OpenStack (CI, deployments, testing,
+etc), I'll represent the voice of any community member: developers, deployers,
+operators and users.  I believe in making decisions by wearing different hats and
+find the best solution for everyone.
+
+
+
+Over the last years, I've helped into building communities of people who
+aim to make OpenStack better.  I would be honored to serve as a TC member.
+
+Thank you for your consideration,
+
+
+    Emilien Macchi
+    https://wiki.openstack.org/wiki/User:Emilienm
+
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2015-June/066544.html
+[2] http://lists.openstack.org/pipermail/openstack-dev/2016-September/103372.html
