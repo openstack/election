@@ -1,0 +1,59 @@
+
+Despite its name, the Technical Committee has become the part of the
+OpenStack contributor community that enshrines, defines, and -- in some
+rare cases -- enforces what it means to be "OpenStack". Meanwhile,
+the community has seen a great deal of growth and change.
+
+Some of these changes have led to progress and clarity, others have left
+people confused about how they can best make a contribution and what
+constraints their contributions must meet (for example, do we all know
+what it means to be an "official" project?).
+
+Much of the confusion, I think, can be traced to two things:
+
+* Information is not always clear nor clearly available, despite
+  valiant efforts to maintain a transparent environment for the
+  discussion of policy and process. There is more that can be done
+  to improve engagement and communication. Maybe the TC needs
+  release notes?
+
+* Agreements are made without the full meaning and implications of those
+  agreements being collectively shared. Most involved think they agree,
+  but there is limited shared understanding, so there is limited
+  effective collaboration. We see this, for example, in the ongoing
+  discussions on "What is OpenStack?". Agreement is claimed without
+  actually existing.
+
+We can fix this, but we need a TC that has a diversity of ideas and
+experiences. Other candidates will have dramatically different opinions
+from me. This is good because we must rigorously and vigorously question
+the status quo and our assumptions. Not to tear things down, but to
+ensure our ideas are based on present day truths and clear visions of
+the future. And we must do this, always, where it can be seen and
+joined and later discovered; gerrit and IRC are not enough.
+
+To have legitimate representation on the Technical Committee we must
+have voices that bring new ideas, are well informed about history, that
+protect the needs of existing users and developers, encourage new users
+and developers, that want to know how, that want to know why. No single
+person can speak with all these voices.
+
+Several people have encouraged me to run for the TC, wanting my
+willingness to ask questions, to challenge the status quo and to drive
+discourse. What I want is to use my voice to bring about frequent and
+positive reevaluation.
+
+We have a lot of challenges ahead. We want to remain a pleasant,
+progressive and relevant place to participate. That will require
+discovering ways to build bridges with other communities and within our
+own. We need to make greater use of technologies which were not invented
+here and be more willing to think about the future users, developers and
+use cases we don't yet have (as there will always be more of those). We
+need to keep looking and pushing forward.
+
+To that end I'm nominating myself to be a member of the Technical
+Committee.
+
+If you have specific questions about my goals, my background or anything
+else, please feel free to ask. I'm on IRC as cdent or send some email.
+Thank you for your consideration.
