@@ -1,0 +1,69 @@
+Hello! I am announcing my candidacy for a position on the OpenStack Technical
+Committee.
+
+For those who do not know me, I have been involved with OpenStack since the
+very beginning, working for Rackspace as a core member of the Nova team. An
+internal job change took me away from active development after Essex, but since
+being hired by IBM, I've been back working on Nova since Kilo. As a result of
+this long involvement, I have always had a strong interest in helping to shape
+the direction of OpenStack, and if there is one thing people will agree about
+me, is that I'm never shy about voicing my opinion, whether the majority agree
+with me or not. Many of the earliest design decisions were very contentious,
+and while I didn't always prevail in those discussions, I felt that I helped
+move the conversation forward. More recently, I have participated in nearly all
+TC meetings for the last two years, and now would like to join the TC as a
+member.
+
+There seems to be a lot of concern about the impact of the Big Tent, and how
+all these new projects are diluting OpenStack, or somehow leading us astray
+from what we should be doing. In my opinion, this is all a distraction.
+Determining whether a project is "official" is simply a matter of controlling
+the branding of OpenStack, and not changing what OpenStack is. If there is room
+for improvement, it is in communicating what this means so that we eliminate
+the confusion for those who are coming to OpenStack without this historical
+knowledge.
+
+One thing I feel strongly about is that since the Mission Statement for
+OpenStack is "to produce the ubiquitous Open Source Cloud Computing
+platform...", that what we do should always advance cloud *computing*. So while
+I applaud the work being done by many of the telecommunication companies to
+push the limits of network virtualization, unless it is useful to making
+virtual machines communicate better, it really should be outside of OpenStack.
+I do recognize that this is not a clear distinction, since someone can always
+come up with a remote edge case where it could possibly be used, but we cannot
+be all things to all people (or all companies). Having a clear focus is
+important to success.
+
+OpenStack is now over 6 years old, and that is forever in technology terms. And
+while it has been continuously updated, these updates are restricted by the
+requirement that they remain compatible with previous versions, and,
+increasingly, that the updates are made with zero downtime. These are important
+goals, and some very amazing work has been done to make them a reality. But one
+of the consequences of this focus is that there is little serious discussion
+about potential architectural changes that would greatly improve OpenStack, if
+it requires downtime or breaking backwards compatibility. Suggestions for
+experiments along these lines are usually met with the (very valid, in my
+opinion) statement that we already have more development work than we can
+handle, so diverting some of our resources to explore other possibilities would
+set us further back. Unfortunately, this is the same argument that is used to
+justify the build-up of technical debt. I would like to see us begin to think
+about this, and have the TC direct this conversation, with input from
+operators, the recently-formed Architecture Working Group, developers from the
+various OpenStack projects, and any other interested parties. Yes, this is a
+"moonshot" idea [0], but I believe that it is essential for the long-term
+technical viability of OpenStack that we never stop looking ahead.
+
+I have a great deal of respect for the other candidates who are seeking a
+position on the TC, and thus understand that you, as a voter, have a difficult
+job in selecting only six. I would indeed be honored if you would support me.
+
+Thank you,
+Ed
+
+Email: ed@leafe.com
+Foundation Profile: http://www.openstack.org/community/members/profile/280
+Freenode: edleafe
+Website: https://blog.leafe.com
+Twitter: @edleafe
+
+[0] https://en.wiktionary.org/wiki/moon_shot (definition 3)
