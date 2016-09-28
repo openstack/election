@@ -1,0 +1,59 @@
+I'd like to throw in my hat to serve the community as a TC member.
+
+My name is Jim Rollenhagen, but I'm better known in the community as jroll.
+I've worked in many environments, from 20-person startup to massive
+corporations. For the past three years, I've been working on OpenStack at
+Rackspace. I primarily work on ironic (where I just started my third term as
+PTL), but also dabble heavily in Nova, and try to contribute to cross-project
+teams (mostly infra, QA, and Oslo) when I can.
+
+I believe the primary objective of the TC should be to serve the community.
+There's a few things we can immediately do to improve. First is the ongoing
+effort to document principles and expectations. There's a massive amount of
+shared understanding among the leaders in our community (and especially the
+current TC) that isn't necessarily known or shared by the rest of the
+community. We need to write down the current state of that. The principles
+document does this well; but that's only the start. We need to continue to
+document expectations for projects in the big tent, expectations for PTLs and
+liaisons, and where we want OpenStack to be long term. We often focus on the
+short term without thinking about how things support our longer-term goals, and
+I'd like to fix that by writing down our vision for the future.
+
+Over the last year, folks keep talking about the big tent, and how it has
+watered down the meaning or focus of OpenStack. This is true today, at some
+level. However, I believe this is short-term pain while we are moving to a
+better place. I don't believe the solution is to go back to the old way of
+life. Rather, we should roll forward and help to make the big tent better.
+Going back will only create more confusion, and will bring the TC back to the
+days of evaluating the usefulness and technical excellence of projects - which
+we already have found is untenable. We have common ways of doing many things,
+but those aren't well-documented and so newer projects simply do things the way
+they think is best, or fastest, or the way it's done in the first project they
+look to source ideas from. For example, I know of at least two or three ways
+that microversioning is implemented.  There are two ways projects are
+implementing rolling upgrades. And that might be okay; but they need to be
+documented somewhere that all projects can benefit from. We should even go
+further, and build frameworks for common things like these that OpenStack
+projects tend to value. I believe the TC (working with folks like the
+architecture WG, etc) could (and should!) be the body to help implement and
+drive this sort of work. The new goals process is one step toward this, and I
+think it's a great start. If we can truly make the big tent a more coherent set
+of projects, I think it will be a huge win for everyone - not just developers
+that need a home for their project.
+
+The ironic project went through incubation just before the big tent went into
+effect, and as such was one of the first projects to need to work with some of
+the constraints (i.e., not be a first-class member of many of the cross-project
+teams). We've implemented devstack and tempest plugins, in-tree API reference,
+and in-tree install guide. To accomplish some of these, we needed to contribute
+both code and documentation into these projects. I think my experience there
+helps me relate to newer big tent projects that struggle with some of these
+initiatives. I look forward to leading efforts to make this less of a burden on
+projects.
+
+I would be honored to serve the community from a TC seat, if elected. Whether
+or not I am elected, I hope to work on some or all of these items over the next
+two cycles, but I believe I will be in a better position to get these done from
+within the TC.
+
+// jim
