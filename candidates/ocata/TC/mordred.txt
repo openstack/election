@@ -1,0 +1,120 @@
+I would like to serve the community on the Technical Committee again.
+
+For those of you who don't know me:
+
+* I've served on the TC since it was the PPB.
+
+* I founded and am past-PTL of OpenStack Infra.
+
+* I also serve on the OpenStack Board of Directors as an Individual Member,
+  which is a position I've held since the formation of the Foundation.
+
+Our culture and our commonality define us and draw us together, and that's
+a good thing. We are one of the world's most successful Open Source projects.
+The reason we're so successful is that we've always valued the we over the I.
+We've always made choices that maxmize our ability to work with each other,
+even if those choices might dimish the ability of some 'Brilliant Jerk' to
+amaze us with their brilliance and just how big of a jerk they can be.
+
+We should continue to hold strong to our idea of an environment where we're
+all equal, where we can all work together regardless of background and where
+collaboration is valued in its own right.
+
+** OpenStack is One Project. **
+
+Together we are much greater than the sum of our parts. It's vital that we
+all understand that and actively look for ways to work together. It's hard,
+of course. It's much easier to hunker down with a few close friends and shut
+out all the noise as distraction. However, our primary advantage is that there
+are a lot of us, and that we work together. The world is replete with projects
+that are tightly controlled by a single person or a single company. We're
+different, and it can give us strength. But it will only be a strength when
+we all pull together and actively look for ways in which we can align with each
+other, rather than looking for legalistic lists of ways in which we are
+required to.
+
+As our community is one of our greatest strengths, we need to become better
+at being steadfast in our adherance to each other. When our friends get tired
+and decide that all of this community crap is too hard, we need to provide
+them support and help them to understand that not only is the community part
+not a waste of time, it is, in fact, one of the most important aspects of
+who we are.
+
+** OpenStack delivers computers via an API, not VMs. **
+
+Any positioning that our primary unit of operation is a VM is antiquated and
+wrong. Bare metal, VMs and Containers are all essential building blocks - and
+more importantly each of those being able to exist in a shared networking
+context able to access the same storage resources is the ballgame. Any time
+any part of our community wants to suggest that one of the three have primacy
+over the others, we need to lovingly but firmly put our foot down and stand up
+for our users.
+
+We are not in competition with Kubernetes, Mesos or Docker. They're all
+wonderful projects that solve problems for their users. All three of them
+need to run on an Infrastructure. We should be the friendliest Infrastructure
+for them.
+
+** Success is defined by empowering our Users to solve their problems. **
+
+OpenStack has IPv6 support. None of the closed-source Public Clouds do. We
+should be more proud of that. OpenStack can give you a direct L2 IP that
+isn't forced to pass through a NAT layer. None of the closed-source Public
+Clouds can do that. Oracle just annouced that as an "exciting" thing that
+would set their new Public Cloud apart. It's not exciting, it's basic
+functionality that the other clouds lack, and they're late to the party. We've
+had it for years, and we should be proud of that. We should not chase
+mediocrity by accepting the premise that the feature definitions in a set of
+existing closed-source Public Clouds are the gospel. We should instead empower
+our end-users by putting the tools of computing that they actually want in
+their hands, not just the tools someone else thinks they should want.
+
+NAT is a hack, it's not a feature. We should treat it as the lame second-class
+citizen it truly is, and we should make all the other clouds who are not us
+ashamed that it's the only crappy networking they give their users. We should
+continue to love our users.
+
+** The world is a really big place with a bunch of really wonderful people. **
+
+We have OpenStack Public Clouds all over the world, in more geographical
+locations than any of the closed-source Public Clouds. We should all be proud
+of that. There is not a US-centric single giant OpenStack Public Cloud ...
+but that's a good thing, not a failure. Single clouds are single points of
+failure, both from a technology standpoint and from a 'random executive has
+an agenda' standpoint. An ecosystem of clouds running the same software but
+run by different operators with different needs and goals is an ecosystem
+we should all be proud of - and we can be proud of that today.
+
+We have grassroots OpenStack communities world-wide full of amazing people.
+We have people all over the world who are solving problems with OpenStack.
+We should all be proud of that.
+
+** There are still plenty of challenges ahead of us. **
+
+The end user experience with OpenStack is scattered and deployer decisions
+leak through APIs in too many places. We can and should fix that.
+
+Even though we've spent years working on consolidation, we still have a
+fragmented Operations story. It turns out there are a considerable number
+of OpenStack clouds out there being run by teams of 3-4 people - but our
+project organizational structure lends itself to assuming that cloud operators
+will have a team-per-service. Having an operational team per OpenStack service
+might be a choice some of the largest Operators make - but even then it's
+an exceptionally wasteful model and should not be what we assume is the norm.
+We can and should continue to aggressively improve the consistency of
+experience for our Operators in addition to our End Users.
+
+The world is not just written in Python. The time has come for us to develop
+a legitimate story about what non-Python API services look like in an OpenStack
+context. However, our community, its ability to collaborate effectively, our
+Operators and our End Users are all more important than any individual's
+personal preferences. Accordingly, our exploration of new options
+must be done in the context of our existing users and projects. We already
+have risen to an exceptionally difficult challenge of balancing stable
+releases AND continuous delivery as equally important deliery vehicles. We
+cannot accept new service languges into the fold until both delivery use cases
+have compelling stories, else we risk regressing on the progress we've made in
+this space so far.
+
+We have a lot of work to do, but we can do it if we work together. I'd like to
+continue helping, and will do everything I can to ensure that we succeed.
