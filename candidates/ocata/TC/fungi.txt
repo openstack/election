@@ -1,0 +1,69 @@
+Most of you probably know me as "that short dude in the Hawaiian
+shirt and long hair." I'll answer to "Jeremy," "fungi" or even just
+"hey you." I'm starting my third cycle as PTL of the Infrastructure
+team, and have been a core reviewer and root sysadmin for
+OpenStack's community-maintained project infrastructure for the past
+four years. I've also been doing vulnerability management in
+OpenStack for almost as long, chaired conference tracks, and given
+talks to other communities on a variety of OpenStack-related topics.
+I help with elections, attend and participate in TC meetings and
+review proposed changes to governance. I have consistent, strong
+views in favor of free software and open/transparent community
+process.
+
+    https://wiki.openstack.org/user:fungi
+
+I see OpenStack not as software, but as a community of people who
+come together to build something for the common good. We've been
+fortunate enough to experience a bubble of corporate interest which
+has provided amazing initial momentum in the form of able software
+developers and generous funding, but that can't last forever. As
+time goes on, we will need to rely increasingly on effort from
+people who contribute to OpenStack because it interests them, rather
+than because some company is paying them to do so. The way I see it,
+we should be preparing now for the future of our project:
+independent, volunteer contributors drawn from the global free
+software community. However, we're not succeeding in attracting them
+the way some other projects do, which brings me to a major
+concern...
+
+OpenStack has a public relations problem we need to solve, and soon.
+I know I'm not the only one who struggles to convince contributors
+in other communities that we're really like them, writing free
+software under transparent processes open to any who wish to help.
+This skepticism comes from many sources, some overt (like our
+massive trade conferences and marketing budget) while others
+seemingly inconsequential (such as our constant influx of new
+community members who are unfamiliar with free software concepts and
+lack traditional netiquette). Overcoming this not-really-free
+perception is something we absolutely must do to be able to attract
+the unaffiliated volunteers who will continue to maintain OpenStack
+through the eventual loss of our current benefactors and well into
+stabilization.
+
+Prior to OpenStack, I worked for longer than I care to remember as
+an "operator" at Internet service, hosting and telecommunications
+providers doing Unix systems administration, network engineering,
+virtualization and information security. When I first started my
+career, you couldn't be a capable systems administrator without a
+firm grasp of programming fundamentals and couldn't be a good
+programmer without understanding the basics of systems
+administration. I'm relieved that, after many years of companies
+trying to tell us otherwise, our industry as a whole is finally
+coming back around to the same realization. Similarly, I don't
+believe we as a community benefit by socializing a separation of
+"operators" from "developers" and feel the role distinction many
+attempt to strike between the two is at best vague, while at its
+worst completely alienating a potential source of current and future
+contributions.
+
+What causes software to succeed in the long run is not hype,
+limitless funding or even technical superiority, it's the size and
+connectedness of its community of volunteers and users who invest
+themselves and their personal time. The work we're doing now is
+great, don't get me wrong, but for it to survive into the next
+decade and beyond we need to focus more on building a close-knit
+community of interested contributors even if it's not in the best
+interests of industry pundits or vendor product roadmaps.
+
+OpenStack is people. If we lose sight of that, it's over.
