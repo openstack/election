@@ -30,37 +30,6 @@ def render_template(template, data, **kwargs):
     return template.render(data)
 
 
-def build_candidates_list(election=utils.SERIES_NAME):
-    project_list = os.listdir(os.path.join(utils.CANDIDATE_PATH, election))
-    project_list.sort()
-    candidates_lists = {}
-    for project in project_list:
-        project_prefix = os.path.join(utils.CANDIDATE_PATH, election, project)
-        file_list = filter(
-            lambda x: x.endswith(".txt"),
-            os.listdir(unicode(project_prefix)),
-        )
-        candidates_list = []
-        for candidate_file in file_list:
-            filepath = os.path.join(project_prefix, candidate_file)
-            candidates_list.append(
-                {
-                    'url': ('%s/%s/plain/%s' %
-                            (utils.CGIT_URL, utils.ELECTION_REPO,
-                             urllib.quote_plus(filepath, safe='/'))),
-                    'ircname': candidate_file[:-4].replace('`', r'\`'),
-                    'email': utils.get_email(filepath),
-                    'fullname': utils.get_fullname(filepath)
-                })
-
-        candidates_list.sort(key=lambda x: x['fullname'])
-        candidates_lists[project] = candidates_list
-
-    return {'election': election,
-            'projects': project_list,
-            'candidates': candidates_lists}
-
-
 def render_list(list_type, candidates_list):
     output_file = os.path.join(utils.CANDIDATE_PATH, "%s.rst" % list_type)
     template_name = "%s.jinja" % list_type
@@ -76,7 +45,7 @@ def render_list(list_type, candidates_list):
 
 
 def build_lists(app):
-    candidates_list = build_candidates_list()
+    candidates_list = utils.build_candidates_list()
     render_list("ptl", candidates_list)
     render_list("tc", candidates_list)
 
