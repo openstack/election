@@ -1,0 +1,42 @@
+I would like to announce my candidacy for a position on the Technical
+Committee.
+
+I work for Dell EMC with over a decade in storage and software development. I
+have been involved in OpenStack since the Icehouse cycle and have served as the
+Cinder PTL since the Mitaka release.
+
+I think it's important to have active PTLs on the TC. TC decisions need to be
+grounded in the reality of day to day project development. I think it will also
+be good for me as a PTL to be forced to take a wider view of things across the
+whole ecosystem.
+
+I think outreach and education is important to spread interest in OpenStack and
+provide awareness to reach new people. I've spoken at several Summits, as well
+as OpenStack Days events and (more pertinent to Cinder) at Storage Network
+Industry Association (SNIA) events.
+
+I think it's important to get feedback from actual operators and end users. I
+have tried to reach out to these users as well as attend the Ops Midcycle in
+order to close that feedback loop.
+
+I would continue to work towards these things and bring that feedback to the
+TC - making sure the decisions we make have the end user in mind.
+
+Another goal for me is simplicity. With the Big Tent, more interacting,
+projects, and lot's of competing interests, things have gotten much more
+complicated over the last several releases.
+
+I say this while acknowledging within Cinder - while I have been PTL - a lot of
+complexity has been added. In most cases there are very valid reasons for these
+changes. So even with a desire to make things as simple as possible, I consider
+myself a pragmatist and recognize that complexity is sometimes unavoidable in
+order to move forward. But one thing I would try to focus on as a TC member
+would be to reduce complexity anywhere it's possible and where it makes sense.
+
+It would be an honor to serve as a member of the TC and help do whatever I can
+to help the community continue to succeed and grow.
+
+Thank you for your consideration.
+
+Sean McGinnis (smcginnis)
+
