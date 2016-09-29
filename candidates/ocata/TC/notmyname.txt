@@ -1,0 +1,55 @@
+I am throwing my hat into the ring for the TC election.
+
+I've been a part of OpenStack since it started. I've seen it grow from
+a few dozen people into the very large community we have today. During
+the past 6 years, I've seen controversial topics come and go and the
+community grow and adapt. I've also seen OpenStack respond in knee-
+jerk fashion to new ideas that challenge the status quo.
+
+I am concerned that there is a current focus on preserving the status
+quo. There's focus on policies and rules instead of use cases; there's
+focus on conformity instead of innovation; there's focus on forced
+prioritization instead of inclusivity.
+
+The primary things OpenStack should be focused on are increased
+adoption today and continued relevance in the next five years.
+
+We have a lovely community today, and we attract thousands to our
+semi-annual conference. I love seeing companies, big and small, come
+share their stories of how they're using OpenStack. It's great to hear
+from them over time and see how their use of OpenStack changes and
+grows. However, I'm concerned that we keep seeing mostly the same
+people, the same companies, and the same sponsors show up to each
+event. I'm concerned that, outside of our community bubble, OpenStack
+is still largely unknown and little-used. In order to increase
+adoption, the TC must look at the use cases we are serving. We must
+realize where we are falling short in solving for current use cases,
+and we must encourage growth in new use cases which we don't yet
+support. To better-solve current use cases, I would like to see more
+emphasis on SDK development (across many languages) and the creation
+of governance tags identifying projects that are independently
+deployable for specific use cases. To encourage solving more use cases
+within OpenStack, I would like to see less requirements placed on new
+projects and more clear communication about the various ways new
+projects can join OpenStack.
+
+In order to stay relevant in the technical world, the OpenStack TC
+must figure out how the community itself can foster new ideas and grow
+them within OpenStack. We should not ask new projects to split into
+OpenStack and non-OpenStack pieces before joining. We should not ask
+existing OpenStack contributors to go elsewhere to develop their
+ideas. We must inclusively welcome new contributors, new projects, and
+new ideas. Sometimes these new ideas require significant effort to
+adopt, but I will encourage the TC to take on the challenge.
+
+If I am elected to the TC, I will look at every decision in the light
+of these two needs. I will not focus on codifying rules, and I will
+not focus on keeping OpenStack small and homogeneous. I will do what I
+can to help the OpenStack community increase adoption today and remain
+relevant as the industry changes.
+
+I appreciate your vote for me to the TC in this election.
+
+--John
+
+notmyname on IRC
