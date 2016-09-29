@@ -1,0 +1,73 @@
+I’d like to also toss my name into the ring. I’m announcing my candidacy for a
+position on the OpenStack Technical Committee.
+
+-- About me
+I have served as the Keystone PTL for the Mitaka and Newton cycles, and will
+again serve as the PTL for the Ocata cycle. I’ve also contributed heavily to
+python-openstackclient in it’s early days, where I am remain an active
+core-reviewer. I am also a core member in a few Oslo projects (oslo.cache and
+oslo.policy) and OpenStackClient projects (os-client-config and cliff). I’ve
+contributed reviews and patches to many repos over my time -- ranging from
+devstack, infra, python-*client, openstack-manuals, you name it!
+
+I’ve been contributing to OpenStack since early 2013, as part of a small group
+of IBMers dedicated to working entirely upstream. I can happily say that I
+continue this same role today. Most of my work on OpenStack has been focused
+on making Keystone and OpenStack more enterprise ready while trying to improve
+usability and manageability of OpenStack.
+
+-- Bracing for the Big Crunch
+The explosive growth that occurred as a result of the Big Tent was expected and
+phenomenal. I believe the decision brought great innovation, accelerated
+adoption at a time when it was needed, and allowed competing projects to
+co-exist. A natural reaction to such growth is unfortunately, a leveling off or
+contraction phase. We already saw hints of this in the last round of PTL
+elections [1] . I believe this trend will continue. This is OK and completely
+natural, the strongest projects will continue to survive. We have seen this
+pattern in many other technologies. The TC should be prepared for this
+eventuality, and set minimum standards that projects should meet (not unlike
+what is proposed by the OpenStack-wide goals).
+
+-- Organizing the Big Tent
+The big tent lumped all the projects together in an unorganized way, take a
+quick look at the list [2]. I believe this has been a large source of confusion
+to the end consumer. There are projects that a consumer would never deploy
+(docs, infra, etc), there are projects that a consumer will use one of
+(openstack-ansible, puppet, chef, etc), these logical groupings go on. We don't
+provide enough guidance on which sets of projects are good groupings to
+consider using together. It is critical for the OpenStack community to reduce
+the adoption pains experienced by our consumers. Everything can live in the
+big tent, but let’s make the big tent a bit more organized.
+
+-- Let’s get Opinionated
+I also believe OpenStack needs to be a bit more opinionated. We have a bad
+habit of trying to please everyone, and I’d like for that to stop. We’ll end up
+pleasing nobody at all. We don’t need more optional features, we need to pay
+down technical debt. We need to focus on OpenStack-wide goals that create a
+more consistent project that is focused and more consumable; improving the
+quality of OpenStack as a whole. This is something I will be enforcing in the
+Ocata cycle for Keystone, and I encourage others to do the same.
+
+-- Creating OpenStack-wide goals
+OpenStack is mature, it’s now 6 years old. It’s (past?) time we tackle the hard
+issues at an OpenStack-wide level. I'd like to see the TC focus on goals that
+not only increase adoption of OpenStack but also make OpenStack easier to
+manage and help to improve our ability to have new consumers of OpenStack stick
+with OpenStack. I believe the key to this success is to work closely with our
+operator friends. Having the Project Team Gathering (PTG) [3] will help get the
+right folks in the room to talk about the important issues.
+
+Working on OpenStack has brought me a great deal of fun and joy. I look forward
+to working on OpenStack in any capacity and would be honored to be on the TC.
+
+Thanks for reading,
+Steve
+
+Stackalytics: http://stackalytics.com/?user_id=stevemar
+Foundation Profile: https://www.openstack.org/community/members/profile/8430
+Freenode: stevemar
+Twitter: https://twitter.com/stevebot
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2016-September/104170.html
+[1] https://governance.openstack.org/reference/projects/index.html
+[2] https://www.openstack.org/ptg/
