@@ -1,0 +1,77 @@
+My Peers,
+
+I am self-nominating for serving you as your technical committee
+representative.
+
+I won't bore you with my professional accomplishments.  If you want to
+see such information to judge if I'm qualified for serving you on the
+technical committee team, that information is available in my
+foundation profile linked at the bottom of this self-nomination or
+on LinkedIn.
+
+I'll get straight to the point instead.
+
+I believe in OpenStack's mission.  I believe in the OpenStack way.
+I believe in the Four Opens.  I believe in the OpenStack principles.
+I believe in OpenStack itself.  I believe Open Source has changed the
+world of computing in a fundamentally more effective way.  Most
+importantly, I believe the diversity of opinions and teams in our
+community are what make OpenStack special.  I'm a believer.
+
+I think the TC has done a reasonable job of managing OpenStack's
+tremendous technical growth.  If you want a history lesson from my
+point of view on why OpenStack is the way it is today, please
+reference my Newton technical committee self-nomination [1].
+
+The Big Tent needs some fine tuning, and the technical committee is
+working to make that occur.  Fine tuning to me doesn't mean we need to
+overthrow years of progress because some folks perceive OpenStack as
+having an identity crisis.  I also don't believe defending the status
+quo represents fine tuning.  Fine tuning to me means making incremental
+improvements to the state of the art.
+
+This is how we develop software in OpenStack after a community around
+the software has been bootstrapped.
+
+Let's face reality for a moment.  OpenStack does have some problems.
+They all stem from various choices made along the OpenStack journey.
+
+There are five types of consumers of OpenStack's software:
+
+application developers of the operator's clouds
+consumers of the operator's clouds
+infrastructure developers of the OpenStack software
+operators operating clouds produced by the developers of the OpenStack software
+OpenStack distributors
+
+This problem so far has gone unacknowledged.  The problem to be
+solved with OpenStack is ensuring the above five types of consumers
+of OpenStack's software are served fairly, equally, with respect,
+and most importantly effectively.  These are the individuals our
+community represents.  This is an extremely difficult problem to solve.
+
+Can it be solved alone by any individual?  NO.
+Can in be solved by the technical committee?  NO.
+Can it be solved by the technical committee and various other working
+groups involved in making OpenStack tick?  NO.
+Can it be solved by our community of developers, core reviewers,
+project team leads, technical committee team, operators,
+working groups, OpenStack distributors working in concert?  I am hopeful.
+
+I am a tenacious problem solver.  If you make a choice to select me as
+your technical committee representative, I will dedicate myself to
+working with the technical committee to facilitate a solution to this
+problem just as I have done in other leadership service roles inside
+the OpenStack community.
+
+While working to solve this problem, I will keep driving OpenStack
+forward to the horizon with the help of your vote and the technical
+committee.
+
+Freenode: sdake
+Review history: https://review.openstack.org/#/q/reviewer:2834,n,z
+Commit history: https://review.openstack.org/#/q/owner:2834,n,z
+Stackalytics: http://stackalytics.com/?user_id=sdake&release=all
+Foundation Profile: https://www.openstack.org/community/members/profile/360
+Website: https://sdake.io
+[1] http://git.openstack.org/cgit/openstack/election/tree/candidates/mitaka/TC/Steven_Dake.txt
