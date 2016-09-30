@@ -1,0 +1,32 @@
+I am standing as a candidate for a seat on the OpenStack Technical
+Committee.
+
+I have worked with OpenStack since the Diablo days and have done it
+full time since joining the OpenStack Infrastructure team during the
+Folsom cycle. During this time I have been an OpenStack developer,
+operator, and user.
+
+During the Newton cycle the TC began to work on community wide goals.
+I agree with Doug and others that this is a very important step for the
+TC and OpenStack to take. We should be able to collaborate on and
+solve large scale issues that affect our community.
+
+That said, I recognize that at the end of the day someone has to be
+making these changes. I have previously been involved in many community
+wide changes including parallelized unittesting, ElasticSearch and
+elastic-recheck, multinode testing, and most recently running our tests
+with TLS enabled. I know how difficult changes like this can be. Getting
+the critical mass of interest needed for reviews to happen and debugging
+when things go wrong can be very difficult. If I am elected to the TC my
+mission will be to ensure these goals get the visibility required to be
+successful, and that we actually work together to achieve these goals as
+a community.
+
+As an individual one of the best things about OpenStack for me is that
+I get to develop and use Free Software that solves real world problems
+for both myself and others. I think the best way for us to continue to
+do this is by working together to solve the hard technical problems we
+face. Let's make it happen.
+
+Thank you,
+Clark
