@@ -1,0 +1,72 @@
+Hey Everyone,
+
+I'd like to announce my candidacy for a seat on the OpenStack Technical
+comittee.
+
+Some of you may know me, I've been around the OpenStack community for a while
+(longer than some, shorter than others).  I'm not an "uber hipster", or a
+"super cool bro-grammer", or even a "mega hacker" trying to write the most
+clever code possible to impress everyone.
+
+I am however someone that has been contributing to OpenStack for about five
+years now.  Not only via code contributions, but services, support and
+evangelism.  I started the Cinder project with some great help from a few
+other folks and did the best I could with that while forging ahead into
+unknown territory.  I use OpenStack on a daily basis in a number of private
+clouds, have helped several average sized companies deploy and maintain
+OpenStack clouds and have spent countless hours helping people get their
+heads wrapped around the whole OpenStack Platform thing and how it might be
+able solve some of their problems.
+
+I'm not going to try and claim that I have all the answers related to
+OpenStack and the TC, in fact, I'm not even going to pretend to know what all
+the questions are.  I'm not going to tell you what a great person I am, or all
+of my "great achievements" over the years.  As we all know, people can write
+up whatever wonderful things.  People can say or write up just about anything
+and promise the world without really having any idea what they're talking about.
+
+What I will say however, is that I believe OpenStack has changed dramatically
+over the last few years.  Some things for the better, some things... not so
+much.  While I think the past is extremely important for the experience it
+gives, I think what's more important and critical is the future and where
+OpenStack is going over the course of the next few years.
+
+OpenStack is a bit ambiguous for a lot of people that I talk to (both inside
+and outside of the community).  Even more unclear is what do we want to be in
+another two years, three or even five?  Do we want to just continue being a
+platform that kinda looks like AWS or a "free" version of VMware?  Do we want
+our most popular topic at the key-notes to continue being customers telling
+their story of "how hard" it was to do OpenStack?
+
+I think we're at an important cross-roads with respect to the future of
+OpenStack.  It's my belief that the TC has a great opportunity (with the
+right people) to take input from the "outside world" and drive a meaningful
+and innovative future for OpenStack.  Maybe try and dampen the echo-chamber
+a bit, see if we can identify some real problems that we can help real
+customers solve.
+
+I'd like to see us embracing new technologies and ways of doing things.  I'd
+love to have a process where we don't care so much about the check boxes of
+what oslo libs you do or don't use in a project, or how well you follow the
+hacking rules; but instead does your project actually work?  Can it actually
+be deployed by somebody outside of the OpenStack community or with minimal
+OpenStack experience?
+
+It's my belief that Projects should offer real value as stand-alone services
+just as well as they do working with other OpenStack services.  I should be
+able to use them equally as well outside the eco-system as in side of it.
+I believe the TC should consider driving issues like these and help guide the
+future of OpenStack.
+
+If you like my philosophy (really that's all it is), or agree with it; I'd
+love the opportunity to try and make some of this a reality.  I can't promise
+anything, except that I'll try to do what I believe is good for the community
+(especially deployers and end-users).
+
+Feel free to ask me about my thoughts on anything specific, I'm happy to
+answer any questions that I can as honestly as I can.
+
+Thanks,
+John
+
+
