@@ -1,0 +1,51 @@
+Greetings,
+
+I've been working on OpenStack for over 5 years (since the Diablo release!); in
+that time, I have served multiple terms as the PTL for Keystone, which included
+a seat on the Technical Committee, and remain a core contributor, stable/*
+branch reviewer, and on our core-sec (security) group. I'd be honored to return
+to serve our community on the OpenStack Technical Committee.
+
+My primary goals in all my OpenStack-related pursuits are to help other
+contributors, and improve the lives of our operators and end users.
+
+In pursuit of that goal, I've performed thousands of code reviews, personally
+mentored dozens of new contributors that have gone on to do truly great things
+in our community, contributed lots of documentation for developers, operators,
+and end users, and I've done my best to consistently raise the bar for the
+OpenStack community wherever I can.
+
+While I've always worked upstream and purely open source, I'm currently serving
+as a technical leader within the OpenStack Innovation Center (OSIC), a joint
+partnership between Rackspace and Intel aimed at driving enterprise adoption of
+OpenStack, for both identity and, more recently, upgrades across all projects.
+
+Upgrading OpenStack across major releases has historically proven to be one of
+the most difficult challenges in operating both public and private clouds. As a
+community, we've made a lot of progress over the years to make upgrading
+faster, more predictable, and more reliable with projects like reno,
+oslo.versionutils, oslo.config, alembic, oslo.versionedobjects, and grenade. So
+if you're one of the three or four deployers on the last user survey [1] that
+still has an Essex deployment hiding in the closet, then I trust that your next
+attempt at an upgrade should fare much better!
+
+That said, I believe the next major step at improving the upgrade process for
+operators and end users is in reducing, and ultimately eliminating, downtime
+during upgrades. As a member of the TC, I intend to push us closer to achieving
+rolling upgrades in every service with zero-downtime, and get us as close as
+possible to upgrades having zero negative impact on end users.
+
+Finally, I'd like to share a reminder that I give to every new contributor:
+OpenStack is not just code; it's a community. The Technical Committee therefore
+serves to provide governance and leadership within that community, and it's in
+all of our best interests for our TC members to take that to heart.
+
+-Dolph (dolphm)
+
+Stackalytics: http://stackalytics.com/?user_id=dolph&release=all
+Gerrit: https://review.openstack.org/#/q/owner:4
+Foundation Profile: https://www.openstack.org/community/members/profile/63
+Freenode: dolphm
+Twitter: https://twitter.com/dolphm
+
+[1] http://www.openstack.org/assets/survey/April-2016-User-Survey-Report.pdf
