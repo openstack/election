@@ -1,0 +1,53 @@
+Let's make OpenStack great again.
+
+If you don't know me, I'm very good. The code and designs I make
+are tremendous, and I intend to contribute to the TC bigly. The other
+candidates are sad, and they want OpenStack to be a third world project,
+no good.
+
+OpenStack, could be the greatest cloud in the history of clouds, but to
+get there, you need me, to make sure our clouds are the greatest. We
+need to test the clouds, I'm talking about EXTREME cloud vetting,
+EXTREME cloud vetting. You know the other TC's are laughing at us,
+because we don't have such a great TC.
+
+The biggest problem we have is people rewriting parts of OpenStack in Go.
+They're bringing threads, they're compiled, with errors handled at the
+point of return, and some of them, I assume, are good programmers. So
+when I'm elected to the TC, I will build a wall, and make Go pay for it.
+
+...
+
+Ok if you're still reading and you don't take things too seriously,
+then hello. I'm Clint Byrum, known as "SpamapS" on IRC, and I want to
+serve you on the OpenStack Technical Committee. You may recognize me
+from various scalability and deployment discussions.
+
+OpenStack has a number of challenges that face it in the immediate. There
+is a crisis of identity that we're only just now wrapping our arms
+around, and a question about whether or not this should be something
+decided at a centralized level by the TC or not. Are we a toobox? Are
+we a product? Can we be both?  These are real things, and the TC should
+debate them. However, I don't think the TC should force the community to
+do anything it doesn't want to do as a whole. If the community really
+wants to end the big tent, we should listen, inform, and debate, and
+decide whether or not we think it is in the best interest to do so based
+on our own expertise, the experience thus far, and a plan to go forward.
+
+It is my personal belief that the big tent has largely been a success
+for OpenStack project teams, but created a problem of confusion that we
+should resolve. The recent efforts to more clearly define OpenStack have
+been positive, and I would like to help the TC continue down that road.
+
+In fact, I have recently started an Architecture Working Group to help
+define and shape what OpenStack is at a technical design level. Whether
+pieces have been evolved apart from one another, or specifically designed
+and built to spec, OpenStack hasn't done a good job of writing some
+of those things down. I believe the Architecture Working Group will
+be capable of improving that, and I want the TC to have some of that
+influence built in.
+
+So, if you want to see more design, consensus building, and an eye for
+scaling on the TC, then please consider casting a vote for me.
+
+Thank you.
