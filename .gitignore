@@ -14,3 +14,5 @@ candidates/events.rst
 .projects*yaml
 .projects*.pkl
 .testrepository
+doc/source/archive_toc.rst
+doc/source/*/*.rst

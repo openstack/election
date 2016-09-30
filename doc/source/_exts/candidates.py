@@ -15,6 +15,7 @@
 
 import os
 import urllib
+import yaml
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
@@ -44,10 +45,53 @@ def render_list(list_type, candidates_list):
         )
 
 
+def build_archive(serie, list_type):
+    db_file = os.path.join(".", "doc", "source", serie, "%s.yaml" % list_type)
+    if not os.path.isfile(db_file):
+        return
+    db = yaml.safe_load(open(db_file))
+    # Check for appointed or incumbent footnote
+    db['tags'] = {}
+    for project in db['projects']:
+        for candidate in db['candidates'][project]:
+            if candidate['elected'] == 'TC-APPOINTED':
+                db['tags']['TC-APPOINTED'] = True
+            elif candidate['elected'] == 'INCUMBENT-PTL':
+                db['tags']['INCUMBENT-PTL'] = True
+    output = os.path.join(".", "doc", "source", serie, "%s.rst" % list_type)
+    template_name = "%s_archive.jinja" % list_type
+    template_dir = os.path.join(".", "doc", "source", "_exts")
+    with open(output, "w") as out:
+        out.write(
+            render_template(
+                template_name,
+                db,
+                template_dir=template_dir
+            ).encode('utf-8')
+        )
+    return True
+
+
 def build_lists(app):
+    # Current candidates
     candidates_list = utils.build_candidates_list()
     render_list("ptl", candidates_list)
     render_list("tc", candidates_list)
+
+    # Archived elections
+    previous_toc = [
+        ".. toctree::",
+        "    :maxdepth: 1",
+        "    :titlesonly:",
+        ""
+    ]
+    for previous in utils.PAST_ELECTIONS:
+        if build_archive(previous, "ptl"):
+            previous_toc.append("    %s/ptl.rst" % previous)
+        if build_archive(previous, "tc"):
+            previous_toc.append("    %s/tc.rst" % previous)
+    toc = os.path.join(".", "doc", "source", "archive_toc.rst")
+    open(toc, "w").write("\n".join(previous_toc))
 
 
 def setup(app):

@@ -1,0 +1,16 @@
+======================
+{{ election.capitalize() }} elected TC members
+======================
+{% for candidate in candidates['TC'] %}{% if candidate['elected'] %}
+* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
+{% endif %}{% endfor %}
+
+Results
+-------
+* `TC <{{ elections_results['TC'] }}>`_
+
+{{ election.capitalize() }} TC Candidates
+======================
+{% for candidate in candidates['TC'] %}
+* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
+{% endfor %}
