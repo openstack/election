@@ -1,0 +1,47 @@
+
+I'd like to throw my hat in the ring for the TC election.
+
+My name is Ben Swartzlander (bswartz on IRC) and I've been PTL for the Manila
+project for the entire life of the project. I'm also relatively active within
+the Cinder project, and I've been part of the OpenStack community since Essex.
+
+My reasons for running for TC are fairly simple. There are some changes I'd
+like to see and I think that I'll have more ability to effect change if I'm
+part of the TC.
+
+The first thing I'd like to change is that I'd like to see OpenStack start
+acting more mature. It *is* fairly mature now but in many ways we still have
+the habits of a shiny new project. I would like to see way less time spent on
+new features and much more time spent on stability and quality improvements.
+
+Specifically I'd like to see dramatically more automated testing of stuff we
+already have. Not gate tests that run for every checkin but serious automated
+nightly regression style tests that actually cover realistic use cases and
+take several hours to run.
+
+I would like to see more frequent releases. I hold up the Linux (kernel)
+project as an example to emulate. Linux releases a new major release about
+every 2 months. OpenStack has held to a 6 month release cycle for it's whole
+life but I think we can and should move to shorter cycles. In a similar vein
+I think serious effort needs to be spend on LTS (long term support) --
+specifically the ability to upgrade across multiple releases without anything
+breaking. The deprecation policy needs to change if we want to get this right.
+
+I would like to see fewer new projects and more focus on existing projects and
+possible integration between them. Long ago it was decided that OpenStack
+should be a loose federation of related projects but many feel that OpenStack
+should be a unified product. This has created a cognitive dissonance that
+pervades nearly every discussion I have about architectural decisions within
+OpenStack and I feel the TC owes this topic more consideration. If we decide
+we're all working on a single product then we need to change the way we act.
+If we affirm that we really are just working on a bunch of loosely related
+things then we need to disband working groups/and cross-cutting projects that
+are trying to push for uniformity.
+
+Lastly I feel strongly about community and the Python language. I am not a
+language zealot but I know from experience that adding more programming
+languages to an existing project is ALWAYS WRONG and I will fight any proposal
+to add more programming languages to OpenStack.
+
+I don't expect everyone to agree with my ideas but if enough of you do, vote
+me onto the TC and I'll do my best to gradually change things for the better.
