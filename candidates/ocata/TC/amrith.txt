@@ -1,0 +1,58 @@
+I would like to announce my candidacy for election to the OpenStack
+Technical Committee.
+
+By way of introduction, I am[1] a relatively recent arrival to
+OpenStack; I've been working on Trove since just before Icehouse. I
+was the PTL of the project for the Newton cycle, and was recently
+elected to a second term as the PTL for the Ocata cycle. I am also
+active in the Stewardship Working Group (SWG)[2].
+
+I believe that a place on the TC is an opportunity to serve the
+OpenStack community. An important aspect of leadership is something
+called 'servant leadership', the notion that leaders are there to
+serve the rest of their constituents. This is also a concept central
+to the SWG which I am a part of. If elected to the TC, it would be my
+privilege to serve all of you.
+
+What does that mean?
+
+The charter of the OpenStack Technical Committee[3] charges the TC
+with providing 'technical leadership'.
+
+There are however a number of questions that must be answered such as
+"What is OpenStack", and I submit to you that these are not
+necessarily just 'technical'. The TC has been spending a lot of time
+trying to answer some of these.
+
+Some of this makes total sense, but then there are are questions about
+what 'maturity' is, and who an 'active reviewer' is. The TC has been
+spending an inordinate of time trying to decide what metrics or
+attributes of a contributor it can measure, and then proceeding to
+define activity and maturity in terms of those things.
+
+I submit to you that these latter things are a huge distraction.
+
+In the process, I believe that there are significant 'technical'
+issues that have paid the penalty, for example the notion of cross
+project goals (series goals [4]), one that I strongly believe are
+meaningful and within the scope of the TC.
+
+If elected to the TC, I would like to use my position to urge the TC
+to spend more time on the important things like "How do we make
+OpenStack better for users", and "How can we make a cross-project goal
+for python3 work", and less of its time on the distractions that have
+been numerous of late.
+
+In a nutshell, I'd like to put more of the "technical" back into the
+"Technical Committee", and re-focus it on serving the OpenStack
+community, the very essence of Stewardship.
+
+Thank you for your reading, and I appreciate your support, and giving
+me the opportunity to SERVE YOU on the Technical Committee.
+
+-amrith
+
+[1] http://www.openstack.org/community/members/profile/15733
+[2] https://governance.openstack.org/resolutions/20160705-stewardship.html
+[3] https://governance.openstack.org/reference/charter.html
+[4] https://review.openstack.org/#/c/349068/
