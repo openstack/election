@@ -14,7 +14,6 @@
 """
 
 import os
-import urllib
 import yaml
 
 from jinja2 import FileSystemLoader
