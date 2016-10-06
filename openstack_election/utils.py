@@ -19,12 +19,12 @@ import json
 import os
 import pickle
 import pytz
+import re
 import requests
 import subprocess
 import time
 import urllib
 import yaml
-import re
 
 # Per election constants
 
