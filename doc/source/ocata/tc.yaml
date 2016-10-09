@@ -1,0 +1,112 @@
+candidates:
+  TC:
+  - elected: false
+    email: amrith@tesora.com
+    fullname: Amrith Kumar
+    ircname: amrith
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/amrith.txt
+  - elected: false
+    email: anteaya@anteaya.info
+    fullname: Anita Kuno
+    ircname: anteaya
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/anteaya.txt
+  - elected: false
+    email: ben@swartzlander.org
+    fullname: Ben Swartzlander
+    ircname: bswartz
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/bswartz.txt
+  - elected: false
+    email: cdent@anticdent.org
+    fullname: Chris Dent
+    ircname: cdent
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/cdent.txt
+  - elected: false
+    email: clark.boylan@gmail.com
+    fullname: Clark Boylan
+    ircname: clarkb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/clarkb.txt
+  - elected: false
+    email: clint@fewbar.com
+    fullname: Clint 'SpamapS' Byrum
+    ircname: SpamapS
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/SpamapS.txt
+  - elected: false
+    email: dolph.mathews@gmail.com
+    fullname: Dolph Mathews
+    ircname: dolphm
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/dolphm.txt
+  - elected: true
+    email: doug@doughellmann.com
+    fullname: Doug Hellmann
+    ircname: dhellmann
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/dhellmann.txt
+  - elected: false
+    email: ed@leafe.com
+    fullname: Ed Leafe
+    ircname: edleafe
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/edleafe.txt
+  - elected: True
+    email: emilien@redhat.com
+    fullname: Emilien Macchi
+    ircname: emilienm
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/emilienm.txt
+  - elected: True
+    email: fungi@yuggoth.org
+    fullname: Jeremy Stanley
+    ircname: fungi
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/fungi.txt
+  - elected: false
+    email: jim@jimrollenhagen.com
+    fullname: Jim Rollenhagen
+    ircname: jroll
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/jroll.txt
+  - elected: false
+    email: john.davidge@rackspace.com
+    fullname: John Davidge
+    ircname: john-davidge
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/john-davidge.txt
+  - elected: false
+    email: me@not.mn
+    fullname: John Dickinson
+    ircname: notmyname
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/notmyname.txt
+  - elected: false
+    email: john.griffith8@gmail.com
+    fullname: John Griffith
+    ircname: jgriffith
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/jgriffith.txt
+  - elected: false
+    email: jxharlow@godaddy.com
+    fullname: Joshua Harlow
+    ircname: harlowja
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/harlowja.txt
+  - elected: True
+    email: mordred@inaugust.com
+    fullname: Monty Taylor
+    ircname: mordred
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/mordred.txt
+  - elected: True
+    email: sean@dague.net
+    fullname: Sean Dague
+    ircname: sdague
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/sdague.txt
+  - elected: false
+    email: sean_mcginnis@dell.com
+    fullname: Sean McGinnis
+    ircname: smcginnis
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/smcginnis.txt
+  - elected: True
+    email: s.martinelli@gmail.com
+    fullname: Steve Martinelli
+    ircname: stevemar
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/stevemar.txt
+  - elected: false
+    email: stdake@cisco.com
+    fullname: Steven Dake
+    ircname: sdake
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/TC/sdake.txt
+election: ocata
+elections_results:
+  TC: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_356e6c1b16904010
+projects:
+- TC
