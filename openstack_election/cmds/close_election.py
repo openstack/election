@@ -87,7 +87,7 @@ def main():
     args.outputdir = os.path.expanduser(args.outputdir)
 
     if not os.path.isdir(args.outputdir):
-        os.mkdir(args.outputdir, 0755)
+        os.mkdir(args.outputdir, 0o755)
 
     db_file = os.path.join(args.outputdir, "%s.yaml" % args.round)
 

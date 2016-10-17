@@ -13,19 +13,18 @@
 """Build candidates list
 """
 
+import jinja2
+import jinja2.environment
 import os
 import yaml
-
-from jinja2 import FileSystemLoader
-from jinja2.environment import Environment
 
 from openstack_election import utils
 
 
 def render_template(template, data, **kwargs):
     template_dir = kwargs.get('template_dir', os.getcwd())
-    loader = FileSystemLoader(template_dir)
-    env = Environment(trim_blocks=True, loader=loader)
+    loader = jinja2.FileSystemLoader(template_dir)
+    env = jinja2.environment.Environment(trim_blocks=True, loader=loader)
     template = env.get_template(template)
     return template.render(data)
 

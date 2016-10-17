@@ -22,13 +22,12 @@ import openstack_election.utils
 class TestGerritUtils(testtools.TestCase):
     def test_candidate_files(self):
         review = {'revisions': {
-                    'Ifake': {
-                        'files': {
-                            'some/file': {},
-                            'candidates/some/file': {}}
-                        }
-                    }
-                  }
+                  'Ifake': {
+                      'files': {
+                          'some/file': {},
+                          'candidates/some/file': {}}
+                      }
+                  }}
 
         self.assertEqual(openstack_election.utils.candidate_files(review),
                          ['candidates/some/file'])

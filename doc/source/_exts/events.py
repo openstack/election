@@ -13,12 +13,11 @@
 """Add election timer data
 """
 
-import os
 import calendar
+import jinja2
+import jinja2.environment
+import os
 import time
-
-from jinja2 import FileSystemLoader
-from jinja2.environment import Environment
 
 from openstack_election import utils
 
@@ -46,8 +45,8 @@ def build_timer(app):
     output_file = os.path.join(utils.CANDIDATE_PATH, "events.rst")
     with open(output_file, "w") as out:
         template_dir = os.path.join(".", "doc", "source", "_exts")
-        loader = FileSystemLoader(template_dir)
-        env = Environment(trim_blocks=True, loader=loader)
+        loader = jinja2.FileSystemLoader(template_dir)
+        env = jinja2.environment.Environment(trim_blocks=True, loader=loader)
         template = env.get_template("events.jinja")
         out.write(template.render({'events': utils.conf['timelines']}))
 
