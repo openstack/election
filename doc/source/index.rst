@@ -32,7 +32,7 @@ Election Officials
 * Nate Johnston (njohnston), openstacknate at gmail dot com
 
 For any questions, please contact officials by mail or over irc at
-#openstack-election Freenode channel.
+#openstack-dev Freenode channel.
 
 
 .. _Election system:
