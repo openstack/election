@@ -5,7 +5,7 @@
     <script>
         var events_timeline = [
             {% for event in events %}
-                { start: "{{ event['start'] }}", end: "{{ event['end'] }}", name: "{{ event['name'] }}" },
+                { start: "{{ event['start_iso'] }}", end: "{{ event['end_iso'] }}", name: "{{ event['name'] }}" },
             {% endfor %}
         ];
     </script>

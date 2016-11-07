@@ -31,6 +31,7 @@ def check_candidate(project_name, email, projects, limit=1):
 
     found = 0
     branch = None
+    timeframe = utils.conf['timeframe']
 
     if project_name in ['Stable branch maintenance']:
         project_list = projects.values()
@@ -50,8 +51,8 @@ def check_candidate(project_name, email, projects, limit=1):
             for repo_name in deliverable["repos"]:
                 query = ('is:merged after:"%s" before:"%s" '
                          'owner:%s project:%s' %
-                         (utils.gerrit_datetime(utils.PERIOD_START),
-                          utils.gerrit_datetime(utils.PERIOD_END),
+                         (utils.gerrit_datetime(timeframe['start']),
+                          utils.gerrit_datetime(timeframe['end']),
                           email, repo_name))
                 if branch:
                     query += (' branch:%s' % (branch))
@@ -70,7 +71,7 @@ def check_candidate(project_name, email, projects, limit=1):
     return found
 
 
-def check_candidacy_review(change_id, limit=1, tag=utils.PROJECTS_TAG,
+def check_candidacy_review(change_id, limit=1, tag=utils.conf['tag'],
                            review=None):
     projects = utils.get_projects(tag=tag)
     # If there is more than one review that matches this change_id then all

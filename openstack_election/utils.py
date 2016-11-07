@@ -26,14 +26,6 @@ import time
 import urllib
 import yaml
 
-# Per election constants
-
-SERIES_NAME = 'ocata'
-# 2015-09-05 00:00:00 +0000
-PERIOD_START = datetime.datetime(2015, 9, 5, 0, 0, 0, tzinfo=pytz.utc)
-# 2016-09-04 23:59:59 +0000
-PERIOD_END = datetime.datetime(2016, 9, 4, 23, 59, 59, tzinfo=pytz.utc)
-PROJECTS_TAG = 'sept-2016-elections'
 
 # Library constants
 CANDIDATE_PATH = 'candidates'
@@ -42,10 +34,22 @@ ELECTION_REPO = 'openstack/election'
 CGIT_URL = 'https://git.openstack.org/cgit'
 PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
                 (CGIT_URL))
+TIME_FMT = "%b %d, %Y %H:%M %Z"
 
-PAST_ELECTIONS = ['ocata']
-
+# Election configuration
 conf = yaml.load(open('configuration.yaml'))
+
+# Convert time to datetime object
+strptime = lambda x: datetime.datetime.strptime(
+    x, "%Y-%m-%dT%H:%M").replace(tzinfo=pytz.utc)
+for key in ('start', 'end', 'email_deadline'):
+    conf['timeframe'][key] = strptime(conf['timeframe'][key])
+    conf['timeframe'][key+'_str'] = conf['timeframe'][key].strftime(TIME_FMT)
+for event in conf['timeline']:
+    for key in ('start', 'end'):
+        event[key] = strptime(event[key])
+        event[key+'_str'] = event[key].strftime(TIME_FMT)
+
 exceptions = None
 
 
@@ -133,7 +137,7 @@ def check_atc_date(atc):
         return False
     expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y')
     expires_in = expires_in.replace(tzinfo=pytz.utc)
-    return PERIOD_END < expires_in
+    return conf['timeframe']['end'] < expires_in
 
 
 def get_projects(tag=None):
@@ -172,7 +176,7 @@ def dir2name(name, projects):
     raise ValueError(('%s does not match any project' % (name)))
 
 
-def build_candidates_list(election=SERIES_NAME):
+def build_candidates_list(election=conf['release']):
     project_list = os.listdir(os.path.join(CANDIDATE_PATH, election))
     project_list.sort()
     candidates_lists = {}

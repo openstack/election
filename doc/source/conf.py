@@ -32,6 +32,7 @@ extensions = [
     'oslosphinx',
     'candidates',
     'events',
+    'configuration',
 ]
 
 todo_include_todos = True

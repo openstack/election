@@ -1,8 +1,4 @@
-.. TODO: Update below definition for new elections
-.. |Timeframe| replace:: Mitaka-Newton timeframe (September 5, 2015 00:00 UTC to September 4, 2016 23:59 UTC)
-.. |PreferredEmailDeadLine| replace:: September 18, 2016
-.. |Projects.yaml| replace:: http://git.openstack.org/cgit/openstack/governance/tree/reference/projects.yaml?id=sept-2016-elections
-.. |TCSeats| replace:: 6
+.. include:: configuration.rst
 
 ==================
 OpenStack Election

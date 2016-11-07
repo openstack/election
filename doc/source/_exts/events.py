@@ -13,30 +13,23 @@
 """Add election timer data
 """
 
-import calendar
+import datetime
 import jinja2
 import jinja2.environment
 import os
-import time
+import pytz
 
 from openstack_election import utils
 
 
 def build_timer(app):
     app.add_javascript("event_timer.js")
-    now = time.time()
+    now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
     first_event = True
     for ev in utils.conf['timeline']:
-        ds, hs = ev['start'].split('T')
-        de, he = ev['end'].split('T')
-        start_time = calendar.timegm(
-            time.strptime(ev['start'], "%Y-%m-%dT%H:%M"))
-        end_time = calendar.timegm(
-            time.strptime(ev['end'], "%Y-%m-%dT%H:%M"))
-
-        if start_time > now:
+        if ev['start'] > now:
             ev['status'] = 'future'
-        elif end_time > now:
+        elif ev['end'] > now:
             ev['status'] = 'current'
         else:
             ev['status'] = 'past'
@@ -51,8 +44,8 @@ def build_timer(app):
         elif ev['status'] == 'past':
             mark = '*'
 
-        ev['start_str'] = "%s%s, %s UTC%s" % (mark, ds, hs, mark)
-        ev['end_str'] =   "%s%s, %s UTC%s" % (mark, de, he, mark)
+        ev['start_iso'] = ev['start'].strftime("%Y-%m-%dT%H:%M")
+        ev['end_iso'] = ev['end'].strftime("%Y-%m-%dT%H:%M")
         ev['name_str'] = "%s%s%s" % (mark, ev['name'], mark)
     output_file = os.path.join(".", "doc", "source", "events.rst")
     with open(output_file, "w") as out:

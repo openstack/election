@@ -1,4 +1,16 @@
 ---
+release: ocata
+
+tag: 'sept-2016-elections'
+
+timeframe:
+  name: 'Mitaka-Newton'
+  start: '2015-09-05T00:00'
+  end: '2016-09-04T23:59'
+  email_deadline: '2016-09-18T23:59'
+
+tc_seats: 6
+
 timeline:
   - name: 'PTL nomination'
     start: '2016-09-12T00:00'
@@ -12,3 +24,6 @@ timeline:
   - name: 'TC elections'
     start: '2016-10-03T00:00'
     end: '2016-10-09T23:45'
+
+past_elections:
+  - ocata

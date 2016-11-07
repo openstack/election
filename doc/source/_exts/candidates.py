@@ -83,7 +83,7 @@ def build_lists(app):
         "    :titlesonly:",
         ""
     ]
-    for previous in utils.PAST_ELECTIONS:
+    for previous in utils.conf['past_elections']:
         if build_archive(previous, "ptl"):
             previous_toc.append("    %s/ptl.rst" % previous)
         if build_archive(previous, "tc"):

@@ -32,7 +32,7 @@ def main():
                         help=('How many validating changes to report.  '
                               'A negative value means report many.  '
                               'Default: %(default)s'))
-    parser.add_argument('--tag', dest='tag', default=utils.PROJECTS_TAG,
+    parser.add_argument('--tag', dest='tag', default=utils.conf['tag'],
                         help=('The governance tag to validate against.  '
                               'Default: %(default)s'))
 

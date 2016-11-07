@@ -23,7 +23,7 @@ from openstack_election import utils
 def get_reviews():
     return utils.get_reviews('is:open project:%s file:^%s/%s/.*' %
                              (utils.ELECTION_REPO, utils.CANDIDATE_PATH,
-                              utils.SERIES_NAME))
+                              utils.conf['release']))
 
 
 def main():
@@ -34,7 +34,7 @@ def main():
                         help=('How many validating changes to report.  '
                               'A negative value means report many.  '
                               'Default: %(default)s'))
-    parser.add_argument('--tag', dest='tag', default=utils.PROJECTS_TAG,
+    parser.add_argument('--tag', dest='tag', default=utils.conf['tag'],
                         help=('The governance tag to validate against.  '
                               'Default: %(default)s'))
 

@@ -74,7 +74,7 @@ def main():
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument('-v', '--verbose', action="count", default=0,
                         help='Increase program verbosity')
-    parser.add_argument('-r', '--release', default=utils.SERIES_NAME,
+    parser.add_argument('-r', '--release', default=utils.conf['release'],
                         help='Which nominations to look at')
     parser.add_argument('-b', '--basedir',
                         default=os.getcwd(),
