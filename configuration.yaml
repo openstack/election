@@ -1,29 +1,23 @@
 ---
-release: ocata
+release: pike
 
-tag: 'sept-2016-elections'
+tag: 'jan-2017-elections'
 
 timeframe:
-  name: 'Mitaka-Newton'
-  start: '2015-09-05T00:00'
-  end: '2016-09-04T23:59'
-  email_deadline: '2016-09-18T23:59'
+  name: 'Newton-Ocata'
+  start: '2016-04-11T00:00'
+  end: '2017-01-23T23:59'
+  email_deadline: '2017-01-25T23:59'
 
-tc_seats: 6
+tc_seats: 7
 
 timeline:
   - name: 'PTL nomination'
-    start: '2016-09-12T00:00'
-    end: '2016-09-18T23:45'
+    start: '2017-01-18T23:59'
+    end:   '2017-01-29T23:45'
   - name: 'PTL elections'
-    start: '2016-09-19T00:00'
-    end: '2016-09-25T23:45'
-  - name: 'TC nomination'
-    start: '2016-09-26T00:00'
-    end: '2016-10-01T23:45'
-  - name: 'TC elections'
-    start: '2016-10-03T00:00'
-    end: '2016-10-09T23:45'
+    start: '2017-02-01T23:59'
+    end:   '2017-02-07T23:45'
 
 past_elections:
   - ocata

@@ -23,9 +23,8 @@ Previous elections
 Election Officials
 ==================
 
-* Tony Breeds (tonyb), tony at bakeyournoodle dot com
 * Tristan Cacqueray (tristanC), tdecacqu at redhat dot com
-* Nate Johnston (njohnston), openstacknate at gmail dot com
+* Kendall Nelson (diablo_rojo), knelson at openstack dot org
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev Freenode channel.
