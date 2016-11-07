@@ -14,10 +14,10 @@ Preparation
 
 A month before election starts:
 
-* Prepare new election, e.g.:
-  * tox -evenv -- new-election.py pike
 * Edit elections details (timeline, cycle timeframe):
   * edit configuration.yaml
+* Prepare new election, e.g.:
+  * tox -evenv -- create-directories
 * Update index.rst to include ptl.rst
 * Commit to update website
 
