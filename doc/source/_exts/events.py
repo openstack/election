@@ -42,7 +42,7 @@ def build_timer(app):
                 outdated = ''
         ev['date_str'] = "%s%s, %s UTC%s" % (outdated, d, h, outdated)
         ev['name_str'] = "%s%s%s" % (outdated, ev['name'], outdated)
-    output_file = os.path.join(utils.CANDIDATE_PATH, "events.rst")
+    output_file = os.path.join(".", "doc", "source", "events.rst")
     with open(output_file, "w") as out:
         template_dir = os.path.join(".", "doc", "source", "_exts")
         loader = jinja2.FileSystemLoader(template_dir)

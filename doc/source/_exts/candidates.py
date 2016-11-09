@@ -30,7 +30,7 @@ def render_template(template, data, **kwargs):
 
 
 def render_list(list_type, candidates_list):
-    output_file = os.path.join(utils.CANDIDATE_PATH, "%s.rst" % list_type)
+    output_file = os.path.join(".", "doc", "source", "%s.rst" % list_type)
     template_name = "%s.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
     with open(output_file, "w") as out:

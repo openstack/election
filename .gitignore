@@ -8,11 +8,11 @@ reference/projects/*.rst
 *.pyc
 AUTHORS
 ChangeLog
-candidates/ptl.rst
-candidates/tc.rst
-candidates/events.rst
 .projects*yaml
 .projects*.pkl
 .testrepository
 doc/source/archive_toc.rst
 doc/source/*/*.rst
+doc/source/ptl.rst
+doc/source/tc.rst
+doc/source/events.rst
