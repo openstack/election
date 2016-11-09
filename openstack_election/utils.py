@@ -177,7 +177,11 @@ def dir2name(name, projects):
 
 
 def build_candidates_list(election=conf['release']):
-    project_list = os.listdir(os.path.join(CANDIDATE_PATH, election))
+    election_path = os.path.join(CANDIDATE_PATH, election)
+    if os.path.exists(election_path):
+        project_list = os.listdir(election_path)
+    else:
+        project_list = []
     project_list.sort()
     candidates_lists = {}
     for project in project_list:
