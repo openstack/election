@@ -26,6 +26,8 @@ import time
 import urllib
 import yaml
 
+from openstack_election import config
+
 
 # Library constants
 CANDIDATE_PATH = 'candidates'
@@ -34,22 +36,8 @@ ELECTION_REPO = 'openstack/election'
 CGIT_URL = 'https://git.openstack.org/cgit'
 PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
                 (CGIT_URL))
-TIME_FMT = "%b %d, %Y %H:%M %Z"
 
-# Election configuration
-conf = yaml.load(open('configuration.yaml'))
-
-# Convert time to datetime object
-strptime = lambda x: datetime.datetime.strptime(
-    x, "%Y-%m-%dT%H:%M").replace(tzinfo=pytz.utc)
-for key in ('start', 'end', 'email_deadline'):
-    conf['timeframe'][key] = strptime(conf['timeframe'][key])
-    conf['timeframe'][key+'_str'] = conf['timeframe'][key].strftime(TIME_FMT)
-for event in conf['timeline']:
-    for key in ('start', 'end'):
-        event[key] = strptime(event[key])
-        event[key+'_str'] = event[key].strftime(TIME_FMT)
-
+conf = config.load_conf()
 exceptions = None
 
 
