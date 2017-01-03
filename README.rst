@@ -43,6 +43,9 @@ During the PTL Candidacy round:
 
 * Check candidate list and fixes badly generated name using the exception.txt file
 
+Once the email deadline is reached:
+* Ask the TC chair to tag the governance repository
+
 A couple of days before the candidacy submission ends:
 * Render statistics and send 'Motivation call for PTL candidacy round', e.g.:
   * tox -evenv -- render-statistics
