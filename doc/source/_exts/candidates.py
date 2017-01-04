@@ -33,7 +33,7 @@ def render_list(list_type, candidates_list):
     output_file = os.path.join(".", "doc", "source", "%s.rst" % list_type)
     template_name = "%s.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
-    with open(output_file, "w") as out:
+    with open(output_file, "wb") as out:
         out.write(
             render_template(
                 template_name,
@@ -59,7 +59,7 @@ def build_archive(serie, list_type):
     output = os.path.join(".", "doc", "source", serie, "%s.rst" % list_type)
     template_name = "%s_archive.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
-    with open(output, "w") as out:
+    with open(output, "wb") as out:
         out.write(
             render_template(
                 template_name,

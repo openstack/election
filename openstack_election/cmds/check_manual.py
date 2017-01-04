@@ -41,9 +41,10 @@ def main():
         args.limit = 100
 
     projects = utils.get_projects(tag=args.tag)
-    if args.project_name not in projects.keys():
+    projects_list = list(projects.keys())
+    if args.project_name not in projects_list:
         print('[E]: %s not found in: %s' %
-              (args.project_name, ','.join(projects.keys())))
+              (args.project_name, ','.join(projects_list)))
         return 1
 
     if check_candidacy.check_candidate(args.project_name, args.email,

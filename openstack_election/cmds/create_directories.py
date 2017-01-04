@@ -30,7 +30,7 @@ def main():
         exit(1)
 
     projects = utils.get_projects()
-    project_list = projects.keys()
+    project_list = list(projects.keys())
     project_list.sort()
     for project in project_list + ["TC"]:
         dpath = "%s/%s" % (base_dir, utils.name2dir(project))

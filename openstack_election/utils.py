@@ -21,10 +21,13 @@ import pickle
 import pytz
 import re
 import requests
+import six
 import subprocess
 import time
-import urllib
 import yaml
+
+from six.moves.urllib.parse import quote_plus
+from six.moves.urllib.request import urlopen
 
 from openstack_election import config
 
@@ -110,7 +113,7 @@ def get_reviews(query):
     opts = ['CURRENT_REVISION', 'CURRENT_FILES', 'DETAILED_ACCOUNTS']
     opts_str = '&o=%s' % ('&o='.join(opts))
     url = ('%s/changes/?q=%s%s' %
-           (GERRIT_BASE, urllib.quote_plus(query, safe='/:=><^.*'), opts_str))
+           (GERRIT_BASE, quote_plus(query, safe='/:=><^.*'), opts_str))
     return gerrit_query(url)
 
 
@@ -141,10 +144,10 @@ def get_projects(tag=None):
             os.stat(cache_file).st_size < 100 or
             os.stat(cache_file).st_mtime + (7*24*3600) < time.time()):
         print("[+] Updating %s" % (cache_file))
-        data = yaml.safe_load(urllib.urlopen(url).read())
-        pickle.dump(data, open(cache_file, "w"))
+        data = yaml.safe_load(urlopen(url).read())
+        pickle.dump(data, open(cache_file, "wb"), protocol=2)
 
-    return pickle.load(open(cache_file))
+    return pickle.load(open(cache_file, "rb"))
 
 
 # Election functions
@@ -176,7 +179,7 @@ def build_candidates_list(election=conf['release']):
         project_prefix = os.path.join(CANDIDATE_PATH, election, project)
         file_list = filter(
             lambda x: x.endswith(".txt"),
-            os.listdir(unicode(project_prefix)),
+            os.listdir(project_prefix),
         )
         candidates_list = []
         for candidate_file in file_list:
@@ -185,7 +188,7 @@ def build_candidates_list(election=conf['release']):
                 {
                     'url': ('%s/%s/plain/%s' %
                             (CGIT_URL, ELECTION_REPO,
-                             urllib.quote_plus(filepath, safe='/'))),
+                             quote_plus(filepath, safe='/'))),
                     'ircname': candidate_file[:-4].replace('`', r'\`'),
                     'email': get_email(filepath),
                     'fullname': get_fullname(filepath)
