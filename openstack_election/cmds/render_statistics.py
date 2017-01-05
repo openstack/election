@@ -80,8 +80,8 @@ def main():
 
     now = datetime.datetime.now(tz=pytz.utc)
     now = now.replace(microsecond=0)
-    start = utils.get_event('PTL nomination starts')
-    end = utils.get_event('PTL nomination ends')
+    event = utils.get_event('PTL nomination')
+    start, end = event['start'], event['end']
     duration = (end - start)
     remaining = (end - now)
     progress = (duration - remaining)
