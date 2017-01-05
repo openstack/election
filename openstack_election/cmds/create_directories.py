@@ -25,15 +25,12 @@ def main():
         exit(1)
 
     base_dir = "candidates/%s" % utils.conf['release']
-    if os.path.exists(base_dir):
-        print("%s: directory already exists" % base_dir)
-        exit(1)
-
     projects = utils.get_projects()
     project_list = list(projects.keys())
     project_list.sort()
     for project in project_list + ["TC"]:
         dpath = "%s/%s" % (base_dir, utils.name2dir(project))
-        os.makedirs(dpath)
-        open("%s/.placeholder" % dpath, "w").close()
-        print("[+] Created %s" % (dpath))
+        if not os.path.exists(dpath):
+            os.makedirs(dpath)
+            open("%s/.placeholder" % dpath, "w").close()
+            print("[+] Created %s" % (dpath))
