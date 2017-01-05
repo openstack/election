@@ -45,7 +45,7 @@ def collect_project_stats(basedir, verbose):
         project = directory[len(basedir):]
         if project == "TC":
             continue
-        candidates = filter(lambda x: x.endswith('.txt'), filenames)
+        candidates = list(filter(lambda x: x.endswith('.txt'), filenames))
         candidates_count = len(candidates)
 
         if not filenames == []:
