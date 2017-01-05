@@ -33,7 +33,7 @@ When PTL Candidacy start
 
 During the PTL Candidacy round:
 * Validate candidacy, e.g.:
-  * tox -evenv -- check-new-candidacy, or
+  * tox -evenv -- check-all-candidacies, or
   * tox -evenv -- check-candidacy change_id
 * To +2 a candidate:
   * check commit link is indeed valid

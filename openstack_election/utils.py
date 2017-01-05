@@ -57,8 +57,7 @@ def load_exceptions():
 def get_event(event_name):
     for e in conf['timeline']:
         if e['name'] == event_name:
-            d = datetime.datetime.strptime(e['date'], "%Y-%m-%dT%H:%M")
-            return d.replace(tzinfo=pytz.utc)
+            return e
     raise ValueError("Couldn't find event_name %s" % event_name)
 
 
