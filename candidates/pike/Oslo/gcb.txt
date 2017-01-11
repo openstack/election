@@ -1,0 +1,26 @@
+Hi All,
+
+I would like to announce my candidacy for the Oslo PTL election.
+
+I have been involved with Oslo since the last few years, first as a contributor
+and then a core reviewer and have had the opportunity to work with a great team
+and community. For more information about me, please refer to:
+https://www.openstack.org/community/members/profile/14945
+
+We achieved some significant milestones in the Ocata cycle and we have the
+fortune of having a number of experienced and previous PTLs in the team that
+makes the job of a new PTL easier. In the Pike cycle, we still focus on our
+project mission: "aims to produce a set of Python libraries containing
+code shared by OpenStack projects. The APIs provided by these libraries should
+be high quality, stable, consistent, documented and generally applicable".
+
+I believe our focus in the Pike cycle would include:
+
+- Attract more developers to contribute for Oslo
+- Spread more Oslo stuff to consuming projects.
+- Improve documentations to help developers use Oslo libraries smoothly.
+- Collect new ideas and generate new libraries.
+
+Thank you for your consideration
+
+ChangBo Guo(gcb)
