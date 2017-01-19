@@ -1,0 +1,48 @@
+Greetings everyone!
+
+I would like to nominate myself as a candidate for ironic PTL for the
+Pike cycle. For those that don't know me, I'm TheJulia. I have been
+working in the OpenStack community since mid-2014, and ironic since
+early 2015. I'm likely best known for bifrost and advocating support
+for stand-alone mode. A little less well known for helping provide
+guidance for ironic-webclint and ironic-ui, plus the occassional bout
+of insomnia.
+
+You may have seen me as the quiet one in the corner, only to suddenly
+speak up, and then to caveat my statement with "But I might be crazy".
+Well, I think this is sufficient evidence!
+
+To get back to the point, sometimes I do see things differently than other
+people when presented with a problem. A good portion of that, at least as
+far as I can tell, comes from my operations background. But I've learned
+my lessons over the years and try to understand others point of view and
+keep an open mind.
+
+I am a strong believer in ironic and the work that the community undertakes,
+due to the countless hours I've spent inside data center installing hardware.
+
+I am confident that my leadership skills, ability to negotiate various
+opinions, and passion for Ironic and the community that drives it will be my
+strongest contributions as PTL. My goals for the Pike cycle would include:
+
+* Greater power and management interface options such as Redfish and OpenBMC.
+  I think this is necessary for growing ironic's user base, and while we have
+  been talking about such interfaces for a while, I believe the core community
+  needs to help make this happen.
+
+* Greater support partitioning and alternative disk layouts. This feels like
+  one of those asks that more advanced deployments keep trying to solve on
+  their own inside whole disk images, and while they find bugs, it would be
+  awesome to offer some greater flexibility.
+
+* Location awareness is super important to providing a single view of the
+  world to an operator, yet right now we have no support for it as we
+  are limited to a single endpoint representing a distinct cluster of
+  conductors. We need to fix this!
+
+I look forward to working with the Ironic community to continue improvements
+and representing our community within OpenStack
+
+Thank you for your consideration,
+
+Julia Kreger
