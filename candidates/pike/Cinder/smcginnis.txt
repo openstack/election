@@ -1,0 +1,34 @@
+Hello everyone,
+
+I have been the Cinder PTL since the Mitaka release and I would love the
+opportunity to be the PTL one more time.
+
+I work for Dell EMC, working with storage for the last 14+ years. I am
+lucky enough that I have the support to focus on OpenStack for my job.
+
+I also have the support I've needed to both get out and get in front of
+developers and users to support learning and using OpenStack. Over the
+last year I have been able to attend a few OpenStack Days events and
+attend the last Operators Midcycle. As PTL I can continue to spend the
+time educating and evangelizing OpenStack.
+
+More importantly, as PTL I can do whatever I can to eliminate
+distractions and ease the way for the incredible work that members of
+the community are doing. Through code reviews and helping coordinate
+support within the group and across projects, I hope I can help
+everyone get things accomplished.
+
+Now that we are past the shorter Ocata cycle, I think we can start
+focusing again on the larger efforts that we've had outstanding for a
+few releases now and getting some of the important specs implemented.
+I hope to help get capabilities like multiattach working across Cinder
+and Nova. I also hope to work with the vendors that are such a large
+part of the usefulness of Cinder to both make sure that they are
+properly engaging with the OpenStack community, and that the community
+is also aware of and able to work with the vendors to help them be
+involved.
+
+I hope you will consider me for the Pike PTL.
+
+Thanks!
+Sean
