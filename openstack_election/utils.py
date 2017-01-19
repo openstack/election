@@ -81,6 +81,16 @@ def get_email(filepath):
     return git.stdout.readlines()[-1][:-1]
 
 
+def get_gerrit_account(email):
+    url = '%s/accounts/?q=%s' % (GERRIT_BASE, email)
+    accounts = gerrit_query(url)
+    if not accounts:
+        raise ValueError("Couldn't find gerrit account with '%s'" % email)
+    if len(accounts) != 1:
+        print("[I] %s has multiple account: %s" % (email, accounts))
+    return accounts[0]
+
+
 def get_fullname(filepath):
     # Check if filepath is an exception
     if exceptions is None:
@@ -90,8 +100,7 @@ def get_fullname(filepath):
 
     # Otherwise query gerrit using git log email
     email = get_email(filepath)
-    url = '%s/accounts/%s' % (GERRIT_BASE, email)
-    fullname = gerrit_query(url)['name']
+    fullname = get_gerrit_account(email)['name']
 
     # Remove parenthesis content
     fullname = re.sub(r"\([^)]*\)", "", fullname)
