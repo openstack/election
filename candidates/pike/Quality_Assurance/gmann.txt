@@ -1,0 +1,100 @@
+Hi All,
+
+First and foremost would like to wish you all a successful 2017 ahead and
+with this I'm announcing my PTL candidacy of the Quality Assurance team
+for the Pike release cycle.
+
+I am glad to work in OpenStack community and would like to thank all the
+contributors who supported me to explore new things which brings out my
+best for the community.
+
+Let me introduce myself, briefly. I have joined the OpenStack community
+development in 2014 during mid of Ice-House release. Currently, I'm contributing
+in QA projects and Nova as well as a core member in Tempest.
+Since Barcelona Summit, I volunteered  as mentor in the upstream training.
+It‘s always a great experience to introduce OpenStack upstream workflow
+to new contributors and encourage them.
+
+Following are my contribution activities:
+ * Review:  http://stackalytics.com/?release=all&metric=marks&user_id=ghanshyammann
+ * Commit:  http://stackalytics.com/?release=all&metric=commits&user_id=ghanshyammann
+
+I have worked on some key areas on QA like Interfaces migration to lib, JSON
+schema response validation(for compute), API Microversion testing framework in
+Tempest, Improve test coverage and Bug Triage etc.
+
+QA program has been immensely improved since it was introduced which increased
+upstream development quality as well as helping production Cloud for their
+testing and stability. We have a lot of ideas from many different contributors
+to keep improving the QA which is phenomenal and I truly appreciate.
+
+Moving forwards, following are my focus areas for Pike Cycle:
+
+* Help the other Projects' developments and Plugin Improvement:
+    OpenStack projects consider the quality is important and QA team needs to
+    provide useful testing framework for them. Projects who all needs to implement
+    their tempest tests in plugin, focus will be to help plugin tests improvement and
+    so projects quality. Lot of Tempest interfaces are moving towards stable
+    interfaces, existing plugin tests needs to be fixed multiple times. We are
+    taking care of those and helping them to migrate smoothly. But there are
+    still many  interfaces going to migrate to lib and further to be adopted on
+    plugin side. I’d like to have some mechanism/automation to trigger plugins
+    to know about change interfaces before it breaks them. Also help them to use
+    the framework correctly. This helps the other non-core projects’ tests.
+
+* Improve QA projects for Production Cloud:
+    This will be the main focus area. Having QA projects more useful for
+    Production Cloud testing is/will be great achievement for QA team. This
+    area has been improved a lot since last couple of cycles and still a lot
+    to do. We have to improve Production scenario testing coverage and make all
+    QA projects easy to configure and use. During Barcelona summit, 2 new
+    projects are initiated which will definitely help to achieve this goal.
+      *        RBAC Policy -  https://github.com/openstack/patrole
+      *        HA testing  -  https://review.openstack.org/#/c/374667/
+                              https://review.openstack.org/#/c/399618/
+      *        Hoping for more in future
+    There will be more focus on those projects and new ideas which will help
+    production Cloud testing in more powerful way.
+
+* JSON Schema *response* validation for projects:
+    JSON schema response validation for compute APIs has been very helpful to
+    keep the APIs quality and compatibility. Currently many projects support
+    microversion which provides a way to introduce the APIs changes in Backward
+    compatible way. I'd like to concentrate on response schema validation for
+    those projects also. This helps the OpenStack interoperability and the APIs
+    compatibility.
+
+* Improve Documentation and UX:
+    Documentation and UX are the key part for any software. There have been
+    huge improvement in UX , documentation side and new Tempest workflow is
+    available.  Still configuration and usage is the pain point for Users.
+    During summit/ptg or other platforms I’d like us to have more feedbacks
+    from users and improve accordingly. Making configuration easy for people
+    is one of the area we will be focusing on.
+
+* Bring on more contributor and core reviewers:
+    QA projects have been one of the active projects during last couple of
+    years and I'd like the team to mentor new contributors to help QA projects
+    in planned goal and get them to a place where they will be ready for
+    core reviewers.
+
+* Migrate required Tempest Interfaces as stable to lib:
+    We together have done great job in this area which helped plugin tests.
+    In Service clients migration, Object Storage service client are left and
+    all others have been moved as stable interfaces. Lot of others
+    framework/interface also available in lib. But still lot of unstable
+    interfaces are being used in Plugins which should be migrated to lib soon.
+    In Pike cycle, we will wind up all remaining service client migration and
+    other required interfaces.
+
+* Last but not the least, Openness is great power of Open Source and so does
+  OpenStack. All new ideas from anyone will be most welcome.
+
+Thanks to previous QA PTL, Sean, Matthew, Kenichi who have shown great
+leadership quality and taken QA projects to a new height. I have learnt
+a lot from them which motivates me.
+
+I look forward to contributing to all of these areas and more during the Pike
+cycle.
+
+-gmann
