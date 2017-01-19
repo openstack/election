@@ -1,0 +1,39 @@
+Hi All,
+
+I would like to nominate myself to take the role of Heat PTL for Pike release.
+
+I'd been involved with the project around two years. And it's my privilege to
+work and learn within this great team. Heat become a width used project
+across other projects with the ability to orchestrate large numbers of
+resources in an OpenStack cluster. No doubt, heat will keep evolving.
+
+Heat achieved some significant milestones in the ocata cycle. The memory
+consuming has a huge drop down, convergence engine toward a more stable state,
+and other great improvements and fixes. Still, we have more roads to roll in
+Pike cycle:
+
+- Cross projects integration and improvement
+- Convergence Phase two
+- Stability and performance
+- Validation improvement
+- Task scheduler improvement
+
+Of cause our `run-of-the-mill` as usual:
+- Ensuring that CI jobs are healthy (and we don't break other projects)
+- On time releases with efficient coordination and collaboration
+- Encourage more participants, to demo and convert more members to join us
+- Cross project collaborations
+
+As for my view of PTL's job, I think is to help on coordinate project
+development tasks. And make sure whatever we're working, our developers,
+operators, and users aware of it, and get the chances to feedback on it.
+A communication bridge and a watchdog. I'm not the best or most experienced
+technologists in the team, but luckily, we have a group of previous PTLs,
+experienced, talented and ready to give hints or -2 to the new PTL. I'm sure
+we would be able to make the goals as a team, target them as a team, and
+resolved it as a team.
+
+Hope you will consider me for Pike PTL.
+
+Thank you!
+Rico
