@@ -1,0 +1,57 @@
+I am writing to submit my candidacy for re-election as the PTL for the
+Trove project (Pike cycle). I have been an active technical
+contributor to the Trove project since just before the Icehouse
+release when Trove was integrated into OpenStack. I have also
+contributed code[1] and reviews[2] to some other OpenStack projects,
+and have been an active participant in the Stewardship Working Group
+[3] (SWG) and a not-so active participant in the Delimiter project.
+
+I believe that in the Pike release we should continue to move forward
+with the Trove project and continue to build on the improvements that
+we were able to accomplish (some are still work in progress) in the
+Ocata release.
+
+- paying down our technical debt, including specifically some long
+  standing items that were listed by the TC at the time when Trove was
+  integrated, and improving our testing, addressing some long standing
+  issues with dependencies between the server and the client, and
+
+- making it easier to use Trove by eliminating the trovestack tool and
+  instead offering a set of tools that will serve the purposes of end
+  users and deployers alike, and
+
+- adding support for new datastores, capabilities and configurations,
+  and
+
+- expanding the community, adding new contributors, contributing
+  companies, and end users interested in the project, and
+
+- streamlining the API with the implementation of better versioning
+  support.
+
+I would also like to take this opportunity to thank all members of the
+development community who helped the Trove project during the Ocata
+cycle; those who contributed code and reviews to the project as well
+as members of the infra, release, stable, oslo, docs, dib, and other
+project teams who helped us on innumerable occasions.
+
+Not to pick on them too much, but I'd especially like to thank Davanum
+Srinivas (dims), and Doug Hellmann for all their help on the release
+team, and for all the things that they've done to make branching so
+much easier. My thanks to Joshua Harlow, the PTL for oslo for his help
+and support in getting a particularly knarly set of issues relating to
+oslo_messaging.rpc put to rest. Last but not the least, to everyone on
+the infra team who helped us with a bunch of changes that helped
+considerably in speeding up the Trove check/gate process. The jury is
+still out on those changes, but thanks folks for allowing us the
+freedom to try the experiment.
+
+Thank you, and I appreciate your support in the election. I have
+Submitted this candidacy as review [4].
+
+-amrith
+
+[1] http://stackalytics.com/?user_id=amrith&release=all&metric=commits
+[2] http://stackalytics.com/?user_id=amrith&release=all&metric=marks
+[3] https://review.openstack.org/#/c/337895/
+[4] This review
