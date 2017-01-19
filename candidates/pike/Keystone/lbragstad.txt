@@ -1,0 +1,87 @@
+Greetings,
+
+I want to run for keystone PTL to facilitate an environment for others to grow
+and make meaningful changes so that we continue to build keystone into a more
+stable, scalable and performant project.
+
+January marks my fifth anniversary working with OpenStack. In that time I've
+had the opportunity to participate in a variety of different roles from
+development to deployment. Being exposed to such a fast-paced open-source
+project has made profound impacts on how I approach everyday challenges.
+
+Joining the OpenStack community was a daunting task, there was a staggering
+amount of information to absorb. Fortunately, the community was so welcoming
+that learning was a huge reward. I feel the community, and the keystone team in
+particular, still maintains this camaraderie. This is something I'd like to
+continue when serving as PTL.
+
+Over the last few years I have worked on various keystone initiatives. I
+co-implemented support for Fernet tokens, which results in keystone being more
+scalable and performant. As of the Ocata release, Fernet tokens are the default
+token format providing scalability out-of-the-box. This helped spur an effort I
+led to refactor keystone's token API to make it simpler and easier to maintain.
+I automated the ability to performance test patches in review against master
+and publish the delta as a comment on review, providing reviewers with a
+performance-related datapoint. Lately I've been focused on organizing
+cross-project efforts to address gaps in policy across OpenStack. Those are
+only a couple recent examples I'm proud of. I actively try to take some
+experience or lesson from every interaction I have with the community and add
+it to my repertoire.
+
+As PTL, I would like to continue building an environment that enables and
+inspires people to contribute. We still have many goals to work towards, and it
+will never be completed by a single person. Building a community around trust
+and transparency will yield consistent, measurable results. I think the
+keystone community has done a great job of this so far and I want to accelerate
+that trend.
+
+I would like to continue improving the overall usability of policy across
+OpenStack, which will benefit users and deployers significantly. I will
+continue to push for federated identity to be a first class resource. I believe
+it should absolutely be a natural extension of keystone for both deployers and
+users. I will continue to keep performance at the forefront of our goals. I
+will continue to be an advocate for cross-project communication. I will lead an
+effort to dedicate one day per week to office hours, where we triage and
+attempt to close bugs. This will serve as a great way to grow our community and
+keep tabs on our bug queue.
+
+My long-term vision for keystone allows deployers the flexibility to address
+real-world use cases across a variety of deployments while providing consistent
+user-experience and stability. To do that we're going to have to solve some
+hard problems around policy, federation, upgradability, etc. But, we've solved
+hard problems before. The following are a few things I'd like to focus on in
+Pike:
+
+* Introduce better granularity for RBAC support using keystone, and leading by
+  example
+* Continue improving functional testing
+* Continue making user experiences with federation seamless and intuitive
+* Continue to support rolling upgrades
+* Help guide work to implement rolling upgrade testing to achieve the rolling
+  upgrade tag
+* Continuing our work from the last few cycles to promote usage of the V3 API
+  everywhere
+
+Some personal goals of mine as a PTL would be to:
+
+* Facilitate collaboration by encouraging break out work and sprints
+* Add more communication tools to our toolbox by actively looking for new ways
+  to share ideas
+* Ensure our discussions, decisions, and outcomes are easily discoverable and
+  thoroughly communicated
+* Build upon the established pattern of having dedicated roles for design
+  discussions (i.e. moderator, champion, scribe) to ensure we have meaningful,
+  productive discussions that are accurately captured
+* Actively look for opportunities to mentor or collaborate with new and
+  existing team members
+* Promote an environment where we can learn from failed attempts and iterate to
+  find more robust solutions
+
+Finally I want to say thanks for taking time out of your day to parse this
+note. I'm excited to get started on Pike regardless of the election results. I
+look forward to seeing you all in Atlanta!
+
+
+Best Regards,
+
+Lance
