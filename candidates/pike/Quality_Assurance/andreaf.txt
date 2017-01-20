@@ -1,0 +1,43 @@
+Dear all,
+
+I’d like to announce my candidacy for PTL of the QA Program for the Pike cycle.
+
+I started working with OpenStack towards the end of 2011. Since 2014 I’ve been
+a core developer for Tempest.
+I’ve always aimed for Tempest to be able to run against any OpenStack cloud;
+a lot of my contributions to Tempest have been driven by that.
+I’ve worked on QA for the OpenStack community, for an OpenStack based public
+cloud as well as for an OpenStack distribution.
+
+I believe that quality engineers should develop innovative, high quality
+open-source tools and tests.
+
+The OpenStack community has built an amazing set of tools and services to
+handle quality engineering at such a large scale.
+The number of tests executed, the test infrastructure and amount of test data
+produced can still be difficult to handle.
+Complexity can inhibit new contributors as well as existing ones, not only for
+the QA program but for OpenStack in general as well.
+
+If elected, in the Pike cycle I would like to focus on two areas.
+
+- QA team support to the broader OpenStack community
+    - Finish the work on Tempest stable interfaces for plugins and support
+      existing plugins in the transition
+    - Keep an open channel with the broader community when setting priorities
+
+- Promote contribution to the QA program, by:
+    - removing cruft from Tempest code
+    - making it easier to know “what’s going on” when a test job fails
+        - focus on tools that help triage and debug gate failures (OpenStack
+          Health, Stackviz)
+        - leverage the huge amount of test data we produce every day to
+          automate as much as possible the failure triage and issue discovery
+          processes
+
+I hold the QA crew in great esteem, and I would be honoured to serve as the
+next PTL.
+
+Thank you
+
+Andrea Frittoli (andreaf)
