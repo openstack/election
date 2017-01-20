@@ -1,0 +1,46 @@
+Hi all,
+
+I am thrilled to nominate myself as a candidate for ironic PTL for Pike cycle.
+Most of you should know me by now — I’m Jay Faulkner, aka “JayF” on freenode
+IRC. I have been in the tech industry for 10 years, starting as a systems
+administrator and working my way up the ladder. Since 2014, my primary focus
+has been working on bare metal clouds, culminating in my position today as a
+full-time ironic developer.
+
+Many PTL nominees post an agenda with their nomination email — I won’t do that
+here. The project has been run very well, as evidenced by us achieving almost
+75% of our stated goals by the end of the last two cycles (newton and ocata).
+If elected PTL, I would try to maintain the productive environment we've
+built, and work as a facilitator, organizer, and servant, working towards the
+goals the community will set for Pike.
+
+My experience with ironic has been varied, starting with my work on Rackspace
+OnMetal, the first public cloud offering including ironic, a short stint as
+manager of that development team, and now as full-time upstream developer.
+These perspectives have provided me with the communication skills and
+technical context needed to be PTL. Ironic lives on the border between
+software and hardware, which allows me to use my operational experience toward
+designing new features. Some tangible examples of this include the introduction
+of both cleaning and the initial agent deploy driver features. Furthermore,
+I learned how to empathize with businesses trying to integrate with OpenStack
+during my tenure as a manager.
+
+One of the reasons I wanted to run for PTL is to keep as many ironic
+contributors doing what they do best: writing code. In my time on the project,
+I've found I can contribute best by taking care of issues that can get in the
+way of progress such as fixing gate breakages, working to help and mentor new
+contributors, triaging bugs, and reviewing code. Another example of my
+initiative on these types of issues is my work on cross-project items, such as
+my work as documentation liason, and working on our CI jobs. By taking on these
+items and more as PTL, I hope to act as a force multiplier for my
+ironic colleagues.
+
+Working full time on OpenStack Ironic, and open source in general, has been
+one of the most rewarding times of my career. The community around ironic has
+always been friendly, and I view my fellow contributors as co-workers and
+friends. I cherish the time I’ve had collaborating with you all, and hope to
+be given the opportunity to continue to work with everyone as PTL during Pike.
+Thank you for your consideration.
+
+Sincerely,
+Jay Faulkner
