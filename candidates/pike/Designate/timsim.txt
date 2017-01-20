@@ -1,0 +1,32 @@
+Hi everyone,
+
+I would like to nominate myself as a candidate for Designate PTL for the Pike
+cycle. For anyone that doesn't know me, I'm Tim Simmons (timsim). I've been
+working on Designate since mid-2013, and been part of Designate Core since
+2015.
+
+Over that time I've done lots of things for Designate, big and small. Some of
+the bigger bits include the recent rearchitecture called "the Worker Model",
+the second coming of the "Designate agent", and asynchronous zone imports and
+exports. I was also one of the champions behind the ultimately disastrous
+Golang discussion, whoops.
+
+The Designate community has always been small, more so than ever now. But I'm
+willing to step up and take responsibility for the project in the vacuum that's
+been created by factors out of our control.
+
+The things I'd like to focus on in Pike are stability, bugs, and documentation.
+
+We've had some recent changes that, while they look good and are a solid base
+for the future of the project, are definitely hiding some bugs and operational
+hiccups. I'd like to make sure that the project is solid for years to come, and
+that it's easy for new users and contributors to use. We've got a nice little
+backlog of bugs that I'd like to get fixed, because, well bugs are bad! I also
+want to ensure that new users and contributors have everything they need to
+get going with Designate, and our docs are in need of some love to make that
+happen.
+
+Thanks for your consideration, and I look forward to continuing work on
+Designate,
+
+Tim Simmons (timsim)
