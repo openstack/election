@@ -1,0 +1,50 @@
+Sridhar Ramaswamy and our team have done great work during last several cycles.
+Many thanks to the team and Sridhar Ramaswamy.
+
+With this email, I'm announcing my PTL candidacy of the Tacker team for the
+Pike release cycle.
+
+First let me briefly introduce myself. I joined the OpenStack community
+development in 2012, then became the core member of Neutron team and served
+the project for a few cycles. Currently, I'm contributing to Tacker project
+as a core member.
+
+Following are my contribution activities:
+* Review:  http://stackalytics.com/?release=all&metric=marks&user_id=gongysh
+* Commit:  http://stackalytics.com/?release=all&metric=commits&user_id=gongysh
+
+As a major leader of 99cloud (active Gold Member of OpenStack Foundation)
+I have led 99cloud teams actively participating the upstream activities.
+In addition, I introduced Tacker projects to many Chinese companies and
+motivated some contributors to join Tacker and related projects.
+
+Here are some ideas I propose the team to focus on in new cycles:
+* Documentation - Tacker teams have done fairly well in this area. We should
+continue this effort. Nice documentation for new users, especially developers,
+will definitely help the project develop.
+
+* Robust architecture – Tacker needs some refactoring in order to be used for
+a more robust environment. For example, monitoring feature, VIM feature etc.
+We can split some features into components and make them distributed. New API
+framework is also one part of this architecture.
+
+* Testing - Tacker originally derived from Neutron, the original testing
+framework needs reorganization to fit the Tacker codes. After that, we need to
+drive stronger principles to demand better unit and functional test coverage.
+
+* New features - In order for Tacker to become a leading community-built
+TOSCA-based Orchestrator service (Inherited from Sridhar, thanks!) in OpenStack,
+Tacker need introduce more features, such as TOSCA UI tools, workflows etc.
+Of course, the VNF(D), NS(D), VNFFG(D) in MANO via Tacker TOSCA Orchestrator
+service will get matured in new cycles.
+
+* Getting more stackers to join - To finish the tons of tasks, we need tons of
+contributors. To involve and motivate stackers into Tacker team will be one of
+my major tasks.
+
+SDN and NFV is getting hotter and the deployments are accelerating. I would
+like to make sure Tacker is getting ready to catch the rising big wave.
+
+Many Thanks to Sridhar and all the dear developers again.
+
+Thank you for your kind consideration of my candidacy.
