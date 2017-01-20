@@ -1,0 +1,29 @@
+Once more unto the breach, dear friends, once more... I'm running
+for reelection to a fourth term as Infrastructure PTL. In my many
+years as a core reviewer and root sysadmin for OpenStack's community
+infrastructure, I've striven to uphold the principles of open
+collaboration and welcoming participation which define our team.
+
+    https://wiki.openstack.org/user:fungi
+
+During this current (albeit abbreviated) cycle, I've tackled the
+boring administrivia while the rest of you did exciting things like:
+
+ * Kept our systems running and developers developing
+ * Made great strides toward Zuul v3/Nodepool 1.0
+ * Moved docs/developer.o.o from CloudSites to AFS
+ * Added many new features and fixes in StoryBoard
+ * Got all remaining projects testing on Ubuntu Xenial
+ * Finished splitting out Puppet modules for CI management
+ * Wrestled our wiki spam problem into a manageable state
+ * Set up a Pholio service for UI/UX prototyping
+ * Worked on the impending Gerrit and Zanata upgrades
+ * Completed our artifact signing implementation
+ * Opened up the governance site to additional committees
+ * Automated branch creation as a part of release tooling
+ * More stuff I've already forgotten (sorry if I left anyone out)
+
+Consider this a huge thank-you to everyone who works on our
+community infrastructure! I'm honored to have been allowed the
+opportunity to enable so many great accomplishments, and am willing
+to try and do it again for at least one more cycle if elected.
