@@ -1,0 +1,24 @@
+Hi!
+
+As I can observe every end of cycle, the Telemetry team has been doing an
+amazing job making progress on the projects we manage this cycle. Gnocchi
+gained features and traction, Aodh got new contributors, Panko started his own
+destiny and Ceilometer is reducing and improving its footprint.
+
+If you look at the release goals that have been decided or are being discussed
+(Python 3.5, mod_wsgi deployment, oslo usage…), you will notice our projects
+are way ahead and I think it's tremendous. And our team is continuously
+improving the rest of OpenStack by contributing to Oslo too. I reiterate what I
+said last cycle: think it's a great achievement for a small team like us.
+
+So, yes, I envision us continuing on this trajectory, setting the bar higher
+for everyone. That's why I'm running again this time to serve the team,
+managing the project in a transparent way and do everything I can to grow our
+community and make people feel welcome.
+
+We all know how barely useful we made the PTL be, and I count on keeping it
+that way. :-)
+
+Happy hacking,
+
+jd
