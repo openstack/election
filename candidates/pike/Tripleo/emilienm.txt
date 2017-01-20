@@ -1,0 +1,43 @@
+This is my candidacy for PTL role in the TripleO team for the Pike cycle.
+
+Leading TripleO team during Ocata was tremendous.  Together, we have moved
+forward in how we design, develop, deploy and use TripleO.
+Though Ocata cycle was too short and I have the motivation on continuing my role
+of PTL for one more cycle.
+
+There are some areas where I would like to keep improving:
+- Continue to make progress on release management.
+  During Ocata, we had a stronger policy than before where we did our best to
+  set and respect milestones, spec and feature freeze. I would like to
+  continue progress on this during Pike so it becomes something normal for the team.
+- Keep pushing for more CI coverage and scenarios.
+  We have been doing an incredible job by improving stabilization and coverage
+  in our CI.  I would like to keep adding more services and more scenarios so we
+  keep increasing the quality of TripleO.
+- Facilitate the transition to tripleo-quickstart.
+  We decided to use this tool during Ocata. In Pike, we'll switch our CI to use
+  it.  We'll have to make it run smoothly without CI downtime.  It will require
+  good communications and team-work.
+- Scaling-up the team.
+  We introduced the Squads during Ocata.  I would like to continue and see the
+  Squads with more responsibility (Release management, bug triage etc).
+  Also, I'll support the Squads to manage meetings on their topics as needed, as
+  long it happens in the open.
+  Finally, I think the Deep-Dive sessions are great and we need to keep
+  leveraging them.  It helped newcomers and increases the share of knowledge
+  within the team.
+- Being a catalyst in OpenStack.
+  TripleO might just be an installer, but it actually contributes to make OpenStack
+  better as it helps other projects such as Puppet OpenStack modules, Heat,
+  Mistral, Zaqar and more.  Also because we have a strong CI, we can report
+  quick and valuable feedback to projects (e.g. Nova, Neutron, etc) when
+  something doesn't work fine outside devstack.
+  I would like to make sure TripleO keeps this position in OpenStack,
+  so TripleO is a reference when deploying OpenStack in production.
+
+
+Thank you for your consideration,
+
+
+    Emilien Macchi
+    https://wiki.openstack.org/wiki/User:Emilienm
