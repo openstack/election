@@ -1,0 +1,63 @@
+Hi everyone,
+
+I am announcing my candidacy for the OpenStack manuals PTL position.
+
+Some of you may know me from the 2014 Paris summit where I cooed like a
+pigeon[1] in a panel discussion, but I hope that most of you will know me from
+my documentation work across OpenStack, specifically the OpenStack manuals
+project and OpenStack-Ansible contributions.
+
+I have been an active contributor to OpenStack manuals since the beginning of
+2014, and have been a core member since early 2015. Over these last 3 years, I
+was privileged to be a part of the sprint team that authored the first edition
+of the OpenStack Architecture Design Guide[2] (and the subsequent swarm team
+that fixed it up), the team that converted the manuals from XML to RST, the
+specialty team that worked on the creation and curation of the Contributor
+Guide, and the release management team for Ocata. I also worked with the
+OpenStack Infra team to create the new Deployment Guides section[3] at
+docs.openstack.org.
+
+I regularly work in different OpenStack projects. For example, I assisted
+the Swift team to curate the Swift Ops Runbook[4], and have been helping the
+OpenStack-Ansible team rework their documentation[5].
+
+I am passionate about our documentation, our community, and our team’s
+involvement across OpenStack. OpenStack manuals was never organised and
+facilitated by a single person. Behind the scenes there are a great number of
+individuals who work hard to ensure our ship stays afloat. As PTL, I would like
+to continue this trend by:
+
+1. Improving cross-project documentation liaison relationships
+Over the course of the Pike release, I plan to focus on developing better
+relationships with the cross-project liaisons and PTL’s of individual projects.
+I would like to promote and encourage developers and operators to get more
+involved in the development of OpenStack manuals content. OpenStack manuals
+takes on the responsibility of documenting and maintaining guides that
+represent the projects and tools developers and operators are working so
+hard to build and maintain. This written representation of their work is
+equally as important as the output.
+
+2. Continuing with Lana’s bug-depletion legacy
+I plan to achieve this by reporting on completed bugs on a weekly basis and
+encouraging other contributors to report and fix one bug per week. When Lana
+first became PTL, she vowed to attack our enormous (and continuously growing)
+bug list. I'd like to continue this work, and will strive to find innovative
+ways to reduce our technical debt.
+
+If you would like to know more about how I will work to improve our community
+and the manuals, I’d love to chat with you more on IRC or via email.
+
+Coo coo,
+
+Alexandra Settle
+
+IRC: asettle
+Twitter: dewsday
+Email: a.settle@outlook.com
+
+[1] https://youtu.be/PtomtKeJ0tc?t=1783
+[2] http://docs.openstack.org/arch-design/introduction-how-this-book-was-written.html
+[3] http://docs.openstack.org/project-deploy-guide/newton/
+[4] http://docs.openstack.org/developer/swift/ops_runbook/index.html
+[5] https://blueprints.launchpad.net/openstack-ansible/+spec/osa-install-guide-overhaul
+
