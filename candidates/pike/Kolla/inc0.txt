@@ -1,0 +1,25 @@
+My dear community,
+
+I humbly ask you all to accept my candidacy as PTL of best cloud project there
+is, Kolla. I serve as PTL during current Ocata cycle, and I would like to
+continue serving during Pike.
+
+During Ocata cycle, even thou it was very short one with holiday season in the
+middle, we did some amazing things, which includes:
+
+* Performed clean repo split, kolla-ansible is now separate deliverable
+* Kolla-kubernetes development skyrocketed, including helm as package
+  manager. Community grows very fast.
+* First voting gates
+* Docker registry functionality in gates
+
+My goals stays largely the same, we still have work to do in most of them. You
+can see them here [1].
+
+I thank you for your confidence during Ocata cycle and consideration for Pike.
+
+Woot for Kolla!
+
+Michal "inc0" Jastrzebski
+
+[1] https://github.com/openstack/election/blob/master/candidates/ocata/Kolla/inc0.txt
