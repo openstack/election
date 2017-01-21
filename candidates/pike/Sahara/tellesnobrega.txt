@@ -1,0 +1,39 @@
+Hello everyone!
+
+I'd like to announce my candidacy for PTL of the Data
+Processing project (Sahara), and to describe what I hope to do to help Sahara
+move forward.
+
+First of all I would like to introduce myself. I've been working on the Sahara
+project since the Icehouse release, and since the Newton release I have been a
+member of the Sahara core reviewer team.
+I was responsible for introducing the Storm plugin to Sahara and have
+maintained it since its creation. Other than that, I've been working on many
+different features and small fixes to Sahara.
+
+Here are a summary of my contributions to Sahara:
+Reviews:
+* All-time: http://stackalytics.com/?module=sahara-group&user_id=tellesmvn&release=all
+* Ocata: http://stackalytics.com/?module=sahara-group&user_id=tellesmvn&release=ocata
+Commits:
+* All-time: http://stackalytics.com/?module=sahara-group&user_id=tellesmvn&release=all&metric=commits
+* Ocata: http://stackalytics.com/?module=sahara-group&user_id=tellesmvn&release=ocata&metric=commits
+
+As PTL I will coordinate the team to reach community goals, manage
+Sahara releases, and track all activities related to new features
+in Sahara. Also I plan to minimize the open bug list by organizing some bug
+triage days and bug fix weeks. Improving documentation is also a priority to
+allow Sahara to grow.
+
+My main focus for this coming release is finding ways to grow the Sahara team.
+Currently we have mentees and I would like to improve that kind of integration
+to bring new people to the team.
+
+As for Sahara features, I plan to establish a team and set deadlines to deliver
+API v2. I will also focus on preparing Sahara for Python 3.5
+
+I hope that Sahara will continue to grow in the Pike release.
+
+Best regards, Telles Nobrega
+e-mail: telles@redhat.com
+IRC: tellesnobrega, Launchpad: tellesmvn.
