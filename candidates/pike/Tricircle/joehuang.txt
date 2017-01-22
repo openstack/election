@@ -1,0 +1,34 @@
+I would like to announce my self nomination for the PTL candidacy for
+Tricircle Pike cycle. My name is Chaoyi Huang, IRC handle joehuang.
+
+It's great step that the Tricircle project joined the OpenStack big-tent
+ecosystem in Ocata cycle, thanks to the effort from every Tricircle
+contributor, and the help from TCs/PTLs/other project contributors.
+
+Being one big-tent project is one very important milestone to build the
+open community, attract more contributors, to accelrate the Tricircle
+being more and more mature. Although lots of fundatemental features
+and documentations are ready[1][2], it's time for us to think about
+the question: when will Tricircle will be ready for production use?
+
+Here are some ideas to make Tricircle to reach the goal for
+production deployment in Pike cycle:
+
+* function test ready, enhance scenario test cases and code coverage.
+* encourage cloud operator to try Tricircle and get feedback from
+  cloud operators for quality, features, and what's to improvement.
+* feature compliment - shared_vxlan supported L2/L3 networking,
+  advanced networking features like QoS, LBaaS, python client etc.
+* performance, reliability review and enhancement as needed.
+* upgradable before production.
+* keep community as open as any other team, make the contribution
+  in Tricircle is comfortable for anyone, attract more and more
+  contributors.
+* help and grow any one who wants to try PTL in Queens cycle.
+
+Hope everyone will enjoy the contribution in Tricircle.
+
+Thank you for your kind consideration of my candidacy.
+
+[1]https://github.com/openstack/tricircle/tree/master/releasenotes/notes
+[2]http://docs.openstack.org/developer/tricircle/
