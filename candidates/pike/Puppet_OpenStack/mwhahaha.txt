@@ -1,0 +1,22 @@
+I would like to nominate myself for the PTL role in the Puppet Openstack Team
+for the Pike release cycle.
+
+I served as the PTL during the Ocata cycle and would like to continue to serve
+for the Pike release cycle. As part of the Ocata cycle we have made some
+excellent progress around ensuring a consistent experience when using the
+modules. Additionally we have made continued progress around test coverage.
+
+For the Pike cycle, I believe we have a few places to continue to focus.
+- Ensuring the modules are updated for Pike changes.
+- Continuing to focus on CI integration both upstream and downstream.
+- Improving documentation around established patterns and best practices.
+- Working on the feedback loop between the puppet modules and upstream services.
+- Improving the deprecation cycle to ensure we are catching deprecations in the
+  current cycle rather than after configurations have already been removed.
+
+I look forward to working with all of you. As always, I'm open to any
+suggestions or ideas for additional places to improve our processes and modules.
+
+Thanks,
+Alex Schultz
+irc: mwhahaha
