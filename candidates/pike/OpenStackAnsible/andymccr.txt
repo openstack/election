@@ -1,0 +1,49 @@
+I would like to announce my candidacy for PTL of the OpenStack-Ansible project
+for Pike.
+
+As a community, we achieved a lot during this short cycle and I would like to
+continue this momentum into the Pike cycle. I’m motivated to keep working to
+improve the stability and usability of the project, and to continue to work with
+this great community.
+
+During the Ocata cycle we achieved on the goals of standardizing testing
+further, adding upgrade testing, and starting the work to separate out the
+stages of the deployment. This serves as a great point to innovate further and
+improve the way in which we do upgrades and deployments. I’d also like to
+highlight the great work that happened to add CentOS 7 support, and tested Ceph
+integration.
+
+This cycle I would like to focus on standardization within the roles, as well as
+improving the manageability of the project as a whole. The following are some
+specific items that I believe will help us to align with these focus points:
+
+1. Standardize deployments of API services.
+   By utilizing a web server (Apache or NGINX) we can deploy API services
+   in a uniform way. This will allow us to be flexible with regards to IPv6 and
+   SSL integration (at the API server layer), whilst ensuring that all roles can
+   implement this in the same way. Additionally, we can adopt a mature upstream
+   role, for the web server, which will reduce our code footprint.
+
+2. Reduce the templated files we carry.
+   Several template files that are carried (specifically policy.json files) can
+   be retrieved from the upstream repositories, and still apply the
+   "config_overrides" for those files. This will reduce the need to mirror
+   upstream changes to static files, and ensure we are running the appropriate
+   version of the file for the specific release.
+
+3. Closer integration with upstream projects.
+   Deployment projects carry their own challenges each cycle - we need to ensure
+   we further the project itself, whilst staying up to date with changes made
+   in upstream projects. We've done reasonable job of this, but it is often
+   inconsistent because we have no process or initiative around this. We
+   discussed briefly at the summit around having a tighter coupling of community
+   member to specific upstream project. I'd like to trial this during the Pike
+   cycle, with the aim being to improve the overall quality and consistency of
+   the roles, whilst keeping up to date with upstream changes.
+
+I look forward to working with everybody through the Pike cycle!
+
+Thanks again,
+Andy McCrae
+
+IRC: andymccr
