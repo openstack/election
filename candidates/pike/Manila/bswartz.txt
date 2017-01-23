@@ -1,0 +1,7 @@
+I am running for Manila PTL again.
+
+I think that despite how short the Ocata release
+cycle was, our new processes are helping manage
+the review load. I look forward to using our new
+processes during a full-length release cycle and
+hopefully accomplishing much more.
