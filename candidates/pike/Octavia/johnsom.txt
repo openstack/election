@@ -1,0 +1,23 @@
+Hello OpenStack community!
+
+I would like to nominate myself for the Octavia PTL position during the Pike
+series.  I am currently the Octavia PTL for the Ocata release and would like to
+continue to help this incredible team to enhance and evolve network load
+balancing in OpenStack.
+
+For those of you that do not know me, I work for Rackspace and I am a technical
+lead for Octavia in the OpenStack Innovation Center (OSIC).  Prior to joining
+Rackspace I worked for Hewlett-Packard for fifteen years on data center
+automation, distributed network systems, embedded system design, and big data.
+
+During the Ocata series we spun Octavia out of the neutron stadium and became
+a new top level OpenStack project.  We have also made good progress towards
+merging neutron-lbaas into the Octavia project.
+
+Looking forward to Pike my goals would be to finish the neutron-lbaas/Octavia
+merge, enable the active/active topology, and continue our work to
+enhance the testing and documentation for Octavia.
+
+Thank you for your support during Ocata and your consideration for Pike,
+
+Michael Johnson (johnsom)
