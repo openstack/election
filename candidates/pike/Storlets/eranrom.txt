@@ -1,0 +1,20 @@
+Hi All,
+
+I have been leading the Storlets project from its infancy days as
+a research project in IBM to its infancy days as a big-tent project.
+This would not have been possible without the small yet top and seasoned
+developers in our community.
+
+There is still very much I would like to do:
+Reach out to more users and hence to developers.
+Expand on our use cases portfolio by developing a
+rich echo system.
+Continuously work on the project's maturity so that
+it can be picked up by deployers, and last but not least
+enjoy the spirit of open source while at it.
+
+I believe that I can help driving the project to achieve all these
+goals, and would be very happy to serve as the project's first PTL.
+
+Thanks!
+Eran
