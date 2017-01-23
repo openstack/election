@@ -1,0 +1,61 @@
+Hi,
+
+My name is Felipe Monteiro. I have decided to run for Murano PTL for the Pike
+release cycle. I would like to continue to grow Murano in order to make the
+project more stable, mature and performant, while exploring avenues to evolve
+the project.
+
+I’ve been working on the project for the past couple months. Working with
+Murano is probably the most exciting thing I do professionally. When I first
+joined OpenStack, I was overwhelmed by the sheer volume of code, as well
+as the complexity involved in how the various services interact. Thanks
+to the welcoming culture surrounding Murano, I was immediately given help,
+advice and guidance, which, after a couple months of persistence and hard work,
+has enabled me to feel like a solid contributor within OpenStack.
+
+Over the past couple months, I’ve been heavily invested in improving Murano’s
+testing framework, in order to make the project more stable and more mature.
+This has resulted in Murano and Murano Dashboard’s unit test coverage having
+approximately doubled, as well as having various gaps in Murano Dashboard’s
+functional testing filled via Selenium tests. I also regularly code review
+other developers' work and take on the arduous task of editing Murano's
+documentation, because, as a native speaker of English, I really have no excuse
+but to help out in this regard.
+
+I’m really excited to work with Murano further, and to grow the community
+surrounding it. The more companies that contribute to Murano, the stronger the
+community around it will be, capable of maintaining and enhancing Murano for
+years to come. 
+
+The main goals I’d like to focus on for Murano during Pike are:
+ * Significantly improve Murano Tempest testing. This includes integrating
+   Murano with a new OpenStack project called Patrole. Patrole, a Tempest
+   plugin responsible for testing Role-Based Access Control, was spearheaded
+   and founded by AT&T developers and contributors. Its purpose is to help
+   harden the security underpinning various OpenStack services – Murano
+   included. 
+ * Significantly improve Murano documentation.
+ * Improve Murano’s (particularly Murano Dashboard’s) integration with GLARE –
+   there are a number of areas in the UI where GLARE is not supported.
+   These areas should be fixed to provide users who use Murano and GLARE a
+   better user experience.
+ * Focus on addressing a number of outstanding bugs in Murano. These include
+   adding SIGHUP signal support to Murano, support multiple rabbit hosts in
+   RabbitMQ for Murano Agent, and addressing other UI bugs, like abandon
+   environment hanging issues.
+
+My personal ambition leads me to want to also tackle the following items:
+ * Possibly integrate Murano with other OpenStack projects, including
+   Ceilometer, Search Light, or Kolla-Kubernetes. 
+ * Investigate multi-cloud support for Murano, so that it works with different
+   cloud services including VMWare and Amazon.
+ * Increase developer contribution in Murano through my own coding efforts,
+   as well as through AT&T’s resources.
+
+Thanks for taking the time to read through this roadmap and to consider my
+candidacy. Regardless of the outcome, I'm excited to continue contributing
+to Murano, be it code or code reviews.
+
+Regards,
+
+Felipe Monteiro
