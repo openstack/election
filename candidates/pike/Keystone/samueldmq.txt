@@ -1,0 +1,66 @@
+Hello everyone!
+
+I have been involved in OpenStack since late 2013 and now it is time
+to put my name forward as a candidate for keystone PTL during the Pike
+development cycle.
+
+As your PTL, I would like to see our team's focuses classified into
+three categories, as enumerated and detailed below:
+
+1. Community: keeping keystone a great place to contribute
+
+As a team, we need to ensure our project is always a welcoming place
+to new contributors.
+
+I would like to encourage community members who have more experience
+in the project to take leadership roles, such as mentoring GSoC and
+Outreachy programs.
+
+Regarding those programs, it would be great to elaborate a list of
+projects we consider to be interesting and that can be scoped in an
+internship.
+
+In addition, I would like to keep identifying and rewarding community
+members who have been doing an outstanding job, as this helps on
+keeping them motivated and knowing how great and important they are
+to our community.
+
+2. Features and testing: establishing a consistent roadmap
+
+In terms of features, I would like to see our team keeping hardening
+some features that have landed in Ocata, such as PCI-DSS and federated
+auto-provisioning.
+
+Some others would be targeted to Pike, including continuing to work in
+the solution for solving the issue with long-running operations and
+token expiry, and improvements in the policy mechanisms.
+
+In terms of testing, the team has been doing a great job. Some
+functional tests have been added in Ocata. I would like to see our
+team to continue improving our tests in order to make sure we continue
+to deliver high quality code to our users.
+
+3. Docs: revisiting and ensuring consistency and completeness
+
+I would like to keep revisiting our developer docs in order to make
+sure new contributors have a smoothly experience when onboarding.
+
+Furthermore, I would like to note that there is no point in having a
+code that behaviors correctly if we do not teach our users how to use
+our service.
+
+With that said, in order to keep improving usability, I would like to
+see the team making sure the docs are accurate and complete for our
+API consumers and deployers.
+
+There are a few ideas on how to improve docs out there, such as
+api-guide docs, which main goal is to conceptually explain the service.
+
+
+--
+
+I will hapilly discuss those goals with the team during our first PTG
+in Atlanta. I am looking forward to seeing you there!
+
+Thank you,
+Samuel de Medeiros Queiroz - samueldmq
