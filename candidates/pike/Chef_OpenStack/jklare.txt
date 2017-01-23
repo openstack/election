@@ -1,0 +1,7 @@
+Hi everyone,
+
+i am hearby announcing my candidacy as Chef OpenStack PTL for the Pike release
+cycle.
+
+Cheers,
+Jan
