@@ -1,0 +1,54 @@
+I would like to propose my candidacy for the Neutron PTL.
+
+I have been contributing to Neutron since the Havana development
+cycle working for a network vendor and then a distribution vendor.
+I have been a core reviewer since the Kilo development cycle and
+I am on the Neutron stable maintenance team as well as the drivers
+team.
+
+
+I have a few priorities that I would focus on as PTL:
+
+* Cleanup and simplification of the existing code: In addition to
+  supporting the ongoing work of converting all data access into
+  OVO models, I would like the community to continue breaking down
+  code using the callback event system. We should eliminate as many
+  extension-specific mixins and special-cases from the core as
+  possible so it becomes very easy to reason about and stable from
+  a code-churn perspective. This approach forces us to add
+  appropriate event notifications to the core to build service plugins
+  and drivers out of tree without requiriing modifications to the core.
+* Reinstating VPNaaS: this project accomplishes its goals reasonably
+  well and it solves a clear use case. There has been enough interest
+  from contributors on the mailing list that we should be able to find
+  enough resources to at least keep it maintained even if no large
+  features are added.
+* Switch to Pecan and eliminate old API code: we have been working on
+  the new Pecan rewrite for several cycles now. With the current patches
+  open for review, we have parity with the existing API and it should be
+  safe to switch.
+* Enhance DVR to solve additional use cases requested by the community:
+  I would like us to enable SNAT at the compute nodes for cases where
+  consumption of IPs for each compute ndoe from the external network
+  is not a concern. I would also like us to allow the central node to
+  provide floating IP translations for ports unserviced by DVR local
+  nodes (e.g. unbound ports, baremetal ports, ports on compute nodes
+  not attached directly to the external network).
+* Bring on new core reviewers: we suffered from attrition of our core team
+  during this last cycle due to some fundamental changes at a few of the major
+  contributing companies. We have several strong contributors that I would
+  like to see take on a core reviewer role so we can keep our review backlog
+  under control.
+* Support services being built on Neutron: whether it's BGPVPN, Kuryr, SFC,
+  Octavia, Ironic, or whatever else, I want Neutron to provide the building
+  blocks and primitives necessary to fulfill the needs of these projects.
+  This means supporting initiatives like neutron-lib, agent extensions, and
+  future API enhancements to provide more control over core resource behavior.
+* Add tooling to keep the review backlog under control: I would like to
+  look into a bot that can harass us in the channel if a patch sits for too
+  long without feedback. I want to avoid having patches sit in our queue for
+  months at a time because it results in fixes falling through the cracks.
+
+
+Cheers,
+Kevin Benton (kevinbenton)
