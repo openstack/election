@@ -1,0 +1,18 @@
+Hi Kuryrs!
+
+I am putting forward my candidacy for a second term as the PTL. It is great to work with all of you every day to make kuryr deliver on its mission.
+
+Over this current cycle, we've managed to rebuild the team after we had some core departures and I think we are in a very good place, with new very involved core contributors and others showing promise to become cores during this upcoming cycle. Kuryr is built by all of us and I'd like to thank you all for the hard work.
+
+Now that we've reached container-in-VM support, some of the outstanding goals are:
+
+- increasing the robustness
+- Make kuryr-kubernetes have HA
+- Resource management in kuryr-kubernetes
+- CNI split
+- CNI multi device support
+- Continue to work with the Fuxi subteam and get its core reviewer structure stronger
+- Docker 1.13 for kuryr-libnetwork
+- Magnum collaboration for container-in-VM
+
+I look forward to work with all of you on getting Kuryr to the next level!
