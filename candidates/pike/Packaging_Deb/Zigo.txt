@@ -1,0 +1,12 @@
+Hi,
+
+During the Newton cycle, we've been able to move all of our builds from
+a vendor-based server to upstream infra. I served as PTL for the Ocata
+cycle, even though nothing has been done for Ocata yet. Hopefully, we
+will be able to do it before the final release, still. It is my hope
+that we can continue the Packaging-Deb project as it has been a very
+successful project for Newton.
+
+Cheers,
+
+Thomas Goirand (zigo)
