@@ -1,0 +1,28 @@
+Fellow Barbicaneers,
+
+I'd like to nominate myself to continue to serve as Barbican PTL
+through the Pike cycle.
+
+First and foremost, I want to maintain our team's culture.
+
+My goals for the Pike cycle are to continue the progress made during
+the Ocata cycle in the following areas:
+
+1) Grow the Barbican team of contributors and core reviewers.
+2) Collaborate with other OpenStack projects with joint blueprints.
+3) Improve our project maturity index by addressing documentation and process
+   items.
+4) Maintain our high standards for code reviews and unit and functional tests.
+5) Be diligent with backporting bug fixes to stable releases.
+
+In addition, I'd like to focus on three additional areas:
+
+1) Continue the work started with Tempest driven cross-project test cases.
+2) Work toward delivering a deployment model that is secure enough
+for many production environments, while also being easy to deploy and
+operate.
+3) Shrink our backlog of open bugs.
+
+Thank you in advance for this opportunity to serve.
+
+--Dave McCowan (dave-mccowan)
