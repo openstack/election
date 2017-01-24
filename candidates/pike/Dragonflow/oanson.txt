@@ -1,0 +1,34 @@
+I would like to propose my candidacy for Dragonflow PTL position.
+
+I have been working on Dragonflow for over a year, including related
+projects such as Neutron and Openstack-Ansible.
+
+The previous cycle was short, but we have made a lot of progress. I would
+like to leverage that momentum and continue what we have done so far.
+
+My goal for Dragonflow is to make it a reference architecture to implement
+networking and distributed networking services in an easy and simple
+manner while supporting production grade and large scale requirements.
+
+I think that Dragonflow plug-able architecture is proving to be a strong
+choice we made and is even being considered at other OpenStack networking
+projects. This architecture can be extended further, to become more plug-able,
+and allow external vendors to write their own drivers and applications.
+
+I also believe that our simplicity can be very appealing to users that
+want a simple network virtualisation solution part of OpenStack.
+
+For the next cycle, I would like to see Dragonflow become a viable
+choice for cloud deployments. This means a heavy stress on stabilisation,
+deployment, and performance.
+
+I would also like to see new features make it into the release, such as
+FWaaS, and LBaaS.
+
+I think Dragonflow also has a lot to offer outside of Openstack. With
+some necessary additions such as API and AAA, Dragonflow can be a
+virtual network implementation regardless of the ecosystem in which it
+is used. Therefore, it could improve upon any cloud-networking system.
+
+Thank you,
+Omer Anson (oanson).
