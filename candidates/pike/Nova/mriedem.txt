@@ -1,0 +1,61 @@
+Hi everyone,
+
+This is my self-nomination to continue running as Nova PTL for the Pike cycle.
+
+If elected, this would be a third term for me as Nova PTL. In Ocata I thought
+that I did a better job of keeping on top of a broader set of efforts than I
+was able to in Newton, including several non-priority vendor-specific
+blueprints.
+
+I have also tried to make regular communication a priority. The topics vary,
+but in general I try to keep people informed about the release schedule,
+upcoming deadlines, areas that need attention, and recaps of smaller group
+discussions back to the wider team. We have a widely distributed team and a lot
+of groups are impacted by decisions made within Nova so it's important to
+continue with that communication. Despite my best efforts I have also learned
+in Ocata that we need to get earlier feedback on changes which impact
+deployment tooling, and make documentation of such changes a high priority
+earlier in the development of new features so that people working on tooling
+are not left in the dark.
+
+Ocata has been a tough release, and I think we knew that was going to be the
+case going in. It was a shorter cycle but still had some very high-priority
+and high-visibility work items such as integrating the placement service with
+the scheduler and further integrating support for cells v2, along with making
+both of those required in a Nova deployment for Ocata. We also had to deal
+with losing some key people and filling those spots. But people have stepped up
+and we still made some incredible progress in Ocata despite the difficulties.
+
+For Pike I want to focus on the following:
+
+* Continue integration of the placement service into making scheduling
+  decisions, including working with Neutron routed networks and work on
+  defining traits for resource providers so we can model the qualitative
+  aspects of resources in making placement decisions.
+* Continue working on cells v2 for multi-cell support including investigating
+  the concept of auto-registration of compute nodes to simplify deployment
+  automation, and also focus on multi-cell testing and Searchlight
+  integration.
+* Work on volume multi-attach support with the new Cinder v3 APIs introduced in
+  Ocata for creating and deleting volume attachments. I think we are finally at
+  a place where we can make some solid progress on the Nova side with improved
+  understanding between the Nova and Cinder teams.
+* There are going to be several efforts going on across several projects in
+  the Pike release, including modeling capabilities in the REST API, and Nova
+  is going to have to be a part of those efforts. We also need to get teams
+  together to figure out what are the issues with hierarchical quotas and what
+  progress can be made there since that is a high priority item that lots of
+  operators have been requesting for a long time.
+
+In general, we are going to have to improve our review throughput, especially
+given the change in resources we experienced in Ocata. To me, a lot of this
+will have to do with mentoring people that are newer to Nova but are stepping
+into leadership positions, and having a shorter feedback loop on "leveling up".
+
+To summarize, I aim to be of service to those using and contributing to Nova
+and want to continue doing that in the PTL role for the project in the Pike
+release if you will have me for another round.
+
+Thank you for your consideration,
+
+Matt
