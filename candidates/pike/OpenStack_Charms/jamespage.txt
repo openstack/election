@@ -1,0 +1,27 @@
+Hi All
+
+I would like to announce my candidacy for PTL of the OpenStack Charms project.
+
+Over the Ocata cycle, we've been incubating the community of developers around
+the Charms, with new charms for Murano, Trove, Mistral and CloudKitty all due
+to be included in the release in February.
+
+We've also started to engage successfully with the vendor ecosystem around
+OpenStack, with PLUMgrid, Calico and 6wind all working towards aligment and
+inclusion in the OpenStack Charm release.
+
+This is all helping to diversify the development community around the Charms.
+
+I'll continue to work to support the wider ecosystem adoption of the Charms
+as a great way to deploy and manage OpenStack.
+
+We've made some in-roads into improving the developer experience for charm
+authors, but I feel there is still progress to be made so I will continue to
+focus on this aspect of the project during the Pike cycle.
+
+I look forward to working with the team and steering the project for another
+cycle!
+
+Cheers
+
+James
