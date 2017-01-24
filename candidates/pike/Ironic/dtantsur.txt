@@ -1,0 +1,51 @@
+I am announcing my candidacy for PTL for the Ironic team for the Pike release
+cycle. In case you don't know me, I'm dtantsur on IRC. I started working on
+Ironic around late spring or summer 2014, and I'm probably best known as a
+founder of ironic-inspector sub-project. I work for Red Hat.
+
+The Bare metal project has been moving with an incredible pace recently. We've
+got very good at defining and following our priorities (thanks Jim!). As a PTL,
+I will continue facilitating setting cycle goals. I would like to incorporate
+even more input from operators and people actually using Ironic.
+
+I would like to concentrate on driving the following efforts:
+
+* CI and testing improvements.
+
+  The number of our jobs keeps growing, but we still don't cover a lot of
+  features that Ironic provides. We had some ideas the last cycle, but we
+  haven't had a chance to implement all of these.
+
+  Additionally, there is an OpenStack-wide effort to promote Tempest plugins
+  to become a generic useful and convenient tool for testing OpenStack.
+  It may require a mindset shift for the developers, extensive cross-team
+  communications and certain technical decisions to be made. I would be happy
+  to see more downstream teams adopting our Tempest plugins as a primary way
+  to conduct testing of their bare metal cloud.
+
+* Driver improvements and unification
+
+  First of all, we need to finish the driver composition. It will involve
+  deciding the fate of the classic drivers and 3rd party CI.
+
+  I would also like us to think more about unification between drivers.
+  Several non-core things very from driver to driver: UEFI support, RAID
+  support and capabilities discovery immediately come to my mind as examples.
+
+* Of specific features, I'd particularly want to help finishing the
+  boot-from-volume work and deploy steps, with RAID and partitioning as two
+  applications of it.
+
+  The latter is not going to be an easy win. Opening opportunities for
+  operators and/or users to override the actions taken on deploy may shift
+  the focus of Ironic to where we don't want it to be. Both RAID and
+  partitioning have to find their place in the Compute API for (most of) our
+  users to be able to use them.
+
+* As our bug triager for quite some time, I'd like us to start working on our
+  bug backlog more consistently. This may involve setting up regular phone
+  calls for bug triaging and quick spec reviews.
+
+* But my primary goal will be not to get in a way of our wonderful team :)
+
+-- Dmitry Tantsur
