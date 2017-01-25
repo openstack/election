@@ -1,0 +1,23 @@
+I'm happy to announce my candidacy for Watcher PTL for the Pike release cycle.
+
+I've been working on OpenStack for 2.5 years as engineer. My contributions
+have been started in February 2016, they are related to Watcher and Rally
+projects. I'm very proud of being one of core developers in Watcher project.
+
+Watcher has achieved great companies diversity and its stability has been
+improved along with usability. My main goal is to reach production-ready status
+for Watcher by focusing on the following tasks:
+ - provide to all strategies multi datasource support
+   (Ceilometer, Monasca, Gnocchi)
+ - limit concurrent executing of actions across all ongoing action plans
+ - work with Nova team to respect Nova's policies during optimization process
+ - make Watcher HA-ready
+ - make some steps to start integration of storage/network models
+
+I will continue to propose some new blueprints compiled by Servionica team
+and by its clients. I appreciate any help coming from our great community.
+I would be happy to promote Watcher across OpenStack community and
+to welcome new contributors.
+
+Thanks,
+Alexander
