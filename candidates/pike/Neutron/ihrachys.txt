@@ -1,0 +1,115 @@
+Hi team,
+
+I would like to propose my PTL candidacy for Pike.
+
+Some of you already know me. If not, here is my brief OpenStack bio. I
+joined the community back in Havana, and managed to stick around till
+now. During the time, I fit several project roles like serving as a
+Neutron liaison of different kinds (stable, oslo, release), fulfilling
+my Neutron core reviewer duties, taking part in delivering some
+longstanding features, leading QoS and upgrades subteams, as well as
+being part of Neutron Drivers team. I also took part in miscellaneous
+cross project efforts.
+
+I think my experience gives me broad perspective on how the OpenStack
+community and more specifically Networking works, and what is expected
+from its PTL.
+
+First, let me describe my vision of PTL role.
+
+* It's not only about technical intricacies. It's also about people
+  and procedures that make the project run smoothly day by day. The
+  role of PTL is in empowering other team members, keeping track of
+  any roadblocks and inconveniences that the team have, and working
+  on streamlining workflow.
+
+* It's about delegation. We should make it a habit to look at the list
+  of potential candidates for core membership and other leadership and
+  administrative positions not just in times we are short on existing
+  members.
+
+* PTL should be transparent and replaceable. I will work with outgoing
+  PTL to capture oral wisdom and state of affairs into a publicly
+  accessible project dashboard, and I will continue sharing such
+  information with the team on constant basis. The project dashboard
+  will give you answers to questions like: what's the project
+  direction? what are current priorities, and where does each stand?
+  what's on PTL and Drivers' mind? which cross-project and governance
+  initiatives are currently worked on? etc.
+
+As PTL, I'd like to focus on the following things:
+
+* Speed up the RFE/spec process. We should manage RFE/spec review
+  pipeline in such a way so that initiatives that are given a green
+  light on writing up design details get timely feedback and can get
+  past spec process in reasonable time.  At the same time we should be
+  honest to the community not to accept proposals that have high risk
+  to fall through cracks due to lack of manpower. I will encourage
+  usage of reviewday and other tools to keep focus of the team. We
+  will mull over the idea of virtual code sprints for high demand
+  topics.
+
+* Continue Stadium program without drastic changes of direction.
+  Thanks to Armando, we filled the Stadium with tangible meaning. I
+  want us to build on top of that foundation to drive consistency and
+  high quality standards between participating projects.
+
+* Support Marketplace rework. With huge number of drivers and plugins
+  available for Neutron, it became hard for operators to pick the
+  right one and for vendors to advertise their features. There is
+  strong vendor interest to improve situation there. We should boost
+  Feature Classification work, and integrate it with how third party
+  CI systems report test results so that they become useful for
+  Marketplace.
+
+* Introduce Gate Keeper role. We've recently made significant progress
+  in how we deal with gate: we expanded coverage to new types of jobs,
+  we utilize Grafana and other community tools, we review gate-failure
+  tagged bugs during weekly meetings. Sadly, sometimes gate becomes
+  unstable, and it slows down work progress for everyone.  In such
+  cases, it's all about timely addressing the issue. For that matter,
+  I will work with the team on defining a new Gate Keeper role that
+  would help prioritizing current gate issues, as well as proactively
+  work with the team on gate instability vectors. I believe clear
+  ownership is the key.
+
+* Make centralized L3 legacy indeed. We have DVR and HA in tree for
+  quite some time. Both technologies are now mature enough, and are no
+  longer mutually exclusive. Sadly, they are still second class
+  citizens in our own gate.  My belief is we should give users a clear
+  signal that old L3 is indeed legacy by switching our jobs to DVR+HA
+  where applicable.  I am sure that will surface some previously
+  unknown issues, but we'll be ready to tackle them.  While it's never
+  black or white, I suggest we prioritize this work over adding new
+  major L3 features.
+
+* Support existing maintenance initiatives. I'd like us to close
+  neutron-lib saga in Pike, and consider neutron-lib switch for a
+  requirement to all Stadium projects starting from Queens. We should
+  also close OSC transition during Pike.
+
+* Explore alternative ways to evolve Neutron API.  Piling up
+  extensions and allowing third parties to completely change core
+  resource behaviour is not ideal, and now that api-ref and API
+  consolidation effort in neutron-lib are closer to completion, we may
+  have better answers to outstanding questions than during previous
+  attempts to crack the nut. I would like to restart the discussion
+  some time during Pike.
+
+Now, you may ask, it's a nice list of things to do, but we can't
+manage to handle all of that in one cycle, can we? Well, some of those
+bullet points are procedural (RFE process tweaks, next Stadium steps,
+Gate Keeper role) and, with team support, won't take too much time to
+adopt (yes I am an optimist...), and hopefully will deliver the fruits
+in the same cycle.
+
+As for technical bits, it's mostly ongoing work, and I am sure we will
+still have time for other work that our bright contributors tend to
+deliver. Also, it's in everyone's interest to get gate into better
+shape.
+
+Of course, some of the goals are long stretching and may spill over
+into next cycles. It's ok as long as we agree on the path. Do we?
+
+Thanks for attention,
+Ihar
