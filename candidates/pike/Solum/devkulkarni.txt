@@ -1,0 +1,41 @@
+Hi,
+
+I would like to submit my candidacy to continue as PTL of Solum for
+the Pike cycle.
+
+Looking back on the Ocata cycle, some of the highlights for us are:
+- Adding kolla-ansible role [1] and kolla container [2] for Solum
+  (Many thanks to Wei Cao for spearheading this effort)
+- Completing the Ocata goal of removing incubated Oslo libraries
+- Adding Zhu Rong to our core team [3].
+
+The key focus areas for the Pike cycle, which we can pursue together, include:
+- finding an alternative for nova-docker in our devstack setup
+- completing the work that we started on adding support for building applications into VM images
+- making it easy for operators to configure and use different build and deployment options
+
+You might remember, we have been using nova-docker as the virt driver
+in our devstack setup. However nova-docker is being retired [4].
+So it is important that we find a replacement that can work in our devstack setup.
+We have been looking at Zun in this regard [5]. In this cycle I hope
+we can finish this work, thus removing our dependence on nova-docker.
+
+One of our contributors has been working on adding support
+to build applications into VM images using Packer [6].
+You can find the details about this use-case and approach
+in his thesis [7]. I hope that we are able to complete this work in this cycle.
+
+Lastly, we should continue working on the Python 3.5 support [8],
+which has been approved as the community-wide goal for this cycle.
+
+Regards,
+Devdatta Kulkarni
+
+[1] https://review.openstack.org/#/c/402225/
+[2] https://review.openstack.org/#/c/355408/
+[3] http://lists.openstack.org/pipermail/openstack-dev/2016-September/104699.html
+[4] http://lists.openstack.org/pipermail/openstack-dev/2016-December/109387.html
+[5] https://review.openstack.org/#/c/416224/
+[6] https://review.openstack.org/#/c/336570/
+[7] https://gitlab.com/ablu/bachelorthesis/builds/9259804/artifacts/file/build/Bachelor%20Thesis%20Erik%20Schilling.pdf
+[8] https://etherpad.openstack.org/p/solum-python35-goal
