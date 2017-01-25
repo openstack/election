@@ -1,0 +1,45 @@
+Hi all,
+
+I've had the pleasure of serving the Zaqar community as PTL for the past three
+cycles, and I'd like to continue for Pike cycle, if you'll have me.
+
+For Pike release, things I'd like to do:
+
+1. Scalability
+   A scalable service should be able to process increases in load without
+obvious degradation of latency or availability. For Zaqar, "load" can refer to
+various dimensions of usage:
+   1) number of queues
+   2) number of publishers
+   3) number of subscribers
+   4) number of messages
+   5) size of messages
+   6) rate of messages published or consumed
+We have merged the OSProfiler patch in Ocata, so it would be nice to leverage
+it to do more benchmarks to improve above metrics.
+
+2. Availability
+   Fortunately, Zaqar has a simple architecture which makes keeping its
+availability relatively easy. That said, we need to improve the behaviours of
+Zaqar so that it can gracefully failing over in a way that is unnoticeable to
+end users.
+
+3. Latency
+   Latency is a typical time-based measure for the performance of a system.
+Obvious, Zaqar would like to minimize latency wherever possible. There are two
+most important latency metrics I would like to improve in Pike are:
+   1) The amount of time to claim a message
+   2) The amount of time to deliver a message from publisher zaqar server
+   3) The amount of time to deliver a message from zaqar to subscriber
+
+4. Encourage diversity in our Community
+   We are still a small team needs to grow. I would like to encourage more
+people, organizations to join Zaqar community to make sure we have a good
+coverage.
+
+It's a fantastic experience working with this amazing team and I know without
+the dedication and hard work of everyone who has contributed to Zaqar we can't
+make those success stories of Ocata happen. I would be pleased to serve
+as PTL for another cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
