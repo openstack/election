@@ -1,0 +1,33 @@
+Well it's that time again, I'd like to throw my hat in the ring once
+again and nominate myself for the role of Security PTL.
+
+During this shortened cycle we've continued to drive various projects:
+
+* Issue OpenStack Security Notes and provide some degree
+* Support for teams who are not yet Vulnerability Managed
+* Bandit to provide Python Static Analysis
+* Syntribos for OpenStack project fuzzing
+* Maintaining and updating the security guide
+* Receiving the CII best practice award
+
+For my part, this year has been more about managing the project,
+maintaining our momentum and working with the team to behave more like
+a typical OpenStack project, a goal I set out on the security blog[1]
+and something I think we are well on the way to achieving.
+
+My intention for the next release is to complete the scorecard outlined
+in the security blog[1] and to bring in more OSSN authors. Security
+notes are becoming increasingly important as vulnerabilities are found
+in projects that are not supported by the VMT. During this cycle we have
+seen a steep rise in embargoed notes, the work for which is not
+reflected in our public gerrit but is extremely important.
+
+I'd like to extend my thanks to all those in the security project who
+dedicated time and effort to our many activities. We are not a big
+OpenStack project and most of our members are donating their time,
+outside of their employment, so thank you all for your contributions.
+
+Cheers
+-Rob
+
+[1] http://openstack-security.github.io/organization/2016/09/22/maturing-the-security-project.html
