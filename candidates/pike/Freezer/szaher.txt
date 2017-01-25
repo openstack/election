@@ -1,0 +1,42 @@
+Hello everyone,
+
+I'm happy to announce my candidacy to be the Freezer PTL for the Pike release
+cycle.
+
+The Freezer developers did a very good job over the past releases and I am sure
+they will continue doing an amazing job over the next release as well.
+
+For the Pike release cycle, I think we need to focus more on backing up OpenStack resources and adding more
+backup engines to give more variety to OpenStack users, also we should continue working on
+the core freezer features to provide stabilization.
+
+In this cycle we will give also more attention to freezer-dr, the disaster recovery
+part of freezer. It provides cloud administrators the capability to evacuate
+VMs from failed compute nodes, we aim to take it to more than that and support more severe disaster.
+
+
+In order to achieve that, I think we should focus on:
+
+* Enhancing core freezer-agent features and continue refactoring the missing parts
+  to allow pluggable architecture to support more engines and applications in freezer.
+
+* Move from Elasticsearch to Oslo.db
+
+* Fully implement Oslo.policy
+
+* Implement version 2 of freezer-api
+
+* Integration tests. We need to increase the work done on testing. This will
+  help to stabilize Freezer.
+
+* Documentation. We should target for a split, refactoring and global
+  improvement of our docs, which is a required step to increase the size of our
+  community.
+
+* Focus on implementing OpenStack engine(s) to backup OpenStack resources.
+
+
+I would be honoured to have your support.
+
+Thanks,
+Saad Zaher (szaher)
