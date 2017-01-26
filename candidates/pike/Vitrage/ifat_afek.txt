@@ -1,0 +1,54 @@
+Hi All,
+
+I am announcing my candidacy for PTL of the OpenStack Vitrage project for the
+Pike cycle.
+
+I have been the Vitrage PTL from its first day. I was involved in the first
+stages of the design and implementation (in Mitaka), was thrilled when it
+became an official OpenStack project only seven months later (in Newton),
+and spent more and more time on relationships with our growing community (in
+Ocata).
+
+I think that the Vitrage project has a group of extremely talented developers,
+who achieved in less than a year and a half all of the major goals we set for
+ourselves. Seeing how Vitrage grew from an idea to a mature, production-grade
+and well-known project in such a short period of time was an amazing experience
+for me.
+
+
+With that said, we have quite a few challenges ahead. I’ll describe the areas
+that I believe we should focus on in the Pike cycle.
+
+- Extend our community. As time passes, we see more and more interest in
+  Vitrage. The more contributors we have, the better Vitrage can get.
+
+- Support more use cases
+  - Deduce alarms that are not reported as expected (lost or delayed)
+  - Add more deduced alarms and RCA templates (e.g. for network monitoring).
+    It took us a while to build the infrastructure, but now it’s there.
+    It’s time to think of new alarms, what effect they will have on the system,
+    and who can be notified and benefit from this information.
+
+- Integrate with more OpenStack and external projects, for the sake of the
+  above goal.
+
+- Improve Vitrage usability. Vitrage provides a lot of valuable information
+  that is presented in the Horizon UI. As much informative as it is, the way
+  it is displayed is not ideal and should be enhanced.
+
+- Support a persistent graph database. We have been talking about it for a
+  while, it’s time to implement. Our in-memory graph database works very well,
+  but a persistent one has its own advantages.
+
+- Enhance the Vitrage evaluator templates language, and support full template
+  CRUD API.
+
+
+Overall, we would like Vitrage to become a project that every cloud operator
+would like to use, and I believe we are on the right direction. I think that
+the Pike cycle will be a very interesting one.
+
+Thanks,
+Ifat.
+
+
