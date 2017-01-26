@@ -1,0 +1,46 @@
+Hi,
+
+I'm Renat Akhmerov. I'm again running for PTL of Mistral in Pike.
+Mistral is a workflow service developed within the OpenStack community from
+the ground up.
+
+In the last two development cycles (newton and ocata) we made a huge progress
+on improving project maturity. Workflow engine works two orders of magnitude
+faster than a year ago and it finally started working in multi-node mode.
+We also significantly improvemed Mistral docs and Mistral Dashboard which
+is finally a usable tool, made a number of backward compatible improvements in
+Mistral workflow language, implemented an alternative RPC that eliminates
+problems of the previous one, and other hundreds of bugs and smaller changes.
+But our biggest achievement is that Mistral is now being used by even more
+users and found its place in such fields as NFV, deployment, automation etc.
+
+For the next cycle I'd like to propose the following roadmap which is built
+on our users' needs:
+
+* Performance & benchmarking
+  * Less overhead per task
+  * Big workflow graphs
+  * Optimize ‘join’ tasks
+* HA
+  * Primarily we need to add test harness to make sure that HA is achieved
+* Failover. Take care of running workflows on:
+  * Mistral component restart
+  * Infrastructure failures (DB, MQ, network etc.)
+* Usability
+  * New CLI/API (more consistent and human friendly interface)
+  * Debugging workflows
+  * Workflow failure analysis (error messages, navigate through nested
+    workflows etc.)
+* Refactor Actions subsystem
+  * Formalised Python API to develop actions
+  * Actions testability
+  * Actions versioning (i.e. actions working with different versions of
+    OpenStack services)
+
+I'm hoping to gain your support regarding this roadmap.
+
+We're always happy to get new contributors on the project and always ready
+to help people interested in Mistral development get up to speed. The best
+way to get in touch with us is IRC channel #openstack-mistral.
+
+Renat
