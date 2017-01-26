@@ -1,0 +1,100 @@
+Hello everyone,
+
+I'm asking for the opportunity to continue to serve as the PTL of
+Glance into the Pike cycle.
+
+The Current State of Glance
+---------------------------
+
+This has been an interesting cycle.  We accomplished the community
+goals and eventually merged Community Images (after a thorough and
+extensive discussion of almost every aspect of the feature),
+completing half of our Ocata priorities.  We also fixed some bugs and
+implemented some lite specs.  As of this date, however, our Rolling
+Upgrades priority is going to require a FFE, and there's not a chance
+that we're going to merge anything related to Image Import.
+
+That's kind of a mixed record to be running for re-election on, so I
+figure I should explain what I learned and how I see things shaping up
+for Pike if I continue as PTL.
+
+The Glance Community
+--------------------
+
+First, I'd like to discuss the Glance Community.  There are several
+contributors who are active, energetic, knowledgeable, and great to
+work with.  There are some contributors who aren't quite so active,
+but who attend meetings and help out occasionally reviewing the weekly
+priority items.  Unfortunately, there are some current Glance cores
+who don't currently fall into either of the above categories.
+
+Before the Pike PTG, I'm going to ask people on the core list to
+consult with their managers and determine whether they have sufficient
+bandwidth to be effective core contributors to the project.  I was
+hoping that people would naturally do this themselves, but that didn't
+happen during Ocata ... primarily, I think, because it's an honor to
+be a core contributor to an OpenStack project, and it's not easy to
+face up to hanging up your stirrups, or turning in your badge and gun,
+or whatever the appropriate metaphor is.  But for the success of the
+project, I need an honest self-assessment from the current cores of
+the amount of time they can commit to Glance.
+
+(I didn't want to force the issue because, as is common with the core
+contributors across all our projects, we're talking about high-quality
+developers here, and I was hoping they'd be able to find more time to
+work on Glance.  That was a mistake.  I'm mentioning it not to
+embarrass any of the people I'm talking about, but rather as a point
+of information to anyone reading this who will be a first-time PTL in
+Pike.)
+
+Anyway, my goal is to have the core team reconstituted before the Pike
+PTG so that we'll have a better idea of what kind of bandwidth the
+team will have in Pike.
+
+I think this will cascade into a better overall Glance community
+experience because there will be more participation in the weekly
+meetings and on IRC, making the community feel more vibrant.  Further,
+because those active people are currently reviewing all the time, we
+haven't had as much bandwidth for bug triaging and bug smashing.  We
+need to change that in Pike.  Plus, a larger group of active cores
+will provide Glance with a bigger pool of PTL candidates for the
+Queens cycle.
+
+Glance Priorities for Pike
+--------------------------
+
+This is how I see things shaping up for Pike.
+
+1. Image Import
+
+Now I understand why my predecessors as PTL had such a hard time with
+this.  The situation is that this is an extremely important feature
+for the OpenStack community in general, but it's not really a priority
+for anyone in particular.  Thus, it's been difficult to keep one or
+two people, no matter how well-intentioned, working steadily on it
+(and I don't exempt myself from this statement).
+
+Since image import is an important feature for Glance, the entire team
+needs to be working on it.  And we can make it a priority for everyone
+by committing to *not* merge anything else (other than security bugs)
+until image import is merged.  You can see how this is connected to my
+discussion above about the core team.  I want all active cores to be
+working on some part of this, and that way we are all accountable to
+each other much more explicitly than we have been in previous cycles.
+
+I'm not even going to enumerate anything else.  We'll work on the
+"community goals", of course, but not until after image import has
+been merged.  And we may have some more to do on the rolling
+upgrades work.
+
+We'll discuss other possible items at the PTG, but at this point I
+don't want to look past image import.
+
+Conclusion
+----------
+
+Well, that's my election platform.  I'd like to continue as Glance
+PTL, and I've outlined above what my plans are for the Pike cycle.
+
+Thank you for your consideration,
+Brian Rosmaita
