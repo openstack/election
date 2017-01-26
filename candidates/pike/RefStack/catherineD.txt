@@ -1,0 +1,26 @@
+Hello everyone,
+
+I would like to announce my candidacy to once more serve as RefStack PTL for
+the Pike cycle.
+
+The Ocata development cycle was short, but together, we were able to complete
+the implementation of adding new features allowing vendor and product
+registration at RefStack. These features were also successfully released on
+the RefStack website ( https://refstack.openstack.org/#/ ) at the end of 2016.
+
+With the ability to identify the owners and verified data used by the OpenStack
+Foundation for the trademark program, RefStack is now ready to implement more
+new features such as: data retention, centralized testing, statistical analysis
+of the collected result data, etc.  My thanks to everyone who had been
+dedicated to make this happen.  We could not have been able to achieve this
+important milestone without your effort and invaluable contribution.
+
+For the Pike cycle, our focus will be as follows:
+
+1) Establish and implement test result data retention policy.
+2) Add new features to allow vendor (customized) guidelines.
+3) RefStack and refstack-client usability enhancements.
+
+I look forward to working with all of you.  Thank you for your consideration!
+
+Catherine Diep
