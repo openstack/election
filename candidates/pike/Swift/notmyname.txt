@@ -1,0 +1,14 @@
+I'd be honored to continue to serve as PTL for Swift.
+
+During the Pike cycle, these are the things I will focus on:
+
+* Working through the new languages process that the TC has approved,
+  as it relates to the golang work in Swift
+* Continued progress on major ongoing efforts like global cluster
+  improvements, operational improvements, and performance improvements
+* Improving the health of the community, specifically by seeing how the
+  PTG/forum split and lack of a midcycle affects things
+
+As the Swift PTL, I feel it's my duty to enable the community to solve
+these problems by making every community member more productive. This
+is my focus.
