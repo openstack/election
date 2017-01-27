@@ -1,0 +1,22 @@
+I am announcing my candidacy for election as the PTL for Searchlight.
+I have been a leading contributor since the beginning of Searchlight
+and was the PTL for the Ocata cycle.
+
+Ocata was a short cycle and we concentrated on a few achievable goals.
+Of the big ticket features we set out to add, we got to all of them.
+
+My goals for Pike if elected are also relatively modest and aimed at
+increasing stability and awareness:
+
+- Continuing to improve service coverage
+- Improving support for versioned notifications as more projects
+  transition to using them
+- Continuing to support Elasticsearch 5 features while maintaining
+  compatibility with 2.x, including testing both versions in CI
+- Increasing participation from other projects (we've had good progress
+  on this front with Nova and Glance)
+- Working on integration with Horizon and Zaqar
+
+It's been an honor serving as PTL for Ocata; I hope to continue for Pike.
+
+Steve McLellan
