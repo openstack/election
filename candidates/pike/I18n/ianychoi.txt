@@ -1,0 +1,39 @@
+Hello,
+
+I am writing to announce my candidacy for I18n Pike PTL.
+
+To retrospect my activities in Ocata cycle,
+my overall feeling is that Ocata cycle is really short.
+In fact, I acknowledge that most of the action items I wrote in [1]
+are still on-going or have not completed yet.
+Nevertheless, the followings are some memorable activities which I have
+involved with and also would like to continue during upcoming Pike cycle:
+
+* Well summarized action items from Ocata Design Summit [2]
+* IRC meeting time change accordingly with two bi-weekly schedules
+* Publicizing IRC meeting announcement and logs [3]
+* On-going effort on Zanata upgrade with Xenial with infra team
+* Clearer communication on translation imports and criteria [4, 5]
+* Landing page updates for translated documents
+* Co-participation in Pike PTG with Documentation team [6]
+
+I am seeing that there are many upstream translations,
+and many I18n team members participate with great and kind help.
+I really appreciate their contributions and also the help from
+especially Infrastructure team, Documentation team, and Zanata development
+team members. I believe that I am able to continue my effort to finish
+what I wrote in [1] and make for better I18n.
+
+Please support and encourage me again.
+
+
+With many thanks,
+
+/Ian
+
+[1] https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/I18n/ianychoi.txt
+[2] https://etherpad.openstack.org/p/barcelona-i18n-meetup
+[3] https://wiki.openstack.org/wiki/I18N/MeetingLogs
+[4] http://docs.openstack.org/developer/i18n/reviewing-translation-import.html
+[5] http://docs.openstack.org/developer/i18n/infra.html
+[6] https://www.openstack.org/ptg
