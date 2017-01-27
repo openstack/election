@@ -1,0 +1,16 @@
+I’m writing to announce my candidacy for Congress PTL (Pike).
+
+First, I’d like to thank everyone for being a tremendous support
+and a pleasure to work with in the Ocata cycle.
+
+In the Ocata cycle, we made great progress in the robustness of
+the distributed architecture, the rigor of the QA process, and
+the mechanism for pre-packaged policies out-of-the-box.
+
+For the Pike cycle, I hope to continue making great strides in
+code robustness, usability, and ease-of-adoption, as well as high
+value features identified through community engagement.
+
+Thank you all once again!
+
+-- Eric J. Kao
