@@ -1,0 +1,30 @@
+Hi everyone,
+
+I’m announcing my candidacy for PTL of Horizon for the Pike release cycle.
+
+Over the next 6 months I’d like to:
+
+- Narrow the blueprint/feature scope to ensure we focus on high priority areas,
+  like non-performant panels or buggy user experiences. In previous cycles, our
+  attitude has been to opportunistically accept features as they were developed;
+  however, given the rapid decline in review count I don’t believe this is
+  maintainable going forward. I’d like to follow a similar structure to Neutron,
+  with a smaller feature count that is well understood by core reviewers and
+  other time being spent on addressing bugs. We’ll do this by accepting only a
+  handful of blueprints at a time, and designating a core reviewer to monitor
+  each blueprints progress.
+
+- Continue working with Keystone via cross-project meetings to fix key bugs in
+  Identity management. Over the past couple of cycles we’ve closed some long
+  standing Keystone interaction bugs in Horizon, and I’d like to continue this
+  effort. There are several patches still to work on in Horizon and Django
+  OpenStack Auth, and we should make sure we capitalise on the excellent help
+  from the Keystone community to improve the Horizon Identity panels.
+
+- Keep up community interaction. Richard has maintained a list of priority
+  patches through Ocata, as well as sending out weekly meeting reminders and
+  progress updates. I’ll continue this work, and hold bug days to highlight
+  key issues to invest our time in.
+
+Thanks,
+Rob
