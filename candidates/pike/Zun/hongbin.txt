@@ -1,0 +1,48 @@
+Hi all,
+
+This is the first time Zun participants on official PTL election, which is
+exciting. I nominated myself to be a candidate of Zun PTL. As the founder of
+this project, it is my honor to work with all of you to build an innovative
+container service for OpenStack.
+
+Since April 2016, in which the project was founded, the Zun team were making
+an impressive progress during these 8 months. With the hard work of the whole
+team, we delivered most of the fundamental capabilities. The completed
+essential features includes:
+* A full-featured container API.
+* Two drivers that serve as reference implementations.
+* Neutron integration in one of the drivers.
+* Two image drivers: Docker Registry (i.e. Docker Hub) and Glance.
+* Multi-tenancy: Containers are isolated by OpenStack projects.
+* HA deployment: Support multiple compute hosts.
+* Horizon integration.
+* OpenStack Client integration.
+
+Zun is an important project for OpenStack because it enables unique use cases
+that requires container to be an OpenStack-managed resource (i.e. orchstrating
+containerized and virtualized resources). Furthermore, it allows users to use
+one platform, that is OpenStack, to manage containers, VMs, and baremetal.
+To achieve the goal, there are a lot of exicting tasks to do.
+
+For Pike, I would suggest the Zun team to focus on the followings:
+* Container network: Integrate with Kuryr-libnetwork for providing networking
+  for Docker containers.
+* Container storage: Leverage Cinder for providing container data volume.
+* Nova integration: Enhance the existing Nova driver.
+* Resource management: Enhance the management of compute host resources, and
+  introduce different placement policy (i.e. pin container to dedicated
+  CPU cores).
+
+Beyond Pike, I would suggest to target for the following use cases:
+* Strong isolation between neighboring containers. This could be solved by
+  introducing Hypervisor-based container runtime.
+* Containerize stateful application (i.e. DBMS).
+* NFV/HPC workload.
+
+Also, I would like to highlight that nova-docker is going to retire, and
+the users who were using nova-docker might want to find a replacement.
+If they are willing to migrate from nova-docker to Zun, I would encourage the
+Zun team to help out.
+
+Best regards,
+Hongbin
