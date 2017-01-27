@@ -1,0 +1,24 @@
+Hello everyone,
+
+I would like to announce my candidacy for PTL of Cloudkitty.
+
+During the Ocata cycle we have been able open up our community with the
+integration of some new contributors and new cores from different companies
+(which was a key from my point of view).
+We also have been to add many improvment mainly to ease the usage and
+configuration of cloudkitty.
+
+During the Pike cycle the focus I am looking for is to extend to spectrum
+of cloukitty integration (being able to fetch more metrics for more
+services), also to continue to help developers when they want to
+participate in cloudkitty (which is already an ongoing work) and to
+continue to extend the collaboration with other OpenStack projects.
+Finally I am decided also to continue to work to support the wider
+ecosystem adoption of Cloudkitty as the best solution for chargeback and
+rating.
+
+I would also like to take this opportunity to thank all members of the
+OpenStack community who helped our team during the lasts cycles.
+
+Thank you,
+     Christophe
