@@ -1,0 +1,52 @@
+Hello everyone!
+
+I would like to announce my candidacy for the Winstackers PTL election.
+
+I have been involved in OpenStack since Havana, and even longer with Hyper-V
+and Windows related technologies, and I have been the PTL of Winstackers for 3
+cycles.
+
+In the past cycle, our main focus has been adding features to the nova Hyper-V
+driver (vNUMA support, setting boot order, Hyper-V OVS vif driver, FC support,
+PCI passthrough support) and the Neutron Hyper-V Agent (QoS support,
+trunked VLANs support).
+
+We still a couple of pending features, waiting to be approved, which are
+deferred to Pike, such as Hyper-V Shielded VMs, nested virtualization, boot
+from ISO.
+
+We have also made improvements on Hyper-V CI side, and have started upgrading
+it to Hyper-V Server 2016. Currently, the nova Hyper-V CI is running with
+Hyper-V Server 2016 compute nodes.
+
+In the new cycle, there are a couple of things that I'd like us to achieve:
+
+* Add SR-IOV support for Hyper-V in os-win and nova.
+
+* Add support for Windows / Hyper-V Server 2016 new Network Controller and SDN
+  solution in networking-hyperv. This is currently in progress, and it will
+  help expand the supported network types of Hyper-V and the neutron-hyperv-agent
+  (primarely VXLAN), and it will help add L3 networking / DVR support on
+  Hyper-V compute nodes.
+
+* Expand the list of tests run and the number of features tested by the Hyper-V
+  CI. Some of the nova Hyper-V driver's features could not be tested by the
+  Hyper-V CI, as those features were introduced in Hyper-V Server 2016 (
+  e.g.: vNIC hotplug). As we are upgrading the compute nodes, those features
+  become testable.
+
+* Switching the Hyper-V nova and neutron CIs from using neutron-hyperv-agent to
+  neutron-ovs-agent, in order to ensure the Hyper-V OVS support.
+
+* Add documentation for previously added features.
+
+* Last, but not least, merge as many of the remaining features and any new
+  ones we'll submit upsteam.
+
+These are the main goals I have in mind that I would like to accomplish during
+the Pike cycle, among other minor goals. New goals and suggestions are welcome,
+and can be proposed during the weekly Hyper-V meetings.
+
+Thank you for your consideration,
+
+Claudiu Belu
