@@ -1,0 +1,36 @@
+Hi!
+
+I would like to submit my candidacy to return as PTL of the Release
+Management team for the Pike cycle.
+
+You may remember me as the release manager from Bexar to Grizzly, and PTL of
+the Release Management team from Havana to Liberty. I'd like to thank Doug
+Hellmann for his service as PTL from Mitaka to Ocata. Under his leadership,
+the Release Management team transformed from an artisan shop into a highly
+efficient and scalable factory. His focus on writing down everything and
+introducing automation everywhere will make the work of succeeding him easier
+than ever. But we always wanted to introduce regular PTL rotation in the team,
+so Doug won't run again, and for Pike I volunteer to take back that baton.
+
+I would personally prefer to let someone else take it (and would love to see
+other election candidates for this role !), but during this cycle we probably
+failed to grow new members who would want to take over team leadership. People
+with interest in cross-project functions like Release Management and time to
+dedicate to it are a rare resource those days.
+
+If elected, my plan is to:
+
+- continue in the direction set by Doug toward more self-service
+automation around Release Management, and focus the team on providing a
+framework, advice and last-minute sanity checks before tagging releases.
+
+- anticipate changes that we may need to do to accommodate the introduction
+of new programming languages.
+
+- add a few new members in the team, to grow the set of people able to
+participate in a PTL rotation scheme in the future.
+
+Thanks for reading until the last line!
+
+-- 
+Thierry Carrez (ttx)
