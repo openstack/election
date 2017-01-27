@@ -1,0 +1,58 @@
+I have been acting as the PTL on Monasca for several releases and
+excited about the  more wide-spread adoption that is occuring
+for Monasca, as well as the rest of OpenStack.
+
+I'm amazed and humbled by the contributions from the OpenStack
+community. There are many reviews that involve Monasca completely
+outside of our project and one's that we aren't engaged in. There have
+also been new deployments by companies outside of the core developers
+working on Monasca.
+
+There are contributors involved with Monasca that are now keeping the
+project on course in the community, taking on a lot of the infra tasks
+for the project, which I have had a history of not being as diligent
+about:-) But, we now have an official release manager for Monasca,
+who does a fantastic job!
+
+There are also reviewers, that have also been surpassing me recently
+in quality and quantity of reviews. Your contributions haven't gone
+unnoticed by me and I've been thinking that someone else might
+make a better PTL.
+
+However, we hadn't really discussed/prepared for that. Therefore, I
+would like to propose my candidacy for PTL during the Pike release cycle.
+I'll be relying heavily on others in the community to help me out in that
+endeavor, but I'm more than happy to continue on and will try to keep up
+with the pace.
+
+My goals and objectives for the project in the Pike release are as
+follows:
+
+* Add new features to enhance the query capabilities in Monasca, such as
+new statistics functions. For example, we've been discussing a new
+Monasca Query Language (MQL) and supporting capabilities such as rates,
+histograms, percentiles and many other functions.
+
+* Add new alarm manageability features to reduce alarm fatigue, such as
+the ability to silence/inhibit alarms and group alarms.
+
+* Integrate Monasca with the container and Kubernetes ecosystem. We are
+already well underway in this area, and in addition to becoming more
+integrated with Kubernetes, this also makes an install of Monasca very
+simple.
+
+* Continue to enhance the Logging-as-a-Service capabilities in the form
+of the Kibana integration and support for Keystone and multi-tenancy, as
+log well as extending the API for querying.
+
+* Transition completely to the Python API. Most of the development for
+the API recently has been on the Python API, and for a lot of the
+potential new development listed above, that would presumably only be
+done on the Python API.
+
+There are many other areas that deserve mentioning, but I'll
+leave it at that.
+
+Thank you for all the great work!
+
+Roland Hochmuth
