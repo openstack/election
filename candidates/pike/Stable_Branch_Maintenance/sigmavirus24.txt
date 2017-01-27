@@ -1,0 +1,39 @@
+Hi everyone!
+
+I'd like to announce my candidacy for PTL of the Stable Branch Maintenance
+Team.
+
+For those who don't know me, I am a Glance Core Reviewer, Stable Core
+Reviewer, Security Core Reviewer, and Release CPL.  I've been an active
+contributor to Stable Team meetings and mailing discussions.
+
+I'd like to continue the work that Tony has started these last two cycles.
+Namely, I'd like to:
+
+1. Work with project teams to foster better relationships and to understand
+   how decisions they make for master affect their stable branches.
+
+   Further, continuing Tony's work, I'd like to focus on how the changes being
+   made to how drivers are managed and maintained will effect stable branches.
+
+2. Work with cross-project liaisons to help project teams grow their stable
+   branch teams as necessary.  Specifically, there is a large difference in
+   how teams decide to backport changes.  Standardizing the decision process
+   would be beneficial to every project's user base.
+
+3. Holding regular team meetings. We presently rarely have meetings due to the
+   chosen times being inconvenient for different members.
+
+4. Working with the release team to improve the self-service tooling that they
+   have created.  Specifically, I would work with both our excellent
+   Infrastructure team and Release team to automate the retirement of stable
+   branches.
+
+If you have questions about these items or about me, please do ask. I will
+reply as promptly as possible.
+
+Cheers,
+Ian Cordasco
+
+    Work IRC: sigmavirus
+Non-Work IRC: sigmavirus24
