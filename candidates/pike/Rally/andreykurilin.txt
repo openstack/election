@@ -1,0 +1,30 @@
+Hi everyone!
+
+I have been involved in OpenStack for about 3 years and big part of that period
+it was Rally project.
+
+Ocata cycle was short, so not all of items from my previous TODO list were
+finished. There are a lot of short-term and long term tasks and I want to be
+involved as much as possible. That is why I'm announcing my candidacy for
+Rally PTL for the Pike release cycle.
+
+* My goals for the Pike cycle
+
+Release process:
+ - do regular 3 weeks releases. Unfortunately, we started a big redesign of
+   one of our components and it took too much time, so instead of 3 weeks for
+   release, Rally 0.8.0 was released after 3 months. I'll do my best to achieve
+   shorter releasing cycles.
+
+Tasks:
+ - Increase plugins-core team
+ - Improve reporting system and provide more result types (subunit, junit,
+   testrail and etc)
+ - Continue work on Rally as a Service
+ - Make rally certification even more user-friendly and cover more use-cases
+ - Continue working on improving documentary
+ - Provide a way to deliver rally plugins as python packages
+ - Split Rally Core and OpenStack related plugins into 2 repos
+ - Nested atomics
+ - Finish task v2 format
+ - Improve cleanup mechanism (including disaster cleanup)
