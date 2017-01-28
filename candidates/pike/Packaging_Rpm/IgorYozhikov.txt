@@ -1,0 +1,24 @@
+This is my candidacy for PTL role in the Packaging-Rpm OpenStack team
+for the Pike release cycle.
+
+I’m working on creating, building, polishing and maintaining Linux packages for
+OpenStack projects with  various dependencies for few years since IceHouse
+launch. It allowed me to accumulate deep knowledge base about core OpenStack
+functionality.
+The main goal for the Packaging-Rpm project, as I see it, is to create community
+OpenStack packages for dev-core and the rest of projects if possible or
+necessary. These packages already developed and used by MOS, SUSE & RDO.
+I wish my experience as package maintainer could help developers all over the
+world to make their work easier and more transparent with efficiency pushed to
+higher level.
+
+
+There are a few topics to concentrate on during Pike cycle:
+
+Finish with dev-core project packages, maintain them and back-port in case of
+necessity to previous releases.
+Keep maintenance of already built packages.
+Elaborate functional tests for packages which could be used within CI.
+
+Regards, Igor Yozhikov (IgorYozhikov)
+iyozhikov@mirantis.com
