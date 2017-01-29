@@ -1,0 +1,54 @@
+I'd like to continue to serve as the OpenStack Requirements PTL.
+
+The focus for the Ocata cycle was on establishing tools to maintain
+a co-installable set of projects whilst given each project more control
+in their own repos to set minimums and banned versions.  That work was
+predicated on the statement[1]:
+    "nearly everyone is now using constraints"
+
+It turns out that when that state was investigated it was untrue.  It seems
+about 50% of projects listed projects.txt[2].  So the focus switched to
+enabling tools and projects to use constraints[3].
+
+So we've set the groundwork to attack the 2 biggest issues with requirements
+for OpenStack.
+
+ 1. Divergent requirements
+    Allowing projects to be co-installable but not requiring projects to
+    maintain test identical requirements.
+ 2. Testing lower-bounds
+
+In my Ocata platform I called out the following items:
+
+ 1. Improving communication, often decisions are made in the requirements team
+    that affect many projects, I have a commitment to bringing more experts in
+    for strategic reviews/discussions
+ 2. Understand how we can work with/enhance pip tooling to create a more
+    satisfactory requirements/constraints experience for OpenStack
+ 3. Work closely with the release managers as there is still a lot of common
+    issues there.  In that a release of $project will trigger processes in the
+    requirements team.
+ 4. Getting openstack_requirements *code* to the point it can be installed as a
+    library.  We've seen issues in the past where stable branches need largish
+    backports to work correctly.  Really the *code* and *data* should be treated
+    independently
+ 5. Testing lower bounds of our supported requirements [lower-constraints.txt]
+
+By way of an update/clarification of what we achieved and what's left to do.
+ 1. We've done some of this but what's really missing is ways to rapidly
+    identify whom the outside SMEs should be and reach out.
+ 2. We've put in place a number of band aids here but the pip enhancements
+    are "big a scary"[4].
+ 3. Ongoing.  Frankly I dropped the ball here but as always the Release
+    Managers team have been fantastic here.
+ 4. Done.  We're yet to leverage this fully.
+ 5. See opening pre-amble :)
+
+I'd appreciate another cycle to progress these items, if y'all will have me.
+
+Yours Tony.
+
+[1] /me during the Barcelona summit (more than once) ;/
+[2] http://git.openstack.org/cgit/openstack/requirements/tree/projects.txt
+[3] We're now in excess of 85%
+[4] My assessment not that of the pip team.
