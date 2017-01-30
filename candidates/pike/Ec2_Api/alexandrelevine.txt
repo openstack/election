@@ -1,0 +1,10 @@
+Hi all,
+
+Once again I would like to run for PTLship as a current EC2 API PTL.
+
+In the next cycle we'll be working on supporting the default VPC mode for
+EC2 API to be available along with the classic EC2 API mode besides anything
+else which will come from community.
+
+Best regards,
+  Alex Levine
