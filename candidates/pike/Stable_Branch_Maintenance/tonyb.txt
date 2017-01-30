@@ -1,0 +1,43 @@
+Hi everybody!
+
+I'd like to continue to serve as the Stable branch maintenance PTL.
+
+As I stated in my Ocata election platform [1] I have a few things on my TODO
+list:
+
+ 1. Work with project teams to understand how decisions taken on master will
+    impact their stable branches.  Specifically projects with a driver model.
+ 2. Work with project teams to implement constraints support
+ 3. Growing the project specific, and stable-maint teams
+ 4. Re-establishing regular team meetings and presence in #openstack-stable
+ 5. Producing tooling to aid projects teams, release managers and the stable
+    team to keep stable branches current and released with a regular cadence
+ 6. Producing tooling and procedures to help retire projects as required
+
+It's bitter sweet to admit that many of these items are *still* on my list for
+Pike.
+
+ 1. This is an ongoing effort where the effort today pays off in 6 months :/
+ 2. Has been handed off to the Requirements team[2] and has seen good progress
+    on master [3] which need to to translate onto stable branches.
+ 3. This is a long term effort but I feel like we've had some success here,
+    especially in light of challenges facing *all* core teams.
+ 4. We've had mixed success here.  I'm not convinced this is working.  It's
+    starting to feel to me like perhaps the stable team isn't big enough to
+    really need meetings.  Using #openstack-stable and an office channel seems
+    to be be working but again would work better with a larger team.
+ 5. The Realease team has made awesome progress on the automation side of
+    things and we're working on increasing review bandwidth but the tools to
+    help PTLs and CPLs decide *when* a release is needed is still immature.
+ 6. This is getting better but for this to be fully realised requires an
+    upgrade in gerrit.  This upgrade should provide the fine grained ACLs
+    needed to make this self and close to self service.
+
+I'd appreciate another cycle to progress these items, if y'all will have me.
+
+
+Yours Tony.
+
+[1] https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Stable_Branch_Maintenance/tonyb.txt
+[2] Which I'm also PTL sure ;P
+[3] https://review.openstack.org/#/q/is:merged+topic:feature/add-constraints-support
