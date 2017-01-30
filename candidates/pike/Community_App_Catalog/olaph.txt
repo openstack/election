@@ -1,0 +1,10 @@
+I hereby submit my candidacy for PTL of the Community App Calatlog
+for Pike!
+
+I have no intention of rocking the boat, but rather to futher the
+work of my predecessoor.  This includes work on the transition to
+Glare, a CI/CD pipeline, and a greater recognition of the project.
+
+Thanks for your consideration!
+
+olaph
