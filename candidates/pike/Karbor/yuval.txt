@@ -1,0 +1,17 @@
+Hello everyone,
+
+I would like to announce my candidancy for PTL of Karbor for the Pike release
+cycle.
+
+My goals for the Pike cycle:
+ - Adopt cycle-with-intermediary release model
+ - Stable reference implementation for the protectables and protection
+   plugins
+ - Cooperate with Cinder for the work on Tiramisu and replication
+ - Integration with Freezer
+ - Document all pluggable interfaces (bank, protectable, protection)
+ - Cross-site protect and restore
+ - Advanced protection policy (retention)
+
+Thanks,
+Yuval
