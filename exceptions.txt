@@ -9,4 +9,4 @@ candidates/ocata/Solum/devkulkarni.txt: Devdatta Kulkarni
 # Use 'Matthew Wagoner' not '=w='
 candidates/pike/Community_App_Catalog/olaph.txt: Matthew Wagoner
 # Use 'Renat Akhmerov' not 'Renat Renat'
-candidates/pike/Mistral/rakhmerov.txt: Mistral
+candidates/pike/Mistral/rakhmerov.txt: Renat Akhmerov
