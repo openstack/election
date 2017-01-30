@@ -1,0 +1,36 @@
+I announce my candidacy for, and respectfully request your support to serve as 
+your Magnum PTL again for the Pike release cycle.
+
+Here are are my achievements and OpenStack experience and that make me the 
+best choice for this role:
+
+* Founder of the OpenStack Containers Team
+* Established vision and specification for Magnum
+* Founding PTL for Magnum
+* Core reviewer since the first line of code was contributed in Nov 2014
+* Added Magnum to OpenStack
+* Led numerous mid cycle meetups as PTL
+* 3 terms of experience as elected PTL for Solum
+* Involved with OpenStack since Austin Design Summit in 2010
+
+What background and skills help me to serve in this role well:
+
+* Over 20 years of experience in technical leadership positions
+* Unmatched experience leading multi-organization collaborations
+* Diplomacy skills for inclusion of numerous viewpoints
+* Ability to drive consensus and shared vision
+* Considerable experience in public speaking, including multiple keynotes at OpenStack Summits, and numerous appearances at other events.
+* Leadership of collaborative OpenStack design summit sessions
+* Deep belief in Open Source, Open Development, Open Design, and Open Community
+* I love OpenStack and I love using containers
+
+During the Ocata cycle we worked toward enabling the next generation
+of applications with a design for complex clusters, and better integrating
+our clusters with OpenStack services for networking and storage.
+
+I am only running for PTL for one project, because I want Magnum to be my
+primary focus.  I look forward to your vote, and continued success together.
+
+Thanks,
+
+Adrian Otto
