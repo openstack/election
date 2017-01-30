@@ -21,7 +21,6 @@ import pickle
 import pytz
 import re
 import requests
-import six
 import subprocess
 import time
 import yaml
