@@ -6,3 +6,7 @@ candidates/ocata/Mistral/rakhmerov.txt: Renat Akhmerov
 candidates/ocata/Trove/amrith.txt: Amrith Kumar
 # Use 'Devdatta Kulkarni' not 'Devdatta-kulkarni'
 candidates/ocata/Solum/devkulkarni.txt: Devdatta Kulkarni
+# Use 'Matthew Wagoner' not '=w='
+candidates/pike/Community_App_Catalog/olaph.txt: Matthew Wagoner
+# Use 'Renat Akhmerov' not 'Renat Renat'
+candidates/pike/Mistral/rakhmerov.txt: Mistral
