@@ -1,0 +1,29 @@
+The election of Pike PTL is happening during the Chinese Spring Festival, so
+many people are not online.
+
+As a community, we have done a lot of amazing work during the Ocata cycle:
+
+- Versioning everything, especially the engine RPCs
+- Support status added to profile type, policy type
+- Unified notification for message and event format
+- Improved support to health policy
+- Improved support to container profile
+- and many others
+
+It has been an unusual cycle because it is *very* short. It has been an
+amazing cycle for the team because we have more hands working on different
+things and we have identified quite some new requirements for the team to
+contribute.
+
+In the coming cycle, I'd like to again serve as the team facilitator, which is
+called the PTL sometimes. My vision for the Pike cycle is as follows:
+
+- A mature, supported health policy implementation.
+- A better management of the container clusters.
+- A better support to the NFV use cases.
+- A more comprehensive feature support in the dashboard project.
+- A stronger team to take the Senlin project to its next level.
+
+These are just things on top of my head. All ideas are welcomed.
+
+- Qiming Teng
