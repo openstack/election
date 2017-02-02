@@ -11,7 +11,7 @@ See `Election system`_, `PTL details`_ and `TC details`_.
 .. Below is the official list of candidates for the current round.
 
 .. TODO: Change from ptl.rst to tc.rst when TC rounds starts
-.. include:: ptl.rst
+.. .. include:: ptl.rst
 
 
 Previous elections

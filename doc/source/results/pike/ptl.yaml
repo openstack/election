@@ -1,0 +1,459 @@
+candidates:
+  Barbican:
+  - elected: true
+    email: dmccowan@cisco.com
+    fullname: Dave McCowan
+    ircname: dave-mccowan
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Barbican/dave-mccowan.txt
+  Chef_OpenStack:
+  - elected: true
+    email: j.klare@cloudbau.de
+    fullname: Jan Klare
+    ircname: jklare
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Chef_OpenStack/jklare.txt
+  Cinder:
+  - elected: true
+    email: sean_mcginnis@dell.com
+    fullname: Sean McGinnis
+    ircname: smcginnis
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Cinder/smcginnis.txt
+  Cloudkitty:
+  - elected: true
+    email: christophe.sauthier@objectif-libre.com
+    fullname: Christophe Sauthier
+    ircname: huats
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Cloudkitty/huats.txt
+  Community_App_Catalog:
+  - elected: true
+    email: zxkuqyb@gmail.com
+    fullname: Matthew Wagoner
+    ircname: olaph
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Community_App_Catalog/olaph.txt
+  Congress:
+  - elected: true
+    email: ekcs.openstack@gmail.com
+    fullname: Eric K
+    ircname: ekcs
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Congress/ekcs.txt
+  Designate:
+  - elected: true
+    email: tim.simmons@rackspace.com
+    fullname: Tim Simmons
+    ircname: timsim
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Designate/timsim.txt
+  Documentation:
+  - elected: true
+    email: a.settle@outlook.com
+    fullname: Alexandra Settle
+    ircname: asettle
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Documentation/asettle.txt
+  Dragonflow:
+  - elected: true
+    email: omer.anson@toganetworks.com
+    fullname: Omer Anson
+    ircname: oanson
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Dragonflow/oanson.txt
+  Ec2_Api:
+  - elected: true
+    email: alexandrelevine@gmail.com
+    fullname: Alexandre Levine
+    ircname: alexandrelevine
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Ec2_Api/alexandrelevine.txt
+  Freezer:
+  - elected: true
+    email: eng.szaher@gmail.com
+    fullname: Saad Zaher
+    ircname: szaher
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Freezer/szaher.txt
+  Fuel:
+  - elected: true
+    email: vkuklin@mirantis.com
+    fullname: Vladimir Kuklin
+    ircname: aglarendil
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Fuel/aglarendil.txt
+  Glance:
+  - elected: true
+    email: brian.rosmaita@rackspace.com
+    fullname: Brian Rosmaita
+    ircname: rosmaita
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Glance/rosmaita.txt
+  Heat:
+  - elected: true
+    email: rico.l@inwinstack.com
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Heat/ricolin.txt
+  Horizon:
+  - elected: true
+    email: robert.cresswell@outlook.com
+    fullname: Rob Cresswell
+    ircname: robcresswell
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Horizon/robcresswell.txt
+  I18n:
+  - elected: true
+    email: ianyrchoi@gmail.com
+    fullname: Ian Y. Choi
+    ircname: ianychoi
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/I18n/ianychoi.txt
+  Infrastructure:
+  - elected: true
+    email: fungi@yuggoth.org
+    fullname: Jeremy Stanley
+    ircname: fungi
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Infrastructure/fungi.txt
+  Ironic:
+  - elected: true
+    email: dtantsur@redhat.com
+    fullname: Dmitry Tantsur
+    ircname: dtantsur
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Ironic/dtantsur.txt
+  - elected: false
+    email: jay@jvf.cc
+    fullname: Jay Faulkner
+    ircname: JayF
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Ironic/JayF.txt
+  - elected: false
+    email: juliaashleykreger@gmail.com
+    fullname: Julia Kreger
+    ircname: TheJulia
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Ironic/TheJulia.txt
+  Karbor:
+  - elected: true
+    email: yuval@brik.org.il
+    fullname: Yuval Brik
+    ircname: yuval
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Karbor/yuval.txt
+  Keystone:
+  - elected: true
+    email: lbragstad@gmail.com
+    fullname: Lance Bragstad
+    ircname: lbragstad
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Keystone/lbragstad.txt
+  - elected: false
+    email: samueldmq@gmail.com
+    fullname: Samuel de Medeiros Queiroz
+    ircname: samueldmq
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Keystone/samueldmq.txt
+  Kolla:
+  - elected: true
+    email: inc007@gmail.com
+    fullname: Michal Jastrzebski
+    ircname: inc0
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Kolla/inc0.txt
+  Kuryr:
+  - elected: true
+    email: antonisp@celebdor.com
+    fullname: Antoni Segura Puimedon
+    ircname: apuimedo
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Kuryr/apuimedo.txt
+  Magnum:
+  - elected: true
+    email: adrian.otto@rackspace.com
+    fullname: Adrian Otto
+    ircname: Adrian_Otto
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Magnum/Adrian_Otto.txt
+  Manila:
+  - elected: true
+    email: ben@swartzlander.org
+    fullname: Ben Swartzlander
+    ircname: bswartz
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Manila/bswartz.txt
+  Mistral:
+  - elected: true
+    email: renat.akhmerov@gmail.com
+    fullname: Renat Akhmerov
+    ircname: rakhmerov
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Mistral/rakhmerov.txt
+  Monasca:
+  - elected: true
+    email: roland.hochmuth@hp.com
+    fullname: Roland Hochmuth
+    ircname: rhochmuth
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Monasca/rhochmuth.txt
+  Murano:
+  - elected: true
+    email: felipe.monteiro@att.com
+    fullname: Felipe Monteiro
+    ircname: felipemonteiro
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Murano/felipemonteiro.txt
+  Neutron:
+  - elected: false
+    email: ihrachys@redhat.com
+    fullname: Ihar Hrachyshka
+    ircname: ihrachys
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Neutron/ihrachys.txt
+  - elected: true
+    email: kevin@benton.pub
+    fullname: Kevin Benton
+    ircname: kevinbenton
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Neutron/kevinbenton.txt
+  Nova:
+  - elected: true
+    email: mriedem@us.ibm.com
+    fullname: Matt Riedemann
+    ircname: mriedem
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Nova/mriedem.txt
+  Octavia:
+  - elected: true
+    email: johnsomor@gmail.com
+    fullname: Michael Johnson
+    ircname: johnsom
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Octavia/johnsom.txt
+  OpenStackAnsible:
+  - elected: true
+    email: andy.mccrae@gmail.com
+    fullname: Andy McCrae
+    ircname: andymccr
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/OpenStackAnsible/andymccr.txt
+  OpenStackClient:
+  - elected: true
+    email: dtroyer@gmail.com
+    fullname: Dean Troyer
+    ircname: dtroyer
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/OpenStackClient/dtroyer.txt
+  OpenStack_Charms:
+  - elected: true
+    email: james.page@ubuntu.com
+    fullname: James Page
+    ircname: jamespage
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/OpenStack_Charms/jamespage.txt
+  Oslo:
+  - elected: true
+    email: eric.guo@easystack.cn
+    fullname: ChangBo Guo
+    ircname: gcb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Oslo/gcb.txt
+  Packaging_Deb:
+  - elected: true
+    email: zigo@debian.org
+    fullname: Thomas Goirand
+    ircname: Zigo
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Packaging_Deb/Zigo.txt
+  Packaging_Rpm:
+  - elected: true
+    email: iyozhikov@mirantis.com
+    fullname: Igor Yozhikov
+    ircname: IgorYozhikov
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Packaging_Rpm/IgorYozhikov.txt
+  Puppet_OpenStack:
+  - elected: true
+    email: aschultz@redhat.com
+    fullname: Alex Schultz
+    ircname: mwhahaha
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Puppet_OpenStack/mwhahaha.txt
+  Quality_Assurance:
+  - elected: true
+    email: andrea.frittoli@gmail.com
+    fullname: Andrea Frittoli
+    ircname: andreaf
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Quality_Assurance/andreaf.txt
+  - elected: false
+    email: ghanshyammann@gmail.com
+    fullname: Ghanshyam Mann
+    ircname: gmann
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Quality_Assurance/gmann.txt
+  Rally:
+  - elected: true
+    email: andr.kurilin@gmail.com
+    fullname: Andrey Kurilin
+    ircname: andreykurilin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Rally/andreykurilin.txt
+  RefStack:
+  - elected: true
+    email: cdiep@us.ibm.com
+    fullname: Catherine Diep
+    ircname: catherineD
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/RefStack/catherineD.txt
+  Release_Management:
+  - elected: true
+    email: thierry@openstack.org
+    fullname: Thierry Carrez
+    ircname: ttx
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Release_Management/ttx.txt
+  Requirements:
+  - elected: true
+    email: tony@bakeyournoodle.com
+    fullname: Tony Breeds
+    ircname: tonyb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Requirements/tonyb.txt
+  Sahara:
+  - elected: true
+    email: tenobreg@redhat.com
+    fullname: "Telles Mota Vidal N\xF3brega"
+    ircname: tellesnobrega
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Sahara/tellesnobrega.txt
+  Searchlight:
+  - elected: true
+    email: steven.j.mclellan@gmail.com
+    fullname: Steve McLellan
+    ircname: sjmc7
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Searchlight/sjmc7.txt
+  Security:
+  - elected: true
+    email: hyakuhei@gmail.com
+    fullname: Robert Clark
+    ircname: hyakuhei
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Security/hyakuhei.txt
+  Senlin:
+  - elected: true
+    email: tengqim@cn.ibm.com
+    fullname: Qiming Teng
+    ircname: Qiming
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Senlin/Qiming.txt
+  Solum:
+  - elected: true
+    email: kulkarni.devdatta@gmail.com
+    fullname: Devdatta-kulkarni Devdatta-kulkarni
+    ircname: devkulkarni
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Solum/devkulkarni.txt
+  Stable_Branch_Maintenance:
+  - elected: false
+    email: graffatcolmingov@gmail.com
+    fullname: Ian Cordasco
+    ircname: sigmavirus24
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Stable_Branch_Maintenance/sigmavirus24.txt
+  - elected: true
+    email: tony@bakeyournoodle.com
+    fullname: Tony Breeds
+    ircname: tonyb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Stable_Branch_Maintenance/tonyb.txt
+  Storlets:
+  - elected: true
+    email: eran@itsonlyme.name
+    fullname: Eran Rom
+    ircname: eranrom
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Storlets/eranrom.txt
+  Swift:
+  - elected: true
+    email: me@not.mn
+    fullname: John Dickinson
+    ircname: notmyname
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Swift/notmyname.txt
+  Tacker:
+  - elected: true
+    email: gong.yongsheng@99cloud.net
+    fullname: Gongysh Gongysh
+    ircname: gongysh
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Tacker/gongysh.txt
+  Telemetry:
+  - elected: true
+    email: julien@danjou.info
+    fullname: Julien Danjou
+    ircname: jd__
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Telemetry/jd__.txt
+  Tricircle:
+  - elected: true
+    email: joehuang@huawei.com
+    fullname: Chaoyi Huang
+    ircname: joehuang
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Tricircle/joehuang.txt
+  Tripleo:
+  - elected: true
+    email: emilien@redhat.com
+    fullname: Emilien Macchi
+    ircname: emilienm
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Tripleo/emilienm.txt
+  Trove:
+  - elected: true
+    email: amrith@amrith.org
+    fullname: Amrith Amrith
+    ircname: amrith
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Trove/amrith.txt
+  Vitrage:
+  - elected: true
+    email: ifat.afek@nokia.com
+    fullname: Ifat Afek
+    ircname: ifat_afek
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Vitrage/ifat_afek.txt
+  Watcher:
+  - elected: true
+    email: a.chadin@servionica.ru
+    fullname: Alexander Chadin
+    ircname: alexchadin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Watcher/alexchadin.txt
+  Winstackers:
+  - elected: true
+    email: cbelu@cloudbasesolutions.com
+    fullname: Claudiu Belu
+    ircname: claudiub
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Winstackers/claudiub.txt
+  Zaqar:
+  - elected: true
+    email: flwang@catalyst.net.nz
+    fullname: Fei Long Wang
+    ircname: flwang
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Zaqar/flwang.txt
+  Zun:
+  - elected: true
+    email: hongbin.lu@huawei.com
+    fullname: Hongbin Lu
+    ircname: hongbin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Zun/hongbin.txt
+election: pike
+elections_results:
+  Keystone: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_1d2eef76fdfc1ec4
+  Ironic: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_08ff4080d37365ba
+  Neutron: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_6df9c8e056680402
+  Quality_Assurance: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_99413ba03ba1c6b3
+  Stable_Branch_Maintenance: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_b719c6a5a681033b
+projects:
+- Barbican
+- Chef_OpenStack
+- Cinder
+- Cloudkitty
+- Community_App_Catalog
+- Congress
+- Designate
+- Documentation
+- Dragonflow
+- Ec2_Api
+- Freezer
+- Fuel
+- Glance
+- Heat
+- Horizon
+- I18n
+- Infrastructure
+- Ironic
+- Karbor
+- Keystone
+- Kolla
+- Kuryr
+- Magnum
+- Manila
+- Mistral
+- Monasca
+- Murano
+- Neutron
+- Nova
+- Octavia
+- OpenStackAnsible
+- OpenStackClient
+- OpenStack_Charms
+- Oslo
+- Packaging_Deb
+- Packaging_Rpm
+- Puppet_OpenStack
+- Quality_Assurance
+- Rally
+- RefStack
+- Release_Management
+- Requirements
+- Sahara
+- Searchlight
+- Security
+- Senlin
+- Solum
+- Stable_Branch_Maintenance
+- Storlets
+- Swift
+- Tacker
+- Telemetry
+- Tricircle
+- Tripleo
+- Trove
+- Vitrage
+- Watcher
+- Winstackers
+- Zaqar
+- Zun
