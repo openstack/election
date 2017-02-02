@@ -10,3 +10,7 @@ candidates/ocata/Solum/devkulkarni.txt: Devdatta Kulkarni
 candidates/pike/Community_App_Catalog/olaph.txt: Matthew Wagoner
 # Use 'Renat Akhmerov' not 'Renat Renat'
 candidates/pike/Mistral/rakhmerov.txt: Renat Akhmerov
+# Use 'Devdatta Kulkarni' not 'Devdatta-kulkarni Devdatta-kulkarni'
+candidates/pike/Solum/devkulkarni.txt: Devdatta Kulkarni
+# Use 'Rico Lin'
+candidates/pike/Heat/ricolin.txt: Rico Lin
