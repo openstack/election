@@ -1,7 +1,6 @@
 /* Licensed under the Apache License, Version 2.0
  */
 var event_date;
-var now = parseInt((new Date).getTime() / 1000);
 
 function startTime() {
     var delta = parseInt(event_date - (new Date).getTime() / 1000);
@@ -13,20 +12,37 @@ function startTime() {
     var t = setTimeout(startTime, 500);
 }
 
+function set_event_status(event_name, event_status) {
+    var td = $("td:contains('"+event_name+"')");
+    if (event_status == 'Next' || event_status == 'Current') {
+        td.css("font-weight", "bold")
+    }
+    td.next().next().next().html(event_status);
+}
+
 function setup_timeline() {
+    var now = parseInt((new Date).getTime() / 1000);
     for (i = 0; i < events_timeline.length; i++) {
         var current_event = events_timeline[i];
-        event_date = Date.parse(current_event.start) / 1000;
-        if (event_date > now) {
-            document.getElementById('eventname').innerHTML = current_event.name+' starts in';
-            startTime();
-            break;
+        var current_event_start = Date.parse(current_event.start) / 1000;
+        var current_event_end = Date.parse(current_event.end) / 1000;
+        if (now > current_event_end) {
+            set_event_status(current_event.name, 'Past');
         }
-        event_date = Date.parse(current_event.end) / 1000;
-        if (event_date > now) {
-            document.getElementById('eventname').innerHTML = current_event.name+' ends in';
+        else if (event_date == undefined && now < current_event_start) {
+            document.getElementById('eventname').innerHTML = current_event.name+' starts in';
+            set_event_status(current_event.name, 'Next');
+            event_date = current_event_start;
             startTime();
-            break;
+        }
+        else if (event_date == undefined && now < current_event_end) {
+            document.getElementById('eventname').innerHTML = current_event.name+' ends in';
+            set_event_status(current_event.name, 'Current');
+            event_date = current_event_end;
+            startTime();
+        }
+        else if (now < current_event_start) {
+            set_event_status(current_event.name, 'Future');
         }
     }
 }

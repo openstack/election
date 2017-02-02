@@ -16,11 +16,12 @@ import yaml
 
 
 TIME_FMT = "%b %d, %Y %H:%M %Z"
+ISO_FMT = "%Y-%m-%dT%H:%M"
 
 
 # Load configuration.yaml and create datetime objects
 def parse_datetime(iso_format):
-    date = datetime.datetime.strptime(iso_format, "%Y-%m-%dT%H:%M")
+    date = datetime.datetime.strptime(iso_format, ISO_FMT)
     return date.replace(tzinfo=pytz.utc)
 
 
@@ -34,5 +35,6 @@ def load_conf():
         for key in ('start', 'end'):
             date = parse_datetime(event[key])
             event[key] = date
+            event[key+'_iso'] = date.strftime(ISO_FMT)
             event[key+'_str'] = date.strftime(TIME_FMT)
     return conf
