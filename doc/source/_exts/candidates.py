@@ -50,6 +50,7 @@ def build_archive(serie, list_type):
         return
     db = yaml.safe_load(open(db_file))
     # Check for appointed or incumbent footnote
+    db['tc_seats'] = utils.conf['tc_seats']
     db['tags'] = {}
     for project in db['projects']:
         for candidate in db['candidates'][project]:
@@ -61,6 +62,17 @@ def build_archive(serie, list_type):
                           "results", serie, "%s.rst" % list_type)
     template_name = "%s_archive.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
+    with open(output, "wb") as out:
+        out.write(
+            render_template(
+                template_name,
+                db,
+                template_dir=template_dir
+            ).encode('utf-8')
+        )
+    output = os.path.join(".", "doc", "source",
+                          "results", serie, "announce_%s.rst" % list_type)
+    template_name = "%s_announce.jinja" % list_type
     with open(output, "wb") as out:
         out.write(
             render_template(

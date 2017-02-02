@@ -1,0 +1,20 @@
+To: openstack-dev@lists.openstack.org, openstack-announce@lists.openstack.org
+Subject: [all][elections] Project Team Lead Election Conclusion and Results
+
+Thank you to the electorate, to all those who voted and to all candidates who put their name forward for Project Team Lead (PTL) in this election. A healthy, open process breeds trust in our decision making capability thank you to all those who make this process possible.
+
+Now for the results of the PTL election process, please join me in extending congratulations to the following PTLs:
+
+{% for project in projects %}
+ * {{ project.replace('_', ' ').ljust(25) }} : {% for candidate in candidates[project] %}{% if candidate['elected'] %}{{ candidate['fullname'].ljust(44) }}{% endif %}{% endfor %}
+
+{% endfor %}
+
+Elections:
+{% for project in projects %}{% if project in elections_results %}
+* {{ project }}: {{ elections_results[project] }}
+{% endif %}{% endfor %}
+
+Election process details and results are also available here: https://governance.openstack.org/election/
+
+Thank you to all involved in the PTL election process,
