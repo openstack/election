@@ -83,7 +83,8 @@ def main():
 
     args = parser.parse_args()
 
-    args.outputdir = os.path.join(args.basedir, 'doc', 'source', args.release)
+    args.outputdir = os.path.join(args.basedir, 'doc', 'source',
+                                  'results', args.release)
     args.outputdir = os.path.expanduser(args.outputdir)
 
     if not os.path.isdir(args.outputdir):

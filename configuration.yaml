@@ -18,6 +18,3 @@ timeline:
   - name: 'PTL elections'
     start: '2017-02-01T23:59'
     end:   '2017-02-07T23:45'
-
-past_elections:
-  - ocata

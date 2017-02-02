@@ -44,7 +44,8 @@ def render_list(list_type, candidates_list):
 
 
 def build_archive(serie, list_type):
-    db_file = os.path.join(".", "doc", "source", serie, "%s.yaml" % list_type)
+    db_file = os.path.join(".", "doc", "source",
+                           "results", serie, "%s.yaml" % list_type)
     if not os.path.isfile(db_file):
         return
     db = yaml.safe_load(open(db_file))
@@ -56,7 +57,8 @@ def build_archive(serie, list_type):
                 db['tags']['TC-APPOINTED'] = True
             elif candidate['elected'] == 'INCUMBENT-PTL':
                 db['tags']['INCUMBENT-PTL'] = True
-    output = os.path.join(".", "doc", "source", serie, "%s.rst" % list_type)
+    output = os.path.join(".", "doc", "source",
+                          "results", serie, "%s.rst" % list_type)
     template_name = "%s_archive.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
     with open(output, "wb") as out:
@@ -83,11 +85,12 @@ def build_lists(app):
         "    :titlesonly:",
         ""
     ]
-    for previous in utils.conf['past_elections']:
+    archived_dir = os.path.join(".", "doc", "source", "results")
+    for previous in os.listdir(archived_dir):
         if build_archive(previous, "ptl"):
-            previous_toc.append("    %s/ptl.rst" % previous)
+            previous_toc.append("    results/%s/ptl.rst" % previous)
         if build_archive(previous, "tc"):
-            previous_toc.append("    %s/tc.rst" % previous)
+            previous_toc.append("    results/%s/tc.rst" % previous)
     toc = os.path.join(".", "doc", "source", "archive_toc.rst")
     open(toc, "w").write("\n".join(previous_toc))
 
