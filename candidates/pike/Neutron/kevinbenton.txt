@@ -29,7 +29,7 @@ I have a few priorities that I would focus on as PTL:
   safe to switch.
 * Enhance DVR to solve additional use cases requested by the community:
   I would like us to enable SNAT at the compute nodes for cases where
-  consumption of IPs for each compute ndoe from the external network
+  consumption of IPs for each compute node from the external network
   is not a concern. I would also like us to allow the central node to
   provide floating IP translations for ports unserviced by DVR local
   nodes (e.g. unbound ports, baremetal ports, ports on compute nodes
