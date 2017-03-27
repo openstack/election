@@ -5,16 +5,19 @@ tag: 'jan-2017-elections'
 
 timeframe:
   name: 'Newton-Ocata'
-  start: '2016-04-11T00:00'
-  end: '2017-01-23T23:59'
-  email_deadline: '2017-01-25T23:59'
+  start: '2016-04-07T00:00'
+  end: '2017-02-22T23:59'
+  email_deadline: '2017-04-10T23:59'
 
 tc_seats: 7
 
 timeline:
-  - name: 'PTL nomination'
-    start: '2017-01-18T23:59'
-    end:   '2017-01-29T23:45'
-  - name: 'PTL elections'
-    start: '2017-02-01T23:59'
-    end:   '2017-02-07T23:45'
+  - name: 'TC nomination'
+    start: '2017-03-30T23:59'
+    end:   '2017-04-09T23:45'
+  - name: 'TC campaigning'
+    start: '2017-04-09T23:59'
+    end:   '2017-04-13T23:45'
+  - name: 'TC elections'
+    start: '2017-04-13T23:59'
+    end:   '2017-04-20T23:45'

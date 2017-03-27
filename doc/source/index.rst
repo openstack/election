@@ -11,7 +11,7 @@ See `Election system`_, `PTL details`_ and `TC details`_.
 .. Below is the official list of candidates for the current round.
 
 .. TODO: Change from ptl.rst to tc.rst when TC rounds starts
-.. .. include:: ptl.rst
+.. include:: tc.rst
 
 
 Previous elections
@@ -23,6 +23,7 @@ Previous elections
 Election Officials
 ==================
 
+* Tony Breeds (tonyb), tony at bakeyournoodle dot com
 * Tristan Cacqueray (tristanC), tdecacqu at redhat dot com
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
 
