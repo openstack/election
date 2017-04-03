@@ -1,0 +1,100 @@
+Hi everyone,
+
+I am announcing my candidacy for a position on the OpenStack Technical
+Committee. For those who don't know me yet, I work for the OpenStack
+Foundation, and I've been serving on the Technical Committee as its
+chair since it was created. Beyond coordinating the TC activities, upstream
+my focus is mainly on Release Management.
+
+I'd like to use my candidacy email to explain the role of the Technical
+Committee, what we did over the past year and what would be my focus if
+you'd have me for one more year. The Technical Committee fills a number
+of tasks:
+
+1. Serving its constituency
+
+The Technical Committee handles communications and interactions with other
+parts of OpenStack community and governance, like the Board of Directors or
+the User Committee. It also acts as a governance safety valve, providing a
+final decision-making mechanism for upstream development. Finally, it is
+responsible for ensuring we have an inclusive and welcoming environment for
+open collaboration.
+
+I think we made great improvements over the last year in this area. The
+relationships with the Board and User Committee improved a lot, and we are
+collaborating on strategic improvements for OpenStack in common workgroups
+now. Also the TC was not used that much over the last year to make final
+calls or resolve disputes, which is a good thing and shows that our governance
+model works. We have a number of challenges ahead in terms of inclusivity, in
+particular to better support part-time contributors and Asian contributors,
+where timezones, language and cultural difference might get in the way. If
+elected, I intend to work to evolve how we operate to be more welcoming of
+those groups.
+
+2. Defining which teams are part of OpenStack and which are not
+
+Another big part of what the Technical Committee does is to define the list
+of "official" project teams whose deliverables are considered a component of
+"OpenStack". That means evaluating new team applications as they come, but
+also refining the limit between "in" and "out" of OpenStack official projects.
+That includes interesting discussions about how far up the stack we should go,
+but also more difficult discussions about removing dead efforts or cutting
+down areas that hurt us strategically. We also constantly need to balance
+our community's integrity/principles with reality: in terms of supporting
+new programming languages like Golang, but also in terms of open collaboration
+(should driver teams be considered as official or 3rd-party teams ?).
+
+Over the last year we managed to tackle a large number of those questions.
+We refined the process for adding programming languages, finally opening the
+door for Golang projects in OpenStack. We more aggressively removed projects,
+and just started the discussion on our first "strategic" removal (the Community
+App Catalog). Significant change takes time, so most of those discussions are
+still in progress. If elected, I look forward to completing those discussions,
+and together with the Board and User Committee produce maps of the OpenStack
+universe that will make it clearer what OpenStack is (an open infrastructure
+framework that you can deploy in various ways) and what it is not.
+
+3. Considering OpenStack as "one platform" and influencing its direction
+
+An increasingly important task of the Technical Committee is to take a step
+back and look at OpenStack as a whole. While it is made up of several
+components, OpenStack is "one platform" for open infrastructure. We should
+make sure that OpenStack components are easy to operate together, and behave
+in a consistent way as much as possible. We should /also/ make sure that it
+is easy to plug other infrastructure solutions on an OpenStack base, or to
+integrate OpenStack components in other software stacks where they make sense.
+
+Over the past year we introduced "release goals" as a means to make progress
+in the same direction together, and as a means to reach base levels of
+functionality and consistency across the stack. I personally participated in
+the Architecture workgroup, and pushed the idea of "base services" (which all
+components can assume will always be present in an "OpenStack" installation,
+and therefore can depend on them being present). This should hopefully help us
+reach the next step in terms of scaling and performance, by adopting mature
+external solutions rather than forcing us to reinvent the wheel locally. If
+I'm elected, I intend to pursue those initiatives.
+
+4. Documenting existing culture and systems
+
+The final task of the Technical Committee is to produce clear documentation
+about what we mean by "the OpenStack Way" or "being one of us". There is a lot
+of unwritten shared understandings in OpenStack, but without anyone to write
+it down, it's hard for new members of our community to absorb that culture and
+internalize it.
+
+This was a major focus for the Technical Committee over the past year.
+In particular we documented the "OpenStack principles", and started creating
+a clear vision for the next two years of the Technical Committee. If elected,
+I intend to continue working on that vision to further explain and clarify
+the direction we are going to.
+
+
+Thanks for reading so far. I hope this candidacy email clarifies a bit what
+the role of the Technical Committee is, what the current membership achieved
+over the past year, and what would be my focus, if elected, for the coming
+year.
+
+Thank you for your consideration!
+
+--
+Thierry Carrez
