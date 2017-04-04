@@ -1,0 +1,86 @@
+I'm announcing my candidacy for a position on the OpenStack Technical Committee.
+For those of you who don't know me yet, I'm Flavio Percoco. I'm currently
+employed by Red Hat and I've been in the Technical Committee for the last 2
+years.
+
+I truly believe my work as part of the Technical Committee is very much a
+community work as it's a technical work. I'm personally interested in finding
+ways to evolve our community while still empowering people to do technical work,
+improve themselves, and be amazing. My work as a member of the Technical
+Committee has always followed this belief and so do the following points that I
+believe we should keep working on:
+
+#1 Keep getting rid of any tribal knowledge there could exists
+
+Our community has had a significant growth over the last years and as people
+come and go I believe it's extremely important to document our culture, our
+beliefs, and to clarify our vision.
+
+More projects are being (or going to be) added to the big tent in the future.
+This set of projects are diverse in technology, scope and goals. My experience
+as a mentor throughout the process for on-boarding new projects has been that
+there are still uncertainties in our community, especially for folks that are
+not as familiar with it. What does it mean to be part of the community? What am
+I expected to do and/or behave like? What is good/bad CI? Can I use other
+languages? are just examples of questions that come up. Some of these have be
+answered, others still need some work.
+
+#2 Cross-Community engagements and interactions
+
+I'd like to dedicate more time on building bridges with other communities like
+Go's, Cloud Native Computing Foundation, etc. I believe there's a lot we can all
+learn from each other and the more we work together, the more we'll improve our
+technologies/communities and the more our users will benefit.
+
+As part of my tasks during the 2016-2017 period, I worked on a reference
+document which describes the process to add new languages in the community. This
+means that, given a good use-case, it's possible to add/create projects that use
+other languages that are not adopted by the community yet. This work started of
+as a request from the Swift team and evolved into how can we enable the
+community to experiment and explore new fields outside of "what we know". I find
+this exploration and experimentation critical for OpenStack's growth as a
+community and as a technology.
+
+I'd like to extend what has been done with the new language additions reference
+document to other communities and technologies. To be more specific I'd like to
+help building bridges and making sure the right processes for interacting with
+other communities like CNCF exist and that such interactions are happening.
+
+#3 Containing the Big Tent bubble
+
+Several new teams have been added to the big tent, and I believe this is
+great. I also believe that some teams are not meant to exist forever. Some
+teams play a role for a limited amount of time and this is good too.
+
+As part of evolving our community and making sure we communicate the right
+message, I believe we should do constant checks on our team structure, how we
+can re-organize these teams (if needed) and how we can keep the list clean.
+
+I'm personally more interested in the re-organization part of the process. How
+we can encourage collaboration on some areas that happen to have more overlap
+without affecting negatively the mission of the teams involved.
+
+#4 Communicate more
+
+I am part of the communications working group in the TC. We focus on
+communicating as much as possible the things that happen in the technical
+committee reviews and meetings.
+
+This effort slowed down quite a bit in the last couple of months but I'd like to
+pick it up again and build a new team of writers to make sure all the
+discussions happening at the governance level will reach as many community
+members as possible.
+
+I believe in this community, I believe in this technology and I believe we've
+done a great job moving the community up despite all the downs we've had. I
+believe there's still a lot we need (and can) do and that there's a lot of
+excitement to have in this community.
+
+Thanks for reading thus far and for considering me as valid candidate. If
+elected, I will keep working on my current tasks and the ones I just mentioned
+as part of this candidacy. I hope you'll help me improve while we all work on
+improving OpenStack. Regardless of the result, it has been an honor to serve
+y'all thus far.
+
+Rock on!
+Flavio
