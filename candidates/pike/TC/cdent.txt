@@ -1,0 +1,85 @@
+
+I'm once again nominating myself to be your representative on the
+Technical Committee. I've been around OpenStack for about three
+years, most recently visible as the guy who writes those weekly
+updates about the placement API service and talks about the
+API-WG.
+
+In the past several months we've seen the TC starting to take a more
+active role in describing and shaping the technical and cultural
+environment of OpenStack. Initiatives like release goals, TC and
+OpenStack vision exercises, discussions on how to reasonably
+constrain growth and increased attention to writing things down are
+all positives.
+
+Meanwhile the economic environment for cloud technology and for
+technical contributors has been a roller coaster. Lots of things are
+changing in the world of OpenStack.
+
+OpenStack must adapt. Doing so without losing the progress that's
+been made will be hard and requires input from a diversity of
+voices; people who are willing and able to critique and investigate
+the status quo but also understand the importance of consensus and
+value of compromise.
+
+Voting for the TC is weird: people nominate themselves and then a
+small segment of the electorate places their votes based on some
+combination of "have I heard of this person before", "have I
+witnessed some of their work and liked it", and, sometimes,
+discussion that happens as a result of these candidacy statements. I
+hope you'll ask me some questions in the week before the election,
+but in an effort to illustrate the biases and concerns I would bring
+to the TC here are some opinions I have related to governance:
+
+* Telling stories that explain what and why are more useful in the
+  long run than listing rules of how because they lead to a more
+  complete understanding.
+
+* It is always better to over communicate than under communicate and
+  it is best to do so in a written and discoverable fashion. Not just
+  because this helps to keep everyone already involved up to date
+  but because it also enables connections with new people and other
+  communities.
+
+* The OpenStack ecosystem needs to open up to allow and encourage
+  those connections. Open ecosystems can evolve and benefit from
+  exchange of ideas. So yes, of course, we should use some golang.
+  Of course we should party with kubernetes and trade ideas with
+  them.
+
+* OpenStack is better when its people and its projects have opinions
+  about lots of things, share those opinions widely, and use them to
+  make better stuff and make better decisions.
+
+* There are too many boundaries (some real, some perceived) between
+  developers _of_ OpenStack, developers _using_ OpenStack, users,
+  and operators. We're all in this together. All of those people
+  should be encouraged and able to be contributors and all of those
+  people should be users.
+
+* OpenStack can and should do a lot of complicated stuff for big
+  enterprises (things like NFV and high performance VMs) but the
+  changes required to satisfy those use cases must always be
+  balanced and measured against providing a useful and usable cloud
+  for individual humans.
+
+* As we move forward on the idea of OpenStack as one platform made
+  with many pieces, we have an opportunity to re-evaluate and
+  refactor our architecture and project structure to make it easier
+  for improvement to happen. We need to ask ourselves if the
+  boundaries we currently maintain, technical and social, are the
+  right ones, and change the ones that are not.
+
+* For a lot of people, contributing to OpenStack is a job. Working
+  on OpenStack should be a good experience for everyone. I think
+  of being a TC member as something akin to a union representative:
+  striving to keep things sane and positive for the individual
+  contributor in the face of change and conflict.
+
+With the TC positioning itself to take a more active role, these
+elections could be more important than you've come to expect.  The
+people you choose, the attitudes they have, will shape that new
+activism. If you feel like I'm talking some sense above, I'd
+appreciate your vote. If you need some clarification, please ask me
+some questions. After that, if you're still not convinced, please
+vote for someone else. But please vote.
