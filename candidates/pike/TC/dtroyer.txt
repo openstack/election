@@ -1,0 +1,23 @@
+I am Dean Troyer and would like to nominate myself as a candidate for re-election to the Technical Committee.
+
+I have been around OpenStack for a long time, primarily working on DevStack, Grenade and OpenStackClient.
+
+OpenStack has been going through the maturation process in the last year or two and the explosive growth we experienced in our early years has subsided.  As a community, we threw a lot of things against the wall to see what would stick, and those answers are continuing to become evident.  In come cases we can re-affirm the direction taken, in others it has been time wrap up and move on.  All of which is a long-winded way to say we have already begun making some hard decisions about projects and future and direction.
+
+The TC has begun a process of defining a vision[0] of where we want to be by describing the OpenStack world as we see it in two years.  One big part of that vision involved how we operate in the world around us, ie, other related-but-not-OpenStack projects in the Open Source cloud world.  We have already seen a good amount of time and effort expended by OpenStack community members getting involved with other projects such as Kubernetes and vendor-related products like OpenShift.  It is imperative that we position ourselves to complement and not compete with others in our greater community.
+
+And yes, I am going exactly where most of you thought I was with this.  In recent months the TC has taken steps to define how languages that are not Python might be used in OpenStack projects.  The language addition process[1] was approved, the first use case analysis to use Golang team was approved[2], a golang test inteface (CTI) has been approved[3] and work is underway for implementing the required support in our CI to test golang projects at the scale we need.
+
+The world around us has changed and OpenStack needs to continue to grow and adapt with it.  This is an important priority for me, having written and prototyped the golang CTI.  OpenStack does not need to own and control everything about building and deploying clouds, but there are some critical things that we do need to keep close tabs on for the sake of our deployers and users.  I am excited about some of the things the OpenStack Foundation staff are working on with regards to our external relationships, some of which is already visible in the Boston Summit promotion.
+
+I would be honored to continue serving the community on the Technical Committee.
+
+Thank you
+dt
+
+
+
+[0] The first draft that came out of our session last month: https://review.openstack.org/453262
+[1] https://governance.openstack.org/tc/reference/new-language-requirements.html#step-1-use-case-analysis
+[2] https://governance.openstack.org/tc/resolutions/20170329-golang-use-case.html
+[3] https://governance.openstack.org/tc/reference/cti/golang_cti.html
