@@ -1,0 +1,75 @@
+Hi Everyone,
+
+I'd like to submit my candidacy for another term on the OpenStack Technical
+Committee.
+
+In my candidacy platform last year I outlined that if elected to the TC I wanted
+to bring more technical oversight to the TC, and also to work on improving the
+messaging around OpenStack, to make it clearer. I think in the past year we've
+made lots of progress on both fronts, but there is still more work to do. Over
+the next year I'd like to see the TC continue to make progress on both fronts.
+
+The introduction of community wide goals was a good start in having the TC
+setting a more concrete technical direction for projects. I see a lot of
+potential with it and am eager to see it grow it over time. It was also just a
+start and long term I'd like to see the TC take on more difficult technical
+discussions and making decisions. For example, the recent discussion about
+being opinionated about our RDBMS is an example of the kind of discussions I'd
+like to see the TC have more of in the future.
+
+For making the messaging around OpenStack clearer I think we've also been
+making improvements. Over the last year, we've added and improved a few tags,
+added the OpenStack principles document, and more recently we've worked on a TC
+vision for the next 2 years. Over the past year we've also started taking
+a more aggressive stance towards removing projects. Moving into the future I'd
+like to see more progress on clearly documenting what OpenStack is and how it
+can be used. I'm optimistic some of the efforts we're working on will continue
+to make this better over time.
+
+For the next year in addition to continuing progress on the items I outlined
+before the other priority I see for the TC is working on improving the health
+of the contributor base in the community. It's no secret that there has been
+a recent contraction in the community and a lot of long time contributors and
+community leaders are no longer actively contributing. I think we need to take
+more proactive steps about this if we want OpenStack to continue to thrive.
+
+I think there are 2 key areas we'll need to address on this front. The first
+is I'd like to see the TC taking a more hands on approach for both building up
+the mentorship pipeline to enable growing the contributor base and leadership in
+the community. Most of of existing efforts in this area tend to be concentrated
+on on-boarding new contributors which is good, but there isn't anything to
+help bridge the gap into becoming a community leader. This is somewhere I can
+see the TC taking a more active role to help people work towards taking
+on leadership roles in the community.
+
+The other aspect is I think we need to working towards making our community
+more accessible for casual and/or part time contributors. Right now our
+community process for contribution is heavily weighted towards full time and
+corporate sponsored contribution. Over the next year I'd like to work towards
+easing this burden and growing the number of casual and/or independent
+contributors.
+
+I think this will take 2 forms, the first is decreasing the barrier to entry on
+our tooling. Things like the CLA and the multi-step process involving creating
+multiple account just to get access to pushing proposed changes is very
+off-putting, especially if you're not familiar with the systems. The other
+aspect I think is more social. To a certain degree a lot of processes around
+contribution or interaction assume that people are constant contributors and
+always active (or connected). For example, how often do people push a patch
+up for review and then bug a bunch of cores on IRC about it. That's not really
+an option if you only can contribute for an 1 hr or 2 on the weekends. This is
+an area where I'd like to see the TC start driving more active change to improve
+the situation so we can hopefully start to grow the number of casual
+contributors we have to the project.
+
+Thanks for reading, I hope this outlines where my focus and priorities would be
+if I'm lucky enough to be elected for another term.
+
+Thanks,
+
+Matthew Treinish
+
+IRC: mtreinish
+Review history: https://review.openstack.org/#/q/reviewer:mtreinish%2540kortar.org
+Commit history: https://review.openstack.org/#/q/owner:mtreinish%2540kortar.org
+Blog: http://blog.kortar.org/
