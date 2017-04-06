@@ -31,3 +31,8 @@ class TestGerritUtils(testtools.TestCase):
 
         self.assertEqual(openstack_election.utils.candidate_files(review),
                          ['candidates/some/file'])
+
+    def test_name2dir(self):
+        name = "nova"
+        dirname = "Nova"
+        self.assertEqual(dirname, openstack_election.utils.name2dir(name))
