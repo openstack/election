@@ -1,0 +1,60 @@
+Candidacy for OpenStack Technical Committee
+
+My name is Amrith Kumar, I've been around OpenStack since a little
+before the IceHouse release (about 3 years ago). During this time,
+I've worked mostly on Trove, and a little bit on other projects but
+mostly in service of Trove. I've also served as a member of the
+Stewardship Working Group, and have participated in other activities
+that seek to foster and encourage participation in OpenStack
+(mentorship, for example).
+
+I submit my candidacy for election to the TC at what I believe we will
+look back upon as a point of inflection in the OpenStack trajectory.
+
+Trove, the project that I've been most closely associated with, and
+some other projects that are not part of the 'core OpenStack' have
+faced a decline in participation. To be clear, I don't intend to place
+blame on the 'big tent' proposal; I think the approach proposed in the
+big tent was rational and needed at the time. The old way of doing
+things was unsustainable and the new model is much more
+scalable. However, it is an observable fact that the non-core projects
+have seen a decline in participation as more corporate focus is placed
+on the few core projects.
+
+At this point of inflection, I think the TC should focus more of its
+attention on three specific things that I promise to champion if
+elected to the TC. I describe each in turn below.
+
+I would like to make it easier for newcomers to OpenStack to
+participate in the project, and I will make this a priority on the
+Technical Committee. I have over the past few years done several
+things in this area including talks at universities, presentations at
+meetups, blogging and other things that aim to simplify this and make
+the 'newcomer experience' a lot better. This is something I promise to
+continue if elected to the TC.
+
+A significant part of my motivation for running for election for the
+TC is based on what was discussed at a leadership training for TC
+members that I attended in Ann Arbor last year.
+
+I'm happy to see that the TC has taken a more assertive position on
+defining a vision, something which was discussed at length, and I
+believe long overdue. I have long advocated that the TC should take a
+more assertive and prescriptive approach towards the technical
+decisions that it makes, and this is something I promise to bring to
+the TC if elected.
+
+I'm a strong proponent of allowing projects to make the right
+technical decisions for their own areas, but still see the value in a
+central governance structure. A part of the evolution of OpenStack
+that I welcome is the recent move to take positive action on the
+Golang issue, and to get work going to allow projects to choose a
+language other than Python.
+
+Finally, I believe that the TC is in need of some 'new voices' and I
+promise to bring a new and different perspective to the deliberations
+of the TC.
+
+Thanks,
+
+-amrith
