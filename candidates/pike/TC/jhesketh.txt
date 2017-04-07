@@ -1,0 +1,42 @@
+Howdy,
+
+My name is Joshua Hesketh and I would like to self nominate for the Technical
+Committee.
+
+I work for Rackspace Australia and have been involved in the OpenStack community
+since the Havana release circa 2013. I have been primarily working on the
+Infrastructure (infra) project where I am both a core contributor and root.
+
+Outside of OpenStack, I have experience leading various communities within the
+Oceania region. For six years I served the open source community as President
+and Treasurer of Linux Australia. During this time I helped to grow and scale
+the organisation from overseeing a single conference each year, to over eight.
+Additionally I've directly helped organise and run multiple Linux Australia
+Conferences (linux.conf.au), PyCon Australia Conferences, as well as OpenStack
+and cloud/infrastructure miniconfs.
+
+I am a strong proponent and advocate for free and open source software. I am
+also a strong believer in the Four Opens that make up OpenStack, and believe we
+lead the way for managing open clouds. I want to do all that I can to help
+further this mission.
+
+The Technical Committee has been doing a great job leading the community and I
+don't have a particular platform for radical change. Instead, I would like to
+help continue to strengthen and work on the committee with a focus on the
+following:
+
+ - Enabling the community. The TC is here to serve the community and facilitate
+   collaboration.
+ - Protecting our values, in particular the Four Opens.
+ - Continuing to investigate and evaluate alternative technologies and how we
+   work with them. For example, evaluating and introducing new languages.
+ - Promote collaboration with the wider open source community. For example,
+   participating with communities such as kubernetes.
+ - Easing pain for operators, deployers and users by helping to improve
+   consistency across projects through OpenStack-wide goals.
+
+I would be glad to answer any questions during the candidacy period (and any
+time for that matter) and if elected I look forward to working in this new role.
+
+Thank you for your consideration,
+Joshua Hesketh
