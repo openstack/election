@@ -1,0 +1,82 @@
+Hi Everyone,
+
+I'd like to submit my candidacy for second term on the OpenStack Technical
+Committee. I have been proud to serve the community over this last year.
+
+
+Getting stuff done
+------------------
+
+I have lots of hope for the new TC vision. I believe it will bring a renewed
+sense of urgency and unity in what we as a community need to work on:
+
+* https://review.openstack.org/453262
+
+I look forward to the discussion with the whole community on the proposed
+vision, and look forward to working towards turning that vision into
+reality. In particular, I think we are getting closer to building consensus
+around the question of "What is OpenStack?"
+
+
+A Diverse Global Community
+--------------------------
+
+I plan not to attend the TC's IRC meetings, at least not at a time ouside
+my normal working hours.
+
+The last year it has been a struggle to attend the 8pm/9pm meeting. I know
+many people make bigger sacrifices to regularly attend IRC meetings, but that
+should not be normal or acceptable. We need to learn new ways of interacting
+that don't require such sacrifices. In a similar way, I believe that people
+that don't work full time on OpenStack should still be able to play an active
+role in the technical leadership of OpenStack.
+
+I am proud to be part of a diverse global community. We need to keep working
+hard to keep it that way. I hope to help with that.
+
+
+Feedback loops
+--------------
+
+While speaking to some HPC users in Cambridge recently, we were complimented
+on how welcoming the OpenStack community is to users and operators. In
+particular, how much better things are now compared to two/three years ago.
+I am keen we continue to build on this progress.
+
+I am working on ways the operator and user communities become more actively
+involved in development process. The VM and baremetal working group is a
+attempt to try a concept a constellation of projects work together (rather
+than individual projects working in isolation) gather feedback from users,
+develop proposals on how to fix problems together, and set priorities on what
+are the most important things to fix. Seems worth a try.
+
+I am keen to get specific representatives from the operator and user community
+to volunteer to work closely with the development teams on particular features
+that interest them. This relationship can help build bridges between the
+respective communities, helping keep both communities up to speed on how things
+are progressing. I have seen this close collaboration work for some features
+in Nova, but I would like to see us make better use of it for wider reaching
+problems that affect multiple projects.
+
+I also believe we need to be clearer about how are users are and which ones
+we are in touch with regularly. Some projects actually have users within our
+community, but we don't regularly interact. For example, Trove, Heat and
+Magnum in some sense are users of the "VM and baremetal" constellation of
+projects. We need to work to reach out to all types of "users" and involve
+them in the development process, where we can.
+
+None of this should takeaway from a project's ability to work in isolation.
+I expect to see various partly overlapping constellations of projects,
+indeed constellations that involve projects that are not part of OpenStack.
+They all need to thrive, to meet our users needs.
+
+I hope these kinds of efforts will compliment the existing release goals
+process that works to prioritize things that affect most or all OpenStack
+projects.
+
+
+Many thanks for reading and considering my candidacy.
+
+John Garbutt
+
+IRC: johnthetubaguy
