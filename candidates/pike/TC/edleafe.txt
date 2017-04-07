@@ -1,0 +1,75 @@
+Hello! I am once again announcing my candidacy for a position on the OpenStack
+Technical Committee.
+
+For those who do not know me, I'm easy to find. My name is Ed Leafe; I'm
+'edleafe' on IRC, and @edleafe on Twitter. I have been involved with OpenStack
+since the very beginning, when I was working for Rackspace as a core member of
+the Nova team. An internal job change took me away from active development
+after Essex, but since being hired by IBM, I've been back in the OpenStack
+universe since Kilo. As a result of this long involvement, I have always had a
+strong interest in helping to shape the direction of OpenStack, and if there is
+one thing people will agree about me, is that I'm never shy about voicing my
+opinion, whether the majority agree with me or not (they usually don't!). I now
+spend most of my time working on Nova and the new Placement service. I also
+spend a good deal of time arguing over obscure HTTP issues with the API Working
+Group, and sometimes blog about them [0].
+
+You'd think that with this long involvement, I'd be happy to see OpenStack
+continue on the course it's been on, and for the most part, you'd be right.
+What we've gotten right is the way we work together, focusing on community over
+corporate interests - that is essential for any project like OpenStack. What we
+really could improve, though, is how we focus our efforts, and how we set
+ourselves up for the future.
+
+The Big Tent change was important for making this feel like an inclusive
+community, and for allowing for some competition among differing approaches.
+Where I think it's been problematic is that while the notion that "we're all
+OpenStack" is wonderful, this egalitarian approach has made it somewhat
+confusing, not only to the outside markets, but to the way we govern ourselves.
+I think that it's important to recognize that OpenStack can be divided into two
+parts: Infrastructure as a Service (IaaS), and everything else. Monty Taylor
+first outlined this split back in 2014 [1], and while there is still some room
+to debate which projects fall into which group, I think it's a more important
+distinction than ever. The "Layer 1" projects have a strong dependency on each
+other, and need to have a common way of doing things. But for all the other
+projects that build on top of this core, that sort of conformity is not
+critical. In fact, it can be a hindrance. So I believe that different technical
+rules should apply to these two groups.
+
+The recent discussions on the approval of Golang and other languages into the
+OpenStack ecosystem [2] highlighted the need for this division. For the core
+IaaS projects, there should be a very, very high bar for using !Python. But for
+the others, I'd prefer to let them make their own choices. If they choose a
+language that is difficult to deploy and maintain, or that doesn't create logs
+like the rest of OpenStack, it's going to wither and die unless the benefits it
+brings is great enough to make that increased burden.
+
+To my mind, this is the only way to make OpenStack better: focus on making the
+IaaS core as rock-solid and dependable as possible, but then open things up for
+experimentation everywhere else. As long as a project follows the Four Opens
+[3], let them make the decisions on the trade-offs. As an API wonk, that's what
+the benefit of consistent APIs offers: the ability of any app to interact, not
+just those written in the same language.
+
+This ties in with my other main concern: the narrowing-but-still-wide
+separation between OpenStack developers and operators. We've made a lot of
+progress over the last few cycles, but we still need to get a lot better. In my
+former life in the construction industry, there were always architects who
+designed very interesting things, but which were a complete pain to build.
+Inevitably this was the result of the architect having little practical
+experience in the field getting their hands dirty building things. Many of the
+comments I've heard from OpenStack operators have a similar aspect to them. I
+know that I have never run a large cloud, so when an operator tells me about an
+issue, I listen. I'd like to see the TC continue to encourage more
+opportunities for OpenStack developers to be able to listen and work with
+OpenStack operators.
+
+So if you're still reading up to this point, perhaps you might want to consider
+voting for me for the TC. But either way, please ask questions of the
+candidates. That's the only way to know that the people you choose share your
+concerns, and that will help to ensure that the TC represents your interests.
+
+[0] https://blog.leafe.com
+[1] http://superuser.openstack.org/articles/openstack-as-layers-but-also-a-big-tent-but-also-a-bunch-of-cats/
+[2] https://github.com/openstack/governance/blob/master/reference/new-language-requirements.rst
+[3] https://governance.openstack.org/tc/reference/opens.html
