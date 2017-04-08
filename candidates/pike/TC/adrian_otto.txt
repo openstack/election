@@ -1,0 +1,73 @@
+I am announcing my candidacy for a seat on the OpenStack Technical
+Committee. My name is Adrian Otto, and I've had the honor of
+working on and with OpenStack since it was conceived. Since our
+first Design Summit on July 13-16 2010, I have been thrilled to be
+a part of our movement together. We have come a long way since
+then, from a hopeful open source project with our friends at
+Rackspace and NASA to a thriving global community that has set the
+definitive standard for cloud software.
+
+Over the past seven years, I have viewed OpenStack as my primary
+pursuit. I love our community, and the way we embrace the “four
+opens”. Along this journey, I have done my very best to push the
+limits of our innovative spirit, and pursue new and exciting ways
+of using software defined systems to make possible what we could
+have only imagined when we started. I have served our community as
+an innovator and as a PTL for the good part of the past 5 years. I
+served as the founding PTL of OpenStack Solum, and pivoted to
+become the founding PTL of OpenStack Magnum. I currently serve in
+this role today. Each of these project pursuits were aimed at
+making OpenStack technology more easily automated, more efficient,
+and combining it with cutting edge new technologies.
+
+I am now ready to embark on a wider mission. I’m prepared to
+transition leadership of Magnum to my esteemed team members, and
+pursue a role with the OpenStack TC to have an even more profound
+impact on our future success. I have a unique perspective on
+OpenStack governance, by repeatedly using our various processes and
+applying our rules, guidelines, and values as they have evolved to
+I deeply respect the OpenStack community, our TC, and their
+respective membership. I look forward to serving in an expanded
+role, and helping to make OpenStack even better than it is today.
+I will support efforts to:
+
+1) Make OpenStack a leading platform for running the next generation
+of cloud native applications. This means making sensible and secure
+ways of allowing our data plane and control plane systems to
+integrate. For example, OpenStack should be just as good at
+running container workloads as it is for running bare metal and
+virtualized ones. Our applications should be able to self heal,
+scale, and dynamically interact with our clouds in a way that’s
+safe and effective.
+
+2) Expand our support for languages beyond Python. Over the past
+year, our TC has taken productive steps in this direction, and I
+would like to further advance this work so that we can introduce
+software written in other languages, such as Golang, in a way
+that’s supportable and appropriate for our community’s growing
+needs.
+
+3) Advocate for inclusivity and diversity, not only for software
+languages but for contributors from all corners of the Earth. I
+feel it’s important to consider perspectives from various
+geographies, cultures, and of course from each gender. I want to
+maintain a welcoming destination where both novice and veteran
+contributors will thrive.
+
+4) Continue our current work on our “One Platform” pursuit, and help
+to refine which of our teams should remain in openstack, and which
+should not. I will also work to contribute to documenting our
+culture and systems and clearly defining “how we work”. For an
+example of this, see how we recently did this within the Magnum
+team [1]. We can borrow from these ideas and re-use the ones that
+are generally useful. This reference should give you a sense of
+what we can accomplish together.
+
+I respectfully ask for your vote and support to pursue this next
+ambition, and I look forward to the honor of serving you well.
+
+Thanks,
+
+Adrian Otto
+
+[1] https://docs.openstack.org/developer/magnum/policies.html
