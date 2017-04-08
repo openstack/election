@@ -1,0 +1,53 @@
+[election] [tc] TC candidacy
+
+Team,
+
+Please consider my candidacy for another term on the OpenStack Technical
+Committee. In my previous candidacy statement[1], i had mentioned the following
+challenges - "balance stability/innovation, fostering new talent, target our
+limited resources to make OpenStack even better". This is as true as it was
+a year ago given the challenges we face today as a foundation. As a group, the
+TC has made good progress in helping with those challenges. Some highlights include:
+
+* Recent Board/TC workshop where we identified 4 critical areas and setup up
+work groups to come up with actionable items that we can do in the short term [2].
+* Technical Committee Vision for 2019 [2]
+
+Since the following were my previous goals from [1]:
+- Cross Project issues, increasing collaboration between projects
+- Backwards compatibility issues and testing
+- Evangelizing great ideas from different projects
+
+In addition to spending time on the Release and requirements teams, Here are
+some ways i helped on the last year
+* Helped setup the python3 support in various projects and infrastructure and
+  get several projects to setup CI jobs with functional tests
+* Spent time in the Kubernetes community to figure out how to work better
+  between the two communities, the areas of overlap etc.
+* Started the go-and-containers initiative[4] to help advance golang as a choice
+  for projects and increase areas of collaboration with Docker, Kubernetes.
+* Actively or passively nudged several projects including Zun, OpenStack-Helm
+  and Loci. Please look them up and participate!
+
+In addition to challenges and goals from before, we have some new ones that i
+would like to work on:
+- We need to draw boundaries around what we do well so we can talk better to
+  others in the larger open source eco systems (adjacent communities) about how
+  end users can compose and customize what they need for their environments
+- Some projects need help since cores have moved to work on other things or their
+  employers have moved away from supporting those projects. We need to figure out
+  how to help, not just from a maintenance point of view, but how to convert
+  folks who are part timers or operators to help actively to keep things going.
+- Folks who are just getting started in OpenStack do not know how to advance in
+  the community (contributor->core, core for multiple projects, cross project
+  collaboration etc), so we should setup programs and processes (Ladder program
+  in vision statement) to help with this situation.
+
+I love being part of the OpenStack community and learning from all the great
+talented people is what keeps me going. Thanks for the opportunity to serve
+on the TC last year and would love to do so for another term.
+
+[1] https://git.openstack.org/cgit/openstack/election/tree/candidates/newton/TC/Davanum_Srinivas.txt
+[2] https://crustyblaa.com/march-8-2017-openstack-foundation-strategic-planning-workshop.html
+[3] http://docs-draft.openstack.org/62/453262/3/check/gate-governance-docs-ubuntu-xenial/e13854f//doc/build/html/reference/technical-committee-vision-2019.html
+[4] https://etherpad.openstack.org/p/go-and-containers
