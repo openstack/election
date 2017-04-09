@@ -1,0 +1,93 @@
+Hi All,
+
+I would like to throw my hat in the ring to be part of the OpenStack Technical
+Committee.
+
+I'm working for the OpenStack Foundation as Ecosystem Technical Lead where
+my responsibility is to help our members to succeed with OpenStack both as
+software and community. My main focus areas are Telecom/NFV and on boarding
+new contributors.
+
+My OpenStack journey started more than three years ago by adding rich query
+functionality to Ceilometer where I’m currently a core reviewer. By my contributions
+I’m the constant voice of usability and maintainability aspects while encouraging
+collaboration within and between project teams. Among other projects I’ve been
+contributing to Cinder, Nova and OpenStack Manuals[1] as well.
+
+I would like to increase diversity in the TC group, but more importantly my
+goal is to add fresh blood to the group driving this community. In my
+opinion it is crucial to constantly revisit items from a different perspective and
+let new voices articulate their views and ideas in order to see the big picture. Long
+term this can ensure that OpenStack keeps its adaptability to continue to be a
+smoothly functioning ecosystem providing a stable and successful software package.
+
+In the course of my current role within the Foundation I continuously learn
+about the goals and challenges of our ecosystem companies who are productifying,
+distributing and operating OpenStack. As my current focus turns more towards Telecom
+vendors and operators, and NFV and SDN related use cases I see this as an area,
+where notwithstanding the already ongoing great work there is still room for further
+improvements. As a former employee of a Telecom vendor during the past few years I
+saw and experienced the difficulties and even pain of trying to find the common
+language between the two groups and making the contributions happen. While the
+situation is improving, I think it is very important to continue to help the Telecom
+industry in the transformation to fit into the cloud terminology and the open source
+era. By this process OpenStack can leverage the advantages that this completely
+different set of priorities and requirements could offer, such as increased stability
+and advanced networking functionality, like how it was demonstrated in Barcelona
+during the keynotes [2].
+
+I’ve been involved in OPNFV [3] for about two years now and I’m also one of the
+ambassadors [4]. I’m continuously working on to find the connection points between
+the two communities [7] to build a large ecosystem which fits OpenStack's current
+priorities in the sense of actively supporting and being the foundation for NFV. As
+part of the TC I would like to continue to help the ongoing joint activities to create
+an interoperability test suite for the NFV area and have OPNFV’s CI system integrated
+with OpenStack to get close to immediate feedback while developing new Telecom
+and NFV related features. As the adoption of OpenStack in the Telecom area is
+continuously growing and operators are looking at OpenStack as a main building
+block for their systems, I would like to serve as a representative in the technical
+driving force of OpenStack, who can operate as a translator to build a common
+roadmap.
+
+During the past few years I’ve been driving the activities to add the volume
+multi-attach functionality to Nova, which turned into a collaborative activity between
+the two teams to simplify the interaction between the two services. By this work
+we are increasing maintainability of the code bases and stability of the services.
+Driven by the experiences of this work I see cross-project collaboration as an area,
+to further improve. As part of the TC I would like to continue driving cross-project
+activities, where I would like to help with making the interactions between the teams
+more efficient to ensure end-to-end feature implementation and continuous code
+maintenance and improvement.
+
+I’m also involved in the Upstream Institute activities to provide guidance to
+newcomers to the community. As our community is a continuously changing
+environment it is crucial to be welcoming and ensure we distribute the knowledge
+about our services and code base while remaining open to transfer responsibilities
+to newer community members. To help build and maintain this mindset, we are
+building a liaison team to participate in the training activities while also have the
+constant awareness of on-boarding new members to the teams. As a TC member I
+would like to help the project teams to share and maintain this mindset to help the
+contributor ecosystem to remain healthy and balanced and our teams to become
+more efficient. As part of this mission I would continue to invest energy in bringing
+sessions on stage at the OpenStack Summits[5][6] to share the lessons I learnt
+during the past three and a half years.
+
+Thank you for reading through my thoughts. It is an honor to be part of OpenStack,
+which is why I would like to take part in helping to further the efforts of providing a
+package that can serve the whole industry and which is backed up by a growing
+and smoothly functioning ecosystem.
+
+Thank you for your consideration.
+
+Best Regards,
+Ildikó (ildikov)
+
+
+[1] http://stackalytics.com/?release=all&user_id=ildiko-vancsa&metric=person-day
+[2] https://www.youtube.com/watch?v=Dvh8q5m9Ahk 
+[3] https://www.opnfv.org 
+[4] https://www.opnfv.org/community/ambassadors 
+[5] https://www.openstack.org/videos/paris-2014/tales-from-the-ship-navigating-the-openstack-community-seas 
+[6] https://www.openstack.org/videos/video/how-to-become-an-advanced-contributor 
+[7] https://www.openstack.org/summit/austin-2016/summit-schedule/events/7510 
+
