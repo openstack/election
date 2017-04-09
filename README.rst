@@ -86,7 +86,7 @@ When TC Candidacy starts:
 
 During the TC Candidacy round:
 * To +2 a candidate:
-  * check candidate profile using http://www.openstack.org/community/members/
+  * check candidate profile using https://www.openstack.org/community/members/
   * check filename is ircname
   * cursory check the candidacy statement
 * To +Workflow, check the previous +2 details
