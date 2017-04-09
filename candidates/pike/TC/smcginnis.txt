@@ -1,0 +1,64 @@
+Hello everyone,
+
+I would like to put my name in for the TC election.
+
+For those of you that don't know me, my name is Sean McGinnis and I have been
+the Cinder PTL since the Mitaka release. I have been an operator, consumer,
+and developer of infrastructure related services since the late 90's.
+
+I think the role of the TC is more important now than ever. OpenStack is
+evolving changing, and the decisions we make now will have a big impact on
+where we are a year or more down the road. I would love to be a part of that
+and provide my perspective to help shape these decisions.
+
+I've been asked by several people over the last few months for my perspective
+on some large companies pulling away from OpenStack or reallocating their
+resources elsewhere. While this certainly has an impact on some of the things
+we can accomplish, my opinion is that this is actually a good thing. For quite
+a while we had some big names dropping a lot of money into the community, with
+little return on that investment.
+
+While the loss of some really amazing folks has certainly been felt across the
+board, I think this is actually a good thing and something that needed to come
+sooner or later. The hype has certainly moved on to other things, but I feel
+OpenStack is probably more relevant and useful than ever. With our community
+shrinking, this is forcing us to look at what we really need to focus on and
+make sure we have a good solid core. I do believe that in the long run,
+OpenStack will end up better after going through our current growing pains.
+
+Related to that, I think we do need to start getting a little more opinionated
+about some things in the interest of keeping things simple and focused. We
+should make it clear what is a core part of OpenStack, and what is a part of
+the broader ecosystem.
+
+At the same time, we need to balance encouraging that ecosystem to grow and
+thrive. It doesn't matter how well Cinder can create volumes and Nova can spin
+up instances if it is too difficult to use build broader solutions on top of.
+
+I'm also a big proponent of closing the loop between those using OpenStack and
+those of us building it and setting its direction. I've made it a point to
+attend the Operator Midcycles in order to increase this communication. Our
+communication between users, operators, and devs is key in making sure we are
+focusing those limited resources on addressing the features and issues with
+the greatest impact.
+
+Finally, I think education and documentation is a very important component to
+all we do. Things like the Upstream University to help new developers get on
+board and contributing will be a focus for me going forward. And it doesn't
+matter how good of features we implement, if there is no documentation or other
+means of educating users about them and how to use them.
+
+So my main thoughts could probably be distilled to:
+
+* Keep things simple as much as possible
+* Encourage expansion and interoperability to a wider ecosystem
+* Increase communication across all aspects of the community
+* Spread knowledge wherever possible
+
+I think mostly we are on the right track for all of these, and I would love to
+be part of the TC to be another voice to encourage and direct where we go.
+
+Thank you for considering me for this role!
+
+Sean McGinnis (smcginnis)
+
