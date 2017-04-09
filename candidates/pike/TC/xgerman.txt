@@ -1,0 +1,24 @@
+Hi,
+
+I’d like to submit my candidacy for the OpenStack Technical Committee. I have been with OpenStack since 2014 and always was impressed by the community and what we could accomplish. I was working on Load Balancing and was the PTL for Octavia during the L and part of the M cycle. I have also started working since the M cycle to refresh FWaaS as part of Neutron. From this I have learned how important it is to be a community organizer, provide leadership but above all help people contribute. To gain contributors I effectively communicated where the project is going and what our vision is. I am also steeped in the lean startup methodology [1] and I am convinced that writing software nobody will use is sub-optimal. I want to take those skills and experiences to the TC at a time when OpenStack needs them the most.
+
+My goals if being elected are:
+
+* Avoid and fight unnecessary red tape and help projects and contributors as much as I can so they can focus on writing code.
+
+* Listen closely to operators and end users of OpenStack. Which overarching initiatives could make their life better? What makes it difficult for them to use OpenStack and address that?
+
+* Encourage collaboration and reuse between projects and work tirelessly to avoid inventing the wheel over and over again.
+
+* Having recently gone through the spin-off with LBaaS from being part of a big project, Neutron, to be its own project, I am keenly aware of what it means to be a small project and will advocate for smaller projects at the TC.
+
+* It has broken my heart when I read about designate [2]  and will work on establishing structures to help projects which are taken for granted and because of that are not sexy anymore. I will lend my voice and effort to them anytime  to them.
+
+I would be honored to be working for you on the TC.
+
+Thank you,
+German
+
+
+[1] http://theleanstartup.com
+[2] http://graham.hayes.ie/posts/openstack-designate-where-we-are/
