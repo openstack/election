@@ -14,3 +14,5 @@ candidates/pike/Mistral/rakhmerov.txt: Renat Akhmerov
 candidates/pike/Solum/devkulkarni.txt: Devdatta Kulkarni
 # Use 'Rico Lin'
 candidates/pike/Heat/ricolin.txt: Rico Lin
+# Use 'Amrith Kumar'
+candidates/pike/TC/amrith.txt: Amrith Kumar
