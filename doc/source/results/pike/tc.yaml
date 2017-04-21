@@ -1,0 +1,77 @@
+candidates:
+  TC:
+  - elected: false
+    email: adrian.otto@rackspace.com
+    fullname: Adrian Otto
+    ircname: adrian_otto
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/adrian_otto.txt
+  - elected: false
+    email: amrith@amrith.org
+    fullname: Amrith Kumar
+    ircname: amrith
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/amrith.txt
+  - elected: true
+    email: cdent@anticdent.org
+    fullname: Chris Dent
+    ircname: cdent
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/cdent.txt
+  - elected: true
+    email: davanum@gmail.com
+    fullname: Davanum Srinivas
+    ircname: dims
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/dims.txt
+  - elected: true
+    email: dtroyer@gmail.com
+    fullname: Dean Troyer
+    ircname: dtroyer
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/dtroyer.txt
+  - elected: false
+    email: ed@leafe.com
+    fullname: Ed Leafe
+    ircname: edleafe
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/edleafe.txt
+  - elected: true
+    email: flaper87@gmail.com
+    fullname: Flavio Percoco
+    ircname: flaper87
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/flaper87.txt
+  - elected: false
+    email: German.eichberger@rackspace.com
+    fullname: German Eichberger
+    ircname: xgerman
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/xgerman.txt
+  - elected: false
+    email: ildiko.vancsa@gmail.com
+    fullname: Ildiko Vancsa
+    ircname: ildikov
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/ildikov.txt
+  - elected: true
+    email: john.garbutt@rackspace.com
+    fullname: John Garbutt
+    ircname: johnthetubaguy
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/johnthetubaguy.txt
+  - elected: false
+    email: josh@nitrotech.org
+    fullname: Joshua Hesketh
+    ircname: jhesketh
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/jhesketh.txt
+  - elected: false
+    email: mtreinish@kortar.org
+    fullname: Matthew Treinish
+    ircname: mtreinish
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/mtreinish.txt
+  - elected: true
+    email: sean.mcginnis@gmail.com
+    fullname: Sean McGinnis
+    ircname: smcginnis
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/smcginnis.txt
+  - elected: true
+    email: thierry@openstack.org
+    fullname: Thierry Carrez
+    ircname: ttx
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/ttx.txt
+election: pike
+elections_results:
+  TC: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_072c4cd7ff0673b5
+projects:
+- TC
