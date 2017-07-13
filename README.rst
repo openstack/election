@@ -59,7 +59,7 @@ PTL Election round
 
 When PreferredEmailDeadLine is reached:
 * Generate ATC rolls, e.g.:
-  * ./tools/generate-rolls.sh
+  * tox -evenv -- generate-rolls
 
 When PTL Election begins:
 * Create CIVS page ( https://wiki.openstack.org/wiki/Election_Officiating_Guidelines#Running_the_election_itself )
@@ -100,6 +100,11 @@ When TC Candidacy submission ends:
 
 TC Election round
 -----------------
+When PreferredEmailDeadLine is reached:
+* Generate ATC rolls, e.g.:
+  * tox -evenv -- generate-rolls
+
+When PTL Election begins:
 * Create CIVS page
 * Upload rolls
 * Send 'TC election opening'
