@@ -16,3 +16,5 @@ candidates/pike/Solum/devkulkarni.txt: Devdatta Kulkarni
 candidates/pike/Heat/ricolin.txt: Rico Lin
 # Use 'Amrith Kumar'
 candidates/pike/TC/amrith.txt: Amrith Kumar
+# Use 'Vladimir Kuklin' As the email address on record is no longer in gerrit
+candidates/pike/Fuel/aglarendil.txt: Vladimir Kuklin

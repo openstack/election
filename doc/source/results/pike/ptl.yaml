@@ -67,7 +67,10 @@ candidates:
     url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Freezer/szaher.txt
   Fuel:
   - elected: true
-    email: vkuklin@mirantis.com
+    # At the time of election this was the email address used
+    # email: vkuklin@mirantis.com
+    # but due to Vladimir removing that address from gerrit we need to use
+    email: aglarendil@gmail.com
     fullname: Vladimir Kuklin
     ircname: aglarendil
     url: https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Fuel/aglarendil.txt
