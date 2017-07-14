@@ -21,6 +21,7 @@ import pickle
 import pytz
 import re
 import requests
+import six
 import subprocess
 import time
 import yaml
@@ -77,7 +78,12 @@ def gerrit_query(url):
 def get_email(filepath):
     cmd = ["git", "log", "--follow", "--format=%aE", filepath]
     git = subprocess.Popen(cmd, stdout=subprocess.PIPE)
-    return git.stdout.readlines()[-1][:-1]
+    email = git.stdout.readlines()[-1][:-1]
+    # Force to text_type in py2 or py3
+    if isinstance(email, six.text_type):
+        return email
+    else:
+        return email.decode('utf-8')
 
 
 def get_gerrit_account(email):
