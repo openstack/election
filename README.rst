@@ -58,7 +58,8 @@ PTL Election round
 ------------------
 
 When PreferredEmailDeadLine is reached:
-* Generate ATC rolls, e.g.:
+* Ask the TC chair to tag the governance repository with the tag defined in the configuration.yaml
+* When the tag is available, generate ATC rolls, e.g.:
   * tox -evenv -- generate-rolls
 
 When PTL Election begins:
