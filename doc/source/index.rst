@@ -24,7 +24,7 @@ Election Officials
 ==================
 
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
-* Emmet Hikory (persia), emmet.hikory at codethink dot co dot uk
+* Emmet Hikory (persia), persia at shipstone dot jp 
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev Freenode channel.
