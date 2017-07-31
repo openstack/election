@@ -1,0 +1,40 @@
+Today I would like to announce my candidacy as I18n PTL in Queens cycle.
+
+I've been in the OpenStack Community since 2015, active as a translator in the
+German team. I participated in my first OpenStack Summit in Tokyo and met the
+I18n team for the first time at the Design Summit. It was an exciting moment to
+meet people from all over the world working on the same thing.
+It is not just translations, but working with different cultures, views and ...
+time zones. These are the magical dimensions and challenges.
+After Tokyo we had virtual midcycle sprint to develop the translation check
+site, one of the tools to help translators in their work.
+I met more people during Barcelona Summit and sank deeper and deeper into the
+work of OpenStack and I18n. In Boston we had our own session to show the work of
+the I18n team. We prepared a workshop also which was not so successful, but the
+preparation was great and we can repeat it at any time.
+
+At this point I would like to thank Ianychoi for his excellent work in the past
+as PTL. He is tireless, full of energy, and brought I18n far forward. He was for
+me in the last weeks a kind of mentor to learn all the things related to I18n
+and PTL.  Nevertheless, I still need support from the entire team to
+successfully manage this task.
+
+What goals have I set for myself for Queens:
+1. Completion of the translation check site. I have been involved in this
+project since 2015 and now it has to be finished :-)
+2. Automate all the things. We have some manual work in I18n and our tools that
+are to automate to make the work easier.
+3. Aquire more people to the team. We have great teams that do a lot. But we
+also get more work through translate new OpenStack projects or the User Survey.
+
+I hope I have given a good overview. Contact me directly if you have any
+questions or requests. On good cooperation in a new cycle OpenStack!
+
+Frank
+
+Email: eumel@arcor.de
+IRC: eumel8
+Twitter: eumel_8
+
+OpenStack Profile:
+https://www.openstack.org/community/members/profile/45058/frank-kloeker
