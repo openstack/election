@@ -1,0 +1,32 @@
+Hey everyone,
+
+I would like to submit my name for release management PTL for the Queens
+release.
+
+I've just recently been added to the core team, but I've been around for
+a few cycles interacting with the release management team. So I've been
+able to see the great work that they've done up to this point in scripting
+much of the process. Their work has been amazing in reducing the amount
+of manual steps that need to be taken, and I've been very impressed by the
+discipline they've had of actually writing down how all of this works.
+
+With all of that history, I'm confident that I can quickly get up to
+speed and hopefully continue to contribute to leading the release manager
+activites. Thierry, Doug, and others will also still be around and have
+that history, knowledge, and willingness to help that will greatly help.
+
+Personally, I would love to devote more time to some of these cross-project
+activities that are absolutely essential to keep things moving smoothly.
+I'm lucky enough to be in a position where I can now do that.
+
+My plan for the cycle would not be anything really that exciting. I think
+just continuing with the great work that has been done already and looking
+for any other areas where we can automate and make the release team a
+resource for other projects to go to when they need it. I would also do
+whatever I can to encourage and educate others to also participate in this
+important, but most behind the scenes, activity.
+
+Thanks for your consideration.
+
+Sean McGinnis (smcginnis)
+
