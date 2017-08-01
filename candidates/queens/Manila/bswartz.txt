@@ -1,0 +1,8 @@
+I am running for PTL of Manila once again. For the Queens release
+I would like to continue to focus the project on stabilization and
+addressing technical debt issues. This is a continuation of the
+agenda I put forward for Pike -- some progress has been made but
+not enough on issues of quality and stability -- especially in the
+first party drivers. I also want to move to Python 3 for all test
+jobs in Queens, and start the clock on dropping Python 2.
+
