@@ -1,0 +1,55 @@
+I would like to announce my candidacy for Security Project PTL for
+Queens.
+
+I have been a member of the security project for 2-3 years, and a
+core member for one year.
+
+During my tenure as core I have managed public and embargoed security
+notes and contributed with my feedback to the VMT team on OpenStack
+vulnerabilities.
+
+I have also been an active contributor to the security guide as well as a
+regular reviewer. I am the current driver for the security guide
+launchpad page.
+
+As PTL, I'd like to focus on the following things:
+
+* Documentation
+
+I am currently planning a revamp of the Security guide to bring it up to
+date with Pike. To do this I will reach out to other projects to help
+validate the information in the guide is technically correct and up to
+date.
+
+I also would like to migrate the checklists into a format that can be
+easily filtered to a specific release, thereby allowing other security
+tools and processes to easily consume the content and gain a snapshot
+of what security actions are required to harden any given release.
+
+* Support and championing of OpenStack security projects.
+
+I would like to put forward continued support by means of reviews and
+feedback for the projects currently having their home under the
+security project, and I have plans to propose further projects. Our
+close synergy with the Barbican project should continue to be fostered,
+and encouraged.
+
+* Perform Threat Analysis with further projects
+
+The Threat Analysis project has proved very useful in helping the VMT
+and operators understand the threat landscape pertinent to each OpenStack
+project. I will work with and encourage other projects to undergo threat
+analysis.
+
+* Encourage more contributions and grow some new cores
+
+The security project has lost a good number of core members due to
+companies shifting priorities, so I would like increase the projects
+exposure with blog posts to planet.openstack.org and by outreach at
+various other tech events. I see it as vital to keep the security
+project afloat, as operators rely so much on the project for
+guidance on securing OpenStack clouds.
+
+Regards,
+
+Luke Hinds (lhinds)
