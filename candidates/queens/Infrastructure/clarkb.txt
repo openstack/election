@@ -1,0 +1,34 @@
+As another development cycle quickly approaches I would like to be
+considered for the role of Infrastructure PTL. I have been working on
+the OpenStack Infrastructure as a core reviewer and root user for about
+five years now. During this time I have done just about everything an
+Infrastructure team member can do except for take on PTL duties. I
+would like to give that role a shot now.
+
+The Infrastructure team has accomplished amazing things to scale both
+up and out. We run a large set of services that can handle thousands of
+test jobs per hour merging hundreds of commits per day. I am proud to
+have been a part of the work to make this possible; however, looking
+forward I think we face a new set of challenges.
+
+In particular I see a need for making our Infrastructure more sustainable
+so that it can weather the changing priorities of our community.
+I think we can do that by focusing on these three items:
+
+  * Continue to automate all the things
+  * Simplify the process of consuming Infrastructure resources
+  * Run more of the Infrastructure in multiple clouds
+
+Deploying Zuul v3 in order to make continuous integration configuration
+properly self service will go a long way to making this a reality.
+I would also like to see the team take lessons learned from Nodepool and
+Zuul's use of distributed state management to properly distribute other
+services so that they can be run in multiple cloud regions or even
+across multiple clouds.
+
+I can not do these things alone; it will require a team effort. If you'd
+like to see the Infrastructure team work towards these goals I will do
+my best as PTL to ensure we work as a team to accomplish these goals.
+
+Thank you for your consideration,
+Clark
