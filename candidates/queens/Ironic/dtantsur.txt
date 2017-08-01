@@ -1,0 +1,62 @@
+I am announcing my candidacy for PTL for the Ironic team for the Queens release
+cycle. In case you don't know me, I'm dtantsur on IRC. I started working on
+Ironic around late spring or summer 2014 (oh, time flies!), and has been
+dedicated full time to bare metal provisioning since then.
+
+I am not going to surprise anyone, if I say that the Pike cycle was a difficult
+one. We've gone through removing four cores and through several iterations of
+re-prioritization. The team has done an amazing job keeping the pace - thank
+you all for that. This also required me to change my personal priorities for
+the cycle, concentrating more on keeping the project healthy and going. I hope
+I did not let you down.
+
+If you elect me, I would like to concentrate on the following efforts:
+
+* CI and testing improvements.
+
+  This was on my agenda for Pike, and I'm not giving up on it. We have
+  introduced multi-node jobs, a standalone job. I believe that the 3rd party CI
+  have become more reliable since the beginning of the cycle.
+
+  I would like to broaden the use of the standalone tests in the main and in
+  3rdparty CI to reduce the resource pressure and to be able to cover more
+  important aspects of Ironic. I would like us to cover a few important testing
+  gaps, such as testing adoption or root device hints.
+
+* Improve the prioritization process.
+
+  I believe that we have been doing really well with our weekly priorities
+  process. However, we have clearly had too many big items on our plate this
+  cycle. That required an extensive de-prioritization in the end, leaving
+  people frustrated. That also made it harder for less-of-a-priority changes,
+  such as vendor-specific patches to get in.
+
+* Bug triaging.
+
+  One of my PTL promises during the last election was to improve the bug
+  handling process, and I apologize for not having done it. I would like
+  to change it, and make sure that our bug backlog reduces instead of slowly
+  growing. This may include better processes around incoming bug triaging,
+  smarter dashboard and some automation, e.g. for handling old bugs.
+
+* Stabilization and paper cut bug fixing.
+
+  This is related to the prioritization topic above. We've been chasing big
+  stuff over a few cycles. That was absolutely justified, and we've landed
+  several absolutely mind-blowing features, such as ironic-neutron integration
+  or boot-from-volume.
+
+  Now, I think, it's time to slow down a tiny bit, and think of the things that
+  can make every day life managing an ironic deployment easier. Treating of the
+  maintenance mode, reporting of cleaning progress, error messages and logging,
+  just to name a few.
+
+  Of course, this includes documentation for operators. As you know, I've spent
+  some substantial time this cycle writing and refining installation and
+  operation docs. With the documentation reform in place we have even more
+  power over them - let's use it wisely.
+
+And as the last time, my significant goal will be not to get in a way of our
+wonderful team :)
+
+-- Dmitry Tantsur
