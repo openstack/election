@@ -1,0 +1,50 @@
+Hi all!
+
+I am announcing my candidacy for PTL for the Sahara team for the Queens release
+cycle. In case you don't know me, I'm tellesnobrega on IRC. I started working
+on Sahara in 2014 and became core in 2016 and not long after acted as PTL for
+Pike cycle.
+
+First of all, I would like to thank Vitaly Gridnev for all the help he gave me
+on the beginning of the process, it was of great importance.
+
+I have to confess that the job was a little overwhelming at the beggining and
+took me some time to get used to the responsabilities and get a good grip on
+how to handle the whole thing. I hope that I did a good job (the team can speak
+better than I can about that) and hope that I will be able to continue working
+as PTL this next cycle.
+
+If you elect me, I would like to concentrate on the following efforts:
+
+* CI and testing improvements.
+
+  We currently don't have a specific CI deployed due to some problems with ours
+  servers but this is a issue that we are fixing at this time. What I want to
+  do is try to improve our CI for cases like this so we don't spend as much for
+  migration. Having a sort of backup instance or even run both with a
+  Load balancer so we can *always* a CI running.
+  Testing is always an issue that we have to take care and I hope to get us
+  some time to improve our test quality and coverage.
+
+  * Bug triaging.
+
+  This is something that I mentioned the last cycle but we never had time to
+  get around to it, so I'm putting this up again. Our bug queue is not extense,
+  but I did intend to shorten it and didn't. I plan to do this for this next
+  cycle.
+
+  * Cleaning up specs
+
+  We have quite a few proposed features (some of them are awesome) that never
+  got to be implemented. I would like to run over this and prioritize what we
+  would like to do and make this list smaller while we improve our project.
+
+  * Documentation
+
+  I've had troubles with our documentation, most people who try to run Sahara
+  have trouble due to faulty documentation. I would like for us on this cycle
+  to have a couple Doc days so we can remove old information, update what is
+  still relevant and make things simpler for users.
+
+  I really enjoyed this last cycle as PTL and hope that I can do an even better
+  job this time.
