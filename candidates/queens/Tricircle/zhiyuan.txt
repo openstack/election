@@ -1,0 +1,21 @@
+I would like to announce my self nomination for the PTL candidacy in Tricircle
+Queens cycle. My name is Zhiyuan Cai, and my IRC handle is zhiyuan. As a core
+reviewer of Tricircle project, I have been actively participating in the
+development of this project since Mitaka cycle.
+
+During the Pike cycle, many fancy features are brought to Tricircle, like VxLAN
+support for cross Neutron L2/L3 networking, VLAN aware VMs, service function
+chaining; reliability and performance are improved for the asynchronous job
+running daemon; multi-region gate job is set up to test Tricircle in a real
+running OpenStack environment, a YAML based task schema is introduced to help
+developers to define the test scenario more easily.
+
+For the coming Queens cycle, here are some works we can focus on:
+
+* Continue the development of advanced networking features, like QoS and LBaaS.
+* Improve the test scenario coverage of multi-region gate job.
+* Examine the integration with Nova cell V2.
+
+Hope everyone will enjoy running and developing Tricircle.
+
+Thank you for your kind consideration of my candidacy.
