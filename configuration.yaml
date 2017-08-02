@@ -1,7 +1,7 @@
 ---
 release: queens
 
-tag: 'july-2017-elections'
+tag: 'aug-2017-elections'
 
 timeframe:
   name: 'Ocata-Pike'
