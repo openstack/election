@@ -1,0 +1,50 @@
+Hi all,
+
+I nominated myself to be a candidate of Zun PTL. As the founder of this
+project, it is my honor to work with all of you to build an innovative
+OpenStack container service.
+
+OpenStack provides a full-featured data center management solution which
+includes multi-tenant security, networking, storage, management and monitoring,
+and more. All theses services are needed regardless of whether containers,
+virtual machines, or baremetal servers are being used [1]. In this context,
+Zun's role is to bring prevailing container technologies to OpenStack and
+enable the reuse of existing infrastructure services for containers.
+Eventually, different container technologies should be easily accessible by
+cloud consumers, which is a goal Zun is contributing to.
+
+Since April 2016, in which the project was founded, the Zun team has been
+working hard to achieve its mission. We managed to delivere most of the
+important features includes:
+* A full-featured container API.
+* A docker driver that serves as reference implementation.
+* Neutron integration via Kuryr-libnetwork.
+* Two image drivers: Docker Registry (i.e. Docker Hub) and Glance.
+* Multi-tenancy: Containers are isolated by Keystone projects.
+* Horizon integration.
+* OpenStack Client integration.
+* Heat integration.
+
+By looking ahead to Queens, I would suggest the Zun team to focus on the
+followings:
+* NFV: Containerized NFV workload is emerging and we wants to adapt this trend.
+* Containers-on-VMs: Provide an option to auto-provision VMs for containers.
+  This is for use cases that containers need to be strongly isolated by VMs.
+* Cinder integration: Leverage Cinder for providing data volume for containers.
+* Alternative container runtime: Introduce a second container runtime as a
+  Docker alternative.
+* Capsule API: Pack multiple containers into a managed unit.
+
+Beyond Pike, I would estimate Zun to move toward the following directions:
+* Kubernetes: Kubernetes is probably the most popluar containers orchestration
+  tool, but there are still some gaps that prevent Kubernetes to work well with
+  OpenStack. I think Zun might be able to help to reduce the gaps. We could
+  explore integration options for Kubernetes to make OpenStack more appealing
+  for cloud-native users.
+* Placement API: Nova team is working to split its scheduler out and Zun would
+  like to leverage this new service if appropriate.
+
+[1] https://www.openstack.org/assets/pdf-downloads/Containers-and-OpenStack.pdf
+
+Best regards,
+Hongbin
