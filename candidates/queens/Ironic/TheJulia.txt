@@ -1,0 +1,29 @@
+Greetings carbon based lifeforms!
+
+I am hereby announcing my candidacy and self nomination for the
+queens cycle ironic PTL position. For those of you that know me,
+I'm sure I've left an impression.
+
+For those that don't know me! Hi! I'm TheJulia. *waves hello*
+I've been working in the OpenStack community since the Juno cycle,
+and within the ironic project since the Kilo cycle. Prior to my time
+in the OpenStack community, I worked on many system large scale
+infrastructure systems and have spent far too many hours in cold data
+centers installing and re-configuring hardware than I would ever like
+to recollect.
+
+Perhaps that is why I feel passionate about Ironic, its community,
+and users. I know what the pain of deploying baremetal is like,
+and I wish to make it better. I have no specific agenda aside from
+wanting to try and peel back some of the bureaucracy and process
+that slows and hampers our work.
+
+My vision, my hope, is for the ironic community to continue to grow
+and to become more vibrant than ever.
+
+This doesn't mean we don't have neat/awesome/cool things to do, but
+neat technology comes secondary to community and its culture.
+
+Thanks!
+
+-Julia Kreger
