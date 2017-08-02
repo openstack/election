@@ -1,0 +1,63 @@
+Adding amrth candidacy for Trove
+
+This email is to announce my candidacy for the PTL of Trove for the
+Queens cycle. My candidacy has been formally submitted in[1].
+
+I have been the PTL for the Trove project since the Trove release (in
+March 2016). During this time, we've seen significant improvements
+during the Newton and Ocata releases but faced a setback with the
+departure of several companies from the community in the Pike release.
+
+Trove faces many of the same challenges faced by projects that are not
+part of the 'core' of OpenStack. Even though the last two user
+surveys[2,3] show that Trove is one of the popular projects that
+people want to adopt, this has not translated into an increase in
+active participation.
+
+The challenges facing Trove in the Queens release are broadly to:
+
+1. improve active participation and contribution in code reviews and
+   stabilize the core reviewer team.
+2. keep up with changes in the rest of OpenStack
+3. stabilize and maintain the existing code base
+
+Two important aspects of my candidacy that are worth highlighting
+here.
+
+The first is that I am in favor of taking a serious look at the
+current Trove architecture and revisiting whether we should
+reimplement the project as a layered platform project that better
+leverages underlying infrastructure (IaaS) projects. A good discussion
+on the mailing list [4] surfaced a number of ideas which I intend to
+discuss in depth at the PTG in Denver with other members of the
+team. The hope is that we can come out of the PTG with a clear action
+plan, and more importantly a commitment from participants to work on
+the project and implement that plan.
+
+The second is that at least in the Queens release, and until we can
+get to the point where we have more active participation in the
+project, I intend to place the project in 'maintenance-mode'. A change
+has been proposed in the governance repository[5] to make this
+happen. I expect however that the TC will respect the wishes of
+whoever is elected PTL of the project in this election cycle.
+
+I highlight both of these aspects (above) because they are not
+universally accepted. I am aware that at least one other person wishes
+to also run for election to the position of Trove PTL in the Queens
+cycle, and we differ in our views on these two subjects. As I write
+this, he has not yet announced his candidacy, and I will likely be
+submitting this before he does so I will merely note that we differ on
+how to approach the issue of rearchitecting Trove (he would prefer we
+continue down the current path and stabilize/enhance it rather than
+rearchitect it), and does not favor the notion of attaching the
+maintenance-mode tag to the project.
+
+While we differ on these two issues, I intend to remain an active
+participant in the project, and support the PTL's lead if I am not
+re-elected.
+
+[1] https://review.openstack.org/48962
+[2] https://www.openstack.org/assets/survey/April2017SurveyReport.pdf
+[3] https://www.openstack.org/assets/survey/October2016SurveyReport.pdf
+[4] http://openstack.markmail.org/thread/wokk73ecv44ipfjz
+[5] https://review.openstack.org/#/c/488947/
