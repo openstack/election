@@ -1,0 +1,69 @@
+Hello everyone,
+
+I'm asking for the opportunity to continue to serve as the PTL of Glance
+into the Queens cycle.
+
+Things looked good for Glance at the start of Pike.  We had a strong set
+of active cores, and discussed plans at the PTG for recruiting more
+developers to the team through holding bugsmash events and developing a
+more organized approach to triaging bugs to a point where they could be
+worked on by developers not yet experienced in working with Glance.  We
+were interested in attracting new talent because we had recently lost
+our team:diverse-affiliation tag [0] which was a warning that Glance had
+become too reliant on two companies.  And in fact when those companies
+decided to change direction early in the cycle, the impact on Glance was
+devastating.  However, due to the hard work of those who remained and
+developers from the wider community who pitched in [1], we were able to
+complete a revised list of priorities for Pike and did not require any
+kind of drastic intervention (such as going into maintenance mode, which
+looked like a real possibility in April).  And, on the plus side, we'll
+definitely be receiving the team:diverse-affiliation tag the next time
+it's assessed.
+
+The point of mentioning the above history is that I'd like to continue
+the reorganization and recruitment work we'd discussed at the beginning
+of Pike, which should improve the project's health for the Rocky PTL,
+who will most likely not be me.  Or at least there's no reason why it
+should be me, as some of my goals for Queens are to help grow the Glance
+community and help any Glancer who's interested (hopefully, more than
+one) get themselves into a position to become an effective PTL.
+
+So that's the general nature of what I think we should focus on in
+Queens.  There are a few specifics that I should probably mention:
+
+* Image import continued -- thanks to Erno's hard work, a minimal viable
+  product of image import has landed in Pike.  There are a few obvious
+  Glance-side improvements we can make, but at Pike RC-1 time, I plan to
+  notify operators that the MVP of image import is available, they
+  should look it over, and give us feedback on what enhancements are
+  necessary, and think about how they can direct development resources
+  to Glance to make those changes happen.
+
+* Rolling upgrades -- we released zero-downtime upgrades as an
+  experimental feature in Ocata, but further work planned for Pike
+  (primarily, in-gate testing of upgrades) did not happen.  It's
+  important to get this completed in Queens.
+
+* Operator communication -- the popular operator surveys that we were
+  using to gather usage information about Glance were another casuality
+  of the personnel situation in Pike; I'd like to get those going again.
+
+Additionally, there are some small worthwhile features among the
+untargeted approved specs that would be nice to land, and new specs are
+already showing up in the Queens directory.  And of course Glance will
+participate in the Queens community goals.  We'll sort out the
+priorities at the PTG [2].
+
+Finally, there's been some discussion on the ML about whether Glance has
+outlived its usefulness and should be replaced [3,4].  I'm willing to
+discuss that at the PTG, but as you can tell from the fact that I listed
+it last, I think there's still a role for Glance in the Queens cycle.
+
+Thanks for reading, and thanks for your consideration,
+brian
+
+[0] https://git.openstack.org/cgit/openstack/governance/commit/?id=c0359e95153c3d3688d4ef6902a058204913a87a
+[1] http://lists.openstack.org/pipermail/openstack-tc/2017-July/001444.html
+[2] https://etherpad.openstack.org/p/glance-queens-ptg-planning
+[3] http://lists.openstack.org/pipermail/openstack-dev/2017-June/118228.html
+[4] http://lists.openstack.org/pipermail/openstack-dev/2017-July/119442.html
