@@ -1,0 +1,30 @@
+Hello everyone,
+
+Once more unto the breach dear friends! I would like to run for PTL again for
+Queens. Pike was very exciting release for Kolla. With strong focus on
+Kolla-Kubernetes, Kolla-Ansible getting more and more production deployments
+and Kolla images being successfully consumed by project outside of Kolla
+like TripleO or OpenStack-Helm, I think this was quite a success for us.
+
+We managed to improve one of biggest pain points we saw in Kolla - gates. We
+still have lengths to go, but progress is significant.
+
+I'd love to help our community to make Queens even better. We have several
+exiting features in our plates, like automated push mechanism for images or
+orchestration layer for kolla-kubernetes.
+
+We also need to focus on another big pain point of Kolla - documentation.
+
+I would like us to strengthen cooperation with Kubernetes community and I'm
+strong believer that best bridge between communities is built on top of common
+technical issues and mutual help. I think Kolla-Kubernetes naturally helps
+with this cooperation and we can use it even more.
+
+Per request, I also add small haiku to my nomination;)
+
+Glues Stack together
+Project by great people made
+Queens approaching soon
+
+Regards,
+Michal inc0 Jastrzebski
