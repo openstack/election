@@ -1,0 +1,30 @@
+Hello,
+
+I would like to announce my canadidacy for Chef OpenStack PTL for the Queens
+cycle.
+
+I have been a core member since Chef OpenStack became an official project, and
+have previously served as PTL. This would be my third non-consecutive cycle as
+PTL.
+
+During my time, I have written many patches for the cookbooks to support the
+OpenStack use case, at a much slower trajectory than the core projects. For the
+next cycle, I will continue to be focused on developer enablement and general
+throughput, with a particular focus on improving the testing capabilities.
+
+My primary goal is to continue to get us back on track as a project, and closer
+to core's release cadence by addressing stabilization and technical debt issues.
+
+I seek to improve active participation and contribution, to keep up with the
+changes not only in the rest of OpenStack, but Chef as well.
+
+I feel these are attainable goals, even with our reduced participant size. I
+intend to keep doing what I can to progress the project and legitimize the
+existence. As part of the core team, I am also taking a more active role in
+maintaining the public presence of Chef OpenStack, in an attempt to further
+raise awareness of the project's activity and be a more active participant in
+the community.
+
+Best,
+
+sc`
