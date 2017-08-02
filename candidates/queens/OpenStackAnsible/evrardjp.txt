@@ -1,0 +1,50 @@
+Hello everyone,
+
+I would like to announce my candidacy for PTL of the
+OpenStack-Ansible project for the Queens cycle.
+
+I will focus on the following themes:
+
+Improve the usability
+=====================
+
+It can be difficult for a newcomer to fully grasp the way
+OpenStack-Ansible works, and the first experience can be daunting.
+The deploy and operator's guides are a step in the right direction,
+and we must continue that documentation effort to show that our
+solution can scale up to any operator's size.
+
+OpenStack-Ansible has largely grown since its creation, and we support
+much more roles now. That is a positive improvement. We now have more
+features that people want to use. As a consequence, we also carry less
+used roles that are less maintained. My objective is to reduce our
+technical debt if possible, standardize more, and make sure the less
+maintained roles don't have a negative impact on our image.
+For that, I'd like to formalize our role maturity index as a way to
+show role adoption, and to easily spot if the role is meeting
+our latest testing/coding standards.
+
+Redesign for the future, while still improving operator's experience
+====================================================================
+
+We've always taken the decision to go for proven technology/low risks/
+low maintenance solutions.
+I intend to keep this mindset, but also introduce newer architecture:
+
+* Re-design the placement of web servers/reverse proxy, thanks to the
+  recent work done for UWSGI support.
+* Introduce systemd-nspawn, next to LXC.
+* Change our default deployments to be more converged, to reduce
+  the amount of containers to manage.
+* Separate the installation and configuration steps of a deploy,
+  and test it in our gates. This would allow larger operators to build
+  their own "artifacts" separately of their consumption in a standard
+  way, and share experience in the larger community.
+* Upgrade to Ansible 2.4.
+
+I look forward to working with you all, and it would be my honor
+to serve as PTL for the next cycle.
+
+Best regards,
+
+Jean-Philippe Evrard (evrardjp)
