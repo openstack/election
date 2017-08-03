@@ -1,0 +1,66 @@
+Hello everyone!
+
+I would like to announce my candidacy for the Winstackers PTL election.
+
+I have been involved in OpenStack since Havana, and even longer with Hyper-V
+and Windows related technologies, and I have been the PTL of Winstackers for 4
+cycles.
+
+Feature-wise, things have become stable, meaning that there are only a few
+features that we'd like to implement. The primary focus of this cycle has been
+bug fixing, and feature test coverage. In this regard, we have added a new
+project into the Winstackers governance: oswin-tempest-plugin [1], which will
+help us make sure that previously added features and future ones work as
+intended.
+
+The Hyper-V CI has been upgraded to use Hyper-V Server 2016 nodes, which means
+that it will be able to test features that are only available on Windows /
+Hyper-V Server 2016 or newer (vNIC hotplugging, Linux Secure Boot).
+
+We have added reno support in os-win and networking-hyperv, and we're planning
+on using release notes when needed.
+
+We have also added an ansible role for adding Hyper-V as compute nodes using
+Kolla [2].
+
+There are a few items which have not been completed yet, such as:
+
+* SR-IOV support. This feature was delayed due to the lack of proper hardware
+  to test it with, but at the moment, we are close to having a functioning POC.
+  At the moment, the os-win patch has been sent [3], and the networking-hyperv
+  and nova patches will soon follow. At the moment, the plan is to have the
+  neutron-hyperv-agent act as the neutron sriov-agent equivalent on Hyper-V.
+  We'll have to see how it will work with OVS and the neutron-ovs-agent.
+
+* Windows / Hyper-V Server 2016 Network Controller support. At the moment, the
+  Network Controller python client is implemented [4], the agent side of the
+  HNV Controller is implemented, and the HNV ML2 mechanism driver is currently
+  under review.
+
+
+In the new cycle, I'd like us to accomplish the following goals:
+
+* Finish the items mentioned above.
+
+* Add more tests in oswin-tempest-plugin, get the Hyper-V CI to run over the
+  project, and include the tests in the Hyper-V CI in relevant OpenStack
+  projects.
+
+* Improve documentation.
+
+
+We are currently looking into different Hyper-V features, their utility, and
+how they can be integrated into OpenStack, which means that the list of
+objectives get longer as times passes on. New goals and suggestions are
+welcome, of course.
+
+
+Thank you for your consideration,
+
+Claudiu Belu
+
+
+[1] Adds oswin-tempest-plugin for Winstackers: https://review.openstack.org/#/c/486107/
+[2] Add Hyper-V role in kolla-ansible: https://review.openstack.org/#/c/455684/
+[2] Adds SR-IOV support: https://review.openstack.org/#/c/482517/
+[3] Adds python-hnvclient repository: https://review.openstack.org/#/c/441810/
