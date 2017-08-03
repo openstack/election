@@ -1,0 +1,24 @@
+Hi All,
+
+I would like to announce my candidacy for the Oslo PTL election.
+
+I have been involved with Oslo since the last few years, it's my honor to
+work with the great Oslo team and serve as PTL in Pike cycle.
+
+We achieved some significant milestones in the Pike cycle and we have the
+fortune of having a number of experienced and previous PTLs in the team that
+makes the job of a new PTL easier. In the Queens cycle, we still focus on our
+project mission: "aims to produce a set of Python libraries containing
+code shared by OpenStack projects. The APIs provided by these libraries should
+be high quality, stable, consistent, documented and generally applicable".
+
+I believe our focus in the Queens cycle would include:
+
+- Attract more developers to contribute for Oslo
+- work with other team closely, deliver stable common libraries
+- Improve documentations to help developers use Oslo libraries smoothly.
+- Collect new ideas and generate new libraries.
+
+Thank you for your consideration
+
+ChangBo Guo(gcb)
