@@ -1,0 +1,34 @@
+Hello!
+
+I would like to nominate myself as PTL for the Neutron project for the Queens cycle.
+
+I served as the Neutron PTL for the Pike cycle, have been a core reviewer since Kilo, and have been contributing since Havana.
+
+I have a few new goals I would like to focus on during the Queens cycle.
+
+* New bug triaging process. We've had a lot of trouble finding volunteers for bug deputy duty. We need to come up with another way to share the load of triaging reported bugs.
+
+* Finish the multiple port-binding work. As OVSFW and other ML2 drivers that require different VIF wiring gain popularity, we need to solve the migration between VIF types in a generic way so operators can reasonably switch between backends.
+
+* Expand the routed networks work to cover the external network and floating IPs. This will solve the issue of scaling a single broadcast domain to every compute node that is a blocker for many large operators with L3 fabrics.
+
+
+Additionally, I would like to continue on several of the goals I suggested during the last cycle.
+
+* Cleanup and simplification of the existing code. Quite a bit of this has happened server-side by leveraging the callback system to decouple things. We merged a significant amount of OVO code to stop working with models directly and there are a few major objects left like Ports that I would like to see completed in Queens.
+
+* VPNaaS: it didn't quite make it back into the stadium during Pike. There is one remaining item to decouple their agent code and then we should be able to make VPNaaS part of the stadium again.
+
+* We completed the switch to Pecan and we've been running on it most of the Pike cycle. In Queens we can pull out all of the old API code.
+
+* Supporting stable interfaces for external projects. We have made quite a bit of progress moving externally referenced items to neutron-lib. One of the last items to solve is OVO definitions and then it will be feasible for projects to stop depending on the neutron core code directly.
+
+Goals that didn't see much progress:
+
+* More core reviewers. Unfortunately do the change in focus for many companies we haven't seen a lot of new contributors with enough time for a core reviewer load.
+
+* Tooling for review backlog. I did adjust the auto-abandon script a bit but there is no automated process yet to help keep this under control.
+
+
+Cheers,
+Kevin Benton
