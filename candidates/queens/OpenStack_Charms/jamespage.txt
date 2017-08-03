@@ -1,0 +1,21 @@
+Hi All
+
+I would like to announce my candidacy for PTL of the OpenStack Charms project
+for the Queens development cycle.
+
+We've made some good progress during the Pike cycle in terms of improving
+documentation, with a new deployment guide in the works which should make things
+much easier for new users of the OpenStack Charms going forwards; There is still
+work todo here and that's something I want to make sure we focus on during the
+next development cycle.
+
+We also have a number of cleanups that need to be completed; ZeroMQ and PostgreSQL
+support in the charms are obsolete and not covered by any testing so should be
+dropped during Queens.  We also need to make the jump to Python 3 by default
+across all charms.
+
+I look forward to steering the helm for another cycle!
+
+Cheers
+
+James
