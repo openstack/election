@@ -1,0 +1,11 @@
+First, I’d like to thank everyone for being a tremendous support
+and a pleasure to work with in the previous cycles.
+
+In the Pike cycle, we made great strides in usability and ease-of-adoption.
+
+For the Queens cycle, I hope to continue serving as a facilitator to help
+all the contributors drive the project forward.
+
+Thank you all once again!
+
+-- Eric J. Kao
