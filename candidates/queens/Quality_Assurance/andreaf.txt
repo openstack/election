@@ -1,0 +1,28 @@
+Dear all,
+
+I’d like to announce my candidacy for PTL of the QA Program for the Queens
+cycle.
+
+I served as PTL for QA during the Pike cycle, and I would be honoured to
+continue to do so in the next six months.
+
+After a few years working with the OpenStack community, I continue to find
+it an exceptional experience and great opportunity for meeting and working
+with great people, learning and innovating.
+
+My priority is to provide, as a QA team, an excellent service to the
+OpenStack community: stable gates (based on the great infrastructure
+maintained by the infra team); easy to use and well documented tools to
+enable project teams to achieve their quality goals; support and attention
+to the community needs.
+
+We have limited resources to achieve all that and I would like to counter
+that by:
+- mentorning new and existing contributors
+- investing in automation to make the day to day maintainence less onerous
+- making QA tools beneficial beyond OpenStack to attract contributors from
+  other communities
+
+Thank you!
+
+Andrea Frittoli (andreaf)
