@@ -1,0 +1,46 @@
+Hi, everyone!
+
+About me
+========
+
+* ~4 years of developing various projects in OpenStack
+* ~3 years of being Rally Core Developer & Reviewer
+* 2 OpenStack cycles of being official Rally PTL + 1 cycle being unofficial
+  PTL
+* python-novaclient core maintainer
+
+What was done during Pike cycle?!
+=================================
+
+Long time ago Rally was started by one company and the majority of core
+developers were from this company. The diversity of contributors was increased
+since then. The community of Rally project become wider.
+The last two cycles were a real test for Rally community. As the result, for
+the end of Pike cycle, the starter company doesn't have any influence at Rally
+project, no inner team at all, BUT it doesn't change the number of commits and
+reviews in Rally project.
+We succeeded in building independent and open project!
+
+As for the technical side of Rally project, see our release notes ;)
+
+Tasks for the next cycle
+========================
+
+1. Make one of the greatest project more awesome. I know it is a hard task,
+   but until we do not support such things like emacs did (for example
+   https://www.emacswiki.org/emacs/CoffeeMode), we have a space for
+   improvements.
+
+2. To experiment with voice meetings. It doesn't mean that we want to or will
+   abandon regular text meetings, not at all. It should be just an experiment
+   for improving communication between various teams and companies.
+
+3. More slides, presentations, mails with updates and what is going on.
+
+4. More recording of demos
+
+5. Support of various platforms
+
+6. Better documentation
+
+7. More and more
