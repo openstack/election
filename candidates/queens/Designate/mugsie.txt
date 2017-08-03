@@ -1,0 +1,33 @@
+Hi All,
+
+I would like to nominate myself as PTL for the Designate project for the 
+Queens Cycle.
+
+I have been a developer on the project since Grizzly and served as PTL for the 
+Mitaka, Newton and Ocata cycles.
+
+My main aim will be to build up contributors to the project, 
+while keeping the project stable.
+
+We missed the WSGI App goal, and barely got the python 3.5 goal complete, so 
+as we already have all our tempest code in an external repo, I intend to add 
+that as a priority.
+
+With the advent of Zuul v3, we have an opportunity to expand our testing, and
+as part of that, we should aim to add more complex scenarios to our testing
+like:
+
+1. Mixed Driver environments (one pool using powerDNS, one using Bind)
+2. Multi DNS Server environments
+3. Upgrade testing
+
+We also need to expand the number of tested drivers, and ensure non free drivers
+have a clear owner, and are tested. We also need to add clear install / 
+configuration documentation per driver.
+
+Finally, I want to ensure that the optional OpenStack DNS InterOp program is 
+implemented, and complete for the next InterOp version.
+
+Thank you for taking the time to read this, and your interest in the project.
+
+- Graham Hayes
