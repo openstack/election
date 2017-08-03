@@ -1,0 +1,48 @@
+Hi All,
+
+I would like to announce my candidacy for the Vitrage PTL for the Queens
+release.
+
+I've been leading the Vitrage project development from the day it started, two
+years ago. During this time we have made a tremendous progress, and now we have
+a stable, well-known project that is running in production. We have an amazing
+group of contributors and a growing community. I'm proud to say that we managed
+to achieve most of our goals so far, and I hope we will continue achieving our
+goals in Queens release as well.
+
+The Pike cycle has been very productive. We added some important features like
+the integration with Mistral, SNMP notifications, enhancements in the evaluator
+templates (entity equivalence and 'not' operator), resource query API, and
+more.
+
+As for the Queens cycle, I think we should focus on the Vitrage productization,
+stability and use cases.
+
+- Alarm History. The work on this feature has started in Pike cycle, and should
+  be finished in Queens.
+
+- Vitrage notifications. Add a REST API for registering to notifications from
+  Vitrage.
+
+- Integrate with more projects, OpenStack and external. We should enrich our
+  topology with more information, so we can provide more meaningful insights on
+  the status of the cloud.
+
+- Enhance the Vitrage UI and improve its usability.
+
+- Enrich the evaluator template language (add regular expressions, etc.), and
+  support templates CRUD.
+
+- Continue our efforts in the area of Machine Learning. Develop more algorithms
+  that will provide insights about alarm correlation and causation.
+
+- Extend the Vitrage community. I'll be happy to see more contributors joining
+  our effort.
+
+Looking forward to working with you during the Queens cycle!
+
+Thanks,
+Ifat.
+
+
+
