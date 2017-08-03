@@ -1,0 +1,24 @@
+My fellow OpenStack community,
+
+I would like to nominate myself for Octavia PTL for Queens. I am currently
+the PTL for the Pike release series and would like to continue helping our
+team provide network load balancing services for OpenStack.
+
+For those of you that do not know me, I work for Rackspace. Prior to joining
+Rackspace I worked for Hewlett-Packard for fifteen years on data center
+automation, distributed network systems, embedded system design, and big data.
+
+During Pike, the Octavia team made huge progress by implementing the Octavia
+v2 API, adding a new and up to date API reference, implementing a OpenStack
+client plugin, new health monitoring capabilities, and many more enhancements.
+
+As we start to plan for Queens, I expect we will have a focus on adding the
+provider interface to the Octavia v2 API, flavors, Active/Active load balancer
+support, and implement a new tempest plugin for Octavia.  I also want to
+maintain our priority on providing onboarding support for new contributors to
+get involved with Octavia.
+
+Thank you for your support of Octavia during Pike and your consideration for
+Queens,
+
+Michael Johnson (johnsom)
