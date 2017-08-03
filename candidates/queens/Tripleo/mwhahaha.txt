@@ -1,0 +1,47 @@
+I would like to nominate myself for the TripleO PTL role for the Queens cycle.
+
+I have been a contributor to various OpenStack projects since Liberty. I have
+spent most of my time working on the deployment of OpenStack and with the
+engineers who deploy it.  As many of you know, I believe the projects we work
+on should simplify workflows and improve the end user's lives. During my time
+as Puppet OpenStack PTL, I have promoted efforts to simplify and establishing
+reusable patterns and best practices. I feel confident that TripleO is on the
+right path and hope to continue to lead it in the right direction.
+
+For the last few cycles we have moved TripleO forwards and improved not only
+TripleO itself, but have provided additional tooling around deploying and
+managing OpenStack. As we look forward to the Queens cycle, it is imporant
+to recognize the work we have done and can continue to improve on.
+
+* Improving deployment of containerized services.
+  We started the effort to switch over to containerized services being deployed
+  with TripleO as part of the Pike cycle and we need to finalize the last few
+  services. As we start the transition to including Kubernetes, we need to be
+  mindful of the transition and make sure we evaluate and leverage already
+  existing solutions.
+* Continue making the deployers' lives easier.
+  The recent cycles have been full of efforts to allow users to do more with
+  TripleO. With the work to expose composable roles, composable networks and
+  containerization we have added additional flexibility for the deployment
+  engineers to be able to build out architectures needed for the end user.
+  That being said, there are still efforts to be done to make the deployment
+  process less error prone and more user friendly.
+* Continued improvement of CI
+  The process to transition over to tripleo-quickstart has made excellent
+  progress over the last few cycles. We need to continue to refine the steps
+  to ensure that Developers can reuse the work and be able to quickly and
+  easily troubleshoot when things break down.  Additionally we need to make
+  sure that we can classify repeated failures and work to address them quickly
+  as to not hold up bugs and features.
+* Improve visibility of the project status
+  As part of the Queens cycle, I would like to devote some time into capturing
+  metrics and information about the status of the various projects under the
+  TripleO umbrella. We've been doing lots of work but it I think it would be
+  beneficial for us to know where this work has been occurring. I'm hoping to
+  work on some of the reporting around the status of our CI, bugs and reviews
+  to be able to see where we could use some more efforts to hopefully improve
+  our development velocities.
+
+Thanks,
+Alex Schultz
+irc: mwhahaha
