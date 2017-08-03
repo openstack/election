@@ -1,0 +1,42 @@
+Hey OpenStack Community,
+
+I would like to submit my name for Cinder PTL for the Queens release.
+
+For those of you who may not know me, I have been active in OpenStack since
+early 2013.  Soon after starting with the community I started working with
+the Cinder Team and was nominated for Core Team Member status shortly after that.
+
+My Cinder Career has had high points like the Cheesecake vs Tiramisu naming
+and had low points like the famous Wifi Fiasco of 2015.  I have been
+fortunate enough while working with Cinder to achieve Stable Core status, been
+able to serve as the Oslo Liaison and now most recently I am also serving as the
+Documentation Liaison.  So, I do see a wide swath of the project.
+
+We have been blessed, as a project, with great leadership over the years and I
+would be honored to continue in that tradition.  I have worked closely with
+Sean McGinnis during his time as PTL and feel that I could come up to speed
+in the role quickly given that experience.  I also am very fortunate, as the
+Cloud Storage Lead for Lenovo’s Cloud Technology Center to be in a position
+and have support to make time for the PTL role.
+
+I feel that the Cinder project is currently entering a new era and faces a
+number of challenges in the coming releases.  Many of our seasoned members
+have been pulled to other priorities and in response to that I want to
+continue to make it easier to bring new people into the Cinder team.  I
+have been active in the Upstream Institute training and have created the
+On-Boarding content that is currently available for Cinder.  Both of
+these are resources I hope we can continue to grow to facilitate bringing
+new members into the team.  My current focus on documentation will also,
+hopefully, make it easier for everyone to work with and contribute to Cinder.
+
+Cinder has gone through a number of releases trying to add new features.
+While some new features do deserve more attention, like Standalone Cinder,
+HA and integration with Containers, I feel our focus is changing.  Now we
+have started to swing towards focusing on fixing Cinder and making it more
+stable and user friendly.  This is a trend I would like to see continue
+during the next release.
+
+Thank you for taking the time to consider me for Queens PTL.  I hope I
+may have the opportunity to lead this great and talented team!
+
+Jay Bryant (jungleboyj)
