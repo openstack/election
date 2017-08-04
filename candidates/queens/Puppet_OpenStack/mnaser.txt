@@ -1,0 +1,33 @@
+Hey everyone,
+
+I would like to nominate myself for the PTL role for the Puppet OpenStack team
+for the Queens release cycle.
+
+I have been directly involved with OpenStack as a deployer and contributor
+since 2011.  I have also personally used the Puppet OpenStack modules for a
+significant period of time in that period and I personally believe that they
+are one of the more robust and stable deployment methods of OpenStack.
+
+I'm very comfortable in terms of dealing with gate issues, Puppet and the
+OpenStack puppet modules specifically.  I'm also confident that I can quickly
+get up to speed in PTL activities such as managing releases and other
+responsibilities.
+
+The Puppet OpenStack modules are quite stable for the projects which have
+been around for a long time, such as Nova or Neutron which doesn't leave a lot
+of work.  However, for the Queens cycle, I believe the following goals are what
+I am to help accomplish:
+
+- Improve documentation to increase adoption of Puppet OpenStack
+- Add CI for modules which are not currently tested in `puppet-openstack-integration`
+  which will increase their maturity.
+- Ensure modules stay up to date with service configuration settings
+- Optimize CI to check for any deprecated configuration warnings to be able to
+  catch configuration changes earlier.
+
+I'm always available on IRC and I look forward to working with all of you for
+the upcoming cycle.  I'm also always open to suggestions or recommendation on
+how we can do things better, as this is for the benefit of all of us.
+
+Sincerely,
+Mohammed Naser (mnaser)
