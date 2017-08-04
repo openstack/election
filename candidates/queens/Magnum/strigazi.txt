@@ -1,0 +1,28 @@
+Hello!
+
+I would like to nominate myself as PTL for the Magnum project for the
+Queens cycle.
+
+I have been consistently contributing to Magnum since February 2016
+and I am a core reviewer since August 2016. Since then, I have
+contributed to significant features like cluster drivers, add Magnum
+tests to Rally (I'm core reviewer to rally to help the rally team with
+Magnum related reviews), wrote Magnum's installation tutorial and
+served as docs liaison for the project. My latest contribution is the
+swarm-mode cluster driver. I have been the release liaison for Magnum
+for Pike and I have contributed a lot in Magnum's CI jobs (adding
+multi-node, DIB and new driver jobs, I haven't managed to add Magnum
+in CentOS CI yet :( but we have granted access). Finally, I have been
+working closely with other projects consumed by Magnum like Heat and
+Fedora Atomic.
+
+My plans for Queens are to contribute and guide other contributors to:
+* Finalize and stabilize the very much wanted feature for cluster
+  upgrades.
+* Add functionality to heal clusters from a failed state.
+* Add functionality for federated Kubernetes clusters and potentially
+  other cluster types.
+* Add Kuryr as a network driver.
+
+Thanks for considering me,
+Spyros Trigazis
