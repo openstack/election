@@ -1,0 +1,68 @@
+Hi all,
+
+I'd like to formally communicate my desire to continue serving as the keystone
+PTL for the upcoming Queen’s release. Despite some turbulence throughout the
+Pike development cycle, keystone has managed to make progress on some long
+standing issues. Even though the pace of development has decreased, I think we
+can build momentum from the small victories in Pike and have a productive
+Queens release. I'd like to direct our focus on the following areas for
+continued improvement and stability of the keystone project throughout the
+Queen’s cycle.
+
+*Policy Improvements*
+
+We dedicated a significant portion of our time this release getting policy into
+code and documented. We also had meaningful discussions with operators and
+developers, resulting in a plan that improves long-standing issues with
+OpenStack policy enforcement. I'd like to carry this momentum into Queens and
+ensure we’re implementing global role assignments. Additionally, I'd like to
+work closely with the oslo team to find ways we can signal deprecations to
+operators though the oslo.policy library. This will help us define a better set
+of default roles in Rocky, and clean-up policy enforcement at each service.
+Lastly, I look forward to championing the community goal to move policy and
+documentation into code for all applicable projects.
+
+*Application Credentials*
+
+At the forum and while reviewing the specification, we realized just how
+important this work is to our users. While it's unfortunate we didn't make as
+much progress here as we hoped during Pike, the discussions this cycle
+highlighted a lot of concerns with design as well as usability. I think we're
+all better off and more prepared to address the last few tough design bits
+during the PTG. One of my goals during the PTG is to facilitate those
+conversations and verbosely communicate our approach. I think that will help us
+keep the goal in mind as we drive towards delivering this in Queens.
+
+*Unified Limits*
+
+Addressing unified limits was another long-standing issue that we did a good
+job of capturing and documenting throughout the Pike release [0]. Pending
+available resources, it would be great to push this forward, starting with
+unified limits in keystone. This will have a positive impact on any project
+currently experiencing issues with quota and will make quota usability more
+consistent overall.
+
+*Testing*
+
+Throughout Pike, our team spent a significant amount of time paying down
+testing, technical debt. We cleaned-up and extended support for federated
+testing, and we've integrated testing with our tempest plugin. We added
+experimental support to test rolling upgrades and look forward to gating on
+rolling upgrades in Queens. In the upcoming months, we need to focus our
+efforts on better LDAP integration testing, which has been on our TODO list for
+too long.
+
+*Team Building*
+
+Last, but certainly not least, we need to recruit new keystone contributors -
+part or full-time. Some of our most experienced and well-versed developers
+moved onto other projects outside of OpenStack. Luckily, the remaining team
+members have ambitiously stepped up to fill the gaps. I want to ensure this
+project is working optimally on all cylinders. In order for us to do this and
+achieve our Queen’s goals, we need more contributors.
+
+Thanks for reading and I look forward to seeing everyone in Denver,
+
+Lance
+
+[0] http://specs.openstack.org/openstack/keystone-specs/specs/keystone/ongoing/unified-limits.html
