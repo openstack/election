@@ -1,0 +1,30 @@
+Hi all,
+
+I'd like to announce my candidacy for the PTL role of Senlin Project for
+Queens cycle.
+
+I began to contribute to Senlin project since 2016.05 and joined the team as
+a core reviewer in Ocata cycle. It is my pleasure to work with the great team
+to make this project better and better, and we will keep moving and look
+forward to push Senlin to the next level.
+
+In past cycles, we have done a lot of great works. As a clustering service,
+we already can handle some resource types like nova server, heat stack .etc.
+What's more, we already have some small steps for supporting NFV & k8s use
+cases.
+
+As a PTL, I'd like to focus on the tasks as follows:
+
+- Improve runtime data processing inside Senlin server
+- Improved AZ & Region placement policy
+- Improved health policy to provide HA support
+- A better support to NFV use cases
+- Add support to k8s use cases
+- A stronger team to push Senlin to next level
+
+Again, it is my pleasure to work with such a great team.
+
+Thanks
+
+Ruijie Yuan
+
