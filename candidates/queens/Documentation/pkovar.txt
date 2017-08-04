@@ -1,0 +1,33 @@
+Hi all,
+
+I'd like to announce my candidacy for PTL of the docs project for Queens.
+
+I've been active in various open source documentation and
+translation projects since 2007 and started contributing to OpenStack
+docs during the Mitaka cycle, both upstream and in the RDO Project.
+
+The docs project has recently seen a significant decrease in both the
+number of submitted updates and contributors, but thanks to a group of
+dedicated people in the community, we've managed to come up with a clear
+plan to migrate docs over to individual projects, restructure them and
+reduce the scope to keep them maintainable. This is now well underway and
+I'd like to help the team and the community drive and continue with this
+work.
+
+In docs, we generally like to keep it rather short and simple, so let me
+summarize the main three points as follows:
+
+Support and help drive the remaining tasks in restructuring and/or moving
+content from the core docs suite.
+
+Help establish the docs team as content editors for individual project docs
+when needed or requested.
+
+Stay open and friendly to new contributors, no matter if they are
+prospective core members or drive-by docs contributors, with the
+understanding that docs are a great way to get involved in the project for
+both the non- and developers.
+
+Thank you!
+
+Petr Kovar (pkovar)
