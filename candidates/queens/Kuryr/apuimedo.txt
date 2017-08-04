@@ -1,0 +1,35 @@
+Hi fellow kuryrs!
+
+I present my PTL candidacy for the Queens Cycle.
+
+We've done well in this past cycle getting close to our first release
+adding things like:
+- Kubernetes service support,
+- Token authentication support,
+- A lot of devstack improvements like multinode
+- pod-in-VM neutron trunk and macvlan support
+- Resource pooling
+- Octavia support
+
+Also some things that are in-flight and that may still make it in this
+cycle or early next:
+- CNI split
+- Containerized deployment with daemonsets
+- SR-IOV support
+
+In this new upcoming cycle I would like to bring the following things:
+- Full multi-network support consistent with upstream design
+- High Availability (active - active) controllers
+- Controller Health and Readiness checks
+- SR-IOV support
+- Network Policy
+- Ingress controllers
+
+I am very thankful for all the people and organizations that have
+contributed not only in code, but also in reviews, documentation,
+blueprints, bugs and discussion. Serving as PTL this last cycle has
+been a great pleasure and I would love to serve again.
+
+Regards,
+
+Toni
