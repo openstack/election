@@ -1,0 +1,19 @@
+Hello everyone,
+
+I would like to announce my candidacy for PTL of Cloudkitty.
+
+During the Pike cycle we have been able continue the openess of our
+community but also the addition of some interesting improvment and bug
+fixes.
+
+Now with Queen cycle approacing fast, my main focus for cloudkitty will
+be to expand the spectrum of interaction : toward more OpenStack components
+and toward containers.
+Finally I would like a special focus with documentation to help to adoption
+of cloudkitty !
+
+I would also like to take this opportunity to thank all members of the
+OpenStack community who helped our team during the lasts cycles.
+
+Thank you,
+     Christophe
