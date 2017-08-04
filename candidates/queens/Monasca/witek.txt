@@ -1,0 +1,35 @@
+Hello everyone,
+
+I would like to propose my candidacy for the role of Monasca PTL for Queens
+release.
+
+I would like to thank Roland, who has been the PTL for several releases now and
+has always pushed the project forward. Your working quota seems to be unlimited,
+I reckon you work at sleep as well :) I'm sure that anyone who wants to lead
+Monasca will need your support and expertise. Thanks for your commitment.
+
+To my person, I have worked for the project as core member for two years now and
+acted as Release Management Liason in Ocata and Pike cycles. I have participated
+in my first OpenStack Summit in Tokyo where I forgot the password to the demo
+machine during the presentation. Then followed Austin, Barcelona and Boston with
+presentations, design sessions, workshops and mid-cycle meetings. During this
+time I have met tremendous people, learnt a great deal about Monasca and
+OpenStack and had many sleepless nights :)
+
+As PTL, in the next release I would like to focus on following topics:
+
+* easy deployment of Monasca using Docker and Kubernetes
+* improve documentation
+* search for new scalable time-series database
+* strengthen the community and improve active participation and contribution
+* metrics aggregation
+* alarms correlation
+* events processing
+
+I hope to get the support of the entire team and good cooperation in Queens
+cycle.
+
+
+Best greetings
+
+Witek
