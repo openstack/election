@@ -1,0 +1,29 @@
+Hi everybody!
+
+I've been trying to justify why you should all select me as PTL for Stable
+branch maintenance.  As part of that I've looked at my self-nomination
+platforms for Ocata[1] and Pike[2].
+
+ 1. Work with project teams to understand how decisions taken on master will
+    impact their stable branches.  Specifically projects with a driver model.
+ 2. Work with project teams to implement constraints support
+ 3. Growing the project specific, and stable-maint teams
+ 4. Re-establishing regular team meetings and presence in #openstack-stable
+ 5. Producing tooling to aid projects teams, release managers and the stable
+    team to keep stable branches current and released with a regular cadence
+ 6. Producing tooling and procedures to help retire projects as required
+
+Some tools are better, some process is clearer but I haven't completed any of
+those items, I could make excuses based on things that have happened in the last
+6 months but I feel the bottom line is  I don't know *how* to do those items.  I'm better at the technical stuff than I am at the helping people grow.
+
+So if y'all will have me I promise to:
+
+* Work on the items in the list above[3]
+* Lean on the community and TC to help be achieve the parts I can't do on my
+  own.
+* Give it all I can
+
+[1] https://git.openstack.org/cgit/openstack/election/plain/candidates/ocata/Stable_Branch_Maintenance/tonyb.txt
+[2] https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/Stable_Branch_Maintenance/tonyb.txt
+[3] Except 4. we decided that wasn't working and dropped it altogether. :p
