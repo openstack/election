@@ -1,0 +1,29 @@
+Dean Troyer (dtroyer)
+
+I am running for re-election as the OpenStackClient PTL.
+
+The comming releases of OpenStackClient will be important as they
+are likely to be the base we will live with for some time.  A number
+of fundamental changes need to be made to OSC to properly support
+things like fully utilizing os-client-config and its clouds.yaml
+configurations and properly supporting microversions.  These changes
+will have subtle impacts to backward-compatibility that force a
+major version update.
+
+This all comes at a time when many smaller projects are seeing a
+dropoff in contributions.  For OSC this can be partially attributed
+to the well-known business decisions of some of our member companies,
+but it is also an indication that the core of OSC is nearing completion.
+There will always be upstream changes that need to be chased but
+thanks to the work of a number of contributors the backlog of missing
+commands/features is as small as it has ever been.
+
+Most of all, I want to see us continue our mission of providing a
+(wait for it...) consistent interface to OpenStack via the CLI.
+Sometimes this means changing how we think about certain operations
+in individual projects, sometimes it means providing direction for new
+operations, and mostly it means finding the common ground that makes
+our users lives simpler.
+
+I thank you and am honored by your support.
+
