@@ -1,0 +1,38 @@
+Hello everyone,
+
+I would like to announce my candidacy for Documentation PTL (Queens).
+
+First of all, I wish to introduce myself briefly. I have been working on the bugs
+of openstack-manuals project since the Liberty release. And the most I fixed is
+the bugs of the Install Guide. In my opinion, Openstack is not very friendly with
+new hand. If they install their first openstack environment according to our Install
+Guide which may not be very accurate, she or he would be in a mess. I will continue
+to focus on document bugs whether as a reviewer or PTL.
+
+In this cycle, Alex( asettle) has coordinated the doc migration work [1]. I wish to
+take this opportunity to thank all members of the OpenStack community who partcipated
+in this work. We cannot achieve such seriously bug stuff without your cooperation. :) 
+
+As you can see, we removed several guides from openstack-manuals project. There are
+still many things [2] we have not yet to accomplished after the doc migration.
+Some of these problems we already have solutions. But the others need to be discussed.
+We are welcome everyone to join in our discussion[3]. It would be wonderful if you can
+give us some ideas!
+
+If I am elected PTL of the Documentation project, my focuses for the coming release
+are to grow the Documentation team, keep the accuracy of documents, and work closely
+with other projects to help them imporve documents.
+
+Thanks for your consideration, and I am looking forward to work together with all of
+you on getting the OpenStack documents to the next stage.
+
+Cheers,
+
+Chason
+Email: chen.xing@99cloud.net
+IRC: chason
+Launchpad: chen-xing
+
+[1] https://etherpad.openstack.org/p/doc-migration-tracking
+[2] https://etherpad.openstack.org/p/doc-future-problems
+[3] https://etherpad.openstack.org/p/denver-doc-PTG
