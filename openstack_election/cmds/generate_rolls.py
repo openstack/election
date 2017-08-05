@@ -27,8 +27,8 @@ from six.moves.urllib.request import urlopen
 
 from openstack_election import utils
 
-CGIT_URL = "http://git.openstack.org/cgit/openstack-infra/system-config/" \
-           "plain/tools/owners.py"
+OWNERS_URL = ('%s/openstack-infra/system-config/plain/tools/owners.py' %
+              (utils.CGIT_URL))
 
 # Exclude the system / bot accounts
 # OpenStack Release Bot:
@@ -73,9 +73,9 @@ def main():
 
     os.chdir(os.path.dirname(args.rolls_dir))
     if not args.cached_owners_script:
-        print("Grabbing script from: %s" % CGIT_URL)
+        print("Grabbing script from: %s" % OWNERS_URL)
         with open("owners.py", "wb") as owner_file:
-            owner_file.write(urlopen(CGIT_URL).read())
+            owner_file.write(urlopen(OWNERS_URL).read())
 
     sys.path.append(os.getcwd())
     import owners
