@@ -149,7 +149,7 @@ def get_projects(tag=None):
     cache_file = '.projects.pkl'
 
     if tag:
-        url += '?%s' % tag
+        url += '?h=%s' % tag
         cache_file = '.projects.%s.pkl' % tag
 
     # Refresh the cache if it's not there or if it's older than a week
