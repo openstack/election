@@ -1,0 +1,45 @@
+Hi All,
+
+I'm happy to announce my candidacy to be the Freezer PTL for the Queens release
+cycle.
+
+The Freezer developers did a very good job over the past releases and I am sure
+they will continue doing an amazing job over the next release as well.
+
+In the Pike release, we have implemented more than one engine for OpenStack like (nova, cinder, cinder_OSbrick, rsync...)
+In the Queens release we need to set more focus on enhancing these engines and make it work better and add more features to these engines.
+Also for the Queens cycle we need to add more features to freezer-dr to support more use cases of the disaster recovery scenarios,
+In Pike we have change a little bit to allow the addition of more features in the new relases.
+
+In the Queens cycle, I think we are going to focus on the following items:
+
+
+* Enhancing core freezer-agent features and continue refactoring the missing parts
+  to allow pluggable architecture to support more engines and applications in freezer.
+  Some refactoring has already been done, also some new engines and storage driver
+  has been added, so we need to keep those engines/drivers well maintained, enhanced and up to date!
+
+* Completed the move from Elasticsearch to Oslo.db
+
+* Relate the backups, jobs, sessions, resources to tenants not to users.
+
+
+* Integration tests. We need to increase the work done on testing. This will
+  help to stabilize Freezer.
+
+* Documentation. We should target for a split, refactoring and global
+  improvement of our docs, which is a required step to increase the size of our
+  community.
+
+* Implement remote backups. Allow the users to use any instance of freezer-agent
+  to backup remote resources to any storage driver
+
+* Deprecate CLI. Freezer-agent will accept jobs only through configuration
+  files not through CLI.
+
+* Allow the engines/storage drivers to register their own OPTS
+
+I would be honoured to have your support.
+
+Thanks,
+Saad Zaher (szaher)
