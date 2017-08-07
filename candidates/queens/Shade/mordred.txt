@@ -1,0 +1,52 @@
+I would like to be the PTL of the shade project for another cycle.
+
+Over the past few years the shade project has grown from a utility library
+containing some logic needed by the Infrastructure team and Ansible for
+interacting with OpenStack clouds to a rich SDK that serves the general needs
+of humans who want to use OpenStack.
+
+This past cycle we (mostly) accomplished two main goals that were not exciting
+features but which are immensely important nonetheless. We ported our unittests
+to use requests-mock instead of mocking out individual python client libraries,
+and we replaced our use of the python client libraries with direct REST calls
+based on keystoneauth. This was rather mind-numbing and I fear we may have
+eaten the brains of a few wonderful contributors - but it means that our
+dependency chain is much slimmer so inclusion in distros and alongside apps
+should be less costly.
+
+We still need to finish converting the last keystoneclient calls and to
+transition the Ironic calls. TheJulia did WAY too good of a job writing tests
+when implemeting Ironic support originally, so it may take a little while to
+finish that one.
+
+Over the next cycle we need to update our REST layer to incorporate the recent
+changes made in keystoneauth related to service and version discovery. This
+largely means removing code, which is always pleasant. Once that's done we'll
+be in a position to start using microversions as appropriate.
+
+Glance has landed experimental support for the new Image upload process, and
+we need to add detection and implementation of that to our Image upload system
+so that we'll use it when it's available.
+
+There is some very important work we need to do deep in the guts related to
+caching and batching of calls. We have a system for this that is designed to
+ensure that large-scale systems such as Nodepool can operate effectively, but
+it's proving costly for smaller users and needs to be optimized.
+
+I recently suggested merging the work of the python-openstacksdk team into
+shade. If we decide as a larger OpenStack community that this is a direction
+we want to go, we'll need to do a decent amount of plumbing to ensure that's
+as smooth as possible for both sets of users.
+
+Finally, I think if we don't make some forward progress on the oaktree gRPC
+federation API that samueldmq will be very unhappy with me. We've been
+explicitly putting off working on that to ensure we get the RESTification work
+done. This next cycle I expect to make real progress on that so that we can
+at least have a proof point to look at so we can discuss a real thing rather
+than a theory.
+
+I'm proud of what we've done so far, and I think there is a ton we can continue
+to do to serve OpenStack End Users well.
+
+Thank you for your consideration,
+Monty
