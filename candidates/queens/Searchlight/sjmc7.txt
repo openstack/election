@@ -1,0 +1,12 @@
+I'm announcing my candidacy to continue as the PTL for Searchlight
+for the Queens cycle. I've been a core contributor since the project
+began and PTL since the start of the Ocata cycle.
+
+My goals for Queens are mainly to try to increase community
+involvement and usage. We have some interesting ideas in the works
+for integrating with Zaqar and Horizon, and I also want to continue
+to improve the way we ingest data.
+
+I look forward to hopefully continuing as PTL for Queens!
+
+Steve McLellan
