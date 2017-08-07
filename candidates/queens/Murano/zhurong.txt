@@ -1,0 +1,39 @@
+Hi,
+
+I would like to nominate myself to take the role of Murano PTL for Queens
+release.
+
+I’ve been working on the project for the past couple years. Working with
+Murano is probably the most exciting thing I do professionally. It is my 
+pleasure to work with the great team to make this project better and
+better, and we will keep moving and look forward to push Murano
+to the next level.
+
+In past cycles, we have done a lot of great works. We got moving policy
+into code, allow encrypting of muranopl properties, add api ref docs,
+bug fixes and so on. Thanks for everyone's hard working.
+
+I’m really excited to work with Murano further, and to grow the community
+surrounding it. The more companies that contribute to Murano, the stronger the
+community around it will be, capable of maintaining and enhancing Murano for
+years to come.
+
+The main goals I’d like to focus on for Murano during Queens are:
+ * Acknowledgment of OpenStack-wide Goals.
+ * Add Murano-dashboard sanity_check CI job.
+ * Significantly improve Murano documentation.
+ * Murano’s integration with GLARE.
+ * Focus on addressing a number of outstanding bugs in Murano. These include
+   adding SIGHUP signal support to Murano, support multiple rabbit hosts in
+   RabbitMQ for Murano Agent, and addressing other UI bugs, like abandon
+   environment hanging issues.
+ * Increase developer contribution in Murano through my own coding efforts,
+   as well as through ZTE’s resources.
+
+Thanks for taking the time to read through this roadmap and to consider my
+candidacy. Regardless of the outcome, I'm excited to continue contributing
+to Murano, be it code or code reviews.
+
+Regards,
+
+Rong Zhu
