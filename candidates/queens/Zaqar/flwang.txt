@@ -1,0 +1,40 @@
+Hi all,
+
+I've had the pleasure of serving the Zaqar community as PTL for several
+cycles, and I'd like to continue for Queens cycle, if you'll have me.
+
+We did a great job in Pike. The dead letter queue feature is landed and the
+notification retry policy feature is almost there. For Queens release, things
+I'd like to do which we haven't completed in Pike are:
+
+1. Scalability
+   In Zaqar, we would like to see no obvious degradation of latency or
+availability when load increasing. Here "load" can refer to various dimensions
+of usage:
+   1) number of publishers
+   2) number of subscribers
+   3) rate of messages published or consumed
+   4) number of messages
+   5) number of queues
+   6) size of messages
+Above are the "load" we care about in order from my view. We got some
+interesting data with OSProfiler and improved/fixed some issues in Pike. But
+still need to continue this work to get better performance.
+
+2. Availability
+   Zaqar has a simple architecture which makes keeping its availability
+relatively easy, for the service level. But we do still need more consideration
+for the storage backend layer.
+
+3. Latency
+   Latency is a typical, important time-based measure for a messaging service.
+Obvious, Zaqar would like to minimize latency wherever possible. There are three
+most important latency metrics I would like to improve are:
+   1) The amount of time to deliver message from producer zaqar server
+   2) The amount of time to deliver message from zaqar to consumer(poll or push)
+   3) The amount of time to claim a message
+
+It's a fantastic experience working with this amazing team and I would be
+pleased to serve as PTL for another cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
