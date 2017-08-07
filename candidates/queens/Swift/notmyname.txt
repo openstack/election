@@ -1,0 +1,35 @@
+I'd be honored to continue to serve as your PTL for OpenStack Swift.
+
+Looking forward to the Queens cycle, I expect current, ongoing work to
+continue. Yes, we'll work on solving the next technical challenges for
+the project. We'll make progress on container sharding and make
+improvements to the consistency engine. We'll do what we can to
+enhance testing and testability. We'll improve the way we store data
+so that we can take advantage of all the resources modern storage
+servers come with. We'll continue to ensure that Swift is the best
+open source object storage system available, but the hardest
+challenges we face are not technical.
+
+The hardest challenge any community faces is that of ensuring its own
+health for long-term sustainability. Our individual project is over
+seven years old now, and many of the most active contributors to the
+project, myself included, have been involved since the early days. We
+have had new contributors join--we've had around 700 contributors so
+far--and we've seen valued members of the community leave for various
+reasons. We must ensure that our community welcomes new contributors
+and supports them as they learn how Swift and the Swift team works.
+
+These community sustainability questions are what I've been thinking
+about lately, and this is what I'll focus on as PTL during the Queens
+cycle. I think one important fact to realize is that there will always
+be more people using Swift than are contributing to Swift. This simple
+fact should encourage us to realize that despite how shifting
+corporate strategies affect our contributor count, we must focus on
+developing and delivering software that solves problems that people
+have.
+
+We are developing software that is meant to be used. As I have said
+many times before, I hope to see Swift used by everyone, every day,
+even if they don't realize it. When we focus on solving storage
+problems and making our software the best it can be, we will see this
+vision realized.
