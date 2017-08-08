@@ -1,0 +1,39 @@
+Hi,
+
+I would like to nominate myself to be the Karbor PTL for the Queens release
+cycle.
+
+I began to contribute to Karbor project since 2016.01 and as a core reviewer
+in Newton cycle. It is my pleasure to work with the great team to make this
+project better and better. We will keep moving and look forward to push Karbor
+to the next level.
+
+In Pike, we have done a lot of great works about OpenStack resources protection
+in karbor: supported Network resources protection, integrated manila with share
+snapshot, integrated cinder with volume snapshot, integrated trove with database
+instance backup and restores. More banks: now the local file system and S3 can
+be supported as banks in karbor.
+Other achievements are: significantly improved docs, removed Heat dependency,
+added a new operation log API, implemented OpenStack Client integration,
+OperationEngine multi-node deployment and so on.
+
+For the next cycle I'd like to focus on the tasks as follows:
+ * API support the checkpoint verification
+ * Support quotas
+ * Support checkpoint cross AZ£¬region copy API
+ * Cross-site backup and restore
+ * Support freezer protection plugin
+ * Support K8S pods protection integration
+ * API support micro-version
+ * Support OpenStack Ansible deployment
+ * Implement policies in code
+
+Thanks for taking the time to read through this roadmap. If you have any ideas
+on these points we're always happy to discuss and correct our plans.
+
+We're always happy to get new contributors on the project and always ready
+to help people interested in Karbor development get up to speed. I'm excited
+to continue contributing to Karbor.
+
+Best Regards,
+Chen Ying
