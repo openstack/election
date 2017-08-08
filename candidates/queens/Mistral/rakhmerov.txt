@@ -1,0 +1,49 @@
+Hi,
+
+I'm Renat Akhmerov. Mistral and things around it are still my main focus.
+So I'm running for PTL of Mistral in Queens.
+Mistral is a workflow service developed within the OpenStack community from
+the ground up.
+
+In Pike we finally finished the main part of Custom Actions API work: made
+first releases of mistra-lib that contains needed classes for developing
+custom actions, adjusted all the code to use mistral-lib and fixed all the
+needed dependencies. Other achievements are: significantly improved docs,
+implemented advanced publishing mechanism that allows publish workflow
+variables more flexibly and into different scopes (branch local and global),
+actions can now run right in the engine (no need in external executors)
+which is beneficial in a number of cases, OpenStack actions now can run
+in different regions, a number of memory leaks eliminated and huge number
+of other bugfixes and improvements in both server and client sides. Also,
+we prepared a detailed spec on what needs to be done for HA and started
+working on it.
+
+For the next cycle I'd like to propose the following roadmap:
+
+* Improve performance
+  * Less overhead per task
+  * Big workflow graphs
+  * Optimize ‘join’ tasks
+* Improve multi-node mode and HA
+* Close all the gaps in the documentation and restructure it so it is more
+  convenient to read and navigate
+* Usability
+  * New CLI/API (more consistent and human friendly interface)
+  * Debugging workflows
+  * Workflow failure analysis (error messages, navigate through nested
+    workflows etc.)
+* Refactor Actions subsystem
+  * Actions testability
+  * Move OpenStack actions into mistral-extra and with better test coverage
+    and usability
+  * Actions versioning (i.e. actions working with different versions of
+    OpenStack services)
+
+Should you have any ideas on these points we're always happy to discuss and
+correct our plans.
+
+We're always happy to get new contributors on the project and always ready
+to help people interested in Mistral development get up to speed. The best
+way to get in touch with us is IRC channel #openstack-mistral.
+
+Renat
