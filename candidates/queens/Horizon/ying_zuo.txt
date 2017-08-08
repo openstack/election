@@ -1,0 +1,29 @@
+Hi everyone,
+
+I would like to announce my candidacy for PTL of Horizon for Queens; Rob Cresswell
+will be supporting me as co-PTL.
+
+I have been actively contributing to Horizon for over two years and became a
+core developer during the Pike cycle, as well as maintaining downstream customizations
+for Horizon. This gives me a good understanding of both upstream and downstream concerns.
+
+As PTL of Horizon, I would like to drive Horizon’s development in the following areas:
+
+- Complete work on the Angular overview and instances panel that has been started,
+  as these currently suffer from poor performance
+
+- Ensure Horizon continues to be a robust and highly customizable dashboard
+
+- Keep up with the updates in other OpenStack projects; during Pike, we began work on
+adding support for Neutron QoS and Trunk ports, which we should complete early in
+the Queens cycle.
+
+- Maintain an accurate blueprint list and invest more time in bug triage
+
+I am grateful for Rob’s help in taking on this responsibility and I look forward to
+working with you all to make Horizon a better OpenStack dashboard in the Queens release.
+
+
+Regards,
+Ying
+
