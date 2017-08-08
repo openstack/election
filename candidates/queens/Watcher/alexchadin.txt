@@ -1,0 +1,38 @@
+I am announcing my candidacy for Queens PTL role of Watcher project. If you
+don't know yet, my name is Alexander Chadin, I'm alexchadin on IRC. I've been
+working on Watcher project since March 2016. I served as PTL for Pike cycle
+and this cycle was a difficult one. But we have implemented a lot of
+blueprints and bug fixes along with general Pike goals.
+
+I'd like to set the following goals for Queens cycle:
+
+* Support baremetal in Watcher.
+
+  We have requests from ZTE to add Ironic-based strategy along with
+  baremetal model. It will allow Watcher to manage power of vm-free hosts in
+  case of consolidation goals. To do so, we also need to implement "power on"
+  and "power off" actions.
+
+* Investigate ability to support containers.
+
+  As you may know, almost all companies which uses VMs are trying to work with
+  containers and orchestration services like Kubernates. We could add cold
+  migration actions at least Docker or use OpenStack Zun to get access to
+  containers backed by different container technologies.
+
+* Bug triaging.
+
+  The functional gate job of Watcher is pretty unstable (2-3 tests fails
+  time by time) and should be fixed. Every bug fix (with submitted bug report)
+  across our repos should be reviewed as soon as possible.
+
+* Complete HA support for Watcher
+
+  There were some patches that allows Watcher to launch services in parallel.
+  All we need is to implement schedule mechanism and make sure we have
+  persisted all the things which are using during optimization process.
+
+I'd like to thank our wonderful team for Pike cycle and I hope we will make
+it better! Stay tuned.
+
+Alex
