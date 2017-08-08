@@ -1,0 +1,43 @@
+Hi everyone,
+
+This is my self-nomination to continue running as Nova PTL for the Queens
+cycle.
+
+If elected, this would be my fourth term as Nova PTL. While I try to
+continually improve, at this point I have a fairly steady way of doing things
+and most people are probably used to that by now. That's not to say it's the
+best way of doing things, so I'm always open to getting feedback on what
+people would like to see more (or less) of from me.
+
+I really see this as a service role and I'm happy to continue being of service
+for another release, which includes preparing for the PTG and Forum, being
+aware of the schedule and communicating major changes or plans to various
+groups (developers, operators, Foundation staff, etc).
+
+I'm also happy to say that I'm fortunate enough to have an employer that
+supports me doing this again and the amount of time it takes working mostly
+full time in the community.
+
+As for Queens content, we made a lot of progress again in Pike but some things
+are left undone and that's what I'd like to focus on in Queens. Specifically:
+
+- Continue to evolve and solidify Nova's interaction with the Placement
+  service, which includes getting the allocations code out of the compute
+  service, fully supporting shared storage providers (and testing that in the
+  Ceph CI job), and finally adding the nested resource providers support which
+  will enable other features like vGPUs and other hardware-accelerated
+  configurations.
+- Close some gaps in our multi-cell support, mainly related to up-calls for
+  reschedules during build and affinity/anti-affinity sanity checks, and also
+  work on real multi-cell deployment testing in a multi-node CI job.
+- Finish the Cinder 3.27 API integration early (before the PTG) so we can
+  finally get volume multi-attach support.
+- Cleanup the documentation now that it has moved in-tree.
+
+Finally, a personal goal for me is going to be working on helping mentor
+someone into the PTL role for the Rocky release, so if you are interested
+in this role, please reach out.
+
+Thanks for your consideration,
+
+Matt
