@@ -1,0 +1,19 @@
+I am submitting my self nomination to serve as the RefStack PTL for
+the Queens development cycle. RefStack is in a period of transition,
+with much of the core team being assigned to other projects, including
+the long-standing PTL. While I have few contributions to the project,
+I have been an active participant and advisor to the project since I
+began working with the Interop Working Group (formerly DefCore).
+
+For the Queens cycle, I will focus on rebuilding a core team of
+developers, and looking to the future of RefStack as an OpenStack
+project and how it fits into the larger ecosystem. With many of the
+features of RefStack complete, we will investigate the possibility
+of moving the project into a mainteance state under the governance of
+the Interop Working Group.
+
+Thank you,
+
+Chris Hoge
+Interop Engineer
+OpenStack Foundation
