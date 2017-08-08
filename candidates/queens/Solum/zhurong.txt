@@ -1,0 +1,20 @@
+Hi,
+
+I would like to submit my candidacy for Solum PTL for the Queens cycle.
+
+I began to contribute to Solum project since 2016.05 and joined the team as
+a core reviewer in Ocata cycle. And now, I think I can take over the
+responsibilities of Solum PTL.
+
+The main goals I’d like to focus on for Solum during Queens are:
+- Acknowledgment of OpenStack-wide Goals.
+- Continued integration of Solum with Zun.
+- Improvement of Solum's installation documentation.
+- Testing improvements.
+
+Thanks for taking the time to read through this roadmap and to consider my
+candidacy.
+
+Regards,
+
+Rong Zhu
