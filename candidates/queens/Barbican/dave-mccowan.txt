@@ -1,0 +1,23 @@
+Fellow Barbicaneers,
+
+I'd like to nominate myself to continue to serve as Barbican PTL
+through the Queens cycle.
+
+First and foremost, I want to maintain our team's culture.
+
+My goals for the Queens cycle are to continue the progress made during
+the Pike cycle in the following areas:
+
+1) Grow the Barbican team of contributors and core reviewers.
+2) Collaborate with other OpenStack projects with joint blueprints.
+3) Maintain our high standards for code reviews and unit and functional tests.
+4) Be diligent with backporting bug fixes to stable releases.
+5) Shrink our backlog of open bugs and patches.
+6) Enable new adoption through improved documentation.
+7) Develop new secret store plugins, or key store alternatives, that are
+both secure and easy to use.  Vault interoperability looks like a good
+area for new development in this regard.
+
+Thank you in advance for this opportunity to serve.
+
+--Dave McCowan (dave-mccowan)
