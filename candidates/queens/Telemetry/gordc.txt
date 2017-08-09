@@ -1,0 +1,36 @@
+hi,
+
+this is my self-nomination to be the (interim) PTL of Telemetry for the Queens
+cycle.
+
+quite frankly, due to lack of resources spread across a large domain, the
+project is what it is. we've added new meters, fixed bugs, simplified code
+but really nothing to write home about. as it stands all resources are being
+applied to Gnocchi so we have one project covered 60% rather than 4 projects
+covered 15%.
+
+this is the reality of the Telemetry project.
+
+it has the framework to gather data from sources. if you want to add a new
+meter for your service: edit a yaml file, add some attributes, done. if you
+have something a bit more complicated: look through code, copy a pollster,
+paste, edit, done. this seems to have worked well given the outside
+contributions we received.
+
+it has the framework to store and query events. functionality that has been
+described as 'works well enough'.
+
+it has the framework to define alarms with integration to Heat, Zaqar.
+(functionality we plan to move to Gnocchi[1])
+
+you may be wondering why i used interim in my opening statement. i honestly may
+not have the time to be PTL. in other words, i will hold PTL ceremoniously
+until another volunteer rides in who is more ambitious. in the meantime, the
+minimal PTL duties that exist will spread across the current contributors.
+
+formally, i have zero plans for Aodh, Ceilometer, and Panko aside from
+maintenance. i will let the community decide what happens. i will support
+anyone who wants to contribute their requirements to it. if you have questions,
+issues, or requests, ask on the mailing list.
+
+[1] https://github.com/gnocchixyz/gnocchi/issues/71
