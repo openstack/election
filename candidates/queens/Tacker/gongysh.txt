@@ -1,0 +1,25 @@
+
+This is my self-nomination to continue running as Tacker PTL for the
+Queens cycle.
+
+In Pike cycle, tacker team is focusing on stablebility and scaling. We have
+introtroduced Barbican to keep VIM credentials and Mistral to do VIM
+monitoring and policies. These are great steps to let Tacker to be stable
+and scalable. In addition, the team has been active in promoting tacker.
+We have joined OPNFV meeting, OpenStack days China and OpenStack
+design summit in Boston.  There are some topic sessions which are
+proposed to Syndey Summit by team.
+
+In Queens cycle, I plan to
+
+- Continue to stablize tacker and make it of production quality.
+- Complete tacker document.
+- Provide kolla way to install tacker. I think tacker will be installed in kolla which put
+  tacker in containers. The container way will make tacker easier to use,
+  help many guys to use tacker in short way, compared to devstack installation.
+- introduce more kinds of VIMs
+- Promote tacker into other communities.
+
+Lets make tacker roll together.
+
+Thanks for your consideration.
