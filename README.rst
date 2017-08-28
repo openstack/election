@@ -71,12 +71,14 @@ A couple of days before the PTL Election ends:
 * Send 'PTL vote motivation call'
 
 When PTL Election ends:
-* close the election and udpate the results:
+* Close the election and udpate the results:
   * tox -evenv -- close-election ptl
   * edit doc/sources/pike/ptl.yaml
-* update index.rst to include tc.rst instead of ptl.rst
+* Update index.rst to comment ptl.rst candidate list
 * Commit the change and review the results
 * Send 'PTL results'
+* Update governance repo:
+  * tox -e venv update-governance -- --governance-repo ../governance/
 
 
 TC Candidacy round
@@ -84,6 +86,7 @@ TC Candidacy round
 
 When TC Candidacy starts:
 * Send 'TC Candidacy Opening'
+* Update index.rst to include tc.rst instead of ptl.rst
 
 During the TC Candidacy round:
 * To +2 a candidate:
