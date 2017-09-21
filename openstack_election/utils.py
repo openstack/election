@@ -66,8 +66,8 @@ def gerrit_datetime(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S %z')
 
 
-def gerrit_query(url):
-    r = requests.get(url)
+def gerrit_query(url, params=None):
+    r = requests.get(url, params=params)
     if r.status_code == 200:
         data = json.loads(r.text[4:])
     else:
@@ -87,8 +87,8 @@ def get_email(filepath):
 
 
 def get_gerrit_account(email):
-    url = '%s/accounts/?q=%s' % (GERRIT_BASE, email)
-    accounts = gerrit_query(url)
+    accounts = gerrit_query('%s/accounts/' % (GERRIT_BASE),
+                            params={'q': email, 'o': ['DETAILS']})
     if not accounts:
         raise ValueError("Couldn't find gerrit account with '%s'" % email)
     if len(accounts) != 1:
