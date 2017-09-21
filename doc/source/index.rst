@@ -11,7 +11,7 @@ See `Election system`_, `PTL details`_ and `TC details`_.
 .. Below is the official list of candidates for the current round.
 
 .. TODO: Change from ptl.rst to tc.rst when TC rounds starts
-.. .. include:: ptl.rst
+.. include:: tc.rst
 
 
 Previous elections
@@ -24,7 +24,8 @@ Election Officials
 ==================
 
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
-* Emmet Hikory (persia), persia at shipstone dot jp 
+* Emmet Hikory (persia), persia at shipstone dot jp
+* Tony Breeds (tonyb), tony at bakeyournoodle dot com
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev Freenode channel.
