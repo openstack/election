@@ -144,7 +144,7 @@ candidates:
   Mistral:
   - elected: true
     email: renat.akhmerov@gmail.com
-    fullname: Renat Renat
+    fullname: Renat Akhmerov
     ircname: rakhmerov
     url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/Mistral/rakhmerov.txt
   Monasca:
