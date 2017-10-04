@@ -1,0 +1,69 @@
+I am announcing my candidacy for a position on the OpenStack Technical
+Committee.
+
+I started contributing to OpenStack in 2012, and I am currently
+employed by Red Hat to work on OpenStack with a focus on long-term
+project concerns.  I have served on the Technical Committee for the
+last four years and as PTL of the Oslo and Release Management teams at
+different points in the past. I wont repeat all of the information
+about my history with the project (see last years nomination email if
+you dont know me [1]).
+
+Most recently I have been working with the Documentation team to
+reorganize how we manage docs for OpenStack [2][3]. After more than
+1200 reviews [4], we are well on our way to a healthy future.
+
+Most of my contributions have been focused on enabling others in the
+community.  From the documentation migration, to release automation,
+and the community goals process, I have worked on tools, processes,
+and patterns to make incremental improvements in our ability to
+collaborate while building OpenStack. I view serving on the TC as an
+extension of that work.
+
+Earlier this year the TC met to work on our vision [5] for the future
+of the TC. Two of the themes from the vision resonated with me
+strongly: "Embracing Community Diversity" and "Growing New Leaders.
+
+Most of our project teams have seen the effects of companies
+refocusing or reducing their support of upstream development.  For the
+community to thrive, we need to continue seeking new contributors. In
+addition to looking at new companies, and new parts of our global
+community, we need to encourage participation by more people who are
+not spending significant amounts of their time on upstream work --
+where OpenStack is not their full-time job. That will mean adjusting
+the way we do code reviews, to place more emphasis on giving help
+along with the usual review feedback. The reward for making this
+cultural change will be more engagement with and contributions by our
+users. I will be working on my ideas in this area through the First
+Contact or Contributor Welcoming SIG [6].
+
+The theme of finding new leaders is equally important. As Sean rightly
+points out [7], the long term health of our community depends on our
+ability to transition between leaders. We do this regularly in project
+teams where the responsibilities are fairly well defined. We have
+fewer people available to lead community-wide initiatives.  Regardless
+of the outcome of the election, I will be working with the TC on
+establishing a mentoring program for inter-project work to encourage
+new people to step into community-wide leadership roles.
+
+The OpenStack community is the most exciting and welcoming group I
+have interacted with in more than 25 years of contributing to open
+source projects. I look forward to continuing to be a part of the
+community and serving the project.
+
+Thank you,
+Doug
+
+Review history: https://review.openstack.org/#/q/reviewer:2472,n,z
+Commit history: https://review.openstack.org/#/q/owner:2472,n,z
+Foundation Profile: http://www.openstack.org/community/members/profile/359
+Freenode: dhellmann
+Website: https://doughellmann.com
+
+[1] http://lists.openstack.org/pipermail/openstack-dev/2016-September/104643.html
+[2] http://specs.openstack.org/openstack/docs-specs/specs/pike/os-manuals-migration.html
+[3] https://review.openstack.org/#/c/507629/
+[4] https://review.openstack.org/#/q/intopic:doc-migration
+[5] https://governance.openstack.org/tc/resolutions/20170404-vision-2019.html
+[6] http://lists.openstack.org/pipermail/openstack-sigs/2017-September/000084.html
+[7] http://lists.openstack.org/pipermail/openstack-dev/2017-October/122979.html
