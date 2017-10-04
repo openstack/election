@@ -7,17 +7,17 @@ timeframe:
   name: 'Ocata-Pike'
   start: '2016-09-16T23:59'
   end: '2017-08-30T23:59'
-  email_deadline: '2017-10-09T23:59'
+  email_deadline: '2017-10-11T00:00'
 
 tc_seats: 6
 
 timeline:
   - name: 'TC nomination'
     start: '2017-09-29T23:59'
-    end:   '2017-10-08T23:45'
+    end:   '2017-10-10T23:45'
   - name: 'TC Campaigning'
-    start: '2017-10-09T23:59'
-    end:   '2017-10-12T23:45'
+    start: '2017-10-11T23:59'
+    end:   '2017-10-14T23:45'
   - name: 'TC Election'
-    start: '2017-10-12T23:59'
-    end:   '2017-10-18T23:45'
+    start: '2017-10-14T23:59'
+    end:   '2017-10-20T23:45'
