@@ -1,0 +1,38 @@
+This is my candidacy for second round of a position on the OpenStack Technical
+Committee.
+
+During the last twelve months, I've contributed to Governance reviews and used my vote
+by thinking outside of the box. Indeed, my experience on working with
+installers is pretty unique at the TC and I find it important to represent this
+world.
+I've also participated in the Visioning exercise in Boston, and I believe it
+helped a lot in our community. I hope we can keep iterating on this work during
+the next months.
+On a personal note, I really enjoyed working with the community and I believe
+we keep making progress over the years.
+
+And last but not least, I've been PTL on two different projects during
+five cycles. My focus has always been to find solutions for:
+
+- Bringing more trust in our community, and always assuming good faith by default.
+  I think we have still some work to do on that area but I believe we'll
+  continue to make good progress.
+
+- Making our operators happy. Working on installers is not the same game as working
+  on devstack, you have to deal with customers and people from a different
+  world. I like to think we're making good progress in how do we test OpenStack.
+
+- Scaling-up our community, by voting for governance changes but also at how we
+  operate together on IRC, by e-mail or in person during events. Be more
+  inclusive and help people to grow. We should kill "clubs" and unwelcoming
+  places, and continue to make OpenStack the best Open-Source project to contribute
+  to.
+
+Of course you don't need to be TC member to contribute on these topics; though
+changes made in Governance are voted by TC members; so I would like to be
+candidate one more time.
+
+Thank you for your consideration,
+
+    Emilien Macchi
+    https://wiki.openstack.org/wiki/User:Emilienm
