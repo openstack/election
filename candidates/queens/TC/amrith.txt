@@ -1,0 +1,40 @@
+[election] [tc] TC Candidacy
+
+I wish to submit my candidacy for election to the OpenStack Technical
+Committee. I have never been elected to the Technical Committee before
+but, I have never believed that being elected is a requirement to
+participate in the deliberations. I have therefore been a frequent
+participant and a consistent follower of the activities of the TC.
+
+My focus on the TC would be (consistent with prior candidacies for the
+TC) to make it easier for people to deploy and use OpenStack, and make
+it easier for people to get involved in, participate, and contribute
+to OpenStack.
+
+I have been an active technical contributor to OpenStack for about
+four years[1], involved in Trove for that entire period of time. I have
+been the PTL for Trove for three cycles (Newton, Ocata and Pike). I
+was reelected for Queen but at the PTG that position was transitioned
+over to another member of the team[2] as I move my focus to a new DBaaS
+implementation for OpenStack (tenantively named Hoard).
+
+During these four years, I have been involved in a number of the
+initiatives of the TC including most significantly the Stewardship
+Working Group which began the process of writing the TC Vision
+document. I attended the first of the Stewardship training sessions in
+Michigan where the idea of the cross-project goals was conceived of
+(by Doug Hellmann and others), an initiative that I am strongly
+supportive of.
+
+I have also been active in activities to improve the overall
+participation in OpenStack, through mentorship, outreach to
+educational institions. This is a key aspect of my current role,
+employed at Verizon Wireless in the team that has built, and operates
+one of the largest OpenStack deployments around. The team now includes
+Brian Rosmaita, and Graham Hayes, and we are actively hiring more
+contributors to the team.
+
+I thank you for reading, and appreciate your vote.
+
+[1] http://stackalytics.com/?release=all&metric=commits&user_id=amrith
+[2] http://openstack.markmail.org/thread/txurdd5bhbzsebtq
