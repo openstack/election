@@ -1,0 +1,83 @@
+Hi everyone,
+
+I'm announcing my candidacy for a position on the OpenStack Technical Committee.
+For those of you who don't know me yet, I'm Feilong Wang, currently
+working for Catalyst Cloud as a development lead. Catalyst Cloud is a public
+cloud running on OpenStack based in New Zealand. Aslo, I've been serving as the
+PTL of Zaqar (OpenStack Messaging Service) for 5 cycles. Before that, I was
+mainly working for Glance (OpenStack Image Service) as a core reviewer since
+Folsom 2012.
+
+Currently the role of the TC is more important than ever. Some large companies
+are downsizing their investment for OpenStack or switching their focus
+to containers/k8s, but meanwhile many companies from APAC, especially China,
+are heavily investing OpenStack. Although it's a pain to lose great
+contributors, the companies having real requirements for OpenStack are kept.
+It's a good time for us to think about how to define OpenStack, for whom we're
+building the software and how to build a collaborative/integrated community.
+
+As a TC member I want to bring focus in below areas:
+
+#1 Users & Operators
+
+Listen closely to the voice of users and operators and this pretty much align
+with the mission of OpenStack as below.
+
+"To produce the ubiquitous Open Source Cloud Computing platform that will meet
+the needs of public and private clouds regardless of size, by being simple to
+implement and massively scalable."
+
+To implement a useful, stable cloud platform, we can't work behind closed
+doors, but closely work with the user and operator community. As far as I know,
+except the user survey, we don't have more formal process/approach to collect
+the feedback from our users and operators, though the operators mailing list
+and some random forum sessions at OpenStack summit are helpful. And IMHO,
+currently we’re mixing feedback collected from different perspectives. For
+example, most of the feedback from operators are how to easily deploy/manage
+the cloud. But the tenant user/developers' requirements are more related to
+functions, UX, etc. I can see we have put a lot of effort to address the pain
+of operators, but obviously, we do also need more work to make the tenant
+users/developer’s life easier.
+
+#2 Core and Ecosystem, Big Tent and Constellation
+
+As the PTL of Zaqar, an official but not core project, I'm keen to help the
+evolution at this area. From stackforge to big tent to constellation, we're
+continuing to explore different approaches to embrace the challenge. So far,
+we have generally got some positive responses for the idea of constellation,
+but we do need more details to shape it. And I’m happy to raise my hand.
+Personally, I’d like to see a focal point/TC member is assigned for each
+important use-case/constellation, who will be responsible for driving the
+collaboration and integration for that user case.
+
+#3 Diversity and Inclusion
+
+Though OpenStack is a community with good diversity and inclusion, we do still
+need some work at this area given there are more and more contributors from
+different countries with different languages and cultures. As a Chinese living
+in New Zealand, I truly understand the pain of crossing/removing the language
+and culture barrier. I have been working with world wide contributors for the
+past 5 years, so I believe I can help at this area by sharing/documenting my
+experience and drive some activities to bridge the different languages and
+cultures.
+
+#4 Integration and Collaboration
+
+As a distributed cloud platform, it's good to decouple different services to
+make each service do one thing well. However, seems most of projects are solely
+focusing on their own offering and not enough projects are paying attention to
+the global impact. I would like to push a more tighter collaboration between
+projects and obviously it will make the integration more easier and efficient.
+Operators should expect different projects can work together smoothly just like
+they're different parts within one project. As a maintainer of a public cloud
+running on OpenStack, I know the pain of our ops, when they try to migrate a
+service or adding a new service in existing cluster. So I'd like to see more
+interlocks between PTL and TC members to understand the gaps and fill the gaps.
+
+
+It would be an honor to be member of your technical committee. Thanks for your
+consideration!
+
+--
+Feilong Wang
+
