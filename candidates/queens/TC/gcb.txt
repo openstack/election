@@ -1,0 +1,41 @@
+I'm announcing my candidacy for a position on the OpenStack Technical
+Committee.
+
+I'm ChangBo Guo(AKA gcb)[1], currently working for EasyStack, leading
+developers' upstream contribution on OpenStack in the company. I have been
+working on the OpenStack since 2012, firstly focused on Nova and then focus
+on Oslo, also contributed to several other projects[2]. I've been serving
+as the PTL of Oslo (OpenStack Common libraries) for Pike and Queens.
+
+During the last 5 years, as a developer I have the chance to talk with
+users/operators, meeting users/operators' requirements and making
+OpenStack more useful are important, that's the key factor to make OpenStack
+successful. OpenStack has huge potential customers though some companies
+adjust their investment on OpenStack. We have some progress on shortening
+the feedback loop like building SIG(Special Interest Group) to involve more
+users. Not all the users can raise their requirements easily due to the
+barrier like language. TC may need work with UC to find more ways to collect
+users/operators' requirements like we have 'Top 5 help wanted list' in
+development cycle.
+
+OpenStack is the first open source project I contributed, I've learned a lot
+from community leaders in the past 5 years and guided some new contributors
+how to work with other world wide contributors. It's not a easy to be
+productive for a new contributor especially for whom without open source
+experience. In last several cycles some key contributors changed their work,
+not focus on OpenStack, in the other side, some new contributors couldn't find
+'the right way' to contribute, posting trivial repeated patches, we're facing
+the challenge! Though we have program 'OpenStack Upstream Institute' to training
+new contributors, that's not enough for new contributor, because not all new
+contributors can attend the the OpenStack Summit. TC may host more online events
+to invite community leaders to communicate with new contributors, and help new
+contributors to contribute in 'the right way'.
+
+As a TC member I want to focus on shortening the feedback loop and guiding new
+contributors. Thank you for your consideration!
+
+ChangBo Guo(gcb)
+
+
+[1] https://www.openstack.org/community/members/profile/14945/changbo-guo
+[2] http://stackalytics.com/report/users/glongwave
