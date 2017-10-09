@@ -1,0 +1,31 @@
+I'd like to submit my candidacy for a position on the OpenStack TC.
+
+I work at SUSE as a Cloud Developer. I have been involved with OpenStack for
+three years, first as a contributor to the Puppet-OpenStack team, then with the
+Infra team, and now as a core reviewer for keystone.
+
+From the beginning I have had a keen interest in onboarding new contributors and
+guiding them to be productive community members. Growing our community
+following our recent drop in contributors is one of our biggest challenges.
+I also see diversifying our community as intertwined with attracting and
+onboarding new members. I have always been impressed with OpenStack's welcoming
+community and inclusivity, but the numbers show that we could be doing better
+on gender diversity[1] and I believe we must continue to build up momentum in
+improving cultural inclusivity.
+
+My work in OpenStack has given me with an understanding of the needs of
+operators and deployment tool teams and a desire to support those needs.
+Admitting deployment tools into the Big Tent was a great step in closing the
+communication gap between core projects and deployers and ultimately lead to an
+improvement in the user experience for operators. Continuing this pattern of
+inter-group collaboration is fundamental to making OpenStack better.
+
+I care a lot about OpenStack and I'd like to contribute to its overall health
+and success in any way that I can, and I see serving on the TC as an excellent
+way to do that. Thank you for your consideration.
+
+Colleen Murphy (cmurphy)
+https://www.openstack.org/community/members/profile/11727/colleen-murphy
+http://stackalytics.com/?release=all&user_id=krinkle
+
+[1] http://superuser.openstack.org/articles/bitergia-intel-report/
