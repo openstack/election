@@ -1,0 +1,79 @@
+Hi All,
+
+I would like to announce my candidacy for a seat on the OpenStack Technical
+Committee for the upcoming year.
+
+I'm working for the OpenStack Foundation as Ecosystem Technical Lead where
+my responsibility is to help our members to succeed with OpenStack both as
+software and community. My main focus areas are Telecom/NFV, on boarding
+and collaboration with adjacent communities.
+
+I joined the community nearly four years ago. By my contributions I’m the constant
+voice of usability and maintainability aspects while encouraging collaboration within
+and between project teams.
+
+During the past few years I’ve been leading the activities to add the Cinder volume
+multi-attach functionality to Nova, which turned into a collaborative activity between
+the two teams to simplify the interaction between the two services [1]. By this work
+we are increasing maintainability of the code bases and stability of the services.
+Driven by the experiences of this work I see cross-project collaboration as an area
+to further improve. As part of the TC I would like to continue driving cross-project
+activities, where I would like to help with making the interactions between the teams
+more efficient to ensure end-to-end feature implementation and continuous code
+maintenance and improvement.
+
+I’m one of the drivers of the Upstream Institute activities to provide guidance to
+newcomers to the community. As our community is a continuously changing
+environment it is crucial to be welcoming and ensure we distribute the knowledge
+about our processes and code base while remaining open to transfer responsibilities
+to newer community members. As a TC member I would like to help the project
+teams to share and maintain this mindset to help the contributor ecosystem to
+remain healthy and balanced and our teams to become more efficient.
+
+In the course of my current role within the Foundation I continuously learn about the
+goals and challenges of our ecosystem companies who are productifying, distributing
+and operating OpenStack. It is very important to keep a close feedback loop between
+our users, operators and developers in order to define our focus and priorities to features
+requests and issues that are in high demand. At the same time it is also crucial to keep
+OpenStack an innovative environment which is open to explore new emerging technologies
+and also integrates well with other communities in the ecosystem. If I get elected to the
+TC I would like to help collaborating with organizations on different fields, from
+standardization (i.e. ETSI NFV) through SDN/NFV (i.e. OPNFV) to the research and
+scientific area.
+
+As an example I’ve been involved in OPNFV [2] for about two and a half years and I’m
+also one of their ambassadors [3]. I’m continuously working on to find the connection
+points between the two communities [4] to build a large ecosystem which fits OpenStack's
+current priorities in the sense of actively supporting and being the foundation for NFV. As
+part of the TC I would like to continue to help the ongoing joint activities to create
+an interoperability test suite for the NFV area and have OPNFV’s CI system integrated
+with OpenStack to get close to immediate feedback while developing new Telecom
+and NFV related features. As the adoption of OpenStack in the Telecom area is
+continuously growing and operators are looking at OpenStack as a main building
+block for their systems, I would like to serve as a representative in the technical
+driving force of OpenStack, who can operate as a translator to build a common
+roadmap.
+
+Last but not least, I would like to increase diversity in the TC, but more importantly
+my goal is to add fresh blood to the group driving this community. In my
+opinion it is crucial to constantly revisit items from a different perspective and
+let new voices articulate their views and ideas in order to see the big picture. Long
+term this can ensure that OpenStack keeps its adaptability to continue to be a
+smoothly functioning ecosystem providing a stable, successful and continuously
+evolving software package.
+
+Thank you for reading through my thoughts. It is an honor to be part of OpenStack,
+which is why I would like to take part in helping to further the efforts of providing a
+package that can serve the whole industry and which is backed up by a growing
+and smoothly functioning ecosystem.
+
+Thank you for your consideration.
+
+Best Regards,
+Ildikó (ildikov)
+
+[1] http://stackalytics.com/?release=all&user_id=ildiko-vancsa&metric=person-day
+[2] https://www.opnfv.org
+[3] https://www.opnfv.org/community/ambassadors
+[4] https://www.openstack.org/summit/austin-2016/summit-schedule/events/7510
+
