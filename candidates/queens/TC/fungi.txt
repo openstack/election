@@ -1,0 +1,42 @@
+As my first year on the OpenStack Technical Committee draws to a
+close, I'm standing for reelection to a second term. I hold
+consistent, strong views in favor of free software and
+open/transparent community process, and vote my conscience on any
+matters brought before the TC. I have experience as a user, an
+operator and a developer, and do my best to accurately represent
+concerns from all these perspectives. I feel honored to have
+participated in the drafting of a TC vision, the decision to
+encourage more strategic investment from contributors through
+creation of a community-wide "help wanted" list, restructuring the
+TC meeting/discussion model to improve accessibility across
+time zones and cultures, and closer collaboration with the User
+Committee and adjacent communities through the emergence of
+role-neutral Special Interest Groups.
+
+My personal vision for OpenStack is that of a vibrant and diverse
+community packed with part-time and volunteer user-contributors
+working in harmony (but also occasional creative cacophony) toward
+well-defined common goals, and I intend to continue my efforts to
+achieve this regardless of whatever elected positions I may hold. In
+the past year I led the work to eliminate what I saw as a major
+source of pain and confusion for new contributor on-boarding: the
+technical requirement to join the OpenStack Foundation in order to
+be able to submit patches to official projects. Following in that
+theme, my primary goal for the coming year is to finally put an end
+to Contributor License Agreement enforcement for patch submissions
+(our long-awaited switch to Developer Certificate of Origin
+"Signed-off-by" footers in commit messages).
+
+Besides serving on the TC, I've been a core reviewer and root
+sysadmin on OpenStack's community-maintained project infrastructure
+for five years. I served the past two years as the Infrastructure
+Project Team Lead but recently stepped down so as to free up
+additional time to focus on broader community-wide governance. I've
+also been doing vulnerability management in OpenStack for over four
+years, regularly help with elections, chaired conference tracks
+several times, and given talks to other communities on a variety of
+OpenStack-related topics. I'm in regular attendance at two of the
+three weekly TC office hours, but am also happy to entertain
+concerns from anyone (publicly or in private) at any time; I love
+hearing from members of our community and attempting to find answers
+for you.
