@@ -1,0 +1,22 @@
+OpenStackers,
+
+I am Swapnil Kulkarni(coolsvap), I have been a ATC since Icehouse and I wish
+take this opportunity to throw my hat for election to the OpenStack Technical
+Committee this election cycle. I started contributing to OpenStack with
+introduction at a community event and since then I have always utilized every
+opportunity I had to contribute to OpenStack. I am a core reviewer at kolla
+and requirements groups. I have also been active in activities to improve the
+overall participation in OpenStack, through meetups, mentorship, outreach to
+educational institions to name a few. 
+
+My focus of work during TC would be to make it easier for people to get
+involved in, participate, and contribute to OpenStack, to build the community.
+I have had a few hickups in the recent past for community engagement and
+contribution activities but my current employment gives me the flexibilty
+every ATC needs and I would like to take full advantage of it and increse 
+the level of contribution.
+
+Please consider this my application and thank you for your consideration.
+
+[1] https://www.openstack.org/community/members/profile/7314/swapnil-kulkarni
+[2] http://stackalytics.com/report/users/coolsvap
