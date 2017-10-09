@@ -1,0 +1,21 @@
+This announces my candidacy for a spot on the OpenStack Technical Committee.
+
+While I have normally been content to have other people make decisions, I also
+want OpenStack to succeed. I have spent too many years on OpenStack to have it
+fail. I think a good place for me to contribute to the dream of keeping
+OpenStack going strong is the TC.
+
+I started as an OpenStack Operator in the Essex era. The largest issue I had at
+the time was deployment. I have spent a considerable amount of my time in
+OpenStack working on deployment tools. Some publicly available, some not. All
+of this time has kept me very close to all of the OpenStack projects. I have
+to know them to deploy them. This closeness has also let me see problems arise
+in and between the projects. I would like to help address those problems for
+all of OpenStack.
+
+I have no agenda. I have no long standing company affiliations. OpenStack is
+something I am passionate about. I do it in my free time. I run it at my house.
+I just enjoy working with it and want to see it be as easy to use as possible.
+With that I know OpenStack will continue to be successful.
+
+SamYaple
