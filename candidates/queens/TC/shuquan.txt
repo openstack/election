@@ -1,0 +1,23 @@
+Dear Stackers,
+
+I'm Shuquan Huang(shuquan)[1]. I started my OpenStack journey since 2011. I could
+still feel the radiated joy when I first launched an instance and the
+deep depression when the cluster got broken. At that time, the cloud journey was
+hard and steep. Nowadays, you don't need to worry about the OpenStack running
+too much. We have plenty more projects to build an OpenStack cloud and it
+becomes more and more mature.
+
+However, with the explosive growth of OpenStack, it also becomes more and more
+complex. Users often get lost and just don't know how to take advantage of
+OpenStack. I'v been witnesses to a variety of failures when users were adopting
+OpenStack without value gained. And the project was forced to shut down.
+
+OpenStack can't succeed without bringing value to users, otherwise it's just
+some fancy technology. I believe I can help to reduce the complexities
+and bring the true value of OpenStack to users as a member of OpenStack
+Technical Committee. Thank you for your consideration.
+
+--
+Shuquan Huang
+
+[1]https://www.openstack.org/community/speakers/profile/571/shuquan-huang
