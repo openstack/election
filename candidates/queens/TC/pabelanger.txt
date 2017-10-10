@@ -1,0 +1,24 @@
+Today I step outside my comfort zone and submit my name into the Technical
+Committee's election.
+
+I'm a Red Hat employee who contributes full time to the OpenStack Project
+Infrastructure team and have been contributing since Folsom release (22 Sept
+2012).
+
+I submit my ballot today, not because I seek to be in the lime light but to help
+fill the void of the awesome contributors before me. Like any project, I think
+it is healthy to rotate new people and new ideas into a project.  It is a great
+way for people to learn new leadership skills but also a way for a project to
+gain new energy and share different points of views.
+
+For my knowledge, I hope to bring an point of view from operations. While I
+have contributed to OpenStack projects, my primary passion is helping provide
+the OpenStack resources to contributors to make OpenStack awesome. In doing so,
+working on the Infrastructure project allows for the ability to see what is
+great about OpenStack and what could use improvements.
+
+I believe you get out of something what you put into it, so here I am adding my
+name of the list.
+
+Good luck to all,
+Paul Belanger
