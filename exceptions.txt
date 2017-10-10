@@ -18,3 +18,120 @@ candidates/pike/Heat/ricolin.txt: Rico Lin
 candidates/pike/TC/amrith.txt: Amrith Kumar
 # Use 'Vladimir Kuklin' As the email address on record is no longer in gerrit
 candidates/pike/Fuel/aglarendil.txt: Vladimir Kuklin
+# Cache data to ease use on gerrit - remove after TC election
+# Look up of dmccowan@cisco.com for candidates/queens/Barbican/dave-mccowan.txt @ 2017-10-10 00:00:21.861694
+candidates/queens/Barbican/dave-mccowan.txt: Dave McCowan
+# Look up of s@cassiba.com for candidates/queens/Chef_OpenStack/sc`.txt @ 2017-10-10 00:00:22.990193
+candidates/queens/Chef_OpenStack/sc`.txt: Samuel Cassiba
+# Look up of jungleboyj@electronicjungle.net for candidates/queens/Cinder/jungleboyj.txt @ 2017-10-10 00:00:24.241601
+candidates/queens/Cinder/jungleboyj.txt: Jay Bryant
+# Look up of christophe.sauthier@objectif-libre.com for candidates/queens/Cloudkitty/huats.txt @ 2017-10-10 00:00:25.497181
+candidates/queens/Cloudkitty/huats.txt: Christophe Sauthier
+# Look up of ekcs.openstack@gmail.com for candidates/queens/Congress/ekcs.txt @ 2017-10-10 00:00:42.206248
+candidates/queens/Congress/ekcs.txt: Eric Kao
+# Look up of graham@hayes.ie for candidates/queens/Designate/mugsie.txt @ 2017-10-10 00:00:43.254057
+candidates/queens/Designate/mugsie.txt: Graham Hayes
+# Look up of chen.xing@99cloud.net for candidates/queens/Documentation/chason.txt @ 2017-10-10 00:00:44.402586
+candidates/queens/Documentation/chason.txt: Chason Chan
+# Look up of pkovar@redhat.com for candidates/queens/Documentation/pkovar.txt @ 2017-10-10 00:00:45.655540
+candidates/queens/Documentation/pkovar.txt: Petr Kovar
+# Look up of omer.anson@toganetworks.com for candidates/queens/Dragonflow/oanson.txt @ 2017-10-10 00:00:47.626923
+candidates/queens/Dragonflow/oanson.txt: Omer Anson
+# Look up of andrey.mp@gmail.com for candidates/queens/Ec2_Api/andrey-mp.txt @ 2017-10-10 00:01:04.151636
+candidates/queens/Ec2_Api/andrey-mp.txt: Andrey Pavlov
+# Look up of eng.szaher@gmail.com for candidates/queens/Freezer/szaher.txt @ 2017-10-10 00:01:05.396539
+candidates/queens/Freezer/szaher.txt: Saad Zaher
+# Look up of rosmaita.fossdev@gmail.com for candidates/queens/Glance/rosmaita.txt @ 2017-10-10 00:01:06.886448
+candidates/queens/Glance/rosmaita.txt: Brian Rosmaita
+# Look up of rico.lin@easystack.cn for candidates/queens/Heat/ricolin.txt @ 2017-10-10 00:01:08.112744
+candidates/queens/Heat/ricolin.txt: Rico Lin
+# Look up of yinzuo@cisco.com for candidates/queens/Horizon/ying_zuo.txt @ 2017-10-10 00:01:09.366406
+candidates/queens/Horizon/ying_zuo.txt: Ying Zuo
+# Look up of f.kloeker@telekom.de for candidates/queens/I18n/eumel8.txt @ 2017-10-10 00:01:10.620247
+candidates/queens/I18n/eumel8.txt: Frank Kloeker
+# Look up of clark.boylan@gmail.com for candidates/queens/Infrastructure/clarkb.txt @ 2017-10-10 00:01:11.873114
+candidates/queens/Infrastructure/clarkb.txt: Clark Boylan
+# Look up of divius.inside@gmail.com for candidates/queens/Ironic/dtantsur.txt @ 2017-10-10 00:01:25.032342
+candidates/queens/Ironic/dtantsur.txt: Dmitry Tantsur
+# Look up of juliaashleykreger@gmail.com for candidates/queens/Ironic/TheJulia.txt @ 2017-10-10 00:01:26.286032
+candidates/queens/Ironic/TheJulia.txt: Julia Kreger
+# Look up of ying.chen@huawei.com for candidates/queens/Karbor/chenying.txt @ 2017-10-10 00:01:27.538066
+candidates/queens/Karbor/chenying.txt: Chenying Chenying
+# Look up of lbragstad@gmail.com for candidates/queens/Keystone/lbragstad.txt @ 2017-10-10 00:01:28.790808
+candidates/queens/Keystone/lbragstad.txt: Lance Bragstad
+# Look up of inc007@gmail.com for candidates/queens/Kolla/inc0.txt @ 2017-10-10 00:01:30.047967
+candidates/queens/Kolla/inc0.txt: Michal Jastrzebski
+# Look up of antonisp@celebdor.com for candidates/queens/Kuryr/apuimedo.txt @ 2017-10-10 00:01:31.107593
+candidates/queens/Kuryr/apuimedo.txt: Antoni Segura Puimedon
+# Look up of spyridon.trigazis@cern.ch for candidates/queens/Magnum/strigazi.txt @ 2017-10-10 00:01:32.346967
+candidates/queens/Magnum/strigazi.txt: Spyros Trigazis
+# Look up of ben@swartzlander.org for candidates/queens/Manila/bswartz.txt @ 2017-10-10 00:01:33.598442
+candidates/queens/Manila/bswartz.txt: Ben Swartzlander
+# Look up of renat.akhmerov@gmail.com for candidates/queens/Mistral/rakhmerov.txt @ 2017-10-10 00:01:47.802508
+candidates/queens/Mistral/rakhmerov.txt: Renat Akhmerov
+# Look up of witold.bedyk@est.fujitsu.com for candidates/queens/Monasca/witek.txt @ 2017-10-10 00:01:49.056049
+candidates/queens/Monasca/witek.txt: Witold Bedyk
+# Look up of aaronzhu1121@gmail.com for candidates/queens/Murano/zhurong.txt @ 2017-10-10 00:01:50.309177
+candidates/queens/Murano/zhurong.txt: Zhurong Zhurong
+# Look up of kevin@benton.pub for candidates/queens/Neutron/kevinbenton.txt @ 2017-10-10 00:01:51.563500
+candidates/queens/Neutron/kevinbenton.txt: Kevin Benton
+# Look up of mriedem.os@gmail.com for candidates/queens/Nova/mriedem.txt @ 2017-10-10 00:01:52.712365
+candidates/queens/Nova/mriedem.txt: Matt Riedemann
+# Look up of johnsomor@gmail.com for candidates/queens/Octavia/johnsom.txt @ 2017-10-10 00:01:54.905615
+candidates/queens/Octavia/johnsom.txt: Michael Johnson
+# Look up of jean-philippe@evrard.me for candidates/queens/OpenStackAnsible/evrardjp.txt @ 2017-10-10 00:01:56.162574
+candidates/queens/OpenStackAnsible/evrardjp.txt: Jean-Philippe Evrard
+# Look up of dtroyer@gmail.com for candidates/queens/OpenStackClient/dtroyer.txt @ 2017-10-10 00:01:57.414011
+candidates/queens/OpenStackClient/dtroyer.txt: Dean Troyer
+# Look up of james.page@ubuntu.com for candidates/queens/OpenStack_Charms/jamespage.txt @ 2017-10-10 00:02:08.902937
+candidates/queens/OpenStack_Charms/jamespage.txt: James Page
+# Look up of eric.guo@easystack.cn for candidates/queens/Oslo/gcb.txt @ 2017-10-10 00:02:10.157650
+candidates/queens/Oslo/gcb.txt: ChangBo Guo
+# Look up of tbechtold@suse.com for candidates/queens/Packaging_Rpm/toabctl.txt @ 2017-10-10 00:02:11.303574
+candidates/queens/Packaging_Rpm/toabctl.txt: Thomas Bechtold
+# Look up of mnaser@vexxhost.com for candidates/queens/Puppet_OpenStack/mnaser.txt @ 2017-10-10 00:02:12.361037
+candidates/queens/Puppet_OpenStack/mnaser.txt: Mohammed Naser
+# Look up of andrea.frittoli@gmail.com for candidates/queens/Quality_Assurance/andreaf.txt @ 2017-10-10 00:02:26.553650
+candidates/queens/Quality_Assurance/andreaf.txt: Andrea Frittoli
+# Look up of andr.kurilin@gmail.com for candidates/queens/Rally/andreykurilin.txt @ 2017-10-10 00:02:27.808127
+candidates/queens/Rally/andreykurilin.txt: Andrey Kurilin
+# Look up of chris@openstack.org for candidates/queens/RefStack/hogepodge.txt @ 2017-10-10 00:02:29.059825
+candidates/queens/RefStack/hogepodge.txt: Chris Hoge
+# Look up of sean.mcginnis@gmail.com for candidates/queens/Release_Management/smcginnis.txt @ 2017-10-10 00:02:30.313267
+candidates/queens/Release_Management/smcginnis.txt: Sean McGinnis
+# Look up of mthode@mthode.org for candidates/queens/Requirements/prometheanfire.txt @ 2017-10-10 00:02:42.116019
+candidates/queens/Requirements/prometheanfire.txt: Matthew Thode
+# Look up of steven.j.mclellan@gmail.com for candidates/queens/Searchlight/sjmc7.txt @ 2017-10-10 00:02:44.412785
+candidates/queens/Searchlight/sjmc7.txt: Steve McLellan
+# Look up of lhinds@redhat.com for candidates/queens/Security/lhinds.txt @ 2017-10-10 00:02:45.665777
+candidates/queens/Security/lhinds.txt: Luke Hinds
+# Look up of cnjie0616@gmail.com for candidates/queens/Senlin/ruijie.txt @ 2017-10-10 00:02:59.140891
+candidates/queens/Senlin/ruijie.txt: RUIJIE YUAN
+# Look up of mordred@inaugust.com for candidates/queens/Shade/mordred.txt @ 2017-10-10 00:03:00.358842
+candidates/queens/Shade/mordred.txt: Monty Taylor
+# Look up of aaronzhu1121@gmail.com for candidates/queens/Solum/zhurong.txt @ 2017-10-10 00:03:01.387542
+candidates/queens/Solum/zhurong.txt: Zhurong Zhurong
+# Look up of tony@bakeyournoodle.com for candidates/queens/Stable_Branch_Maintenance/tonyb.txt @ 2017-10-10 00:03:02.692717
+candidates/queens/Stable_Branch_Maintenance/tonyb.txt: Tony Breeds
+# Look up of me@not.mn for candidates/queens/Swift/notmyname.txt @ 2017-10-10 00:03:05.199049
+candidates/queens/Swift/notmyname.txt: John Dickinson
+# Look up of gong.yongsheng@99cloud.net for candidates/queens/Tacker/gongysh.txt @ 2017-10-10 00:03:30.057496
+candidates/queens/Tacker/gongysh.txt: Gongysh Gongysh
+# Look up of gord@live.ca for candidates/queens/Telemetry/gordc.txt @ 2017-10-10 00:03:31.311567
+candidates/queens/Telemetry/gordc.txt: Gordon Chung
+# Look up of luckyvega.g@gmail.com for candidates/queens/Tricircle/zhiyuan.txt @ 2017-10-10 00:03:46.453469
+candidates/queens/Tricircle/zhiyuan.txt: Zhiyuan Cai
+# Look up of aschultz@redhat.com for candidates/queens/Tripleo/mwhahaha.txt @ 2017-10-10 00:03:47.530057
+candidates/queens/Tripleo/mwhahaha.txt: Alex Schultz
+# Look up of amrith@amrith.org for candidates/queens/Trove/amrith.txt @ 2017-10-10 00:03:48.753316
+candidates/queens/Trove/amrith.txt: Amrith Kumar
+# Look up of ifat.afek@nokia.com for candidates/queens/Vitrage/ifat_afek.txt @ 2017-10-10 00:03:50.006005
+candidates/queens/Vitrage/ifat_afek.txt: Ifat Afek
+# Look up of a.chadin@servionica.ru for candidates/queens/Watcher/alexchadin.txt @ 2017-10-10 00:03:52.201046
+candidates/queens/Watcher/alexchadin.txt: Alexander Chadin
+# Look up of cbelu@cloudbasesolutions.com for candidates/queens/Winstackers/claudiub.txt @ 2017-10-10 00:03:53.349770
+candidates/queens/Winstackers/claudiub.txt: Claudiu Belu
+# Look up of flwang@catalyst.net.nz for candidates/queens/Zaqar/flwang.txt @ 2017-10-10 00:03:54.603182
+candidates/queens/Zaqar/flwang.txt: Feilong Wang
+# Look up of hongbin.lu@huawei.com for candidates/queens/Zun/hongbin.txt @ 2017-10-10 00:03:55.857723
+candidates/queens/Zun/hongbin.txt: Hongbin Lu
