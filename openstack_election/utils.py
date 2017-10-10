@@ -45,6 +45,15 @@ exceptions = None
 
 
 # Generic functions
+def requester(url, params={}, headers={}):
+    """A requests wrapper to consistently retry HTTPS queries"""
+
+    # Try up to 3 times
+    retry = requests.Session()
+    retry.mount("https://", requests.adapters.HTTPAdapter(max_retries=3))
+    return retry.get(url=url, params=params, headers=headers)
+
+
 def load_exceptions():
     global exceptions
     exceptions = {}
@@ -67,7 +76,7 @@ def gerrit_datetime(dt):
 
 
 def gerrit_query(url, params=None):
-    r = requests.get(url, params=params)
+    r = requester(url, params=params)
     if r.status_code == 200:
         data = json.loads(r.text[4:])
     else:
