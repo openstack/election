@@ -1,0 +1,43 @@
+Greetings Stackers!
+
+I would like to submit my candidacy for the Technical Committee.
+
+I have been involved with the OpenStack community since the Juno cycle and
+interested in OpenStack while I worked as an engineer supporting data center
+hosting operations. My experience having bridged these worlds means that I
+understand the life of an operator and the thought process of a developer.
+I care deeply about the success of OpenStack and believe that it is vital
+for the the marketplace and open innovation.
+
+I believe we have been excellent at building social and process complexity
+to our own detriment. I feel that we need to evaluate and reconsider why we
+do the things we do. I feel that we need better stand-alone usage cases and
+usage. A shorter feedback loop with those different use cases would also help
+us iterate faster as our software could then be consumed more easily.
+
+It is true containers have taken over the limelight with many companies,
+as they have shifted their resources away from OpenStack. I feel that we
+must not forget that infrastructure and the underlying building blocks have
+a place as well. It is also upon us to advocate for that as community
+building is our strongest avenue to spread the word of OpenStack.
+
+Many may know me as TheJulia on IRC. I've largely worked on Ironic and to a
+lesser extent TripleO far off in the past. I'm one of those people that keeps
+odd hours and tries to help others, as I feel strongly about supporting our
+community and its users. I feel that this in turn supports ourselves and
+helps us in the long term. I believe strongly in developing contributors and
+also plainly admitting when I just don't know the answer to a question.
+At the same time, I'm happy to help investigate and try to understand.
+
+While we have navigated to this point with the hype curve, we need to set
+our future course with a variety of thoughts and experiences. Combined with
+my strong feelings about our community and overall mission, I feel that I
+would be a good addition to the TC.
+
+Thank you for your consideration,
+Julia
+
+freenode: TheJulia
+Twitter: @ashinclouds
+https://www.openstack.org/community/members/profile/19088/julia-kreger
+http://stackalytics.com/?release=all&user_id=juliaashleykreger
