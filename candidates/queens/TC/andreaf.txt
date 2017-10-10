@@ -1,0 +1,42 @@
+Dear all,
+
+I’d like to announce my candidacy for a seat on the OpenStack Technical
+Committee.
+
+I started my journey on OpenStack in 2011 as a user and operator. I had
+little experience contributing to open source at the time; the people and
+the values in the OpenStack community soon convinced me I could not simply
+sit on the "consumer" side of the fence, and I started contributing to
+the QA program. I've been a core contributor for Tempest since 2014 and the
+PTL for the QA Program since the Pike cycle.
+
+I attended the 2nd Leadership Training in Ann Arbour; the ideas of servant
+leadership and vision inspired me and I put them into use while serving as
+a PTL and working with the community in general.
+
+I'm a supporter of the OpenStack vision prepared by the TC and by this
+community. Diversity and collaboration with other communities enrich us,
+"constellations" give a clearer message to users and operators, and help
+us focus our development and testing efforts in a consistent direction.
+
+On the TC I would focus on a few ares:
+
+- Inclusivity of the OpenStack community: reduce language and time
+  barriers for contribution. Everyone should feel welcome and have the
+  opportunity to be successful when working on OpenStack.
+
+- Build our new leaders: it's not enough to welcome new contributors,
+  we need to help them grow into the community future leaders.
+
+- Cross-project and cross-community testing: help companies bring their
+  downstream architecture, integration and testing efforts in upstream
+  so they can benefit from the contributions of others in the community
+  that want to solve similar problems via OpenStack.
+
+Regardless of the results of this election I will work hard to see the
+vision we set for ourselves realised.
+
+Thank you for your consideration.
+
+Andrea Frittoli (andreaf)
+https://www.openstack.org/community/members/profile/1211/andrea-frittoli
