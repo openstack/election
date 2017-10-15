@@ -24,8 +24,8 @@ function setup_timeline() {
     var now = parseInt((new Date).getTime() / 1000);
     for (i = 0; i < events_timeline.length; i++) {
         var current_event = events_timeline[i];
-        var current_event_start = Date.parse(current_event.start) / 1000;
-        var current_event_end = Date.parse(current_event.end) / 1000;
+        var current_event_start = Date.parse(current_event.start + "Z") / 1000;
+        var current_event_end = Date.parse(current_event.end + "Z") / 1000;
         if (now > current_event_end) {
             set_event_status(current_event.name, 'Past');
         }
