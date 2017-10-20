@@ -20,44 +20,56 @@ import prettytable
 CIVS_BASE = 'http://civs.cs.cornell.edu/cgi-bin/results.pl'
 data = [
     {
-        'election': '10/2013',
+        'election': '10/2013',  # Icehouse
         'electorate': 1106,
         'votes_cast': 342,
     },
     {
-        'election': '04/2014',
+        'election': '04/2014',   # Juno
         'electorate': 1510,
         'votes_cast': 448,
     },
     {
-        'election': '10/2014',
+        'election': '10/2014',  # Kilo
         'electorate': 1893,
         'votes_cast': 506,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_c105db929e6c11f4')
     },
     {
-        'election': '04/2015',
+        'election': '04/2015',  # Liberty
         'electorate': 2169,
         'votes_cast': 548,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_ef1379fee7b94688')
     },
     {
-        'election': '10/2015',
+        'election': '10/2015',  # Mitaka
         'electorate': 2759,
         'votes_cast': 619,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_4ef58718618691a0')
     },
     {
-        'election': '04/2016',
+        'election': '04/2016',  # Newton
         'electorate': 3284,
         'votes_cast': 652,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_fef5cc22eb3dc27a')
     },
     {
-        'election': '10/2016',
+        'election': '10/2016',  # Ocata
         'electorate': 3517,
         'votes_cast': 801,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_356e6c1b16904010')
+    },
+    {
+        'election': '04/2017',  # Pike
+        'electorate': 3191,
+        'votes_cast': 427,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_072c4cd7ff0673b5')
+    },
+    {
+        'election': '10/2017',  # Queens
+        'electorate': 2430,
+        'votes_cast': 420,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_ce86063991ef8aae')
     },
 ]
 
@@ -66,6 +78,7 @@ def change(data, idx, key):
     if idx == 0:
         return float('NaN')
     return 100 * ((data[idx][key] / data[idx-1][key]) - 1)
+
 
 pt = prettytable.PrettyTable(['Election',
                               'Electorate  (delta %)',
