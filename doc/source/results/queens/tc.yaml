@@ -1,0 +1,87 @@
+candidates:
+  TC:
+  - elected: false
+    email: amrith@amrith.org
+    fullname: Amrith Kumar
+    ircname: amrith
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/amrith.txt
+  - elected: false
+    email: andrea.frittoli@gmail.com
+    fullname: Andrea Frittoli
+    ircname: andreaf
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/andreaf.txt
+  - elected: false
+    email: eric.guo@easystack.cn
+    fullname: ChangBo Guo
+    ircname: gcb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/gcb.txt
+  - elected: true
+    email: colleen@gazlene.net
+    fullname: Colleen Murphy
+    ircname: cmurphy
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/cmurphy.txt
+  - elected: true
+    email: doug@doughellmann.com
+    fullname: Doug Hellmann
+    ircname: dhellmann
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/dhellmann.txt
+  - elected: true
+    email: emilien@redhat.com
+    fullname: Emilien Macchi
+    ircname: emilienm
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/emilienm.txt
+  - elected: false
+    email: flwang@catalyst.net.nz
+    fullname: Feilong Wang
+    ircname: flwang
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/flwang.txt
+  - elected: false
+    email: gr@ham.ie
+    fullname: Graham Hayes
+    ircname: mugsie
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/mugsie.txt
+  - elected: false
+    email: huang.shuquan@99cloud.net
+    fullname: Huang Shuquan
+    ircname: shuquan
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/shuquan.txt
+  - elected: false
+    email: ildiko.vancsa@gmail.com
+    fullname: Ildiko Vancsa
+    ircname: ildikov
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/ildikov.txt
+  - elected: true
+    email: fungi@yuggoth.org
+    fullname: Jeremy Stanley
+    ircname: fungi
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/fungi.txt
+  - elected: true
+    email: juliaashleykreger@gmail.com
+    fullname: Julia Kreger
+    ircname: TheJulia
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/TheJulia.txt
+  - elected: false
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/mnaser.txt
+  - elected: true
+    email: pabelanger@redhat.com
+    fullname: Paul Belanger
+    ircname: pabelanger
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/pabelanger.txt
+  - elected: false
+    email: sam@yaple.net
+    fullname: Sam Yaple
+    ircname: SamYaple
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/SamYaple.txt
+  - elected: false
+    email: me@coolsvap.net
+    fullname: Swapnil Kulkarni
+    ircname: coolsvap
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/queens/TC/coolsvap.txt
+election: queens
+elections_results:
+  TC: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_ce86063991ef8aae
+projects:
+- TC
