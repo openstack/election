@@ -9,6 +9,15 @@ and tooling to run elections.
 Election officials process
 ==========================
 
+Selecting Election Dates
+------------------------
+
+Things to keep in mind when selecting election dates:
+
+* At least 48 hours in between cut-off of electorate and poll start
+* Consider extra-atcs approval deadlines
+* Should start around R-4 for nominations period
+
 Preparation
 -----------
 
