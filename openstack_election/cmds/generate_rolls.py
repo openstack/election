@@ -25,10 +25,8 @@ import time
 
 from six.moves.urllib.request import urlopen
 
+from openstack_election import owners
 from openstack_election import utils
-
-OWNERS_URL = ('%s/openstack-infra/system-config/plain/tools/owners.py' %
-              (utils.CGIT_URL))
 
 # Exclude the system / bot accounts
 # OpenStack Release Bot:
@@ -72,13 +70,6 @@ def main():
     os.makedirs(args.rolls_dir, 0o700)
 
     os.chdir(os.path.dirname(args.rolls_dir))
-    if not args.cached_owners_script:
-        print("Grabbing script from: %s" % OWNERS_URL)
-        with open("owners.py", "wb") as owner_file:
-            owner_file.write(urlopen(OWNERS_URL).read())
-
-    sys.path.append(os.getcwd())
-    import owners
     print("Starting roll generation @%s" % time.ctime())
     owners.main(["owners.py", "-a", args.after, "-b", args.before,
                  "-o", args.tag, "-r", args.tag] + MINUS_BOT_ACCOUNTS)
