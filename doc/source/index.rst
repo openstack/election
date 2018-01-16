@@ -17,7 +17,7 @@ See `Election system`_, `PTL details`_ and `TC details`_.
 Previous elections
 ==================
 
-.. include:: archive_toc.rst
+.. include:: ptl.rst
 
 
 Election Officials
@@ -25,7 +25,7 @@ Election Officials
 
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
 * Emmet Hikory (persia), persia at shipstone dot jp
-* Tony Breeds (tonyb), tony at bakeyournoodle dot com
+* Jeremy Stanley (fungi), fungi at yuggoth dot org
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev Freenode channel.
