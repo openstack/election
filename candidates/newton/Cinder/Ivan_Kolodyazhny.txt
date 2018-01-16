@@ -20,7 +20,7 @@ Newton release cycle. These things are important not only for Cinder community
 but for any Cinder users and other OpenStack projects too.
 
 
-* Cinde quality and stability. I don't say that Cinder is not stable enough. I
+* Cinder quality and stability. I don't say that Cinder is not stable enough. I
   mean that it would be great if we'll improve our test coverage and testing
   strategy including 3-rd party CI. See my mail in openstack-dev mailing list
   for details [1].
