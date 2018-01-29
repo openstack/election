@@ -1,0 +1,18 @@
+Greetings!
+
+I would like to submit my name to continue as the release management PTL for
+the Rocky release.
+
+Since starting with Queens I have learned a lot about our release process and
+all the great automation tooling we have to support that. I've also had to
+learn a fair bit about zuul and ansible along the way.
+
+It has been an interesting and active release cycle, and I am excited to
+continue learning and applying those lessons to keep things moving and looking
+for any ways I can add to the already great body of work we have in our release
+automation.
+
+Thank you for your consideration.
+
+Sean McGinnis (smcginnis)
+
