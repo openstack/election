@@ -1,0 +1,37 @@
+Hello,
+
+I am announcing my candidacy to continue as Chef OpenStack PTL for the Rocky cycle.
+
+Chef OpenStack, or openstack-chef, as we also call it, automates OpenStack
+deployments using Chef (https://www.chef.io). The cookbooks have been around
+since the Grizzly cycle, joining as an OpenStack Big Tent project in Liberty.
+
+I have worked with OpenStack since Grizzly, first as a deployer/operator. My
+journey with open source dates back to the late 90s. I began contributing to
+OpenStack in Kilo, and joined openstack-chef as a core reviewer, where I have
+worked on the cookbooks to make them delightful, or, at least, less painful to
+work with. I have been involved in many features and assisted numerous
+contributors with landing changes to the project since then[0][1].  I previously
+served as PTL for the Newton, Ocata and Queens cycles.
+
+For the Rocky cycle, I would like to focus on the following:
+
+* Eliminating the gap between local testing and CI by extending the work done
+  for Pike.
+* Further leveraging the Chef ecosystem to expand the visibility of the
+  cookbooks. For example, delivering cookbook updates to the Chef Supermarket.
+* Enabling scenario-based testing within CI.
+* Fostering more external contributions and mentor contributors.
+* Priming the cookbooks for Chef 14 and beyond.
+
+The cookbooks will continue to be supported in the capacity they have been, with
+time permitting. The intent of accomplishing the above is to lower the barrier
+to entry, to encourage future maintainership from the community. This is an
+iterative process, so any suggestions or new additions are definitely welcome.
+
+Thank you.
+
+Samuel Cassiba (sc`)
+
+[0] http://stackalytics.com/?release=all&module=chef%20openstack-group&metric=commits
+[1] http://stackalytics.com/?release=all&module=chef%20openstack-group&metric=marks
