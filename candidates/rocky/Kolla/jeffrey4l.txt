@@ -1,0 +1,42 @@
+Hi everyone,
+
+I am excited to announce my candidacy for the Rocky cycle as Kolla PTL.
+
+Kolla is a fantastic project, which simplifies the lives of operators when
+managing OpenStack. Now, Kolla can containerize and deliver almost all
+OpenStack Big Tent projects. And more and more OpenStack environment are
+deployed by Kolla in the real world. And lots of developers and operators
+joined Kolla, too.
+
+I have been involved in OpenStack since Folsom cycle and I have been a core
+reviewer on Kolla since Liberty cycle. I have contributed lots of features and
+solved lots of critical issue in Kolla projects since then[0][1]. During the
+Ocata, Pike and Queens cycle I also served as the Kolla release liaison. I
+also have helped new developers to contribute to the project and operators
+to solve issues.
+
+For the Rocky cycle, I would like to focus on following objectives:
+
+* Focus on the needs of Kolla team.
+* Continue to encourage diversity in our Community.
+* Support check and diff mode in kolla-ansible.
+* Implement zero downtime for OpenStack services.
+* Continue to speed up the kolla-ansible deploy and reconfigure.
+* Make CI easier to understand and debug.
+* Push tag image to hub.docker.com site which is more stable than branch tag.
+* Deliver 1.0.0 of kolla-kubernetes.
+
+Finally, I know it is important that PTL time is spent on the non-technical
+problem-solving such as mentoring potential core reviewers, scheduling the
+project progress, interacting with other OpenStack projects and many other
+activities a PTL undertakes. I’d like to work this cycle on scaling those
+activities across the core reviewer team.
+
+Thank you for reading this and for considering this candidacy. As a community
+I am certain we can make Kolla better and better.
+
+Sincerely,
+Jeffrey4l
+
+[0] http://stackalytics.com/?release=all&module=kolla&metric=commits
+[1] http://stackalytics.com/?release=all&module=kolla&metric=marks
