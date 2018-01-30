@@ -1,0 +1,28 @@
+Queens was my first cycle as Infra PTL, and I would like to make Rocky
+my second.
+
+We did some great things last cycle from onboarding new cores and roots,
+deploying Zuul v3, starting large scale operating system upgrades, to
+updating our hosting services to handle non OpenStack top level project
+hosting. As amazing as this work has been much of it is unfinished and
+I would like to help carry this work through to completion as PTL.
+
+As PTL I would push us to continue and complete the work listed above.
+Specifically I think we should:
+
+  * Release Zuul v3 this cycle and continue to improve it for both
+    OpenStack and others.
+  * Continue to pay down existing tech debt by upgrading operating
+    systems and services like Gerrit.
+  * Welcome new projects like Kata and do our best to accommodate
+    them while continuing to provide service to OpenStack.
+  * Improve the onboarding process for new Infra contributors and
+    grow the Infra team. This will involve more explicit tracking
+    of work items and educating new groups of people on how the
+    Infra team and its tools function.
+
+If this sounds like a good plan for the next six months I would
+appreciate your vote.
+
+Thank you for your consideration,
+Clark
