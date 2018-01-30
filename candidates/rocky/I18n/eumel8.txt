@@ -1,0 +1,44 @@
+This is my announcement for re-candidacy as I18n PTL in Rocky Cycle.
+
+The time from the last cycle passed very fast. I had to manage all the
+things that a PTL expects. But we documented everything very well and I
+always had the full support of the team. I asked the team and it would
+continue to support me, which is why I take the chance again.
+This is the point to say thank you to all that we have achieved many
+things and we are a great community!
+
+Now it's time to finish things:
+
+1. Zanata upgrade. We are in the middle of the upgrade process. The dev
+server is sucessfull upgraded and the new Zanata versions fits all our
+requirements to automate things more and more.
+Now we are in the hot release phase and when it's over, the live
+upgrade can start.
+
+2. Translation check site. A little bit out of scope in Queens release
+because of lack of resources. We'll try this again in Rocky.
+
+3. Aquire more people to the team. That will be the main part of my work
+as PTL in Rocky. We've won 3 new language teams in the last cycle and
+can Openstack serve in Indian, Turkish and Esperanto. There is even more
+potential for strengthening existing teams or creating new ones.
+For this we have great OpenStack events in Europe this year, at least
+the Fall Summit in Berlin. We plan workshops and presentations.
+
+The work of the translation team is also becoming more colorful. We have
+project documentation translation in the order books, translation user
+survey and white papers for working groups.
+
+We are well prepared, but we also look to the future, for example how
+AI-programming can support us in the translation work.
+
+If the plan suits you, I look forward to your vote.
+
+Frank
+
+Email: eumel@arcor.de
+IRC: eumel8
+Twitter: eumel_8
+
+OpenStack Profile:
+https://www.openstack.org/community/members/profile/45058/frank-kloeker
