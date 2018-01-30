@@ -1,0 +1,76 @@
+Hi all,
+
+I would like to take the opportunity to announce my candidacy for
+Glance PTL for Rocky cycle.
+
+I've been working primarily with Glance since Icehouse and do work
+full-time on Glance upstream. During that time I've served community in
+stable and release liaison roles, as Glance and Glance stable core
+reviewer and part of Glance bugs, drivers and security teams. I've been
+part of team running Glance in sizeable public cloud and been part of
+development of couple deployment tools: Helion lifecycle manager and
+TripleO. Needless to say that production stability and scale has always
+been on the top of my priority list. Thus it's likely not a surprise
+that I like to identify the high points of my contributions being the
+work to get Images API v2 production ready and lately driving the
+efforts on Image Import Refactoring that provides the new Interoperable
+Image Import that changes how images are brought into Glance by our
+end users. Both things making sure that Glance stays as integral part
+of OpenStack deployments and we as community do not need to reinvent
+wheel to get image service that can be trusted in future production
+deployments.
+
+I've seen lots of the highs and lows of the Glance (community/project)
+and am super proud that we've survived them and the fact that we're
+still going strong. Same time the two last cycles have thought me an
+important lesson, I'm not at my best writing code no matter how much I
+like it and I cannot take full time support role and full time writing
+code. The support side enabling the people better suitable for writing
+the code is definitely the part of my contributions where I shine more.
+
+Thus I'd like to take the support role for Rocky cycle as PTL and focus
+my efforts to make sure we as a community keep going strong into the
+future cycles and the people who do shine brighter writing the code
+than I do could focus more of their time to that. Obviously that would
+not mean that I'd be taking distance to the development and driving the
+efforts or stop writing code all together. It's more of a matter where
+should I prioritize my time?
+
+So where do I see our focus for the foreseeable future?
+
+* Strengthening the community needs to be at the top of our priority
+  list. While we're afloat and the team is operational we are by no
+  means at the optimal point of Glance developement. Enabling new
+  contributors to be effective and successful is important work that
+  needs to keep happening.
+
+* Bug and stable work needs to pick up at my own part again. I've been
+  leaving that way too light lately and as team we haven't taken care
+  of our stable branches as well as we should.
+
+* We need to work on finishing the work we're committing to and
+  prioritized. This also highlights the fact that we need more hands
+  on the deck as if everyone is focusing on putting out fires, it does
+  not matter how much we want to prioritize the work that is happening.
+
+* When the crew is running light it's even more important to listen
+  our user comminuty to what prioritize. we need to keep focusing on
+  features and fixes that are actually needed and keep the nice to
+  have stuff on the correct level of efforts.
+
+* On the technical side I see our priorities being strengthening the
+  Image Import so that it can be fully relied on production. We need
+  to make sure that our tools are operational for upgrades and the
+  lifecycle management and we definitely need to work towards making
+  sure we get rid of Images API v1 and don't need to waste any of our
+  precious time to keep that codebase still alive. If we can achieve
+  these by early Rocky we would be in so much better place to move
+  forward.
+
+Looking the past Glance PTLs there is big boots to fill and I would
+do my best not to fail the expectations.
+
+Thanks for getting all the way down here and I hope we will work
+together next cycles to make Glance being the best Glance possible.
+
+Erno jokke Kuvaja
