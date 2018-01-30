@@ -1,0 +1,35 @@
+Hello Team,
+
+I would like to announce my candidacy for PTL of Horizon for Rocky release.
+
+
+I use Horizon since I begin to work with OpenStack in Diablo timeframe. I
+wasn't active contributor before Pike release, nevertheless, I can see how
+both Horizon project and community changed over the times. I became Core
+Reviewer in Queens and worked mostly on bug-fixing and other improvements.
+
+
+Being a PTL is a challenging task especially for such project as Horizon. We
+should be close both to the other OpenStack components and provide a great user
+experience for cloud users and operators.
+
+
+As a PTL I will focus on the following areas:
+
+* Continue to work on Horizon stabilization and improvements to bring great UX
+  for large-scale deployments.
+
+* Finish work on mox to mock migrations in unit tests.
+
+* Improve our integrational tests.
+
+* Help everybody to contribute to Horizon via reviews, features implementations
+  and bugfixes.
+
+
+I know, that being a PTL is a hard job, but we've got a good team and we'll do
+our best to make Horizon a bit better during the next cycle.
+
+
+Thank you,
+Ivan Kolodyazhny (e0ne)
