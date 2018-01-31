@@ -1,0 +1,34 @@
+Hi all,
+
+I would like to nominate myself to be the Karbor PTL for the Rocky cycle.
+
+I began to contribute to Karbor project since 2016.01, as a core reviewer
+from Newton cycle, and as Karbor PTL for the Queens cycle. It is my pleasure
+to work with the great team to make this project better and better.
+
+In Queens we have done a lot of great works about OpenStack resources protection
+in karbor: API support the checkpoint verification. Support quotas. Support
+checkpoint cross AZ copy API. Cross-site backup and restore. Support freezer
+protection plugin. Support K8S pods protection integration. Implement policies
+in code.
+Other achievements are: Support operation log api. Support API json schema
+validation. Support service management API and so on.
+
+For the next cycle I'd like to focus on the tasks as follows:
+
+- Grow the Karbor team of contributors
+- Cross projects integration and improvement
+- Make project goals. Also following community goals and project goals to make
+  sure it will complete.
+- Usability: documentation, karbor client and Karbor Horizon. Ensure Karbor
+  Horizon and client continue to be a robust and easy-to-use tool for Karbor.
+
+If you have any ideas on these points we're always happy to discuss and
+correct our plans.
+
+We're always happy to get new contributors on the project and always ready
+to help people interested in Karbor development get up to speed. I'm excited
+to continue contributing to Karbor.
+
+Best Regards,
+Chen Ying
