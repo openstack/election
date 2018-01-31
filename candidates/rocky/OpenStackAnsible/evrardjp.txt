@@ -1,0 +1,38 @@
+Hello everyone,
+
+I would like to announce my candidacy for PTL of the
+OpenStack-Ansible project for the Rocky cycle.
+
+I will focus on a single theme this cycle, simplification.
+
+After all the features introduced in Queens cycle, it's time
+to simplify our work:
+
+* Reduce the amount of variables in each role, and/or rename them to
+  a more guessable name.
+* Make possible to use a source of truth to reduce the amount of
+  glue variables we need. A candidate for source of truth could
+  be etcd, due to its presence in the OpenStack reference architecture.
+* Simplifying further our "repo build".
+* Simplifying our tasks, by using convention over configuration
+  (Reducing the group configurability for example).
+* Reducing the need of our dynamic inventory: everyone
+  should be able to use openstack-ansible with a simple static inventory.
+* Clarify each role maturity/contributions status. This would
+  make easier for deployers to understand the status of each role, and
+  take the appropriate decisions to whether or not deploy project x
+  or y. If we make it simple to contribute to new
+  roles and playbooks, it would also open us to more contributions
+  and contributors.
+
+On top of those simplification topics, I'd like to add the following
+features in the next cycle, depending on their release timing:
+* Upgrade to Ansible 2.5
+* Support Ubuntu 18.04
+
+I look forward to keep working with you all, and it would be my
+honor to serve as PTL for the next cycle.
+
+Best regards,
+
+Jean-Philippe Evrard (evrardjp)
