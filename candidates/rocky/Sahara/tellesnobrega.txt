@@ -1,0 +1,28 @@
+Hi Saharans, I would like to nominate myself to act as PTL for Sahara during
+the Rocky cycle.
+
+I've been acting as PTL for the last two cycles (Pike and Queens) and I believe
+that even though we lost a lot of resources we were able to improve Sahara
+considerably in the last year. 
+
+Moving forward I aim to continue working on the direction of making Sahara more
+user oriented.
+
+* Bug triaging:
+
+We need to start testing and cleaning the bug list and sadly this queue did not
+decrease significantly and we need to keep working on it.
+
+* Documentation:
+
+We already had improvements this lasy cycle but we need to keep going and for
+that we are already planning a documentation day pre-PTG and during PTG.
+
+* Final APIv2 work
+
+We need to finally release APIv2 in Rocky. We released APIv2 as experimental in
+Queens and will work to have it as main API in Rocky.
+
+In the overall picture we need to continue improving user experience and asking
+what is necessary to make Sahara more usable so we can have Sahara in more and
+more OpenStack deployments.
