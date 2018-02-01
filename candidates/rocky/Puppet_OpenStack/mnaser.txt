@@ -1,0 +1,19 @@
+Hey everyone,
+  
+I would like to nominate myself for the PTL role for the Puppet OpenStack team
+for the Rocky release cycle.  
+
+During my time over the past period, we continued to maintain the stability of
+the modules, helped keep the gate moving and helped in migrating all projects
+to Zuul V3.
+
+I hope to continue to serve as the PTL for the upcoming cycle to keep reviewing
+contributions and "keeping the ship sailing" with the wonderful Puppet OpenStack
+team.
+
+I'm always available on IRC and I look forward to working with all of you for
+the upcoming cycle.  I'm also always open to suggestions or recommendation on
+how we can do things better, as this is for the benefit of all of us.
+
+Sincerely,
+Mohammed Naser (mnaser)
