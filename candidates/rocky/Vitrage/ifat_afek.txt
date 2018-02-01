@@ -1,0 +1,34 @@
+Hi all,
+
+I would like to announce my candidacy to continue as Vitrage PTL for the Rocky
+release.
+
+I’ve been the PTL of Vitrage since the day it started, in the Mitaka release.
+I think we have made an amazing journey, and we now have a mature, stable and
+well known project. During the Queens cycle our community has grown, and we
+managed to complete many important tasks, like:
+
+* API for template add and template delete
+* Enhancements in the templates language
+* API for registering web hooks on Vitrage alarms
+* Performance enhancements, mostly around parallel evaluation of the templates
+
+I believe that these new features will greatly improve the usability of
+Vitrage.
+
+As for the Rocky cycle, I think we have many challenging tasks in our road map.
+We have a great team which combines very experienced contributors and
+enthusiastic newcomers, and we are always happy to welcome new contributors.
+
+The issues that I think we should focus on are:
+
+* Alarm and resource aggregation
+* Proactive RCA (Root Cause Analysis)
+* RCA history
+* Kubernetes Support
+* API enhancements, mostly around the topology queries
+
+I look forward to working with you all in the coming cycle.
+
+Thanks,
+Ifat.
