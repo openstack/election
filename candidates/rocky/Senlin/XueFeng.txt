@@ -1,0 +1,44 @@
+Hi all,
+
+I'd like to announce my candidacy for the PTL role of Senlin Project for
+Rocky cycle.
+
+I began to contribute to Senlin project since Mitaka and joined the team as
+a core reviewer in 2016.10. It is my pleasure to work with the great team
+to make this project better and better, and we will keep moving and look
+forward to push Senlin to the next level.
+
+As a clustering service, we already can handle some resource types like nova
+server, heat stack, NFV VDU etc. in past cycles. We also have done a lot of
+great works in Queue cycle, for example we finished k8s on Senlin feature's
+demo[1][2][3][4]. And there are still many works need to do in future.
+
+As a PTL in Rocky cycle, I'd like to focus on the tasks as follows:
+
+* Promote k8s on Senlin feature implementation and make it use in NFV
+  For example:
+  - Add ability to do actions on cluster creation/deletion.
+  - Add more network interfaces in drivers.
+  - Add kubernetes master profile, use kubeadm to setup one master node.
+  - Add kubernetes node profile, auto retrieve kubernetes data from master
+    cluster.
+* Improve health policy to support more useful auto-healing scenario
+* Improve LoadBalance policy when use Octavia service driver
+* Improve runtime data processing inside Senlin server
+* A better support for EDGE-Computing unattended operation use cases[5]
+* A stronger team to take the Senlin project to its next level.
+
+Again, it is my pleasure to work with such a great team.
+
+Thanks
+
+XueFeng Liu
+
+[1]https://review.openstack.org/#/c/515321/
+[2]https://v.qq.com/x/page/i05125sfonh.html
+[3]https://v.qq.com/x/page/t0512vo6tw1.html
+[4]https://v.qq.com/x/page/y0512ehqiiq.html
+[5]https://www.openstack.org/videos/boston-2017/integration-of-enterprise-monitoring-product-senlin-and-mistral-for-auto-healing
+
+
+
