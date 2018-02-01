@@ -1,0 +1,37 @@
+Fellow Barbicaneers,
+
+I'd like to nominate myself to serve as Barbican PTL through the
+Rocky cycle.
+
+Dave has done a great job at keeping the project growing and I'd
+like to continue his good work.
+
+This is an exciting time for Barbican.  With more distributions
+and installers incorporating Barbican, and a renewed focus on 
+meeting security and compliance requirements, deployers will be
+relying on Barbican to securely implement some of the use cases
+that we've been working on for the past few years (volume encryption,
+image signing, swift object encryption etc.).
+
+Moreover, work has been progressing in having castellan adopted as
+a base service for OpenStack applications - hopefully increasing 
+the deployment of secure secret management across the board.
+
+In particular, for the Rocky cycle, I'd like to continue the progress
+made in Queens to:
+
+1) Grow the Barbican team of contributors and core reviewers.
+2) Help drive further collaboration with other Openstack projects
+   with joint blueprints.
+3) Help ensure that deployments are successful by keeping up on
+   bugs fixes and backports.
+4) Help develop new secret store plugins, in particular :
+   -- a castallan secret store that will allow us to use vault and
+   custodia backends.
+   -- SGX?
+5) Continue the stability and maturity enhancements.
+ 
+Thank you in advance for this opportunity to serve.
+
+--Ade Lee (alee)
+
