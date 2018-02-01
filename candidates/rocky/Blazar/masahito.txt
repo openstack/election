@@ -1,0 +1,40 @@
+Dear everyone,
+
+I'd like to announce my candidacy as the PTL for the OpenStack Blazar
+team in the Rocky cycle.
+
+I served as the Blazar PTL during the Queens release. And I'd like to
+keep the position in the next cycle.
+
+During Queens cycle, the Blazar team became an OpenStack official project.
+This was one of achievements by the great activities of the Blazar team
+revived from the Ocata cycle. Of course, the Blazar team will do a first
+official release in part of OpenStack Queens release.
+
+In the Queens release, we improved resiliency and user experience.
+The state-machine feature enables end users to understand status of leases
+and reservations, the Host Panel support in horizon plugin allows operators
+to handle all Blazar API by GUI and etc.
+
+In the Rocky cycle, I'd like to focus on the following things:
+
+- Cross project: integrating Blazar with other projects
+
+The Blazar has some possibilities of cross project integration. The
+"integration" is not only supporting additional reservation type but using
+Blazar as internal function of other projects.
+
+The Blazar is used in some areas, Sicentific area as well as NFV area.
+This background brings requests of integrating Blazar with other projects,
+Heat, Tacker, Ironic, PlacementAPI team and etc.
+
+- Community: Encouraging the team and project well-known
+
+The Blazar is not a well known project in OpenStack community in spite
+of the fact that there're lots of requests for Reservation as a Service.
+To make the situation better, I try to encourage the project more known.
+It could also help the team to be more diverse and eventually improve
+the Blazar project itself.
+
+best regards,
+Masahito
