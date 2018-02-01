@@ -1,0 +1,61 @@
+Hi everybody!
+
+I'd like to run for PTL of OpenStackSDK again
+
+This last cycle was pretty exciting. We merged the shade and openstacksdk
+projects into a single team. We shifted os-client-config to that team as well.
+We merged the code from shade and os-client-config into openstacksdk, and
+then renamed the team.
+
+It wasn't just about merging projects though. We got some rework done to base
+the Proxy classes on keystoneauth Adapters providing direct passthrough REST
+availability for services. We finished the Resource2/Proxy2 transition. We
+updated pagination to work for all of the OpenStack services - and in the
+process uncovered a potential cross-project goal. And we tied services in
+openstacksdk to services listed in the Service Types Authority.
+
+Moving forward, there's tons to do.
+
+First and foremost we need to finish integrating the shade code into the
+sdk codebase. The sdk layer and the shade layer are currently friendly but
+separate, and that doesn't make sense long term. To do this, we need to figure
+out a plan for rationalizing the return types - shade returns munch.Munch
+objects which are dicts that support object attribute access. The sdk returns
+Resource objects.
+
+There are also multiple places where the logic in the shade layer can and
+should move into the sdk's Proxy layer. Good examples of this are swift
+object uploads and downloads and glance image uploads.
+
+I'd like to move masakari and tricircle's out-of-tree SDK classes in tree.
+
+shade's caching and rate-limiting layer needs to be shifted to be able to
+apply to both levels, and the special caching for servers, ports and
+floating-ips needs to be replaced with the general system. For us to do that
+though, the general system needs to be improved to handle nodepool's batched
+rate-limited use case as well.
+
+We need to remove the guts of both shade and os-client-config in their repos
+and turn them into backwards compatibility shims.
+
+We need to work with the python-openstackclient team to finish getting the
+current sdk usage updated to the non-Profile-based flow, and to make sure
+we're providing what they need to start replacing uses of python-*client with
+uses of sdk.
+
+I know the folks with the shade team background are going to
+LOVE this one, but we need to migrate existing sdk tests that mock sdk objects
+to requests-mock. (We also missed a few shade tests that still mock out
+methods on OpenStackCloud that need to get transitioned)
+
+Finally - we need to get a 1.0 out this cycle. We're very close - the main
+sticking point now is the shade/os-client-config layer, and specifically
+cleaning up a few pieces of shade's API that weren't great but which we
+couldn't change due to API contracts.
+
+I'm sure there will be more things to do too. There always are.
+
+In any case, I'd love to keep helping to pushing these rocks uphill.
+
+Thanks!
+Monty
