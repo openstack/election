@@ -1,0 +1,39 @@
+Hi all,
+
+It's very pleasure for me that being a Zaqar developer from 2016, and also
+being a core for several cycles. Today, I'd like to serve Zaqar better as a
+PTL, if you let me.
+
+We did a great job in Queens. Support the new relationship between pool and
+flavor to make removing useless pool group available. We also introduce some
+awesome new features like support redis as management storage backed to
+improve performance and ease of deployment and delay queue.
+For Rocky release, I want to finish the list of job below.
+
+1. Refactoring
+   We want to remove useless pool group totally in Rock and make the model of
+   pool and flavor more clear.
+
+2. Scalability
+   We will continue our work to improve Zaqar's performance under the different
+   cases of load increasing:
+   1) number of publishers
+   2) number of subscribers
+   3) rate of messages published or consumed
+   4) number of messages
+   5) number of queues
+   6) size of messages
+
+3. Usability
+   Now Zaqar still don't support the filter query of queues. Considering the
+   amount of queues in cloud environment，we want to support the filter query
+   to improve the usability and efficiency of querying API.
+
+3. Security
+   In Rocky, we also want to introduce some features that could make the
+   message more safe and queue more reliable.
+
+It's a fantastic experience working with this amazing team and I would be
+pleased to serve as PTL for next cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
