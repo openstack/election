@@ -1,0 +1,9 @@
+Hi,
+
+This is my candidacy to be the PTL of Telemetry for the Rocky cycle.
+
+I'll make sure the team and projects keep being amazing.
+
+Cheers,
+
+jd
