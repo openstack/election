@@ -1,0 +1,99 @@
+Hello Stackers,
+
+I would like to announce my candidacy for Nova PTL in the Rocky cycle.
+
+I have been a core reviewer on Nova since May 2015 and have been working with
+OpenStack since mid 2012 (ancient times!) and you may know me on IRC as
+melwitt. I have been both a user and a developer on OpenStack, so I think I see
+things from a bit more of an all-around perspective. I’ve worked in a company
+where we ran private OpenStack clouds, so I’ve done deployments, I’ve debugged
+production issues, I’ve worked on custom internal-only patches -- you name it.
+Having experienced all of these situations has given me a special interest in
+solving problems for users, operators, and developers. It has been my mission
+to work with all of you to help make Nova better.
+
+Like Matt, I see the Nova PTL role as a service position to the community. The
+PTL is there to help the team get things done in Nova. That means keeping track
+of the schedule, keeping tabs on ongoing work and helping people make progress
+if they’re stuck, facilitating cross-project communication when we’re working
+on things that integrate with other projects, and easing contribution to the
+project.
+
+On the last point, I have some ideas around easing contribution, mostly having
+to do with situations where someone may have researched a bug, found a root
+cause, and can propose a patch, but don’t have the time or knowhow to provide a
+patch complete with test coverage. In cases I have seen, I reached out to the
+person and asked if they would mind if I wrote tests for their patch and added
+myself as co-author. Not only did they not mind, they were happy I offered. So,
+as an experiment, I would like to keep a list of patches (in the Priorities
+etherpad) where authors add links to patches they’d like help with in exchange
+for co-authorship. If a more experienced contributor finds a patch in the list
+that they’re interested in, they can jump in and fill in the gaps so we end up
+with a complete patch ready-for-review. In this way, I would like to try to
+give less experienced authors the opportunity to pair with more experienced
+authors on patches.
+
+Speaking of the Priorities etherpad [1], I’d like to bring it back to active
+use. It’s a good way IMHO to track ready-for-review patches on the various
+sub-teams, virt drivers, and blueprints that we have. I think we have been good
+at reviewing high priority project patch sets but I think we could use more
+focus on reviewing lower priority blueprint work. I’d like to add a section for
+approved blueprints to increase visibility on those patches, so that
+ready-for-review patches don’t get lost in the shuffle. Regretfully, there have
+been a number of blueprint patches that were ready for review early on in the
+cycle and did not receive review for lack of visibility. I’d like to do
+something to keep track of those patches and get the ball rolling on review
+earlier in the cycle, before the higher priority work ramps up too much. I
+think keeping a section in the Priorities etherpad for these could help, along
+with a brief report/reminder of that section’s status in Nova meetings.
+
+Bug triage has fallen a bit behind in more recent cycles and I’ve been thinking
+about how we could improve that. In the past, we had a model where we tag bugs
+with an area (like ‘api’, ‘compute’, ‘volumes’) and tag owners [2] were
+responsible for triaging bugs with their tag. The idea is that bug tagging
+(categorizing) is a quick and simple task that doesn’t require much time. Then,
+the more time-consuming task of triaging the validity and severity of bugs is
+load-balanced among tag owners. I’d like to refresh the bug tag owner list and
+see if we can get back into a pattern where we can spread out bug triage among
+the team and make more progress there.
+
+Another area that could be improved is our communication of “low hanging fruit”
+work suitable for newer contributors. To be honest, I don’t find much in Nova
+to be “low hanging fruit” but do want to make an effort to collect and maintain
+a list of bugs and tasks that are better starting points for people who want to
+work on Nova. Long ago, we had the low-hanging-fruit etherpad [3] and I’d like
+to resurrect it to keep track of things that newer contributors could pick up.
+
+I think Matt has done great work to increase communication across projects we
+integrate with and with the operator community. I would like to continue that
+work to maintain those relationships and continue to keep the operator
+community apprised of changes in Nova that will affect them. I know we are not
+perfect here but we endeavor to keep the communication lines open and I, for
+one, welcome feedback on areas we fall short so that we can improve.
+
+We got a lot done in Queens, completing 36 out of 42 approved blueprints. I
+would like to keep that momentum going into the Rocky cycle. I have liked the
+model of using the PTG to discuss and prioritize work for the cycle and
+maintaining a detailed PTG etherpad to organize the agenda, document action
+items, next steps, and conclusions for each topic. I think this model is
+especially helpful for those who cannot attend the PTG in person, in that they
+can present their topic for discussion by adding it to the etherpad, we discuss
+it at the PTG, and then we can follow up asynchronously afterward on IRC or the
+dev mailing list.
+
+Finally, testing and the health of the gate is important to me and I would like
+to continue the work we’ve done here to actively monitor our test jobs,
+increase our test coverage, and troubleshoot and solve issues in the gate so
+that everyone can get their patches tested and merged smoothly. I know things
+have been challenging in this area lately, but we’ve all worked hard as a team
+to jump on each problem as it crops up and I’ve been proud of how much everyone
+has stepped up to help.
+
+I feel like I’ve written a lot here, thank you for reading and I appreciate
+your consideration.
+
+-melanie
+
+[1] https://etherpad.openstack.org/p/pike-nova-priorities-tracking
+[2] https://wiki.openstack.org/wiki/Nova/BugTriage#Tag_Owner_List
+[3] https://etherpad.openstack.org/p/nova-low-hanging-fruit
