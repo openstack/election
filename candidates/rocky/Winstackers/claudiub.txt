@@ -1,0 +1,48 @@
+Hello everyone!
+
+I would like to announce my candidacy for the Winstackers PTL election for the
+upcoming cycle.
+
+I have been involved in OpenStack since Havana, and even longer with Hyper-V
+and Windows related technologies, and I have been the PTL of Winstackers since
+its beginning.
+
+In the past cycle, we had a few primary focuses:
+
+* Expanded the number of tests and Hyper-V related features tested. For this
+  purpose, we've added the oswin-tempest-plugin repository, and we've added
+  a few dozen tests used to validate different features and scenarios. This
+  tempest plugin will continue to be updated and expanded, covering new
+  features in upcoming cycles.
+
+* Added several new features, including: SR-IOV support (os-win and
+  networking-hyperv), NIC hardware offload support (os-win), SAN policy
+  getter / setter, attaching / detaching VHD to hosts, and so on.
+
+* Using release notes for any note-worthy new features we've added in os-win
+  and networking-hyperv.
+
+* Bug fixing and increasing the reliability of the networking-hyperv, os-win
+  library, and their unit tests. For unit tests, we've started mock autospecs,
+  which ensures that non-existent attributes are not used, and that mocked
+  method calls have their signatures respected.
+
+In the following cycle, I'd like to continue the work we started on
+oswin-tempest-plugin and include the tests in regular Hyper-V CI runs.
+Additionally, documentation always needs work and updates.
+
+Last, but not least, I would like us to continue integrating the aforementioned
+features we've introduced in os-win in other projects (nova, cinder,
+networking-hyperv, and so on). A feature of personal interest would be the
+usage of SR-IOV VFs, IOV queues, VMQs, and IPSec task offloading capabilities
+which are available for Hyper-V and how to schedule and consume them through
+nova / neutron.
+
+These are the main goals I have in mind that I would like to accomplish during
+the Rocky cycle, among other minor goals. We will continue to support the
+drivers / plugins we've added to other projects, and we'll continue to add new
+features to them. New goals and suggestions are always welcome.
+
+Thank you for your consideration,
+
+Claudiu Belu
