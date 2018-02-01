@@ -1,0 +1,25 @@
+Hi all,
+
+I'd like to announce my candidacy for PTL of the Docs project for Rocky.
+
+I've been the Docs PTL since Queens and besides my work on OpenStack docs, I
+also contribute to the RDO Project.
+
+During the Queens cycle, we mostly finalized our work on project docs
+migration, we also continued assisting project teams with their setup for
+project-specific content, we improved our template system for
+docs.openstack.org, stopped unpublishing EOL content, and more.
+
+We now also have a docs mission statement to help us identify project goals
+within a broader OpenStack context. For Rocky, we need to review and
+revisit the team goals and continue working on areas like docs theme and
+build automation, alongside the content restructure and rework of what is
+left in openstack-manuals.
+
+Our Rocky PTG planning is well underway but I think it is now more important
+than ever that we keep the project as open as possible to all potential
+documentation contributors, regardless of whether they attend in-person
+events or not, this also includes drive-by contributions.
+
+Thank you,
+Petr Kovar (pkovar)
