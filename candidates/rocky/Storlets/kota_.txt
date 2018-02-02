@@ -1,0 +1,23 @@
+Hi All,
+
+This time, I'd like to keep my position on the Storlet PTL as I've been
+taking the role from eranrom on the Queen cycle.
+
+I know, the Storlets project is a small team yet but still my company (NTT)
+is working on several use cases and I'd love to keep the door open from the
+great OpenStack community.
+
+In the Queen cycle, the Storlets team has been focusing on the stability and
+manage the stable testing environment, including zuul v3 migration and 1.0.0
+release will be at the final Queen release. In the future Rocky cycle,
+I'd like to progress the project more. In my idea, I'd like to focus on
+mainly, A) Reach out to more users and hence to developers, B) Capability on
+better flexible resource control for HPC/AI use cases, C) Continuous work on
+the maturity.
+
+I believe that I can take the responsibility on the project management on the
+Storlets project and hope I can enjoy with more newer contributors in the
+OpenStack developers community.
+
+Best regards,
+Kota
