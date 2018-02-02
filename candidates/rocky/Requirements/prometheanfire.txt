@@ -1,0 +1,42 @@
+I would like to announce my candidacy for PTL of the Requirements project for
+the Rocky cycle.
+
+The following will be my goals for the cycle, in order of importance:
+
+1. The primary goal is to keep a tight rein on global-requirements and
+upper-constraints updates.
+
+2. Speaking of global-requirements updates, the primary goal this cycle will
+continue to work on project specific requirements.  All projects would continue
+to use upper-constraints.txt to ensure co-installability, but would be able to
+manage their requirements.txt file, largely on their own.
+
+https://bugs.launchpad.net/openstack-requirements/+bug/1719009 is the bug
+tracking per-project requirements.
+
+3. Un-cap requirements where possible (stuff like eventlet).
+
+4. Publish constraints and requirements to streamline the freeze process.
+
+https://bugs.launchpad.net/openstack-requirements/+bug/1719006 is the bug
+tracking the publish job.
+
+5. Audit global-requirements and upper-constraints for redundancies.  One of
+the rules we have for new entrants to global-requirements and/or
+upper-constraints is that they be non-redundant.  Keeping that rule in mind,
+audit the list of requirements for possible redundancies and if possible,
+reduce the number of requirements we manage.
+
+6.  Audit global-requirements minimums.  While technically not supported from a
+co-installability or stability standpoint (as it's not tested), we should
+endeavor to have the global-requirements minimums work in Openstack.  Ensuring
+any bugs, features or changes that have happened since the global-requirements
+minimum was released til the upper-constraints was defined are not NEEDED by
+Openstack.  This will rely on the cross gating work tonyb did.
+
+I look forward to continue working with you in this cycle, as your PTL or not.
+
+Thanks for your time,
+Matthew Thode
+
+IRC: prometheanfire
