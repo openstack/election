@@ -1,0 +1,25 @@
+My fellow OpenStack community,
+
+I would like to nominate myself for Octavia PTL for Rocky. I am currently
+the PTL for the Queens release series and would like to continue helping our
+team provide network load balancing services for OpenStack.
+
+For those of you that do not know me, I work for Rackspace. Prior to joining
+Rackspace I worked for Hewlett-Packard for fifteen years on data center
+automation, distributed network systems, embedded system design, and big data.
+
+In the Queens release, we were able to add support for batch member updates,
+QoS on the load balancer VIPs, support for Castellan, operator tooling, and
+many more enhancements. Beyond that work, we laid the ground work for Rocky.
+
+Looking forward to Rocky I expect the team to finish out some major new
+features, such as Active/Active load balancers, UDP protocol support,
+provider drivers, flavors, additional tempest tests and additional operator
+tooling. I plan to continue working on improving our documentation,
+specifically with detailed installation, high availability, and neutron-lbaas
+migration guides.
+
+Thank you for your support of Octavia during Queens and your consideration for
+Rocky,
+
+Michael Johnson (johnsom)
