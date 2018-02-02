@@ -1,0 +1,7 @@
+This is to announce my candicacy to continue as the PTL for Searchlight
+for Rocky. I've been PTL since the Ocata cycle.
+
+Searchlight is in maintenance mode but still receives active bug fixes. The project
+has suffered from a drop off in contributors over the last cycle but is still in
+use. My goal for Rocky is to keep things ticking over until such time as things
+pick back up again.
