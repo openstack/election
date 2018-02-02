@@ -1,0 +1,22 @@
+Hello all,
+
+I've been involved with Kolla since it's early stages around Liberty, where we
+saw it evolve through multiple iterations of image formats, orchestration
+methods and patterns into the project we know and love.
+
+From my perspective the community is one of the best things about Kolla. You
+are the ones that keep config files up to date as OpenStack evolves, continue
+to implement new roles and images, keep the gates up and running, the list goes
+on. With this mind, I won't list a bunch of features that I'd like to
+accomplish for Rocky. Rather, I would like to spend time listening to what you
+as users would like to see in the project, and doing whatever I possibly can to
+help you achieve that. This does not mean I don't have a vision for Kolla - no
+project is perfect, and there are plenty of areas I think could use some
+refinement. My hope is through discussion and collaboration we can continue to
+iterate to ensure this project is as useful as possible to our users.
+
+I hope you will consider me to serve you as your PTL for the coming cycle.
+
+Thank you!
+
+-Paul
