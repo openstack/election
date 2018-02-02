@@ -1,0 +1,76 @@
+Hi everyone,
+
+I would like to announce my PTL candidacy of the Quality Assurance for
+Rocky cycle.
+
+I am glad and lucky to work in OpenStack community and would like to
+thank all the contributors who supported me to explore new things and
+ideas.
+You might know me as gmann on IRC. I have joined the OpenStack since
+2012 and 100% in upstream development since Ice-house release.
+Currently i am contributing in QA, Nova & sometimes other projects too
+and a core member in QA projects like Tempest, Patrole etc. Along with
+that, I volunteered as mentor in the upstream institute and help to
+bring new contributor onboard.
+
+QA program always play a key role in smooth upstream development and
+its quality. Also help production clouds for their testing and
+stability. QA responsibilities are always challenging and need lot of
+coordination and collaboration with each projects team. Till now we
+have been doing good job which is not just because of QA team but it's
+all together a combined effort from all projects.
+
+Keep having  regular ideas from different contributors to improve QA
+is phenomenal and I truly appreciate. Those ideas helped QA program to
+grow more in last couple of years. One example is extreme testing of
+OpenStack which is in discussion since previous summits/PTG with PoC
+and will add strength to QA program. other example is Patrole for RBAC
+testing which is really important for cloud security. My concentration
+as PTL will be to make good progress in extreme testing or any other
+new initiatives and make Patrole more stable and feature-rich so that
+we can see their tests running in respective projects gate.
+
+We have plugins framework approach for Tempest/Devstack/Grenade and
+their plugins exist across almost all the OpenStack projects, I feel
+that collaboration with projects team is the key role of QA team. Even
+though, we have been helping and fixing plugins whenever needed but I
+would like to improve more in this area. My objective is to make each
+plugin owners to use the QA services and interfaces in more better and
+easy way. I would like to improve the relationship and coverage of
+help in every possible way.
+
+Bug Triage and gate stability is the another important area for QA
+team. We have been doing good in bug triage since couple of years with
+target of 0 un-triaged bug. I would like to make sure we continue the
+focus in both area in next cycle too.
+
+Along with that let me summarize me the areas I am planning to focus
+on in Rocky Cycle.
+
+* Improvement and new Ideas in QA program as overall:
+    - Improve the testing coverage for key features.
+
+    - Improve QA process and tracking in more better way for planned
+      deliverable.
+
+    - New ideas and their progress to convert into a running software.
+
+* Collaboration and Help:
+    - Cross community collaboration on tool, idea sharing etc, opnfv,
+      k8s are best example as of now.
+
+    - Help the other Projects' developments with test writing/improvement
+      and gate stability
+
+    - Plugin improvement and helping them on daily basis by defining doable
+      process and goal.
+
+* Bring on more contributor and core reviewers.
+
+Following are my contribution activities:
+* http://stackalytics.com/?release=all&metric=marks&user_id=ghanshyammann&project_type=all
+* http://stackalytics.com/?release=all&metric=commits&user_id=ghanshyammann&project_type=all
+
+Thanks for reading and consideration my candidacy.
+
+-gmann
