@@ -1,0 +1,47 @@
+Hi All,
+
+I would like to nominate myself to take the role of Heat PTL for Rocky release.
+I'd been involved with the project for two and half years. And it's my
+privilege to work and learn from this great team and have the honor to serve as
+Pike and Queens PTL.
+
+With last half year, team achieves following jobs:
+
+* Policy in code
+* Heat dashboard
+* Heat tempest plugin
+* Zuul migrate in Heat
+* New resources/properties
+* Gate stable maintenance
+* become Interop add-on
+* Deprecate/remove few resources
+
+Also done 2 blueprints, 62 bugs fixed (still going) and quite a few non-bug
+improvement (like memory improvement, etc.).
+
+I would like to keep trace on above jobs and with some more task that needs to
+be done:
+
+* Needs more reviewers and developers, we got few superman in our team (thank
+  God for that). Still, we need more reviewers and developers than ever.
+* goals making and tracing. IMO, it's always a nice thing to make goals at the
+  very first place in a cycle, so all members can jump up and pick it up if
+  you somehow fail to keep pushing or got a more critical task to work on. And
+  most important is we can have a way to trace and make sure our team keeps
+  been productive(which it already is). We also need to filter and review
+  with current community goals to make sure it's not making things worst for
+  Heat.
+* Cross project co-works. We have some features out within these few releases
+  cycle. Heat team for some reason keeps been tightly co-works with TripleO
+  team to sync with what we have (which is super cool). What I also like to
+  see if we can get more sync up with other teams who use heat as part of their
+  infra which will potentially give us more feedbacks from multiple
+  users/projects.
+* Inner team communications. We have faced some communication problem in this
+  cycle, which means as a PTL, I'm responsible to make sure our team have a
+  more comfortable workflow to work on. Which means I have to try harder to
+  sync up tasks within this team. At least provide team better communications
+  which shouldn't try to take more time for all.
+
+Hope you will consider me for Rocky PTL. Thank you!
+Rico Lin
