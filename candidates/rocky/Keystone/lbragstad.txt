@@ -1,0 +1,44 @@
+Hey folks,
+
+I'm writing to express my interest in continuing to serve as keystone's
+PTL for the Rocky release.
+
+Even though we're a few weeks away from an official Queens release, I
+felt we had an extremely productive cycle. The outcome of the Queens PTG
+in Denver was nothing short of ambitious. We finished up things that
+missed the boat for Pike, while shouldering some hefty new initiatives.
+To summarize:
+
+* We helped projects move their default policies into code and document them,
+  which makes maintenance for operators and deployers much more manageable
+* We implemented full support for tagging project resources, which has been a
+  long-time ask from operators
+* We landed an implementation for application credentials, making it easier to
+  run apps that integrate with OpenStack - especially for deployments backing to
+  LDAP
+* We implemented an experimental API for unified limits, which opens the doors
+  for us to start integrating consistent quota enforcement across services
+* We introduced a new assignment target and token scope to help set
+  administrative APIs apart from end user APIs
+* Lastly, our team did a good job stepping up to mentor new contributors
+
+The following are a few of my top priorities for Rocky:
+
+* Help projects leverage system scope to improve the usability and security of
+  their APIs
+* Build on the in-code policy work to provide discoverable capability APIs
+* Put together a plan to make unified limits a stable API and help incorporate
+  its usage into other projects
+* Continue fostering an environment where newcomers feel welcome and can make
+  meaningful contributions
+
+In my nomination for the Pike cycle, I mentioned that I wanted to do
+what I could to solve the hard problems our community is faced with.
+It's extremely encouraging to see the needle move on several
+long-standing issues, especially with a systematic, team-oriented
+approach. It's been great to be a part of those efforts.
+
+Thanks for taking the time to read this and I hope to see you in Dublin,
+
+Lance
+
