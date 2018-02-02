@@ -1,0 +1,22 @@
+Hi,
+
+I am submitting my candidacy for Oslo PTL.
+
+I have been an Oslo core since 2014 and although my involvement in the project
+has at times been limited by other responsibilities, I have always kept up on
+what is going on in Oslo.
+
+For the Rocky cycle my primary goals would be:
+
+* Continue to maintain the stability and quality of the existing Oslo code.
+
+* Help drive the oslo.config improvements that are underway.
+
+* Encourage new and existing contributors to ensure the long-term health of
+  the project.
+
+I am, of course, always open to suggestions on other areas of focus for Oslo.
+
+Thanks.
+
+-Ben
