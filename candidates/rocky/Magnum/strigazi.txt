@@ -1,0 +1,29 @@
+Hello!
+
+I would like to nominate myself as PTL for the Magnum project for the
+Rocky cycle.
+
+I have been consistently contributing to Magnum since February 2016 and
+I am a core reviewer since August 2016. Since then, I have contributed
+to significant features like cluster drivers, add Magnum tests to Rally
+(I'm core reviewer to rally to help the rally team with Magnum related
+reviews), wrote Magnum's installation tutorial and served as docs
+liaison for the project. My latest contributions include the swarm-mode
+driver, containerization of the heat-agent and the remaining kubernetes
+components, fixed the long standing problem of adding custom CAs to the
+clusters and brought the kubernetes driver up to date, with RBAC
+configuration and the latest kubernetes dashboard. I have been the
+release liaison for Magnum for Pike and served as PTL for the Queens
+release. I have contributed a lot in Magnum's CI jobs (adding
+multi-node, DIB and new driver jobs). I have been working closely with
+other projects consumed by Magnum like Heat, Fedora Atomic, kubernetes
+python client and kubernetes rpms. Despite the slow down on development
+due shortage of contributions, we managed to keep the project up to date
+and increase the user base.
+
+For the next cycle, I want to enable the Magnum team to complete the
+work on cluster upgrades, cluster federation, cluster auto-healing,
+support for different container runtimes and container network backends.
+
+Thanks for considering me,
+Spyros Trigazis
