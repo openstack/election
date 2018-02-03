@@ -1,0 +1,27 @@
+Hi Everybody!
+
+I am hereby announcing my candidacy and self nomination for the
+Rocky cycle ironic PTL position.
+
+I'm fairly certian most of you know me by this point and know how
+much I care about the community as well as our efforts to automate
+the deployment and configuration of baremetal infrastructure.
+
+For those of you who do not yet know me, I've been involved in
+OpenStack since the beginning of the Juno cycle, and have been working
+with the ironic community since the beginning of the Kilo cycle.
+
+I am very passionate about ironic, but I recognize that there is more
+work to be done, new directions to head in, and challenges to conquer.
+
+My vision is for ironic to be utilized in more use cases outside of
+what we have typically seen as our primary user. It is necessary to
+expand on existing relationships and to build new relationships going
+forward. 
+
+My hope is for us to continue to grow as a community. While we have
+had set backs like all projects, we still have massive potential.
+
+Thank you for your consideration.
+
+Julia Kreger (TheJulia)
