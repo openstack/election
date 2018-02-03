@@ -1,0 +1,27 @@
+Hello everyone,
+
+I would like to anounce my candidacy to continue as PTL of Monasca for the
+Rocky release.
+
+I have worked for the project as core reviewer since 2015, acted as Release
+Management Liason in Ocata and Pike and had a privilage of being PTL in Queens
+release cycle. I have learnt a lot in this new role and it's a real pleasure to
+work with the great team and improve the project. Thank you for all your
+support.
+
+In the next release I would like to focus on following topics:
+
+* continue the work on Cassandra support
+* strengthen the community and improve active participation and contribution
+* improve tenant monitoring
+* accomplish Python 3 migration
+
+Apart from that I'll do my best to promote Monasca, coordinate community work
+and interact with other OpenStack teams.
+
+Thank you for considering my candidacy and I'm looking forward to another very
+productive cycle.
+
+Best greetings
+
+Witek
