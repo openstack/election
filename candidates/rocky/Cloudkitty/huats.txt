@@ -1,0 +1,10 @@
+I would like to announce my candidacy for PTL of Cloudkitty.
+
+During the Queens cycle we have been able open relaunch our community with the integration of a few regular contributors and new core.
+We also have been to change the way we configure Cloudkitty and the definition of metrics to be fetched in order to be more agile (and less hard-coded relationship). With that evolution we have been able to extend to spectrum of Cloudkitty to other projects (both within and outside OpenStack).
+
+During the Rocky cycle the focus I am looking for is to continue the expand the spectrum of cloukitty integration with various services. We also have some work that we are planning our storage concepts. Finally we plan to improve the reports that can get fetched from cloudkitty (both graphical and outputs).
+
+Finally I am decided also to continue to work to support the wider ecosystem adoption of Cloudkitty as the best solution for chargeback and rating.
+
+I would also like to take this opportunity to thank all members of the OpenStack community who helped our team during the lasts cycles.
