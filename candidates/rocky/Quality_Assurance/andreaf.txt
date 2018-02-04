@@ -1,0 +1,50 @@
+Dear all,
+
+I’d like to announce my candidacy for PTL of the QA Program for the Rocky 
+cycle.
+
+I served as PTL for QA during the Pike and Queens cycles, and I would be
+honoured to continue to do so in the next six months.
+
+After a few years working with the OpenStack community, I continue to find
+it an exceptional experience and a great opportunity for meeting and working
+with great people, learning and innovating.
+
+In the past cycle, we focused on providing good and stable interfaces in
+QA projects for everyone to use. Meanwhile, we supported the OpenStack
+community in the implementation of the Tempest plugin community goal.
+
+This should mean fewer headaches for everyone with Tempest plugins,
+and a bit more time for the QA team to focus on key areas like the gate
+stability and bug triage.
+
+Outside of those key areas, my priority always remains serving the community,
+by providing tools, support and advice. There are a few specific topics I
+care particularly about for the Rocky cycle:
+
+- Migration to Zuul v3: my key objective is for project teams to be able
+  to migrate as effortless as possible, enjoy the benefits of Zuul v3 and
+  focus on the things they want to work on.
+  To achieve this the QA team will provide a good set of base jobs and
+  ansible roles for everyone to re-use.
+  During Queens we implemented base devstack and devstack-tempest jobs
+  already; next up are multinode support and grenade, which cover most
+  of the things that we do in Tempest legacy jobs today.
+
+- Interoperability testing: with the new add-on programs, I expect that
+  the teams involved will need prompt support and test reviews from the
+  QA team.
+
+- QA beyond the gate: there is a lot of quality engineering happening on
+  OpenStack beyond the testing we do in the gate and I strive to ensure
+  that those efforts do not happen in isolation. There is opportunity
+  for sharing of ideas, tools, experiences - even beyond the OpenStack
+  community, through initiatives like OpenLab and OPNVF. A QA SIG may be
+  a good forum to make this happen.
+
+- Supporting teams working on the cold upgrade goal along with the goal
+  champion.
+
+Thank you!
+
+Andrea Frittoli (andreaf)
