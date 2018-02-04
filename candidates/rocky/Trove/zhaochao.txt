@@ -1,0 +1,56 @@
+Hi all,
+
+I'd like to announce my candidacy for serving as Trove PTL through
+the Rocky cycle.
+
+I have been working with OpenStack projects for more than 3 years,
+with the responsibility of supporting and developing in Cinder and
+Trove for the internal production deployment of OpenStack platform.
+However, I only became an active contributor recently after I got
+a new job offer which mainly focuses on upstream activities from
+my current employer, and then got accepted as a core reviewer of
+Trove. It would be a great experience as the Trove PTL to work
+together with the team and the whole OpenStack big family in the
+following months.
+
+Trove has been challenged by contribution lacking for the last
+developing cycles. But users and developers show their interest
+in the project from time to time, by asking help on the maillist,
+IRC channel, and submitting patches to solve problems found in
+their adoptions. I think focusing on the users' needs will help
+to attract participation and it's always the key value of
+OpenStack projects.
+
+For the Rocky cycle, I would like to focus on the following areas:
+
+* Documentation improvements: get and keep documents updated with
+  the code, add more docs about architecture, design and deploy
+  considerations, etc.
+
+* Better testing coverage for ensuring a solid code base.
+
+* Improve integration with other OpenStack projects: catch up to
+  adopt new features and interfaces of the infrastructure projects
+  like Oslo, Keystone, Nova, Cinder, Neutron, Swift, etc.
+
+* Bug triaging and smashing: pay more attentions to users' feedback
+  and also track how the project makes progress.
+
+* Try to achieve consensus on topics like:
+  - generic datastore abstraction instead of extending from the MySQL
+    implementation;
+  - improve support for different datastore versions;
+  - improve support for clustering;
+  - a policy of accepting/deprecating/removing a datastore backend
+    support into/from the project;
+  - and maybe much more from other contributors and the users.
+
+  And make project goals based on the discussions.
+
+* Keep up with OpenStack-wide goals.
+
+* Looking forward opportunities to extend the team.
+
+Thanks.
+
+Zhao Chao(zhaochao)
