@@ -1,0 +1,43 @@
+Hello everybody,
+
+Kolla is already in production-grade state for a deployment system.  In my
+country, I helped one media company using Kolla to deploy OpenStack cluster in
+production and I'll have chance to help another company in Vietnam using Kolla
+in production in the near future.
+
+I joined Kolla team from Newton, and I always remember how much help I got from
+Kolla PTL, core-reviewer and all other members. I'm serving as core reviewer
+from Pike-cycle. I have contributed many blueprints, bugs report and fix from
+the first days I joined Kolla team [1][2][3][4].
+
+From the first day, I am impressed by the diversity of Kolla team, so we get
+many ideas for new feature, bug fix and code review.
+
+For Rocky cycle, I would like to focus on the following goals:
+
+* Focus on feedback from Kolla users, their needs and also hassle.
+* Improve Kolla documentation, keep it update with the code.
+* Encourage diversity in our community.
+* Improve cross community communication.
+* Implement upgrade procedure for OpenStack services [5]
+* Reduce upgrade time to zero downtime upgrade for OpenStack service.
+* Start fast forward upgrade support (the 7th point in [6])
+* Bring upgrade test to our CI and improve existed facets.
+* Implement nodes change feature for Kolla (start with remove node feature).
+* Bring Kolla-kubernetes to 1.0 release.
+
+Last but not least, I want to introduce Kolla to many users, companies,
+encourage core reviewer membership, prioritize pending features and many other
+activities as PTL responsibilities.
+
+Thank you for reading this long email and please consider it as my PTL
+candidacy. And I hope you give me one chance to serve as your PTL for the
+Rocky cycle.
+
+
+[1] https://blueprints.launchpad.net/kolla
+[2] https://blueprints.launchpad.net/kolla-ansible
+[3] https://bugs.launchpad.net/kolla/
+[4] https://bugs.launchpad.net/kolla-ansible/
+[5] https://blueprints.launchpad.net/kolla-ansible/+spec/apply-service-upgrade-procedure
+[6] http://lists.openstack.org/pipermail/openstack-dev/2017-December/125688.html
