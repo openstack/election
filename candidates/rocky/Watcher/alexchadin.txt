@@ -1,0 +1,27 @@
+Hello,
+
+This is my candidacy to continue my work as the Watcher PTL for the
+Rocky cycle.
+
+I've been working on Watcher since fall of 2015 and am honored
+to lead this project during last two cycles. Watcher will get
+baremetal and storage supports with Queens release, along with
+new strategies and new features. New strategy restrictions and
+modifications would allow Watcher to execute strategies in coherence
+with other openstack services. Watcher's actions should be predictable
+and reliable in any time.
+
+There are some works we need to take into account:
+
+* Improve security by providing unified API validation way.
+* Extend set of notifications that Watcher consumes.
+* Provide selectors that would help users to choose the best
+  way to achieve objections.
+
+Along with strategies maintenance, we expand set of supporting resources
+and projects.
+
+I'm happy to welcome new contributors on the project and ready to answer
+any question on our channel #openstack-watcher.
+
+Alexander Chadin (alexchadin)
