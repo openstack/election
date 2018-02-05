@@ -1,0 +1,31 @@
+I would like to nominate myself for the TripleO PTL role for the Rocky cycle.
+
+As PTL of TripleO for the Queens cycle, the focus was on improving containerized
+services, improving the deployment process and CI, and improving
+visibility of the status of the project. I personally believe over the last
+cycle we've made great strides on all these fronts.  For Rocky, I would like
+to continue to focus on:
+
+* Reducing duplication and tech debt
+  When we switched over to containerization, we've had to implement some items
+  in multiple places to support backwards compatibility. I believe it's time
+  to spend some efforts to reduce duplication of code and processes and focus
+  on simplifying actions for the end user.  An example of this will be efforts
+  to align the undercloud and overcloud deployment processes.
+
+* Simplifying the deployment process
+  Additionally with the containerization switch, we've added new requirements
+  for actions that must be performed by the end user to deploy OpenStack.
+  I believe we should spend time looking at what actions we can remove or reduce
+  by automating them as part of the deployment process.  An example of this
+  will be efforts to enable autodiscovery for the nodes on the undercloud
+  as well as switching to the config-download by default.
+
+* Continued efforts around CI
+  We've made great strides in stablizing the CI as well as implementing zuul v3.
+  We need to continue to move our CI into fully native zuul v3 actions and
+  focus on developers ability to reproduce CI outside of the upstream.
+
+Thanks,
+Alex Schultz
+irc: mwhahaha
