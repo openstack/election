@@ -1,0 +1,18 @@
+I am submitting my self nomination to serve as the RefStack PTL for
+the Rocky development cycle. For the Rocky cycle, I will continue
+to focus efforts on moving the RefStack Server and Client into
+maintenance mode. Outstanding tasks include:
+
+	* Adding funtionality to upload subunit data for test results.
+  * Adding Tempest autoconfiguration to the client.
+  * Updating library dependencies.
+  * Providing consistent API documentation.
+
+In the previous cycle, the Tempest Autoconfig project was added to
+RefStack governance. Another goal of the Rocky cycle is to transition
+project leadership to the Tempest Autoconfig team, as this project is
+where the majority of future work is going to happen.
+
+Thank you,
+
+Chris Hoge
