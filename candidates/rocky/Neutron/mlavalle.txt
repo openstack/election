@@ -1,0 +1,57 @@
+Hello OpenStack Community,
+
+I write this to submit my candidacy for the Neutron PTL position during the
+Rocky cycle. I had the privilege of being the project's PTL for most of the
+Queens release series and want to have another opportunity helping the team and
+the community to deliver more and better networking  functionality.
+
+I have worked for the technology industry 37+ years. After many years in
+management, I decided to return to the "Light Side of the Force", the technical
+path, and during the San Diego Summit in 2012 told the Neutron (Quantum at the
+time) PTL that one day I wanted to be a member of the core team. He and the
+team welcomed me and that started the best period of my career, not only for
+the never ending learning experiences, but more importantly, for the many
+talented women and men that I have met along the way. Over these past few years
+I worked for Rackspace, helping them to deploy and operate Neutron in their
+public cloud, IBM in their Linux Technology Center, and currently for Huawei,
+as their Neutron upstream development lead.
+
+During the Queens release the team made significant progress in the following
+fronts:
+
+* Continued with the adoption of Oslo Versioned Objects in the DB layer
+* Implemented QoS rate limits for floating IPs
+* Delivered the FWaaS V2.0 API
+* Concluded the implementation of the logging API for security groups, which
+  implements a way to capture and store events related to security groups.
+* Continued moving externally referenced items to neutron-lib and adopting them
+  in Neutron and the Stadium projects
+* Welcomed VPNaaS back into the Stadium after the team put it back in shape
+* Improved team processes such as having a pre-defined weekly schedule for team
+  members to act as bug triagers, gave W+ to additional core members in
+  neutron-lib and re-scheduled the Neutron drivers meeting on alternate days
+  and hours to enable attendance of more people across different time zones
+
+Some of the goals that I propose for the team to pursue during the Rocky cycle
+are:
+
+* Finish the implementation of multiple port binding to solve the migration
+  between VIF types in a generic way so operators can switch easily between
+  backends. This is a joint effort with the Nova team
+* Implement QoS minimum bandwidth allocation in the Placement API to support
+  scheduling of instances based on the network bandwidth available in hosts.
+  This is another joint effort with the Nova team
+* Synchronize the adoption of the DB layer engine facade with the adoption of
+  Oslo Versioned Objects to avoid situations where they don't cooperate nicely
+* Implement port forwarding based on floating IPs
+* Continue moving externally referenced items to neutron-lib and adopting them
+  in Neutron and the Stadium projects. Finish documenting extensions in the API
+  reference. Start the move of generic DB functionality to the library
+* Expand the work done with the logging API in security groups to FWaaS v2.0
+* Continue efforts in expanding our team and making its work easier. While we
+  had some success during Queens, this is an area where we need to maintain our
+  focus
+
+Thank you for your consideration and for taking the time to read this
+
+Miguel Lavalle (mlavalle)
