@@ -1,0 +1,56 @@
+Hi,
+
+I'm Renat Akhmerov. I'm running for PTL of Mistral in Rocky.
+
+Mistral is a workflow service developed within the OpenStack community from
+the ground up.
+
+In queens we mainly focused on bugfixing, improving performance and
+documentation. Performance was again significantly improved (~100%)
+by optimizing DB operations and data schema (mostly additional indexex)
+and using caching technics. We also made Mistral more robust in various
+failure situations. To achieve that we came up with a number of protection
+mechanisms.
+
+The two other noticeable features we added are:
+
+* We can now start a Mistral workflow based on an existing workflow
+  execution, no matter if it's still running or finished. Given an ID of
+  an execution Mistral copies all needed parameters (input, env etc.) and
+  creates a new execution.
+* When creating a workflow execution, we can now pass an ID of the new
+  execution. If an execution with this ID already exists the REST endpoint
+  just returns details of this execution as if it was GET operation. If
+  not, it create a execution with this ID. Thus creation of workflow
+  execution can be idempotent.
+
+
+For the next cycle I'd like to propose the following roadmap:
+
+* Keep improving multi-node mode and HA
+* Rearchitect Mistral Scheduler, make it more suitable for HA
+* Optimize ‘join’ tasks
+* Close all the gaps in the documentation and restructure it so it is more
+  convenient to read and navigate
+* Usability
+  * New CLI/API (more consistent and human friendly interface)
+  * Debugging workflows
+  * Workflow failure analysis (error messages, navigate through nested
+    workflows etc.)
+* Refactor Actions subsystem
+  * Actions testability
+  * Move OpenStack actions into mistral-extra and with better test coverage
+    and usability
+
+Some of those items have now been in progress for a few months. We keep
+working on them and I hope most of them will be completed in the next
+cycle.
+
+Should you have any ideas on these points we're always happy to discuss and
+correct our plans.
+
+We're always happy to get new contributors on the project and always ready
+to help people interested in Mistral development get up to speed. The best
+way to get in touch with us is IRC channel #openstack-mistral.
+
+Renat
