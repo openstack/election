@@ -1,0 +1,56 @@
+I am announcing my candidacy for Mistral PTL for the Rocky release cycle.
+
+If you don't know me, I am d0ugal on Freenode. I have been working full time on
+OpenStack since the Icehouse release cycle in 2014. I started to contribute to
+Mistral in 2016 and joined the core team later that year. Since then I have
+been dedicating more of my time to the Mistral project. I am also a core in
+TripleO, which relies on Mistral. I am employed by Red Hat.
+
+Mistral has consistently been improving at a steady pace under the leadership
+of Renat, the current PTL, with well defined cycle goals. I hope to continue
+this work and focus our efforts in the following areas:
+
+* CI and testing
+
+  In the Queens cycle we made some key improvements here, we enabled voting on
+  the devstack CI jobs and transitioned to zuulv3 but we still have work to do.
+  The Tempest jobs can still be unstable and only exercise small portions of
+  the API. The coverage jobs have remained non-voting as they are unstable. We
+  don't test database migrations.
+
+* Documentation and Onboarding
+
+  I would like to put a stronger focus on documentation, to make the Mistral
+  onboarding process easier for new users, operators and contributors. Mistral
+  has proven itself to be very powerful and useful but I think we need to make
+  it easier and more attractive to new users. This will likely require an
+  overhaul of the documentation and a stricter requirement of documentation for
+  changes and additions.
+
+* Further work on mistral-extra
+
+  mistral-extra will provide a library of Actions that will let workflow
+  authors easily integrate with more services and tools. In Queens we made good
+  progress with mistral-lib, a new library for writing actions. In Rocky I
+  would like to see more progress with mistral-extra. The first addition is
+  likely to be Ansible integration and the relocation of the OpenStack actions
+  from the main Mistral repo. This work will increase Mistrals utility and
+  lower the barrier to entry for new workflow authors.
+
+* Consistency, Stability and HA
+
+  Some components, like the event engine have been added without HA taken into
+  consideration. I would like to see us resolve these and set a higher standard
+  for further additions to avoid this problem returning. The cron triggers
+  subsystem also doesn't meet the quality standard we should expect - enabling
+  it creates high load and it requires refactoring.
+
+
+These are some of my personal goals and ideas. However, I see the PTL role as
+much about coordination and collaboration. This is why I believe a focus on
+onboarding, documentation and stability would be best for the project. I hope
+to incorporate ideas from other community members and help everyone work more
+efficiently.
+
+I would love to speak to more new users and contributors. You can reach out to
+me directly or find me in #openstack-mistral.
