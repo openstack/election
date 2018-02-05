@@ -1,0 +1,10 @@
+Hi, everyone!
+
+I do not want to write a lot of redundant words and promises, so here is a
+brief summary:
+
+* I served as Rally PTL for 3 OpenStack cycles (plus 1 unofficial cycle)
+* We succeeded in finishing several big refactoring changes which blocked us
+  for years
+* There are a lot of things to be done, no time to stop and relax
+* I'm happy to announce my candidacy for the next OpenStack cycle
