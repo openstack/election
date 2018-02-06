@@ -1,0 +1,23 @@
+I would like to announce my self nomination for the PTL candidacy in
+Tricircle Rocky cycle. My name is Zhiyuan Cai, and my IRC handle is
+zhiyuan. I am currently the PTL of Tricircle for Queens cycle and have
+been actively participating in the development of this project since
+Mitaka cycle.
+
+During the Queens cycle, we begin to bring QoS and LBaas support to
+Tricircle, test scenario coverage is improved in our smoke test, we
+also start to solve the resource deletion reliability problem and have
+figured out a solution.
+
+For the coming Rocky cycle, here are some works we can focus on:
+
+* The QoS and LBaas features are not fully supported in Queens cycle
+  so we can improve them in Rocky cycle.
+* Implement the new cross-Neutron L3 networking model that doesn't
+  depend on host routes.
+* Finish the resource deletion reliability solution.
+
+Hope everyone will enjoy running and developing Tricircle.
+
+Thank you for your kind consideration of my candidacy.
+
