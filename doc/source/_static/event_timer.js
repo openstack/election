@@ -8,7 +8,7 @@ function startTime() {
     var hours = parseInt(delta / 3600) % 24;
     var minutes = parseInt( delta / 60 ) % 60;
     var seconds = delta % 60;
-    document.getElementById('eventtimer').innerHTML = days+'d'+hours+'h'+minutes+'m'+seconds+'s';
+    document.getElementById('eventtimer').innerHTML = days+'d '+hours+'h '+minutes+'m '+seconds+'s';
     var t = setTimeout(startTime, 500);
 }
 
