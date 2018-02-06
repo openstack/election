@@ -28,13 +28,6 @@ from six.moves.urllib.request import urlopen
 from openstack_election import owners
 from openstack_election import utils
 
-# Exclude the system / bot accounts
-# OpenStack Release Bot:
-# curl https://review.openstack.org/accounts/22816
-# OpenStack Proposal Bot
-# curl https://review.openstack.org/accounts/11131
-MINUS_BOT_ACCOUNTS = ["-i", "11131", "-i", "22816"]
-
 
 def main():
     start = utils.conf['timeframe']['start']
@@ -72,7 +65,7 @@ def main():
     os.chdir(os.path.dirname(args.rolls_dir))
     print("Starting roll generation @%s" % time.ctime())
     owners.main(["owners.py", "-a", args.after, "-b", args.before,
-                 "-o", args.tag, "-r", args.tag] + MINUS_BOT_ACCOUNTS)
+                 "-o", args.tag, "-r", args.tag])
     print("Finished roll generation @%s" % time.ctime())
 
     if args.with_stable:
@@ -80,7 +73,7 @@ def main():
         print("Starting (Stable) roll generation @%s" % time.ctime())
         owners.main(["owners.py", "-a", args.after, "-b", args.before,
                      "-o", tmp_dir, "-r", args.tag, "-n",
-                     "-s", "branch:^stable/.*"] + MINUS_BOT_ACCOUNTS)
+                     "-s", "branch:^stable/.*"])
         print("Finished (Stable) roll generation @%s" % time.ctime())
         shutil.copy("%s/_electorate.txt" % tmp_dir,
                     "./%s/stable_branch_maintenance.txt" % args.tag)
