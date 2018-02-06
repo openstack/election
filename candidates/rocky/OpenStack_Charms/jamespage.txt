@@ -1,0 +1,44 @@
+Hi All
+
+It will (probably) come as no surprise that I'd like to announce
+my candidacy for PTL of OpenStack Charms!
+
+We've made some good progress in the last cycle with some general
+housekeeping across the charms set, including removal of untested
+and generally unused database and messaging configurations. We've
+also finally managed to complete the deprecation of the Ceph charm
+with a well documented migration path to the newer Charms for
+operators to use.
+
+This is all great but we still have more housekeeping todo!
+
+Specifically we need to complete migration to using Python 3
+as the default execution environment for charms (this was started
+during Queens, but is not yet complete).
+
+I'd like to see more depth in the networking configurations and
+choices the charms present (we already have specs raised for
+Dynamic Routing and Network Segment support) and I think these
+will appeal to operators with more complex networking requirements
+for OpenStack.
+
+I think we also need to finish the work we started last year on
+improving the Telemetry storage; Aodh, Gnocchi and Ceilometer are
+all looking in pretty good shape now, but we need to add Panko to
+the fold!
+
+I still think we have a bit of an issue with level of entry to
+writing a charm - it turns out that writing a charm is dead easy;
+writing unit tests is also pretty easy and familiar with anyone
+who writes any amount of Python; enabling full functional testing
+of a charm is much harder.  Our historic tool choice (amulet) does
+not help in this area and I look forward to working with the dev
+team this cycle to move us onto something that's a) more directly
+maintainable and b) easier to engage with as we bring new charms
+and features onboard.
+
+I look forward to helping steer the project during the Rocky cycle!
+
+Cheers
+
+James
