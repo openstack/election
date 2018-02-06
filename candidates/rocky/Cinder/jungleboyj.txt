@@ -1,0 +1,24 @@
+All,
+
+This note is to declare my candidacy for the Cinder, Rocky PTL position.
+
+I can't believe that Queens is already drawing to a close and that I have been
+PTL for a whole release already.  I have enjoyed this new challenge and learned
+so much more about OpenStack as a result of being able to serve as a PTL.
+It has grown not only my understanding of Cinder but of OpenStack and what it has
+to offer our end users.
+
+I feel that the Queens release has gone smoothly and as I have been looking at
+the notes from the Queens PTG I think we have been successful at addressing many
+of the goals that the team set back in Denver.  We have been successful in getting
+the development team to take ownership of our documentation.  We have focused on
+fixing bugs in Cinder and improving our existing functions as I had hoped we would
+be able to do.  We have even seen some return to growth in the development team.
+All momentum that I would like to see us maintain.
+
+So, I hope that you all will give me a chance to apply what I have learned during
+the last 6 months by supporting me in another term as Cinder's PTL.
+
+Sincerely,
+
+Jay Bryant (jungleboyj)
