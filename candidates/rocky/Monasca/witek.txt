@@ -1,10 +1,10 @@
 Hello everyone,
 
-I would like to anounce my candidacy to continue as PTL of Monasca for the
+I would like to announce my candidacy to continue as PTL of Monasca for the
 Rocky release.
 
 I have worked for the project as core reviewer since 2015, acted as Release
-Management Liason in Ocata and Pike and had a privilage of being PTL in Queens
+Management Liaison in Ocata and Pike and had a privilege of being PTL in Queens
 release cycle. I have learnt a lot in this new role and it's a real pleasure to
 work with the great team and improve the project. Thank you for all your
 support.
