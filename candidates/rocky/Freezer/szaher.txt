@@ -1,0 +1,40 @@
+Hi All,
+
+I'm happy to announce my candidacy to be the Freezer PTL for the Rocky release
+cycle.
+
+In the past cycles we were working on stabilizing the core freezer engine to
+handle the backup and working on good schema to store freezer backups.
+
+We haven't seen much work in Queens as lots of team members are doing something
+different at the moment so it was mainly fixing bugs and maintaining freezer repos.
+The main thing we had in Queens was publishing freezer documentation to help
+users install freezer as well as understand how it works, hoping to get more
+contributors on board during up coming cycles.
+
+I think my main focus during Rocky will be to get freezer community going and
+get more members to join our freezer team.
+
+
+In the Rocky cycle, I think we are going to focus on the following items:
+
+
+* Working hard on the community part to keep it going and get more people on
+  boarded to freezer will be my top priority. I believe this is the most
+  important task for freezer PTL for the time being.
+
+* Maintain freezer core and fixing bugs
+
+* We have been facing some issues to on the move to oslo.db like do we keep
+ support for elasticsearch or not, also smooth updates between release if we
+ keep elasticsearch, so I think in Rocky this needs to be resolved by implementing
+ a driver for oslo.db as well as keep the elasticsearch support and working on upgrade methodology
+
+* Decouple backups from users (tightly coupled) and make it more related to
+  tenants
+
+
+I would be honoured to have your support.
+
+Thanks,
+Saad Zaher (szaher)
