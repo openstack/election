@@ -1,0 +1,20 @@
+
+This is my self-nomination to continue running as Tacker PTL for the
+Rocky cycle.
+
+Lots happened in Takcer Queens cycle. More documents, More features are coming
+in. VNFFG is enhanced, Kubernetes vim and container VNF are introduced.
+Private Zabbix based application monitoring is done too. Openstack client Tacker
+commands are also being developed.
+
+
+In Rocky cycle, I plan to
+
+- Continue to stablize tacker and make it of production quality.
+- Go on with tacker document.
+- Enhance container based VNF
+- Make a way to connect VM based VNF and container Based VNF
+- Introduce more types of VIM, such as public vim, SDN controller vim
+
+
+Thanks for your consideration.
