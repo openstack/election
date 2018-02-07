@@ -1,0 +1,30 @@
+Hi All,
+
+I am nominating myself for the PTL of Designate for the Rocky cycle.
+
+Designate has had a "rocky" road of recent (see what I did there?) but we are 
+now through to the other side. We have regular contributors, and are rebuilding
+the core team from them. 
+
+Previous cycles have been used to make sure we did not break the gate, and
+were still working well with other projects. Now we have the opportunity to 
+start adding new features, and highlighting to deployers and end users why
+they should use Designate as part of the cloud.
+
+I see some easy wins for us, that would make DNS admins lives better - simple
+things like letting a user set the serial number of a DNS Zone, or share access
+to a Zone (I have been converted on the last point).
+
+I also think that we have scope for one major feature, and I think we can 
+deliver a basic implementation of DNSSEC in this cycle, which would allow us
+to iterate on, and add more advanced behaviors later.
+
+Our Docs have improved dramatically over the last 18 months, but I think we 
+still have some way to go to make them really useful for end users, and
+as part of that I think we need to drive an engagement with our users and
+most importantly our deployers. This is a longer term goal for us, but I think
+the Rocky cycle is the time to start.
+
+Thanks for taking the time to read this,
+
+ - Graham Hayes
