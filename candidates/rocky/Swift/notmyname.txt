@@ -1,0 +1,12 @@
+I'd be honored to continue to serve as your PTL for OpenStack Swift.
+
+My general philosophy of being a PTL is to report externally what the
+community is working on, put the right people in contact with each
+other when something needs doing, and understanding what's going on in
+the broader storage ecosystem in order to provide some direction to
+the community on what's important.
+
+I've been privileged to have been PTL for Swift for quite some time,
+and I'm proud of all that we've been able to accomplish together as a
+community. As Swift PTL for the Rocky cycle, I will continue to do my
+best to make Swift used everywhere, every day, by everyone.
