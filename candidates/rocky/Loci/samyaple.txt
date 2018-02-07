@@ -1,0 +1,17 @@
+Hi everyone,
+
+I'd like to announce my candidacy to continue as the LOCI PTL for the Rocky
+cycle.
+
+As most of us know, LOCI is simple enough to mostly run itself, but we do still
+need someone to blame when things break. I purpose me for the task.
+
+The goals in Rocky i would like to see followed are short and sweet:
+ * Cross-gatting with Kolla-Ansible and OpenStack-Helm
+ * Build support for all the official OpenStack projects
+ * Automated build support for all official OpenStack projects like we currently have for Keystone
+
+To put those goals another way... better gates. Improvement there will go a long way.
+
+Thank you!
+SamYaple
