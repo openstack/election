@@ -1,0 +1,30 @@
+Dear all,
+
+I'd like to announce my candidacy for PTL of the Kuryr project for the Rocky
+cycle.
+
+After being part of the Kuryr community for a while and running the Upstream
+meetings for a while I'd be delighted to continue the Toni's great work as PTL for the
+next six months.
+
+I do intend to keep acting as an interface for the cross-project sessions and
+try to use this cycle to grow on requirements and stability.
+
+Within the Rocky cycle there's a few topics I'd like to care about:
+
+- Further enhance our testing coverage and SDN matrix.
+
+- Kubernetess network policies.
+
+- SRIOV support in Kuryr-Kubernetes.
+
+- Multi pool driver.
+
+- Further improve debugging and instrospection tools using Kubernetes plugins.
+
+Also, I'll try to support the visibility within the community and be a mediator
+for growing the project scope.
+
+Thanks a lot!
+
+Daniel Mellado (dmellado)
