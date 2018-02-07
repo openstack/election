@@ -1,0 +1,37 @@
+Hi Team,
+
+I'd like to announce my candidacy to continue as the OpenStack-Helm PTL
+for the Rocky cycle.
+
+I have been working in the OpenStack community for about a year and a half,
+helping lead upstream development efforts for my employer.  In this capacity
+I worked to bring new OpenStack contributors up to speed, help them understand
+and keep them aligned to community goals, and to be the voice of community and
+upstream-first development within my workplace.  More recently I have had the
+privilege of taking a more hands-on role with OpenStack-Helm, and have served
+as PTL as it transitioned to become an Official OpenStack project.
+
+OpenStack-Helm is a technically impressive project, and has the potential to
+not only redefine how OpenStack clouds are deployed and operated, but also to
+help redefine what it means to be an OpenStack cloud, by allowing simple
+stitching together of OpenStack and third-party components into custom
+solutions.  However, the reason OpenStack-Helm is successful is because of a
+passionate team of talented engineers who work tirelessly to push the boundary
+of what's possible with containerized technology.  I'm humbled daily by
+this team, and a key goal of mine in the Rocky cycle is to enable you, help
+you succeed, and grow your ranks.  I see PTL as a servant leader role.
+
+In the Rocky release I would like to accomplish the following:
+* Cut our 1.0 OpenStack-Helm release
+* Build the skills and experience of the existing OpenStack-Helm team members
+* Create mentoring/onboarding opportunities to onboard new team members quickly
+* Build gates for Ocata and begin to ensure compatibility with Pike and Queens
+* Develop and formalize our plans for OpenStack-Helm releases
+* Groom a more diverse core reviewer team
+* Harden OpenStack-Helm resiliency, scalability, and day 2 ops
+* Create ops-oriented documentation for OpenStack-Helm
+* Achieve OpenStack-Helm cross-gating with other projects
+* Collaborate with other project teams on their charts' development
+
+Thank you for your consideration!
+Matt McEuen
