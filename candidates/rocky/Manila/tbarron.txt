@@ -1,0 +1,69 @@
+Friends, Stackers, Community,
+
+I write to announce my candidacy for the Manila PTL position for the
+Rocky cycle.
+
+I've worked in in OpenStack since Juno and actively in Manila since
+Mitaka or so.  I've had more than one employer in that time and think
+it's fair to say that I have a reputation for working upstream in the
+interests of the community.  I am one of the more active Manila core
+reviewers, care about welcoming and engaging new contributors,
+encouraging participation, and at the same time preserving code quality
+and the integrity of the project.
+
+Ben Swartzlander is moving on to do other cool stuff, including work
+as a Manila contributor.  I expect that I share a rather general
+perception that no one can fill his shoes as PTL.  That said, I do
+think that if we work together to make Manila shine we can make it
+truly awesome!
+
+Some areas I'd like us to work on in the near future include:
+
+* python 3 support.  Upstream python 2 support is going away in 2020
+  if I understand correctly and between now and then distros are
+  likely to drop support for it.  We need to do our part to get manila
+  working with python 3 in devstack, and also with python3 when
+  deployed at scale via frameworks like kolla, charms, and TripleO.
+
+* performance and scale. We heard recently that Huawei public cloud is
+  running manila with thousands of shares and that Cern is planning to
+  move from 83 shares to over 2000 shares.  Let's get more success
+  stories with more back ends and build a common understanding of any
+  bottlenecks and work plans to address these.
+
+* side-by-side deployment with kubernetes and other clouds.  Whether
+  running kubernetes on OpenStack, deploying OpenStack services with
+  kubernetes, or building standalone software defined storage with
+  manila and cinder without other OpenStack services, this is a space
+  where we need to explore and be actively engage.
+
+* production quality open source software defined back ends.  Manila
+  has great proprietary storage back ends, but shouldn't we have open
+  source back ends that work reliably at scale as well?  We could make
+  the generic driver great in this regard, or build out distributed
+  file system back ends like cephfs with good data path HA and tenant
+  separation.  There are perhaps other alternatives that haven't
+  surfaced yet.  There's a lot of room here for innovation and
+  certainly demand from cloud operators on this front.
+
+* vendor participation: we have a mix of vendors introducing new
+  back ends, sustained participation from vendors with existing
+  back ends, and some back ends that no longer have attention from
+  their vendors even though -- working with a distro -- I see customers
+  indicating that they *want* to use those back ends if only the
+  vendors were engaged!  Let's welcome new vendors with open arms
+  and help all understand the mutual benefit of remaining involved
+  with manila as the community evolves and grows.
+
+Those are some of my ideas.  I offer them as much as anything to
+stimulate others working on manila to come to PTG and the Rocky cycle
+with their own initiatives.
+
+Also, if you haven't been working in manila and any of the above seems
+interesting (or just nuts) come on over!  Manila is a great place to
+contribute and innovate!
+
+Thanks for listening.
+
+-- Tom Barron (tbarron)
+
