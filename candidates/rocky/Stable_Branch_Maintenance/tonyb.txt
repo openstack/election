@@ -1,0 +1,40 @@
+Hi everybody!
+
+Just like with my queens platform[1] I've spent a lot of time asking myself
+*if* I should run for the PTL position. Given I'm writing this it's pretty
+obvious that I chose to ;P  From there the next question is why should the
+community elect me?  As many others have pointed out serving as PTL is an
+honour and my impact in the community has been reducing for the last 12 months
+:(
+
+For me the key is that the Stable Branch Maintenance "project" is in a major
+state of change with the very fuzzy Longer life stable branches[2] and the
+potential for altering the development cycle length[3] each of which has the
+potential to drastically alter how the stable branches operate, let alone
+combined.  Also since the Boston summit there has been a move to pull Operators
+and Developers together ins SIG[4] and I'm wondering if that makes sense for
+the stable branch maintainers.
+
+Like most teams we need more contributors, the stable branch gate while it
+enjoys a lot of stability for the last 2 cycles has begun to decline.  A
+disturbing trend we need to not just halt but reverse.
+
+So my objectives for the next cycle are:
+
+ 1. Work with the TC, UC, Operators and Developers to remove some of the fuzz
+    from the longer life stable branch discussion[5].
+ 2. Work with the TC to ensure that stable branch maintenance is considered
+    when we look at altering the development cycle
+ 3. Reduce the number of periodic gate failures back to Ocata levels.
+ 4. Give it all I can
+
+Thank you for reading.
+Tony.
+
+[1] http://git.openstack.org/cgit/openstack/election/plain/candidates/queens/Stable_Branch_Maintenance/tonyb.txt
+[2] For better ot worse LTS is so tied to the Ubuntu implementation that I avoid that acronym in this context
+[3] http://lists.openstack.org/pipermail/openstack-dev/2017-December/125473.html
+[4] https://ttx.re/introducing-sigs.html
+[5] http://lists.openstack.org/pipermail/openstack-dev/2017-November/124308.html [6]
+[6] No I don't really expect you to read it all now
+[7] If you read this far let me know next time you see me ;P
