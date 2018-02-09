@@ -1,0 +1,57 @@
+Hi Team,
+
+I would like to express my interest in continuing to serve as PTL of Cyborg
+project for Rocky release.
+
+I know we have been in a fanatic state for our first release preparation, but
+when I looked back to the early days when nomad (cyborg's prelife) project
+kicks off, I feel I'm blessed to be able to work with such a great community
+and a great dev team, to get where we are now.
+
+We took it in our pride that cyborg is one of the few project that is grown
+entirely in the OpenStack community from the very beginning: no vendor code
+dump, design discussion from scratch, write every bit of code from zero.
+Heck we even changed the project name based upon team voting/consensus.
+
+I have to admit I also had doubt on how a project like cyborg will really
+survive, given that we rely so heavily on community effort rather than
+single vendor human resource investment which is often guaranteed.
+And also the problem that we are such a young team that none of us is veteran
+OpenStacker. I'm then hugely encouraged and fascinated by how far we are able
+to get.
+
+For Pike, the three core members from three different companies came up with
+the basic framework. And for Queens, with more devs joining we will pulled of
+our own first implementation of the nested resource provider, a basic
+interaction framework between cyborg-conductor and nova-placement, a generic
+driver that will be a reference implementation for vendor drivers, Intel FPGA
+driver (our first vendor driver !), SPDK driver (the first software
+accelerator driver !), cyborg-agent resource tracker, and so on and so forth.
+I can't really ask more from this amazing team.
+
+Moreover for the First Contact SIG initiative, we also established a vibrant
+Cyborg China Dev community via Wechat group and  held many ad-hoc meetings.
+This effort has helped tremendously on our Queens delivery in the making. We
+also joined with Nova team to kickoff the Resource Management SIG which will
+help align the resource data modeling across OpenStack and other related
+open source communities.
+
+With Queens release work still lingering around, the plan for Rocky was
+actually bounced over several times during team discussion, and here are the
+items that in my mind are important target:
+
+(1) Adopt MS based development cadence. Queens was a chaotic process and I
+    think we learnt a hard lesson from it
+(2) Finishing up the implementation for Nova-Cyborg interaction spec.
+(3) Quota and multi-tenancy support
+(4) FPGA Programmability support
+(5) NVIDIA GPU/ARM SoC driver support
+(6) Meta data standardization. We might take a lesson from Device Tree.
+(7) Containerization support for Kubernetes DPI plugin.
+
+Thanks for your patience on reading through this long email. Again I want to
+express my will to continue serving cyborg project in Rocky and look forward
+to your support or any questions you might have.
+
+--
+Zhipeng (Howard) Huang
