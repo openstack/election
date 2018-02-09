@@ -144,3 +144,4 @@ candidates/rocky/Murano/zhurong.txt: Rong Zhu
 candidates/rocky/Solum/zhurong.txt: Rong Zhu
 candidates/rocky/Tacker/gongysh.txt: Yong Sheng Gong
 candidates/rocky/Zun/fengshengqin.txt: Feng Shengqin
+candidates/rocky/Zaqar/wanghao.txt: Wang Hao
