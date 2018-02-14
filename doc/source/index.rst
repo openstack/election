@@ -17,7 +17,7 @@ See `Election system`_, `PTL details`_ and `TC details`_.
 Previous elections
 ==================
 
-.. include:: ptl.rst
+.. .. include:: ptl.rst
 
 
 Election Officials
