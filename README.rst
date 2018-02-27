@@ -131,3 +131,5 @@ When TC Election ends:
   * edit doc/source/pike/tc.yaml
 * Commit the change and review the results
 * Send 'TC results'
+* Update tc-election-summary.py with election statistics
+* Send 'TC election statistics'
