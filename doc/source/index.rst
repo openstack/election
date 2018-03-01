@@ -67,8 +67,13 @@ openstack/election repository. See documentation below.
 
 .. _How to submit a candidacy:
 
-How to submit your candidacy
-============================
+How to submit a candidacy
+=========================
+
+Each candidate must nominate themselves for each elected position, and are
+encouraged to submit their own candidacy to gerrit, although where
+appropriate, others may submit a candidacy for those who have already
+self-nominated by other means.
 
 If you are not already familiar with OpenStack development workflow, see this
 more detailed documentation:
@@ -79,17 +84,21 @@ repository. Here are the required steps:
 
 * Clone the election repository:
   git clone git://git.openstack.org/openstack/election ; cd election
-* Create a new file candidates/newton/<project_name>/<irc_name>.txt
-  containing your candidate statement.
-* Commit your candidacy: git add candidates/newton/*/*.txt;
+* Create a new file candidates/<cycle>/<project_name>/<email_address>
+  containing the candidate statement.
+* Commit the candidacy: git add candidates/<cycle>/*/*;
   git commit -m "Adding <your_name> candidacy for <project_name>"
 * Submit your candidacy: git review
 
-For example if John Doe (jdoe on IRC) wants to become the Newton Nova PTL,
-he needs to write his candidacy to "candidates/newton/Nova/jdoe.txt"
+For example Dana Developer (ddev on IRC) would compose a platform in a file
+named "candidates/newton/Nova/dana\@inconnu.org" to submit a Newton Nova PTL
+candidacy.  The election webpage will display the candidacy as
+"Dana Developer (ddev)" based on the IRC nick stored in Dana's foundation
+member profile.
 
-After it's submitted to gerrit, verification and approval is being done by
-elections officials. Then the approved candidate list above is updated.
+After the candidacy is submitted to gerrit, verification and approval will
+be performed by elections officials, followed by an update to the approved
+candidate list.
 
 
 .. _PTL details:
@@ -138,12 +147,11 @@ Candidates
 ----------
 
 Any individual member of the foundation can propose their candidacy
-(except the last TC members who were elected at the previous election).
 
 Nominees proposes their candidacy by submitting a text file to the
 openstack/election repository. The file must be placed in
-candidates/<cycle>/TC/<candidate_irc_name>.txt.
-The candidacy is then confirmed by elections officials through gerrit vote.
+candidates/<cycle>/TC/<email_address>
+The candidacy is then confirmed by elections officials through gerrit.
 See above `How to submit a candidacy`_ documentation.
 
 
