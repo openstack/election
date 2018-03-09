@@ -1,20 +1,23 @@
 ---
 release: rocky
 
-tag: 'feb-2018-elections'
+tag: 'apr-2018-elections'
 
 timeframe:
   name: 'Pike-Queens'
-  start: '2017-02-22T23:59'
-  end: '2018-01-29T23:59'
-  email_deadline: '2018-02-01T00:00'
+  start: '2017-02-21T23:59'
+  end: '2018-02-28T23:59'
+  email_deadline: '2018-04-18T00:00'
 
-tc_seats: 6
+tc_seats: 7
 
 timeline:
-  - name: 'PTL Nomination'
-    start: '2018-01-29T23:59'
-    end:   '2018-02-7T23:45'
-  - name: 'PTL Election'
-    start: '2018-02-07T23:59'
-    end:   '2018-02-14T23:45'
+  - name: 'TC Nomination'
+    start: '2018-04-10T23:59'
+    end:   '2018-04-17T23:45'
+  - name: 'TC Campaigning'
+    start: '2018-04-17T23:45'
+    end: '2018-04-22T23:45'
+  - name: 'TC Election'
+    start: '2018-04-23T23:59'
+    end:   '2018-04-30T23:45'
