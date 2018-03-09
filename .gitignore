@@ -16,4 +16,9 @@ doc/source/*/*.rst
 doc/source/ptl.rst
 doc/source/tc.rst
 doc/source/events.rst
+doc/source/configuration.rst
+doc/source/results/*/announce_ptl.rst
+doc/source/results/*/announce_tc.rst
+doc/source/results/*/ptl.rst
+doc/source/results/*/tc.rst
 rolls
