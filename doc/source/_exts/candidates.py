@@ -98,7 +98,7 @@ def build_lists(app):
         ""
     ]
     archived_dir = os.path.join(".", "doc", "source", "results")
-    for previous in os.listdir(archived_dir):
+    for previous in sorted(os.listdir(archived_dir), reverse=True):
         if build_archive(previous, "ptl"):
             previous_toc.append("    results/%s/ptl.rst" % previous)
         if build_archive(previous, "tc"):
