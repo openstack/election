@@ -207,12 +207,11 @@ def tc_election_season():
 
 
     print(email_text)
-def tc_nominations_kickoff(seats, end_nominations, old_seats, voting_start,
+def tc_nominations_kickoff(seats, end_nominations, voting_start,
                            voting_end, time_frame, start_release,
                            end_release, start_nominations, end_nomination,
                            campaign_start, campaign_end, election_start,
-                           election_end, previous_election_results_email,
-                           tagged_repo_url, future_release):
+                           election_end, future_release):
     email_text="""
                 Nominations for the Technical Committee positions (%s positions)
                 are now open and will remain open until %s.
@@ -260,7 +259,6 @@ def tc_nominations_kickoff(seats, end_nominations, old_seats, voting_start,
 
     print(email_text % (seats,
                         end_nominations,
-                        old_seats,
                         voting_start,
                         voting_end,
                         time_frame,
@@ -272,8 +270,6 @@ def tc_nominations_kickoff(seats, end_nominations, old_seats, voting_start,
                         campaign_end,
                         election_start,
                         election_end,
-                        previous_election_results_email,
-                        tagged_repo_url,
                         future_release))
 
 def tc_nominations_last_days(end_nominations):
