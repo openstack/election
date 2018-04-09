@@ -1,5 +1,6 @@
 ---
 release: rocky
+election_type: tc
 
 tag: 'apr-2018-elections'
 

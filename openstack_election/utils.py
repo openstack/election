@@ -190,19 +190,34 @@ def dir2name(name, projects):
 
 
 def build_candidates_list(election=conf['release']):
+    def is_tc_election():
+        return conf.get('election_type', '').lower() == 'tc'
+
     election_path = os.path.join(CANDIDATE_PATH, election)
     if os.path.exists(election_path):
         project_list = os.listdir(election_path)
     else:
         project_list = []
+
+    if is_tc_election():
+        project_list = list(filter(
+            lambda p: p in ['TC'],
+            project_list
+        ))
+    else:
+        project_list = list(filter(
+            lambda p: p not in ['TC'],
+            project_list
+        ))
+
     project_list.sort()
     candidates_lists = {}
     for project in project_list:
         project_prefix = os.path.join(CANDIDATE_PATH, election, project)
-        file_list = filter(
+        file_list = list(filter(
             lambda x: x.endswith(".txt"),
             os.listdir(project_prefix),
-        )
+        ))
         candidates_list = []
         for candidate_file in file_list:
             filepath = os.path.join(project_prefix, candidate_file)
