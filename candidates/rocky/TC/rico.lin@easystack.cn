@@ -1,0 +1,69 @@
+Dear all,
+
+I'd like to announce my candidacy for a seat on the OpenStack Technical
+Committee.
+I have been in this community since 2014. And been deeply involved with
+technical contribution [1], mostly around Orchestration service which allows
+me to work on integration and management resources cross-projects. Also, I
+have served as PTL for three cycles. Which allows me to learn better on how
+we can join users and operators' experiences and requirements and integrated
+with development workflow and technical decision processes.
+
+
+Here are my major goals with this seat in TC:
+
+- Application:
+We've updated our resolution with [3] and saying we care about what
+application needs on top of OpenStack. As for jobs from few projects are
+taking the role and thinking about what application needs, we should provides
+help with setting up community goals, making resolutions, or define what are
+top priority applications (can be a shor term definition) we needs to focus on
+and taking action items/guidelines and finding weakness, so others from
+community can follow (if they agree with the goals, but got no idea on what
+they can help, IMO this will be a good stuff).
+
+- Cooperate with Users, Operators, and Developers:
+We have been losing some communication cross Users, Operators, and Developers.
+And it's never a good thing when users can share use cases, ops shares
+experiences, developers shares code, but they won't make it to one another not
+if a user provide developers by them self. In this case, works like StoryBoard
+should be in our first priority. We need a more solid way to get user feedback
+for developers, so we can actually learn what's working or not for each
+feature. And maybe it's considerable, to strengthen the communication between
+TCs and UCs (User Committee).
+
+- Diversity:
+The math is easy. [2] shows we got around one-third of users from Asia (with
+75% of users in China). Also IIRC, around same percentage of developers.
+But we got 0 in TC. The actual works are hard. We needs forwards our
+technical guideline to developers in Asia and provide chances to get more
+feedback from them, so we can provides better technical resolutions which
+should be able to tight developers all together. Which I think I'm a good
+candidate for this.
+
+- Reach out for new blood:
+With cloud getting more mature. It's normal that cloud developers needs to
+works in multiple communities, and they might comes and goes (mostly based
+on their job definition from their enterprise), so we need more new
+developers. And most important is to provides more chances for them to stay.
+Which I know there are many new join developers struggle with finding ways
+to fit in each project. We needs ways to shorten their onboarding time, so
+they can make good works during they're in our community.
+
+- Paying the debt:
+Our community has done a great job on changing our resolutions and
+guidelines to adopt new trends and keep ourself sharp. TCs try really hard
+to migrate our path and do the magic. IMO, we need more effects on some
+specific jobs (like cross-project for Application infra. or Storyboard
+migrate), I do like to keep that going and closing our technical debts,
+so we can have room for new.
+
+
+Thank you for your consideration.
+
+Best Regards,
+Rico Lin (ricolin)
+
+[1] http://stackalytics.com/?release=all&user_id=rico-lin&metric=person-day
+[2] https://www.openstack.org/assets/survey/OpenStack-User-Survey-Nov17.pdf
+[3] https://review.openstack.org/#/c/447031/5/resolutions/20170317-cloud-applications-mission.rst
