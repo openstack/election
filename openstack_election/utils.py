@@ -19,10 +19,7 @@ import json
 import os
 import pickle
 import pytz
-import re
 import requests
-import six
-import subprocess
 import time
 import yaml
 
@@ -30,6 +27,7 @@ from six.moves.urllib.parse import quote_plus
 from six.moves.urllib.request import urlopen
 
 from openstack_election import config
+from openstack_election import owners
 
 
 # Library constants
@@ -85,14 +83,7 @@ def gerrit_query(url, params=None):
 
 
 def get_email(filepath):
-    cmd = ["git", "log", "--follow", "--format=%aE", filepath]
-    git = subprocess.Popen(cmd, stdout=subprocess.PIPE)
-    email = git.stdout.readlines()[-1][:-1]
-    # Force to text_type in py2 or py3
-    if isinstance(email, six.text_type):
-        return email
-    else:
-        return email.decode('utf-8')
+    return os.path.basename(filepath)
 
 
 def get_gerrit_account(email):
@@ -105,30 +96,27 @@ def get_gerrit_account(email):
     return accounts[0]
 
 
-def get_fullname(filepath):
+def get_irc(member, filepath=None):
+    member_data = member.get('data', [{}])[0]
+    return member_data.get('irc', '')
+
+
+def get_fullname(member, filepath=None):
     # Check if filepath is an exception
-    if exceptions is None:
+    if filepath and exceptions is None:
         load_exceptions()
-    if filepath in exceptions:
+    if filepath and filepath in exceptions:
         return exceptions[filepath]
 
-    # Otherwise query gerrit using git log email
-    email = get_email(filepath)
-    fullname = get_gerrit_account(email)['name']
+    member_data = member.get('data', [{}])[0]
+    try:
+        full_name = '%(first_name)s %(last_name)s' % (member_data)
+    except KeyError:
+        print('[I] Unable to retrieve fullname from OSF member DB for %s' %
+              (member))
+        full_name = u''
 
-    # Remove parenthesis content
-    fullname = re.sub(r"\([^)]*\)", "", fullname)
-    # Strip double space and trailing spaces
-    fullname = re.sub(r"  ", " ", fullname).strip()
-
-    # Make sure first letter of first and last component are upper-case
-    s = fullname.split()
-    fullname = (
-        [s[0][0].upper() + s[0][1:]] +
-        s[1:-1] +
-        [s[-1][0].upper() + s[-1][1:]]
-    )
-    return u" ".join(fullname)
+    return full_name
 
 
 def get_reviews(query):
@@ -215,20 +203,22 @@ def build_candidates_list(election=conf['release']):
     for project in project_list:
         project_prefix = os.path.join(CANDIDATE_PATH, election, project)
         file_list = list(filter(
-            lambda x: x.endswith(".txt"),
+            lambda x: '@' in x,
             os.listdir(project_prefix),
         ))
         candidates_list = []
         for candidate_file in file_list:
             filepath = os.path.join(project_prefix, candidate_file)
+            email = get_email(filepath)
+            member = owners.lookup_member(email)
             candidates_list.append(
                 {
                     'url': ('%s/%s/plain/%s' %
                             (CGIT_URL, ELECTION_REPO,
                              quote_plus(filepath, safe='/'))),
-                    'ircname': candidate_file[:-4].replace('`', r'\`'),
-                    'email': get_email(filepath),
-                    'fullname': get_fullname(filepath)
+                    'email': email,
+                    'ircname': get_irc(member),
+                    'fullname': get_fullname(member, filepath=filepath)
                 })
 
         candidates_list.sort(key=lambda x: x['fullname'])
