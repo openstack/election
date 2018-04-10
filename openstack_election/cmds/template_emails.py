@@ -219,8 +219,8 @@ def tc_nominations_kickoff(seats, end_nominations, voting_start,
                 All nominations must be submitted as a text file to the
                 openstack/election repository as explained on the election website[1].
 
-                Please note that the name of the file should be the candidates
-                IRC nick *not* full-name.
+                Please note that the name of the file should match an email
+                address in the foundation member profile of the candidate.
 
                 Also for TC candidates election officials refer to the community
                 member profiles at [2] please take this opportunity to ensure that
