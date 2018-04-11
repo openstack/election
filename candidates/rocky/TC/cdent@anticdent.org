@@ -1,0 +1,57 @@
+
+Hi,
+
+I'm announcing my candidacy to continue as a member of the Technical Committee.
+When I ran a year ago, one of my goals was to foster more, and more
+transparent, communication among the many parts of the OpenStack community. The
+TC has made progress by being more overt and intentional in reaching out to
+others and sharing information in an active way. I helped, with my weekly TC
+Reports and other writing related to the TC [1], but there is plenty more to
+do, especially as the infrastructure as a service community grows and mutates
+to include CI/CD, Edge and container-related activities. Enough left to do that
+I would like to continue for another term.
+
+The growth of projects under the OpenStack Foundation umbrella will present
+opportunities and challenges. We'll be able to deal with those most effectively
+by having good communication hygiene: over communicating in a written and
+discoverable fashion.
+
+Changes in the shape of the community will impact the role of the TC and its
+members. The TC has been something of a high-level judiciary within the
+OpenStack technical community but increasingly will need to take on a role as a
+representative of the community that develops what has traditionally been known
+as "OpenStack" to the other nearby communities that are also now "OpenStack".
+
+My candidacy note from last year [2] remains relevant and a good expression of
+my opinions about governance and the overarching themes that concern me:
+communication, openness, lowering boundaries between people and platforms,
+maintaining developer sanity [3].
+
+If I'm elected again I intend to encourage engagement by continuing with the
+TC Report, making sure that we include the right people when making decisions,
+and using media that is accessible to people of many languages and time zones.
+
+I will also actively drive discussion and policy that leads to people who are
+users of OpenStack in the broadest sense finding it easier to be regularly
+active contributors to the open source projects which create OpenStack. We are
+making progress with this, but much of OpenStack is still the domain of (often
+overburdened) "professionals". Breaking into those domains needs to be simpler
+and encouraged for the benefit of all concerned.
+
+If you would like to look at my past voting record on governance changes that
+can be found here:
+
+https://review.openstack.org/#/q/project:openstack/governance+reviewedby:%22Chris+Dent+%253Ccdent%2540anticdent.org%253E%22
+
+If you would like me to continue, please vote for me in the upcoming elections.
+If you would like someone else, please vote for them. If you would like to
+give it a try yourself, then please run; you have until the end of the (UTC)
+day of April 17th to submit your candidacy. See the following for details:
+
+https://governance.openstack.org/election/#how-to-submit-a-candidacy
+
+Thanks for reading and your consideration.
+
+[1] https://anticdent.org/tag/tc.html
+[2] https://git.openstack.org/cgit/openstack/election/plain/candidates/pike/TC/cdent.txt
+[3] https://anticdent.org/openstack-developer-satisfaction.html
