@@ -1,0 +1,51 @@
+Hi everyone,
+
+Growing new leaders has been a focus of the Technical Committee over the
+last year: first discussed at the leadership workshop with Board members
+in March 2017, then included in the TC "vision for 2019"[1] adopted in June.
+
+As part of this objective, we actively looked for new stewards in our
+community, provided opportunities to step up, and rotated key roles to
+develop a deeper bench of ready leaders. But we never applied those ideas
+for the TC chair position itself: I have been the only candidate and holding
+that position since the creation of that governance body in 2012. The main
+reason for it is that tracking everything that's happening is a significant
+commitment, and the Foundation is happy with me investing that time in. That
+said, it's not ideal to have a role that only one person can fill, so it's
+time for a change.
+
+I am announcing my candidacy for a position on the OpenStack Technical
+Committee in the upcoming election. However, if I'm elected I won't be a
+candidate to the chair position for the upcoming TC session. To ensure a
+seamless transition I will actively support the person who will be chosen
+by the TC members. In all cases I'll be as involved with the TC activities
+as I've always been.
+
+In my opinion our vision for 2019[1] is still current. We have a lot of
+work ahead of us to fully implement it, especially around the concept of
+"Constellations" (representation of groups of OpenStack components that
+answer a specific use case). Beyond that, our main challenge is to continue
+to adapt OpenStack governance to the evolving needs of the project. Most of
+our processes and structures come from back when we doubled activity every
+year, when our main focus was to survive that meteoritic growth. With
+OpenStack getting more mature and having more adoption, we need to rethink
+those processes and structures with long-term sustainability in mind.
+Finally, we need to navigate a transition where everything produced by
+our community will no longer necessarily be called "OpenStack", starting
+with Zuul being given its own separate branding.
+
+If you're passionate about open source project governance and interested
+in tackling those challenges, please consider running for the Technical
+Committee ! Several of the current members won't be running for re-election,
+so seats are up for grabs.  We track current proposed changes on a Tracker[2],
+track work items on StoryBoard[3], and usually meet in person at Summits and
+PTGs. You can read past weekly "TC status update" emails to get a better
+idea of the type of things we cover. I would say the time commitment is
+between 2 and 6 hours a week. Join us !
+
+[1] https://governance.openstack.org/tc/resolutions/20170404-vision-2019.html
+[2] https://wiki.openstack.org/wiki/Technical_Committee_Tracker
+[3] https://storyboard.openstack.org/#!/project/923
+
+-- 
+Thierry Carrez (ttx)
