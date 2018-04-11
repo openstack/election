@@ -97,8 +97,11 @@ def get_gerrit_account(email):
 
 
 def get_irc(member, filepath=None):
-    member_data = member.get('data', [{}])[0]
-    return member_data.get('irc', '')
+    irc = ''
+    member_data = member.get('data', [])
+    if member_data:
+        irc = member_data[0].get('irc', '')
+    return irc
 
 
 def get_fullname(member, filepath=None):
@@ -108,13 +111,13 @@ def get_fullname(member, filepath=None):
     if filepath and filepath in exceptions:
         return exceptions[filepath]
 
-    member_data = member.get('data', [{}])[0]
-    try:
-        full_name = '%(first_name)s %(last_name)s' % (member_data)
-    except KeyError:
-        print('[I] Unable to retrieve fullname from OSF member DB for %s' %
-              (member))
-        full_name = u''
+    full_name = u''
+    member_data = member.get('data', [])
+    if member_data:
+        first_name = member_data[0].get('first_name', '')
+        last_name = member_data[0].get('last_name', '')
+        if first_name or last_name:
+            full_name = first_name + ' ' + last_name
 
     return full_name
 
