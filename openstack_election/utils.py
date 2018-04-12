@@ -180,10 +180,11 @@ def dir2name(name, projects):
     raise ValueError(('%s does not match any project' % (name)))
 
 
-def build_candidates_list(election=conf['release']):
-    def is_tc_election():
-        return conf.get('election_type', '').lower() == 'tc'
+def is_tc_election():
+    return conf.get('election_type', '').lower() == 'tc'
 
+
+def build_candidates_list(election=conf['release']):
     election_path = os.path.join(CANDIDATE_PATH, election)
     if os.path.exists(election_path):
         project_list = os.listdir(election_path)

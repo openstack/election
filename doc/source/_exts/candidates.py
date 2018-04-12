@@ -18,6 +18,10 @@ import jinja2.environment
 import os
 import yaml
 
+from docutils import nodes
+from docutils.parsers.rst import Directive
+from docutils.statemachine import ViewList
+from sphinx.util.nodes import nested_parse_with_titles
 from openstack_election import utils
 
 
@@ -107,6 +111,25 @@ def build_lists(app):
     open(toc, "w").write("\n".join(previous_toc))
 
 
+class CandidatesDirective(Directive):
+    def run(self):
+        rst = '.. include:: '
+        if utils.is_tc_election():
+            rst += 'tc.rst'
+        else:
+            rst += 'ptl.rst'
+
+        result = ViewList()
+        for idx, line in enumerate(rst.splitlines()):
+            result.append(line, 'CandidatesDirective', idx)
+        node = nodes.paragraph()
+        node.document = self.state.document
+        nested_parse_with_titles(self.state, result, node)
+        return node.children
+
+
 def setup(app):
     app.info('loading candidates extension')
     app.connect('builder-inited', build_lists)
+    app.add_directive('candidates', CandidatesDirective)
+    return {'version': '0.1'}
