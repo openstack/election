@@ -184,6 +184,18 @@ def is_tc_election():
     return conf.get('election_type', '').lower() == 'tc'
 
 
+def election_is_running():
+    # Assume that the start of the first item in and the end of the last
+    # defines is a reasonable approximation to "election is running"
+    timeline = conf.get('timeline')
+    if timeline:
+        start = timeline[0]['start']
+        end = timeline[-1]['end']
+        now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
+        return start <= now <= end
+    return False
+
+
 def build_candidates_list(election=conf['release']):
     election_path = os.path.join(CANDIDATE_PATH, election)
     if os.path.exists(election_path):

@@ -113,6 +113,9 @@ def build_lists(app):
 
 class CandidatesDirective(Directive):
     def run(self):
+        if not utils.election_is_running():
+            return []
+
         rst = '.. include:: '
         if utils.is_tc_election():
             rst += 'tc.rst'
