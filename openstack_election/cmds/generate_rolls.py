@@ -26,6 +26,24 @@ from openstack_election import owners
 from openstack_election import utils
 
 
+def change_owners_options_proxy(after, before, ref, outdir='./', sieve=None,
+                                no_extra_atcs=False):
+    options = argparse.Namespace()
+
+    options.config = None
+    options.ignore = []
+
+    options.after = after
+    options.before = before
+    options.outdir = outdir
+    options.ref = ref
+
+    options.no_extra_atcs = no_extra_atcs
+    options.sieve = sieve
+
+    return options
+
+
 def main():
     start = utils.conf['timeframe']['start']
     end = utils.conf['timeframe']['end']
@@ -61,16 +79,20 @@ def main():
 
     os.chdir(os.path.dirname(args.rolls_dir))
     print("Starting roll generation @%s" % time.ctime())
-    owners.main(["owners.py", "-a", args.after, "-b", args.before,
-                 "-o", args.tag, "-r", args.tag])
+    options = change_owners_options_proxy(args.after, args.before,
+                                          args.tag, args.tag)
+    owners.main(options)
     print("Finished roll generation @%s" % time.ctime())
 
     if args.with_stable:
         tmp_dir = tempfile.mkdtemp(prefix='election.')
         print("Starting (Stable) roll generation @%s" % time.ctime())
-        owners.main(["owners.py", "-a", args.after, "-b", args.before,
-                     "-o", tmp_dir, "-r", args.tag, "-n",
-                     "-s", "branch:^stable/.*"])
+        # owners.main() potentially mutates options so create a fresh one
+        options = change_owners_options_proxy(args.after, args.before,
+                                              args.tag, tmp_dir,
+                                              no_extra_atcs=True,
+                                              sieve="branch:^stable/.*")
+        owners.main(options)
         print("Finished (Stable) roll generation @%s" % time.ctime())
         shutil.copy("%s/_electorate.txt" % tmp_dir,
                     "./%s/stable_branch_maintenance.txt" % args.tag)
