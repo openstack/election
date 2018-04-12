@@ -20,6 +20,7 @@ import os
 import pickle
 import pytz
 import requests
+import sys
 import time
 import yaml
 
@@ -27,7 +28,6 @@ from six.moves.urllib.parse import quote_plus
 from six.moves.urllib.request import urlopen
 
 from openstack_election import config
-from openstack_election import owners
 
 
 # Library constants
@@ -52,6 +52,64 @@ def requester(url, params={}, headers={}):
     return retry.get(url=url, params=params, headers=headers)
 
 
+def decode_json(raw):
+    """Trap JSON decoding failures and provide more detailed errors"""
+
+    # Gerrit's REST API prepends a JSON-breaker to avoid XSS vulnerabilities
+    if raw.text.startswith(")]}'"):
+        trimmed = raw.text[4:]
+    else:
+        trimmed = raw.text
+
+    # Try to decode and bail with much detail if it fails
+    try:
+        decoded = json.loads(trimmed)
+    except Exception:
+        print('\nrequest returned %s error to query:\n\n    %s\n'
+              '\nwith detail:\n\n    %s\n' % (raw, raw.url, trimmed),
+              file=sys.stderr)
+        raise
+    return decoded
+
+
+def query_gerrit(method, params={}):
+    """Query the Gerrit REST API"""
+
+    # The base URL to Gerrit REST API
+    GERRIT_API_URL = 'https://review.openstack.org/'
+
+    raw = requester(GERRIT_API_URL + method, params=params,
+                    headers={'Accept': 'application/json'})
+    return decode_json(raw)
+
+
+def get_from_cgit(project, obj, params={}):
+    """Retrieve a file from the cgit interface"""
+
+    url = 'http://git.openstack.org/cgit/' + project + '/plain/' + obj
+    raw = requester(url, params=params,
+                    headers={'Accept': 'application/json'})
+    return yaml.safe_load(raw.text)
+
+
+def lookup_member(email):
+    """A requests wrapper to querying the OSF member directory API"""
+
+    # The OpenStack foundation member directory lookup API endpoint
+    MEMBER_LOOKUP_URL = 'https://openstackid-resources.openstack.org/'
+
+    # URL pattern for querying foundation members by E-mail address
+    raw = requester(MEMBER_LOOKUP_URL + '/api/public/v1/members',
+                    params={'filter[]': [
+                        'group_slug==foundation-members',
+                        'email==' + email,
+                        ]},
+                    headers={'Accept': 'application/json'},
+                    )
+
+    return decode_json(raw)
+
+
 def load_exceptions():
     global exceptions
     exceptions = {}
@@ -73,6 +131,7 @@ def gerrit_datetime(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S %z')
 
 
+# TODO(tonyb): this is now basically a duplicate of query_gerrit()
 def gerrit_query(url, params=None):
     r = requester(url, params=params)
     if r.status_code == 200:
@@ -226,7 +285,7 @@ def build_candidates_list(election=conf['release']):
         for candidate_file in file_list:
             filepath = os.path.join(project_prefix, candidate_file)
             email = get_email(filepath)
-            member = owners.lookup_member(email)
+            member = lookup_member(email)
             candidates_list.append(
                 {
                     'url': ('%s/%s/plain/%s' %

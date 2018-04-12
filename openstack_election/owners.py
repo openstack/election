@@ -21,12 +21,11 @@ from __future__ import print_function
 
 import csv
 import datetime
-import json
 import os
 import sys
-
-import requests
 import yaml
+
+from openstack_election import utils
 
 try:
     from string import maketrans
@@ -89,73 +88,6 @@ def date_merged(change, after=None, before=None):
         return None
 
     return date
-
-
-def requester(url, params={}, headers={}):
-    """A requests wrapper to consistently retry HTTPS queries"""
-
-    # Try up to 3 times
-    retry = requests.Session()
-    retry.mount("https://", requests.adapters.HTTPAdapter(max_retries=3))
-    return retry.get(url=url, params=params, headers=headers)
-
-
-def decode_json(raw):
-    """Trap JSON decoding failures and provide more detailed errors"""
-
-    # Gerrit's REST API prepends a JSON-breaker to avoid XSS vulnerabilities
-    if raw.text.startswith(")]}'"):
-        trimmed = raw.text[4:]
-    else:
-        trimmed = raw.text
-
-    # Try to decode and bail with much detail if it fails
-    try:
-        decoded = json.loads(trimmed)
-    except Exception:
-        print('\nrequest returned %s error to query:\n\n    %s\n'
-              '\nwith detail:\n\n    %s\n' % (raw, raw.url, trimmed),
-              file=sys.stderr)
-        raise
-    return decoded
-
-
-def query_gerrit(method, params={}):
-    """Query the Gerrit REST API"""
-
-    # The base URL to Gerrit REST API
-    GERRIT_API_URL = 'https://review.openstack.org/'
-
-    raw = requester(GERRIT_API_URL + method, params=params,
-                    headers={'Accept': 'application/json'})
-    return decode_json(raw)
-
-
-def get_from_cgit(project, obj, params={}):
-    """Retrieve a file from the cgit interface"""
-
-    url = 'http://git.openstack.org/cgit/' + project + '/plain/' + obj
-    raw = requester(url, params=params,
-                    headers={'Accept': 'application/json'})
-    return yaml.safe_load(raw.text)
-
-
-def lookup_member(email):
-    """A requests wrapper to querying the OSF member directory API"""
-
-    # The OpenStack foundation member directory lookup API endpoint
-    MEMBER_LOOKUP_URL = 'https://openstackid-resources.openstack.org/'
-
-    # URL pattern for querying foundation members by E-mail address
-    raw = requester(MEMBER_LOOKUP_URL + '/api/public/v1/members',
-                    params={'filter[]': [
-                        'group_slug==foundation-members',
-                        'email==' + email,
-                        ]},
-                    headers={'Accept': 'application/json'},
-                    )
-
-    return decode_json(raw)
 
 
 def main(options):
@@ -241,17 +173,17 @@ def main(options):
     # TODO(fungi): make this a configurable option so that you can
     # for example supply a custom project list for running elections
     # in unofficial teams
-    gov_projects = get_from_cgit('openstack/governance',
-                                 'reference/projects.yaml',
-                                 {'h': ref})
+    gov_projects = utils.get_from_cgit('openstack/governance',
+                                       'reference/projects.yaml',
+                                       {'h': ref})
 
     # The set of retired or removed "legacy" projects from governance
     # are merged into the main dict if their retired-on date falls
     # later than the after parameter for the qualifying time period
     # TODO(fungi): make this a configurable option
-    old_projects = get_from_cgit('openstack/governance',
-                                 'reference/legacy.yaml',
-                                 {'h': ref})
+    old_projects = utils.get_from_cgit('openstack/governance',
+                                       'reference/legacy.yaml',
+                                       {'h': ref})
     for project in old_projects:
         for deliverable in old_projects[project]['deliverables']:
             retired = old_projects[project]['deliverables'][deliverable].get(
@@ -277,7 +209,7 @@ def main(options):
     # in governance during transitions and also to filter out repos
     # listed in governance which don't actually exist
     ger_repos = dict(
-        [(x.split('/')[-1], x) for x in query_gerrit('projects/')])
+        [(x.split('/')[-1], x) for x in utils.query_gerrit('projects/')])
 
     # This will be populated with change owners mapped to the
     # project-teams maintaining their respective Git repositories
@@ -321,7 +253,7 @@ def main(options):
                     offset = 0
                     changes = []
                     while offset >= 0:
-                        changes += query_gerrit('changes/', params={
+                        changes += utils.query_gerrit('changes/', params={
                             'q': 'project:%s %s' % (ger_repos[repo], match),
                             'n': '100',
                             'start': offset,
@@ -367,7 +299,7 @@ def main(options):
                         if new:
                             # Get the set of all E-mail addresses
                             # Gerrit knows for this owner's account
-                            emails = query_gerrit(
+                            emails = utils.query_gerrit(
                                 'accounts/%s/emails'
                                 % change['owner']['_account_id'])
 
@@ -552,7 +484,7 @@ def main(options):
                     'addresses found for account %s' % owner, file=sys.stderr)
                 continue
         for email in [owners[owner]['preferred']] + owners[owner]['extra']:
-            member = lookup_member(email)
+            member = utils.lookup_member(email)
             if member['data']:
                 owners[owner]['member'] = member['data'][0]['id']
                 continue
