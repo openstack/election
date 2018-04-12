@@ -112,17 +112,23 @@ def dumper(data, stream):
 
 
 def normalize_email(email):
-    """Lower-case the domain part of E-mail addresses to better spot
+    """Normalize email addresses to make it easier to spot duplicates
+
+    Lower-case the domain part of E-mail addresses to better spot
     duplicate entries, since the domain part is case-insensitive
-    courtesy of DNS while the local part is not necessarily"""
+    courtesy of DNS while the local part is not necessarily
+    """
     local, domain = email.split('@')
     domain = domain.lower()
     return '%s@%s' % (local, domain)
 
 
 def normalize_project(project):
-    """Replace spaces and hyphens with underscores in project teams
-    and then lower-case them, for more convenient filenames"""
+    """Normalize project names for consistent failnames
+
+    Replace spaces and hyphens with underscores in project teams
+    and then lower-case them, for more convenient filenames
+    """
     return project.translate(maketrans(' -', '__')).lower()
 
 
@@ -177,7 +183,7 @@ def decode_json(raw):
     # Try to decode and bail with much detail if it fails
     try:
         decoded = json.loads(trimmed)
-    except:
+    except Exception:
         print('\nrequest returned %s error to query:\n\n    %s\n'
               '\nwith detail:\n\n    %s\n' % (raw, raw.url, trimmed),
               file=sys.stderr)
@@ -212,14 +218,13 @@ def lookup_member(email):
     MEMBER_LOOKUP_URL = 'https://openstackid-resources.openstack.org/'
 
     # URL pattern for querying foundation members by E-mail address
-    raw = requester(
-            MEMBER_LOOKUP_URL + '/api/public/v1/members',
-            params={'filter[]': [
-                'group_slug==foundation-members',
-                'email==' + email,
-                ]},
-            headers={'Accept': 'application/json'},
-            )
+    raw = requester(MEMBER_LOOKUP_URL + '/api/public/v1/members',
+                    params={'filter[]': [
+                        'group_slug==foundation-members',
+                        'email==' + email,
+                        ]},
+                    headers={'Accept': 'application/json'},
+                    )
 
     return decode_json(raw)
 
@@ -344,12 +349,10 @@ def main(argv=sys.argv):
                                  {'h': ref})
     for project in old_projects:
         for deliverable in old_projects[project]['deliverables']:
-            if 'retired-on' in old_projects[project]['deliverables'][deliverable]:
-                retired = old_projects[project]['deliverables'][deliverable]['retired-on']
-            elif 'retired-on' in old_projects[project]:
-                retired = old_projects[project]['retired-on']
-            else:
-                retired = None
+            retired = old_projects[project]['deliverables'][deliverable].get(
+                'retired-on',
+                old_projects[project].get('retired-on')
+            )
             if retired:
                 retired = retired.isoformat()
                 if after and after > retired:
@@ -357,9 +360,12 @@ def main(argv=sys.argv):
                 if project not in gov_projects:
                     gov_projects[project] = {'deliverables': {}}
                 if deliverable in gov_projects[project]['deliverables']:
-                    print('Skipping duplicate/partially retired deliverable: %s' % deliverable, file=sys.stderr)
+                    print(('Skipping duplicate/partially retired deliverable:'
+                           ' %s') % (deliverable),
+                          file=sys.stderr)
                     continue
-                gov_projects[project]['deliverables'][deliverable] = old_projects[project]['deliverables'][deliverable]
+                gov_projects[project]['deliverables'][deliverable] = \
+                    old_projects[project]['deliverables'][deliverable]
 
     # A mapping of short (no prefix) to full repo names existing in
     # Gerrit, used to handle repos which have a different namespace
@@ -645,7 +651,7 @@ def main(argv=sys.argv):
             if member['data']:
                 owners[owner]['member'] = member['data'][0]['id']
                 continue
-        invite = [owners[owner].get('member','0')]
+        invite = [owners[owner].get('member', '0')]
         invite.append(owners[owner]['name'].encode('utf-8'))
         invite.append(owners[owner]['preferred'])
         invite += owners[owner]['extra']
@@ -713,6 +719,7 @@ def main(argv=sys.argv):
         fd = open(os.path.join(outdir, '%s.txt' % normalized_project), 'w')
         fd.writelines(electorate)
         fd.close()
+
 
 if __name__ == "__main__":
     main()

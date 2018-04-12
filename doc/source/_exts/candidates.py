@@ -21,8 +21,8 @@ import yaml
 from docutils import nodes
 from docutils.parsers.rst import Directive
 from docutils.statemachine import ViewList
-from sphinx.util.nodes import nested_parse_with_titles
 from openstack_election import utils
+from sphinx.util.nodes import nested_parse_with_titles
 
 
 def render_template(template, data, **kwargs):

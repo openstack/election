@@ -19,11 +19,8 @@ import glob
 import hashlib
 import os
 import shutil
-import sys
 import tempfile
 import time
-
-from six.moves.urllib.request import urlopen
 
 from openstack_election import owners
 from openstack_election import utils
