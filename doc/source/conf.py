@@ -71,7 +71,9 @@ copyright = u'2015, OpenStack'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = ['_build', 'candidates/ptl.rst', 'candidates/tc.rst',
-                    'candidates/events.rst']
+                    'candidates/events.rst',
+                    'results/*/announce_*.rst',
+                    ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None

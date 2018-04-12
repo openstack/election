@@ -1,15 +1,19 @@
-======================
+{% for i in range(election|length + 4) %}={% endfor%}
+
 {{ election.capitalize() }} PTL
-======================
+{% for i in range(election|length + 4) %}={% endfor%}
+
 
 {% for project in projects %}
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}{% if candidate['elected'] and 'url' in candidate %}
-  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
+  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
 {% elif candidate['elected'] %}
-  * {{ candidate['fullname'] }} ({{ candidate['ircname'] }}) {% if candidate['elected'] == 'INCUMBENT-PTL' %}[#IncumbentPTL]_{% else %}[#TCAppointed]_{% endif %}
-{% endif %}{% endfor %}
+  * {{ candidate['fullname'] }} (\{{ candidate['ircname'] }}) {% if candidate['elected'] == 'INCUMBENT-PTL' %}[#IncumbentPTL]_{% else %}[#TCAppointed]_{% endif %}
+
+{% endif %}
+{% endfor %}
 
 {% endfor %}
 
@@ -25,7 +29,8 @@ Results
 {% for project in projects %}{% if project in elections_results %}
 
 * `{{ project }} <{{ elections_results[project] }}>`_
-{% endif %}{% endfor %}
+{% endif %}
+{% endfor %}
 
 
 {{ election.capitalize() }} PTL Candidates

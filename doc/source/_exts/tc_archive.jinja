@@ -1,8 +1,11 @@
-======================
+{% for i in range(election|length + 20) %}={% endfor%}
+
 {{ election.capitalize() }} elected TC members
-======================
+{% for i in range(election|length + 20) %}={% endfor%}
+
+
 {% for candidate in candidates['TC'] %}{% if candidate['elected'] %}
-* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
+* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
 {% endif %}{% endfor %}
 
 Results
@@ -12,5 +15,5 @@ Results
 {{ election.capitalize() }} TC Candidates
 ======================
 {% for candidate in candidates['TC'] %}
-* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
+* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
 {% endfor %}
