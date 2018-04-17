@@ -1,0 +1,41 @@
+Hi,
+
+I am announcing my candidacy for a member of the Technical Committee.
+
+Now I am CTO of 99cloud Inc., China. After discussing with my Team (My CEO, COO
+and R&D department), I made up my mind. This means my company will continue
+devoting itself into the OpenStack community, help the OpenStack to meet
+customer’s needs and promote OpenStack to a new high.
+
+I was previously a Neutron Core member and am the PTL of Tacker project.
+Besides this, I am also making contribution to OpenCord project, which is the
+edge platform for telecom central office. OpenCord project is using OpenStack
+as the platform to instantiate the VNFs. One more open project I am leading my
+company R&D to is akraino edge stack, a Linux Foundation project in formation,
+which will create an open source software stack to improve the state of edge
+cloud infrastructure for carrier, provider, and IoT networks. I think
+OpenStack can play a good role in OpenCord and akraino as the infrastructure
+manager.
+
+I agree to Thierry Carrez with the concept of “Constellations” (representation
+of groups of OpenStack components that answer a specific use case).
+For example, in the case of MANO system, we need to improve Tacker with
+OpenStack as NFVI. For DEVOPS, the ZUUL and the whole OpenStack’s CI
+infrastructure is great, we can also introduce kubernetes into this
+constellation so that we can meet the DEVOPS needs of container-based or
+VM-based applications.
+
+I am new to TC governance and have the passion to join TC. I am a technical
+guy and hope I can help to glue the OpenStack projects and keep my eye on
+their development. As a member of management team, I like to make others
+succeed and then enjoy their success. So, I will support OpenStack project
+teams to make OpenStack great again.
+
+Thank you for your consideration.
+Best Regards,
+Gong Yongsheng (gongysh)
+
+[1] http://stackalytics.com/?metric=commits&company=99cloud&user_id=gongysh&release=all
+[2] http://stackalytics.com/?metric=commits&company=99cloud&release=all
+[3] https://www.akraino.org/
+
