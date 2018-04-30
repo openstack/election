@@ -1,0 +1,57 @@
+candidates:
+  TC:
+  - elected: true
+    email: cdent@anticdent.org
+    fullname: Chris Dent
+    ircname: cdent
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/cdent%40anticdent.org
+  - elected: true
+    email: davanum@gmail.com
+    fullname: Davanum Srinivas
+    ircname: dims
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/davanum%40gmail.com
+  - elected: true
+    email: gr@ham.ie
+    fullname: Graham Hayes
+    ircname: mugsie
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/gr%40ham.ie
+  - elected: true
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/mnaser%40vexxhost.com
+  - elected: false
+    email: rico.lin@easystack.cn
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/rico.lin%40easystack.cn
+  - elected: true
+    email: sean.mcginnis@gmail.com
+    fullname: Sean McGinnis
+    ircname: smcginnis
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/sean.mcginnis%40gmail.com
+  - elected: true
+    email: thierry@openstack.org
+    fullname: Thierry Carrez
+    ircname: ttx
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/thierry%40openstack.org
+  - elected: false
+    email: gong.yongsheng@99cloud.net
+    fullname: Yong Sheng Gong
+    ircname: gongysh
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/gong.yongsheng%4099cloud.net
+  - elected: true
+    email: zbitter@redhat.com
+    fullname: Zane Bitter
+    ircname: zaneb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/zbitter%40redhat.com
+  - elected: false
+    email: huangzhipeng@huawei.com
+    fullname: Zhipeng Huang
+    ircname: zhipeng
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/TC/huangzhipeng%40huawei.com
+election: rocky
+elections_results:
+    TC: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_98430d99fc2ed59d
+projects:
+- TC
