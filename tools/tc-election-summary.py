@@ -71,6 +71,12 @@ data = [
         'votes_cast': 420,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_ce86063991ef8aae')
     },
+    {
+        'election': '04/2018',  # Rocky
+        'electorate': 2025,
+        'votes_cast': 384,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_98430d99fc2ed59d')
+    },
 ]
 
 
