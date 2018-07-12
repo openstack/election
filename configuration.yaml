@@ -1,24 +1,24 @@
 ---
-release: rocky
-election_type: tc
+release: stein
+election_type: ptl
 
-tag: 'apr-2018-elections'
+tag: 'aug-2018-elections'
 
 timeframe:
-  name: 'Pike-Queens'
-  start: '2017-02-21T23:59'
-  end: '2018-02-28T23:59'
-  email_deadline: '2018-04-18T00:00'
+  name: 'Queens-Rocky'
+  # Begining of the RC1/branch point for Queens
+  start: '2018-02-05T00:00'
+  # Email deadline, to give officials the nomination week to generate and
+  # verify rolls
+  end: '2018-07-24T00:00'
+  email_deadline: '2018-07-24T00:00'
 
 tc_seats: 7
 
 timeline:
-  - name: 'TC Nomination'
-    start: '2018-04-10T23:59'
-    end:   '2018-04-17T23:45'
-  - name: 'TC Campaigning'
-    start: '2018-04-17T23:45'
-    end: '2018-04-22T23:45'
-  - name: 'TC Election'
-    start: '2018-04-23T23:59'
-    end:   '2018-04-30T23:45'
+  - name:  'PTL Nominations'
+    start: '2018-07-24T23:45'
+    end:   '2018-07-31T23:45'
+  - name:  'PTL Election'
+    start: '2018-07-31T23:45'
+    end:   '2018-08-07T23:45'
