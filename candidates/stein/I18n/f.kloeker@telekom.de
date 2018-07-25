@@ -1,0 +1,41 @@
+This is my announcement for re-candidacy as I18n PTL in Stein Cycle.
+
+At first a quick review what we've done in the last cycle:
+
+1. Zanata upgrade done. As one of the first community's we're running
+Zanata Release 4 in production. A big success and a great user
+experiense for all.
+2. Translation Check Site done. We were able to win Deutsche Telekom as
+sponsor for resources, so now we are able to host our own Translation
+Check Site. From my point of view this solves different problems
+which we had in the past and now we can check translation strings very
+fast on our requirements.
+3. Aquire more people to the team. I had great experiences during the
+OpenStack Days in Krakow and Budapest. I shared informationen what our
+team is doing and how I18n works in the OpenStack Community.
+I've got many inspirations and hopefully some new team members :-)
+
+What I mostly like is getting things done. In this cycle we should get
+ready project doc translations. We started already with some projects
+as a proof of concept and we're still working on it. To get that around,
+involve more projects and involve more project team members for
+translations is the biggest challenge for me in this cycle.
+On the other hand we have Edge Computing whitepaper and Container
+whitepaper on our translation plan. With a new technology in use to
+publish the translation results very fast on the web page.
+
+Beside that we have the OpenStack Summit Berlin in that cycle. For me
+a special event, since I live and work in Berlin. I expect a lot of
+collaboration and knowledge sharing with I18n and the OpenStack
+Community in general.
+
+That's my plan for Stein, I'm looking forward to your vote.
+
+Frank
+
+Email: eumel@arcor.de
+IRC: eumel8
+Twitter: eumel_8
+
+OpenStack Profile:
+https://www.openstack.org/community/members/profile/45058/frank-kloeker
