@@ -16,10 +16,19 @@ from __future__ import unicode_literals
 
 import testtools
 
+from openstack_election.tests import fixtures as election_fixtures
 import openstack_election.utils
 
 
-class TestGerritUtils(testtools.TestCase):
+class ElectionTestCase(testtools.TestCase):
+    def setUp(self):
+        """Run before each test method to initialize test environment."""
+        super(ElectionTestCase, self).setUp()
+        self.output = election_fixtures.OutputStreamCapture()
+        self.useFixture(self.output)
+
+
+class TestGerritUtils(ElectionTestCase):
     def test_candidate_files(self):
         review = {'revisions': {
                   'Ifake': {
