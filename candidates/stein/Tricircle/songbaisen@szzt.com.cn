@@ -1,0 +1,26 @@
+Hi all!
+
+I would like to announce myself nomination for the PTL candidacy in
+Tricircle Stein cycle. My name is Baisen Song, and my IRC handle is
+songbaisen. I am currently the Core Member of Tricircle for Rocky cycle and have
+been the most actively participating in the development of this project since
+last year. I and my team have finished the most BluePrints in Tricircle.
+
+During the Rocky cycle, we begin to bring enable mutable configuration to
+Tricircle, network deletion reliability, reuse the deleted port after the
+vm have been deleted and recreated in another region, add service function
+chain support. We also start to implement the new l3 networking model.
+
+For the coming Stein cycle, here are some works we can focus on:
+
+* Driver based implementation of Trunk, current implementation is plugin-based.
+* Implement the new cross-Neutron L3 networking model that doesn't
+  depend on host routes.
+* Improvement the Tricircle work with nova cell2.
+* Add more unit and smoke test cases.
+* Make Trio2o and Tricircle work more close together.
+
+Thank you for taking the time to consider me for Stein PTL.
+
+Hope everyone will enjoy joining the Tricircle.
+
