@@ -28,6 +28,7 @@ from six.moves.urllib.parse import quote_plus
 from six.moves.urllib.request import urlopen
 
 from openstack_election import config
+from openstack_election import exception
 
 
 # Library constants
@@ -286,6 +287,10 @@ def build_candidates_list(election=conf['release']):
             filepath = os.path.join(project_prefix, candidate_file)
             email = get_email(filepath)
             member = lookup_member(email)
+
+            if member.get('data', []) == []:
+                raise exception.MemberNotFoundException(email=email)
+
             candidates_list.append(
                 {
                     'url': ('%s/%s/plain/%s' %
