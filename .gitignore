@@ -10,7 +10,7 @@ AUTHORS
 ChangeLog
 .projects*yaml
 .projects*.pkl
-.testrepository
+.stestr/
 doc/source/archive_toc.rst
 doc/source/*/*.rst
 doc/source/ptl.rst
