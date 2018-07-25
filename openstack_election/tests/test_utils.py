@@ -17,7 +17,7 @@ from __future__ import unicode_literals
 import testtools
 
 from openstack_election.tests import fixtures as election_fixtures
-import openstack_election.utils
+from openstack_election import utils
 
 
 class ElectionTestCase(testtools.TestCase):
@@ -38,10 +38,10 @@ class TestGerritUtils(ElectionTestCase):
                       }
                   }}
 
-        self.assertEqual(openstack_election.utils.candidate_files(review),
+        self.assertEqual(utils.candidate_files(review),
                          ['candidates/some/file'])
 
     def test_name2dir(self):
         name = "nova"
         dirname = "Nova"
-        self.assertEqual(dirname, openstack_election.utils.name2dir(name))
+        self.assertEqual(dirname, utils.name2dir(name))
