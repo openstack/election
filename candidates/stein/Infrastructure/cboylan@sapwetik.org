@@ -1,0 +1,30 @@
+Hello Infrastructure Electorate,
+
+I am going to put my name into the election hat for a third go at
+Infrastructure PTL. For the Rocky cycle I had wanted to help get the
+Zuul v3 release out the door, upgrade systems and services, welcome new
+projects, and improve the onboarding process for the Infra team. Overall
+I think we did a great job: Zuul release happened and is now an
+independent project, we upgraded to Gerrit 2.13, and we have Zuul
+running jobs against Kata and other new top level projects.
+
+I cannot take individual credit for these things. We have managed
+to work together to accomplish this and more. If you will have me, I
+would like to help guide the Infrastructure team through the next six
+months as we look ahead to even more exciting goals.
+
+This is not a complete list, but the big items include:
+
+  * Modernize our configuration management tooling.
+  * Make a push to get off of aging Ubuntu Trusty servers.
+  * Work through the Winterscale effort and get better at serving new
+    and existing top level projects.
+  * Continue to refine the onboarding process and take advantage of new
+    users as a fresh set of potential Infra contributors.
+
+These are big changes, and I doubt they will be easy to implement. They
+are also exciting changes, and I am exciting to work through them with
+you.
+
+Thank you for your consideration,
+Clark
