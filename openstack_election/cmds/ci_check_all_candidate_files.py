@@ -29,8 +29,8 @@ def validate_release(release):
     release_path = os.path.join(utils.CANDIDATE_PATH, release)
     is_valid = (os.path.exists(release_path) and os.path.isdir(release_path))
 
-    print('Release: %s [%s] is %sok' % (release, release_path,
-                                        {True: '', False: 'not '}[is_valid]))
+    print('Release: %s [%s] %s' % (release, release_path,
+                                   {True: 'PASS', False: 'FAIL'}[is_valid]))
     print('')
     return is_valid
 
@@ -42,8 +42,8 @@ def validate_filename(filepath):
     file_name = utils.get_email(filepath)
     is_valid = '@' in file_name
 
-    print('Filename: %s [%s] is %sok' % (file_name, filepath,
-                                         {True: '', False: 'not '}[is_valid]))
+    print('Filename: %s [%s] %s' % (file_name, filepath,
+                                    {True: 'PASS', False: 'FAIL'}[is_valid]))
     print('')
     return is_valid
 
@@ -56,8 +56,8 @@ def validate_member(filepath):
     member = utils.lookup_member(email)
     is_valid = member.get('data', []) != []
 
-    print('Email address: %s is %sok' % (email,
-                                         {True: '', False: 'not '}[is_valid]))
+    print('Email address: %s %s' % (email,
+                                    {True: 'PASS', False: 'FAIL'}[is_valid]))
     print('')
     return is_valid
 
