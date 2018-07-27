@@ -45,7 +45,7 @@ def collect_project_stats(basedir, verbose):
         project = directory[len(basedir):]
         if project == "TC":
             continue
-        candidates = list(filter(lambda x: x.endswith('.txt'), filenames))
+        candidates = list(filter(lambda x: '@' in x, filenames))
         candidates_count = len(candidates)
 
         if not filenames == []:
@@ -63,7 +63,7 @@ def collect_project_stats(basedir, verbose):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Investigate Nominations')
+    parser = argparse.ArgumentParser(description='Investigate PTL Nominations')
     parser.add_argument('-v', '--verbose', action="count", default=0,
                         help='Increase program verbosity')
     parser.add_argument('-r', '--release', default=utils.conf['release'],
@@ -74,13 +74,17 @@ def main():
 
     args = parser.parse_args()
 
+    if utils.is_tc_election():
+        print('This tool only works for PTL elections not TC')
+        return 0
+
     args.basedir = os.path.join(args.basedir, 'candidates', args.release, '')
     args.basedir = os.path.expanduser(args.basedir)
     collect_project_stats(args.basedir, args.verbose)
 
     now = datetime.datetime.now(tz=pytz.utc)
     now = now.replace(microsecond=0)
-    event = utils.get_event('PTL nomination')
+    event = utils.get_event('PTL Nominations')
     start, end = event['start'], event['end']
     duration = (end - start)
     remaining = (end - now)
@@ -116,3 +120,5 @@ def main():
                                " ".join(without_candidate)))
     print("=" * 51)
     print("%-25s @ %s" % ("Stats gathered", as_utctime(now)))
+
+    return 0
