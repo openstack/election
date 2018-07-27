@@ -1,0 +1,19 @@
+I'd be honored to continue to serve as your PTL for OpenStack Swift.
+
+Like many other OpenStack projects, Swift's contributor base has grown
+smaller and become more employer-concentrated. This change brings new
+challenges about how to coordinate work, hold to open principles, and
+attract new contributors. Additionally, the OpenStack Foundation is
+changing focus to include things not in OpenStack itself. Both of
+these changes raise questions about Swift's future. As PTL, I will
+continue to work with people inside and outside of our community to
+figure out how we can be successful together.
+
+As to internal technical direction, our long-term plans are relatively
+unchanged. We need to improve efficiency in large storage servers. We
+need to improve internal protocols so that client requests can be
+balanced with internal requests. We need to improve the way objects
+are stored to reduce overhead and improve performance. Each of these
+technical challenges need to happen with continued feedback from
+operators and end users. As PTL, I will continue to work within the
+Swift community to coordinate this work and ensure it gets done.
