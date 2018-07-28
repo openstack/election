@@ -4,7 +4,7 @@
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}
-  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
+  * `{{ candidate['fullname'] }} {% if candidate['ircname'] is not none  %}({{ candidate['ircname'] }}){% endif %} <{{ candidate['url'] }}>`__
 {% endfor %}
 
 {% endif %}{% endfor %}

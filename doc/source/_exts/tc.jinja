@@ -2,5 +2,5 @@
 ======================
 
 {% for candidate in candidates['TC'] %}
-* `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
+* `{{ candidate['fullname'] }} {% if candidate['ircname'] is not none %}({{ candidate['ircname'] }}){% endif %} <{{ candidate['url'] }}>`__
 {% endfor %}
