@@ -1,0 +1,38 @@
+Hello everyone,
+
+I would like to throw my name back to the hat to serve second
+round as Glance PTL in Stein development cycle.
+
+I'm not going to repeat myself here so if you did not see my
+self nomination for Rocky [0], you can find the history and
+my personal priorities regarding the project team there.
+
+Not much has changed what comes to the priorities. While the
+team has pulled incredible effort to deliver wide range of
+pending features, we haven't managed to grow the team that
+much, we still have backlog of features and functionalities
+waiting we have promised to deliver and we still need to
+get back on track with our stable maintenance.
+
+Rocky cycle was great learning experience for me as PTL
+and I would like to continue leading the efforts to design,
+prioritize and most of all enabling the team to be it's
+best to deliver yet another greatest Glance release ever.
+With Rocky release including hidden images to ease lifecycle
+management, multihash to really provide secure hashing of
+the image data, experimental multiple back-end support and
+finally getting rid of Images API v1; I really think we're
+in good place to move forward. On top of these big feature
+work items, we have improved our testing a lot, we've
+improved our process to monitor the health of our repos and
+brought in bunch of bugfixes.
+
+This did not come without cost, we missed Rocky-3 release
+deadline by few hours and yet we still had to push some of
+the items to Feature Freeze Exception. I'm confident I can
+do better given the opportunity.
+
+Thank you for taking my self nomination into consideration,
+Erno jokke Kuvaja
+
+[0] https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/Glance/jokke_.txt
