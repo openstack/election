@@ -24,6 +24,7 @@ import sys
 import time
 import yaml
 
+from six.moves.urllib.error import HTTPError
 from six.moves.urllib.parse import quote_plus
 from six.moves.urllib.request import urlopen
 
@@ -204,7 +205,7 @@ def check_atc_date(atc):
     return conf['timeframe']['end'] < expires_in
 
 
-def get_projects(tag=None):
+def _get_projects(tag=None):
     url = PROJECTS_URL
     cache_file = '.projects.pkl'
 
@@ -221,6 +222,17 @@ def get_projects(tag=None):
         pickle.dump(data, open(cache_file, "wb"), protocol=2)
 
     return pickle.load(open(cache_file, "rb"))
+
+
+def get_projects(tag=None, fallback_to_master=False):
+    try:
+        projects = _get_projects(tag)
+    except HTTPError as exc:
+        if exc.code == 404 and tag and fallback_to_master:
+            projects = _get_projects()
+        else:
+            raise
+    return projects
 
 
 # Election functions
