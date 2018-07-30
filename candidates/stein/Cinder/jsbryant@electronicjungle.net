@@ -1,0 +1,32 @@
+All,
+
+This letter is to indicate my interest in continuing to serve as
+the Cinder PTL for the Stein release. This would be my third
+release as PTL and am happy to continue leading this great project.
+
+As I look back at the last two releases we have gotten some
+good things done.  The implementation of multi-attach has
+been a goal of Cinder for quite some time and I am glad to
+have been able to help make this happen.  We have also seen
+a change from trying to get new features implemented in Cinder
+to fixing bugs and making Cinder more user friendly and stable.
+During the Rocky release we have continued to improve our
+documentation, have worked on improving HA support and removed
+a lot of old code that did not need to remain in tree.
+I think this is an important evolution in the Cinder project:
+to focus on stability, usability and maintainability of our code.
+
+With that said I think the Stein release is going to be a challenging
+release for Cinder.  We have the following issues that are going
+to need to be addressed:
+
+* Migration to Storyboard
+* Dwindling review support
+* Making decisions around the Placement Service and Cinder
+* Continuing discussion around Cinder as a Stand-alone service
+
+I am hoping that I will be able to use my experience over
+the last two releases to move the above issues forward.
+
+Sincerely,
+Jay Bryant (jungleboyj)
