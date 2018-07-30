@@ -1,0 +1,11 @@
+- job:
+    name: election-tox-ci-checks
+    parent: openstack-tox
+    description: |
+      Run the ci-checks tox environment
+
+      This environment runs the easy, for a machine, to validate election
+      checks.
+    vars:
+      tox_envlist: ci-checks
+
