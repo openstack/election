@@ -1,0 +1,19 @@
+
+This is my self-nomination to continue running as Tacker PTL for the
+stein cycle.
+
+We have more guys joining us, and new features are done here in Rocky cycle::
+
+ - NS with vnffg feature, which completes the last part from ETSI concept.
+ - Placement policy which makes more choices for us to place VNF's VDUs
+ - Enable multiple node CI tests
+
+In Rocky cycle, I plan to:
+
+- Continue to stablize tacker and make it of production quality by breaking
+  tacker server into more components.
+- Make tacker more ESTI compatible
+- Enhance container based VNF
+
+
+Thanks for your consideration.
