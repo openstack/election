@@ -1,0 +1,43 @@
+Hello Stackers,
+
+I'm submitting myself as PTL candidate for the Puppet OpenStack project.
+
+I've been active in the OpenStack community since late 2014 early 2015 and have had a lot of focus on the
+Puppet OpenStack project since about 2016. I've been a core reviewer for about five months now and it's
+been really cool to be able to give something back to the community.
+
+We have had a lot of progress this cycle.
+
+* Remove a lot of deprecate parameters
+* Improved testing of Puppet 5
+* Added Debian 9 support (Python 3 only)
+* Added Ubuntu 18.04 Bionic support
+* Fixed some bugs
+* Moved to more usage of the shared openstacklib resources
+* Added neutron-dynamic-routing support
+* Added horizon dashboard installation support
+* Changed keystone to use port 5000 and deprecated usage of port 35357 (still deploys both)
+
+I could ramble up a lot more in that list but I really think we've done a good job but we still have some major things
+moving forward that we'll have to work on. Here is some major things I think we'll need to work on or discuss.
+
+* Python 3 will be a big one, I know people are working on Fedora for testing here, but we also have Debian9 here
+   which is python3-only so thanks to Thomas (zigo) we have somebody that has paved the way here.
+
+* Puppet 5 data types for parameters and removing validate_* functions is a big one which we also have an open blueprint
+   and PoC for but will require a lot of interaction with the TripleO team. [0] [1]
+
+* CI stability and maintenance will be a reoccurring thing we'll need to focus on.
+
+* Puppet providers are usually slow due to CLI utilies, we need to work together to improve the performance of
+   the CLI tooling or consider the move to API calls, this has been up before but there hasn't been anybody there
+   that has sponsored such work.
+
+I want to really thank all of you for your huge amounts of work, all across the OpenStack board and the Puppet OpenStack team.
+Thank you for considering me.
+
+Best regards
+Tobias (tobasco @ IRC)
+
+[0] https://review.openstack.org/#/c/568929/
+[1] https://review.openstack.org/#/c/569566/
