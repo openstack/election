@@ -1,0 +1,28 @@
+Hi,
+
+I would like to submit my candidacy as PTL of OpenStack-Helm for the
+Stein cycle.
+
+I've been with the OpenStack-Helm project since its inception, and have found it
+to be the most enjoyable and satisfying OpenSource project I've worked on to
+date. From the project's early days as a PoC, through to its current state with
+real-world uses in a multitude of configurations and scale from medium
+deployments running traditional workloads to edge VNF specific. These users
+range from academia, telco and enterprise, right through to home labs, and we
+as a core review team have made some great new friends along the way. That said
+there is still a huge amount we need to do within OpenStack-Helm, to build on
+these foundations and capitalize on the work we have done to date. As PTL my
+priorities would be as follows:
+
+  *) Uphold the 4 Opens
+  *) Improve documentation for both onboarding developers, and operations
+  *) Build up a more diverse group of reviewers
+  *) Finally cut the fabled 1.0 release
+  *) Build more links between OSH and other related projects
+
+Regardless of the outcome, I'm excited to continue contributing to
+OpenStack-Helm.
+
+Regards,
+
+Pete Birley
