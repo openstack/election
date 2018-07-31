@@ -1,0 +1,19 @@
+Hi everyone,
+
+I am nominating my self as PTL of Designate for the Stein cycle.
+
+My priorities have not changed - I want to push forward with some feature
+work, keep maintaining the quality of the code, and fixing bugs as we get 
+reports.
+
+I wanted to get some features done this cycle that unfortunately fell by the
+wayside - I want to pick them up and continue in Stein.
+
+We have had more external tools and software add support for Designate in the
+last year, and I think it is important to help drive this as we continue to add
+features that can help deployers, and anyone who needs a DNSaaS tool.
+
+Thanks for reading,
+
+- Graham Hayes (mugsie)
+ 
