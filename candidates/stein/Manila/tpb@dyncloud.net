@@ -1,0 +1,58 @@
+Fellow Stackers,
+
+I just served a term as Manila PTL for Rocky and am writing to say
+that if you choose me I'd like to also take on that role for the
+Stein release cycle.
+
+I think I've learned the mechanics now and can focus more energy on
+priorities.
+
+Today manila itself is pretty solid.  It doesn't need lots of new
+features.  Back end vendors always want to expose new bells and whistles,
+and that's fine if they help with the review load and contribute to the
+community.  Reciprocity makes the world go around.
+
+But I see the adoption curve for manila just now ramping up and my own
+focus will be to enable that by working harden manila, and make it
+easier to use, both within and outside of openstack itself.
+
+Manila offers self-service file-shares -- RWX, random access storage
+-- and abstracts over a variety of file-systems and sharing protocols.
+
+Manila doesn't care whether the consumers of the file systems live
+within openstack, it's just a matter of network reachability and the
+access rights that manila manages.
+
+Besides being able to run as one part of a full openstack deployment,
+manila can run on its own, with keystone to enable multi-tenancy, or
+completely standalone.
+
+So I see manila as a true Open Infrastructure project.  It can turn a
+rack of unconfigured equipment into self-service shared file systems
+without limiting itself to the (very important) Virtual Private Server
+use case [1].
+
+I will, accordingly, work to position manila as *the* open source
+solution for deploying RWX random access storage across data centers
+and across clouds.  To that end we need to:
+
+ * get manila into generalized cloud providers like CSI [2]
+
+ * get manila into the openstack sdk and openstack client
+
+ * get more of the almost thirty manila back ends exposed in
+   production-quality deployment tools like tripleo, kolla-*,
+   and juju.
+
+ * continue to fix bugs, improve our CI, run more stuff in gate with
+   python 3
+
+These are the things that will drive me if you choose me as manila PTL.
+
+Thanks for listening,
+
+-- Tom Barron (tbarron)
+
+[1] https://www.zerobanana.com/archive/2018/07/17#openstack-layer-model-limitations
+
+[2] https://github.com/container-storage-interface/spec/blob/master/spec.md
