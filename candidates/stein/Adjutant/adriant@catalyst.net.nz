@@ -1,0 +1,19 @@
+Hello OpenStackers,
+
+I'm submitting myself as the PTL for the first cycle that Adjutant will be a part of OpenStack.
+
+As the main developer and project lead until now, I'm the best suited to continue leading the project at this time and finish the current work that is needed to bring it to a place where the wider community can embrace what Adjutant offers and better tweak it to their own needs.
+
+My focus for Stein will be continuing the refactor work that was started during Queens, and finishing the sub-project management APIs as well as project termination APIs.
+
+As such the planned work is:
+- bringing the codebase to a much nicer state while decoupling certain elements of our internals, and adding support for async task processing.
+- rework the config system or potentially adopt oslo.config if appropriate
+- introduce partial policy support rather than relying on hardcoded decorators.
+- rework notifications to be pluggable and how/when they are sent
+- finish the long planned support for sub-project management, and the project (and resource) termination logic
+
+I hope for it to be a productive cycle, with some of that work broken into smaller pieces that new contributors could potentially help with. :)
+
+Cheers,
+Adrian Turjak
