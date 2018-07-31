@@ -1,0 +1,43 @@
+Hi all,
+
+I'd like to nominated myself to be a candidate of Zun PTL through
+the Stein cycle.
+
+Over the past year the Zun project has achieved a lot of the important
+features includes:
+* Diskspace Management: Docker images and containers use the same space,
+  it's better to choose a compute node to load images by DiskFilter
+  and limit the diskspace of a container.
+* Quota support: This function achieves quota management for openstack
+  Zun resource.
+* Zun available zone: Availability zone is within the scope of region.
+  For example, the machines in a room are divided into a AZ in order to
+  improve the isolation of disaster. For avoiding all the containers
+  hang up together, we can choose the different AZs to create containers.
+* zun rebuild: Provide reconstruction function, if the container A is
+  damaged, users can use this function to recreate a container B. The
+  container B and A use the same resources, such as network, CPU, etc.
+  Users can also replace image to achieve the purpose of upgrading
+  container.
+
+My goals for the Stein cycle are to continue the progress made during
+the Rocky cycle in the following areas:
+* Support volume multi-attach: Make zun supports mount the same volume
+  to different containers
+* Zun-monitor: Monitor the status of containers, the zun-compute services, 
+  the memory/cpu/diskspace of the zun-compute, then report the
+  error/warning/notice to end-users.
+* Heal and evacuate: A periodic task monitors the status of container.
+  If a error happends, the container should be healed or evacuated.
+* Placement API: Nova team is working to split its scheduler out and Zun would
+  like to leverage this new service if appropriate.
+* Kubernetes: Kubernetes is probably the most popluar containers orchestration
+  tool, but there are still some gaps that prevent Kubernetes to work well with
+  OpenStack. I think Zun might be able to help to reduce the gaps. We could
+  explore integration options for Kubernetes to make OpenStack more appealing
+  for cloud-native users.
+
+Thank you for taking the time to consider me for Stein PTL.
+
+Best regards,
+Wei Ji
