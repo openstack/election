@@ -94,6 +94,16 @@ def get_from_cgit(project, obj, params={}):
     return yaml.safe_load(raw.text)
 
 
+def get_series_data():
+    return get_from_cgit('openstack/releases',
+                         'deliverables/series_status.yaml')
+
+
+def get_schedule_data(series):
+    return get_from_cgit('openstack/releases',
+                         'doc/source/%s/schedule.yaml' % (series))
+
+
 def lookup_member(email):
     """A requests wrapper to querying the OSF member directory API"""
 
