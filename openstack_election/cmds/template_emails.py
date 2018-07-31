@@ -52,7 +52,7 @@ openstack/election repository as explained at
 http://governance.openstack.org/election/#how-to-submit-your-candidacy
 
 Please make sure to follow the new candidacy file naming
-convention: $cycle_name/$project_name/$ircname.txt.
+convention: candidates/<cycle>/<project_name>/<email_address>.
 
 In order to be an eligible candidate (and be allowed to vote) in
 a given PTL election, you need to have contributed to the corresponding
