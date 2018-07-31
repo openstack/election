@@ -1,0 +1,32 @@
+Hi all,
+
+This is my candidacy to continue my work as the Senlin PTL for the
+Stein cycle.
+
+In Rocky cycle, we finished many features, testing and bug fixing works.
+For example:
+ * Kubernetes: Added dependency relationship between the master cluster and the
+   worker cluster created for Kubernetes.
+ * Docker driver: Supported update name operation for docker profile.
+ * Nova server: Added operation support to migrate a nova server node.
+ * Health check improve: Added a new detection type that actively pools the node
+   health using a URL specified in the health policy.
+ * Dashboard:adds "Resize" action for cluster panel.
+ * Testing: API/Function/Integration test were moved to senlin-tempest-plugin.
+
+At the same time, we added chenyb4 and Duc Truong to the Senlin team, both of
+them given a great work for the team.
+
+As a PTL in Stein cycle, I'd like to continue to focus on the tasks as follows:
+ * Grow the Senlin team of contributors and core reviewers.
+ * Continue to improve k8s on Senlin feature implementation.
+ * Collaborate with other OpenStack projects with joint blueprints.
+ * Actively monitor incoming bug reports and assigned to fix them.
+ * Acknowledgment of OpenStack-wide Goals.
+
+Thanks for taking the time to read through this roadmap and to consider my
+candidacy.
+
+Best Regards,
+XueFeng
+
