@@ -6,12 +6,12 @@
       jobs:
         - openstack-tox-py27
         - openstack-tox-linters
-        - election-tox-ci-checks:
-            voting: false
+        - election-tox-ci-checks
     gate:
       jobs:
         - openstack-tox-py27
         - openstack-tox-linters
+        - election-tox-ci-checks
     post:
       jobs:
         - publish-static
