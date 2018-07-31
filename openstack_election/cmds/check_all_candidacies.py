@@ -72,7 +72,7 @@ def main():
                 candiate_ok = checks.validate_member(filepath)
 
             if candiate_ok:
-                if utils.is_tc_election:
+                if not utils.is_tc_election():
                     candiate_ok = checks.check_for_changes(projects, filepath,
                                                            args.limit)
                     print_member(filepath)
