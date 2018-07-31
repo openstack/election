@@ -32,6 +32,7 @@ def check_candidate(project_name, email, projects, limit=1):
     found = 0
     branch = None
     timeframe = utils.conf['timeframe']
+    owner = utils.get_gerrit_account(email)['username']
 
     if project_name in ['Stable branch maintenance']:
         project_list = projects.values()
@@ -53,7 +54,7 @@ def check_candidate(project_name, email, projects, limit=1):
                          'owner:%s project:%s' %
                          (utils.gerrit_datetime(timeframe['start']),
                           utils.gerrit_datetime(timeframe['end']),
-                          email, repo_name))
+                          owner, repo_name))
                 if branch:
                     query += (' branch:%s' % (branch))
                 print('Checking %s for merged changes by %s' %
