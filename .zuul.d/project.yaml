@@ -1,5 +1,14 @@
 - project:
+    templates:
+      - build-openstack-sphinx-docs
+      - openstack-python35-jobs
     check:
       jobs:
+        - openstack-tox-py27
+        - openstack-tox-linters:
+            voting: false
         - election-tox-ci-checks:
             voting: false
+    post:
+      jobs:
+        - publish-static
