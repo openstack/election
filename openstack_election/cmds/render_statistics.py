@@ -65,7 +65,8 @@ def collect_project_stats(basedir, verbose, projects):
                 need_election.append(project)
 
             if verbose:
-                print("%-25s : %s" % (project, candidates))
+                print("%-25s : (%d) %s" % (project, len(candidates),
+                                           ', '.join(candidates)))
 
 
 def main():
