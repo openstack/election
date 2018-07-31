@@ -1,0 +1,34 @@
+Hello  everyone,
+
+I would like to announce my candidacy for PTL of Horizon for Stein release.
+
+
+I had the honor to serve PTL role in Rocky timeframe and I want to continue work
+with such a great team with PTL hat.
+
+During Rocky release cycle we worked mostly on the technical dept. We improved our
+CI with new jobs for Selenium tests. Some work is still in progress on getting
+integration tests working again. We're pretty close to reaching mox to mock
+migration community goal. I would like to work on these areas in Stein release
+too.
+
+
+In addition to this, as PTL I'm going to work on the following areas:
+
+* Finish work on mox to mock migrations and integration tests CI job.
+
+* More cross projects work should be done: cross-project CI jobs for plugins,
+  work closely with projects teams to understand which features should be
+  implemented in Horizon.
+
+* We need to help to contributors to get patches merged faster: work closely
+  with new contributors, improve documentation to get it friendly both for
+  JavaScript and Python developers.
+
+
+I'm looking forward to working together with all of you on Stein release and hope
+for your help with my efforts.
+
+
+Thank you,
+Ivan Kolodyazhny (e0ne)
