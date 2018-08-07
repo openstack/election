@@ -9,6 +9,8 @@
 
 {% for candidate in candidates[project] %}{% if candidate['elected'] and 'url' in candidate %}
   * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
+{% elif candidate['elected'] == 'LEADERLESS' %}
+  * {{ candidate['statement'] }}
 {% elif candidate['elected'] %}
   * {{ candidate['fullname'] }} (\{{ candidate['ircname'] }}) {% if candidate['elected'] == 'INCUMBENT-PTL' %}[#IncumbentPTL]_{% else %}[#TCAppointed]_{% endif %}
 

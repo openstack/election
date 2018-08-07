@@ -62,6 +62,8 @@ def build_archive(serie, list_type):
                 db['tags']['TC-APPOINTED'] = True
             elif candidate['elected'] == 'INCUMBENT-PTL':
                 db['tags']['INCUMBENT-PTL'] = True
+            elif candidate['elected'] == 'LEADERLESS':
+                db['tags']['LEADERLESS'] = True
     output = os.path.join(".", "doc", "source",
                           "results", serie, "%s.rst" % list_type)
     template_name = "%s_archive.jinja" % list_type
