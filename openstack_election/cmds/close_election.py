@@ -79,7 +79,8 @@ def main():
     parser.add_argument('-b', '--basedir',
                         default=os.getcwd(),
                         help='Path to git clone of openstack/election')
-    parser.add_argument('round', choices=('ptl', 'tc'))
+    parser.add_argument('--round', default=utils.conf['election_type'],
+                        choices=('ptl', 'tc'))
 
     args = parser.parse_args()
 
