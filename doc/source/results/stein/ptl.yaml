@@ -385,6 +385,13 @@ election: stein
 elections_results:
   Senlin: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_5655e3b3821ece95
   Tacker: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_fe41cc8acc6ead91
+election_statistics:
+  - Senlin: 
+      electorate: 59
+      votes_cast: 16
+  - Tacker:
+      electorate: 54
+      votes_cast: 20
 projects:
 - Adjutant
 - Barbican

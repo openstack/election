@@ -360,6 +360,13 @@ election: queens
 elections_results:
   Documentation: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_d5d9fb5a2354e2a0
   Ironic: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_0fb06bb4edfd3d08
+election_statistics:
+  - Documentation:
+      electorate: 271
+      votes_cast: 73
+  - Ironic:
+      electorate: 221
+      votes_cast: 72
 projects:
 - Barbican
 - Chef_OpenStack
