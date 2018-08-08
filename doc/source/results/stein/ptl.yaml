@@ -1,0 +1,453 @@
+candidates:
+  Adjutant:
+  - elected: true
+    email: adriant@catalyst.net.nz
+    fullname: Adrian Turjak
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Adjutant/adriant%40catalyst.net.nz
+  Barbican:
+  - elected: true
+    email: alee@redhat.com
+    fullname: Ade Lee
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Barbican/alee%40redhat.com
+  Blazar:
+  - elected: true
+    email: pierre@stackhpc.com
+    fullname: Pierre Riteau
+    ircname: priteau
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Blazar/pierre%40stackhpc.com
+  Chef_OpenStack:
+  - elected: true
+    email: s@cassiba.com
+    fullname: Samuel Cassiba
+    ircname: scas
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Chef_OpenStack/s%40cassiba.com
+  Cinder:
+  - elected: true
+    email: jsbryant@electronicjungle.net
+    fullname: Jay Bryant
+    ircname: jungleboyj
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Cinder/jsbryant%40electronicjungle.net
+  Cloudkitty:
+  - elected: true
+    email: luka.peschke@objectif-libre.com
+    fullname: Luka Peschke
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Cloudkitty/luka.peschke%40objectif-libre.com
+  Congress:
+  - elected: true
+    email: ekcs.openstack@gmail.com
+    fullname: Eric Kao
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Congress/ekcs.openstack%40gmail.com
+  Cyborg:
+  - elected: true
+    email: liliueecg@gmail.com
+    fullname: Li Liu
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Cyborg/liliueecg%40gmail.com
+  Designate:
+  - elected: true
+    email: gr@ham.ie
+    fullname: Graham Hayes
+    ircname: mugsie
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Designate/gr%40ham.ie
+  Documentation:
+  - elected: true
+    email: pkovar@redhat.com
+    fullname: Petr Kovar
+    ircname: pkovar
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Documentation/pkovar%40redhat.com
+  Dragonflow:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_
+  Ec2_Api:
+  - elected: true
+    email: andrey.mp@gmail.com
+    fullname: Andrey Pavlov
+    ircname: andrey-mp
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Ec2_Api/andrey.mp%40gmail.com
+  Freezer:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_.  This possibly means that Freezer will be removed as an official OpenStack Project.  See `https://review.openstack.org/588645 <https://review.openstack.org/588645>`_ for more details.
+  Glance:
+  - elected: true
+    email: jokke@usr.fi
+    fullname: Erno Kuvaja
+    ircname: jokke_
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Glance/jokke%40usr.fi
+  Heat:
+  - elected: true
+    email: rico.lin@easystack.cn
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Heat/rico.lin%40easystack.cn
+  Horizon:
+  - elected: true
+    email: e0ne@e0ne.info
+    fullname: Ivan Kolodyazhny
+    ircname: e0ne
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Horizon/e0ne%40e0ne.info
+  I18n:
+  - elected: true
+    email: f.kloeker@telekom.de
+    fullname: Frank Kloeker
+    ircname: eumel8
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/I18n/f.kloeker%40telekom.de
+  Infrastructure:
+  - elected: true
+    email: cboylan@sapwetik.org
+    fullname: Clark Boylan
+    ircname: clarkb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Infrastructure/cboylan%40sapwetik.org
+  Ironic:
+  - elected: true
+    email: juliaashleykreger@gmail.com
+    fullname: Julia Kreger
+    ircname: TheJulia
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Ironic/juliaashleykreger%40gmail.com
+  Karbor:
+  - elected: true
+    email: jiaopengju@cmss.chinamobile.com
+    fullname: Pengju Jiao
+    ircname: jiaopengju
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Karbor/jiaopengju%40cmss.chinamobile.com
+  Keystone:
+  - elected: true
+    email: lbragstad@gmail.com
+    fullname: Lance Bragstad
+    ircname: lbragstad
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Keystone/lbragstad%40gmail.com
+  Kolla:
+  - elected: true
+    email: dabarren@gmail.com
+    fullname: Eduardo Gonzalez Gutierrez
+    ircname: egonzalez
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Kolla/dabarren%40gmail.com
+  Kuryr:
+  - elected: true
+    email: dmellado@redhat.com
+    fullname: Daniel Mellado
+    ircname: dmellado@freenode
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Kuryr/dmellado%40redhat.com
+  Loci:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_
+  Magnum:
+  - elected: true
+    email: strigazi@gmail.com
+    fullname: Spyros Trigazis
+    ircname: strigazi
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Magnum/strigazi%40gmail.com
+  Manila:
+  - elected: true
+    email: tpb@dyncloud.net
+    fullname: Thomas Barron
+    ircname: tbarron
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Manila/tpb%40dyncloud.net
+  Masakari:
+  - elected: true
+    email: sam47priya@gmail.com
+    fullname: Sampath Priyankara
+    ircname: samP
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Masakari/sam47priya%40gmail.com
+  Mistral:
+  - elected: true
+    email: dougal@redhat.com
+    fullname: Dougal Matthews
+    ircname: d0ugal
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Mistral/dougal%40redhat.com
+  Monasca:
+  - elected: true
+    email: witold.bedyk@est.fujitsu.com
+    fullname: Witek Bedyk
+    ircname: witek
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Monasca/witold.bedyk%40est.fujitsu.com
+  Murano:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Murano/aaronzhu1121%40gmail.com
+  Neutron:
+  - elected: true
+    email: miguel@mlavalle.com
+    fullname: Miguel Lavalle
+    ircname: mlavalle
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Neutron/miguel%40mlavalle.com
+  Nova:
+  - elected: true
+    email: melwittt@gmail.com
+    fullname: Melanie Witt
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Nova/melwittt%40gmail.com
+  Octavia:
+  - elected: true
+    email: johnsomor@gmail.com
+    fullname: Michael Johnson
+    ircname: johnsom
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Octavia/johnsomor%40gmail.com
+  OpenStackAnsible:
+  - elected: true
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/OpenStackAnsible/mnaser%40vexxhost.com
+  OpenStackClient:
+  - elected: true
+    email: dtroyer@gmail.com
+    fullname: Dean Troyer
+    ircname: dtroyer
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/OpenStackClient/dtroyer%40gmail.com
+  OpenStackSDK:
+  - elected: true
+    email: mordred@inaugust.com
+    fullname: Monty Taylor
+    ircname: mordred
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/OpenStackSDK/mordred%40inaugust.com
+  OpenStack_Charms:
+  - elected: true
+    email: frode.nordahl@canonical.com
+    fullname: Frode Nordahl
+    ircname: fnordahl
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/OpenStack_Charms/frode.nordahl%40canonical.com
+  OpenStack_Helm:
+  - elected: true
+    email: pete@port.direct
+    fullname: Pete Birley
+    ircname: portdirect
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/OpenStack_Helm/pete%40port.direct
+  Oslo:
+  - elected: true
+    email: openstack@nemebean.com
+    fullname: Ben Nemec
+    ircname: bnemec
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Oslo/openstack%40nemebean.com
+  Packaging_Rpm:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_. For Packaging_Rpm there is a potential PTL candidate. See `https://review.openstack.org/588617 <https://review.openstack.org/588617>`_ for details.
+  PowerVMStackers:
+  - elected: true
+    email: edmondsw@us.ibm.com
+    fullname: Matthew Edmonds
+    ircname: edmondsw
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/PowerVMStackers/edmondsw%40us.ibm.com
+  Puppet_OpenStack:
+  - elected: true
+    email: tobias@busybox.se
+    fullname: Tobias Urdin
+    ircname: tobasco
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Puppet_OpenStack/tobias%40busybox.se
+  Qinling:
+  - elected: true
+    email: anlin.kong@gmail.com
+    fullname: Lingxian Kong
+    ircname: lxkong
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Qinling/anlin.kong%40gmail.com
+  Quality_Assurance:
+  - elected: true
+    email: gmann@ghanshyammann.com
+    fullname: Ghanshyam Mann
+    ircname: gmann
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Quality_Assurance/gmann%40ghanshyammann.com
+  Rally:
+  - elected: true
+    email: andr.kurilin@gmail.com
+    fullname: Andrey Kurilin
+    ircname: andreykurilin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Rally/andr.kurilin%40gmail.com
+  RefStack:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_
+  Release_Management:
+  - elected: true
+    email: sean.mcginnis@gmail.com
+    fullname: Sean McGinnis
+    ircname: smcginnis
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Release_Management/sean.mcginnis%40gmail.com
+  Requirements:
+  - elected: true
+    email: prometheanfire@gentoo.org
+    fullname: Matthew Thode
+    ircname: prometheanfire
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Requirements/prometheanfire%40gentoo.org
+  Sahara:
+  - elected: true
+    email: tenobreg@redhat.com
+    fullname: Telles Nobrega
+    ircname: tellesnobrega
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Sahara/tenobreg%40redhat.com
+  Searchlight:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_.  This possibly means that Searchlight will be removed as an official OpenStack Project.  See `https://review.openstack.org/588644 <https://review.openstack.org/588644>`_ for more details.
+  Security:
+  - elected: LEADERLESS
+    statement: |
+        This project team completed transiioning to a SIG after the election started.  See `https://review.openstack.org/#/c/586896/ <https://review.openstack.org/#/c/586896/>`_ for more details.
+  Senlin:
+  - elected: true
+    email: dtruong@blizzard.com
+    fullname: Duc Truong
+    ircname: dtruong
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Senlin/dtruong%40blizzard.com
+  - elected: false
+    email: liu.xuefeng1@zte.com.cn
+    fullname: XueFeng Liu
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Senlin/liu.xuefeng1%40zte.com.cn
+  Solum:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Solum/aaronzhu1121%40gmail.com
+  Storlets:
+  - elected: true
+    email: tsuyuzaki.kota@lab.ntt.co.jp
+    fullname: Kota Tsuyuzaki
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Storlets/tsuyuzaki.kota%40lab.ntt.co.jp
+  Swift:
+  - elected: true
+    email: me@not.mn
+    fullname: John Dickinson
+    ircname: notmyname
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Swift/me%40not.mn
+  Tacker:
+  - elected: false
+    email: gong.yongsheng@99cloud.net
+    fullname: Yong Sheng Gong
+    ircname: gongysh
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Tacker/gong.yongsheng%4099cloud.net
+  - elected: true
+    email: dharmendra.kushwaha@india.nec.com
+    fullname: dharmendra kushwaha
+    ircname: dkushwaha
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Tacker/dharmendra.kushwaha%40india.nec.com
+  Telemetry:
+  - elected: true
+    email: julien@danjou.info
+    fullname: Julien Danjou
+    ircname: jd__
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Telemetry/julien%40danjou.info
+  Tricircle:
+  - elected: true
+    email: songbaisen@szzt.com.cn
+    fullname: baisen song
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Tricircle/songbaisen%40szzt.com.cn
+  Tripleo:
+  - elected: true
+    email: jaosorior@redhat.com
+    fullname: Juan Osorio Robles
+    ircname: jaosorior
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Tripleo/jaosorior%40redhat.com
+  Trove:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_.  For Trove there is a potential PTL see `https://review.openstack.org/588510 <https://review.openstack.org/588510>`_ for deatails.
+  Vitrage:
+  - elected: true
+    email: ifat.afek@nokia.com
+    fullname: Ifat Afek
+    ircname: ifat_afek
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Vitrage/ifat.afek%40nokia.com
+  Watcher:
+  - elected: true
+    email: a.chadin@servionica.ru
+    fullname: Alexander Chadin
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Watcher/a.chadin%40servionica.ru
+  Winstackers:
+  - elected: LEADERLESS
+    statement: |
+        The TC is invloved in the appropriate disucssions under `Leaderless projects <https://governance.openstack.org/tc/resolutions/20141128-elections-process-for-leaderless-programs.html>`_
+  Zaqar:
+  - elected: true
+    email: sxmatch1986@gmail.com
+    fullname: wang hao
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Zaqar/sxmatch1986%40gmail.com
+  Zun:
+  - elected: true
+    email: ji.wei3@zte.com.cn
+    fullname: Wei Ji
+    ircname: null
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/stein/Zun/ji.wei3%40zte.com.cn
+election: stein
+elections_results:
+  Senlin: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_5655e3b3821ece95
+  Tacker: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_fe41cc8acc6ead91
+projects:
+- Adjutant
+- Barbican
+- Blazar
+- Chef_OpenStack
+- Cinder
+- Cloudkitty
+- Congress
+- Cyborg
+- Designate
+- Documentation
+- Dragonflow
+- Ec2_Api
+- Freezer
+- Glance
+- Heat
+- Horizon
+- I18n
+- Infrastructure
+- Ironic
+- Karbor
+- Keystone
+- Kolla
+- Kuryr
+- Loci
+- Magnum
+- Manila
+- Masakari
+- Mistral
+- Monasca
+- Murano
+- Neutron
+- Nova
+- Octavia
+- OpenStackAnsible
+- OpenStackClient
+- OpenStackSDK
+- OpenStack_Charms
+- OpenStack_Helm
+- Oslo
+- Packaging_Rpm
+- PowerVMStackers
+- Puppet_OpenStack
+- Qinling
+- Quality_Assurance
+- Rally
+- RefStack
+- Release_Management
+- Requirements
+- Sahara
+- Searchlight
+- Security
+- Senlin
+- Solum
+- Storlets
+- Swift
+- Tacker
+- Telemetry
+- Tricircle
+- Tripleo
+- Trove
+- Vitrage
+- Watcher
+- Winstackers
+- Zaqar
+- Zun
