@@ -8,7 +8,7 @@
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}{% if candidate['elected'] and 'url' in candidate %}
-  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
+  * `{{ candidate['fullname'] }} {% if candidate['ircname'] is not none  %}({{ candidate['ircname'] }}){% endif %} <{{ candidate['url'] }}>`__
 {% elif candidate['elected'] == 'LEADERLESS' %}
   * {{ candidate['statement'] }}
 {% elif candidate['elected'] %}
