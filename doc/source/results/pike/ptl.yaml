@@ -399,6 +399,22 @@ elections_results:
   Neutron: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_6df9c8e056680402
   Quality_Assurance: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_99413ba03ba1c6b3
   Stable_Branch_Maintenance: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_b719c6a5a681033b
+election_statistics:
+  - Keystone:
+      electorate: 185
+      votes_cast: 75
+  - Ironic:
+      electorate: 210
+      votes_cast: 112
+  - Neutron:
+      electorate: 380
+      votes_cast: 161
+  - Quality_Assurance:
+      electorate: 330
+      votes_cast: 134
+  - Stable_Branch_Maintenance:
+      electorate: 805
+      votes_cast: 249
 projects:
 - Barbican
 - Chef_OpenStack

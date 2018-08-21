@@ -387,6 +387,25 @@ elections_results:
   Kolla: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_9fa13adc6f6e7148
   Magnum: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_2fd00175baa579a6
   Quality_Assurance: http://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_745c895dcf12c405
+election_statistics:
+  - Freezer:
+      electorate: 39
+      votes_cast: 34
+  - Ironic:
+      electorate: 222
+      votes_cast: 96
+  - Keystone:
+      electorate: 229
+      votes_cast: 96
+  - Kolla:
+      electorate: 174
+      votes_cast: 77
+  - Magnum:
+      electorate: 140
+      votes_cast: 63
+  - Quality_Assurance:
+      electorate: 418
+      votes_cast: 138
 projects:
 - Astara
 - Barbican

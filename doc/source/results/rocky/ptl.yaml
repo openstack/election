@@ -396,6 +396,16 @@ elections_results:
   Kolla: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_eb44669f6742dd4b
   Mistral: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_74983fd83cf5adab
   Quality_Assurance: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_274f37d8e5497358
+election_statistics:
+  - Kolla:
+      electorate: 186
+      votes_cast: 71
+  - Mistral:
+      electorate: 81
+      votes_cast: 35
+  - Quality_Assurance:
+      electorate: 269
+      votes_cast: 117
 projects:
 - Barbican
 - Blazar
