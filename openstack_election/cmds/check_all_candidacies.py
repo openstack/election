@@ -19,6 +19,7 @@ import os
 
 from openstack_election.cmds import ci_check_all_candidate_files as checks
 from openstack_election import utils
+from six.moves import input
 
 results = []
 
@@ -47,6 +48,10 @@ def main():
     parser.add_argument('--tag', dest='tag', default=utils.conf['tag'],
                         help=('The governance tag to validate against.  '
                               'Default: %(default)s'))
+    parser.add_argument('--interactive', dest='interactive', default=False,
+                        action='store_true',
+                        help=('Pause after each review to manually post '
+                              'results'))
 
     args = parser.parse_args()
     projects = utils.get_projects(tag=args.tag, fallback_to_master=True)
@@ -56,7 +61,7 @@ def main():
             continue
 
         review_url = '%s/%d' % (utils.GERRIT_BASE, review['_number'])
-        print('Checking %s' % (review_url))
+        print('\n\nChecking %s' % (review_url))
 
         for filepath in utils.candidate_files(review):
             email = utils.get_email(filepath)
@@ -73,6 +78,9 @@ def main():
 
             if candiate_ok:
                 if not utils.is_tc_election():
+                    if args.interactive:
+                        print('The following commit and profile validate this '
+                              'candidate:')
                     candiate_ok = checks.check_for_changes(projects, filepath,
                                                            args.limit)
                     print_member(filepath)
@@ -81,6 +89,13 @@ def main():
             else:
                 print('Not checking for changes as %s doesn\'t seem to '
                       'describe a valid candidacy' % (filepath))
+
+            if args.interactive:
+                try:
+                    input('Next review?')
+                except KeyboardInterrupt:
+                    print('')
+                    return 0
 
             results.append((review_url, email, team, candiate_ok))
 
