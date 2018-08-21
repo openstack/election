@@ -38,13 +38,19 @@ def as_utctime(dt):
     return "%s" % (dt.strftime("%Y-%m-%d %T UTC"))
 
 
-def collect_project_stats(basedir, verbose):
+def collect_project_stats(basedir, verbose, projects):
     global counts
 
     for directory, dirnames, filenames in os.walk(basedir):
         project = directory[len(basedir):]
         if project == "TC":
             continue
+
+        if project in projects:
+            if verbose:
+                print('Adding manual entry for project: %s' % (project))
+            filenames = ['fake@placeholder']
+
         candidates = list(filter(lambda x: '@' in x, filenames))
         candidates_count = len(candidates)
 
@@ -71,6 +77,11 @@ def main():
     parser.add_argument('-b', '--basedir',
                         default=os.getcwd(),
                         help='Path to git clone of openstack/election')
+    parser.add_argument('--projects', dest='projects', nargs='+',
+                        default=[],
+                        help=('These projects have candidates that are '
+                              'validated by one election but not yet'
+                              'approved'))
 
     args = parser.parse_args()
 
@@ -80,7 +91,7 @@ def main():
 
     args.basedir = os.path.join(args.basedir, 'candidates', args.release, '')
     args.basedir = os.path.expanduser(args.basedir)
-    collect_project_stats(args.basedir, args.verbose)
+    collect_project_stats(args.basedir, args.verbose, args.projects)
 
     now = datetime.datetime.now(tz=pytz.utc)
     now = now.replace(microsecond=0)
@@ -106,7 +117,7 @@ def main():
     print("%-25s : %s" % ("Nominations remaining", remaining))
     print("%-25s : %6.2f%%" % ("Nominations progress", p_progress))
     print("-" * 51)
-    print("%-25s : %5d" % ("Projects", counts['projects']))
+    print("%-25s : %5d" % ("Projects[1]", counts['projects']))
     print("%-25s : %5d (%6.2f%%)" % ("Projects with candidates",
                                      counts['with_candidate'],
                                      p_candidate))
@@ -121,4 +132,8 @@ def main():
     print("=" * 51)
     print("%-25s @ %s" % ("Stats gathered", as_utctime(now)))
 
+    print("")
+    print("[1] These numbers include the following projects that have a "
+          "candidate that is approved my only a single election official:"
+          "\n\t%s\n" % (" ".join(args.projects)))
     return 0
