@@ -8,4 +8,3 @@
       checks.
     vars:
       tox_envlist: ci-checks
-
