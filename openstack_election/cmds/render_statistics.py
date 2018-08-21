@@ -41,7 +41,7 @@ def as_utctime(dt):
 def collect_project_stats(basedir, verbose, projects):
     global counts
 
-    for directory, dirnames, filenames in os.walk(basedir):
+    for directory, dirnames, filenames in sorted(os.walk(basedir)):
         project = directory[len(basedir):]
         if project == "TC":
             continue
