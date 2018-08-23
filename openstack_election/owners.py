@@ -487,7 +487,7 @@ def main(options):
             member = utils.lookup_member(email)
             if member['data']:
                 owners[owner]['member'] = member['data'][0]['id']
-                continue
+                break
         invite = [owners[owner].get('member', '0')]
         invite.append(owners[owner]['name'].encode('utf-8'))
         invite.append(owners[owner]['preferred'])
