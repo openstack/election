@@ -232,14 +232,10 @@ Thank you,
     print(email_text)
 
 
-def tc_nominations_kickoff(seats, end_nominations, voting_start,
-                           voting_end, time_frame, start_release,
-                           end_release, start_nominations, end_nomination,
-                           campaign_start, campaign_end, election_start,
-                           election_end, future_release):
+def tc_nominations_kickoff():
     email_text = """
-Nominations for the Technical Committee positions (%s positions)
-are now open and will remain open until %s.
+Nominations for the Technical Committee positions (%(seats)s positions)
+are now open and will remain open until %(end_nominations)s.
 
 All nominations must be submitted as a text file to the
 openstack/election repository as explained on the election website[1].
@@ -255,20 +251,20 @@ Candidates for the Technical Committee Positions: Any Foundation
 individual member can propose their candidacy for an available,
 directly-elected TC seat.
 
-The election will be held from %s through to %s. The electorate
+The election will be held from %(voting_start)s through to %(voting_end)s. The electorate
 are the Foundation individual members that are also committers
-for one of the official teams[3] over the %s timeframe (%s to
-%s, as well as the extra-ATCs who are acknowledged by the TC[4].
+for one of the official teams[3] over the %(time_frame)s timeframe (%(start_release)s to
+%(end_release)s, as well as the extra-ATCs who are acknowledged by the TC[4].
 
 Please see the website[5] for additional details about this election.
 Please find below the timeline:
 
-TC nomination starts   @ %s
-TC nomination ends     @ %s
-TC campaigning starts  @ %s
-TC campaigning ends    @ %s
-TC elections starts    @ %s
-TC elections ends      @ %s
+TC nomination starts   @ %(start_nominations)s
+TC nomination ends     @ %(end_nominations)s
+TC campaigning starts  @ %(campaign_start)s
+TC campaigning ends    @ %(campaign_end)s
+TC elections starts    @ %(election_start)s
+TC elections ends      @ %(election_end)s
 
 If you have any questions please be sure to either ask them on the
 mailing list or to the elections officials[6].
@@ -278,24 +274,29 @@ Thank you,
 [1] http://governance.openstack.org/election/#how-to-submit-your-candidacy
 [2] http://www.openstack.org/community/members/
 [3] https://governance.openstack.org/tc/reference/projects/
-[4] https://releases.openstack.org/%s/schedule.html#p-extra-atcs
+[4] https://releases.openstack.org/%(future_release)s/schedule.html#p-extra-atcs
 [5] https://governance.openstack.org/election/
-[6] http://governance.openstack.org/election/#election-officials"""
+[6] http://governance.openstack.org/election/#election-officials"""  # noqa
 
-    print(email_text % (seats,
-                        end_nominations,
-                        voting_start,
-                        voting_end,
-                        time_frame,
-                        start_release,
-                        end_release,
-                        start_nominations,
-                        end_nomination,
-                        campaign_start,
-                        campaign_end,
-                        election_start,
-                        election_end,
-                        future_release))
+    time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
+    start_release, _, end_release = conf['timeframe']['name'].partition('-')
+    fmt_args = dict(
+        seats=conf['tc_seats'],
+        end_nominations=utils.get_event('TC Nominations')['end_str'],
+        voting_start=utils.get_event('TC Elections')['start_str'],
+        voting_end=utils.get_event('TC Elections')['end_str'],
+        time_frame=time_frame,
+        start_release=start_release,
+        end_release=end_release,
+        start_nominations=utils.get_event('TC Nominations')['start_str'],
+        end_nomination=utils.get_event('TC Nominations')['end_str'],
+        campaign_start=utils.get_event('TC Campaigning')['start_str'],
+        campaign_end=utils.get_event('TC Campaigning')['end_str'],
+        election_start=utils.get_event('TC Elections')['start_str'],
+        election_end=utils.get_event('TC Elections')['end_str'],
+        future_release=end_release.lower()
+    )
+    print(email_text % (fmt_args))
 
 
 def tc_nominations_last_days(end_nominations):
