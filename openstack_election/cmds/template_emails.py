@@ -1,6 +1,9 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import argparse
+import sys
+
 from openstack_election import config
 from openstack_election import utils
 
@@ -421,5 +424,30 @@ Thank you,
 
 
 def main():
-    # FIXME(tonyb): add a command line interface
+    parser = argparse.ArgumentParser('Tool to generate form emails')
+    # Use a sub parser so we can have diffent template choices based on the
+    # election_type
+    cmd_parsers = parser.add_subparsers(dest='election_type',
+                                        help=('Type of election. Choices '
+                                              'tc'))
+    # FIXME(tonyb): Do this after the TC election is over
+    # parser_ptl = cmd_parsers.add_parser('ptl')
+    # parser_ptl.add_argument('template', choices=[])
+    parser_tc = cmd_parsers.add_parser('tc')
+    parser_tc.add_argument('template',
+                           choices=['election_season', 'nominations_kickoff',
+                                    'nominations_last_days', 'end_nominations',
+                                    'voting_kickoff', 'voting_last_days'])
+
+    args = parser.parse_args()
+    if not args.election_type:
+        parser.print_help(sys.stderr)
+        sys.exit(1)
+
+    func_name = '%(election_type)s_%(template)s' % (args.__dict__)
+    if func_name in globals():
+        func = globals()[func_name]
+        if callable(func):
+            func()
+
     return 0
