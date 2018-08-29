@@ -296,10 +296,10 @@ Thank you,
     print(email_text % (fmt_args))
 
 
-def tc_nominations_last_days(end_nominations):
+def tc_nominations_last_days():
     email_text = """
 A quick reminder that we are in the last hours for TC
-candidate announcements. Nominations are open until %s.
+candidate announcements. Nominations are open until %(end_nominations)s.
 
 If you want to stand for TC, don't delay, follow the
 instructions at [1] to make sure the community knows your
@@ -311,8 +311,10 @@ openstack/election repository and approved by election officials.
 Thank you,
 
 [1] http://governance.openstack.org/election/#how-to-submit-your-candidacy"""
-
-    print(email_text % (end_nominations))
+    fmt_args = dict(
+        end_nominations=utils.get_event('TC Nominations')['end_str'],
+    )
+    print(email_text % (fmt_args))
 
 
 def tc_end_nominations(future_release, election_start_day):
