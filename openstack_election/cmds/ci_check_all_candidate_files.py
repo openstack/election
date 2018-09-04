@@ -107,7 +107,7 @@ def main():
         candiate_ok &= validate_filename(filepath)
         candiate_ok &= validate_member(filepath)
 
-        if candiate_ok and utils.is_tc_election:
+        if candiate_ok and not utils.is_tc_election():
             candiate_ok &= check_for_changes(projects, filepath, args.limit)
 
         errors |= not candiate_ok
