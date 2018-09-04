@@ -102,14 +102,14 @@ def main():
 
     for filepath in glob.glob(os.path.join(utils.CANDIDATE_PATH,
                                            args.release, '*', '*')):
-        candiate_ok = True
+        candidate_ok = True
 
-        candiate_ok &= validate_filename(filepath)
-        candiate_ok &= validate_member(filepath)
+        candidate_ok &= validate_filename(filepath)
+        candidate_ok &= validate_member(filepath)
 
-        if candiate_ok and not utils.is_tc_election():
-            candiate_ok &= check_for_changes(projects, filepath, args.limit)
+        if candidate_ok and not utils.is_tc_election():
+            candidate_ok &= check_for_changes(projects, filepath, args.limit)
 
-        errors |= not candiate_ok
+        errors |= not candidate_ok
 
     return 1 if errors else 0
