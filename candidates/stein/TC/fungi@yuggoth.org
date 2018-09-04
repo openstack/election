@@ -1,0 +1,24 @@
+I'm standing for reelection to a third term on the OpenStack
+Technical Committee. Rather than the usual platform where I drone on
+and on about myself, I'm going to take this opportunity to run a
+public service announcement instead.
+
+Going into my second term I stated, "my personal vision for
+OpenStack is that of a vibrant and diverse community" and I think
+we've made progress on that front but still have a long way to go.
+The diversity (personal, professional and cultural) of our community
+has increased steadily, but we won't be able to sustain it if
+similar diversity among elected leaders continues to lag behind. Our
+leaders are frequently the faces of our community to those outside
+it, and should set an example for others to follow. OpenStack is
+built on a promise of representative leadership, and so we need
+people from under-represented segments of our community to stand and
+take up the challenge. There's just over 48 hours left to send in
+your self-nomination for a seat on the TC. If you can't meet the
+time commitments but know someone who can, encourage them to run.
+
+And, of course, when the time comes, vote. Vote for the candidates
+who best represent you, your beliefs, your ideals. Vote for those
+who share your vision for who, how and what OpenStack should be. If
+you've been paying attention these past years, you already know my
+opinions. I'd rather hear some new opinions from you.
