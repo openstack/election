@@ -15,7 +15,6 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import argparse
-import glob
 import os
 
 from openstack_election import check_candidacy
@@ -100,8 +99,7 @@ def main():
 
     projects = utils.get_projects(tag=args.tag, fallback_to_master=True)
 
-    for filepath in glob.glob(os.path.join(utils.CANDIDATE_PATH,
-                                           args.release, '*', '*')):
+    for filepath in utils.find_candidate_files(election=args.release):
         candidate_ok = True
 
         candidate_ok &= validate_filename(filepath)
