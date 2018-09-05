@@ -16,6 +16,7 @@ from __future__ import unicode_literals
 
 import argparse
 import os
+import subprocess
 
 from openstack_election import check_candidacy
 from openstack_election import utils
@@ -75,6 +76,19 @@ def check_for_changes(projects, filepath, limit):
     return bool(changes_found)
 
 
+def find_modified_candidate_files():
+    "Return a list of files modified by the most recent commit."
+    results = subprocess.check_output(
+        ['git', 'diff', '--name-only', '--pretty=format:', 'HEAD^']
+    ).decode('utf-8')
+    filenames = [
+        l.strip()
+        for l in results.splitlines()
+        if l.startswith(utils.CANDIDATE_PATH + '/')
+    ]
+    return filenames
+
+
 def main():
     description = ('Check all files under the current open election are valid')
     parser = argparse.ArgumentParser(description)
@@ -90,6 +104,14 @@ def main():
                         default=utils.conf['release'],
                         help=('The relase to validate candidates against.  '
                               'Default: %(default)s'))
+    parser.add_argument('--HEAD',
+                        dest='head_only',
+                        action='store_true',
+                        default=False,
+                        help='Validate all candidates.')
+    parser.add_argument('files',
+                        nargs='*',
+                        help='Candidate files to validate.')
 
     args = parser.parse_args()
     errors = False
@@ -99,7 +121,14 @@ def main():
 
     projects = utils.get_projects(tag=args.tag, fallback_to_master=True)
 
-    for filepath in utils.find_candidate_files(election=args.release):
+    if args.files:
+        to_process = args.files
+    elif args.head_only:
+        to_process = find_modified_candidate_files()
+    else:
+        to_process = utils.find_candidate_files(election=args.release)
+
+    for filepath in to_process:
         candidate_ok = True
 
         candidate_ok &= validate_filename(filepath)
