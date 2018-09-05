@@ -1,12 +1,12 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from openstack_elections import config
-from openstack_elections import utils
+from openstack_election import config
+from openstack_election import utils
 
-conf = config.load_config()
+conf = config.load_conf()
 
-REFERENCE_URL = '%s?id=%s' (utils.PROJECTS_URL, conf['tag'])
+REFERENCE_URL = '%s?id=%s' % (utils.PROJECTS_URL, conf['tag'])
 LEADERLESS_URL = ('http://governance.openstack.org/resolutions/'
                   '20141128-elections-process-for-leaderless-programs.html')
 
@@ -424,3 +424,8 @@ Thank you,
 [2] http://governance.openstack.org/election/#election-officials"""
 
     print(email_text % (poll_end, poll_name, future_release, REFERENCE_URL))
+
+
+def main():
+    # FIXME(tonyb): add a command line interface
+    return 0
