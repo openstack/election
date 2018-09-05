@@ -1,0 +1,41 @@
+Hi all,
+
+I’m stepping out of the comfort zone and submitting my candidacy for a seat on
+the OpenStack Technical Committee.
+
+I’m a software architect at the Mass Open Cloud[0], a collaboration between
+the five major universities of the Boston area to create and operate a
+public cloud based on the Open Cloud eXchange model[1]. I’ve been involved
+with OpenStack for the past three years as a user, operator and developer.
+My main area of focus is in identity and federation. I’m a core reviewer for
+the Keystone project and the lead for MixMatch[2][3][4], which aims to enable
+resource federation among multiple OpenStack deployments.
+
+I believe my affiliation with academia and research will bring a different
+voice to the technical committee from a mostly underrepresented group.
+Furthermore, my experience with federation and operating a cloud with a
+diverse set of offerings not limited to OpenStack, but including other
+important pieces of a cloud provider’s toolbox will prove really valuable,
+especially with the vision dilemmas that OpenStack is facing today.
+
+I’m really excited to have the opportunity to take part in the discussion with
+regards to the technical vision for OpenStack. Regardless of election outcome,
+this is the first step towards a larger involvement from me in the important
+discussions (no more shying away from the important mailing list threads.)
+
+I have a lot yet to learn, and consider it a big privilege to be surrounded by
+so many kind people who have mentored me and continue to mentor me while I
+walk and stumble. I strongly believe in servant leadership, and I will devote
+myself in helping the community and mentoring the next wave of OpenStack
+contributors. I have found OpenStack to be one of the most welcoming online
+communities, and am very proud to be a part of this big family and for a
+chance to give back.
+
+Thank you for your time and attention,
+Kristi Nikolla (knikolla)
+
+[0]. https://massopen.cloud
+[1]. http://www.cs.bu.edu/fac/best/res/papers/ic14.pdf
+[2]. https://mixmatch.readthedocs.io
+[3]. https://github.com/openstack/mixmatch
+[4]. https://youtu.be/O0euqskJJ_8
