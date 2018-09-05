@@ -251,7 +251,7 @@ Candidates for the Technical Committee Positions: Any Foundation
 individual member can propose their candidacy for an available,
 directly-elected TC seat.
 
-The election will be held from %(voting_start)s through to %(voting_end)s. The electorate
+The election will be held from %(election_start)s through to %(election_end)s. The electorate
 are the Foundation individual members that are also committers
 for one of the official teams[3] over the %(time_frame)s timeframe (%(start_release)s to
 %(end_release)s, as well as the extra-ATCs who are acknowledged by the TC[4].
@@ -282,14 +282,11 @@ Thank you,
     start_release, _, end_release = conf['timeframe']['name'].partition('-')
     fmt_args = dict(
         seats=conf['tc_seats'],
-        end_nominations=utils.get_event('TC Nominations')['end_str'],
-        voting_start=utils.get_event('TC Elections')['start_str'],
-        voting_end=utils.get_event('TC Elections')['end_str'],
         time_frame=time_frame,
         start_release=start_release,
         end_release=end_release,
         start_nominations=utils.get_event('TC Nominations')['start_str'],
-        end_nomination=utils.get_event('TC Nominations')['end_str'],
+        end_nominations=utils.get_event('TC Nominations')['end_str'],
         campaign_start=utils.get_event('TC Campaigning')['start_str'],
         campaign_end=utils.get_event('TC Campaigning')['end_str'],
         election_start=utils.get_event('TC Elections')['start_str'],
