@@ -394,21 +394,20 @@ Thank you,
     print(email_text % (fmt_args))
 
 
-def tc_voting_last_days(poll_end, poll_name, future_release):
-
+def tc_voting_last_days():
     email_text = """
 We are coming down to the last hours for voting in the TC
-election. Voting ends %s.
+election. Voting ends %(poll_end)s.
 
 Search your gerrit preferred email address[0] for the following subject:
-            Poll: %s
+            Poll: %(poll_name)s
 
 That is your ballot and links you to the voting application. Please
 vote. If you have voted, please encourage your colleagues to vote.
 
 Candidate statements are linked to the names of all confirmed
 candidates:
-http://governance.openstack.org/election/#%s-tc-candidates
+http://governance.openstack.org/election/#%(future_release)s-tc-candidates
 
 What to do if you don't see the email and have a commit in at least
 one of the official programs projects[1]:
@@ -428,10 +427,16 @@ Thank you,
 [0] Sign into review.openstack.org: Go to Settings > Contact
     Information. Look at the email listed as your Preferred Email.
     That is where the ballot has been sent.
-[1] %s
+[1] %(reference_url)s
 [2] http://governance.openstack.org/election/#election-officials"""
 
-    print(email_text % (poll_end, poll_name, future_release, REFERENCE_URL))
+    fmt_args = dict(
+        poll_end=utils.get_event('TC Elections')['end_str'],
+        poll_name='%s TC Election' % (conf['release'].capitalize()),
+        future_release=conf['release'].lower(),
+        reference_url=REFERENCE_URL,
+    )
+    print(email_text % (fmt_args))
 
 
 def main():
