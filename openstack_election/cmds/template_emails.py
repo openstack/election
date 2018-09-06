@@ -317,7 +317,7 @@ Thank you,
     print(email_text % (fmt_args))
 
 
-def tc_end_nominations(future_release, election_start_day):
+def tc_end_nominations():
     email_text = """
 TC Nomination period is now over. The official candidate list is
 available on the election website[0].
@@ -325,13 +325,17 @@ available on the election website[0].
 Now begins the campaigning period where candidates and
 electorate may debate their statements.
 
-Polling will start %s.
+Polling will start %(election_start)s.
 
 Thank you,
 
-[0] http://governance.openstack.org/election/#%s-tc-candidates"""
+[0] http://governance.openstack.org/election/#%(release)s-tc-candidates"""
 
-    print(email_text % (future_release, election_start_day))
+    fmt_args = dict(
+        election_start=utils.get_event('TC Elections')['start_str'],
+        release=conf['release'],
+    )
+    print(email_text % (fmt_args))
 
 
 def tc_voting_kickoff(poll_end, seats, time_frame, start_release,
