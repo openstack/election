@@ -1,0 +1,40 @@
+Hello everybody,
+
+I am announcing my candidacy to be a member of the OpenStack Technical
+Committee (TC).
+
+I have been involved in open source since I was a brash youth on the
+Internet in the late 1990s, which amounts to over half my life at this
+point. I am a self-taught individual, cutting my teeth on BSDs of the
+period. I operated in that area for a number of years, becoming a
+'shadow' maintainer under various pseudonyms. As time progressed, I
+became comfortable attributing my work to my personal identity. o/
+
+My direct involvement with OpenStack began during the Folsom release, as
+an operator and deployer. I focused my efforts on automation, eventually
+falling in with a crowd that likes puns and cooking references. In my
+professional life, I have served as developer, operator, user, and
+architect, which extends back to the birthplace of OpenStack.
+
+I am a founding member of Chef OpenStack[0], where I have dutifully
+served as PTL for five releases. My community involvement also extends
+outside the OpenStack ecosystem, where I serve as a member of Sous
+Chefs[1], a group dedicated to the long-term care of critical Chef
+community resources.
+
+Though my hands-on experience goes back several releases, I still view
+things from the outside-looking-in perspective. Having the outsider
+lens is crucial in the long-term for any consensus-driven group,
+regardless of that consensus.
+
+Regardless of the election outcome, this is me taking steps to having a
+larger involvement in the overall conversations that drive so much of
+our daily lives. At the end of the day, we're all just groups of people
+trying to do our jobs. I view this as an opportunity to give back to a
+community that has given me so much.
+
+Thank you for your attention and consideration,
+Samuel Cassiba (scas)
+
+[0] https://docs.openstack.org/openstack-chef/latest/
+[1] https://sous-chefs.org/
