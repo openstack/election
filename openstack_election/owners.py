@@ -27,11 +27,6 @@ import yaml
 
 from openstack_election import utils
 
-try:
-    from string import maketrans
-except ImportError:  # Python3
-    maketrans = bytes.maketrans
-
 
 def dumper(data, stream):
     """Convenience wrapper to consistently set YAML formatting"""
@@ -57,7 +52,7 @@ def normalize_project(project):
     Replace spaces and hyphens with underscores in project teams
     and then lower-case them, for more convenient filenames
     """
-    return project.translate(maketrans(' -', '__')).lower()
+    return project.translate(str.maketrans(' -', '__')).lower()
 
 
 def date_merged(change, after=None, before=None):
