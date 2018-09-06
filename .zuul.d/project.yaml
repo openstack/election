@@ -5,13 +5,11 @@
       - openstack-python36-jobs
     check:
       jobs:
-        - openstack-tox-py27
         - openstack-tox-linters
         - election-tox-ci-checks-review
         - election-tox-ci-checks-election
     gate:
       jobs:
-        - openstack-tox-py27
         - openstack-tox-linters
         - election-tox-ci-checks-election
     post:

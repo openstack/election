@@ -23,8 +23,6 @@ import yaml
 from collections import OrderedDict
 
 from openstack_election.config import ISO_FMT
-# Because python 2 has a revered OrderedDict ?
-import openstack_election.require_py3  # noqa
 from openstack_election import utils
 
 ONE_WEEK = datetime.timedelta(weeks=1)
