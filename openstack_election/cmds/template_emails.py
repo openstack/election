@@ -24,7 +24,6 @@ tc_fmt_args = dict(
     campaign_end=utils.get_event('TC Campaigning')['end_str'],
     election_start=utils.get_event('TC Elections')['start_str'],
     election_end=utils.get_event('TC Elections')['end_str'],
-    poll_end=utils.get_event('TC Elections')['end_str'],
     poll_name='%s TC Election' % (conf['release'].capitalize()),
     reference_url=REFERENCE_URL,
     future_release=end_release.lower(),
@@ -339,7 +338,7 @@ Thank you,
 
 def tc_voting_kickoff():
     email_text = """
-The poll for the TC Election is now open and will remain open until %(poll_end)s.
+The poll for the TC Election is now open and will remain open until %(election_end)s.
 
 We are selecting %(seats)s TC members, please rank all candidates in
 your order of preference.
@@ -385,7 +384,7 @@ Thank you,
 def tc_voting_last_days():
     email_text = """
 We are coming down to the last hours for voting in the TC
-election. Voting ends %(poll_end)s.
+election. Voting ends %(election_end)s.
 
 Search your gerrit preferred email address[0] for the following subject:
             Poll: %(poll_name)s
