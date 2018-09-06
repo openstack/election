@@ -338,17 +338,16 @@ Thank you,
     print(email_text % (fmt_args))
 
 
-def tc_voting_kickoff(poll_end, seats, time_frame, start_release,
-                      end_release, future_release):
+def tc_voting_kickoff():
     email_text = """
-The poll for the TC Election is now open and will remain open until %s.
+The poll for the TC Election is now open and will remain open until %(poll_end)s.
 
-We are selecting %s TC members, please rank all candidates in
+We are selecting %(seats)s TC members, please rank all candidates in
 your order of preference.
 
 You are eligible to vote if you are a Foundation individual member[1]
 that also has committed to one of the official programs projects[2]
-over the %s timeframe (%s to %s) or if you are one of the
+over the %(time_frame)s timeframe (%(start_release)s to %(end_release)s) or if you are one of the
 extra-atcs.[3]
 
 What to do if you don't see the email and have a commit in at least
@@ -373,21 +372,26 @@ Happy voting!
 Thank you,
 
 [1] http://www.openstack.org/community/members/
-[2] %s
+[2] %(reference_url)s
 [3] Look for the extra-atcs element in [2]
 [4] Sign into review.openstack.org: Go to Settings > Contact Information. Look
     at the email listed as your preferred email. That is where the ballot has
     been sent.
 [5] http://governance.openstack.org/election/#election-officials
-[6] http://governance.openstack.org/election/#%s-tc-candidates"""
+[6] http://governance.openstack.org/election/#%(future_release)s-tc-candidates"""  # noqa
 
-    print(email_text % (poll_end,
-                        seats,
-                        time_frame,
-                        start_release,
-                        end_release,
-                        REFERENCE_URL,
-                        future_release))
+    time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
+    start_release, _, end_release = conf['timeframe']['name'].partition('-')
+    fmt_args = dict(
+        poll_end=utils.get_event('TC Elections')['end_str'],
+        seats=conf['tc_seats'],
+        time_frame=time_frame,
+        start_release=start_release,
+        end_release=end_release,
+        reference_url=REFERENCE_URL,
+        future_release=conf['release'].lower(),
+    )
+    print(email_text % (fmt_args))
 
 
 def tc_voting_last_days(poll_end, poll_name, future_release):
