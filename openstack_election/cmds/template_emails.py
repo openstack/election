@@ -17,6 +17,7 @@ tc_fmt_args = dict(
     time_frame=time_frame,
     start_release=start_release,
     end_release=end_release,
+    last_release=end_release.lower(),
     start_nominations=utils.get_event('TC Nominations')['start_str'],
     end_nominations=utils.get_event('TC Nominations')['end_str'],
     campaign_start=utils.get_event('TC Campaigning')['start_str'],
@@ -294,7 +295,7 @@ Thank you,
 [1] http://governance.openstack.org/election/#how-to-submit-your-candidacy
 [2] http://www.openstack.org/community/members/
 [3] https://governance.openstack.org/tc/reference/projects/
-[4] https://releases.openstack.org/%(release)s/schedule.html#p-extra-atcs
+[4] https://releases.openstack.org/%(last_release)s/schedule.html#p-extra-atcs
 [5] https://governance.openstack.org/election/
 [6] http://governance.openstack.org/election/#election-officials"""  # noqa
 
