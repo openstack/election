@@ -10,6 +10,26 @@ REFERENCE_URL = '%s?id=%s' % (utils.PROJECTS_URL, conf['tag'])
 LEADERLESS_URL = ('http://governance.openstack.org/resolutions/'
                   '20141128-elections-process-for-leaderless-programs.html')
 
+time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
+start_release, _, end_release = conf['timeframe']['name'].partition('-')
+tc_fmt_args = dict(
+    seats=conf['tc_seats'],
+    time_frame=time_frame,
+    start_release=start_release,
+    end_release=end_release,
+    start_nominations=utils.get_event('TC Nominations')['start_str'],
+    end_nominations=utils.get_event('TC Nominations')['end_str'],
+    campaign_start=utils.get_event('TC Campaigning')['start_str'],
+    campaign_end=utils.get_event('TC Campaigning')['end_str'],
+    election_start=utils.get_event('TC Elections')['start_str'],
+    election_end=utils.get_event('TC Elections')['end_str'],
+    poll_end=utils.get_event('TC Elections')['end_str'],
+    poll_name='%s TC Election' % (conf['release'].capitalize()),
+    reference_url=REFERENCE_URL,
+    future_release=end_release.lower(),
+    release=conf['release'],
+)
+
 
 def ptl_election_season():
     email_text = """
@@ -274,26 +294,11 @@ Thank you,
 [1] http://governance.openstack.org/election/#how-to-submit-your-candidacy
 [2] http://www.openstack.org/community/members/
 [3] https://governance.openstack.org/tc/reference/projects/
-[4] https://releases.openstack.org/%(future_release)s/schedule.html#p-extra-atcs
+[4] https://releases.openstack.org/%(release)s/schedule.html#p-extra-atcs
 [5] https://governance.openstack.org/election/
 [6] http://governance.openstack.org/election/#election-officials"""  # noqa
 
-    time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
-    start_release, _, end_release = conf['timeframe']['name'].partition('-')
-    fmt_args = dict(
-        seats=conf['tc_seats'],
-        time_frame=time_frame,
-        start_release=start_release,
-        end_release=end_release,
-        start_nominations=utils.get_event('TC Nominations')['start_str'],
-        end_nominations=utils.get_event('TC Nominations')['end_str'],
-        campaign_start=utils.get_event('TC Campaigning')['start_str'],
-        campaign_end=utils.get_event('TC Campaigning')['end_str'],
-        election_start=utils.get_event('TC Elections')['start_str'],
-        election_end=utils.get_event('TC Elections')['end_str'],
-        future_release=end_release.lower()
-    )
-    print(email_text % (fmt_args))
+    print(email_text % (tc_fmt_args))
 
 
 def tc_nominations_last_days():
@@ -311,10 +316,7 @@ openstack/election repository and approved by election officials.
 Thank you,
 
 [1] http://governance.openstack.org/election/#how-to-submit-your-candidacy"""
-    fmt_args = dict(
-        end_nominations=utils.get_event('TC Nominations')['end_str'],
-    )
-    print(email_text % (fmt_args))
+    print(email_text % (tc_fmt_args))
 
 
 def tc_end_nominations():
@@ -331,11 +333,7 @@ Thank you,
 
 [0] http://governance.openstack.org/election/#%(release)s-tc-candidates"""
 
-    fmt_args = dict(
-        election_start=utils.get_event('TC Elections')['start_str'],
-        release=conf['release'],
-    )
-    print(email_text % (fmt_args))
+    print(email_text % (tc_fmt_args))
 
 
 def tc_voting_kickoff():
@@ -380,18 +378,7 @@ Thank you,
 [5] http://governance.openstack.org/election/#election-officials
 [6] http://governance.openstack.org/election/#%(future_release)s-tc-candidates"""  # noqa
 
-    time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
-    start_release, _, end_release = conf['timeframe']['name'].partition('-')
-    fmt_args = dict(
-        poll_end=utils.get_event('TC Elections')['end_str'],
-        seats=conf['tc_seats'],
-        time_frame=time_frame,
-        start_release=start_release,
-        end_release=end_release,
-        reference_url=REFERENCE_URL,
-        future_release=conf['release'].lower(),
-    )
-    print(email_text % (fmt_args))
+    print(email_text % (tc_fmt_args))
 
 
 def tc_voting_last_days():
@@ -430,13 +417,7 @@ Thank you,
 [1] %(reference_url)s
 [2] http://governance.openstack.org/election/#election-officials"""
 
-    fmt_args = dict(
-        poll_end=utils.get_event('TC Elections')['end_str'],
-        poll_name='%s TC Election' % (conf['release'].capitalize()),
-        future_release=conf['release'].lower(),
-        reference_url=REFERENCE_URL,
-    )
-    print(email_text % (fmt_args))
+    print(email_text % (tc_fmt_args))
 
 
 def main():
