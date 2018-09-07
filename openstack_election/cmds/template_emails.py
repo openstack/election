@@ -339,6 +339,34 @@ Thank you,
     print(email_text % (tc_fmt_args))
 
 
+def tc_campaigning_kickoff():
+    email_text = """
+Developers,
+    The TC Election Campaigning Period has now started [1].  During the next
+couple days, you are all encouraged to ask the candidates questions about
+their platforms [2], opinions on OpenStack, community governance, and anything
+else that will help you to better determine how you will vote.  This is the
+time to raise any issues you wish the future TC to consider, and to evaluate
+the opinions of the nominees prior to their election.
+
+Candidates,
+    Each of you has posted a platform [2], and announced your nomination to
+the developers.  From this point, you are encouraged to ask each other
+questions about the posted platforms, and begin discussion of any points
+that you feel are particularly important during the next cycle.  While you
+are not yet TC members, your voices and opinions about the issues raised in
+your platforms and questions raised by the wider community will help ensure
+that the future TC has the widest possible input on the matters of community
+concern, and the electorate has the best information to determine the ideal
+TC composition to address these and other issues that may arise.
+
+[1] https://governance.openstack.org/election/
+[2] http://git.openstack.org/cgit/openstack/election/tree/candidates/%(release)s/TC
+"""  # noqa
+
+    print(email_text % (tc_fmt_args))
+
+
 def tc_voting_kickoff():
     email_text = """
 The poll for the TC Election is now open and will remain open until %(election_end)s.
@@ -437,6 +465,7 @@ def main():
     parser_tc.add_argument('template',
                            choices=['election_season', 'nominations_kickoff',
                                     'nominations_last_days', 'end_nominations',
+                                    'campaigning_kickoff',
                                     'voting_kickoff', 'voting_last_days'])
 
     args = parser.parse_args()
