@@ -278,7 +278,7 @@ def election_is_running():
     return False
 
 
-def build_candidates_list(election=conf['release']):
+def find_candidate_files(election=conf['release']):
     election_path = os.path.join(CANDIDATE_PATH, election)
     if os.path.exists(election_path):
         project_list = os.listdir(election_path)
@@ -296,36 +296,44 @@ def build_candidates_list(election=conf['release']):
             project_list
         ))
 
-    project_list.sort()
-    candidates_lists = {}
+    candidate_files = []
     for project in project_list:
-        project_prefix = os.path.join(CANDIDATE_PATH, election, project)
-        file_list = list(filter(
+        project_prefix = os.path.join(election_path, project)
+        candidate_files += list(filter(
             lambda x: '@' in x,
-            os.listdir(project_prefix),
+            [os.path.join(project_prefix, i)
+             for i in os.listdir(project_prefix)],
         ))
-        candidates_list = []
-        for candidate_file in file_list:
-            filepath = os.path.join(project_prefix, candidate_file)
-            email = get_email(filepath)
-            member = lookup_member(email)
 
-            if member.get('data', []) == []:
-                raise exception.MemberNotFoundException(email=email)
+    candidate_files.sort()
+    return candidate_files
 
-            candidates_list.append(
-                {
-                    'url': ('%s/%s/plain/%s' %
-                            (CGIT_URL, ELECTION_REPO,
-                             quote_plus(filepath, safe='/'))),
-                    'email': email,
-                    'ircname': get_irc(member),
-                    'fullname': get_fullname(member, filepath=filepath)
-                })
 
-        candidates_list.sort(key=lambda x: x['fullname'])
-        candidates_lists[project] = candidates_list
+def build_candidates_list(election=conf['release']):
+    candidate_files = find_candidate_files(election=election)
+    candidates_lists = {}
+    projects = set()
+    for filepath in candidate_files:
+        project = os.path.basename(os.path.dirname(filepath))
+        if project not in candidates_lists:
+            candidates_lists[project] = []
+        projects.add(project)
+
+        email = get_email(filepath)
+        member = lookup_member(email)
+
+        if member.get('data', []) == []:
+            raise exception.MemberNotFoundException(email=email)
+
+        candidates_lists[project].append({
+            'url': ('%s/%s/plain/%s' %
+                    (CGIT_URL, ELECTION_REPO,
+                     quote_plus(filepath, safe='/'))),
+            'email': email,
+            'ircname': get_irc(member),
+            'fullname': get_fullname(member, filepath=filepath)
+        })
 
     return {'election': election,
-            'projects': project_list,
+            'projects': list(projects),
             'candidates': candidates_lists}

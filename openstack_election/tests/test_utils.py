@@ -49,15 +49,35 @@ class TestGerritUtils(ElectionTestCase):
         self.assertEqual(dirname, utils.name2dir(name))
 
 
+class TestFindCandidateFiles(ElectionTestCase):
+    @mock.patch.object(utils, 'is_tc_election', return_value=False)
+    @mock.patch('os.path.exists', return_value=True)
+    @mock.patch('os.listdir', side_effect=[['SomeProject', 'TC'],
+                                           ['invalid@example.com']])
+    def test_ptl_lists(self, mock_listdir, mock_path_exists,
+                       mock_is_tc_election):
+        candidate_files = utils.find_candidate_files(election='fake')
+        self.assertEqual(['candidates/fake/SomeProject/invalid@example.com'],
+                         candidate_files)
+
+    @mock.patch.object(utils, 'is_tc_election', return_value=True)
+    @mock.patch('os.path.exists', return_value=True)
+    @mock.patch('os.listdir', side_effect=[['SomeProject', 'TC'],
+                                           ['invalid@example.com']])
+    def test_tc_lists(self, mock_listdir, mock_path_exists,
+                      mock_is_tc_election):
+        candidate_files = utils.find_candidate_files(election='fake')
+        self.assertEqual(['candidates/fake/TC/invalid@example.com'],
+                         candidate_files)
+
+
 class TestBuildCandidatesList(ElectionTestCase):
     @mock.patch.object(utils, 'lookup_member')
-    @mock.patch.object(utils, 'is_tc_election',
-                       return_value=False)
-    @mock.patch('os.path.exists', return_value=True)
-    @mock.patch('os.listdir', side_effect=[['SomeProject'],
-                                           ['invalid@example.com']])
-    def test_invalid_candidate(self, mock_listdir, mock_path_exists,
-                               mock_is_tc_election, mock_lookup_member):
+    @mock.patch.object(utils, 'find_candidate_files')
+    def test_invalid_candidate(self, mock_candidates_list, mock_lookup_member):
+        mock_candidates_list.return_value = [
+            'candidates/fake/SomeProject/invalid@example.com'
+        ]
         mock_lookup_member.return_value = dict(data=[])
 
         self.assertRaises(exception.MemberNotFoundException,
@@ -65,14 +85,12 @@ class TestBuildCandidatesList(ElectionTestCase):
                           'fake')
 
     @mock.patch.object(utils, 'lookup_member')
-    @mock.patch.object(utils, 'is_tc_election',
-                       return_value=False)
-    @mock.patch('os.path.exists', return_value=True)
-    @mock.patch('os.listdir', side_effect=[['SomeProject'],
-                                           ['invalid@example.com']])
-    def test_valid_candidate(self, mock_listdir, mock_path_exists,
-                             mock_is_tc_election, mock_lookup_member):
+    @mock.patch.object(utils, 'find_candidate_files')
+    def test_valid_candidate(self, mock_candidates_list, mock_lookup_member):
 
+        mock_candidates_list.return_value = [
+            'candidates/fake/SomeProject/invalid@example.com'
+        ]
         member = dict(irc='ircnick',
                       first_name='Avery',
                       last_name='Developer')
