@@ -155,6 +155,7 @@ TC Election Round
 
 When PTL Election begins:
 * Create CIVS page
+  * Enable detailed ballot reporting
 * Upload rolls
 * Send 'TC Voting Kickoff' Email
 
@@ -162,10 +163,14 @@ A couple of days before the TC Election ends:
 * Send 'TC Voting Last Days' email
 
 When TC Election ends:
-* close the election and update the results:
-  * tox -e venv -- close-election tc
-  * edit doc/source/pike/tc.yaml
-* Commit the change and review the results
-* Send 'TC Results'
+* Close the election
+* Run: tox -e venv -- close-election tc
+  * edit doc/source/pike/tc.yaml setting the winners to 'True'
+  * Commit change & push review
+* Send 'TC Results' email
+* Update reference/members in governance repository
+  * Add new members
+  * Remove 'chair' & 'vice-chair' from file
+  * Commit change & push review
 * Update tc-election-summary.py with election statistics
 * Send 'TC Election Statistics'
