@@ -77,6 +77,12 @@ data = [
         'votes_cast': 384,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_98430d99fc2ed59d')
     },
+    {
+        'election': '09/2018',  # Stein
+        'electorate': 1636,
+        'votes_cast': 403,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_f773fda2d0695864')
+    },
 ]
 
 
