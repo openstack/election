@@ -10,14 +10,17 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-"""Build configuration substitution
-"""
+"""Build configuration substitution"""
+
+import os
 
 import jinja2
 import jinja2.environment
-import os
+from sphinx.util import logging
 
 from openstack_election.utils import conf
+
+LOG = logging.getLogger(__name__)
 
 
 def build_configuration(app):
@@ -31,5 +34,5 @@ def build_configuration(app):
 
 
 def setup(app):
-    app.info('loading configuration extension')
+    LOG.info('loading configuration extension')
     app.connect('builder-inited', build_configuration)

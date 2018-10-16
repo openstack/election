@@ -10,20 +10,20 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-"""Build candidates list
-"""
+"""Build candidates list"""
 
-import jinja2
-import jinja2.environment
 import os
 import yaml
 
 from docutils import nodes
 from docutils.parsers.rst import Directive
 from docutils.statemachine import ViewList
-from openstack_election import utils
+import jinja2
+import jinja2.environment
 from sphinx.util import logging
 from sphinx.util.nodes import nested_parse_with_titles
+
+from openstack_election import utils
 
 LOG = logging.getLogger(__name__)
 
@@ -144,7 +144,7 @@ class CandidatesDirective(Directive):
 
 
 def setup(app):
-    app.info('loading candidates extension')
+    LOG.info('loading candidates extension')
     app.connect('builder-inited', build_lists)
     app.add_directive('candidates', CandidatesDirective)
     return {'version': '0.1'}

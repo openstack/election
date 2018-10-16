@@ -10,14 +10,17 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-"""Add election timer data
-"""
+"""Add election timer data"""
+
+import os
 
 import jinja2
 import jinja2.environment
-import os
+from sphinx.util import logging
 
 from openstack_election import utils
+
+LOG = logging.getLogger(__name__)
 
 
 def build_timer(app):
@@ -32,5 +35,5 @@ def build_timer(app):
 
 
 def setup(app):
-    app.info('loading events_timer extension')
+    LOG.info('loading events_timer extension')
     app.connect('builder-inited', build_timer)
