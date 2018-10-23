@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.join(os.path.abspath('.'), '_exts'))
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'sphinx.ext.extlinks',
-    'oslosphinx',
+    'openstackdocstheme',
     'candidates',
     'events',
     'configuration',
@@ -100,19 +100,22 @@ modindex_common_prefix = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'nature'
+html_theme = 'governance'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    'display_global_toc_section': False,
+    'root_title': 'OpenStack Governance'
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ['_themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = 'OpenStack Governance'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
