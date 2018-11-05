@@ -1,6 +1,6 @@
 - project:
     templates:
-      - build-openstack-sphinx-docs
+      - build-openstack-docs-pti
       - openstack-python35-jobs
       - openstack-python36-jobs
     check:
@@ -15,4 +15,4 @@
         - election-tox-ci-checks
     post:
       jobs:
-        - publish-static
+        - publish-tox-docs-static
