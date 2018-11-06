@@ -22,7 +22,10 @@ from docutils import nodes
 from docutils.parsers.rst import Directive
 from docutils.statemachine import ViewList
 from openstack_election import utils
+from sphinx.util import logging
 from sphinx.util.nodes import nested_parse_with_titles
+
+LOG = logging.getLogger(__name__)
 
 
 def render_template(template, data, **kwargs):
@@ -38,6 +41,7 @@ def render_list(list_type, candidates_list):
     template_name = "%s.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
     with open(output_file, "wb") as out:
+        LOG.info('writing list to %s', output_file)
         out.write(
             render_template(
                 template_name,
@@ -69,6 +73,7 @@ def build_archive(serie, list_type):
     template_name = "%s_archive.jinja" % list_type
     template_dir = os.path.join(".", "doc", "source", "_exts")
     with open(output, "wb") as out:
+        LOG.info('writing archive data to %s', output)
         out.write(
             render_template(
                 template_name,
@@ -112,7 +117,9 @@ def build_lists(app):
         if build_archive(previous, "tc"):
             previous_toc.append("    results/%s/tc.rst" % previous)
     toc = os.path.join(".", "doc", "source", "archive_toc.rst")
-    open(toc, "w").write("\n".join(previous_toc))
+    with open(toc, "w") as toc_fd:
+        LOG.info('writing TOC to %s', toc)
+        toc_fd.write("\n".join(previous_toc))
 
 
 class CandidatesDirective(Directive):
