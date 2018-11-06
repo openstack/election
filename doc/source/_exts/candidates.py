@@ -96,12 +96,13 @@ def build_archive(serie, list_type):
 
 
 def build_lists(app):
-    # Current candidates
-    candidates_list = utils.build_candidates_list()
-    if not utils.is_tc_election():
-        render_list("ptl", candidates_list)
-    else:
-        render_list("tc", candidates_list)
+    if utils.election_is_running():
+        # Current candidates
+        candidates_list = utils.build_candidates_list()
+        if not utils.is_tc_election():
+            render_list("ptl", candidates_list)
+        else:
+            render_list("tc", candidates_list)
 
     # Archived elections
     previous_toc = [
