@@ -42,7 +42,7 @@ Results
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}{% if 'url' in candidate %}
-  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`_
+  * `{{ candidate['fullname'] }} ({{ candidate['ircname'] }}) <{{ candidate['url'] }}>`__
 {% endif %}{% endfor %}
 
 {% endfor %}
