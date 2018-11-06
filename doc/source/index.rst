@@ -23,6 +23,7 @@ Election Officials
 
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
 * Emmet Hikory (persia), persia at shipstone dot jp
+* Jeremy Stanley (fungi), fungi at yuggoth dot org
 * Tony Breeds (tonyb), tony at bakeyournoodle dot com
 
 For any questions, please contact officials by mail or over irc at
