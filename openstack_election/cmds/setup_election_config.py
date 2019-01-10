@@ -139,19 +139,28 @@ def main():
     print('Set email_deadline to %s' % (iso_fmt(email_deadline)))
 
     if args.type == 'PTL':
-        # For a PTL election we haven't closed the current cycle so we set thew
-        # timeframe right up to the begining of the nomination period.
-        print('Setting PTL timeframe end to email_dedline')
+        # For a PTL election we haven't closed the current cycle so we set the
+        # timeframe right up to the beginning of the nomination period.
+        print('Setting PTL timeframe end to email_deadline')
         timeframe_end = email_deadline
     else:
-        # For a TC election we have completed the previous cycle so grab the
-        # release dat for it.
+        # For a TC election we should have completed the previous cycle so grab
+        # the release date for it.  It is however possible that the gap between
+        # that release and the summit doesn't allow for an election.  In that
+        # case we need to use the email_deadline for timeframe_end
+
+        # Grab the rlease data and fromvert it to a datetime
         timeframe_end = series_data[idx+1]['initial-release']
         timeframe_end = datetime.datetime.combine(timeframe_end,
                                                   datetime.time(0, 0))
         timeframe_end = timeframe_end.replace(tzinfo=pytz.UTC)
-        print('Setting TC timeframe end to %s Release date %s' %
-              (series_data[idx+1]['name'], iso_fmt(timeframe_end)))
+
+        if timeframe_end < email_deadline:
+            print('Setting TC timeframe end to %s Release date %s' %
+                  (series_data[idx+1]['name'], iso_fmt(timeframe_end)))
+        else:
+            timeframe_end = email_deadline
+            print('Setting TC timeframe end to email_deadline')
 
     print('Begining of %s Cycle @ %s' % (names[idx+2].capitalize(),
                                          timeframe_start))
