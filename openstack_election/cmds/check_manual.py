@@ -49,7 +49,7 @@ def main():
 
     if check_candidacy.check_candidate(args.project_name, args.email,
                                        projects, limit=args.limit):
-        print('SUCESS: %s is a valid candidate\n\n' % (args.email))
+        print('SUCCESS: %s is a valid candidate\n\n' % (args.email))
         return 0
     else:
         print('[E]: %s is not a valid candidate\n\n' % (args.email))

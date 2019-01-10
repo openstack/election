@@ -47,7 +47,7 @@ def main():
         print("[E] %s\n\n" % (exc))
     else:
         if found:
-            print('SUCESS: %s is a valid candidate\n\n' % (owner['email']))
+            print('SUCCESS: %s is a valid candidate\n\n' % (owner['email']))
             return 0
         else:
             print('[E]: %s is not a valid candidate\n\n' % (owner['email']))
