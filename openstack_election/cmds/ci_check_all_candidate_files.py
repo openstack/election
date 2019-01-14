@@ -84,7 +84,8 @@ def find_modified_candidate_files():
     filenames = [
         l.strip()
         for l in results.splitlines()
-        if l.startswith(utils.CANDIDATE_PATH + '/')
+        if (l.startswith(utils.CANDIDATE_PATH + '/') and
+            not l.endswith('.placeholder'))
     ]
     return filenames
 

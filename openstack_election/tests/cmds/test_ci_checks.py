@@ -35,7 +35,7 @@ class TestFindModifiedCandidateFiles(base.ElectionTestCase):
         check_output = (('configuration.yaml\n'
                          '%(path)s/.placeholder\n'
                          ) % ({'path': utils.CANDIDATE_PATH})).encode('utf-8')
-        expected_filenames = ['%s/.placeholder' % utils.CANDIDATE_PATH]
+        expected_filenames = []
         mock_check_output.return_value = check_output
         filenames = \
             ci_check_all_candidate_files.find_modified_candidate_files()
@@ -48,9 +48,7 @@ class TestFindModifiedCandidateFiles(base.ElectionTestCase):
                          '%(path)s/cadidate\n'
                          '%(path)s/.placeholder\n'
                          ) % ({'path': utils.CANDIDATE_PATH})).encode('utf-8')
-        expected_filenames = ['%s/cadidate' % utils.CANDIDATE_PATH,
-                              '%s/.placeholder' % utils.CANDIDATE_PATH
-                              ]
+        expected_filenames = ['%s/cadidate' % utils.CANDIDATE_PATH]
         mock_check_output.return_value = check_output
         filenames = \
             ci_check_all_candidate_files.find_modified_candidate_files()
