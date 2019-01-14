@@ -15,22 +15,13 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import mock
-import testtools
 
 from openstack_election import exception
-from openstack_election.tests import fixtures as election_fixtures
+from openstack_election.tests import base
 from openstack_election import utils
 
 
-class ElectionTestCase(testtools.TestCase):
-    def setUp(self):
-        """Run before each test method to initialize test environment."""
-        super(ElectionTestCase, self).setUp()
-        self.output = election_fixtures.OutputStreamCapture()
-        self.useFixture(self.output)
-
-
-class TestGerritUtils(ElectionTestCase):
+class TestGerritUtils(base.ElectionTestCase):
     def test_candidate_files(self):
         review = {'revisions': {
                   'Ifake': {
@@ -49,7 +40,7 @@ class TestGerritUtils(ElectionTestCase):
         self.assertEqual(dirname, utils.name2dir(name))
 
 
-class TestFindCandidateFiles(ElectionTestCase):
+class TestFindCandidateFiles(base.ElectionTestCase):
     @mock.patch.object(utils, 'is_tc_election', return_value=False)
     @mock.patch('os.path.exists', return_value=True)
     @mock.patch('os.listdir', side_effect=[['SomeProject', 'TC'],
@@ -71,7 +62,7 @@ class TestFindCandidateFiles(ElectionTestCase):
                          candidate_files)
 
 
-class TestBuildCandidatesList(ElectionTestCase):
+class TestBuildCandidatesList(base.ElectionTestCase):
     @mock.patch.object(utils, 'lookup_member')
     @mock.patch.object(utils, 'find_candidate_files')
     def test_invalid_candidate(self, mock_candidates_list, mock_lookup_member):
