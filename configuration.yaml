@@ -1,27 +1,20 @@
 ---
-release: stein
+release: train
 election_type: tc
-
-tag: 'sept-2018-elections'
-
+tag: feb-2019-elections
+tc_seats: 7
 timeframe:
-  name: 'Queens-Rocky'
-  # Beginning of the pike RC1/branch point for queens
-  start: '2017-08-11T00:00'
-  end: '2018-08-30T00:00'
-  # Email deadline, to give officials the campaign/ptg week to
-  # generate and verify rolls
-  email_deadline: '2018-09-09T00:00'
-
-tc_seats: 6
-
+  name: Rocky-Stein
+  start: 2018-02-09T00:00
+  end: 2019-02-19T00:00
+  email_deadline: 2019-02-19T00:00
 timeline:
   - name:  'TC Nominations'
-    start: '2018-08-30T23:45'
-    end:   '2018-09-06T23:45'
+    start: '2019-02-12T23:45'
+    end:   '2019-02-19T23:45'
   - name:  'TC Campaigning'
-    start: '2018-09-06T23:45'
-    end:   '2018-09-18T23:45'
+    start: '2019-02-19T23:45'
+    end:   '2019-02-26T23:45'
   - name:  'TC Elections'
-    start: '2018-09-18T23:45'
-    end:   '2018-09-27T23:45'
+    start: '2019-02-26T23:45'
+    end:   '2019-03-05T23:45'
