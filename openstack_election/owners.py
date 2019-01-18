@@ -484,7 +484,7 @@ def main(options):
                 owners[owner]['member'] = member['data'][0]['id']
                 break
         invite = [owners[owner].get('member', '0')]
-        invite.append(owners[owner]['name'].encode('utf-8'))
+        invite.append(owners[owner]['name'])
         invite.append(owners[owner]['preferred'])
         invite += owners[owner]['extra']
         invites.append(invite)
