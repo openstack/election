@@ -85,13 +85,19 @@ def query_gerrit(method, params={}):
     return decode_json(raw)
 
 
+def load_yaml(yaml_stream):
+    """Retrieve a file from the cgit interface"""
+
+    return yaml.safe_load(yaml_stream)
+
+
 def get_from_cgit(project, obj, params={}):
     """Retrieve a file from the cgit interface"""
 
     url = 'http://git.openstack.org/cgit/' + project + '/plain/' + obj
     raw = requester(url, params=params,
                     headers={'Accept': 'application/json'})
-    return yaml.safe_load(raw.text)
+    return load_yaml(raw.text)
 
 
 def get_series_data():
@@ -228,7 +234,7 @@ def _get_projects(tag=None):
             os.stat(cache_file).st_size < 100 or
             os.stat(cache_file).st_mtime + (7*24*3600) < time.time()):
         print("[+] Updating %s" % (cache_file))
-        data = yaml.safe_load(urlopen(url).read())
+        data = load_yaml(urlopen(url).read())
         pickle.dump(data, open(cache_file, "wb"), protocol=2)
 
     return pickle.load(open(cache_file, "rb"))

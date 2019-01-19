@@ -122,6 +122,14 @@ def main(options):
     else:
         ignore = []
 
+    # Legacy projects file path
+    if options.legacy:
+        legacy_file = options.legacy
+    elif 'legacy' in config:
+        legacy_file = config['legacy']
+    else:
+        legacy_file = None
+
     # Whether to omit "extra ATCs"
     if options.no_extra_atcs:
         no_extra_atcs = options.no_extra_atcs
@@ -139,6 +147,14 @@ def main(options):
         outdir = '.'
     if not os.path.isdir(outdir):
         os.makedirs(outdir)
+
+    # Projects file path
+    if options.projects:
+        projects_file = options.projects
+    elif 'projects' in config:
+        projects_file = config['projects']
+    else:
+        projects_file = None
 
     # Governance Git repository ref object for reference lists
     if options.ref:
@@ -165,20 +181,22 @@ def main(options):
 
     # Retrieve the governance projects list, needs a Git refname as a
     # parameter
-    # TODO(fungi): make this a configurable option so that you can
-    # for example supply a custom project list for running elections
-    # in unofficial teams
-    gov_projects = utils.get_from_cgit('openstack/governance',
-                                       'reference/projects.yaml',
-                                       {'h': ref})
+    if projects_file:
+        gov_projects = utils.load_yaml(open(projects_file).read())
+    else:
+        gov_projects = utils.get_from_cgit('openstack/governance',
+                                           'reference/projects.yaml',
+                                           {'h': ref})
 
     # The set of retired or removed "legacy" projects from governance
     # are merged into the main dict if their retired-on date falls
     # later than the after parameter for the qualifying time period
-    # TODO(fungi): make this a configurable option
-    old_projects = utils.get_from_cgit('openstack/governance',
-                                       'reference/legacy.yaml',
-                                       {'h': ref})
+    if legacy_file:
+        old_projects = utils.load_yaml(open(legacy_file).read())
+    else:
+        old_projects = utils.get_from_cgit('openstack/governance',
+                                           'reference/legacy.yaml',
+                                           {'h': ref})
     for project in old_projects:
         for deliverable in old_projects[project]['deliverables']:
             retired = old_projects[project]['deliverables'][deliverable].get(
