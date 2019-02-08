@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 import argparse
 import os
-import sys
 
 from openstack_election.cmds import render_statistics as stats
 from openstack_election import config
@@ -18,13 +17,23 @@ LEADERLESS_URL = ('http://governance.openstack.org/resolutions/'
 time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
 start_release, _, end_release = conf['timeframe']['name'].partition('-')
 
+template_names = ['election_season', 'nominations_kickoff',
+                  'nominations_last_days', 'end_nominations',
+                  'voting_kickoff', 'voting_last_days']
+fmt_args = dict(
+    email_deadline=conf['timeframe']['email_deadline'],
+    end_release=end_release,
+    future_release=end_release.lower(),
+    last_release=end_release.lower(),
+    leaderless_url=LEADERLESS_URL,
+    reference_url=REFERENCE_URL,
+    release=conf['release'],
+    seats=conf['tc_seats'],
+    start_release=start_release,
+    time_frame=time_frame,
+)
 if conf['election_type'] == 'tc':
-    tc_fmt_args = dict(
-        seats=conf['tc_seats'],
-        time_frame=time_frame,
-        start_release=start_release,
-        end_release=end_release,
-        last_release=end_release.lower(),
+    fmt_args.update(dict(
         start_nominations=utils.get_event('TC Nominations')['start_str'],
         end_nominations=utils.get_event('TC Nominations')['end_str'],
         campaign_start=utils.get_event('TC Campaigning')['start_str'],
@@ -32,32 +41,23 @@ if conf['election_type'] == 'tc':
         election_start=utils.get_event('TC Elections')['start_str'],
         election_end=utils.get_event('TC Elections')['end_str'],
         poll_name='%s TC Election' % (conf['release'].capitalize()),
-        reference_url=REFERENCE_URL,
-        future_release=end_release.lower(),
-        release=conf['release'],
-    )
+    ))
+    template_names += ['campaigning_kickoff']
 elif conf['election_type'] == 'ptl':
     # NOTE(tonyb): We need an empty item last to ensure the path ends in a
     #              tailing '/'
     stats.collect_project_stats(os.path.join(utils.CANDIDATE_PATH,
                                              conf['release'], ''),
                                 False, [])
-    ptl_fmt_args = dict(
+    fmt_args.update(dict(
         end_nominations=utils.get_event('PTL Nominations')['end_str'],
-        time_frame=time_frame,
-        start_release=start_release,
-        end_release=end_release,
-        future_release=end_release.lower(),
-        email_deadline=conf['timeframe']['email_deadline'],
         election_summary_stats=stats.election_summary(),
-        leaderless_url=LEADERLESS_URL,
         leaderless_count=len(stats.without_candidate),
         list_of_leaderless_projects=", ".join(stats.without_candidate),
         election_count=len(stats.need_election),
         election_end=utils.get_event('PTL Election')['end_str'],
         list_of_elections=", ".join(stats.need_election),
-        reference_url=REFERENCE_URL,
-    )
+    ))
 
 
 def ptl_election_season():
@@ -126,7 +126,7 @@ Happy running,
 [1] https://review.openstack.org/#/settings/contact
 [2] https://www.openstack.org/profile/"""  # noqa
 
-    print(email_text % (ptl_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def ptl_nominations_last_days():
@@ -155,7 +155,7 @@ Thank you,
     have not been factored into these stats.
 [3] %(leaderless_url)s"""   # noqa
 
-    print(email_text % (ptl_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def ptl_end_nominations():
@@ -175,7 +175,7 @@ Thank you,
 [0] http://governance.openstack.org/election/#%(future_release)s-ptl-candidates
 [1] %(leaderless_url)s"""  # noqa
 
-    print(email_text % (ptl_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def ptl_voting_kickoff():
@@ -219,7 +219,7 @@ Happy voting,
     Look at the email listed as your Preferred Email.
     That is where the ballot has been sent."""  # noqa
 
-    print(email_text % (ptl_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def ptl_voting_last_days():
@@ -234,7 +234,7 @@ You have until %(election_end)s.
 
 Thanks for your time!"""
 
-    print(email_text % (ptl_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def tc_election_season():
@@ -308,7 +308,7 @@ Thank you,
 [5] https://governance.openstack.org/election/
 [6] http://governance.openstack.org/election/#election-officials"""  # noqa
 
-    print(email_text % (tc_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def tc_nominations_last_days():
@@ -326,7 +326,7 @@ openstack/election repository and approved by election officials.
 Thank you,
 
 [1] http://governance.openstack.org/election/#how-to-submit-a-candidacy"""
-    print(email_text % (tc_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def tc_end_nominations():
@@ -343,7 +343,7 @@ Thank you,
 
 [0] http://governance.openstack.org/election/#%(release)s-tc-candidates"""
 
-    print(email_text % (tc_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def tc_campaigning_kickoff():
@@ -371,7 +371,7 @@ TC composition to address these and other issues that may arise.
 [2] http://git.openstack.org/cgit/openstack/election/tree/candidates/%(release)s/TC
 """  # noqa
 
-    print(email_text % (tc_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def tc_voting_kickoff():
@@ -416,7 +416,7 @@ Thank you,
 [5] http://governance.openstack.org/election/#election-officials
 [6] http://governance.openstack.org/election/#%(future_release)s-tc-candidates"""  # noqa
 
-    print(email_text % (tc_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def tc_voting_last_days():
@@ -455,40 +455,17 @@ Thank you,
 [1] %(reference_url)s
 [2] http://governance.openstack.org/election/#election-officials"""
 
-    print(email_text % (tc_fmt_args))
+    print(email_text % (fmt_args))
 
 
 def main():
     parser = argparse.ArgumentParser('Tool to generate form emails')
-    # Use a sub parser so we can have different template choices based on the
-    # election_type
-    cmd_parsers = parser.add_subparsers(dest='election_type',
-                                        help='Type of election.')
-    parser_ptl = cmd_parsers.add_parser('ptl')
-    parser_ptl.add_argument('template',
-                            choices=['election_season', 'nominations_kickoff',
-                                     'nominations_last_days',
-                                     'end_nominations',
-                                     'voting_kickoff', 'voting_last_days'])
-    parser_tc = cmd_parsers.add_parser('tc')
-    parser_tc.add_argument('template',
-                           choices=['election_season', 'nominations_kickoff',
-                                    'nominations_last_days',
-                                    'end_nominations',
-                                    'campaigning_kickoff',
-                                    'voting_kickoff', 'voting_last_days'])
+    parser.add_argument('template', choices=template_names)
 
     args = parser.parse_args()
-    if not args.election_type:
-        parser.print_help(sys.stderr)
-        sys.exit(1)
-
-    if args.election_type != conf['election_type']:
-        print('Requested %s but repo is currently configured for %s' %
-              (args.election_type, conf['election_type']))
-        sys.exit(1)
-
-    func_name = '%(election_type)s_%(template)s' % (args.__dict__)
+    func_name = ('%(election_type)s_%(template)s' %
+                 (dict(election_type=conf['election_type'],
+                       template=args.template)))
     if func_name in globals():
         func = globals()[func_name]
         if callable(func):
