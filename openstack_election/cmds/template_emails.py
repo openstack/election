@@ -49,13 +49,11 @@ elif conf['election_type'] == 'ptl':
         end_release=end_release,
         future_release=end_release.lower(),
         email_deadline=conf['timeframe']['email_deadline'],
-        num_projects_without_candidates=len(stats.without_candidate),
         election_summary_stats=stats.election_summary(),
         leaderless_url=LEADERLESS_URL,
-        projects_no_candidates=len(stats.without_candidate),
-        list_projects_no_candidates=", ".join(stats.without_candidate),
-        projects_polling=len(stats.need_election),
-        list_projects_polling=", ".join(stats.need_election),
+        leaderless_count=len(stats.without_candidate),
+        list_of_leaderless_projects=", ".join(stats.without_candidate),
+        election_count=len(stats.need_election),
         election_end=utils.get_event('PTL Election')['end_str'],
         list_of_elections=", ".join(stats.need_election),
         reference_url=REFERENCE_URL,
@@ -145,7 +143,7 @@ repository and approved by election officials.
 Election statistics[2]:
 %(election_summary_stats)s
 
-This means that with approximately 2 days left, %(num_projects_without_candidates)s projects will
+This means that with approximately 2 days left, %(leaderless_count)s projects will
 be deemed leaderless.  In this case the TC will oversee PTL selection as
 described by [3].
 
@@ -165,11 +163,11 @@ def ptl_end_nominations():
 The PTL Nomination period is now over. The official candidate list
 is available on the election website[0].
 
-There are %(projects_no_candidates)s projects without candidates, so according to this
+There are %(leaderless_count)s projects without candidates, so according to this
 resolution[1], the TC will have to decide how the following
-projects will proceed: %(list_projects_no_candidates)s
+projects will proceed: %(list_of_leaderless_projects)s
 
-There are %(projects_polling)s projects that will have elections: %(list_projects_polling)s. The details
+There are %(election_count)s projects that will have elections: %(list_of_elections)s. The details
 for those will be posted shortly after we setup the CIVS system.
 
 Thank you,
