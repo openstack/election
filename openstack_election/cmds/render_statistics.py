@@ -69,6 +69,53 @@ def collect_project_stats(basedir, verbose, projects):
                                            ', '.join(candidates)))
 
 
+def election_summary():
+    now = datetime.datetime.now(tz=pytz.utc)
+    now = now.replace(microsecond=0)
+    event = utils.get_event('PTL Nominations')
+    start, end = event['start'], event['end']
+    duration = (end - start)
+    remaining = (end - now)
+    progress = (duration - remaining)
+
+    p_progress = as_percentage(progress.total_seconds(),
+                               duration.total_seconds())
+    p_candidate = as_percentage(counts['with_candidate'], counts['projects'])
+    p_nominations = as_percentage(counts['nominations'], counts['projects'])
+
+    need_election.sort()
+    without_candidate.sort()
+
+    output = ""
+    output += ("%-25s @ %s\n" % ("Nominations started", as_utctime(start)))
+    output += ("%-25s @ %s\n" % ("Nominations end", as_utctime(end)))
+    output += ("%-25s : %s\n" % ("Nominations duration", duration))
+    output += ("%-25s : %s\n" % ("Nominations remaining", remaining))
+    output += ("%-25s : %6.2f%%\n" % ("Nominations progress", p_progress))
+    output += ("-" * 51)
+    output += ("\n")
+    output += ("%-25s : %5d\n" % ("Projects[1]", counts['projects']))
+    output += ("%-25s : %5d (%6.2f%%)\n" % ("Projects with candidates",
+                                            counts['with_candidate'],
+                                            p_candidate))
+    output += ("%-25s : %5d (%6.2f%%)\n" % ("Projects with election",
+                                            counts['nominations'],
+                                            p_nominations))
+    output += ("-" * 51)
+    output += ("\n")
+    output += ("%-25s : %d (%s)\n" % ("Need election",
+                                      len(need_election),
+                                      " ".join(need_election)))
+    output += ("%-25s : %d (%s)\n" % ("Need appointment",
+                                      len(without_candidate),
+                                      " ".join(without_candidate)))
+    output += ("=" * 51)
+    output += ("\n")
+    output += ("%-25s @ %s\n" % ("Stats gathered", as_utctime(now)))
+
+    return output
+
+
 def main():
     parser = argparse.ArgumentParser(description='Investigate PTL Nominations')
     parser.add_argument('-v', '--verbose', action="count", default=0,
@@ -94,45 +141,9 @@ def main():
     args.basedir = os.path.expanduser(args.basedir)
     collect_project_stats(args.basedir, args.verbose, args.projects)
 
-    now = datetime.datetime.now(tz=pytz.utc)
-    now = now.replace(microsecond=0)
-    event = utils.get_event('PTL Nominations')
-    start, end = event['start'], event['end']
-    duration = (end - start)
-    remaining = (end - now)
-    progress = (duration - remaining)
-
-    p_progress = as_percentage(progress.total_seconds(),
-                               duration.total_seconds())
-    p_candidate = as_percentage(counts['with_candidate'], counts['projects'])
-    p_nominations = as_percentage(counts['nominations'], counts['projects'])
-
-    need_election.sort()
-    without_candidate.sort()
-
     if args.verbose:
         print("-" * 51)
-    print("%-25s @ %s" % ("Nominations started", as_utctime(start)))
-    print("%-25s @ %s" % ("Nominations end", as_utctime(end)))
-    print("%-25s : %s" % ("Nominations duration", duration))
-    print("%-25s : %s" % ("Nominations remaining", remaining))
-    print("%-25s : %6.2f%%" % ("Nominations progress", p_progress))
-    print("-" * 51)
-    print("%-25s : %5d" % ("Projects[1]", counts['projects']))
-    print("%-25s : %5d (%6.2f%%)" % ("Projects with candidates",
-                                     counts['with_candidate'],
-                                     p_candidate))
-    print("%-25s : %5d (%6.2f%%)" % ("Projects with election",
-                                     counts['nominations'],
-                                     p_nominations))
-    print("-" * 51)
-    print("%-25s : %d (%s)" % ("Need election", len(need_election),
-                               " ".join(need_election)))
-    print("%-25s : %d (%s)" % ("Need appointment", len(without_candidate),
-                               " ".join(without_candidate)))
-    print("=" * 51)
-    print("%-25s @ %s" % ("Stats gathered", as_utctime(now)))
-
+    print(election_summary())
     print("")
     print("[1] These numbers include the following projects that have a "
           "candidate that is approved my only a single election official:"

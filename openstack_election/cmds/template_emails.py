@@ -2,8 +2,10 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import argparse
+import os
 import sys
 
+from openstack_election.cmds import render_statistics as stats
 from openstack_election import config
 from openstack_election import utils
 
@@ -35,6 +37,11 @@ if conf['election_type'] == 'tc':
         release=conf['release'],
     )
 elif conf['election_type'] == 'ptl':
+    # NOTE(tonyb): We need an empty item last to ensure the path ends in a
+    #              tailing '/'
+    stats.collect_project_stats(os.path.join(utils.CANDIDATE_PATH,
+                                             conf['release'], ''),
+                                False, [])
     ptl_fmt_args = dict(
         nom_end_date=utils.get_event('PTL Nominations')['end_str'],
         time_frame=time_frame,
@@ -42,6 +49,9 @@ elif conf['election_type'] == 'ptl':
         ending_release=end_release,
         future_release=end_release.lower(),
         email_deadline=conf['timeframe']['email_deadline'],
+        num_projects_without_candidates=len(stats.without_candidate),
+        election_summary_stats=stats.election_summary(),
+        leaderless_url=LEADERLESS_URL,
     )
 
 
@@ -114,7 +124,7 @@ Happy running,
     print(email_text % (ptl_fmt_args))
 
 
-def ptl_nominations_last_days(num_projects_without_candidates):
+def ptl_nominations_last_days():
     email_text = """
 A quick reminder that we are in the last hours for PTL candidate
 nominations.
@@ -126,19 +136,21 @@ Make sure your nomination has been submitted to the openstack/election
 repository and approved by election officials.
 
 Election statistics[2]:
+%(election_summary_stats)s
 
-This means that with approximately 2 days left, %s projects will
+This means that with approximately 2 days left, %(num_projects_without_candidates)s projects will
 be deemed leaderless.  In this case the TC will oversee PTL selection as
 described by [3].
 
 Thank you,
 
 [1] http://governance.openstack.org/election/#how-to-submit-a-candidacy
-[2] Assuming the open reviews below are validated
+[2] Any open reviews at
     https://review.openstack.org/#/q/is:open+project:openstack/election
-[3] %s"""
+    have not been factored into these stats.
+[3] %(leaderless_url)s"""   # noqa
 
-    print(email_text % (num_projects_without_candidates, LEADERLESS_URL))
+    print(email_text % (ptl_fmt_args))
 
 
 def ptl_end_nominations(projects_no_candidates,
@@ -465,6 +477,7 @@ def main():
     parser_ptl = cmd_parsers.add_parser('ptl')
     parser_ptl.add_argument('template',
                             choices=['election_season', 'nominations_kickoff',
+                                     'nominations_last_days',
                                      ])
     parser_tc = cmd_parsers.add_parser('tc')
     parser_tc.add_argument('template',
