@@ -1,0 +1,46 @@
+Hi everyone,
+
+I've been on the OpenStack Technical Committee forever, and my
+original plan was to not run for re-election this cycle. Thanks to
+name recognition, incumbents have traditionally easily been reelected.
+Stepping down is the only way to make room for new leaders to emerge,
+a process that is necessary to keep alignment between the Technical
+Committee members and the active contributors that are their constituency.
+
+So, having room for new members to be elected is necessary. At the same
+time, there is value in historical perspective, and experienced members
+are useful to help newcomers into their role. We also need to be careful
+about the message that too many people stepping down would send. So, it's
+a mixed bag -- we need enough, but not too many people stepping down.
+
+Over the past cycles, we introduced about 3 new people at every election.
+I think renewing 3 or 4 people every 6 months in a committee of 13 members
+is the right balance. We already have three experienced members who
+announced they would not be running again this cycle, so I feel like it
+might not be the best moment for me to step down.
+
+With the OSF shifting from being solely about OpenStack to more generally
+tackling the open infrastructure space, my focus has certainly expanded
+lately. But I don't want to feed the trolls arguing that we are leaving
+OpenStack behind. I'm not done with the OpenStack TC yet, and would like to
+advance two more things before stepping down.
+
+OpenStack is in the middle of a transition -- from hyped project driven by
+startups and big service providers to a more stable project led by people
+running it or having a business depending on it. A lot of the systems and
+processes that I helped put in place to cope with explosive growth are now
+holding us back. We need to adapt them to a new era, and I feel like I can
+help bringing the original perspective of why those systems were put in
+place, so hopefully we do not end up throwing the baby with the bath water.
+
+I feel like there is also a lot of work to do to better present what we
+produce. The work on the OpenStack map and the "software" pages on the
+openstack.org website is far from complete. OpenStack is still much harder
+to navigate and understand for a newcomer than it should be. I want to
+continue that work for one more year.
+
+So I am announcing my candidacy for a position on the OpenStack Technical
+Committee in the upcoming election. Thank you for your consideration !
+
+-- 
+Thierry Carrez (ttx)
