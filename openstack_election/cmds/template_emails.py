@@ -72,7 +72,7 @@ and will remain open until %s.
 
 All nominations must be submitted as a text file to the
 openstack/election repository as explained at
-http://governance.openstack.org/election/#how-to-submit-your-candidacy
+http://governance.openstack.org/election/#how-to-submit-a-candidacy
 
 Please make sure to follow the new candidacy file naming
 convention: candidates/<cycle>/<project_name>/<email_address>.
@@ -128,7 +128,7 @@ described by [3].
 
 Thank you,
 
-[1] http://governance.openstack.org/election/#how-to-submit-your-candidacy
+[1] http://governance.openstack.org/election/#how-to-submit-a-candidacy
 [2] Assuming the open reviews below are validated
     https://review.openstack.org/#/q/is:open+project:openstack/election
 [3] %s"""
@@ -294,7 +294,7 @@ mailing list or to the elections officials[6].
 
 Thank you,
 
-[1] http://governance.openstack.org/election/#how-to-submit-your-candidacy
+[1] http://governance.openstack.org/election/#how-to-submit-a-candidacy
 [2] http://www.openstack.org/community/members/
 [3] https://governance.openstack.org/tc/reference/projects/
 [4] https://releases.openstack.org/%(last_release)s/schedule.html#p-extra-atcs
@@ -318,7 +318,7 @@ openstack/election repository and approved by election officials.
 
 Thank you,
 
-[1] http://governance.openstack.org/election/#how-to-submit-your-candidacy"""
+[1] http://governance.openstack.org/election/#how-to-submit-a-candidacy"""
     print(email_text % (tc_fmt_args))
 
 
