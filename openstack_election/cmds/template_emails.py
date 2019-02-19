@@ -32,7 +32,7 @@ fmt_args = dict(
     start_release=start_release,
     time_frame=time_frame,
 )
-if conf['election_type'] == 'tc':
+if utils.is_tc_election():
     fmt_args.update(dict(
         start_nominations=utils.get_event('TC Nominations')['start_str'],
         end_nominations=utils.get_event('TC Nominations')['end_str'],
@@ -43,7 +43,7 @@ if conf['election_type'] == 'tc':
         poll_name='%s TC Election' % (conf['release'].capitalize()),
     ))
     template_names += ['campaigning_kickoff']
-elif conf['election_type'] == 'ptl':
+else:
     # NOTE(tonyb): We need an empty item last to ensure the path ends in a
     #              tailing '/'
     stats.collect_project_stats(os.path.join(utils.CANDIDATE_PATH,
