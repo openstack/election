@@ -15,23 +15,27 @@ LEADERLESS_URL = ('http://governance.openstack.org/resolutions/'
 
 time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
 start_release, _, end_release = conf['timeframe']['name'].partition('-')
-tc_fmt_args = dict(
-    seats=conf['tc_seats'],
-    time_frame=time_frame,
-    start_release=start_release,
-    end_release=end_release,
-    last_release=end_release.lower(),
-    start_nominations=utils.get_event('TC Nominations')['start_str'],
-    end_nominations=utils.get_event('TC Nominations')['end_str'],
-    campaign_start=utils.get_event('TC Campaigning')['start_str'],
-    campaign_end=utils.get_event('TC Campaigning')['end_str'],
-    election_start=utils.get_event('TC Elections')['start_str'],
-    election_end=utils.get_event('TC Elections')['end_str'],
-    poll_name='%s TC Election' % (conf['release'].capitalize()),
-    reference_url=REFERENCE_URL,
-    future_release=end_release.lower(),
-    release=conf['release'],
-)
+
+if conf['election_type'] == 'tc':
+    tc_fmt_args = dict(
+        seats=conf['tc_seats'],
+        time_frame=time_frame,
+        start_release=start_release,
+        end_release=end_release,
+        last_release=end_release.lower(),
+        start_nominations=utils.get_event('TC Nominations')['start_str'],
+        end_nominations=utils.get_event('TC Nominations')['end_str'],
+        campaign_start=utils.get_event('TC Campaigning')['start_str'],
+        campaign_end=utils.get_event('TC Campaigning')['end_str'],
+        election_start=utils.get_event('TC Elections')['start_str'],
+        election_end=utils.get_event('TC Elections')['end_str'],
+        poll_name='%s TC Election' % (conf['release'].capitalize()),
+        reference_url=REFERENCE_URL,
+        future_release=end_release.lower(),
+        release=conf['release'],
+    )
+elif conf['election_type'] == 'ptl':
+    ptl_fmt_args = dict()
 
 
 def ptl_election_season():
@@ -453,14 +457,13 @@ Thank you,
 
 def main():
     parser = argparse.ArgumentParser('Tool to generate form emails')
-    # Use a sub parser so we can have diffent template choices based on the
+    # Use a sub parser so we can have different template choices based on the
     # election_type
     cmd_parsers = parser.add_subparsers(dest='election_type',
-                                        help=('Type of election. Choices '
-                                              'tc'))
-    # FIXME(tonyb): Do this after the TC election is over
-    # parser_ptl = cmd_parsers.add_parser('ptl')
-    # parser_ptl.add_argument('template', choices=[])
+                                        help='Type of election.')
+    parser_ptl = cmd_parsers.add_parser('ptl')
+    parser_ptl.add_argument('template',
+                            choices=['election_season'])
     parser_tc = cmd_parsers.add_parser('tc')
     parser_tc.add_argument('template',
                            choices=['election_season', 'nominations_kickoff',
@@ -471,6 +474,11 @@ def main():
     args = parser.parse_args()
     if not args.election_type:
         parser.print_help(sys.stderr)
+        sys.exit(1)
+
+    if args.election_type != conf['election_type']:
+        print('Requested %s but repo is currently configured for %s' %
+              (args.election_type, conf['election_type']))
         sys.exit(1)
 
     func_name = '%(election_type)s_%(template)s' % (args.__dict__)
