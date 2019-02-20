@@ -45,10 +45,10 @@ class TestFindModifiedCandidateFiles(base.ElectionTestCase):
     def test_find_modified_candidate_files_all_good(self, mock_check_output):
         check_output = (('configuration.yaml\n'
                          'openstack_election/__init__py\n'
-                         '%(path)s/cadidate\n'
+                         '%(path)s/candidate\n'
                          '%(path)s/.placeholder\n'
                          ) % ({'path': utils.CANDIDATE_PATH})).encode('utf-8')
-        expected_filenames = ['%s/cadidate' % utils.CANDIDATE_PATH]
+        expected_filenames = ['%s/candidate' % utils.CANDIDATE_PATH]
         mock_check_output.return_value = check_output
         filenames = \
             ci_check_all_candidate_files.find_modified_candidate_files()
