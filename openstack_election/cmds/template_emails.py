@@ -35,7 +35,14 @@ if conf['election_type'] == 'tc':
         release=conf['release'],
     )
 elif conf['election_type'] == 'ptl':
-    ptl_fmt_args = dict()
+    ptl_fmt_args = dict(
+        nom_end_date=utils.get_event('PTL Nominations')['end_str'],
+        time_frame=time_frame,
+        starting_release=start_release,
+        ending_release=end_release,
+        future_release=end_release.lower(),
+        email_deadline=conf['timeframe']['email_deadline'],
+    )
 
 
 def ptl_election_season():
@@ -68,11 +75,10 @@ Thank you,
     print(email_text)
 
 
-def ptl_nominations_kickoff(nom_end_date, time_frame, starting_release,
-                            ending_release, future_release, email_deadline):
+def ptl_nominations_kickoff():
     email_text = """
 Nominations for OpenStack PTLs (Program Team Leads) are now open
-and will remain open until %s.
+and will remain open until %(nom_end_date)s.
 
 All nominations must be submitted as a text file to the
 openstack/election repository as explained at
@@ -83,7 +89,7 @@ convention: candidates/<cycle>/<project_name>/<email_address>.
 
 In order to be an eligible candidate (and be allowed to vote) in
 a given PTL election, you need to have contributed to the corresponding
-team[0] during the %s timeframe (%s to %s). You must also be an OpenStack
+team[0] during the %(time_frame)s timeframe (%(starting_release)s to %(ending_release)s). You must also be an OpenStack
 Foundation Individual Member in good standing. To check if your membership
 is up to date, go to https://www.openstack.org/community/members and
 search for your name.
@@ -92,10 +98,10 @@ Additional information about the nomination process can be found here:
 https://governance.openstack.org/election/
 
 Shortly after election officials approve candidates, they will be listed here:
-https://governance.openstack.org/election/#%s-ptl-candidates
+https://governance.openstack.org/election/#%(future_release)s-ptl-candidates
 
 The electorate is requested to confirm their email address in gerrit[1],
-prior to %s so that the emailed ballots are mailed to the correct email
+prior to %(email_deadline)s so that the emailed ballots are mailed to the correct email
 address. This email address should match that which was provided in your
 foundation member profile[2] as well.
 
@@ -103,14 +109,9 @@ Happy running,
 
 [0] https://governance.openstack.org/tc/reference/projects/
 [1] https://review.openstack.org/#/settings/contact
-[2] https://www.openstack.org/profile/"""
+[2] https://www.openstack.org/profile/"""  # noqa
 
-    print(email_text % (nom_end_date,
-                        time_frame,
-                        starting_release,
-                        ending_release,
-                        future_release,
-                        email_deadline))
+    print(email_text % (ptl_fmt_args))
 
 
 def ptl_nominations_last_days(num_projects_without_candidates):
@@ -463,7 +464,8 @@ def main():
                                         help='Type of election.')
     parser_ptl = cmd_parsers.add_parser('ptl')
     parser_ptl.add_argument('template',
-                            choices=['election_season'])
+                            choices=['election_season', 'nominations_kickoff',
+                                     ])
     parser_tc = cmd_parsers.add_parser('tc')
     parser_tc.add_argument('template',
                            choices=['election_season', 'nominations_kickoff',
