@@ -56,6 +56,9 @@ elif conf['election_type'] == 'ptl':
         list_projects_no_candidates=", ".join(stats.without_candidate),
         projects_polling=len(stats.need_election),
         list_projects_polling=", ".join(stats.need_election),
+        election_end=utils.get_event('PTL Election')['end_str'],
+        list_of_elections=", ".join(stats.need_election),
+        reference_url=REFERENCE_URL,
     )
 
 
@@ -177,17 +180,16 @@ Thank you,
     print(email_text % (ptl_fmt_args))
 
 
-def ptl_voting_kickoff(election_end, list_of_elections, time_frame,
-                       starting_release, ending_release, future_release):
+def ptl_voting_kickoff():
     email_text = """
 Polls for PTL elections are now open and will remain open for you to
-cast your vote until %s.
+cast your vote until %(election_end)s.
 
-We are having elections for %s.
+We are having elections for %(list_of_elections)s.
 
 If you are a Foundation individual member and had a commit in
-one of the program's projects[0] over the %s timeframe
-(%s to %s) then you are eligible to vote. You should find your
+one of the program's projects[0] over the %(time_frame)s timeframe
+(%(starting_release)s to %(ending_release)s) then you are eligible to vote. You should find your
 email with a link to the Condorcet page to cast your vote in the
 inbox of your gerrit preferred email[1].
 
@@ -207,25 +209,19 @@ please exercise your right to vote!
 
 Candidate statements/platforms can be found linked to Candidate
 names on this page:
-http://governance.openstack.org/election/#%s-ptl-candidates
+http://governance.openstack.org/election/#%(future_release)s-ptl-candidates
 
 Happy voting,
 
 [0] The list of the program projects eligible for electoral status:
-    %s
+    %(reference_url)s
 
 [1] Sign into review.openstack.org:
     Go to Settings > Contact Information.
     Look at the email listed as your Preferred Email.
-    That is where the ballot has been sent."""
+    That is where the ballot has been sent."""  # noqa
 
-    print(email_text % (election_end,
-                        list_of_elections,
-                        time_frame,
-                        starting_release,
-                        ending_release,
-                        future_release,
-                        REFERENCE_URL))
+    print(email_text % (ptl_fmt_args))
 
 
 def ptl_voting_last_days(list_of_elections, election_end):
@@ -476,6 +472,7 @@ def main():
                             choices=['election_season', 'nominations_kickoff',
                                      'nominations_last_days',
                                      'end_nominations',
+                                     'voting_kickoff',
                                      ])
     parser_tc = cmd_parsers.add_parser('tc')
     parser_tc.add_argument('template',
