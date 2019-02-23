@@ -224,20 +224,19 @@ Happy voting,
     print(email_text % (ptl_fmt_args))
 
 
-def ptl_voting_last_days(list_of_elections, election_end):
+def ptl_voting_last_days():
     email_text = """
-Hello %s contributors,
+Hello %(list_of_elections)s contributors,
 
 Just a quick reminder that elections are closing soon, if you haven't
 already you should use your right to vote and pick your favourite
 candidate!
 
-You have until %s.
+You have until %(election_end)s.
 
 Thanks for your time!"""
 
-    print(email_text % (list_of_elections,
-                        election_end))
+    print(email_text % (ptl_fmt_args))
 
 
 def tc_election_season():
@@ -472,8 +471,7 @@ def main():
                             choices=['election_season', 'nominations_kickoff',
                                      'nominations_last_days',
                                      'end_nominations',
-                                     'voting_kickoff',
-                                     ])
+                                     'voting_kickoff', 'voting_last_days'])
     parser_tc = cmd_parsers.add_parser('tc')
     parser_tc.add_argument('template',
                            choices=['election_season', 'nominations_kickoff',
