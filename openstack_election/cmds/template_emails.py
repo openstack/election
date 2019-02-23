@@ -43,10 +43,10 @@ elif conf['election_type'] == 'ptl':
                                              conf['release'], ''),
                                 False, [])
     ptl_fmt_args = dict(
-        nom_end_date=utils.get_event('PTL Nominations')['end_str'],
+        end_nominations=utils.get_event('PTL Nominations')['end_str'],
         time_frame=time_frame,
-        starting_release=start_release,
-        ending_release=end_release,
+        start_release=start_release,
+        end_release=end_release,
         future_release=end_release.lower(),
         email_deadline=conf['timeframe']['email_deadline'],
         num_projects_without_candidates=len(stats.without_candidate),
@@ -95,7 +95,7 @@ Thank you,
 def ptl_nominations_kickoff():
     email_text = """
 Nominations for OpenStack PTLs (Program Team Leads) are now open
-and will remain open until %(nom_end_date)s.
+and will remain open until %(end_nominations)s.
 
 All nominations must be submitted as a text file to the
 openstack/election repository as explained at
@@ -106,7 +106,7 @@ convention: candidates/<cycle>/<project_name>/<email_address>.
 
 In order to be an eligible candidate (and be allowed to vote) in
 a given PTL election, you need to have contributed to the corresponding
-team[0] during the %(time_frame)s timeframe (%(starting_release)s to %(ending_release)s). You must also be an OpenStack
+team[0] during the %(time_frame)s timeframe (%(start_release)s to %(end_release)s). You must also be an OpenStack
 Foundation Individual Member in good standing. To check if your membership
 is up to date, go to https://www.openstack.org/community/members and
 search for your name.
@@ -189,7 +189,7 @@ We are having elections for %(list_of_elections)s.
 
 If you are a Foundation individual member and had a commit in
 one of the program's projects[0] over the %(time_frame)s timeframe
-(%(starting_release)s to %(ending_release)s) then you are eligible to vote. You should find your
+(%(start_release)s to %(end_release)s) then you are eligible to vote. You should find your
 email with a link to the Condorcet page to cast your vote in the
 inbox of your gerrit preferred email[1].
 
