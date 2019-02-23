@@ -52,6 +52,10 @@ elif conf['election_type'] == 'ptl':
         num_projects_without_candidates=len(stats.without_candidate),
         election_summary_stats=stats.election_summary(),
         leaderless_url=LEADERLESS_URL,
+        projects_no_candidates=len(stats.without_candidate),
+        list_projects_no_candidates=", ".join(stats.without_candidate),
+        projects_polling=len(stats.need_election),
+        list_projects_polling=", ".join(stats.need_election),
     )
 
 
@@ -153,31 +157,24 @@ Thank you,
     print(email_text % (ptl_fmt_args))
 
 
-def ptl_end_nominations(projects_no_candidates,
-                        list_projects_no_candidates, projects_polling,
-                        list_projects_polling, future_release):
+def ptl_end_nominations():
     email_text = """
 The PTL Nomination period is now over. The official candidate list
 is available on the election website[0].
 
-There are %s projects without candidates, so according to this
+There are %(projects_no_candidates)s projects without candidates, so according to this
 resolution[1], the TC will have to decide how the following
-projects will proceed: %s
+projects will proceed: %(list_projects_no_candidates)s
 
-There are %s projects that will have elections: %s. The details
+There are %(projects_polling)s projects that will have elections: %(list_projects_polling)s. The details
 for those will be posted shortly after we setup the CIVS system.
 
 Thank you,
 
-[0] http://governance.openstack.org/election/#%s-ptl-candidates
-[1] %s"""
+[0] http://governance.openstack.org/election/#%(future_release)s-ptl-candidates
+[1] %(leaderless_url)s"""  # noqa
 
-    print(email_text % (projects_no_candidates,
-                        list_projects_no_candidates,
-                        projects_polling,
-                        list_projects_polling,
-                        future_release,
-                        LEADERLESS_URL))
+    print(email_text % (ptl_fmt_args))
 
 
 def ptl_voting_kickoff(election_end, list_of_elections, time_frame,
@@ -478,11 +475,13 @@ def main():
     parser_ptl.add_argument('template',
                             choices=['election_season', 'nominations_kickoff',
                                      'nominations_last_days',
+                                     'end_nominations',
                                      ])
     parser_tc = cmd_parsers.add_parser('tc')
     parser_tc.add_argument('template',
                            choices=['election_season', 'nominations_kickoff',
-                                    'nominations_last_days', 'end_nominations',
+                                    'nominations_last_days',
+                                    'end_nominations',
                                     'campaigning_kickoff',
                                     'voting_kickoff', 'voting_last_days'])
 
