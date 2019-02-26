@@ -175,9 +175,9 @@ Once the email deadline is reached:
 TC Campaigning
 --------------
 
-The TC election includes a perido after the candidates are defined befoer the
-election for candidates to answer question from the community.  Open this with
-
+The TC election includes a period after the candidates are defined but before
+the election, for candidates to answer questions from the community.  Open this
+with:
 * tox -e venv -- template-emails campaigning_kickoff
 
 TC Election Round
