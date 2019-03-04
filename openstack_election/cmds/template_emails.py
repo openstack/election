@@ -11,7 +11,7 @@ from openstack_election import utils
 conf = config.load_conf()
 
 REFERENCE_URL = '%s?id=%s' % (utils.PROJECTS_URL, conf['tag'])
-LEADERLESS_URL = ('http://governance.openstack.org/resolutions/'
+LEADERLESS_URL = ('https://governance.openstack.org/resolutions/'
                   '20141128-elections-process-for-leaderless-programs.html')
 
 time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
@@ -96,7 +96,7 @@ and will remain open until %(end_nominations)s.
 
 All nominations must be submitted as a text file to the
 openstack/election repository as explained at
-http://governance.openstack.org/election/#how-to-submit-a-candidacy
+https://governance.openstack.org/election/#how-to-submit-a-candidacy
 
 Please make sure to follow the new candidacy file naming
 convention: candidates/<cycle>/<project_name>/<email_address>.
@@ -148,7 +148,7 @@ described by [3].
 
 Thank you,
 
-[1] http://governance.openstack.org/election/#how-to-submit-a-candidacy
+[1] https://governance.openstack.org/election/#how-to-submit-a-candidacy
 [2] Any open reviews at
     https://review.openstack.org/#/q/is:open+project:openstack/election
     have not been factored into these stats.
@@ -171,7 +171,7 @@ for those will be posted shortly after we setup the CIVS system.
 
 Thank you,
 
-[0] http://governance.openstack.org/election/#%(release)s-ptl-candidates
+[0] https://governance.openstack.org/election/#%(release)s-ptl-candidates
 [1] %(leaderless_url)s"""  # noqa
 
     print(email_text % (fmt_args))
@@ -206,7 +206,7 @@ please exercise your right to vote!
 
 Candidate statements/platforms can be found linked to Candidate
 names on this page:
-http://governance.openstack.org/election/#%(release)s-ptl-candidates
+https://governance.openstack.org/election/#%(release)s-ptl-candidates
 
 Happy voting,
 
@@ -300,12 +300,12 @@ mailing list or to the elections officials[6].
 
 Thank you,
 
-[1] http://governance.openstack.org/election/#how-to-submit-a-candidacy
-[2] http://www.openstack.org/community/members/
+[1] https://governance.openstack.org/election/#how-to-submit-a-candidacy
+[2] https://www.openstack.org/community/members/
 [3] https://governance.openstack.org/tc/reference/projects/
 [4] https://releases.openstack.org/%(last_release)s/schedule.html#p-extra-atcs
 [5] https://governance.openstack.org/election/
-[6] http://governance.openstack.org/election/#election-officials"""  # noqa
+[6] https://governance.openstack.org/election/#election-officials"""  # noqa
 
     print(email_text % (fmt_args))
 
@@ -324,7 +324,7 @@ openstack/election repository and approved by election officials.
 
 Thank you,
 
-[1] http://governance.openstack.org/election/#how-to-submit-a-candidacy"""
+[1] https://governance.openstack.org/election/#how-to-submit-a-candidacy"""
     print(email_text % (fmt_args))
 
 
@@ -340,7 +340,7 @@ Polling will start %(election_start)s.
 
 Thank you,
 
-[0] http://governance.openstack.org/election/#%(release)s-tc-candidates"""
+[0] https://governance.openstack.org/election/#%(release)s-tc-candidates"""
 
     print(email_text % (fmt_args))
 
@@ -367,7 +367,7 @@ concern, and the electorate has the best information to determine the ideal
 TC composition to address these and other issues that may arise.
 
 [1] https://governance.openstack.org/election/
-[2] http://git.openstack.org/cgit/openstack/election/tree/candidates/%(release)s/TC
+[2] https://git.openstack.org/cgit/openstack/election/tree/candidates/%(release)s/TC
 """  # noqa
 
     print(email_text % (fmt_args))
@@ -406,14 +406,14 @@ Happy voting!
 
 Thank you,
 
-[1] http://www.openstack.org/community/members/
+[1] https://www.openstack.org/community/members/
 [2] %(reference_url)s
 [3] Look for the extra-atcs element in [2]
 [4] Sign into review.openstack.org: Go to Settings > Contact Information. Look
     at the email listed as your preferred email. That is where the ballot has
     been sent.
-[5] http://governance.openstack.org/election/#election-officials
-[6] http://governance.openstack.org/election/#%(release)s-tc-candidates"""  # noqa
+[5] https://governance.openstack.org/election/#election-officials
+[6] https://governance.openstack.org/election/#%(release)s-tc-candidates"""  # noqa
 
     print(email_text % (fmt_args))
 
@@ -431,7 +431,7 @@ vote. If you have voted, please encourage your colleagues to vote.
 
 Candidate statements are linked to the names of all confirmed
 candidates:
-http://governance.openstack.org/election/#%(release)s-tc-candidates
+https://governance.openstack.org/election/#%(release)s-tc-candidates
 
 What to do if you don't see the email and have a commit in at least
 one of the official programs projects[1]:
@@ -452,7 +452,7 @@ Thank you,
     Information. Look at the email listed as your Preferred Email.
     That is where the ballot has been sent.
 [1] %(reference_url)s
-[2] http://governance.openstack.org/election/#election-officials"""
+[2] https://governance.openstack.org/election/#election-officials"""
 
     print(email_text % (fmt_args))
 

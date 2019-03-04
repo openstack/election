@@ -17,7 +17,7 @@ from __future__ import print_function
 
 import prettytable
 
-CIVS_BASE = 'http://civs.cs.cornell.edu/cgi-bin/results.pl'
+CIVS_BASE = 'https://civs.cs.cornell.edu/cgi-bin/results.pl'
 data = [
     {
         'election': '10/2013',  # Icehouse
