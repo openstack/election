@@ -23,7 +23,6 @@ template_names = ['election_season', 'nominations_kickoff',
 fmt_args = dict(
     email_deadline=conf['timeframe']['email_deadline'],
     end_release=end_release,
-    future_release=end_release.lower(),
     last_release=end_release.lower(),
     leaderless_url=LEADERLESS_URL,
     reference_url=REFERENCE_URL,
@@ -113,7 +112,7 @@ Additional information about the nomination process can be found here:
 https://governance.openstack.org/election/
 
 Shortly after election officials approve candidates, they will be listed here:
-https://governance.openstack.org/election/#%(future_release)s-ptl-candidates
+https://governance.openstack.org/election/#%(release)s-ptl-candidates
 
 The electorate is requested to confirm their email address in gerrit[1],
 prior to %(email_deadline)s so that the emailed ballots are mailed to the correct email
@@ -172,7 +171,7 @@ for those will be posted shortly after we setup the CIVS system.
 
 Thank you,
 
-[0] http://governance.openstack.org/election/#%(future_release)s-ptl-candidates
+[0] http://governance.openstack.org/election/#%(release)s-ptl-candidates
 [1] %(leaderless_url)s"""  # noqa
 
     print(email_text % (fmt_args))
@@ -207,7 +206,7 @@ please exercise your right to vote!
 
 Candidate statements/platforms can be found linked to Candidate
 names on this page:
-http://governance.openstack.org/election/#%(future_release)s-ptl-candidates
+http://governance.openstack.org/election/#%(release)s-ptl-candidates
 
 Happy voting,
 
@@ -414,7 +413,7 @@ Thank you,
     at the email listed as your preferred email. That is where the ballot has
     been sent.
 [5] http://governance.openstack.org/election/#election-officials
-[6] http://governance.openstack.org/election/#%(future_release)s-tc-candidates"""  # noqa
+[6] http://governance.openstack.org/election/#%(release)s-tc-candidates"""  # noqa
 
     print(email_text % (fmt_args))
 
@@ -432,7 +431,7 @@ vote. If you have voted, please encourage your colleagues to vote.
 
 Candidate statements are linked to the names of all confirmed
 candidates:
-http://governance.openstack.org/election/#%(future_release)s-tc-candidates
+http://governance.openstack.org/election/#%(release)s-tc-candidates
 
 What to do if you don't see the email and have a commit in at least
 one of the official programs projects[1]:
