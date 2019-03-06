@@ -83,6 +83,12 @@ data = [
         'votes_cast': 403,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_f773fda2d0695864')
     },
+    {
+        'election': '03/2019',  # Train
+        'electorate': 1390,
+        'votes_cast': 279,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_6c71f84caff2b37c')
+    },
 ]
 
 
