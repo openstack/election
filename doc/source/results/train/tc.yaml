@@ -1,0 +1,52 @@
+candidates:
+  TC:
+  - elected: true
+    email: asettle@suse.com
+    fullname: Alexandra Settle
+    ircname: asettle
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/asettle%40suse.com
+  - elected: false
+    email: flwang@catalyst.net.nz
+    fullname: Feilong Wang
+    ircname: flwang
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/flwang%40catalyst.net.nz
+  - elected: true
+    email: gr@ham.ie
+    fullname: Graham Hayes
+    ircname: mugsie
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/gr%40ham.ie
+  - elected: true
+    email: jim@jimrollenhagen.com
+    fullname: Jim Rollenhagen
+    ircname: jroll
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/jim%40jimrollenhagen.com
+  - elected: true
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/mnaser%40vexxhost.com
+  - elected: true
+    email: rico.lin.guanyu@gmail.com
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/rico.lin.guanyu%40gmail.com
+  - elected: false
+    email: sbauza@redhat.com
+    fullname: Sylvain Bauza
+    ircname: bauzas
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/sbauza%40redhat.com
+  - elected: true
+    email: thierry@openstack.org
+    fullname: Thierry Carrez
+    ircname: ttx
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/thierry%40openstack.org
+  - elected: true
+    email: zbitter@redhat.com
+    fullname: Zane Bitter
+    ircname: zaneb
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/train/TC/zbitter%40redhat.com
+election: train
+elections_results:
+  TC: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_6c71f84caff2b37c
+projects:
+- TC
