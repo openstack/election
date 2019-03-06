@@ -1,6 +1,6 @@
 ---
 release: train
-election_type: tc
+election_type: ptl
 tag: feb-2019-elections
 tc_seats: 7
 timeframe:
@@ -9,12 +9,9 @@ timeframe:
   end: 2019-02-19T00:00
   email_deadline: 2019-02-22T00:00
 timeline:
-  - name:  'TC Nominations'
-    start: '2019-02-12T23:45'
-    end:   '2019-02-19T23:45'
-  - name:  'TC Campaigning'
-    start: '2019-02-19T23:45'
-    end:   '2019-02-26T23:45'
-  - name:  'TC Elections'
-    start: '2019-02-26T23:45'
-    end:   '2019-03-05T23:45'
+  - name: PTL Nominations
+    start: 2019-03-05T23:45
+    end: 2019-03-12T23:45
+  - name: PTL Election
+    start: 2019-03-12T23:45
+    end: 2019-03-19T23:45
