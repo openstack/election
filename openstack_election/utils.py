@@ -94,7 +94,7 @@ def load_yaml(yaml_stream):
 def get_from_cgit(project, obj, params={}):
     """Retrieve a file from the cgit interface"""
 
-    url = 'http://git.openstack.org/cgit/' + project + '/plain/' + obj
+    url = 'https://git.openstack.org/cgit/' + project + '/plain/' + obj
     raw = requester(url, params=params,
                     headers={'Accept': 'application/json'})
     return load_yaml(raw.text)

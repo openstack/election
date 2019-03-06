@@ -75,7 +75,7 @@ self-nominated by other means.
 
 If you are not already familiar with OpenStack development workflow, see this
 more detailed documentation:
-http://docs.openstack.org/infra/manual/developers.html
+https://docs.openstack.org/infra/manual/developers.html
 
 Candidacies now need to be submitted as a text file to the openstack/election
 repository. Here are the required steps:
