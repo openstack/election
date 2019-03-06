@@ -1,0 +1,54 @@
+
+Hi, I'm announcing my candidacy for Placement PTL for Train.
+
+I've been working on the Placement service from the start. Helping
+it become a straightforward HTTP API for managing resources and
+their inventories, qualities, and use. I believe the primary focus
+of the project should be to fulfill the promise of the service — to
+make any variety of workload placement more reasonable-to-manage and
+correct-to-use — while keeping the straightforwardness.
+
+Just as important is making sure the project, being newly
+independent, settles in well. We will need time, attention and
+patience to find our way.
+
+What we do as a group should be decided by the group. The role of
+the PTL should be to help the group reach decisions smoothly and
+make sure the information needed to make decisions is shared
+broadly.
+
+To help understand how I think about Placement, here are some ideas
+on areas we may wish to focus (if we agree):
+
+* Get the house in order. Get bug and feature tracking systems in
+  place and properly documented. Prepare the Forum and PTG.
+
+* Help other projects use Placement. Adding features to Placement is
+  often easier than taking advantage of those new features. A lot of
+  features exist that are not yet used to their full potential.
+
+* Attend to maintenance. Bug fixing, documentation, performance,
+  refactoring, gate management, and keeping clients up to date need
+  to have equal or greater attention than feature development.
+
+* Do what matters. Only add features that have clear customers and
+  use cases, and have committed owners responsible for long-term
+  maintenance.
+
+* Experiment. Contrary to the above, some of our time should be
+  spent discovering what may matter in the future and sharing those
+  discoveries: "Placement can help with that." Edge and multi-cloud
+  related use cases have plenty of potential.
+
+* Document. Fill in the gaps in documentation for users and
+  contributors.  There's a lot of power in Placement and using it
+  most effectively is not as well-documented as it could be.
+
+* Be welcoming, fun, nice, and encouraging to everyone.
+
+I hope my history with the project is solid evidence for my
+commitment to its success. I'm extremely proud of the work we've
+done and optimistic about the positive impact we will have in the
+future.
+
+Thanks.
