@@ -1,0 +1,23 @@
+I am announcing my candidacy for Loci PTL. I stepped in as interim PTL during
+the previous cycle and was a member of the founding core team. Loci is a
+project for packaging OpenStack projects into lightweight Docker images. It's
+currently being used in OpenStack-Helm and StarlingX. We have a small team, a
+stable project, and low velocity, but still have a number of objectives to
+work towards in the next cycle. My agenda as PTL will include:
+
+* Adopting stable branches. There are enough recent dependency changes that
+ require us to reevaulate our stance on stable branching.
+* Improving testing. Currently the only thing Loci tests are builds without any
+ functional or integration testing. We will look at ways to run project tests
+ and Tempest integrated tests against a small single node deployment[1] of
+ OpenStack with Loci.
+
+I will also continue to encourage adoption of Loci and support use cases in
+container-based OpenStack deployments.
+
+Thank you for support, and if elected I look forward to representing the Loci
+team and the OpenStack community in the coming months.
+
+-Chris Hoge (hogepodge)
+
+[1] this, for example https://github.com/hogepodge/locistack
