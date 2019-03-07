@@ -1,0 +1,54 @@
+Please consider my candidacy for the role of keystone PTL.
+
+I have been involved with keystone for a little over three years and have loved
+it from the beginning. My first introduction to keystone was from the
+perspective of a deployer project contributor, while I was working on getting
+the Puppet-OpenStack modules to work with the keystone v3 API. I found the
+problem space fascinating and the people warm and welcoming. Given free reign
+at the time to work on anything that interested me, I chose to jump into
+keystone. I currently work at SUSE as a cloud engineer specializing in the
+keystone component.
+
+I see keystone as being in a unique position in the OpenStack ecosystem as a
+sort of backbone of OpenStack. As such, the challenges we face as a team are
+somewhat self-imposed: we don't have vendors pressuring us to get features in,
+but rather we push ourselves to add features to make OpenStack as a whole
+better. Deficiencies in keystone means hardship for nearly all OpenStack
+operators and difficulties for other OpenStack developers. It's a tough burden
+to bear and yet it's what makes keystone the most fun to work on.
+
+As PTL, my top technical focus will be in continuing the great work Lance has
+done around improving the policy and RBAC experience for operators, and helping
+to drive the changes needed in the rest of the OpenStack to fulfill this
+long-overdue goal. We will work to envision and fulfill the TC's technical
+vision for OpenStack[1][2], striving for true multitenancy and enabling a
+completely self-service solution.
+
+Aside from that, I will not plan to drive many features. Instead I will work to
+empower other developers to drive feature work and grow into maintainers, by
+taking a step back to clean up technical debt, fix longstanding bugs, and
+enhance our CI test coverage and performance measuring. I will invest heavily
+in our contributor documentation, digging up and writing down the team's tribal
+knowledge, and I'd like to start building out and documenting reference
+architectures for keystone in conjunction with operators and working groups.
+
+As a team, we need to continue to encourage and recruit new contributors and
+grow them into the core team. We do that by continuing to participate in
+mentoring programs like Outreachy or in university capstone classes, by
+reaching out to users and operators and helping them contribute back, by
+creating bite-sized chunks of work that a new person can tackle quickly (Lance
+did a great job of this by breaking up the system scope and reader role work
+into separate tasks), and by continuing to be ourselves: friendly and
+welcoming, non-nitpicky, helpful and responsive. In the last few months we've
+already seen a pickup in long-term maintainers and it's been a welcome sight.
+
+I want to thank Lance for doing an amazing job as PTL for the last few years
+and for everything he's accomplished, and I can only hope to live up to the
+example he's set.
+
+Thank you for your consideration.
+
+Colleen Murphy (cmurphy)
+
+[1] https://governance.openstack.org/tc/reference/technical-vision.html
+[2] https://review.openstack.org/641374
