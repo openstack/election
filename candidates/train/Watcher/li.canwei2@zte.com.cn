@@ -1,0 +1,24 @@
+Hi,
+
+I would like to nominate myself to be the Watcher PTL for the Train cycle.
+
+I began to contribute to Watcher project since 2016, and as a core reviewer
+from Pike cycle.
+
+In Stein, We have done a good job. We refactor the function of updating
+the data model based Nova notifications, and add API Microversions for
+Watcher. We also improve the unit tests and functional tests.
+
+For the next cycle, there are some works we need to take into account:
+
+* Supoort CERN's use cases.
+* Add API to show the Watcher data model.
+* Add support for the Placement Client.
+* continue to improve the functional tests.
+
+I have working with Watcher for several cycles, and I have a deep understanding
+about Watcher. I'm happy to welcome new contributors on the project and ready
+to answer any question on our channel #openstack-watcher.
+
+Best Regards,
+Canwei Li (licanwei)
