@@ -1,6 +1,6 @@
 {{ election.capitalize() }} PTL Candidates
 ======================
-{% for project in projects %}{% if project != 'TC' %}
+{% for project in projects|sort %}{% if project != 'TC' %}
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}
