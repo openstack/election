@@ -1,0 +1,33 @@
+Hello Again Infrastructure Electorate,
+
+I am nominating myself for a fourth round of Infrastructure PTL duties.
+Once again I feel that I've got some unfinished business as PTL guiding
+our efforts through to completion. That said, we have made incredible
+progress on our goals over the Stein cycle:
+
+  * We are in the middle of upgrading all of our Puppetry to Puppet v4.
+  * We now have the ability to deploy systems without any Puppet. We
+    even have a system for deploying container images.
+  * We are almost off of our old Trusty servers and on to either Xenial
+    or Bionic based systems. Thank you for all the help with this, and I
+    hope to see you during our final push.
+  * Winterscale has a name now: OpenDev. With a name we have been able
+    to deploy services like DNS and Gitea and Zuul for OpenDev.
+
+As I have said before, I cannot take credit for all this awesome work.
+Instead, as PTL, I have tried to facilitate the work of others while
+helping where I can. Thank you for making all of this effort possible.
+
+Looking ahead, we have a great foundation on which to build out OpenDev
+while leaving behind legacy systems like Trusty and Puppet 3. For the
+Train cycle I expect we'll push hard to "OpenDevify" our existing
+services. There is great work already on the Git hosting side of things,
+but as soon as that is done I would like to see us branching out and
+converting more services.
+
+It will be a fun adventure to bring our tools and services to a broader
+audience. I am happy to continue guiding the team through these changes
+as PTL if you will have me.
+
+Thank you,
+Clark
