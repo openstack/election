@@ -1,0 +1,28 @@
+Hi All,
+
+I would like to announce my candidacy for PTL of Designate for the Train cycle.
+
+I have been PTL for Mitaka, Newton, Ocata, Queens, Rocky, Stein (and hopefully
+Train), and have been a core for longer. I have been part of teams that ran
+Designate in production in public clouds, and also shipped products based on
+it. I feel that this gives a great viewpoint for where we should go.
+
+That said, leadership turn over is healthy, and is required to ensure that
+a project does not get stale, and in Designate we have been very bad at
+ensuring there is a good turn over (Designate has had 3 PTLs in its existance,
+2 of which were originally from Managed I.T. - the company that founded it).
+
+As a result, Train will be my last cycle as PTL (if you see fit to elect me).
+My cycle goals will be to ensure a clean handover to the next PTL - writing
+down roadmaps, documenting what I do as PTL, and guiding anyone who is
+interested in taking on the role.
+
+While DNS is not something that is traditionally on a hype curve, we have had
+solid growth over the years, and the software we write is deployed in some
+of the largest OpenStack users. It is an important part of the Datacentre as a
+Service space, and we should be proud of it, and help promote its use where it
+fits.
+
+Thank you for taking the time to read this, and thank you for your support.
+
+- Graham (mugsie)
