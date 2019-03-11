@@ -1,0 +1,33 @@
+All,
+
+This letter is to indicate my interest in continuing to serve as
+the Cinder PTL for the Train release. This would be my fourth
+release as PTL and am happy to continue leading the Cinder project.
+
+Over the last three releases, for which I have been PTL, I have seen
+Cinder transition from focussing on merging new functionality to
+focussing on fixing bugs and improving Cinder's stability.  This is
+a natural progression for a project of this type and, I feel, requires
+the team to take a new approach to how we go forward.
+
+During the Train release I think that the team should continue to
+look at the bugs filed against Cinder and work to address them.
+We started reducing the number of bugs during Stein and I hope that
+we can continue that momentum in Train.  I also feel that we need
+to be better about monitoring 3rd Party CI runs and ensure that they
+are testing what they should be testing.  With the move to Python3
+ensuring it is being tested and that each driver works with Python3
+is going to be essential.
+
+Other goals I have during Train include:
+
+* Continuing to address how cinderlib fits with Cinder
+* Continuing to reach out to our users seeking their input for improvement
+* Continued improvement of core reviewer participation
+* Increasing the breadth of testing against Cinder
+
+I look forward to the continued opportunity to lead the Cinder
+project.
+
+Sincerely,
+Jay Bryant (jungleboyj)
