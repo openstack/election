@@ -1,0 +1,24 @@
+Hi all!
+
+I would like to announce myself nomination for the PTL candidacy in
+Tricircle Train cycle. My name is Baisen Song, and my IRC handle is
+songbaisen. I am currently the PTL of Tricircle for Stein cycle and have
+been the most actively participating in the development of this project since
+last two years. I and my team have finished the most BluePrints in Tricircle.
+
+During the Stein cycle, we begin to bring driver based implementation,
+implement the new cross-neutron l3 networking, improvement the tricircle
+work with nova cell2, make tricircle work with trio2o, make trio2o work with
+the new openstack version.
+
+For the coming Train cycle, here are some works we can focus on:
+
+* Make tricircle work with zuul v3.
+* Integrate LBaas with nova cell v2.
+* Make tricircle function test work with python3.
+* Add more unit test case mote than 80%.
+
+Thank you for taking the time to consider me for Train PTL.
+
+Hope everyone will enjoy joining the Tricircle.
+
