@@ -1,0 +1,31 @@
+
+Hi all,
+
+I'd like to nominated myself to be a candidate of Zun PTL through
+the Train cycle. 
+
+Over the past year the Zun project has achieved a lot of the important
+features includes:
+* Support volume multi-attach: Make zun supports mount the same volume
+  to different containers.
+* Cpuset-container: Make a cpu_policy field which could be shared or 
+  dedicated during the container creation. 
+* Tmpfs-mounts: A new volume type tmpfs added to bind volume into container.
+* Private registry: Support to pull docker images from registry 
+  ther than Docker Hub.
+
+My goals for the Train cycle are to continue the progress made during
+the Stein cycle in the following areas:
+* Vgpu: Add support for vGPU resources.
+* Containers-on-VMs: Provide an option to auto-provision VMs for containers.
+  This is for use cases that containers need to be strongly isolated by VMs.
+* Placement API: Nova team is working to split its scheduler out and Zun would
+  like to leverage this new service if appropriate.
+* Batch-creation: Batch creation of containers.
+* Entrypoint-option: Eentrypoint is used to overwrite the entry point of docker image.
+
+
+Thank you for taking the time to consider me for Train PTL.
+
+Best regards,
+Shengqin Feng
