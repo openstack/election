@@ -1,0 +1,30 @@
+Hi,
+
+I would like to announce my candidacy for PTL of Horizon for Train release.
+I served this role during the last two releases and I still feel strong enough
+to do this role during the next six months.
+
+We did a good job as a team during the Stein release cycle: enabled
+integration tests both for Horizon and several plugins, created a good list of
+priorities and TODOs to fix our huge feature gaps between UI and command-line
+clients and started work on them, so you can find few more useful features in
+our release notes.
+
+During the Train cycle, I’m going to continue these efforts:
+
+* Add integration tests for all maintained plugins so we can be sure that
+  we’ve got verified list of working Horizon plugins.
+* Involve project teams in Horizon: even such contributions like feature
+  requests are extremely important to understand what should we do to make
+  cloud users and operators happier
+* We missed few community goals in the past and I’ll do my best to fix it in
+  Train release.
+* Last, but not least, I’ll be happy to help new contributors to be a part of
+  Horizon team.
+
+I hope you’ll give me a chance to wear a PTL hat for Train and help me with
+all these efforts.
+
+Thank you,
+Ivan Kolodyazhny (e0ne)
+
