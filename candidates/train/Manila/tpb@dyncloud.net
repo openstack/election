@@ -1,0 +1,52 @@
+All,
+
+I served as Manila PTL for Rocky and Stein and am willing and able to
+take on that role in Train if you choose me.
+
+I continue to be less interested in adding new features to Manila
+itself than in improving its durability, ease of use, and
+consumability.
+
+I will continue to get the message out that Manila is loosely coupled
+with other OpenStack components and serves up storage via the network
+rather than through hypervisors so that it is ideally positioned to
+provide shared file storage both within and outside of OpenStack proper.
+
+I will work to make sure that storage vendors understand that if they
+maintain drivers for their back ends in Manila then this will at the
+same time enable them to provide storage for OpenStack consumers and
+also for Container Orchestrator clouds.
+
+I will continue to champion development of "**production quality**"
+100% open source storage back ends for Manila.
+
+We have done a good job fostering new contributors and helping
+outreachy intern applicants get started.  I want us to continue to be
+known as a friendly project and a good place to work.
+
+In Train we need to complete work already begun to:
+
+ * build a manila CSI plugin
+
+ * integrate manila into the OpenStack Client and SDK
+
+ * integrate manila into OpenStack ansible and extend TripleO coverage
+   to more storage back ends.
+
+In addition, in the Train cycle I want the Manila project to take up
+the challenge of shared storage as a service at the Edge.  We need to:
+
+ * Articulate use cases for shared storage (vs block or object) at the
+   Edge.
+
+ * Drive common understanding of appropriate service architecture for
+   Edge.
+
+ * Position vendors and open source software defined back ends for
+   Edge deployments using Manila.
+
+These are the things that will drive me if you choose me as manila PTL.
+
+Thanks for listening,
+
+-- Tom Barron (tbarron)
