@@ -1,0 +1,21 @@
+Hello OpenStackers,
+
+I'm submitting myself as the PTL for Adjutant during the Train cycle.
+
+As the main developer and project lead until now, I'm still the best suited to continue leading the project.
+
+My focus for Train will be onboarding of new devs, and having them help me with the refactor work that is still in progress.
+
+As such the planned work is still:
+- bringing the codebase to a much nicer state while decoupling certain elements of our internals, and adding support for async task processing.
+- rework the config system
+- introduce partial policy support rather than relying on hardcoded decorators.
+- rework notifications to be pluggable and how/when they are sent
+- rework the identity manager as a pluggable construct.
+- finish the long planned support for sub-project management
+- add project (and resource) termination logic which uses the currently planned community goal for Stein
+
+It should actually be a productive cycle, and we will in all likelihood be dropping python2 support by the end of it.
+
+Cheers,
+Adrian Turjak
