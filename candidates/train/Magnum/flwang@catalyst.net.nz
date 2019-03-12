@@ -1,0 +1,64 @@
+Greeting,
+
+I would like announce my candidacy to serve as the Magnum project team
+leader for the Train cycle, if you will have me.
+
+I've been working on and contributing to Magnum since Queens release as a core
+developer. And I have done a lot work for Magnum to help it getting production
+ready, e.g. the Calico network driver, nodes anti affinity, k8s health status
+check, Keystone auth, coreDNS autoscale, get Magnum certified by CNCF and etc.
+That said, I really understand the ups and downs which Magnum went
+through and I know the blueprints, direction and pains of this project, for
+interests from both private cloud and public cloud sides.
+
+For Train release (including the rest of Stein cycle), things I'd like to do:
+
+1. Rolling upgrade
+
+Rolling upgrade is one of the most important features user want to see for a
+managed Kubernetes service. And in Magnum, we're thinking more deeper to
+provide a better user experience. For the rolling upgrade, we will support
+upgrade the base operating system, Kubernetes version and even add-ons running
+on top of Kubernetes.
+
+2. Auto scaling/healing
+
+Another most wanted feature for Kubernetes cluster. With this feature, a user
+will be able to get an auto scaled cluster which can fix itself when there is
+any node failure.
+
+3. Node groups
+
+Node groups provide users with the ability to specify groups of nodes with
+different properties for different purposes. Within the scope of a group users
+are able to define labels, used image, flavor, etc depending on the purpose.
+
+4. Fedora CoreOS
+
+The most matured driver for Kubernetes in Magnum is Fedora Atomic, however, the
+Fedora community is moving to Fedora CoreOS, so we should start to think about
+the migration.
+
+5. Containerize Kubernetes master
+
+This could be one of the most interesting features for Magnum and it's
+definitely hard work. Running Kubernetes master nodes in a seed/root Kubernetes
+could bring us a lot of benefits.
+
+6. Helm for add-ons
+
+We have enabled Helm in Stein and this gives us a good opportunity to re-think
+our add-ons management strategy. Using Helm for our add-ons could make our
+vendors' life much easier.
+
+
+It has been a fantastic experience working with this amazing team and I know
+without the dedication and hard work of everyone who has contributed to Magnum
+we can't get those good work done. So the PTL of this cool team is most like a
+facilitator, coordinator, and mentor. I would be pleased to serve as PTL for
+Magnum for the Train cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
+
+
+
