@@ -1,0 +1,28 @@
+All,
+
+If the community so wishes I'd like to make myself available
+as Glance PTL for Train cycle.
+
+I'm not going to repeat myself here so if you did not see my
+self nomination for Rocky [0], you can find the history and
+my personal priorities regarding the project team there.
+
+Over the past year we've had small team looking after Glance
+and planned the work accordingly. There has not been that
+big changes of the priorities. We still value stability over
+features and execute what we have hands for. Some things got
+delayed, like stabilizing multiple backends due to still un-
+solved issues and we got some things contributed to Stein
+we were not planning for. I'm all for quality of life
+improvements, specially when they bring new people to work
+on the project.
+
+Should community to select me as PTL for Train cycle I would
+keep drving the key priorities. Production stability,
+finishing the work we've had in flight and focus on the
+feature needs Edge computing has brought to our table.
+
+Thank you for taking my self nomination into consideration,
+Erno jokke Kuvaja
+
+[0] https://git.openstack.org/cgit/openstack/election/plain/candidates/rocky/Glance/jokke_.txt
