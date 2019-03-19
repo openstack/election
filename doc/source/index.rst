@@ -4,6 +4,11 @@
 OpenStack Election
 ==================
 
+.. toctree::
+   :hidden:
+
+   process
+
 .. include:: events.rst
 
 See `Election system`_, `PTL details`_ and `TC details`_.
@@ -20,6 +25,14 @@ Previous elections
 
 Election Officials
 ==================
+
+Officials in OpenStack technical elections are delegates of the OpenStack
+Technical Committee, and follow a mostly automated :doc:`process` assisted by
+continuous integration jobs. The TC is always looking for volunteers interested
+in officiating future elections, so reach out to them if you would like to
+help.
+
+Our current election officials are:
 
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
 * Emmet Hikory (persia), persia at shipstone dot jp

@@ -1,15 +1,10 @@
-==================
-openstack/election
-==================
-
 This repository contains OpenStack Elections reference documents
 and tooling to run elections.
 
+================
+Election Process
+================
 
-Election officials process
-==========================
-
-=============
 PTL Elections
 =============
 
@@ -24,7 +19,8 @@ Things to keep in mind when selecting election dates:
 * Allow at least a week for nomination period
 
 ``setup-election-config`` can be used to pick some obvous dates that need to be
-check by the election offiicals and TC
+checked by the election officials and TC
+
 
 Preparation
 -----------
@@ -32,87 +28,123 @@ Preparation
 As early as possible but at least a month before election starts:
 
 * Edit elections details (timeline, cycle timeframe):
-  * edit configuration.yaml
+
+  * ``edit configuration.yaml``
+
 * Prepare new election, e.g.:
-  * tox -evenv -- create-directories
+
+  * ``tox -evenv -- create-directories``
+
 * Commit to update website
 * Update Release Schedule
 
-A couple of weeks before election starts
-* Send 'PTL Election Season' email
-  * tox -e venv -- template-emails election_season
+A couple of weeks before election starts:
+
+* Send *PTL Election Season* email
+
+  * ``tox -e venv -- template-emails election_season``
 
 
 PTL Candidacy Round
 -------------------
 
-When PTL Candidacy start
-* Send 'PTL Nominations Kickoff' email
-  * tox -e venv -- template-emails nominations_kickoff
+When PTL Candidacy start:
+
+* Send *PTL Nominations Kickoff* email
+
+  * ``tox -e venv -- template-emails nominations_kickoff``
 
 During the PTL Candidacy round:
+
 * Validate candidacy, e.g.:
-  * tox -evenv -- check-all-candidacies, or
-  * tox -evenv -- ci-check-all-candidate-files candidates/release/project/candidates , or
-  * tox -evenv -- check-candidacy change_id
+
+  * ``tox -evenv -- check-all-candidacies``, or
+  * ``tox -evenv -- ci-check-all-candidate-files candidates/release/project/candidates``, or
+  * ``tox -evenv -- check-candidacy change_id``
+
 * To +2 a candidate:
+
   * check commit link is indeed valid
   * check filename is email address
   * cursory check the candidacy statement
-* To +Workflow, checks the previous +2 details, find another commits using --limit 5 (optional)
 
-* Check candidate list and fix badly generated names through changes to the exception.txt file or
-  requesting the candidate to update thier OSF member profile.
+* To +Workflow, checks the previous +2 details, find another commits using
+  ``--limit 5`` (optional)
+* Check candidate list and fix badly generated names through changes to the
+  ``exception.txt`` file or requesting the candidate to update thier OSF member
+  profile.
 
 Once the email deadline is reached:
+
 * Ask the TC chair to tag the governance repository
 * Generate the electorate rolls.  This generates the rolls for all project
   teams even if they aren't going to hold an election.
-  * tox -evenv -- generate-rolls
+
+  * ``tox -evenv -- generate-rolls``
 
 A couple of days before the candidacy submission ends:
-* Render statistics and send 'Motivation call for PTL candidacy round', e.g.:
-  * tox -evenv -- render-statistics
-* Send 'PTL Nominations Last Days' email
-  * tox -e venv -- template-emails nominations_last_days
+
+* Render statistics and send *Motivation call for PTL candidacy round*, e.g.:
+
+  * ``tox -evenv -- render-statistics``
+
+* Send *PTL Nominations Last Days* email:
+
+  * ``tox -e venv -- template-emails nominations_last_days``
 
 When PTL Candidacy submission ends:
-* Send 'PTL Nominations End' email
-  * tox -e venv -- template-emails end_nominations
+
+* Send *PTL Nominations End* email
+
+  * ``tox -e venv -- template-emails end_nominations``
 
 * When the tag is available, generate ATC rolls, e.g.:
-  * tox -evenv -- generate-rolls
+
+  * ``tox -evenv -- generate-rolls``
   * Compare ATC rolls with at least one other election official
+
 
 PTL Election Round
 ------------------
 
 When PTL Election begins:
-* Create CIVS page ( https://wiki.openstack.org/wiki/Election_Officiating_Guidelines#Running_the_election_itself )
+
+* `Create CIVS page
+  <https://wiki.openstack.org/wiki/Election_Officiating_Guidelines#Running_the_election_itself>`_
 * Upload rolls
-  * CIVS has a maximum number of electorate emails you can upload at a time without crashing, limit to 500
-    at a time
-* Send 'PTL Voting Kickoff' email
-  * tox -e venv -- template-emails voting_kickoff
+
+  * CIVS has a maximum number of electorate emails you can upload at a time
+    without crashing, limit to 500 at a time
+
+* Send *PTL Voting Kickoff* email
+
+  * ``tox -e venv -- template-emails voting_kickoff``
 
 A couple of days before the PTL Election ends:
-* Send 'PTL Voting Last Days' email
-  * tox -e venv -- template-emails voting_last_days
 
+* Send *PTL Voting Last Days* email
+
+  * ``tox -e venv -- template-emails voting_last_days``
 
 When PTL Election ends:
-* Close the election and udpate the results:
-  * tox -evenv -- close-election ptl
-  * edit doc/sources/pike/ptl.yaml to set election winners to True
-* Commit the change and review the results
-* Send 'PTL Results' email
-  * This is doc/source/results/release/announce_ptl.rst generated by
-    building the docs: toc -e docs
-    After doc/source/results/release/ptl.yaml has been created and updated
-* Update governance repo:
-  * tox -e venv update-governance -- --governance-repo ../governance/
 
-============
+* Close the election and udpate the results:
+
+  * ``tox -evenv -- close-election ptl``
+  * ``edit doc/sources/pike/ptl.yaml`` and set election winners to ``True``
+
+* Commit the change and review the results
+* Send *PTL Results* email
+
+  * This is ``doc/source/results/release/announce_ptl.rst`` generated by
+    building the docs with ``tox -e docs`` after
+    ``doc/source/results/release/ptl.yaml`` has been created and updated
+
+* Update governance repo:
+
+  * ``tox -e venv update-governance -- --governance-repo ../governance/``
+
+
 TC Elections
 ============
 
@@ -126,7 +158,8 @@ Things to keep in mind when selecting election dates:
 * Allow at least a week for nomination and campaign periods
 
 ``setup-election-config`` can be used to pick some obvous dates that need to be
-check by the election offiicals and TC
+checked by the election officials and TC
+
 
 Preparation
 -----------
@@ -134,42 +167,56 @@ Preparation
 As early as possible but at least a month before election starts:
 
 * Edit elections details (timeline, cycle timeframe):
-  * Edit configuration.yaml
+
+  * ``edit configuration.yaml``
+
 * Commit to update website
 * Update Release Schedule
 
-A couple of weeks before election starts
-* Send 'TC Election Season' email
-  * tox -e venv -- template-emails election_season
+A couple of weeks before election starts:
+
+* Send *TC Election Season* email
+
+  * ``tox -e venv -- template-emails election_season``
 
 
 TC Candidacy Round
 ------------------
 
 When TC Candidacy starts:
-* Send 'TC Nominations Kickoff' email
-  * tox -e venv -- template-emails nominations_kickoff
+
+* Send *TC Nominations Kickoff* email
+
+  * ``tox -e venv -- template-emails nominations_kickoff``
 
 During the TC Candidacy round:
+
 * To +2 a candidate:
+
   * check candidate profile using https://www.openstack.org/community/members/
   * check filename is email address
   * cursory check the candidacy statement
+
 * To +Workflow, check the previous +2 details
 
 A couple of days before the candidacy submission ends:
-* Send 'TC Nominations Last Days' email
-  * tox -e venv -- template-emails nominations_last_days
+
+* Send *TC Nominations Last Days* email
+
+  * ``tox -e venv -- template-emails nominations_last_days``
 
 When TC Candidacy submission ends:
-* Send 'TC End Nominations' email
-  * tox -e venv -- template-emails end_nominations
 
+* Send *TC End Nominations* email
+
+  * ``tox -e venv -- template-emails end_nominations``
 
 Once the email deadline is reached:
+
 * Ask the TC chair to tag the governance repository
 * Generate the electorate rolls.
-  * tox -evenv -- generate-rolls
+
+  * ``tox -evenv -- generate-rolls``
 
 
 TC Campaigning
@@ -178,34 +225,49 @@ TC Campaigning
 The TC election includes a period after the candidates are defined but before
 the election, for candidates to answer questions from the community.  Open this
 with:
-* tox -e venv -- template-emails campaigning_kickoff
+
+* ``tox -e venv -- template-emails campaigning_kickoff``
+
 
 TC Election Round
 -----------------
 
 When TC Election begins:
+
 * Create CIVS page
+
   * Enable detailed ballot reporting
+
 * Upload rolls
-* Send 'TC Voting Kickoff' Email
-  * tox -e venv -- template-emails voting_kickoff
+* Send *TC Voting Kickoff* email
+
+  * ``tox -e venv -- template-emails voting_kickoff``
 
 A couple of days before the TC Election ends:
-* Send 'TC Voting Last Days' email
-  * tox -e venv -- template-emails voting_last_days
+
+* Send *TC Voting Last Days* email
+
+  * ``tox -e venv -- template-emails voting_last_days``
 
 When TC Election ends:
+
 * Close the election
-* Run: tox -e venv -- close-election tc
-  * edit doc/source/pike/tc.yaml setting the winners to 'True'
-  * Commit change & push review
-* Send 'TC Results' email
-  * This is doc/source/results/release/announce_tc.rst generated by
-    building the docs: toc -e docs
-    After doc/source/results/release/tc.yaml has been created and updated
-* Update reference/members in governance repository
+* Run: ``tox -e venv -- close-election tc``
+
+  * ``edit doc/source/pike/tc.yaml`` setting the winners to ``True``
+  * Commit change and push review
+
+* Send *TC Results* email
+
+  * This is ``doc/source/results/release/announce_tc.rst`` generated by
+    building the docs with ``tox -e docs`` after
+    ``doc/source/results/release/tc.yaml`` has been created and updated
+
+* Update ``reference/members`` in governance repository
+
   * Add new members
-  * Remove 'chair' & 'vice-chair' from file
-  * Commit change & push review
-* Update tc-election-summary.py with election statistics
-* [Optional]Send 'TC Election Statistics'
+  * Remove ``chair`` and ``vice-chair`` from file
+  * Commit change and push review
+
+* Update ``tc-election-summary.py`` with election statistics
+* Optionally send *TC Election Statistics* email
