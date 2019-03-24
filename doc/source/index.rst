@@ -81,7 +81,7 @@ Candidacies now need to be submitted as a text file to the openstack/election
 repository. Here are the required steps:
 
 * Clone the election repository:
-  git clone git://git.openstack.org/openstack/election ; cd election
+  git clone https://git.openstack.org/openstack/election ; cd election
 * Create a new file candidates/<cycle>/<project_name>/<email_address>
   containing the candidate statement.
 * Commit the candidacy: git add candidates/<cycle>/*/*;
