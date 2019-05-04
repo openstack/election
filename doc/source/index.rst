@@ -107,7 +107,9 @@ Project Team Leads' election
 Elected Positions
 -----------------
 
-Every `official project team`__ must elect a PTL. PTLs are elected for 6 months.
+Every `official project team`__ must elect a
+`PTL <https://docs.openstack.org/project-team-guide/ptl.html>`_.
+PTLs are elected for 6 months.
 Reference: |Projects.yaml|.
 
 __ `official project teams`_
