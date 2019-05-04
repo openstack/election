@@ -117,6 +117,10 @@ def main():
     args = parser.parse_args()
     errors = False
 
+    if not utils.election_is_running():
+        print('no current active election')
+        return 0
+
     if not validate_release(args.release):
         return 1
 
