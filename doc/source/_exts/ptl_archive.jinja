@@ -4,7 +4,7 @@
 {% for i in range(election|length + 4) %}={% endfor%}
 
 
-{% for project in projects %}
+{% for project in projects|sort %}
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}{% if candidate['elected'] and 'url' in candidate %}
@@ -28,7 +28,7 @@
 
 Results
 -------
-{% for project in projects %}{% if project in elections_results %}
+{% for project in projects|sort %}{% if project in elections_results %}
 
 * `{{ project }} <{{ elections_results[project] }}>`_
 {% endif %}
@@ -38,7 +38,7 @@ Results
 {{ election.capitalize() }} PTL Candidates
 ======================
 
-{% for project in projects %}
+{% for project in projects|sort %}
 * {{ project.replace('_', ' ') }}
 
 {% for candidate in candidates[project] %}{% if 'url' in candidate %}
