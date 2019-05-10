@@ -122,7 +122,7 @@ Selecting Election Dates
 Things to keep in mind when selecting election dates:
 
 * Needs to conclude by S-3 (3 Weeks prior to OpenStack Summit)
-* Allow for at least 48 hours between email deadline and polling begininning
+* Allow for at least 48 hours between email deadline and polling beginning
 * Allow at least a week for nomination and campaign periods
 
 ``setup-election-config`` can be used to pick some obvous dates that need to be
@@ -183,7 +183,7 @@ with:
 TC Election Round
 -----------------
 
-When PTL Election begins:
+When TC Election begins:
 * Create CIVS page
   * Enable detailed ballot reporting
 * Upload rolls
