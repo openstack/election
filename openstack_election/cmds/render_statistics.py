@@ -133,6 +133,9 @@ def main():
 
     args = parser.parse_args()
 
+    # NOTE(tonyb): If we're a "combined" election we'll have the required
+    # events for the statistics to render collectly so we can just use a quick
+    # 'is_tc' check here
     if utils.is_tc_election():
         print('This tool only works for PTL elections not TC')
         return 0

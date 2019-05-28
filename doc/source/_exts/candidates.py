@@ -99,10 +99,8 @@ def build_lists(app):
     if utils.election_is_running():
         # Current candidates
         candidates_list = utils.build_candidates_list()
-        if not utils.is_tc_election():
-            render_list("ptl", candidates_list)
-        else:
-            render_list("tc", candidates_list)
+        election_type = utils.conf.get('election_type', '').lower()
+        render_list(election_type, candidates_list)
 
     # Archived elections
     previous_toc = [
@@ -127,13 +125,9 @@ class CandidatesDirective(Directive):
     def run(self):
         if not utils.election_is_running():
             return []
+        election_type = utils.conf.get('election_type', '').lower()
 
-        rst = '.. include:: '
-        if utils.is_tc_election():
-            rst += 'tc.rst'
-        else:
-            rst += 'ptl.rst'
-
+        rst = '.. include:: %s.rst' % (election_type)
         result = ViewList()
         for idx, line in enumerate(rst.splitlines()):
             result.append(line, 'CandidatesDirective', idx)

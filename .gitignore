@@ -15,6 +15,7 @@ doc/source/archive_toc.rst
 doc/source/*/*.rst
 doc/source/ptl.rst
 doc/source/tc.rst
+doc/source/combined.rst
 doc/source/events.rst
 doc/source/configuration.rst
 doc/source/results/*/announce_ptl.rst

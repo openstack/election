@@ -125,6 +125,7 @@ def main():
         return 1
 
     projects = utils.get_projects(tag=args.tag, fallback_to_master=True)
+    election_type = utils.conf.get('election_type', '').lower()
 
     if args.files:
         to_process = args.files
@@ -134,13 +135,24 @@ def main():
         to_process = utils.find_candidate_files(election=args.release)
 
     for filepath in to_process:
+        email = utils.get_email(filepath)
+        team = os.path.basename(os.path.dirname(filepath))
+
+        # Some kind souls remove the .placeholder file when they upload
+        # a candidacy
+        if email == '.placeholder':
+            continue
+
         candidate_ok = True
 
         candidate_ok &= validate_filename(filepath)
         candidate_ok &= validate_member(filepath)
 
-        if candidate_ok and not utils.is_tc_election():
-            candidate_ok &= check_for_changes(projects, filepath, args.limit)
+        if candidate_ok:
+            if (election_type == 'ptl'
+                    or (election_type == 'combined' and team != 'TC')):
+                candidate_ok &= check_for_changes(projects, filepath,
+                                                  args.limit)
 
         errors |= not candidate_ok
 
