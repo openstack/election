@@ -193,6 +193,8 @@ def main(options):
     # later than the after parameter for the qualifying time period
     if legacy_file:
         old_projects = utils.load_yaml(open(legacy_file).read())
+    elif projects_file:
+        old_projects = []
     else:
         old_projects = utils.get_from_cgit('openstack/governance',
                                            'reference/legacy.yaml',
