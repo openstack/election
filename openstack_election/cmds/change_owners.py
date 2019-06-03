@@ -108,6 +108,9 @@ def usage(argv=sys.argv):
     parser.add_argument("-a", "--after", help="Start date for matching merges")
     parser.add_argument("-b", "--before", help="End date for matching merges")
     parser.add_argument("-c", "--config", help="Path to script configuration")
+    parser.add_argument("-m", "--nonmember",
+                        help="include non-foundation-members in electorate",
+                        action="store_true")
     parser.add_argument("-i", "--ignore", help="Account Id numbers to skip",
                         action='append')
     parser.add_argument("-l", "--legacy", help="Path to legacy projects file")

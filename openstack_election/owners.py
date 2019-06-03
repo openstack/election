@@ -508,7 +508,7 @@ def main(options):
         invites.append(invite)
 
         # Append preferred addresses to the TC electorate for members only
-        if 'member' in owners[owner]:
+        if 'member' in owners[owner] or options.nonmember:
             electorate.append(owners[owner]['preferred'] + '\n')
 
     # Write out a YAML file covering all change owners
@@ -557,7 +557,7 @@ def main(options):
                 output[owner][field] = projects[project][owner][field]
 
             # Append preferred member addresses to the PTL electoral rolls
-            if 'member' in owners[owner]:
+            if 'member' in owners[owner] or options.nonmember:
                 electorate.append(owners[owner]['preferred'] + '\n')
 
         # Write out a team-specific YAML file
