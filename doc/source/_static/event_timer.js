@@ -41,6 +41,9 @@ function setup_timeline() {
             event_date = current_event_end;
             startTime();
         }
+        else if (now > current_event_start && now < current_event_end) {
+            set_event_status(current_event.name, 'Current');
+        }
         else if (now < current_event_start) {
             set_event_status(current_event.name, 'Future');
         }
