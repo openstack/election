@@ -32,7 +32,9 @@ fmt_args = dict(
     start_release=start_release,
     time_frame=time_frame,
 )
-if utils.is_tc_election():
+
+election_type = utils.conf.get('election_type', '').lower()
+if election_type in ['tc', 'combined']:
     fmt_args.update(dict(
         start_nominations=utils.get_event('TC Nominations')['start_str'],
         end_nominations=utils.get_event('TC Nominations')['end_str'],
@@ -43,7 +45,11 @@ if utils.is_tc_election():
         poll_name='%s TC Election' % (conf['release'].capitalize()),
     ))
     template_names += ['campaigning_kickoff']
-else:
+
+# NOTE(tonyb): In the case of a "combined" election we assume that the dates
+# for each "phase" (nominations, campaigning or elections) overlap so updating
+# the end_nominations key here with the PTL date should be safe
+if election_type in ['ptl', 'combined']:
     # NOTE(tonyb): We need an empty item last to ensure the path ends in a
     #              tailing '/'
     stats.collect_project_stats(os.path.join(utils.CANDIDATE_PATH,

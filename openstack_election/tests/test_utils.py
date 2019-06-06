@@ -41,24 +41,33 @@ class TestGerritUtils(base.ElectionTestCase):
 
 
 class TestFindCandidateFiles(base.ElectionTestCase):
-    @mock.patch.object(utils, 'is_tc_election', return_value=False)
     @mock.patch('os.path.exists', return_value=True)
     @mock.patch('os.listdir', side_effect=[['SomeProject', 'TC'],
                                            ['invalid@example.com']])
-    def test_ptl_lists(self, mock_listdir, mock_path_exists,
-                       mock_is_tc_election):
-        candidate_files = utils.find_candidate_files(election='fake')
+    def test_ptl_lists(self, mock_listdir, mock_path_exists):
+        with mock.patch.dict(utils.conf, dict(election_type='ptl')):
+            candidate_files = utils.find_candidate_files(election='fake')
         self.assertEqual(['candidates/fake/SomeProject/invalid@example.com'],
                          candidate_files)
 
-    @mock.patch.object(utils, 'is_tc_election', return_value=True)
     @mock.patch('os.path.exists', return_value=True)
     @mock.patch('os.listdir', side_effect=[['SomeProject', 'TC'],
                                            ['invalid@example.com']])
-    def test_tc_lists(self, mock_listdir, mock_path_exists,
-                      mock_is_tc_election):
-        candidate_files = utils.find_candidate_files(election='fake')
+    def test_tc_lists(self, mock_listdir, mock_path_exists):
+        with mock.patch.dict(utils.conf, dict(election_type='tc')):
+            candidate_files = utils.find_candidate_files(election='fake')
         self.assertEqual(['candidates/fake/TC/invalid@example.com'],
+                         candidate_files)
+
+    @mock.patch('os.path.exists', return_value=True)
+    @mock.patch('os.listdir', side_effect=[['SomeProject', 'TC'],
+                                           ['invalid@example.com'],
+                                           ['invalid@example.com']])
+    def test_combined_lists(self, mock_listdir, mock_path_exists):
+        with mock.patch.dict(utils.conf, dict(election_type='combined')):
+            candidate_files = utils.find_candidate_files(election='fake')
+        self.assertEqual(['candidates/fake/SomeProject/invalid@example.com',
+                          'candidates/fake/TC/invalid@example.com'],
                          candidate_files)
 
 

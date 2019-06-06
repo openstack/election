@@ -55,6 +55,7 @@ def main():
 
     args = parser.parse_args()
     projects = utils.get_projects(tag=args.tag, fallback_to_master=True)
+    election_type = utils.conf.get('election_type', '').lower()
 
     for review in get_reviews():
         if review['status'] != 'NEW':
@@ -77,7 +78,10 @@ def main():
                 candiate_ok = checks.validate_member(filepath)
 
             if candiate_ok:
-                if not utils.is_tc_election():
+                # If we're a PTL election OR if the team is not TC we need
+                # to check for validating changes
+                if (election_type == 'ptl'
+                        or (election_type == 'combined' and team != 'TC')):
                     if args.interactive:
                         print('The following commit and profile validate this '
                               'candidate:')

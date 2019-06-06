@@ -286,17 +286,18 @@ def election_is_running():
 
 def find_candidate_files(election=conf['release']):
     election_path = os.path.join(CANDIDATE_PATH, election)
+    election_type = conf.get('election_type', '').lower()
     if os.path.exists(election_path):
         project_list = os.listdir(election_path)
     else:
         project_list = []
 
-    if is_tc_election():
+    if election_type == 'tc':
         project_list = list(filter(
             lambda p: p in ['TC'],
             project_list
         ))
-    else:
+    elif election_type == 'ptl':
         project_list = list(filter(
             lambda p: p not in ['TC'],
             project_list
