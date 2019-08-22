@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import argparse
 import jinja2
 import os
+import sys
 
 from openstack_election.cmds import render_statistics as stats
 from openstack_election import config
@@ -82,6 +83,7 @@ def main():
         template = env.get_template('%s.j2' % func_name)
         print(template.render(fmt_args))
     except jinja2.exceptions.TemplateNotFound:
-        pass
+        print('\nNo %s.j2 template found.\n' % func_name, file=sys.stderr)
+        return 1
 
     return 0
