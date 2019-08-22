@@ -18,7 +18,7 @@ timeline:
   - name: TC Campaigning
     start: 2019-09-03T23:45
     end: 2019-09-10T23:45
-  - name: TC Election
+  - name: TC Elections
     start: 2019-09-10T23:45
     end: 2019-09-17T23:45
   - name: PTL Election
