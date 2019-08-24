@@ -12,6 +12,6 @@
       jobs:
         - openstack-tox-linters
         - election-tox-ci-checks-election
-    post:
+    promote:
       jobs:
-        - publish-tox-docs-static
+        - promote-tox-docs-static
