@@ -34,7 +34,6 @@ help.
 
 Our current election officials are:
 
-* Kendall Nelson (diablo_rojo), knelson at openstack dot org
 * Emmet Hikory (persia), persia at shipstone dot jp
 * Jeremy Stanley (fungi), fungi at yuggoth dot org
 * Andy McCrae (andymccr), andy dot mccrae at gmail dot com
