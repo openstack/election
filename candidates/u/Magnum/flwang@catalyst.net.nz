@@ -1,0 +1,64 @@
+Greeting,
+
+Over the last release, I have had the privilege and honor to serve as the PTL
+of Magnum. I would like to take this opportunity to express my appreciation
+for all your support and contribution to Magnum. And I look forward to working
+with you all over the next release. Therefore, I would like announce my
+candidacy to serve as the Magnum project team leader for the U cycle, if you
+will have me.
+
+In case if you don't know me, I've been working on and contributing to Magnum
+since Queens release as a core developer. And I have done a lot work for Magnum
+to help it getting production ready, e.g. the Calico network driver, nodes
+anti affinity, k8s health status check, Keystone auth, coreDNS autoscale,
+rolling upgrade, auto scaling, auto healing, private cluster, getting Magnum
+certified by CNCF and etc, etc. That said, I really understand the ups and
+downs which Magnum went through and I know the blueprints, direction and pains
+of this project, for interests from both private cloud and public cloud sides,
+which make me a good candidate for the PTL position.
+
+For U release (including the rest of Train cycle), things I'd like to do:
+
+1. Fedora CoreOS
+
+The most matured driver for Kubernetes in Magnum is Fedora Atomic, however, the
+Fedora community is moving to Fedora CoreOS, so we should start to think about
+the migration. We have started the work but haven't finished it due to the
+limited resource among the team. This need to be done in Train or early of U
+cycle.
+
+2. Node groups
+
+Node groups provide users with the ability to specify groups of nodes with
+different properties for different purposes. Within the scope of a group users
+are able to define labels, used image, flavor, etc depending on the purpose.
+We have merged part of this huge feature, but we do need to finish the rest of
+the work.
+
+3. Security hardening
+
+Security is always the most important area we would like to improve for Magnum,
+there are still parts we need to improve to make Magnum more securer.
+
+4. Containerize Kubernetes master
+
+This could be one of the most interesting features for Magnum and it's
+definitely hard work. Running Kubernetes master nodes in a seed/root Kubernetes
+could bring us a lot of benefits.
+
+5. Rolling upgrade for node operating system
+
+With the big support from CERN, We have done the k8s version rolling upgrade,
+but we still need the rolling upgrade work for node operating system. I have
+already got a patch for that being reviewed now.
+
+It has been a fantastic experience working with this amazing team and I know
+without the dedication and hard work of everyone who has contributed to Magnum
+we can't get those good work done. So the PTL of this cool team is most like a
+facilitator, coordinator, and mentor. I would be pleased to serve as PTL for
+Magnum for the U cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
+
+
+
