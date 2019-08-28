@@ -1,0 +1,27 @@
+I'd like to submit my candidacy to remain serving as keystone PTL for the next
+cycle.
+
+It has been my privilege to serve as PTL for this past cycle, during which we
+made progress on several major issues, especially on transitioning our RBAC
+model to steer away from the admin-ness problem and to understand read-only
+roles, as well as enhancing application credentials with fine-grained access
+control and support for federated users.
+
+In the upcoming cycle, policy and RBAC continue to be a top priority. As we
+near the completion of migrating keystone's own policies to understand system
+scope and default roles, we need to look forward to driving these changes
+across the rest of OpenStack while ensuring as smooth a transition as possible
+for operators and end users. Beyond that, my top focus will be on incrementally
+improving the quality of keystone as a product, starting with enhancing our
+testing to ensure it is more stable and reliable and encompasses all the
+scenarios that are important to us, from rolling upgrades to federation to
+performance testing. As more and more we face a simple lack of people-hours
+within the team to drive massive features, my strategy will be to remove
+roadblocks like CI issues and technical debt in order to empower new and
+existing contributors to drive the features they want to see in keystone,
+whether that is quota limits, federation enhancements, better support for Edge
+use cases, or whatever other life-improving ideas come up.
+
+Thank you for your consideration,
+
+Colleen (cmurphy)
