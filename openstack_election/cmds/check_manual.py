@@ -35,6 +35,8 @@ def main():
     parser.add_argument('--tag', dest='tag', default=utils.conf['tag'],
                         help=('The governance tag to validate against.  '
                               'Default: %(default)s'))
+    parser.add_argument('-v', '--verbose', action="count", default=0,
+                        help='Increase program verbosity')
 
     args = parser.parse_args()
     if args.limit < 0:
@@ -48,7 +50,8 @@ def main():
         return 1
 
     if check_candidacy.check_candidate(args.project_name, args.email,
-                                       projects, limit=args.limit):
+                                       projects, limit=args.limit,
+                                       verbose=args.verbose):
         print('SUCCESS: %s is a valid candidate\n\n' % (args.email))
         return 0
     else:

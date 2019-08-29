@@ -34,24 +34,26 @@ from openstack_election import exception
 
 # Library constants
 CANDIDATE_PATH = 'candidates'
-GERRIT_BASE = 'https://review.openstack.org'
+GERRIT_BASE = 'https://review.opendev.org'
 ELECTION_REPO = 'openstack/election'
-CGIT_URL = 'https://git.openstack.org/cgit'
-PROJECTS_URL = ('%s/openstack/governance/plain/reference/projects.yaml' %
-                (CGIT_URL))
+GIT_URL = 'https://opendev.org/'
+PROJECTS_URL = GIT_URL + 'openstack/governance/raw/%s/reference/projects.yaml'
 
 conf = config.load_conf()
 exceptions = None
 
 
 # Generic functions
-def requester(url, params={}, headers={}):
+def requester(url, params={}, headers={}, verbose=0):
     """A requests wrapper to consistently retry HTTPS queries"""
 
     # Try up to 3 times
     retry = requests.Session()
     retry.mount("https://", requests.adapters.HTTPAdapter(max_retries=3))
-    return retry.get(url=url, params=params, headers=headers)
+    raw = retry.get(url=url, params=params, headers=headers)
+    if verbose >= 2:
+        print("Queried: %s" % raw.url)
+    return raw
 
 
 def decode_json(raw):
@@ -74,43 +76,41 @@ def decode_json(raw):
     return decoded
 
 
-def query_gerrit(method, params={}):
+def query_gerrit(method, params={}, verbose=0):
     """Query the Gerrit REST API"""
 
-    # The base URL to Gerrit REST API
-    GERRIT_API_URL = 'https://review.openstack.org/'
-
-    raw = requester(GERRIT_API_URL + method, params=params,
-                    headers={'Accept': 'application/json'})
-    return decode_json(raw)
+    return decode_json(requester("%s/%s" % (GERRIT_BASE, method),
+                                 params=params,
+                                 headers={'Accept': 'application/json'},
+                                 verbose=verbose))
 
 
 def load_yaml(yaml_stream):
-    """Retrieve a file from the cgit interface"""
+    """Wrapper to load and return YAML data"""
 
     return yaml.safe_load(yaml_stream)
 
 
-def get_from_cgit(project, obj, params={}):
-    """Retrieve a file from the cgit interface"""
+def get_from_git(project, obj, params={}, verbose=0):
+    """Retrieve a file from the Gitea interface"""
 
-    url = 'https://git.openstack.org/cgit/' + project + '/plain/' + obj
-    raw = requester(url, params=params,
-                    headers={'Accept': 'application/json'})
-    return load_yaml(raw.text)
+    url = "%s%s/raw/%s" % (GIT_URL, project, obj)
+    return load_yaml(requester(url, params=params,
+                               headers={'Accept': 'application/json'},
+                               verbose=verbose).text)
 
 
 def get_series_data():
-    return get_from_cgit('openstack/releases',
-                         'deliverables/series_status.yaml')
+    return get_from_git('openstack/releases',
+                        'branch/master/deliverables/series_status.yaml')
 
 
 def get_schedule_data(series):
-    return get_from_cgit('openstack/releases',
-                         'doc/source/%s/schedule.yaml' % (series))
+    return get_from_git('openstack/releases',
+                        'branch/master/doc/source/%s/schedule.yaml' % (series))
 
 
-def lookup_member(email):
+def lookup_member(email, verbose=0):
     """A requests wrapper to querying the OSF member directory API"""
 
     # The OpenStack foundation member directory lookup API endpoint
@@ -123,9 +123,17 @@ def lookup_member(email):
                         'email==' + email,
                         ]},
                     headers={'Accept': 'application/json'},
+                    verbose=verbose,
                     )
+    result = decode_json(raw)
 
-    return decode_json(raw)
+    # Print the profile if verbosity is 1 or higher
+    if verbose >= 1 and result['data']:
+        print("Found: "
+              "https://openstack.org/community/members/profile/%s"
+              % result['data'][0]['id'])
+
+    return result
 
 
 def load_exceptions():
@@ -150,12 +158,13 @@ def gerrit_datetime(dt):
 
 
 # TODO(tonyb): this is now basically a duplicate of query_gerrit()
-def gerrit_query(url, params=None):
-    r = requester(url, params=params)
+def gerrit_query(url, params=None, verbose=0):
+    r = requester(url, params=params, verbose=verbose)
     if r.status_code == 200:
         data = json.loads(r.text[4:])
     else:
         data = []
+
     return data
 
 
@@ -199,12 +208,12 @@ def get_fullname(member, filepath=None):
     return full_name
 
 
-def get_reviews(query):
+def get_reviews(query, verbose=0):
     opts = ['CURRENT_REVISION', 'CURRENT_FILES', 'DETAILED_ACCOUNTS']
     opts_str = '&o=%s' % ('&o='.join(opts))
     url = ('%s/changes/?q=%s%s' %
            (GERRIT_BASE, quote_plus(query, safe='/:=><^.*'), opts_str))
-    return gerrit_query(url)
+    return gerrit_query(url, verbose=verbose)
 
 
 def candidate_files(review):
@@ -222,12 +231,12 @@ def check_atc_date(atc):
 
 
 def _get_projects(tag=None):
-    url = PROJECTS_URL
-    cache_file = '.projects.pkl'
-
     if tag:
-        url += '?h=%s' % tag
+        url = PROJECTS_URL % '/'.join(('tag', tag))
         cache_file = '.projects.%s.pkl' % tag
+    else:
+        url = PROJECTS_URL % 'branch/master'
+        cache_file = '.projects.pkl'
 
     # Refresh the cache if it's not there or if it's older than a week
     if (not os.path.isfile(cache_file) or
@@ -333,8 +342,8 @@ def build_candidates_list(election=conf['release']):
             raise exception.MemberNotFoundException(email=email)
 
         candidates_lists[project].append({
-            'url': ('%s/%s/plain/%s' %
-                    (CGIT_URL, ELECTION_REPO,
+            'url': ('%s%s/raw/branch/master/%s' %
+                    (GIT_URL, ELECTION_REPO,
                      quote_plus(filepath, safe='/'))),
             'email': email,
             'ircname': get_irc(member),

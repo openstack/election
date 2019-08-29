@@ -12,7 +12,7 @@ from openstack_election import utils
 
 conf = config.load_conf()
 
-REFERENCE_URL = '%s?id=%s' % (utils.PROJECTS_URL, conf['tag'])
+REFERENCE_URL = utils.PROJECTS_URL % '/'.join(('tag', conf['tag']))
 LEADERLESS_URL = ('https://governance.openstack.org/resolutions/'
                   '20141128-elections-process-for-leaderless-programs.html')
 

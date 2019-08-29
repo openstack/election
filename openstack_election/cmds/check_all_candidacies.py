@@ -24,15 +24,15 @@ from six.moves import input
 results = []
 
 
-def get_reviews():
+def get_reviews(verbose=0):
     return utils.get_reviews('is:open project:%s file:^%s/%s/.*' %
                              (utils.ELECTION_REPO, utils.CANDIDATE_PATH,
-                              utils.conf['release']))
+                              utils.conf['release']), verbose=verbose)
 
 
-def print_member(filepath):
+def print_member(filepath, verbose=0):
     email = utils.get_email(filepath)
-    member = utils.lookup_member(email)
+    member = utils.lookup_member(email, verbose=verbose)
     member_id = member.get('data', [{}])[0].get('id')
     base = 'https://www.openstack.org/community/members/profile'
     print('OSF member profile: %s/%s' % (base, member_id))
@@ -52,12 +52,14 @@ def main():
                         action='store_true',
                         help=('Pause after each review to manually post '
                               'results'))
+    parser.add_argument('-v', '--verbose', action="count", default=0,
+                        help='Increase program verbosity')
 
     args = parser.parse_args()
     projects = utils.get_projects(tag=args.tag, fallback_to_master=True)
     election_type = utils.conf.get('election_type', '').lower()
 
-    for review in get_reviews():
+    for review in get_reviews(verbose=args.verbose):
         if review['status'] != 'NEW':
             continue
 
@@ -75,7 +77,8 @@ def main():
 
             candiate_ok = checks.validate_filename(filepath)
             if candiate_ok:
-                candiate_ok = checks.validate_member(filepath)
+                candiate_ok = checks.validate_member(filepath,
+                                                     verbose=args.verbose)
 
             if candiate_ok:
                 # If we're a PTL election OR if the team is not TC we need
@@ -85,9 +88,10 @@ def main():
                     if args.interactive:
                         print('The following commit and profile validate this '
                               'candidate:')
-                    candiate_ok = checks.check_for_changes(projects, filepath,
-                                                           args.limit)
-                    print_member(filepath)
+                    candiate_ok = checks.check_for_changes(
+                        projects, filepath, args.limit,
+                        verbose=args.verbose)
+                    print_member(filepath, verbose=args.verbose)
                 else:
                     print('Not checking for changes as this is a TC election')
             else:

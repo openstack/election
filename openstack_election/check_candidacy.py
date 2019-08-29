@@ -23,7 +23,7 @@ from openstack_election import utils
 # FIXME: Printing from library function isn't great.
 #        change API to return the messages and let the consumer decide what to
 #        do with them
-def check_candidate(project_name, email, projects, limit=1):
+def check_candidate(project_name, email, projects, limit=1, verbose=0):
     def pretty_datetime(dt_str):
         dt = datetime.datetime.strptime(dt_str.split('.')[0],
                                         '%Y-%m-%d %H:%M:%S')
@@ -57,15 +57,14 @@ def check_candidate(project_name, email, projects, limit=1):
                           owner, repo_name))
                 if branch:
                     query += (' branch:%s' % (branch))
-                print('Checking %s for merged changes by %s' %
-                      (repo_name, email))
-                for review in utils.get_reviews(query):
-                    url = ('%s/%s/commit/?id=%s' % (
-                           utils.CGIT_URL, review['project'],
-                           review['current_revision']))
-                    print('%2d: %s %s' %
-                          (found, pretty_datetime(review['submitted']),
-                           url))
+                if verbose >= 1:
+                    print('Checking %s for merged changes by %s' %
+                          (repo_name, email))
+                for review in utils.get_reviews(query, verbose=verbose):
+                    print('Found: %s/%s merged on %s to %s for %s' % (
+                        utils.GERRIT_BASE, review['_number'],
+                        pretty_datetime(review['submitted']), repo_name,
+                        project_name))
                     found += 1
                     if found >= limit:
                         return found

@@ -48,12 +48,12 @@ def validate_filename(filepath):
     return is_valid
 
 
-def validate_member(filepath):
+def validate_member(filepath, verbose=0):
     print('Validate email address is OSF member')
     print('------------------------------------')
 
     email = utils.get_email(filepath)
-    member = utils.lookup_member(email)
+    member = utils.lookup_member(email, verbose=verbose)
     is_valid = member.get('data', []) != []
 
     print('Email address: %s %s' % (email,
@@ -62,7 +62,7 @@ def validate_member(filepath):
     return is_valid
 
 
-def check_for_changes(projects, filepath, limit):
+def check_for_changes(projects, filepath, limit, verbose=0):
     print('Looking for validating changes')
     print('------------------------------')
 
@@ -71,7 +71,10 @@ def check_for_changes(projects, filepath, limit):
     project_name = utils.dir2name(project_name, projects)
 
     changes_found = check_candidacy.check_candidate(project_name, email,
-                                                    projects, limit)
+                                                    projects, limit,
+                                                    verbose=verbose)
+    print('Email address: %s %s' % (
+        email, {True: 'PASS', False: 'FAIL'}[changes_found]))
     print('')
     return bool(changes_found)
 
@@ -113,6 +116,8 @@ def main():
     parser.add_argument('files',
                         nargs='*',
                         help='Candidate files to validate.')
+    parser.add_argument('-v', '--verbose', action="count", default=0,
+                        help='Increase program verbosity')
 
     args = parser.parse_args()
     errors = False
@@ -146,13 +151,14 @@ def main():
         candidate_ok = True
 
         candidate_ok &= validate_filename(filepath)
-        candidate_ok &= validate_member(filepath)
+        candidate_ok &= validate_member(filepath, verbose=args.verbose)
 
         if candidate_ok:
             if (election_type == 'ptl'
                     or (election_type == 'combined' and team != 'TC')):
                 candidate_ok &= check_for_changes(projects, filepath,
-                                                  args.limit)
+                                                  args.limit,
+                                                  verbose=args.verbose)
 
         errors |= not candidate_ok
 
