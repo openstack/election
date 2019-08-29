@@ -1,0 +1,78 @@
+Hello Everyone :)
+
+I am declaring my candidacy for the TC election.
+
+Roles like PTL and TC member are incredibly important when it comes to enabling
+others’ success and removing roadblocks that stand between contributors (new or
+established) and the work they want to do. Much of the work I have done over the
+years has had this focus, and as an elected member of the TC I think I could have
+an even larger impact.
+
+A little background on me: I have been working on OpenStack since 2015 (Liberty
+release). I started with getting involved organizing and mentoring in the Women of
+OpenStack’s mentoring programs and developing Cinder before branching out to
+ os-brick and on to other roles. Since then, I have been involved in many different
+projects and efforts focused on supporting the larger community.
+
+Highlights:
+
+- Onboarded over 300 global contributors as instructor at OpenStack Upstream
+   Institute (OUI) building our contributor community in places like Brazil, Korea,
+   and Vietnam[1]
+- Developed the curriculum of OUI, including the Contributor Guide[2].
+- Evolved OpenStack’s various mentoring programs[3] and actively participated in
+  them, including our community’s involvement in the Outreachy Program[4].
+- Established the First Contact SIG[5].
+- Coordinated the community’s ongoing migration to StoryBoard from Launchpad
+- Presided over 5 releases of (Pike-Train) technical elections (both PTL and TC) as
+  an election official
+- Served on the Release Management, Cinder, & Infrastructure (StoryBoard) teams
+- Helped organize Forums, PTGs, and other in-person gatherings
+- Collaborated with the k8s community to improve both our community’s various
+  onboarding programs
+
+My experience teaching Upstream Institute and running the First Contact SIG has
+helped me build skills that will be beneficial as a TC member, such as making
+connections between new contributors and existing projects or efforts. This ability
+to make connections and start conversations will support our community’s cross
+project efforts as they continue to be a challenge that I will help the TC overcome.
+
+My previous work has afforded me the opportunity to interact with almost every
+OpenStack project and understand how they operate differently from one another.
+Each project has its own culture; understanding that and how to engage with each
+of them is incredibly important for the Technical Committee to achieve selected
+community goals and other cross project efforts.
+
+
+As a member of the TC, I will seek to lower the barrier to entry to roles like contributor
+or even PTL. There is a lot of duplicate and stale information for setting up the accounts
+and tools needed to get started which should be cleaned up. Individual project
+contributor documentation[6][7] doesn’t exist for all the projects currently and would be
+valuable. Individual project PTL guides (similar to the Release Management process
+doc[8]) would also benefit our community as it would smooth the transition from one
+PTL to another and minimize the loss of tribal knowledge, especially when these
+transitions happen in the middle of a cycle. I’ve proposed this contributor
+documentation focus as a community goal for the U release[9].  Anything we can
+do to make a cohesive path for new community members to work their way to roles
+like PTL will ensure the health and success of our future.
+
+I love this community and all the awesome people in it, serving on the TC would be a
+great experience and an honor.
+
+Thank you,
+Kendall (diablo_rojo)
+
+Review history: https://review.opendev.org/#/q/reviewer:16708,n,z
+Commit history: https://review.openstack.org/#/q/owner:16708,n,z
+Foundation Profile: https://www.openstack.org/community/members/profile/35859/
+Freenode: diablo_rojo
+
+[1] https://docs.openstack.org/upstream-training/
+[2] https://docs.openstack.org/contributors/
+[3] https://wiki.openstack.org/wiki/Mentoring
+[4] https://www.outreachy.org/
+[5] https://wiki.openstack.org/wiki/First_Contact_SIG
+[6] https://docs.openstack.org/swift/latest/development_guidelines.html
+[7] https://docs.openstack.org/nova/latest/contributor/index.html
+[8] https://releases.openstack.org/reference/process.html
+[9] https://etherpad.openstack.org/p/PVG-u-series-goals
