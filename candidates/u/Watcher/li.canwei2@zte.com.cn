@@ -1,0 +1,34 @@
+Hi,
+
+In the last release, I'm glad to serve as the PTL of Watcher. I would like
+to take this opportunity to express my appreciation for all your support
+and contribution to Watcher, especially Corne Lukken(Dantali0n),
+MattRiedemann and chenke. And I look forward to working with you all
+over the next release. Therefore, I would like to nominate myself to be
+the Watcher PTL for the next cycle.
+
+In case if you don't know me, I've been working on and contributing to
+Watcher project since 2016, and as a core reviewer from Pike cycle.
+
+In Train, We have done an excellent job. We improved the performance
+of Watcher data model, added new feature about datasource and improved
+the unit tests and functional tests.
+
+all blueprints Train approved:
+
+* Add force field to Audit
+* File based Metric Map
+* Formal Datasource Interface
+* config global datasource preference
+* Grafana proxy datasource
+* Improve Compute Data Model
+* Add Show Datamodel API
+* Support keystoneclient option
+* Support Placement API
+
+For the next cycle, we will continue to focus on the performance and stability.
+I hope that new contributors will join on the project and I'm ready to answer
+any question on our channel #openstack-watcher.
+
+Thanks for reading,
+Canwei Li (licanwei)
