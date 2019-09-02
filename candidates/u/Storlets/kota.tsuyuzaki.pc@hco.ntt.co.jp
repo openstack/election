@@ -1,0 +1,14 @@
+Hi Guys,
+
+Here is my candidacy to run PTL role continuously on the Storlet project
+in the next Ussuri cycle.
+
+The Storlets is a small project in the openstack community but we still
+have some users and maintainers in the upstream so that I believe we're
+still be going forward in this cycle. Since OpenStack Swift has been
+supporting python3 that is the project Storlets depending on, we have
+to complete python3 works at least by the end of this year. That is my
+responsibility that I continued for recent several cycles.
+
+Best regards,
+Kota
