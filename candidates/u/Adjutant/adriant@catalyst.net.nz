@@ -1,0 +1,16 @@
+Hello OpenStackers,
+
+I'm submitting myself as the PTL for Adjutant during the U cycle.
+
+At this time I think I'm still the best suited to continue leading the project, with the best understanding of the codebase and the direction that the service is taking.
+
+The Train cycle was sadly not as productive as I'd have liked, purely because of how much big refactor work we've been in the middle of. The progress of that though has been good, and it should lay the groundwork for a very productive U cycle.
+
+The planned work for the next cycle is:
+- introduce partial policy support rather than relying on hardcoded decorators.
+- finish the long planned support for sub-project management
+- add project (and resource) termination logic
+- rework the identity manager as a pluggable construct.
+
+Cheers,
+Adrian Turjak
