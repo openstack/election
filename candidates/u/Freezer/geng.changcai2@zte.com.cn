@@ -1,0 +1,34 @@
+Hi!
+I'd like to announce my candidacy for PTL role of Freezer for the U cycle.
+
+At the end of the Rocky cycle, the TC intended to remove Freezer from the
+Governance(OpenStack official projects). The reasons for that are because
+Freezer has missed several milestones, etc. With the efforts of former PTL
+and other contributors, freezer already has a lot of functions of backup
+software, and can be basically used, although there are some problems.
+I think it would be a pity if it was removed. In order not to waste previous
+efforts, I temporarily served as freezer's PTL. We improved the related
+problems and put it into practice as our backup system products,
+With many cores' and my efforts, we have done a lot of jobs in the Stein
+version. In Stein, our main work:
+
+In the Train version, the project is not too active for various reasons,
+and some of the targets in the Train version are not completed,
+but the version is basically maintained. I hope that in the U version
+I will try to invest more time in Freezer.
+
+Here is what we'll aim to accomplish in the U cycle:
+
+* Docs improvements
+* Unit Test Improvement: Our goal is to make it reach 60%.
+* Reporting error logs: When the jobs are executed, if there are errors,
+  the serious errors should be reported to freezer-api.
+* Monitor the schedule agent is on-line or not: Provide an API interface
+  to query whether the schedule agent is online, so that the application
+  can quickly learn the status of the agent.
+* Remote backups: Remote backup is an important function in backup service.
+  After supporting remote backup, we can do disaster recovery for important backup data,
+  or copy data from one backup system to another backup system, etc.
+
+Best Regards,
+Changcai Geng(gengchc2)
