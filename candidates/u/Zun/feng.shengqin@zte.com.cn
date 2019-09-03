@@ -1,0 +1,23 @@
+Hi all,
+
+I'd like to nominated myself to be a candidate of Zun PTL through
+the Ussuri cycle.
+
+Over the past year the Zun project has achieved a lot of the important
+features includes:
+* Private Registry: Zun could pull images from a private docker
+  registry to create containers.
+* Placement API: Nova team is working to split its scheduler out and Zun would
+  like to leverage this new service if appropriate.
+* Entrypoint-option: Support to overwrite the Entrypoint of docker image.
+
+My goals for the Ussuri cycle are to continue the progress made during
+the Train cycle in the following areas:
+* Vgpu: Add support for vGPU resources.
+* Batch-creation: Batch creation of containers.
+* Affinity&anti-affinity: Add the affinity and anti-affinity policies to zun.
+
+Thank you for taking the time to consider me for Ussuri PTL.
+
+Best regards,
+Shengqin Feng
