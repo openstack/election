@@ -1,0 +1,31 @@
+Hello Infra,
+
+I am nominating myself for one more go at PTL. This will be my fifth
+cycle as PTL if elected, and I think it is healthy for the project and
+team to have a strong rotation of leadership. As a result I do not
+plan to run for PTL in the 'V' cycle.
+
+Considering this, I would like to put a focus on mentoring and growing
+the team over the 'U' cycle. One of the goals we have with the OpenDev
+project is to increase the user base of our hosting systems and as a
+side effect of that to help grow the team too. During the 'U' cycle,
+as PTL, I would like to personally focus on this portion of our OpenDev
+plans.
+
+It is worth acknowledging that I do not think I would be in a position
+to do that if we haven't already had a successful Train cycle,
+particularly in making OpenDev a reality. Thank you to everyone that
+helped us make OpenDev a reality over the last six months. We will need
+to keep pushing to make OpenDev the best software hosting toolchain
+possible in order to continue to accomplish the other goals we have set.
+I hope to continue to have your help and support.
+
+The other major task we will need to keep pushing on is modernization
+of our configuration management and deployments. We continue to make
+consistent progress here, but we cannot let up if we want to have a
+sustainable system for the future.
+
+If these goals seems worthwhile I'd love to have your vote.
+
+Thank you,
+Clark
