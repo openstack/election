@@ -1,0 +1,98 @@
+Dear OpenStack Community,
+
+This note is to officially announce my candidacy for the OpenStack TC.
+
+For those of you that don’t know me, allow me to introduce myself:  [1]
+I have been active in the OpenStack Community since early in 2013.
+After nine years of working on Super Computing Solutions with IBM
+I moved to OpenStack and started working on Neutron (Quantum back in
+those days) before moving over to a relatively new project called Cinder.
+Within IBM I worked to create the processes for IBM’s storage driver
+development teams to interact with and contribute to the Cinder project.
+I became a core member of the Cinder team in the middle of 2013 and have
+remained active ever since. [2] [3] I have been the Cinder PTL for the
+last two years, starting in the Queens release.
+
+Beyond Cinder I have sought opportunities to work across OpenStack projects.
+I was the liaison between the Cinder and Documentation teams.  This lead
+to opportunities to learn how OpenStack’s documentation is developed and
+enabled me to help improve the Cinder team’s documentation.  I have also
+served for quite some time as the liaison to the Oslo team.
+
+Education and on-boarding of new team members has been a focus of my tenure
+in OpenStack.  I started helping to lead the OpenStack Upstream Institute
+at the fall 2016 Summit in Barcelona.  After Barcelona I helped to revise
+the education to meet the needs of future Upstream Institute sessions and
+have coordinated with my current employer, Lenovo, to sponsor each OpenStack
+Upstream Institute at Summits since the Spring 2017 Summit in Boston.  Lenovo
+will even be hosting the OUI session in Shanghai!  I also created Cinder’s
+on-boarding education which I have presented at each Summit since the Fall
+2017 Summit in Sydney.  I have sought opportunities to mentor new contributors
+both within my employers and from the community in general.
+
+I have a long experience working with OpenStack and a broad understanding of
+how the community works, I also feel that I have a breadth of technical experience
+that will benefit the TC.  I have experience in High Performance Computing and feel
+I can understand and represent the needs of the HPC community.  I have years of
+experience in the storage realm and can represent the unique concerns that
+storage vendors bring to OpenStack and the subsequent concerns that our
+OpenStack distributors have supporting OpenStack and its many drivers.
+Since moving from IBM to Lenovo my focus has changed from development
+of OpenStack to developing solutions that leverage OpenStack.
+I have enjoyed the opportunity to become a consumer of OpenStack as it has
+given me an opportunity to better understand the versatility and complexity of
+OpenStack.  I have been working with customers with an interest in both
+telco applications, particularly where Edge computing is concerned,
+as well as enterprise customers.  Given my latest work I feel that
+I am able to understand and represent many interests from the OpenStack
+community.
+
+If elected to the TC here are some of the concerns that I would like to
+address:
+
+* Ensure that we continue to improve our on-boarding and educational
+processes.  The days where people are assigned to only work on
+OpenStack are gone.  The easier we make it for people to successfully
+contribute to and leverage OpenStack, the more likely they will be to
+continue to contribute.
+
+* Improve documentation of OpenStack and Project processes.
+There have been a lot of discussions lately regarding undocumented
+processes.  There is a lot of tribal knowledge involved in OpenStack
+and this too makes it hard for new contributors to integrate.
+Improving the documentation/description of ‘how we build OpenStack’ is
+crucial.
+
+* I would like the community as a whole to seek ways to make OpenStack
+more consumable by our users and distributors.  I think the move to having
+longer lived stable branches has been a good step, but it has not resolved
+all the issues posed by customers that stay on older releases of OpenStack.
+The stable backport policies need to be readdressed to seek a solution that
+allows vendors to backport code for their customers, improving OpenStack’s
+usability without risking its stability.
+
+* I would like to continue the work that has been started to increase the
+visibility of the TC’s contributions to OpenStack and increase the effort
+to have the TC be a resource to the whole community.
+
+* I want to seek opportunities for OpenStack to continue to inter-operate
+with other cloud solutions.  Virtualization is not the only cloud approach
+available and customers, very often, do not want just one solution or the
+other.  OpenStack needs to continue to expand to address these concerns to
+remain vibrant and relevant.
+
+I hope that the thoughts above have resonated with you and appreciate you
+considering me for a position on the Technical Committee.  I am passionate
+about OpenStack and believe that we have a community like no other in the
+industry.  It would be a great honor to represent this community in a new
+capacity.
+
+Sincerely,
+Jay Bryant
+
+[1]  Foundation Profile:
+     https://www.openstack.org/community/members/profile/8348/jay-bryant
+[2]  Reviews:  https://www.stackalytics.com/?user_id=jsbryant
+[3]  Commits:  https://www.stackalytics.com/?user_id=jsbryant&metric=commits
+IRC (Freenode):  jungleboyj
+
