@@ -1,0 +1,37 @@
+candidates:
+  TC:
+  - elected: true
+    email: gmann@ghanshyammann.com
+    fullname: Ghanshyam Mann
+    ircname: gmann
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/gmann%40ghanshyammann.com
+  - elected: true
+    email: jean-philippe@evrard.me
+    fullname: Jean-Philippe Evrard
+    ircname: evrardjp
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/jean-philippe%40evrard.me
+  - elected: true
+    email: jsbryant@electronicjungle.net
+    fullname: Jay Bryant
+    ircname: jungleboyj
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/jsbryant%40electronicjungle.net
+  - elected: true
+    email: kecarter@redhat.com
+    fullname: Kevin Carter
+    ircname: cloudnull
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/kecarter%40redhat.com
+  - elected: true
+    email: knelson@openstack.org
+    fullname: Kendall Nelson
+    ircname: diablo_rojo
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/knelson%40openstack.org
+  - elected: true
+    email: nate.johnston@redhat.com
+    fullname: Nate Johnston
+    ircname: njohnston
+    url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/nate.johnston%40redhat.com
+election: ussuri
+elections_results:
+  TC: no poll required
+projects:
+- TC
