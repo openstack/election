@@ -32,6 +32,6 @@ candidates:
     url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/TC/nate.johnston%40redhat.com
 election: ussuri
 elections_results:
-  TC: no poll required
+  TC: http://lists.openstack.org/pipermail/openstack-announce/2019-September/002022.html
 projects:
 - TC
