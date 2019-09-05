@@ -70,9 +70,19 @@ def update_projects(projects_fname, candidates_list, projects):
             if match:
                 project_count += 1
                 p = utils.name2dir(match.group(1))
-                candidates = candidates_list['candidates'][p]
+                try:
+                    candidates = candidates_list['candidates'][p]
+                except KeyError:
+                    # Add placeholder for required TC appointment in cases
+                    # where there is no candidate
+                    candidates = [{
+                        'fullname': 'APPOINTMENT NEEDED',
+                        'ircname': 'No nick supplied',
+                        'email': 'example@example.org',
+                        }]
+                    print('TC to appoint PTL for %s' % (p))
                 nr_candidates = len(candidates)
-                # Only update the PTL if there is a sinble candidate
+                # Only update the PTL if there is a single candidate
                 if nr_candidates == 1:
                     line += (('  ptl:\n' +
                               '    name: %(fullname)s\n' +
@@ -83,9 +93,6 @@ def update_projects(projects_fname, candidates_list, projects):
                     # just written out new record so skip the next 4 lines in
                     # the projects file.
                     skip = 4
-                # Projects with no candidates need to be appointed by the TC
-                elif nr_candidates == 0:
-                    print('Skipping %s TC to appiont' % (p))
                 else:
                     print('Skipping %s election in progress %d candidates' %
                           (p, nr_candidates))
