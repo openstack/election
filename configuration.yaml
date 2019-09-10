@@ -1,7 +1,7 @@
 ---
 release: ussuri
 election_type: combined
-tag: sep-2019-elections
+tag: 0.5.0
 tc_seats: 6
 timeframe:
   name: Stein-Train
