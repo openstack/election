@@ -290,6 +290,9 @@ def main(options):
                         if not merged:
                             continue
 
+                        # The change number, for ease of tracking
+                        number = change['_number']
+
                         # We index owners by their unique Gerrit
                         # account Id numbers
                         owner = change['owner']['_account_id']
@@ -344,7 +347,9 @@ def main(options):
                                 'extra': [],
                                 'name': change['owner'].get('name'),
                                 'newest': merged,
+                                'newest_id': number,
                                 'oldest': merged,
+                                'oldest_id': number,
                                 'username': change['owner'].get('username'),
                             }
 
@@ -356,8 +361,10 @@ def main(options):
                             owners[owner]['count'] += 1
                             if merged > owners[owner]['newest']:
                                 owners[owner]['newest'] = merged
+                                owners[owner]['newest_id'] = number
                             elif merged < owners[owner]['oldest']:
                                 owners[owner]['oldest'] = merged
+                                owners[owner]['oldest_id'] = number
 
                         # We only want to add addresses if this is a
                         # new owner or a new duplicate
@@ -411,8 +418,10 @@ def main(options):
                             projects[project][owner]['count'] += 1
                             if merged > projects[project][owner]['newest']:
                                 projects[project][owner]['newest'] = merged
+                                projects[project][owner]['newest_id'] = number
                             elif merged < projects[project][owner]['oldest']:
                                 projects[project][owner]['oldest'] = merged
+                                projects[project][owner]['oldest_id'] = number
 
                         # ...otherwise initialize this as their
                         # first
@@ -421,7 +430,9 @@ def main(options):
                             projects[project][owner] = {
                                 'count': 1,
                                 'newest': merged,
+                                'newest_id': number,
                                 'oldest': merged,
+                                'oldest_id': number,
                             }
 
     # The negative counter will be used as a makeshift account Id
@@ -457,7 +468,9 @@ def main(options):
                         'extra': [],
                         'name': name,
                         'newest': stamp,
+                        'newest_id': 0,
                         'oldest': stamp,
+                        'oldest_id': 0,
                         'preferred': address,
                         'username': '_non_code_contributor',
                     }
@@ -465,7 +478,9 @@ def main(options):
                     projects[project][owner] = {
                         'count': -1,
                         'newest': stamp,
+                        'newest_id': 0,
                         'oldest': stamp,
+                        'oldest_id': 0,
                     }
                 counter += 1
 
@@ -564,7 +579,8 @@ def main(options):
             # Replace the owner change count and newest/oldest
             # merged dates with the team-specific value rather than
             # using the count from the global set
-            for field in ('count', 'newest', 'oldest'):
+            for field in (
+                    'count', 'newest', 'newest_id', 'oldest', 'oldest_id'):
                 output[owner][field] = projects[project][owner][field]
 
             # Append preferred member addresses to the PTL electoral rolls
