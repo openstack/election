@@ -38,6 +38,7 @@ Our current election officials are:
 * Jeremy Stanley (fungi), fungi at yuggoth dot org
 * Andy McCrae (andymccr), andy dot mccrae at gmail dot com
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
+* Kendall Nelson (diablo_rojo), knelson at openstack dot org
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev Freenode channel.
