@@ -113,7 +113,11 @@ def get_schedule_data(series):
 def lookup_osf(email, group_slug=None, verbose=0):
     """A requests wrapper to querying the OSF member directory API"""
 
-    params = {'filter[]': ['email==%s' % email]}
+    params = {
+        'expand': 'groups',
+        'filter[]': ['email==%s' % email],
+        'relations': 'affiliations,groups',
+        }
     if group_slug:
         params['filter[]'].append('group_slug==%s' % group_slug)
 

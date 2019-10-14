@@ -540,17 +540,31 @@ def main(options):
                 continue
         # Record OSF member profile ID when it exists
         for email in [owners[owner]['preferred']] + owners[owner]['extra']:
-            member = utils.lookup_member(email, verbose=options.verbose)
-            if member['data']:
-                owners[owner]['member'] = member['data'][0]['id']
+            profile = utils.lookup_member(email, verbose=options.verbose)
+            if profile['data']:
+                owners[owner]['member'] = profile['data'][0]['id']
                 break
         # If not a member, record non-member OSF profile ID when there is one
-        if 'member' not in owners[owner]:
+        if not profile['data']:
             for email in [owners[owner]['preferred']] + owners[owner]['extra']:
-                nonmember = utils.lookup_osf(email, verbose=options.verbose)
-                if nonmember['data']:
-                    owners[owner]['nonmember'] = nonmember['data'][0]['id']
+                profile = utils.lookup_osf(email, verbose=options.verbose)
+                if profile['data']:
+                    owners[owner]['nonmember'] = profile['data'][0]['id']
                     break
+        # Extract country and affiliations from the OSF profile
+        if profile['data']:
+            if 'country' in profile['data'][0]:
+                owners[owner]['country'] = profile['data'][0]['country']
+            if 'affiliations' in profile['data'][0]:
+                affiliations = profile['data'][0]['affiliations']
+                if affiliations:
+                    owners[owner]['affiliations'] = []
+                for affiliation in affiliations:
+                    if (not affiliation['end_date']
+                            or datetime.datetime.fromtmiestamp(
+                                affiliation['end_date']) > after):
+                        owners[owner]['affiliations'].append(
+                            affiliation['organization']['name'])
         invite = [owners[owner].get(
             'member', owners[owner].get('nonmember', 0))]
         invite.append(owners[owner]['name'])
