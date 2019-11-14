@@ -77,13 +77,16 @@ def update_projects(projects_fname, candidates_list, projects):
                     # where there is no candidate
                     candidates = [{
                         'fullname': 'APPOINTMENT NEEDED',
-                        'ircname': 'No nick supplied',
+                        'ircname': '',
                         'email': 'example@example.org',
                         }]
                     print('TC to appoint PTL for %s' % (p))
                 nr_candidates = len(candidates)
                 # Only update the PTL if there is a single candidate
                 if nr_candidates == 1:
+                    # Replace empty IRC nick strings with something useful
+                    if not candidates[0]['ircname']:
+                        candidates[0]['ircname'] = 'No nick supplied'
                     line += (('  ptl:\n' +
                               '    name: %(fullname)s\n' +
                               '    irc: %(ircname)s\n' +
