@@ -3,6 +3,11 @@
 {{ election.capitalize() }} PTL
 {% for i in range(election|length + 4) %}={% endfor%}
 
+`Current list of all projects and PTLs
+<https://governance.openstack.org/tc/reference/projects/>`_
+
+Elected PTLs
+============
 
 {% for project in projects|sort %}
 * {{ project.replace('_', ' ') }}
@@ -26,17 +31,21 @@
 .. [#IncumbentPTL] Incumbent PTL
 {% endif %}
 
-Results
--------
+Election Results
+================
+{% if elections_results|length %}
 {% for project in projects|sort %}{% if project in elections_results %}
 
 * `{{ project }} <{{ elections_results[project] }}>`_
 {% endif %}
 {% endfor %}
+{% else %}
+No elections were necessary.
+{% endif %}
 
 
-{{ election.capitalize() }} PTL Candidates
-======================
+PTL Candidates
+==============
 
 {% for project in projects|sort %}
 * {{ project.replace('_', ' ') }}
