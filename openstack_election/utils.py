@@ -178,6 +178,9 @@ def get_irc(member, filepath=None):
     member_data = member.get('data', [])
     if member_data:
         irc = member_data[0].get('irc', '')
+        # The API can return None for nonexistent nicks
+        if irc is None:
+            irc = ''
     return irc
 
 
