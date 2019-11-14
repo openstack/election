@@ -65,7 +65,6 @@ def update_projects(projects_fname, candidates_list, projects):
             if skip > 0:
                 skip -= 1
                 continue
-            line = line.decode('utf-8')
             # Projects are detectable as they have no whitespace in column 0
             match = re.match('^([^ \t][^:]+?):$', line)
             if match:
@@ -90,7 +89,7 @@ def update_projects(projects_fname, candidates_list, projects):
                 else:
                     print('Skipping %s election in progress %d candidates' %
                           (p, nr_candidates))
-            fh.write(line.encode('utf-8'))
+            fh.write(line)
 
     print('Processed %d projects' % (project_count))
 
