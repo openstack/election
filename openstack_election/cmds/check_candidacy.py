@@ -32,9 +32,11 @@ def main():
     parser.add_argument('--tag', dest='tag', default=utils.conf['tag'],
                         help=('The governance tag to validate against.  '
                               'Default: %(default)s'))
+    parser.add_argument('-v', '--verbose', action="count", default=0,
+                        help='Increase program verbosity')
 
     args = parser.parse_args()
-    review = utils.get_reviews(args.change_id)[0]
+    review = utils.get_reviews(args.change_id, verbose=args.verbose)[0]
     owner = review.get('owner', {})
     if args.limit < 0:
         args.limit = 100

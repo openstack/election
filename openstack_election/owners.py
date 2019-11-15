@@ -162,7 +162,7 @@ def main(options):
     elif 'ref' in config:
         ref = config['ref']
     else:
-        ref = 'refs/heads/master'
+        ref = 'branch/master'
 
     # Gerrit change query additions
     if options.sieve:
@@ -184,9 +184,8 @@ def main(options):
     if projects_file:
         gov_projects = utils.load_yaml(open(projects_file).read())
     else:
-        gov_projects = utils.get_from_cgit('openstack/governance',
-                                           'reference/projects.yaml',
-                                           {'h': ref})
+        gov_projects = utils.get_from_git('openstack/governance',
+                                          '%s/reference/projects.yaml' % ref)
 
     # The set of retired or removed "legacy" projects from governance
     # are merged into the main dict if their retired-on date falls
@@ -196,9 +195,8 @@ def main(options):
     elif projects_file:
         old_projects = []
     else:
-        old_projects = utils.get_from_cgit('openstack/governance',
-                                           'reference/legacy.yaml',
-                                           {'h': ref})
+        old_projects = utils.get_from_git('openstack/governance',
+                                          '%s/reference/legacy.yaml' % ref)
     for project in old_projects:
         for deliverable in old_projects[project]['deliverables']:
             retired = old_projects[project]['deliverables'][deliverable].get(
