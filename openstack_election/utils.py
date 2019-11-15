@@ -110,21 +110,17 @@ def get_schedule_data(series):
                         'branch/master/doc/source/%s/schedule.yaml' % (series))
 
 
-def lookup_member(email, verbose=0):
+def lookup_osf(email, group_slug=None, verbose=0):
     """A requests wrapper to querying the OSF member directory API"""
 
-    # The OpenStack foundation member directory lookup API endpoint
-    MEMBER_LOOKUP_URL = 'https://openstackid-resources.openstack.org/'
+    params = {'filter[]': ['email==%s' % email]}
+    if group_slug:
+        params['filter[]'].append('group_slug==%s' % group_slug)
 
-    # URL pattern for querying foundation members by E-mail address
-    raw = requester(MEMBER_LOOKUP_URL + '/api/public/v1/members',
-                    params={'filter[]': [
-                        'group_slug==foundation-members',
-                        'email==' + email,
-                        ]},
-                    headers={'Accept': 'application/json'},
-                    verbose=verbose,
-                    )
+    # URL pattern for querying foundation profiles by E-mail address
+    raw = requester(
+        'https://openstackid-resources.openstack.org/api/public/v1/members',
+        params, headers={'Accept': 'application/json'}, verbose=verbose)
     result = decode_json(raw)
 
     # Print the profile if verbosity is 1 or higher
@@ -134,6 +130,13 @@ def lookup_member(email, verbose=0):
               % result['data'][0]['id'])
 
     return result
+
+
+def lookup_member(email, verbose=0):
+    """Lookup profiles of OSF members"""
+
+    return lookup_osf(
+        email=email, group_slug='foundation-members', verbose=verbose)
 
 
 def load_exceptions():

@@ -496,12 +496,21 @@ def main(options):
                     'SKIPPING MALFORMED OWNER: no preferred or extra '
                     'addresses found for account %s' % owner, file=sys.stderr)
                 continue
+        # Record OSF member profile ID when it exists
         for email in [owners[owner]['preferred']] + owners[owner]['extra']:
             member = utils.lookup_member(email)
             if member['data']:
                 owners[owner]['member'] = member['data'][0]['id']
                 break
-        invite = [owners[owner].get('member', '0')]
+        # If not a member, record non-member OSF profile ID when there is one
+        if 'member' not in owners[owner]:
+            for email in [owners[owner]['preferred']] + owners[owner]['extra']:
+                nonmember = utils.lookup_osf(email)
+                if nonmember['data']:
+                    owners[owner]['nonmember'] = nonmember['data'][0]['id']
+                    break
+        invite = [owners[owner].get(
+            'member', owners[owner].get('nonmember', 0))]
         invite.append(owners[owner]['name'])
         invite.append(owners[owner]['preferred'])
         invite += owners[owner]['extra']
