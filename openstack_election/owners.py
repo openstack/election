@@ -222,7 +222,8 @@ def main(options):
     # in governance during transitions and also to filter out repos
     # listed in governance which don't actually exist
     ger_repos = dict(
-        [(x.split('/')[-1], x) for x in utils.query_gerrit('projects/')])
+        [(x.split('/')[-1], x) for x in utils.query_gerrit(
+            'projects/', verbose=options.verbose)])
 
     # This will be populated with change owners mapped to the
     # project-teams maintaining their respective Git repositories
@@ -275,7 +276,7 @@ def main(options):
                                 'CURRENT_REVISION',
                                 'DETAILED_ACCOUNTS',
                                 ],
-                            })
+                            }, verbose=options.verbose)
                         if changes and changes[-1].get('_more_changes', False):
                             offset += 100
                         else:
@@ -313,8 +314,9 @@ def main(options):
                             # Get the set of all E-mail addresses
                             # Gerrit knows for this owner's account
                             emails = utils.query_gerrit(
-                                'accounts/%s/emails'
-                                % change['owner']['_account_id'])
+                                'accounts/%s/emails' %
+                                change['owner']['_account_id'],
+                                verbose=options.verbose)
 
                             # Find duplicate addresses and merge
                             # accounts when that happens
@@ -498,14 +500,14 @@ def main(options):
                 continue
         # Record OSF member profile ID when it exists
         for email in [owners[owner]['preferred']] + owners[owner]['extra']:
-            member = utils.lookup_member(email)
+            member = utils.lookup_member(email, verbose=options.verbose)
             if member['data']:
                 owners[owner]['member'] = member['data'][0]['id']
                 break
         # If not a member, record non-member OSF profile ID when there is one
         if 'member' not in owners[owner]:
             for email in [owners[owner]['preferred']] + owners[owner]['extra']:
-                nonmember = utils.lookup_osf(email)
+                nonmember = utils.lookup_osf(email, verbose=options.verbose)
                 if nonmember['data']:
                     owners[owner]['nonmember'] = nonmember['data'][0]['id']
                     break

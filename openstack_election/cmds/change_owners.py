@@ -120,6 +120,8 @@ def usage(argv=sys.argv):
     parser.add_argument("-p", "--projects", help="Path to local projects file")
     parser.add_argument("-r", "--ref", help="Specify a Governance refname")
     parser.add_argument("-s", "--sieve", help="Add Gerrit query parameters")
+    parser.add_argument("-v", "--verbose", action="count", default=0,
+                        help="Increase program verbosity")
 
     return parser.parse_args(argv[1:])
 
