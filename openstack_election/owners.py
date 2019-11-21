@@ -130,6 +130,14 @@ def main(options):
     else:
         legacy_file = None
 
+    # SIGs projects file path
+    if options.sigs:
+        sigs_file = options.sigs
+    elif 'sigs' in config:
+        sigs_file = config['sigs']
+    else:
+        sigs_file = None
+
     # Whether to omit "extra ATCs"
     if options.no_extra_atcs:
         no_extra_atcs = options.no_extra_atcs
@@ -216,6 +224,27 @@ def main(options):
                     continue
                 gov_projects[project]['deliverables'][deliverable] = \
                     old_projects[project]['deliverables'][deliverable]
+
+    # The set of repositories managed by special interest groups
+    # are added to the main dict as they're part of the technical
+    # committee electorate
+    if sigs_file:
+        sigs_repos = utils.load_yaml(open(sigs_file).read())
+    elif projects_file:
+        sigs_repos = []
+    else:
+        sigs_repos = utils.get_from_git('openstack/governance',
+                                        'reference/sigs-repos.yaml',
+                                        {'h': ref})
+    for sig in sigs_repos:
+        for repo in sigs_repos[sig]:
+            if 'sigs' not in gov_projects:
+                gov_projects['sigs'] = {'deliverables': {}}
+            if sig not in gov_projects['sigs']['deliverables']:
+                gov_projects['sigs']['deliverables'][sig] = {'repos': []}
+            for repo in sigs_repos[sig]:
+                gov_projects['sigs']['deliverables'][sig]['repos'].append(
+                    repo['repo'])
 
     # A cache of full repo names existing in Gerrit, used to filter out repos
     # listed in governance which don't actually exist
