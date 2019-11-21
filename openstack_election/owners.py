@@ -217,13 +217,9 @@ def main(options):
                 gov_projects[project]['deliverables'][deliverable] = \
                     old_projects[project]['deliverables'][deliverable]
 
-    # A mapping of short (no prefix) to full repo names existing in
-    # Gerrit, used to handle repos which have a different namespace
-    # in governance during transitions and also to filter out repos
+    # A cache of full repo names existing in Gerrit, used to filter out repos
     # listed in governance which don't actually exist
-    ger_repos = dict(
-        [(x.split('/')[-1], x) for x in utils.query_gerrit(
-            'projects/', verbose=options.verbose)])
+    ger_repos = utils.query_gerrit('projects/', verbose=options.verbose)
 
     # This will be populated with change owners mapped to the
     # project-teams maintaining their respective Git repositories
@@ -255,7 +251,7 @@ def main(options):
             # Operate on repo short-names (no namespace) to avoid
             # potential namespace mismatches between governance
             # and Gerrit
-            for repo in [r.split('/')[-1] for r in repos]:
+            for repo in repos:
                 # Only process repos which actually exist in Gerrit,
                 # otherwise spew a warning if skipping
                 if repo not in ger_repos:
@@ -268,7 +264,7 @@ def main(options):
                     changes = []
                     while offset >= 0:
                         changes += utils.query_gerrit('changes/', params={
-                            'q': 'project:%s %s' % (ger_repos[repo], match),
+                            'q': 'project:%s %s' % (repo, match),
                             'n': '100',
                             'start': offset,
                             'o': [
