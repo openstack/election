@@ -102,7 +102,8 @@ def get_from_git(project, obj, params={}, verbose=0):
 
 def get_series_data():
     return get_from_git('openstack/releases',
-                        'branch/master/deliverables/series_status.yaml')
+                        'branch/master/data/series_status.yaml',
+                        verbose=99)
 
 
 def get_schedule_data(series):
