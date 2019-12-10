@@ -318,6 +318,10 @@ def main(options):
                         # The change number, for ease of tracking
                         number = change['_number']
 
+                        # How many revisions this change had before merging
+                        revisions = list(
+                            change['revisions'].values())[0]['_number']
+
                         # We index owners by their unique Gerrit
                         # account Id numbers
                         owner = change['owner']['_account_id']
@@ -375,6 +379,7 @@ def main(options):
                                 'newest_id': number,
                                 'oldest': merged,
                                 'oldest_id': number,
+                                'revisions': revisions,
                                 'username': change['owner'].get('username'),
                             }
 
@@ -384,6 +389,7 @@ def main(options):
                         # dates
                         else:
                             owners[owner]['count'] += 1
+                            owners[owner]['revisions'] += revisions
                             if merged > owners[owner]['newest']:
                                 owners[owner]['newest'] = merged
                                 owners[owner]['newest_id'] = number
@@ -441,6 +447,7 @@ def main(options):
                         # update newest/oldest dates
                         if owner in projects[project]:
                             projects[project][owner]['count'] += 1
+                            projects[project][owner]['revisions'] += revisions
                             if merged > projects[project][owner]['newest']:
                                 projects[project][owner]['newest'] = merged
                                 projects[project][owner]['newest_id'] = number
@@ -458,6 +465,7 @@ def main(options):
                                 'newest_id': number,
                                 'oldest': merged,
                                 'oldest_id': number,
+                                'revisions': revisions,
                             }
 
     # The negative counter will be used as a makeshift account Id
@@ -497,6 +505,7 @@ def main(options):
                         'oldest': stamp,
                         'oldest_id': 0,
                         'preferred': address,
+                        'revisions': -1,
                         'username': '_non_code_contributor',
                     }
                 if owner not in projects[project]:
@@ -506,6 +515,7 @@ def main(options):
                         'newest_id': 0,
                         'oldest': stamp,
                         'oldest_id': 0,
+                        'revisions': -1,
                     }
                 counter += 1
 
@@ -619,7 +629,8 @@ def main(options):
             # merged dates with the team-specific value rather than
             # using the count from the global set
             for field in (
-                    'count', 'newest', 'newest_id', 'oldest', 'oldest_id'):
+                    'count', 'newest', 'newest_id', 'oldest', 'oldest_id',
+                    'revisions'):
                 output[owner][field] = projects[project][owner][field]
 
             # Append preferred member addresses to the PTL electoral rolls
