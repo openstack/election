@@ -15,3 +15,4 @@
     promote:
       jobs:
         - promote-tox-docs-static
+        - promote-governance-election
