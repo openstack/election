@@ -14,5 +14,4 @@
         - election-tox-ci-checks-election
     promote:
       jobs:
-        - promote-tox-docs-static
         - promote-governance-election
