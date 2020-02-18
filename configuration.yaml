@@ -1,26 +1,26 @@
 ---
-release: ussuri
+release: victoria
 election_type: combined
 tag: 0.5.0
-tc_seats: 6
+tc_seats: 5
 timeframe:
-  name: Stein-Train
-  start: 2018-08-10T00:00
-  end: 2019-09-03T00:00
-  email_deadline: 2019-09-03T00:00
+  name: Train-Ussuri
+  start: 2019-03-22T00:00
+  end: 2020-04-07T00:00
+  email_deadline: 2020-03-31T00:00
 timeline:
   - name: TC Nominations
-    start: 2019-08-27T23:45
-    end: 2019-09-03T23:45
+    start: 2020-03-24T23:45
+    end: 2020-03-31T23:45
   - name: PTL Nominations
-    start: 2019-08-27T23:45
-    end: 2019-09-03T23:45
+    start: 2020-03-24T23:45
+    end: 2020-03-31T23:45
   - name: TC Campaigning
-    start: 2019-09-03T23:45
-    end: 2019-09-03T23:46
+    start: 2020-03-31T23:45
+    end: 2020-04-07T23:45
   - name: TC Elections
-    start: 2019-09-03T23:46
-    end: 2019-09-03T23:47
+    start: 2020-04-07T23:45
+    end: 2020-04-14T23:45
   - name: PTL Election
-    start: 2019-09-03T23:46
-    end: 2019-09-03T23:47
+    start: 2020-04-07T23:45
+    end: 2020-04-14T23:45
