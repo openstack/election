@@ -15,11 +15,11 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import argparse
+import input
 import os
 
 from openstack_election.cmds import ci_check_all_candidate_files as checks
 from openstack_election import utils
-from six.moves import input
 
 results = []
 
