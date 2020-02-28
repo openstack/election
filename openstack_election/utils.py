@@ -24,9 +24,9 @@ import sys
 import time
 import yaml
 
-from six.moves.urllib.error import HTTPError
-from six.moves.urllib.parse import quote_plus
-from six.moves.urllib.request import urlopen
+from urllib.error import HTTPError
+from urllib.parse import quote_plus
+from urllib.request import urlopen
 
 from openstack_election import config
 from openstack_election import exception
