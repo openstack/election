@@ -1,0 +1,28 @@
+Hi all,
+
+I'd like to nominated myself to be a candidate of Zun PTL through
+the Victoria cycle.
+
+Over the past year the Zun project has achieved a lot of the important
+features includes:
+
+* CNI Implement: Add support for CNI (Container Network Interface).
+* CRI Implement: As a necessary step to integrate Kata Container in
+  Capsule (Pod) level, we want to implement Capsule using CRI interface.
+  As a result, zun-compute can interface with Kata Container via (CRI + containerd).
+
+My goals for the Victoria cycle are to continue the progress made during
+the Ussuri cycle in the following areas:
+* emptyDir: An emptyDir volume is created when a Capsule is scheduled to
+  a openstack compute node. Its lifecycle is as long as that of capsule is
+  running on compute node. At the beginning, it is  empty. 
+  Containers in the Capsule can read and write the same files in the emptyDir volume.
+  When a Capsule is removed for any reason, the data in the emptyDir is deleted forever.
+* hostPath: A hostPath volume would mount a file/directory into the Capsule.
+* configMap: The configMap resource provides a way to inject configuration data into Capsule .
+* Affinity&anti-affinity: Add the affinity and anti-affinity policies to zun.
+
+Thank you for taking the time to consider me for Victoria PTL.
+
+Best regards,
+Shengqin Feng
