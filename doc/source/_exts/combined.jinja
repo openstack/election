@@ -1,12 +1,12 @@
 {{ election.capitalize() }} TC Candidates
-======================
+{{ '=' * (election|length) }}==============
 
 {% for candidate in candidates['TC'] %}
 * `{{ candidate['fullname'] }} {% if candidate['ircname'] is not none %}({{ candidate['ircname'] }}){% endif %} <{{ candidate['url'] }}>`__
 {% endfor %}
 
 {{ election.capitalize() }} PTL Candidates
-======================
+{{ '=' * (election|length) }}===============
 {% for project in projects|sort %}{% if project != 'TC' %}
 * {{ project.replace('_', ' ') }}
 
