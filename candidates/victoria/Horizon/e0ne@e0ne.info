@@ -1,0 +1,26 @@
+Hi,
+
+I would like to announce my candidacy for PTL of Horizon for Victoria release.
+
+I served this role since Rocky till train release so I know how it is being
+a PTL.
+
+There are no promises from me this time. A limited capacity of the whole
+team affects all activities in the community, so I would like to pay attention
+to the following areas:
+
+* Help new contributors to work both on Horizon and plugins
+
+* More cross-project communication: Horizon uses other projects so it would
+  be great to have at least some regular feedback from projects teams.
+
+* Get rid of legacy dependencies. I know, it's a big goal. I'm pretty sure
+  we'll send several releases to reach it.
+
+
+PTL can't do anything without a team. Let's do our best together to make
+Horizon better during the next release.
+
+
+Thank you,
+Ivan Kolodyazhny (e0ne)
