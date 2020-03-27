@@ -22,6 +22,9 @@ function set_event_status(event_name, event_status) {
 
 function setup_timeline() {
     var now = parseInt((new Date).getTime() / 1000);
+    var next_events = []
+    var current_events = []
+    var next_event_end
     for (i = 0; i < events_timeline.length; i++) {
         var current_event = events_timeline[i];
         var current_event_start = Date.parse(current_event.start + "Z") / 1000;
@@ -29,24 +32,36 @@ function setup_timeline() {
         if (now > current_event_end) {
             set_event_status(current_event.name, 'Past');
         }
-        else if (event_date == undefined && now < current_event_start) {
-            document.getElementById('eventname').innerHTML = current_event.name+' starts in';
+        else if (now >= current_event_start && now < current_event_end) {
+            set_event_status(current_event.name, 'Current');
+            if (next_event_end == undefined) {
+                next_event_end = current_event_end;
+            }
+            current_events.push(current_event.name)
+            event_date = current_event_end
+            startTime();
+        }
+        else if (now < current_event_start &&
+                (next_event_end == undefined || current_event_end <= next_event_end)) {
             set_event_status(current_event.name, 'Next');
-            event_date = current_event_start;
+            if (next_event_end == undefined) {
+                next_event_end = current_event_end;
+            }
+            next_events.push(current_event.name)
+            event_date = current_event_start
             startTime();
         }
-        else if (event_date == undefined && now < current_event_end) {
-            document.getElementById('eventname').innerHTML = current_event.name+' ends in';
-            set_event_status(current_event.name, 'Current');
-            event_date = current_event_end;
-            startTime();
-        }
-        else if (now > current_event_start && now < current_event_end) {
-            set_event_status(current_event.name, 'Current');
-        }
-        else if (now < current_event_start) {
+        else if (now < current_event_start && current_event_end > next_event_end) {
             set_event_status(current_event.name, 'Future');
         }
+    }
+
+    // Set the countdown timer based on any active or upcoming events
+    if (current_events.length > 0) {
+        document.getElementById('eventname').innerHTML = current_events.join(" and ") + ' end in';
+    }
+    else if (next_events.length > 0) {
+        document.getElementById('eventname').innerHTML = next_events.join(" and ") + ' start in';
     }
 }
 $(document).ready(setup_timeline);
