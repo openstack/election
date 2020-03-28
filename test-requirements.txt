@@ -2,7 +2,7 @@
 # of appearance. Changing the order has an impact on the overall integration
 # process, which may cause wedges in the gate later.
 # needed for doc build
-hacking<0.12,>=0.11.0 # Apache-2.0
+hacking>=2.0,<2.1 # Apache-2.0
 yamllint
 mock>=2.0.0 # BSD
 oslotest>=1.10.0 # Apache-2.0
