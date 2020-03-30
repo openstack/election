@@ -1,0 +1,32 @@
+Please consider my candidacy for the role of keystone PTL for the Victoria
+cycle.
+
+I have been involved with keystone and the OpenStack community for 4 years
+now, wearing the hats of user, operator, and developer. During these years,
+my focus has mostly been on identity federation and single sign-on.
+
+I’m deeply grateful to all the people that have mentored me and helped me
+throughout the years, and I promise that if I am elected PTL I will strive
+to provide a welcoming environment for all, especially new contributors.
+
+My focus will primarily be that of a maintainer and enabler. Ensuring that
+there are no roadblocks to contributions by making sure the CI is well oiled,
+our documentation is up to date, that reviews get the attention they need,
+that releases get done, and that lists end with an oxford comma.
+
+The introduction of weekly bug duty during the Ussuri cycle was successful
+in ensuring new bug reports get triaged and fixed in a timely manned.
+I will continue that process and fill in the gaps in the weeks that no one
+else can take that duty.
+
+A lot of the work done in the last few cycles was cross-project work such
+as system scope, more granular default roles, and unified limits. I will
+continue to monitor the progress of their implementation and consumption
+in other projects.
+
+Disclaimer: I will not be able to devote 100% of my time to working on
+keystone, however I will have the flexibility to devote the necessary time
+when something requests it.
+
+Thank you,
+Kristi Nikolla
