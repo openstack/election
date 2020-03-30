@@ -1,0 +1,15 @@
+Hi,
+
+I would like to announce my candidacy for Watcher PTL for the
+Victoria cycle.
+
+In Ussuri, we added a general purpose decision engine threadpool
+to improve the performance of building Watcher data model,
+and have done a new feature that user can set alarm to
+trigger optimization.
+
+For the next cycle, we will continue to focus on the performance
+and stability. I hope that new contributors will join on the project.
+
+Thanks,
+Canwei Li (licanwei)
