@@ -1,0 +1,53 @@
+Greetings,
+
+Over the last two releases, I have had the privilege and honor to serve as
+the PTL of Magnum. I would like to take this opportunity to express my
+appreciation for all your support and contribution to Magnum. And I look
+forward to working with you all over the next release. Therefore, I would like
+announce my candidacy to serve as the Magnum project team leader for the V
+cycle, if you will have me.
+
+In case if you don't know me, I've been working on and contributing to Magnum
+since Queens release as a core developer. And I have done a lot work for Magnum
+to help it getting production ready. Meanwhile, I'm the Head of R&D at Catalyst
+Cloud which is a cloud provider based in New Zealand. That said, I really
+understand this lovely project from both upstream and downstream, and the real
+world requirements from both public cloud and private cloud users, which make
+me a good candidate for the PTL position.
+
+In U cycle we have done quite a lot fantastic works which includes node group,
+rolling upgrade, fedora CoreOS. And we also got a new core developer :)
+
+For V release (including the rest of U cycle), things I'd like to do:
+
+1. Security hardening
+
+Security is always the most important area we would like to improve for Magnum,
+there are still parts we need to improve to make Magnum more securer.
+
+2. Keeping all addons' versions up-to-date
+
+It's important to keep all the addons' versions are up-to-date to avoid known
+vulnerabilities.
+
+3. Containerize Kubernetes master
+
+This could be one of the most interesting features for Magnum and it's
+definitely hard work. Running Kubernetes master nodes in a seed/root Kubernetes
+could bring us a lot of benefits.
+
+4. UX
+
+We still have some annoying parts which really need to be improved, such as
+the lables merging and the parameters management of helm charts.
+
+It has been a fantastic experience working with this amazing team and I know
+without the dedication and hard work of everyone who has contributed to Magnum
+we can't get those good work done. So the PTL of this cool team is most like a
+facilitator, coordinator, and mentor. I would be pleased to serve as PTL for
+Magnum for the V cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
+
+
+
