@@ -1,0 +1,21 @@
+Hello. I would like to announce my candidacy for Freezer PTL for Victoria cycle.
+
+I've been the Core reviewer for Freezer for the last three cycles.
+I believe I will be able to maintain it and I would love to. 
+And I will try to invest more time in Freezer
+
+Here is what we'll aim to accomplish in the V cycle:
+
+* Docs improvements
+* Unit Test Improvement: Our goal is to make it reach 70%.
+* Reporting error logs: When the jobs are executed, if there are errors,
+  the serious errors should be reported to freezer-api.
+* Monitor the schedule agent is on-line or not: Provide an API interface
+  to query whether the schedule agent is online, so that the application
+  can quickly learn the status of the agent.
+* Remote backups: Remote backup is an important function in backup service.
+  After supporting remote backup, we can do disaster recovery for important backup data,
+  or copy data from one backup system to another backup system, etc.
+
+Best Regards,
+Cong Ge
