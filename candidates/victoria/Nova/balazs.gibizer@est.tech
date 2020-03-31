@@ -1,0 +1,28 @@
+I'd like to announce my candidacy for Nova PTL for Train.
+
+I'm a long time Nova contributor and Nova core since 2017. I'm currently
+serving as temporary Nova PTL since we lost Eric during the Ussuri cycle.
+
+We are facing multiple challenges for Victoria.
+
+We have to organize the first fully virtual PTG to plan the Victoria cycle due
+to sever travel restrictions around the word. I have already proposed ways [1]
+to the Nova team and I will continue working on making the best out of the
+current situation.
+
+In the past months we have lost Matt and Eric, two key contributors and Nova
+maintainers. So I will work on regrowing the Nova core team to restore our
+review bandwidth. As a first step I proposed two new Nova core members [2][3].
+But I will also look for more possible candidates and I will try to mentor them
+to further increase the size of the core team.
+
+We have many unfinished business from the Ussuri cycle. So as a PTL I have the
+intention to make the team focus on finishing these work before we start any
+new big change in Nova.
+
+Thanks,
+Balazs Gibizer (gibi)
+
+[1] http://lists.openstack.org/pipermail/openstack-discuss/2020-March/013555.html
+[2] http://lists.openstack.org/pipermail/openstack-discuss/2020-March/013511.html
+[3] http://lists.openstack.org/pipermail/openstack-discuss/2020-March/013519.html
