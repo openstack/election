@@ -1,0 +1,311 @@
+candidates:
+  Blazar:
+  - elected: true
+    email: pierre@stackhpc.com
+    fullname: Pierre Riteau
+    ircname: priteau
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Blazar/pierre%40stackhpc.com
+  Cinder:
+  - elected: true
+    email: rosmaita.fossdev@gmail.com
+    fullname: Brian Rosmaita
+    ircname: rosmaita
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Cinder/rosmaita.fossdev%40gmail.com
+  Cyborg:
+  - elected: true
+    email: yumeng_bao@yahoo.com
+    fullname: Yumeng Bao
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Cyborg/yumeng_bao%40yahoo.com
+  Designate:
+  - elected: true
+    email: nicolasbock@gmail.com
+    fullname: Nicolas Bock
+    ircname: nicolasbock
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Designate/nicolasbock%40gmail.com
+  Ec2_Api:
+  - elected: true
+    email: andrey.mp@gmail.com
+    fullname: Andrey Pavlov
+    ircname: andrey-mp
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Ec2_Api/andrey.mp%40gmail.com
+  Freezer:
+  - elected: true
+    email: ge.cong@zte.com.cn
+    fullname: ge cong
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Freezer/ge.cong%40zte.com.cn
+  Glance:
+  - elected: true
+    email: akekane@redhat.com
+    fullname: Abhishek Kekane
+    ircname: abhishekk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Glance/akekane%40redhat.com
+  Heat:
+  - elected: true
+    email: rico.lin.guanyu@gmail.com
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Heat/rico.lin.guanyu%40gmail.com
+  Horizon:
+  - elected: true
+    email: e0ne@e0ne.info
+    fullname: Ivan Kolodyazhny
+    ircname: e0ne
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Horizon/e0ne%40e0ne.info
+  Ironic:
+  - elected: true
+    email: juliaashleykreger@gmail.com
+    fullname: Julia Kreger
+    ircname: TheJulia
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Ironic/juliaashleykreger%40gmail.com
+  Karbor:
+  - elected: true
+    email: jiaopengju@cmss.chinamobile.com
+    fullname: Pengju Jiao
+    ircname: jiaopengju
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Karbor/jiaopengju%40cmss.chinamobile.com
+  Keystone:
+  - elected: true
+    email: knikolla@bu.edu
+    fullname: Kristi Nikolla
+    ircname: knikolla
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Keystone/knikolla%40bu.edu
+  Kolla:
+  - elected: true
+    email: mark@stackhpc.com
+    fullname: Mark Goddard
+    ircname: mgoddard
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Kolla/mark%40stackhpc.com
+  Kuryr:
+  - elected: true
+    email: mdulko@redhat.com
+    fullname: "Micha\u0142 Dulko"
+    ircname: dulek
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Kuryr/mdulko%40redhat.com
+  Magnum:
+  - elected: true
+    email: flwang@catalyst.net.nz
+    fullname: Feilong Wang
+    ircname: flwang
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Magnum/flwang%40catalyst.net.nz
+  Manila:
+  - elected: true
+    email: gouthampravi@gmail.com
+    fullname: Goutham Pacha Ravi
+    ircname: gouthamr
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Manila/gouthampravi%40gmail.com
+  Mistral:
+  - elected: true
+    email: renat.akhmerov@gmail.com
+    fullname: Renat Akhmerov
+    ircname: rakhmerov
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Mistral/renat.akhmerov%40gmail.com
+  Monasca:
+  - elected: true
+    email: MartinDavid.ChaconPiza1@est.fujitsu.com
+    fullname: Martin Chacon Piza
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Monasca/MartinDavid.ChaconPiza1%40est.fujitsu.com
+  Murano:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Murano/aaronzhu1121%40gmail.com
+  Neutron:
+  - elected: true
+    email: skaplons@redhat.com
+    fullname: "S\u0142awek Kap\u0142o\u0144ski"
+    ircname: slaweq
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Neutron/skaplons%40redhat.com
+  Nova:
+  - elected: true
+    email: balazs.gibizer@est.tech
+    fullname: Balazs Gibizer
+    ircname: gibi
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Nova/balazs.gibizer%40est.tech
+  Octavia:
+  - elected: true
+    email: johnsomor@gmail.com
+    fullname: Michael Johnson
+    ircname: johnsom
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Octavia/johnsomor%40gmail.com
+  OpenStackAnsible:
+  - elected: true
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/OpenStackAnsible/mnaser%40vexxhost.com
+  OpenStackSDK:
+  - elected: true
+    email: mordred@inaugust.com
+    fullname: Monty Taylor
+    ircname: mordred
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/OpenStackSDK/mordred%40inaugust.com
+  OpenStack_Charms:
+  - elected: true
+    email: james.page@ubuntu.com
+    fullname: James Page
+    ircname: jamespage
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/OpenStack_Charms/james.page%40ubuntu.com
+  OpenStack_Helm:
+  - elected: true
+    email: gagehugo@gmail.com
+    fullname: Gage Hugo
+    ircname: gagehugo
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/OpenStack_Helm/gagehugo%40gmail.com
+  Openstack_Chef:
+  - elected: true
+    email: lance@osuosl.org
+    fullname: Lance Albertson
+    ircname: Ramereth
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Openstack_Chef/lance%40osuosl.org
+  Puppet_OpenStack:
+  - elected: true
+    email: chdzsp@163.com
+    fullname: Shengping Zhong
+    ircname: zhongshengping
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Puppet_OpenStack/chdzsp%40163.com
+  Qinling:
+  - elected: true
+    email: anlin.kong@gmail.com
+    fullname: Lingxian Kong
+    ircname: lxkong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Qinling/anlin.kong%40gmail.com
+  Quality_Assurance:
+  - elected: true
+    email: masayuki@igawa.io
+    fullname: Masayuki Igawa
+    ircname: masayukig
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Quality_Assurance/masayuki%40igawa.io
+  Release_Management:
+  - elected: true
+    email: sean.mcginnis@gmail.com
+    fullname: Sean McGinnis
+    ircname: smcginnis
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Release_Management/sean.mcginnis%40gmail.com
+  Requirements:
+  - elected: true
+    email: mthode@mthode.org
+    fullname: Matthew Thode
+    ircname: prometheanfire
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Requirements/mthode%40mthode.org
+  Sahara:
+  - elected: true
+    email: jeremyfreudberg@gmail.com
+    fullname: Jeremy Freudberg
+    ircname: jeremyfreudberg
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Sahara/jeremyfreudberg%40gmail.com
+  Searchlight:
+  - elected: true
+    email: dangtrinhnt@gmail.com
+    fullname: Trinh Nguyen
+    ircname: dangtrinhnt
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Searchlight/dangtrinhnt%40gmail.com
+  Senlin:
+  - elected: true
+    email: liu.xuefeng1@zte.com.cn
+    fullname: XueFeng Liu
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Senlin/liu.xuefeng1%40zte.com.cn
+  Solum:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Solum/aaronzhu1121%40gmail.com
+  Storlets:
+  - elected: true
+    email: tkajinam@redhat.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Storlets/tkajinam%40redhat.com
+  Telemetry:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Telemetry/aaronzhu1121%40gmail.com
+  Tripleo:
+  - elected: true
+    email: whayutin@redhat.com
+    fullname: Wes Hayutin
+    ircname: weshay
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Tripleo/whayutin%40redhat.com
+  Trove:
+  - elected: true
+    email: anlin.kong@gmail.com
+    fullname: Lingxian Kong
+    ircname: lxkong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Trove/anlin.kong%40gmail.com
+  Vitrage:
+  - elected: true
+    email: eyalb1@gmail.com
+    fullname: Eyal Bar-Ilan
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Vitrage/eyalb1%40gmail.com
+  Watcher:
+  - elected: true
+    email: li.canwei2@zte.com.cn
+    fullname: canwei li
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Watcher/li.canwei2%40zte.com.cn
+  Winstackers:
+  - elected: true
+    email: lpetrut@cloudbasesolutions.com
+    fullname: Lucian Petrut
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Winstackers/lpetrut%40cloudbasesolutions.com
+  Zun:
+  - elected: true
+    email: feng.shengqin@zte.com.cn
+    fullname: Feng Shengqin
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Zun/feng.shengqin%40zte.com.cn
+election: victoria
+projects:
+- Telemetry
+- Kolla
+- Quality_Assurance
+- Qinling
+- Heat
+- Blazar
+- Cyborg
+- Ec2_Api
+- Puppet_OpenStack
+- Cinder
+- Release_Management
+- Storlets
+- Senlin
+- Tripleo
+- OpenStack_Helm
+- Keystone
+- Trove
+- Sahara
+- Neutron
+- Designate
+- Searchlight
+- Horizon
+- Winstackers
+- Watcher
+- Freezer
+- Octavia
+- OpenStackAnsible
+- Ironic
+- Karbor
+- Manila
+- OpenStack_Charms
+- Openstack_Chef
+- Kuryr
+- Glance
+- OpenStackSDK
+- Requirements
+- Mistral
+- Zun
+- Solum
+- Nova
+- Magnum
+- Monasca
+- Murano
+- Vitrage
