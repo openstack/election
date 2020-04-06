@@ -42,6 +42,7 @@ def change_owners_options_proxy(after, before, ref, outdir='./', sieve=None,
     options.sieve = sieve
     options.legacy = None
     options.projects = None
+    options.sigs = None
 
     return options
 
