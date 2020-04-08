@@ -97,6 +97,7 @@ class TestBuildCandidatesList(base.ElectionTestCase):
         mock_lookup_member.return_value = dict(data=[member])
 
         expected = dict(candidates=mock.ANY, election='fake',
+                        leaderless=mock.ANY,
                         projects=['SomeProject'])
         observed = utils.build_candidates_list('fake')
         self.assertEqual(expected, observed)

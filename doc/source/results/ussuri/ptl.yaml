@@ -336,6 +336,14 @@ candidates:
     ircname: null
     url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/Zun/feng.shengqin%40zte.com.cn
 election: ussuri
+leaderless:
+- Cyborg
+- Designate
+- I18n
+- OpenStackSDK
+- Placement
+- PowerVMStackers
+- Winstackers
 projects:
 - Adjutant
 - Rally
