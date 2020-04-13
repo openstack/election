@@ -131,6 +131,7 @@ When PTL Election ends:
 * Close the election and udpate the results:
 
   * ``tox -evenv -- close-election ptl``
+  * Verify projects without candidate have correct TC appointment flag
   * ``edit doc/sources/pike/ptl.yaml`` and set election winners to ``True``
 
 * Commit the change and review the results
@@ -232,14 +233,23 @@ with:
 TC Election Round
 -----------------
 
-When TC Election begins:
+Before TC Election begins:
 
 * Create CIVS page
 
+  * Title the poll: $RELEASE Technical Committee Election Poll
   * Enable detailed ballot reporting
+  * Send to other officials to verify
+
+     * Check number of seats
+     * Check closing date
+
+When TC Election begins:
 
 * Upload rolls
-* Send *TC Voting Kickoff* email
+
+  * CIVS has a maximum number of electorate emails you can upload at a time
+    without crashing, limit to 500 at a time* Send *TC Voting Kickoff* email
 
   * ``tox -e venv -- template-emails voting_kickoff``
 
