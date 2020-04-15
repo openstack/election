@@ -128,11 +128,13 @@ A couple of days before the PTL Election ends:
 
 When PTL Election ends:
 
-* Close the election and udpate the results:
+* Close the election and update the results:
 
   * ``tox -evenv -- close-election --round ptl``
-  * Verify projects without candidate have correct TC appointment flag
   * ``edit doc/sources/pike/ptl.yaml`` and set election winners to ``True``
+  * NOTE: We no longer need document TC-APPOINTMENT or LEADERLESS as the
+    ``update-governance`` step will communicate that to the TC and the process
+    in that repo will set the project leader.
 
 * Commit the change and review the results
 * Send *PTL Results* email
