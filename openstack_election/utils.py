@@ -304,14 +304,19 @@ def election_is_running():
     return False
 
 
-def find_candidate_files(election=conf['release']):
+def find_all_projects(election=conf['release']):
     election_path = os.path.join(CANDIDATE_PATH, election)
-    election_type = conf.get('election_type', '').lower()
     if os.path.exists(election_path):
         project_list = os.listdir(election_path)
     else:
         project_list = []
 
+    return project_list
+
+
+def find_candidate_files(election=conf['release']):
+    project_list = find_all_projects(election)
+    election_type = conf.get('election_type', '').lower()
     if election_type == 'tc':
         project_list = list(filter(
             lambda p: p in ['TC'],
@@ -323,6 +328,7 @@ def find_candidate_files(election=conf['release']):
             project_list
         ))
 
+    election_path = os.path.join(CANDIDATE_PATH, election)
     candidate_files = []
     for project in project_list:
         project_prefix = os.path.join(election_path, project)
@@ -361,6 +367,8 @@ def build_candidates_list(election=conf['release']):
             'fullname': get_fullname(member, filepath=filepath)
         })
 
+    leaderless = set(find_all_projects(election)) - projects
     return {'election': election,
             'projects': list(projects),
+            'leaderless': list(leaderless),
             'candidates': candidates_lists}

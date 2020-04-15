@@ -43,6 +43,14 @@ Election Results
 No elections were necessary.
 {% endif %}
 
+{% if leaderless|length %}
+Leaderless Projects
+===================
+{% for project in leaderless|sort %}
+
+* {{ project }}
+{% endfor %}
+{% endif %}
 
 PTL Candidates
 ==============

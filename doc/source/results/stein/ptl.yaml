@@ -392,6 +392,16 @@ election_statistics:
   - Tacker:
       electorate: 54
       votes_cast: 20
+leaderless:
+- Dragonflow
+- Freezer
+- Loci
+- Packaging_Rpm
+- RefStack
+- Searchlight
+- Security
+- Trove
+- Winstackers
 projects:
 - Adjutant
 - Barbican
