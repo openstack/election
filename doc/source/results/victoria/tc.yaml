@@ -1,0 +1,47 @@
+candidates:
+  TC:
+  - elected: false
+    email: donny@fortnebula.com
+    fullname: Donny Davis
+    ircname: donnyd
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/donny%40fortnebula.com
+  - elected: true
+    email: gr@ham.ie
+    fullname: Graham Hayes
+    ircname: mugsie
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/gr%40ham.ie
+  - elected: false
+    email: jeremyfreudberg@gmail.com
+    fullname: Jeremy Freudberg
+    ircname: jeremyfreudberg
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/jeremyfreudberg%40gmail.com
+  - elected: true
+    email: knikolla@bu.edu
+    fullname: Kristi Nikolla
+    ircname: knikolla
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/knikolla%40bu.edu
+  - elected: true
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/mnaser%40vexxhost.com
+  - elected: true
+    email: moreira.belmiro.email.lists@gmail.com
+    fullname: Belmiro Moreira
+    ircname: belmoreira
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/moreira.belmiro.email.lists%40gmail.com
+  - elected: false
+    email: radoslaw.piliszek@gmail.com
+    fullname: "Rados\u0142aw Piliszek"
+    ircname: yoctozepto
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/radoslaw.piliszek%40gmail.com
+  - elected: true
+    email: rico.lin.guanyu@gmail.com
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/TC/rico.lin.guanyu%40gmail.com
+election: victoria
+elections_results:
+  TC: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_95cb11614fb23566
+projects:
+- TC

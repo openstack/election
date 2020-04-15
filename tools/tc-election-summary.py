@@ -89,6 +89,14 @@ data = [
         'votes_cast': 279,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_6c71f84caff2b37c')
     },
+    # Ussuri is missing as we didn't have an election because the number of
+    # candidates matched the number of available seats
+    {
+        'election': '04/2020',  # Victoria
+        'electorate': 808,
+        'votes_cast': 208,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_95cb11614fb23566')
+    },
 ]
 
 
