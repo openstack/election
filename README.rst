@@ -130,7 +130,7 @@ When PTL Election ends:
 
 * Close the election and udpate the results:
 
-  * ``tox -evenv -- close-election ptl``
+  * ``tox -evenv -- close-election --round ptl``
   * Verify projects without candidate have correct TC appointment flag
   * ``edit doc/sources/pike/ptl.yaml`` and set election winners to ``True``
 
@@ -262,7 +262,7 @@ A couple of days before the TC Election ends:
 When TC Election ends:
 
 * Close the election
-* Run: ``tox -e venv -- close-election tc``
+* Run: ``tox -e venv -- close-election --round tc``
 
   * ``edit doc/source/pike/tc.yaml`` setting the winners to ``True``
   * Commit change and push review
