@@ -239,12 +239,14 @@ def main(options):
     for sig in sigs_repos:
         for repo in sigs_repos[sig]:
             if 'sigs' not in gov_projects:
-                gov_projects['sigs'] = {'deliverables': {}}
+                gov_projects['sigs'] = {'deliverables': {}, 'extra-atcs': []}
             if sig not in gov_projects['sigs']['deliverables']:
                 gov_projects['sigs']['deliverables'][sig] = {'repos': []}
-            for repo in sigs_repos[sig]:
-                gov_projects['sigs']['deliverables'][sig]['repos'].append(
-                    repo['repo'])
+            gov_projects['sigs']['deliverables'][sig]['repos'].append(
+                repo['repo'])
+            extra_atcs = repo.get('extra-atcs', [])
+            if extra_atcs:
+                gov_projects['sigs']['extra-atcs'].extend(extra_atcs)
 
     # A cache of full repo names existing in Gerrit, used to filter out repos
     # listed in governance which don't actually exist
