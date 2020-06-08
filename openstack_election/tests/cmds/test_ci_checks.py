@@ -10,7 +10,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-import mock
+from unittest import mock
 
 from openstack_election.cmds import ci_check_all_candidate_files
 from openstack_election.tests import base
