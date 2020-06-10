@@ -2,5 +2,5 @@
 # of appearance. Changing the order has an impact on the overall integration
 # process, which may cause wedges in the gate later.
 # needed for doc build
-sphinx>=1.6.2 # BSD
-openstackdocstheme>=1.25.1  # Apache-2.0
+sphinx>=2.0.0,!=2.1.0 # BSD
+openstackdocstheme>=2.2.1 # Apache-2.0

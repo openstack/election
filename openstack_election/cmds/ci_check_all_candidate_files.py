@@ -85,10 +85,10 @@ def find_modified_candidate_files():
         ['git', 'diff', '--name-only', '--pretty=format:', 'HEAD^']
     ).decode('utf-8')
     filenames = [
-        l.strip()
-        for l in results.splitlines()
-        if (l.startswith(utils.CANDIDATE_PATH + '/') and
-            not l.endswith('.placeholder'))
+        li.strip()
+        for li in results.splitlines()
+        if (li.startswith(utils.CANDIDATE_PATH + '/') and
+            not li.endswith('.placeholder'))
     ]
     return filenames
 
