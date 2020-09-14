@@ -36,6 +36,7 @@ Our current election officials are:
 
 * Andy McCrae (andymccr), andy dot mccrae at gmail dot com
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
+* Jeremy Stanley (fungi), `fungi@yuggoth.org <mailto:fungi@yuggoth.org>`_
 * Kendall Nelson (diablo_rojo), knelson at openstack dot org
 * Tony Breeds (tonyb), tony at bakeyournoodle dot com
 
