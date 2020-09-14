@@ -1,26 +1,26 @@
 ---
-release: victoria
+release: wallaby
 election_type: combined
-tag: 0.5.0
-tc_seats: 5
+tag: 0.8.0
+tc_seats: 4
 timeframe:
-  name: Train-Ussuri
-  start: 2019-03-22T00:00
-  end: 2020-04-07T00:00
-  email_deadline: 2020-03-31T00:00
+  name: Ussuri-Victoria
+  start: 2019-09-27T00:00
+  end: 2020-09-29T00:00
+  email_deadline: 2020-09-29T00:00
 timeline:
   - name: TC Nominations
-    start: 2020-03-24T23:45
-    end: 2020-03-31T23:45
+    start: 2020-09-22T23:45
+    end: 2020-09-29T23:45
   - name: PTL Nominations
-    start: 2020-03-24T23:45
-    end: 2020-03-31T23:45
+    start: 2020-09-22T23:45
+    end: 2020-09-29T23:45
   - name: TC Campaigning
-    start: 2020-03-31T23:45
-    end: 2020-04-07T23:45
-  - name: TC Elections
-    start: 2020-04-07T23:45
-    end: 2020-04-14T23:45
+    start: 2020-09-29T23:45
+    end: 2020-10-06T23:45
+  - name: TC Election
+    start: 2020-10-06T23:45
+    end: 2020-10-13T23:45
   - name: PTL Election
-    start: 2020-04-07T23:45
-    end: 2020-04-14T23:45
+    start: 2020-10-06T23:45
+    end: 2020-10-13T23:45
