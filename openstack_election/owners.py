@@ -17,8 +17,6 @@
 # counts for each governance project-team, as well as a combined set
 # for all teams.
 
-from __future__ import print_function
-
 import csv
 import datetime
 import os

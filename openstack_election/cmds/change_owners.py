@@ -85,11 +85,6 @@
 #     Owners of at least 4 changes: 1682
 #     Owners of at least 5 changes: 1504
 
-
-from __future__ import absolute_import
-from __future__ import print_function
-from __future__ import unicode_literals
-
 import argparse
 import sys
 
