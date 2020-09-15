@@ -39,8 +39,8 @@ if election_type in ['tc', 'combined']:
         end_nominations=utils.get_event('TC Nominations')['end_str'],
         campaign_start=utils.get_event('TC Campaigning')['start_str'],
         campaign_end=utils.get_event('TC Campaigning')['end_str'],
-        election_start=utils.get_event('TC Elections')['start_str'],
-        election_end=utils.get_event('TC Elections')['end_str'],
+        election_start=utils.get_event('TC Election')['start_str'],
+        election_end=utils.get_event('TC Election')['end_str'],
         poll_name='%s TC Election' % (conf['release'].capitalize()),
     ))
     template_names += ['campaigning_kickoff']
