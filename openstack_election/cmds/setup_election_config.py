@@ -69,7 +69,7 @@ def main():
     parser.add_argument('date', type=valid_date, help='in the form YYYY-MM-DD')
     parser.add_argument('release', help='release name')
     parser.add_argument('type', choices=['TC', 'PTL'])
-    parser.add_argument('--tc-seats', default=6, choices=['6', '7'],
+    parser.add_argument('--tc-seats', default=4, choices=['4', '5'],
                         help='number of TC seats up for election')
 
     args = parser.parse_args()
