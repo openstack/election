@@ -37,8 +37,10 @@ class TestFindModifiedCandidateFiles(base.ElectionTestCase):
             ci_check_all_candidate_files.find_modified_candidate_files()
         self.assertEqual(expected_filenames, filenames)
 
+    @mock.patch('os.path.exists', return_value=True)
     @mock.patch('subprocess.check_output')
-    def test_find_modified_candidate_files_all_good(self, mock_check_output):
+    def test_find_modified_candidate_files_all_good(
+            self, mock_check_output, mock_path_exists):
         check_output = (('configuration.yaml\n'
                          'openstack_election/__init__py\n'
                          '%(path)s/candidate\n'

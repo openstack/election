@@ -76,7 +76,7 @@ def check_for_changes(projects, filepath, limit, verbose=0):
 
 
 def find_modified_candidate_files():
-    "Return a list of files modified by the most recent commit."
+    "Return a list of non-removed files modified by the most recent commit."
     results = subprocess.check_output(
         ['git', 'diff', '--name-only', '--pretty=format:', 'HEAD^']
     ).decode('utf-8')
@@ -84,6 +84,7 @@ def find_modified_candidate_files():
         li.strip()
         for li in results.splitlines()
         if (li.startswith(utils.CANDIDATE_PATH + '/') and
+            os.path.exists(li) and
             not li.endswith('.placeholder'))
     ]
     return filenames
