@@ -1,0 +1,27 @@
+Hi all,
+
+Please consider my candidacy for another[0] term as the Keystone PTL.
+
+My primary focus will continue to be that of a maintainer and enabler.
+Reviewing your code, bug reports and growing a welcoming environment for new
+contributors. Victoria was my first cycle as PTL, and it was mostly a bug-fix
+release.
+
+This cycle, I would like to focus on improving the user/operator experience.
+This includes documentation, knowledge and technical debt, and testing.
+
+I, personally, will be working on the identity federation side and see what
+improvements it makes sense to tackle next, which I will be driving.
+To that end, I will reach out to operators and try to understand their needs,
+as in a lot of cases people have been reinventing the wheel or developing
+things downstream.
+
+Disclaimer: Again, I will not be able to devote 100% of my time to working on
+keystone, however I will have the flexibility to devote the necessary time
+when something requests it.
+
+Thank you,
+Kristi Nikolla
+
+[0]. https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Keystone/knikolla%40bu.edu
+
