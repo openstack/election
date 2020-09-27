@@ -1,0 +1,25 @@
+Hi all,
+
+I'd like to propose my candidacy and continue serving as Zun PTL in the
+Wallaby cycle.
+
+
+Over the Victoria release, the Zun team continues to keep the Zun
+stable and reliable, and also some great works have been done. 
+
+
+My goals for the Wallaby cycle are to continue the progress made during
+the Ussuri cycle in the following areas:
+* emptyDir: An emptyDir volume is created when a Capsule is scheduled to
+  a openstack compute node. Its lifecycle is as long as that of capsule is
+  running on compute node. At the beginning, it is  empty. 
+  Containers in the Capsule can read and write the same files in the emptyDir volume.
+  When a Capsule is removed for any reason, the data in the emptyDir is deleted forever.
+* hostPath: A hostPath volume would mount a file/directory into the Capsule.
+* configMap: The configMap resource provides a way to inject configuration data into Capsule .
+* Affinity&anti-affinity: Add the affinity and anti-affinity policies to zun.
+
+Thank you for taking the time to consider me for Wallaby PTL.
+
+Best regards,
+Shengqin Feng
