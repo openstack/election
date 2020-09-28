@@ -1,0 +1,14 @@
+Hello All,
+
+I'm submitting myself as the PTL for Adjutant during the W cycle.
+
+The focus is as always to continue maintaining the project to ensure it is operating as expected and as bug free as possible.
+
+Wallaby will mostly be about cleaning up some internal systems, and minor features to help with custom plugin support.
+
+The hope is to also clean up policy/role in this release, and include some elements of that into the plugin layer, and to start working on more useful user management features.
+
+Depending on time and resources, we may start work on async worker support to allow some parts of tasks to be processed asynchronously.
+
+Cheers,
+Adrian Turjak
