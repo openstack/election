@@ -1,0 +1,19 @@
+Hi team,
+
+I would like to announce my candidacy for Horizon PTL for the Wallaby cycle.
+
+During Victoria cycle we did a good job with stability improvements and
+feature development but there are still some areas we need to pay
+attention during Wallaby development cycle:
+
+* More cross-project testing.
+
+* Find a solution on how to improve UX and make feature gap smaller.
+
+* Involve more contributors into the community.
+
+
+Thanks for reading this and helping me making Horizon better during
+each release,
+
+Ivan Kolodyazhny (e0ne)
