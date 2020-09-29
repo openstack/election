@@ -1,0 +1,58 @@
+Dear OpenStack Community,
+
+This note is to officially announce my intention to be re-elected to the
+OpenStack TC in the Wallaby cycle.
+
+At this point, I think that many of you know me, but for those who don't I will
+briefly introduce myself.  I have been a part of the OpenStack Community since early
+in 2013.  At that time I was working for IBM and acted as the liaison between the
+storage teams developing Cinder drivers for IBM's storage solutions and the
+Community.  I am currently working at Lenovo as the Principal Cloud
+Architect, leading a team that is developing automated infrastructure
+deployment and cloud deploy solutions for several different cloud platforms.
+
+During my time in the OpenStack Community I have been a Cinder core
+team member and served as PTL for Cinder for two years.  I have been an active
+part of on-boarding for new Community members, helping and supporting the
+Upstream Institute sessions since the 2016 session in Barcelona.  I also have
+been active in projects outside of Cinder, acting as Oslo liaison for Cinder
+and helping the documentation team back in the days that that was a thing.
+
+Most recently, I have served a year on the OpenStack TC.  I will admit that
+the experience has come with a learning curve.  My time has also been during
+a time of change for the TC and for OpenStack in general.  During my time on
+the TC I was proud to organize the first review of Technical Committee
+questions in the annual user survey.  The exercise was interesting and
+I feel it brought good information to the TC with regards to what the
+community needs to be doing to best serve our users.
+
+I also have been active in the discussions around how to handle
+leaderless projects.  I feel that my experience as a PTL for a
+notable period of time and core team member for over 6 years gives me
+perspective to talk about how we continue to develop OpenStack project
+structure.
+
+During my last year, my focus at work has changed from pure development to
+being more of a designer/consumer of cloud solutions.  The solutions are
+not exclusively OpenStack, but now include OpenShift and VMware based clouds.
+The change in focus has given me new perspective on how OpenStack fits into
+the cloud ecosystem and I think it is perspective that will be helpful in the
+coming year as we now have a combined Technical Committee and User Committee.
+
+If re-elected I will support getting the OpenStack community connected with
+other cloud communities, especially the k8s community.  I will continue to
+support efforts to adapt OpenStack's processes and projects to make things
+easier for projects both large and small.  I also hope to help to set
+goals for the community that will help it continue to be a vibrant and
+relevant cloud solution for years to come!
+
+Working with the OpenStack Community has always been something that
+I have been very proud to do in my career.  I thank you all for the
+opportunity to serve as a TC member the last year and hope that I
+can continue to serve the community in this capacity.
+
+Sincerely,
+Jay Bryant
+IRC (Freenode): jungleboyj
+
+
