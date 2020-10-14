@@ -277,6 +277,10 @@ candidates:
 election: wallaby
 elections_results:
   Telemetry: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_2428aa2ecc67cc17
+election_statistics:
+  - Telemetry:
+      electorate: 27
+      votes_cast: 14
 leaderless:
 - Packaging_Rpm
 - Placement

@@ -94,6 +94,12 @@ data = [
         'votes_cast': 208,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_95cb11614fb23566')
     },
+    {
+        'election': '10/2020',  # Wallaby
+        'electorate': 619,
+        'votes_cast': 181,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_f3d92f86f4254553')
+    },
 ]
 
 

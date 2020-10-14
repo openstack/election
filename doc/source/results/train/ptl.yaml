@@ -373,6 +373,13 @@ election: train
 elections_results:
   Nova: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_b03df704c3012e18
   OpenStack_Charms: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_ca2c11f0f83ce84d
+election_statistics:
+  - Nova:
+      electorate: 194
+      votes_cast: 81
+  - OpenStack_Charms:
+      electorate: 68
+      votes_cast: 23
 leaderless:
 - PowerVMStackers
 - Telemetry
