@@ -1,0 +1,42 @@
+candidates:
+  TC:
+  - elected: false
+    email: amy@demarco.com
+    fullname: Amy Marrich
+    ircname: spotz
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/amy%40demarco.com
+  - elected: true
+    email: dms@danplanet.com
+    fullname: Dan Smith
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/dms%40danplanet.com
+  - elected: true
+    email: gmann@ghanshyammann.com
+    fullname: Ghanshyam Mann
+    ircname: gmann
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/gmann%40ghanshyammann.com
+  - elected: false
+    email: jokke@usr.fi
+    fullname: Erno Kuvaja
+    ircname: jokke_
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/jokke%40usr.fi
+  - elected: true
+    email: jsbryant@electronicjungle.net
+    fullname: Jay Bryant
+    ircname: jungleboyj
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/jsbryant%40electronicjungle.net
+  - elected: true
+    email: kennelson11@gmail.com
+    fullname: Kendall Nelson
+    ircname: diablo_rojo
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/kennelson11%40gmail.com
+  - elected: false
+    email: radoslaw.piliszek@gmail.com
+    fullname: "Rados\u0142aw Piliszek"
+    ircname: yoctozepto
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/wallaby/TC/radoslaw.piliszek%40gmail.com
+election: wallaby
+elections_results:
+  TC: https://civs.cs.cornell.edu/cgi-bin/results.pl?id=E_f3d92f86f4254553
+projects:
+- TC
