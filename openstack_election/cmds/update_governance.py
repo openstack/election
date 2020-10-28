@@ -54,6 +54,7 @@ def load_projects(projects_fname):
 
 
 def update_projects(projects_fname, candidates_list, projects):
+    results = utils.get_ptl_results()
     project_count = 0
     with open(projects_fname, 'w') as fh:
         skip = 0
@@ -77,6 +78,17 @@ def update_projects(projects_fname, candidates_list, projects):
                         'email': 'example@example.org',
                         }]
                     print('TC to appoint PTL for %s' % (p))
+                nr_candidates = len(candidates)
+                # Remove non-elected candidates if the election is closed
+                # TODO(fungi): rework this entire function to just use the
+                # election results file if we have one and not iterate over
+                # the candidates tree
+                if nr_candidates > 1:
+                    for c1 in results['candidates'].get(p, []):
+                        if not c1['elected']:
+                            for c2 in list(candidates):
+                                if c1['email'] == c2['email']:
+                                    candidates.remove(c2)
                 nr_candidates = len(candidates)
                 # Only update the PTL if there is a single candidate
                 if nr_candidates == 1:
