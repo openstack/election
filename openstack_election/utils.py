@@ -368,3 +368,11 @@ def build_candidates_list(election=conf['release']):
             'projects': list(projects),
             'leaderless': list(leaderless),
             'candidates': candidates_lists}
+
+
+def get_ptl_results(election=conf['release']):
+    try:
+        resultfd = open('doc/source/results/%s/ptl.yaml' % election)
+    except FileNotFoundError:
+        return {'candidates': {}}
+    return yaml.safe_load(resultfd)
