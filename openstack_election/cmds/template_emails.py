@@ -10,7 +10,8 @@ from openstack_election import utils
 
 conf = config.load_conf()
 
-REFERENCE_URL = utils.PROJECTS_URL % '/'.join(('tag', conf['tag']))
+REFERENCE_URL = utils.PROJECTS_URL.replace(
+        'raw', 'src') % '/'.join(('tag', conf['tag']))
 LEADERLESS_URL = ('https://governance.openstack.org/resolutions/'
                   '20141128-elections-process-for-leaderless-programs.html')
 
@@ -41,7 +42,8 @@ if election_type in ['tc', 'combined']:
         campaign_end=utils.get_event('TC Campaigning')['end_str'],
         election_start=utils.get_event('TC Election')['start_str'],
         election_end=utils.get_event('TC Election')['end_str'],
-        poll_name='%s TC Election' % (conf['release'].capitalize()),
+        poll_name='OpenStack %s Cycle Technical Committee Election Poll' % (
+            conf['release'].capitalize()),
     ))
     template_names += ['campaigning_kickoff']
 
