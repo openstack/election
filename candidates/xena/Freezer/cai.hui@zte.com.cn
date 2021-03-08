@@ -1,0 +1,25 @@
+Hi all,
+
+I'd like to propose my candidacy and continue serving as Freezer PTL in the
+Xena cycle.
+
+Over the Wallaby release, the Freezer team continues to keep the Freezer
+stable and reliable, We also fixed some bugs to meet the python3 requirements.
+
+In the Xena cycle, I would like to continue serving this project
+and the user requires. There are some major works
+I want to do in Xena cycle:
+
+1.Impove the project DOCs, publish a quickstart for new users.
+2.Keep Freezer more reliable as usual.
+3.Remove API v1 ? 
+4.Add some packaged files so that the freezer can be used as a stand-alone project.
+5.Bring more contributors to the project.
+
+Thanks to everyone to support my work and keep contributing to Freezer.
+I will do my best in the new cycle.
+
+Thank you for taking the time to consider me for Freezer PTL in the Xena cycle.
+
+Best regards,
+
