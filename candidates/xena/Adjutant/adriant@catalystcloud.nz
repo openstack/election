@@ -1,0 +1,12 @@
+Hello All,
+
+Once again I'm putting my foot forward as PTL for Adjutant, this time for X cycle.
+
+Focus hasn't changed much, still to continue maintaining the project to ensure it is operating as expected and as bug free as possible.
+
+Xena will most likely be focused on cleaning up policy/roles, and include some elements of that into the plugin layer, and to start working on more useful user management features.
+
+Depending on time and resources, we may start work on async worker support to allow some parts of tasks to be processed asynchronously.
+
+Cheers,
+Adrian Turjak
