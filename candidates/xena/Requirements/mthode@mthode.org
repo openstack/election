@@ -1,0 +1,25 @@
+I would like to announce my candidacy for PTL of the Requirements project for
+the Xena cycle.
+
+The following will be my goals for the cycle, in order of importance:
+
+1. The primary goal is to keep a tight rein on global-requirements and
+upper-constraints updates.  (Keep things working well)
+
+2. Un-cap requirements where possible (stuff like prettytable).
+
+3. Fix some automation of generate contstraints (pkg-resources being added
+and setuptools being dropped)
+
+4. Audit global-requirements and upper-constraints for redundancies.  One of
+the rules we have for new entrants to global-requirements and/or
+upper-constraints is that they be non-redundant.  Keeping that rule in mind,
+audit the list of requirements for possible redundancies and if possible,
+reduce the number of requirements we manage.
+
+I look forward to continue working with you in this cycle, as your PTL or not.
+
+Thanks for your time,
+Matthew Thode
+
+IRC: prometheanfire
