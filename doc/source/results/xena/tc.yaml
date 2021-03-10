@@ -1,0 +1,27 @@
+candidates:
+  TC:
+  - elected: true
+    email: mnaser@vexxhost.com
+    fullname: Mohammed Naser
+    ircname: mnaser
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/mnaser%40vexxhost.com
+  - elected: true
+    email: moreira.belmiro.email.lists@gmail.com
+    fullname: Belmiro Moreira
+    ircname: belmoreira
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/moreira.belmiro.email.lists%40gmail.com
+  - elected: true
+    email: radoslaw.piliszek@gmail.com
+    fullname: "Rados\u0142aw Piliszek"
+    ircname: yoctozepto
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/radoslaw.piliszek%40gmail.com
+  - elected: true
+    email: ricolin@ricolky.com
+    fullname: Rico Lin
+    ircname: ricolin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/ricolin%40ricolky.com
+election: xena
+elections_results:
+  TC: No runoff required
+projects:
+- TC
