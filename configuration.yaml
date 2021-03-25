@@ -1,6 +1,6 @@
 ---
 release: xena
-election_type: combined
+election_type: tc
 tag: 0.8.0
 tc_seats: 5
 timeframe:
@@ -9,18 +9,9 @@ timeframe:
   end: 2021-03-08T00:00
   email_deadline: 2021-03-08T00:00
 timeline:
-  - name: TC Nominations
-    start: 2021-03-02T23:45
-    end: 2021-03-09T23:45
-  - name: PTL Nominations
-    start: 2021-03-02T23:45
-    end: 2021-03-9T23:45
-  - name: TC Campaigning
-    start: 2021-03-09T23:45
-    end: 2021-03-11T23:45
-  - name: TC Election
-    start: 2021-03-12T23:45
-    end: 2021-03-19T23:45
-  - name: PTL Election
-    start: 2021-03-12T23:45
-    end: 2021-03-19T23:45
+  - name: TC Vacancy Nominations
+    start: 2021-03-25T23:45
+    end: 2021-04-08T23:45
+  - name: TC Vacancy Election
+    start: 2021-04-08T23:45
+    end: 2021-04-15T23:45
