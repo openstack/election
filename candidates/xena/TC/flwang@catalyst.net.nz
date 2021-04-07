@@ -1,0 +1,64 @@
+Hi everyone,
+
+I'm announcing my candidacy for a position on the OpenStack Technical Committee.
+For those of you who don't know me yet, I'm Feilong Wang, currently
+working for Catalyst Cloud as head of R&D. Catalyst Cloud is a cloud
+computing company running on OpenStack based in New Zealand. As for OpenStack
+upstream, now I'm a core contributor of OpenStack Magnum and actively involve the
+integration between OpenStack and Kubernetes. Besides, I was serving as the
+PTL of Zaqar (OpenStack Messaging Service) for years. Before that, I was
+mainly working for Glance (OpenStack Image Service) as a core reviewer since
+Folsom 2012.
+
+As a TC member I want to bring focus in below areas:
+
+#1 Integration and Collaboration
+
+As a distributed cloud platform, it's good to decouple different services to
+make each service do one thing well. However, seems most of projects are solely
+focusing on their own offering and not enough projects are paying attention to
+the global impact. I would like to push a more tighter collaboration between
+projects and obviously it will make the integration more easier and efficient.
+Operators should expect different projects can work together smoothly just like
+they're different parts within one project. As a maintainer of a public cloud
+running on OpenStack, I know the pain of our ops, when they try to migrate a
+service or adding a new service in existing cluster. So I'd like to see more
+interlocks between PTL and TC members to understand the gaps and fill the gaps.
+
+#2 Users & Operators
+
+Listen closely to the voice of users and operators and this pretty much align
+with the mission of OpenStack as below.
+
+"To produce the ubiquitous Open Source Cloud Computing platform that will meet
+the needs of public and private clouds regardless of size, by being simple to
+implement and massively scalable."
+
+To implement a useful, stable cloud platform, we can't work behind closed
+doors, but closely work with the user and operator community. As far as I know,
+except the user survey, we don't have more formal process/approach to collect
+the feedback from our users and operators, though the operators mailing list
+and some random forum sessions at OpenStack summit are helpful. And IMHO,
+currently we’re mixing feedback collected from different perspectives. For
+example, most of the feedback from operators are how to easily deploy/manage
+the cloud. But the tenant user/developers' requirements are more related to
+functions, UX, etc. I can see we have put a lot of effort to address the pain
+of operators, but obviously, we do also need more work to make the tenant
+users/developer’s life easier.
+
+#3 Better UX
+
+This is the tiny part sometimes skipped by us. But I think it's important for
+us to put effort on. For example, we can release a docker image including all
+our openstack clients, so user don't have to deal with python depedencies.
+Another example is enforcing restricted API consistency across different
+services.
+
+
+It would be an honor to be member of your technical committee. Thanks for your
+consideration!
+
+--
+Feilong Wang
+
+
