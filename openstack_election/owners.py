@@ -343,24 +343,41 @@ def main(options):
                         # their first and record specific account
                         # details
                         if new:
-                            # Get the set of all E-mail addresses
-                            # Gerrit knows for this owner's account
-                            emails = utils.query_gerrit(
-                                'accounts/%s/emails' %
-                                change['owner']['_account_id'],
-                                verbose=options.verbose)
+                            # Get the E-mail address preferred in
+                            # Gerrit for this owner's account
+                            email = change['owner'].get('email')
+
+                            # If the owner has no preferred address, use the
+                            # committer address for the first revision
+                            if not email:
+                                print(
+                                    'ACCOUNT WITHOUT PREFERRED EMAIL: %s'
+                                    % owner,
+                                    file=sys.stderr)
+                                full = utils.query_gerrit('changes/', params={
+                                    'q': change['_number'],
+                                    'o': [
+                                        'ALL_COMMITS',
+                                        'ALL_REVISIONS',
+                                        'DETAILED_ACCOUNTS',
+                                        ],
+                                    }, verbose=options.verbose)[0]
+                                for rev in full['revisions'].values():
+                                    if rev['_number'] == 1:
+                                        email = rev[
+                                            'commit']['committer']['email']
+                                    break
 
                             # Find duplicate addresses and merge
                             # accounts when that happens
-                            for email in emails:
-                                address = normalize_email(email['email'])
-                                if address in all_emails:
-                                    owner = all_emails[address]
-                                    duplicates[new_owner] = owner
-                                    print(
-                                        'MERGING DUPLICATE ACCOUNT: %s into %s'
-                                        % (new_owner, owner), file=sys.stderr)
-                                    break
+                            address = normalize_email(email)
+                            if address in all_emails:
+                                owner = all_emails[address]
+                                duplicates[new_owner] = owner
+                                print(
+                                    'MERGING DUPLICATE ACCOUNT: %s into %s'
+                                    % (new_owner, owner), file=sys.stderr)
+                                continue
 
                         # For newly found non-duplicate owners,
                         # initialize the global change count,
@@ -400,46 +417,40 @@ def main(options):
                         # We only want to add addresses if this is a
                         # new owner or a new duplicate
                         if new:
-                            # Iterate over each E-mail address
-                            for email in emails:
-                                # Normalize the address before
-                                # performing any matching since
-                                # Gerrit doesn't do a great job of
-                                # this on its own
-                                address = normalize_email(email['email'])
+                            # Normalize the address before
+                            # performing any matching since
+                            # Gerrit doesn't do a great job of
+                            # this on its own
+                            address = normalize_email(email)
 
-                                # Track this in the full list of all
-                                # known E-mail addresses
-                                all_emails[address] = owner
+                            # Track this in the full list of all
+                            # known E-mail addresses
+                            all_emails[address] = owner
 
-                                # Whether Gerrit considers this the
-                                # preferred E-mail address
-                                preferred = email.get('preferred', False)
+                            # Store the preferred E-mail address
+                            # under its own key since it has a
+                            # special status, but only if this
+                            # is not a duplicate account
+                            if owner == new_owner:
+                                owners[owner]['preferred'] = email
 
-                                # Store the preferred E-mail address
-                                # under its own key since it has a
-                                # special status, but only if this
-                                # is not a duplicate account
-                                if preferred and owner == new_owner:
-                                    owners[owner]['preferred'] = address
+                                # If this was already added to
+                                # the extras list due to an
+                                # additional pre-normalized
+                                # copy, remove it there
+                                if address in owners[owner]['extra']:
+                                    owners[owner]['extra'].remove(address)
 
-                                    # If this was already added to
-                                    # the extras list due to an
-                                    # additional pre-normalized
-                                    # copy, remove it there
-                                    if address in owners[owner]['extra']:
-                                        owners[owner]['extra'].remove(address)
-
-                                # Store a list of non-preferred
-                                # addresses, deduplicating them in
-                                # case they match post-normalization
-                                # and treating duplicate preferred
-                                # addresses as # non-preferred
-                                else:
-                                    if ((address not in owners[owner]['extra'])
-                                            and (address != owners[owner].get(
-                                                'preferred', ''))):
-                                        owners[owner]['extra'].append(address)
+                            # Store a list of non-preferred
+                            # addresses, deduplicating them in
+                            # case they match post-normalization
+                            # and treating duplicate preferred
+                            # addresses as # non-preferred
+                            else:
+                                if ((address not in owners[owner]['extra'])
+                                        and (address != owners[owner].get(
+                                            'preferred', ''))):
+                                    owners[owner]['extra'].append(address)
 
                         # If we've seen this owner on another change
                         # in a repo under this project-team then
