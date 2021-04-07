@@ -32,6 +32,7 @@ def process(db, round):
         dirty = True
         db['projects'] = ['TC']
         db['candidates'] = {'TC': db['candidates']['TC']}
+        del db['leaderless']
     if round == 'ptl' and 'TC' in db['projects']:
         dirty = True
         db['projects'].remove('TC')
