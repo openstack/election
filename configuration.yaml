@@ -1,7 +1,7 @@
 ---
 release: xena
 election_type: tc
-tag: 0.8.0
+tag: 892c4f3a851428cf41bab57c6c283e82f1df06d8
 tc_seats: 5
 timeframe:
   name: Victoria-Wallaby

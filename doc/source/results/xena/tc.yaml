@@ -1,6 +1,16 @@
 candidates:
   TC:
   - elected: true
+    email: amy@demarco.com
+    fullname: Amy Marrich
+    ircname: spotz
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/amy%40demarco.com
+  - elected: false
+    email: flwang@catalyst.net.nz
+    fullname: Feilong Wang
+    ircname: flwang
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/flwang%40catalyst.net.nz
+  - elected: true
     email: mnaser@vexxhost.com
     fullname: Mohammed Naser
     ircname: mnaser
@@ -22,6 +32,6 @@ candidates:
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/TC/ricolin%40ricolky.com
 election: xena
 elections_results:
-  TC: No runoff required
+  TC: https://civs1.civs.us/cgi-bin/results.pl?id=E_69909177d200947c
 projects:
 - TC
