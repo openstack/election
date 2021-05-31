@@ -39,7 +39,7 @@ Our current election officials are:
 * Kendall Nelson (diablo_rojo), `knelson@openinfra.dev <mailto:knelson@openinfra.dev>`_
 
 For any questions, please contact officials by mail or over irc at
-#openstack-dev Freenode channel.
+#openstack-dev OFTC channel.
 
 
 .. _Election system:
