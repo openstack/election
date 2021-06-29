@@ -37,6 +37,7 @@ Our current election officials are:
 * Andy McCrae (andymccr), andy dot mccrae at gmail dot com
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
 * Kendall Nelson (diablo_rojo), `knelson@openinfra.dev <mailto:knelson@openinfra.dev>`_
+* Helena Spease (hspease), `helena@openinfra.dev <mailto:helena@openinfra.dev>`_
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev Freenode channel.
