@@ -1,7 +1,7 @@
 ---
 release: yoga
 election_type: combined
-tag: oct-2021-elections
+tag: 0.10.0
 tc_seats: 4
 timeframe:
   name: Wallaby-Xena
@@ -9,12 +9,18 @@ timeframe:
   end: 2021-08-24T00:00
   email_deadline: 2021-08-24T00:00
 timeline:
-  - name: TC & PTL Nominations
+  - name: TC Nominations
+    start: 2021-08-17T23:45
+    end: 2021-08-24T23:45
+  - name: PTL Nominations
     start: 2021-08-17T23:45
     end: 2021-08-24T23:45
   - name: TC Campaigning
     start: 2021-08-24T23:45
     end: 2021-08-31T23:45
-  - name: TC & PTL Election
+  - name: TC Election
+    start: 2021-08-31T23:45
+    end: 2021-09-07T23:45
+  - name: PTL Election
     start: 2021-08-31T23:45
     end: 2021-09-07T23:45
