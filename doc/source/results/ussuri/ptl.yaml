@@ -336,6 +336,8 @@ candidates:
     ircname: null
     url: https://git.openstack.org/cgit/openstack/election/plain/candidates/ussuri/Zun/feng.shengqin%40zte.com.cn
 election: ussuri
+elections_results: {}
+election_statistics: []
 leaderless:
 - Cyborg
 - Designate

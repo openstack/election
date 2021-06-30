@@ -246,6 +246,8 @@ candidates:
     ircname: ''
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/xena/Winstackers/lpetrut%40cloudbasesolutions.com
 election: xena
+elections_results: {}
+election_statistics: []
 leaderless:
 - Zaqar
 - Senlin

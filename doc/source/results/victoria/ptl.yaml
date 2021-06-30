@@ -264,6 +264,8 @@ candidates:
     ircname: ''
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/victoria/Zun/feng.shengqin%40zte.com.cn
 election: victoria
+elections_results: {}
+election_statistics: []
 leaderless:
 - Congress
 - Barbican
