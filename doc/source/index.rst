@@ -39,6 +39,7 @@ Our current election officials are:
 * Kendall Nelson (diablo_rojo), `knelson@openinfra.dev <mailto:knelson@openinfra.dev>`_
 * Helena Spease (hspease), `helena@openinfra.dev <mailto:helena@openinfra.dev>`_
 * Amy Marrich (spotz), spotz at demarco dot com
+* Belmiro Moreira (belmoreira), moreira.belmiro.email.lists at gmail.com
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
