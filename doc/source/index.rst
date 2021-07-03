@@ -40,7 +40,7 @@ Our current election officials are:
 * Helena Spease (hspease), `helena@openinfra.dev <mailto:helena@openinfra.dev>`_
 
 For any questions, please contact officials by mail or over irc at
-#openstack-dev Freenode channel.
+#openstack-dev OFTC channel.
 
 
 .. _Election system:
