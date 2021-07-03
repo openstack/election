@@ -38,6 +38,7 @@ Our current election officials are:
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
 * Kendall Nelson (diablo_rojo), `knelson@openinfra.dev <mailto:knelson@openinfra.dev>`_
 * Helena Spease (hspease), `helena@openinfra.dev <mailto:helena@openinfra.dev>`_
+* Amy Marrich (spotz), spotz at demarco dot com
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
