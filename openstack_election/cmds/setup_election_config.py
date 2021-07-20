@@ -29,8 +29,8 @@ election_parameters = {
         'events': ['Election', 'Nominations', ],
     },
     'TC': {
-        'milestone': 'Summit',
-        'weeks_prior': 6,
+        'milestone': 'Release',
+        'weeks_prior': 4,
         'events': ['Election', 'Campaigning', 'Nominations', ],
     },
 }
@@ -61,7 +61,7 @@ def iso_fmt(d):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=('Given a summit or release '
+    parser = argparse.ArgumentParser(description=('Given a release '
                                                   'date pick some dates for '
                                                   'the election'))
     # We can't rely on the current schedule being codified in the releases
