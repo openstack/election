@@ -13,9 +13,11 @@ Selecting Election Dates
 
 Things to keep in mind when selecting election dates:
 
+* Election Dates must be as per the `TC charter <https://governance.openstack.org/tc/reference/charter.html>`_
+  which is "The election is held no later than 3 weeks prior to each
+  cycle final release date(on or before ‘R-3’ week)"
 * At least 48 hours in between email deadline and poll start
 * Consider extra-atcs approval deadlines
-* Should start around R-4 for nominations period
 * Allow at least a week for nomination period
 
 ``setup-election-config`` can be used to pick some obvous dates that need to be
@@ -159,7 +161,10 @@ Selecting Election Dates
 
 Things to keep in mind when selecting election dates:
 
-* Needs to conclude by S-3 (3 Weeks prior to OpenStack Summit)
+* Election Dates must be as per the `TC charter <https://governance.openstack.org/tc/reference/charter.html>`_
+  which is "The election is held no earlier than 6 weeks and no later
+  than 4 weeks prior to each cycle final release date (between ‘R-6’
+  and ‘R-4’ week)"
 * Allow for at least 48 hours between email deadline and polling beginning
 * Allow at least a week for nomination and campaign periods
 
