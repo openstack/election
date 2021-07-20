@@ -33,6 +33,11 @@ election_parameters = {
         'weeks_prior': 4,
         'events': ['Election', 'Campaigning', 'Nominations', ],
     },
+    'combined': {
+        'milestone': 'Release',
+        'weeks_prior': 4,
+        'events': ['Election', 'Campaigning', 'Nominations'],
+    },
 }
 
 
@@ -68,7 +73,7 @@ def main():
     # repo so just get the date from the command line.
     parser.add_argument('date', type=valid_date, help='in the form YYYY-MM-DD')
     parser.add_argument('release', help='release name')
-    parser.add_argument('type', choices=['TC', 'PTL'])
+    parser.add_argument('type', choices=['TC', 'PTL', 'combined'])
     parser.add_argument('--tc-seats', default=4, choices=['4', '5'],
                         help='number of TC seats up for election')
 
@@ -115,16 +120,22 @@ def main():
     end = end.replace(hour=23, minute=45)
     events = []
     for event in params['events']:
-        name = '%s %s' % (args.type, event)
+        if args.type == 'combined':
+            if event == 'Campaigning':
+                name = 'TC %s' % event
+            else:
+                name = 'TC & PTL %s' % event
+        else:
+            name = '%s %s' % (args.type, event)
         start = end - ONE_WEEK
         events.insert(0, OrderedDict(name=name,
                                      start=iso_fmt(start),
                                      end=iso_fmt(end)))
         print('%s from %s to %s' % (name, iso_fmt(start), iso_fmt(end)))
-        # For a TC election we want the email deadline to match the beginning
-        # of the Campaigning period, which gives the officials time to
-        # validate the rolls
-        if args.type == 'TC' and event == 'Campaigning':
+        # For a TC or combined election we want the email deadline to match the
+        # beginning of the Campaigning period, which gives the officials time
+        # to validate the rolls
+        if args.type in ['TC', 'combined'] and event == 'Campaigning':
             email_deadline = start.replace(hour=0, minute=0)
         # Otherise for a PTL election we want to set the email deadline to the
         # begining of the Nomination period, agin to give officials time to
@@ -177,7 +188,7 @@ def main():
         print('Maximum: %s' % (datetime.timedelta(13*365/12)))
 
     configuration = OrderedDict(
-        release=args.release,
+        release=args.release.lower(),
         election_type=args.type.lower(),
         tag=args.date.strftime('%b-%Y-elections').lower(),
         tc_seats=int(args.tc_seats),
