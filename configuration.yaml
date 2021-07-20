@@ -1,17 +1,20 @@
 ---
-release: xena
-election_type: tc
-tag: 892c4f3a851428cf41bab57c6c283e82f1df06d8
-tc_seats: 5
+release: yoga
+election_type: combined
+tag: oct-2021-elections
+tc_seats: 4
 timeframe:
-  name: Victoria-Wallaby
-  start: 2020-04-24T00:00
-  end: 2021-03-08T00:00
-  email_deadline: 2021-03-08T00:00
+  name: Wallaby-Xena
+  start: 2020-09-25T00:00
+  end: 2021-08-24T00:00
+  email_deadline: 2021-08-24T00:00
 timeline:
-  - name: TC Vacancy Nominations
-    start: 2021-03-25T23:45
-    end: 2021-04-08T23:45
-  - name: TC Vacancy Election
-    start: 2021-04-08T23:45
-    end: 2021-04-15T23:45
+  - name: TC & PTL Nominations
+    start: 2021-08-17T23:45
+    end: 2021-08-24T23:45
+  - name: TC Campaigning
+    start: 2021-08-24T23:45
+    end: 2021-08-31T23:45
+  - name: TC & PTL Election
+    start: 2021-08-31T23:45
+    end: 2021-09-07T23:45
