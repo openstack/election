@@ -109,6 +109,9 @@ PTL Election Round
 
 When PTL Election begins:
 
+* Send email to eligible electorates to opt in to CIVS voting system using
+  their Gerrit email address in https://civs1.civs.us/cgi-bin/opt_in.pl
+
 * `Create CIVS page
   <https://wiki.openstack.org/wiki/Election_Officiating_Guidelines#Running_the_election_itself>`_
 * Upload rolls
@@ -236,6 +239,9 @@ TC Election Round
 -----------------
 
 Before TC Election begins:
+
+* Send email to eligible electorates to opt in to CIVS voting system using
+  their Gerrit email address in https://civs1.civs.us/cgi-bin/opt_in.pl
 
 * Create CIVS page
 
