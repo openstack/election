@@ -65,6 +65,38 @@ def iso_fmt(d):
     return d.strftime(ISO_FMT)
 
 
+def validate_tc_charter(election_type, release_schedule,
+                        selected_start, selected_end):
+    # NOTE (gmann): This function will validate the selected start and
+    # end date by this script against what TC charter says.
+    # As per current charter(2021-07-21):
+    # - PTL election needs to be held(start and end) on or before R-3 week
+    # - TC election needs to be held(start and end) in between of R-6 to R-4
+    # week.
+    for week in release_schedule.get('cycle', []):
+        if election_type == 'PTL':
+            expected_start_date = datetime.datetime.strptime(
+                        str(release_schedule['start-week']),
+                        "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+            if week.get('name') == 'R-3':
+                expected_end_date = datetime.datetime.strptime(
+                        week['end'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+                break
+        else:
+            if week.get('name') == 'R-6':
+                expected_start_date = datetime.datetime.strptime(
+                        week['start'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+            if week.get('name') == 'R-4':
+                expected_end_date = datetime.datetime.strptime(
+                        week['end'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+    if (selected_start < expected_start_date or
+            selected_end > expected_end_date):
+        print("Error: generated start and end date as per given dates in\n"
+              "       parameter is not matching with the TC charter,\n"
+              "       please select the release date correctly.")
+        exit(1)
+
+
 def main():
     parser = argparse.ArgumentParser(description=('Given a release '
                                                   'date pick some dates for '
@@ -128,6 +160,9 @@ def main():
         else:
             name = '%s %s' % (args.type, event)
         start = end - ONE_WEEK
+        if event == 'Election':
+            schedule = utils.get_schedule_data(names[idx+1])
+            validate_tc_charter(args.type, schedule, start, end)
         events.insert(0, OrderedDict(name=name,
                                      start=iso_fmt(start),
                                      end=iso_fmt(end)))
