@@ -24,7 +24,7 @@ LOG = logging.getLogger(__name__)
 
 
 def build_timer(app):
-    app.add_javascript("event_timer.js")
+    app.add_js_file("event_timer.js")
     output_file = os.path.join(".", "doc", "source", "events.rst")
     with open(output_file, "w") as out:
         template_dir = os.path.join(".", "doc", "source", "_exts")
