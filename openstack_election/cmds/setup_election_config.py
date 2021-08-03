@@ -97,17 +97,29 @@ def validate_tc_charter(election_type, release_schedule,
         exit(1)
 
 
+def select_release_end_date(release_schedule):
+    date = None
+    for week in release_schedule.get('cycle', []):
+        if 'x-final' in week.get('x-project', {}):
+            date = datetime.datetime.strptime(
+                       week['end'],
+                       "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+    return date
+
+
 def main():
     parser = argparse.ArgumentParser(description=('Given a release '
                                                   'date pick some dates for '
                                                   'the election'))
-    # We can't rely on the current schedule being codified in the releases
-    # repo so just get the date from the command line.
-    parser.add_argument('date', type=valid_date, help='in the form YYYY-MM-DD')
     parser.add_argument('release', help='release name')
     parser.add_argument('type', choices=['TC', 'PTL', 'combined'])
     parser.add_argument('--tc-seats', default=4, choices=['4', '5'],
                         help='number of TC seats up for election')
+    # If date is not passed in command line then, this script will
+    # automatically pick the release end date.
+    parser.add_argument('--date', default=None, type=valid_date,
+                        help='Date from release schedule in the form '
+                             'YYYY-MM-DD')
 
     args = parser.parse_args()
     args.date = args.date
@@ -123,6 +135,12 @@ def main():
     # Find where in the list the requested release sits.  This will typically
     # be very early but don't assume that.
     idx = names.index(args.release) if args.release in names else -1
+
+    # If date is not passed to this script then autimatically
+    # select the release end date.
+    if (args.date is None):
+        schedule = utils.get_schedule_data(names[idx+1])
+        args.date = select_release_end_date(schedule)
 
     # Given the release history:
     #  Stein, Rocky[0], Queens[1], Pike[2], Ocata[3]
