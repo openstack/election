@@ -1,0 +1,44 @@
+Hi,
+I would like to announce my candidacy for Cyborg PTL for the Yoga cycle.
+
+As an openstack enthusiast, I have been engaged in openstack for 4 years.
+I was lucky to make friends with openstack projects such as Cyborg
+and Watcher in 2018.
+
+I met many interesting partners, such as Matt Riedemann, Sundar Nadathur,
+Huangzhipeng, Liuli, Baoyumeng, Zhurong, Licanwei, Fengshaohe, Wangxinran,
+Shogo, Zhangbailin, Songwenping and others.
+
+You let me see the charm of the community and rigorous working attitude,
+thanks.
+
+In the past two years, except for the watcher project, I spent most of my
+time dealing with cyborg. To be honest, I know cyborg very well.
+
+At present, cyborg can manage FPGA, GPU, smartnic and other acceleration
+devices. Users can create virtual machines with acceleration resources as
+needed, which is a very cool thing.
+
+However, our cyborg project still has many things to do.
+In the next y version, I think there are mainly the following
+five things to do:
+1. Optimize the interaction between Nova and cyborg.
+The existing interface is synchronous call. On cyborg side, we can change
+synchronization to asynchronous to save the landing time of concurrent
+virtual machines.
+
+2. Support for more drivers and more universal drivers.
+At present, vgpu driver is not supported in cyborg. I hope to implement
+it in the Yoga cycle.
+
+3. Implementation of disable and enable acceleration devices.
+
+4. More bugfix and documentation enhancements.
+
+5. More virtual machine operation support, such as cold migration.
+
+I hope we can bring users a more exciting experience in the next
+Yoga version.
+
+Thanks,
+Ke Chen(chenke)
