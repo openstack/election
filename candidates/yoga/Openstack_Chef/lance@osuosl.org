@@ -1,0 +1,20 @@
+Hello,
+
+I am hereby announcing my candidancy as OpenStack Chef PTL for the
+Yoga release cycle.
+
+Over the past year we have made a lot of progress on cleaning up and
+improving OpenStack Chef both in testing and functionality.
+
+My goals for the coming release cycle:
+
+- Release cookbooks for the Train release
+- Add support for CentOS 8
+- Get cookbooks updated to support Ussuri, Victoria, Wallaby, Xena and Yoga
+  releases
+- Start migrating cookbooks to be more resource driven similar to Sous
+  Chefs cookbooks and move away from using attributes (where possible).
+
+Thanks-
+
+Lance Albertson (ramereth)
