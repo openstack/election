@@ -1,0 +1,30 @@
+
+Hi all,
+
+This is my candidacy to continue my work as the Senlin PTL for the Yoga cycle.
+
+In past several cycles, we finished many features, testing and bug fixing works.
+For example:
+ * Kubernetes: Added dependency relationship between the master cluster and the
+   worker cluster created for Kubernetes.
+ * Docker driver: Supported update name operation for docker profile.
+ * Nova server: Added operation support to migrate a nova server node.
+ * Health check improve: Added a new detection type that actively pools the node
+   health using a URL specified in the health policy.
+ * Split Senlin-Engine service into three services to make the engine more
+   resilent.
+ * OpenStack-wide Goals: Deprecate the JSON formatted policy file.
+ * Testing: API/Function/Integration test were moved to senlin-tempest-plugin.
+
+As a PTL in Yoga cycle, I'd like to continue to focus on the tasks as follows:
+ * Continuous improvement of documents.
+ * Actively monitor incoming bug reports and assigned to fix them.
+ * Acknowledgment of OpenStack-wide Goals.
+ * Release version Y on schedule.
+
+Thanks for taking the time to read through this Roadmap and to consider my
+candidacy.
+
+Best Regards,
+XueFeng
+
