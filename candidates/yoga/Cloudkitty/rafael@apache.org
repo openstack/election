@@ -1,0 +1,13 @@
+Hello all,
+
+I'd like to announce my candidacy to continue the PTL role for CloudKitty project in the Yoga cycle.
+
+I've been working with OpenStack since 2018 and contributing to Cloudkitty since May 2019. I hope that we can continue to achieve goals together, making CloudKitty better and more robust. We should also aim to grow our contributor base and continue to spread the word about CloudKitty (blog posts, social media, etc).
+
+
+Features that I think we should aim for during the next cycle: the reprocessing API (https://review.opendev.org/c/openstack/cloudkitty/+/799207), and Storage state status (https://review.opendev.org/c/openstack/cloudkitty/+/777442), both of which are already proposed and in the review process.
+
+Thank you for your consideration.
+
+Thank you,
+Rafael Weingärtner
