@@ -1,0 +1,41 @@
+Greetings,
+
+In case if you don't know me, I've been working on and contributing to Magnum
+since Queens release as a core developer. And I have done a lot of work for Magnum
+to help it getting production-ready. Meanwhile, I'm the Head of R&D at Catalyst
+Cloud is a cloud provider based in New Zealand. That said, I really
+understand this lovely project from both upstream and downstream, and the
+real-world requirements from both public cloud and private cloud users, which make
+me a good candidate for the PTL position.
+
+In X cycle we have done quite a lot of fantastic works, but there are still some
+areas we can/should improve. For Y release, things I'd like to do:
+
+1. Keep improving the rolling upgrade feature
+
+Kubernetes community is still running fast and we need to make sure Magnum's
+user can continually upgrade their existing k8s cluster to a newer version
+without downtime.
+
+2. Containerize Kubernetes master so as to resize it
+
+This could be one of the most interesting features for Magnum and it's
+definitely hard work. Running Kubernetes master nodes in a seed/root Kubernetes
+could bring us a lot of benefits.
+
+3. Get rid of the discovery service
+
+Now Magnum still depends on the external discovery service to bootstrap multi
+masters which introduces some issues when the cloud is in a private environment
+cannot reach external Internet.
+
+It has been a fantastic experience working with this amazing team and I know
+without the dedication and hard work of everyone who has contributed to Magnum
+we can't get those good work done. So the PTL of this cool team is most like a
+facilitator, coordinator, and mentor. I would be pleased to serve as PTL for
+Magnum for the Y cycle and I'd appreciate your vote.
+
+Thanks for your consideration!
+
+
+
