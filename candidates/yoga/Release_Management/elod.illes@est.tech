@@ -1,0 +1,21 @@
+Hello OpenStack Community,
+
+I would like to announce my candidacy for PTL of the Release Management team
+for the Yoga cycle.
+
+I became core member in the Release Management team during Wallaby cycle to
+help the work of the team with release patch reviews, but I was involved in
+the release process for some time already as my focus has been Stable
+Maintenance (especially around the introduction of the Extended Maintenance
+process) as being member of the stable-maint-core group.
+
+Thanks to the great work of the former PTLs and team members of the Release
+Management team, now the process is fairly automated and should be
+straightforward to follow. During the Yoga cycle I'm planning to get familiar
+with all the aspects of the release management (with the help of the more
+experienced team members) and continue the work that my predecessors started
+and keep things maintained.
+
+Thanks for your consideration,
+
+Elod Illes (elodilles)
