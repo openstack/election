@@ -1,0 +1,27 @@
+candidates:
+  TC:
+  - elected: true
+    email: dms@danplanet.com
+    fullname: Dan Smith
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/yoga/TC/dms%40danplanet.com
+  - elected: true
+    email: gmann@ghanshyammann.com
+    fullname: Ghanshyam Mann
+    ircname: gmann
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/yoga/TC/gmann%40ghanshyammann.com
+  - elected: true
+    email: jsbryant@electronicjungle.net
+    fullname: Jay Bryant
+    ircname: jungleboyj
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/yoga/TC/jsbryant%40electronicjungle.net
+  - elected: true
+    email: kennelson11@gmail.com
+    fullname: Kendall Nelson
+    ircname: diablo_rojo
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/yoga/TC/kennelson11%40gmail.com
+election: yoga
+elections_results:
+  TC: 
+projects:
+- TC

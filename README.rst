@@ -136,7 +136,7 @@ When PTL Election ends:
 * Close the election and update the results:
 
   * ``tox -evenv -- close-election --round ptl``
-  * ``edit doc/sources/pike/ptl.yaml`` and set election winners to ``True``
+  * ``edit doc/sources/results/release/ptl.yaml`` and set election winners to ``true``
   * NOTE: We no longer need document TC-APPOINTMENT or LEADERLESS as the
     ``update-governance`` step will communicate that to the TC and the process
     in that repo will set the project leader.
@@ -277,7 +277,7 @@ When TC Election ends:
 * Close the election
 * Run: ``tox -e venv -- close-election --round tc``
 
-  * ``edit doc/source/pike/tc.yaml`` setting the winners to ``True``
+  * ``edit doc/source/results/release/tc.yaml`` setting the winners to ``true``
   * Commit change and push review
 
 * Send *TC Results* email
