@@ -1,26 +1,26 @@
 ---
-release: yoga
+release: z
 election_type: combined
-tag: 0.10.0
-tc_seats: 4
+tag: mar-2022-elections
+tc_seats: 5
 timeframe:
-  name: Wallaby-Xena
-  start: 2020-09-25T00:00
-  end: 2021-08-24T00:00
-  email_deadline: 2021-08-24T00:00
+  name: Xena-Yoga
+  start: 2021-03-26T00:00
+  end: 2022-02-15T00:00
+  email_deadline: 2022-02-15T00:00
 timeline:
-  - name: TC Nominations
-    start: 2021-08-17T23:45
-    end: 2021-08-24T23:45
   - name: PTL Nominations
-    start: 2021-08-17T23:45
-    end: 2021-08-24T23:45
+    start: 2022-02-08T23:45
+    end: 2022-02-15T23:45
+  - name: TC Nominations
+    start: 2022-02-08T23:45
+    end: 2022-02-15T23:45
   - name: TC Campaigning
-    start: 2021-08-24T23:45
-    end: 2021-08-31T23:45
-  - name: TC Election
-    start: 2021-08-31T23:45
-    end: 2021-09-07T23:45
+    start: 2022-02-15T23:45
+    end: 2022-02-22T23:45
   - name: PTL Election
-    start: 2021-08-31T23:45
-    end: 2021-09-07T23:45
+    start: 2022-02-22T23:45
+    end: 2022-03-01T23:45
+  - name: TC Election
+    start: 2022-02-22T23:45
+    end: 2022-03-01T23:45
