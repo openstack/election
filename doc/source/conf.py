@@ -36,11 +36,6 @@ extensions = [
 
 todo_include_todos = True
 
-# Define shorthand roles for making links to common destinations.
-extlinks = {
-    'repo': ('https://opendev.org/openstack/%s', ''),
-}
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
