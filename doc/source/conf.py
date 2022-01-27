@@ -49,8 +49,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'OpenStack Election'
-copyright = u'2015, OpenStack'
+project = 'OpenStack Election'
+copyright = '2015, OpenStack'
 
 # openstackdocstheme options
 openstackdocs_repo_name = 'openstack/election'
@@ -183,8 +183,8 @@ htmlhelp_basename = 'Tempestdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'Governance.tex', u'OpenStack Governance Documents',
-   u'OpenStack TC', 'manual'),
+  ('index', 'Governance.tex', 'OpenStack Governance Documents',
+   'OpenStack TC', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -225,8 +225,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Governance', u'OpenStack Governance Documents',
-   u'OpenStack TC', 'Governance', 'One line description of project.',
+  ('index', 'Governance', 'OpenStack Governance Documents',
+   'OpenStack TC', 'Governance', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -243,10 +243,10 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'OpenStack Election'
-epub_author = u'OpenStack Election Officials'
-epub_publisher = u'OpenStack'
-epub_copyright = u'2015, OpenStack'
+epub_title = 'OpenStack Election'
+epub_author = 'OpenStack Election Officials'
+epub_publisher = 'OpenStack'
+epub_copyright = '2015, OpenStack'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.

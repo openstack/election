@@ -204,7 +204,7 @@ def get_fullname(member, filepath=None):
     if filepath and filepath in exceptions:
         return exceptions[filepath]
 
-    full_name = u''
+    full_name = ''
     member_data = member.get('data', [])
     if member_data:
         first_name = member_data[0].get('first_name', '')
