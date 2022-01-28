@@ -40,6 +40,7 @@ Our current election officials are:
 * Amy Marrich (spotz), amy at demarco dot com
 * Belmiro Moreira (belmoreira), moreira.belmiro.email.lists at gmail.com
 * Ghanshyam Mann (gmann), gmann at ghanshyammann dot com
+* Jay Bryant (jungleboyj), jsbryant at electronicjungle.net
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
