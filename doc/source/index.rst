@@ -100,7 +100,7 @@ repository. Here are the required steps:
   git clone https://opendev.org/openstack/election ; cd election
 * Create a new file candidates/<cycle>/<project_name>/<email_address>
   containing the candidate statement.
-* Commit the candidacy: git add candidates/<cycle>/*/*;
+* Commit the candidacy: git add candidates/<cycle>/\*/\*;
   git commit -m "Adding <your_name> candidacy for <project_name>"
 * Submit your candidacy: git review
 
