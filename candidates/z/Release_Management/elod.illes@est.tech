@@ -1,0 +1,20 @@
+Hello OpenStack Community,
+
+I would like to announce my candidacy for the PTL role of the Release
+Management team for the Z cycle.
+
+I am core member in the Release Management team since Wallaby, but I followed
+the team's work even before that, and I also have been the PTL of the team
+for Yoga cycle for some months now. (Though, from release management
+perspective this is not a long period, since the most laborous part will
+only start in the coming weeks ;)) Furthermore, as in the past, beside
+release management duties, my focus is still on stable maintenance as well,
+since I am stable-maint-core member, too.
+
+The next cycle's challanges will be to prepare our tooling to alphabet
+roll-over after the Z cylce and to adjust to any other changes in our
+processes. And of course, parallel to this, to release OpenStack Z :)
+
+Thanks for your consideration,
+
+Elod Illes (elodilles)
