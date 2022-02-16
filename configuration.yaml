@@ -1,7 +1,7 @@
 ---
-release: z
+release: zed
 election_type: combined
-tag: mar-2022-elections
+tag: 0.12.0
 tc_seats: 5
 timeframe:
   name: Xena-Yoga
