@@ -1,0 +1,252 @@
+candidates:
+  Barbican:
+  - elected: true
+    email: dmendiza@redhat.com
+    fullname: "Douglas Mendiz\xE1bal"
+    ircname: redrobot
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Barbican/dmendiza%40redhat.com
+  Blazar:
+  - elected: true
+    email: pierre@stackhpc.com
+    fullname: Pierre Riteau
+    ircname: priteau
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Blazar/pierre%40stackhpc.com
+  Cinder:
+  - elected: true
+    email: rajatdhasmana@gmail.com
+    fullname: Rajat Dhasmana
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Cinder/rajatdhasmana%40gmail.com
+  Cloudkitty:
+  - elected: true
+    email: rafael@apache.org
+    fullname: Rafael Weingartner
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Cloudkitty/rafael%40apache.org
+  Cyborg:
+  - elected: true
+    email: zhangbailin@inspur.com
+    fullname: Bailin Zhang
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Cyborg/zhangbailin%40inspur.com
+  Designate:
+  - elected: true
+    email: johnsomor@gmail.com
+    fullname: Michael Johnson
+    ircname: johnsom
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Designate/johnsomor%40gmail.com
+  Ec2_Api:
+  - elected: true
+    email: andrey.mp@gmail.com
+    fullname: Andrey Pavlov
+    ircname: andrey-mp
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Ec2_Api/andrey.mp%40gmail.com
+  Glance:
+  - elected: true
+    email: akekane@redhat.com
+    fullname: Abhishek Kekane
+    ircname: abhishekk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Glance/akekane%40redhat.com
+  Horizon:
+  - elected: true
+    email: manchandavishal143@gmail.com
+    fullname: Vishal Manchanda
+    ircname: vishalmanchanda
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Horizon/manchandavishal143%40gmail.com
+  Ironic:
+  - elected: true
+    email: iurygregory@gmail.com
+    fullname: Iury Gregory Melo Ferreira
+    ircname: iurygregory
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Ironic/iurygregory%40gmail.com
+  Keystone:
+  - elected: true
+    email: dmendiza@redhat.com
+    fullname: "Douglas Mendiz\xE1bal"
+    ircname: redrobot
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Keystone/dmendiza%40redhat.com
+  Kolla:
+  - elected: true
+    email: mnasiadka@gmail.com
+    fullname: Michal Nasiadka
+    ircname: mnasiadka
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Kolla/mnasiadka%40gmail.com
+  Kuryr:
+  - elected: true
+    email: maysa.macedo95@gmail.com
+    fullname: Maysa de Macedo Souza
+    ircname: maysams
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Kuryr/maysa.macedo95%40gmail.com
+  Manila:
+  - elected: true
+    email: ces.eduardo98@gmail.com
+    fullname: Carlos Silva
+    ircname: carloss
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Manila/ces.eduardo98%40gmail.com
+  Neutron:
+  - elected: true
+    email: katonalala@gmail.com
+    fullname: Lajos Katona
+    ircname: lajoskatona
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Neutron/katonalala%40gmail.com
+  Nova:
+  - elected: true
+    email: sbauza@redhat.com
+    fullname: Sylvain Bauza
+    ircname: bauzas
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Nova/sbauza%40redhat.com
+  Octavia:
+  - elected: true
+    email: gthiemon@redhat.com
+    fullname: Gregory Thiemonge
+    ircname: gthiemonge
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Octavia/gthiemon%40redhat.com
+  OpenStackAnsible:
+  - elected: true
+    email: noonedeadpunk@ya.ru
+    fullname: Dmitriy Rabotyagov
+    ircname: noonedeadpunk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/OpenStackAnsible/noonedeadpunk%40ya.ru
+  OpenStackSDK:
+  - elected: true
+    email: artem.goncharov@gmail.com
+    fullname: Artem Goncharov
+    ircname: gtema
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/OpenStackSDK/artem.goncharov%40gmail.com
+  OpenStack_Helm:
+  - elected: true
+    email: gagehugo@gmail.com
+    fullname: Gage Hugo
+    ircname: gagehugo
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/OpenStack_Helm/gagehugo%40gmail.com
+  Puppet_OpenStack:
+  - elected: true
+    email: tkajinam@redhat.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Puppet_OpenStack/tkajinam%40redhat.com
+  Quality_Assurance:
+  - elected: true
+    email: mkopec@redhat.com
+    fullname: Martin Kopec
+    ircname: kopecmartin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Quality_Assurance/mkopec%40redhat.com
+  Rally:
+  - elected: true
+    email: andr.kurilin@gmail.com
+    fullname: Andrey Kurilin
+    ircname: andreykurilin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Rally/andr.kurilin%40gmail.com
+  Release_Management:
+  - elected: true
+    email: elod.illes@est.tech
+    fullname: Elod Illes
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Release_Management/elod.illes%40est.tech
+  Requirements:
+  - elected: true
+    email: mthode@mthode.org
+    fullname: Matthew Thode
+    ircname: prometheanfire
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Requirements/mthode%40mthode.org
+  Sahara:
+  - elected: true
+    email: qiujunting@inspur.com
+    fullname: fossen qiu
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Sahara/qiujunting%40inspur.com
+  Storlets:
+  - elected: true
+    email: tkajinam@redhat.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Storlets/tkajinam%40redhat.com
+  Swift:
+  - elected: true
+    email: tburke@nvidia.com
+    fullname: Tim Burke
+    ircname: timburke
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Swift/tburke%40nvidia.com
+  Tacker:
+  - elected: true
+    email: yasufum.o@gmail.com
+    fullname: Yasufumi Ogawa
+    ircname: yasufum
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Tacker/yasufum.o%40gmail.com
+  Telemetry:
+  - elected: true
+    email: mrunge@redhat.com
+    fullname: Matthias Runge
+    ircname: mrunge
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Telemetry/mrunge%40redhat.com
+  Tripleo:
+  - elected: true
+    email: jslagle@redhat.com
+    fullname: James Slagle
+    ircname: slagle
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Tripleo/jslagle%40redhat.com
+  Vitrage:
+  - elected: true
+    email: eyalb1@gmail.com
+    fullname: Eyal Bar-Ilan
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Vitrage/eyalb1%40gmail.com
+  Winstackers:
+  - elected: true
+    email: lpetrut@cloudbasesolutions.com
+    fullname: Lucian Petrut
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/zed/Winstackers/lpetrut%40cloudbasesolutions.com
+election: zed
+leaderless:
+- Zun
+- Freezer
+- Watcher
+- Murano
+- Masakari
+- Adjutant
+- Solum
+- Venus
+- Openstack_Chef
+- Senlin
+- Zaqar
+- Heat
+- Trove
+- Monasca
+- Skyline
+- Magnum
+- OpenStack_Charms
+projects:
+- Kuryr
+- Nova
+- OpenStack_Helm
+- Tacker
+- Tripleo
+- Telemetry
+- Glance
+- Puppet_OpenStack
+- Blazar
+- Swift
+- Vitrage
+- Quality_Assurance
+- OpenStackSDK
+- Rally
+- Manila
+- Release_Management
+- Cinder
+- Requirements
+- Designate
+- Cloudkitty
+- Kolla
+- OpenStackAnsible
+- Octavia
+- Neutron
+- Keystone
+- Horizon
+- Storlets
+- Cyborg
+- Barbican
+- Ec2_Api
+- Ironic
+- Sahara
+- Winstackers
