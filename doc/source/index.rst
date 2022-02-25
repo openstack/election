@@ -37,6 +37,7 @@ Our current election officials are:
 * Andy McCrae (andymccr), andy dot mccrae at gmail dot com
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
 * Helena Spease (hspease), `helena@openinfra.dev <mailto:helena@openinfra.dev>`_
+* Amy Marrich (spotz), amy at demarco dot com
 * Belmiro Moreira (belmoreira), moreira.belmiro.email.lists at gmail.com
 * Ghanshyam Mann (gmann), gmann at ghanshyammann dot com
 * Jay Bryant (jungleboyj), jsbryant at electronicjungle.net
