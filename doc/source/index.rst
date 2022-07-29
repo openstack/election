@@ -97,13 +97,20 @@ https://docs.openstack.org/infra/manual/developers.html
 Candidacies now need to be submitted as a text file to the openstack/election
 repository. Here are the required steps:
 
-* Clone the election repository:
-  git clone https://opendev.org/openstack/election ; cd election
+* Clone the election repository::
+
+   git clone https://opendev.org/openstack/election ; cd election
+
 * Create a new file candidates/<cycle>/<project_name>/<email_address>
   containing the candidate statement.
-* Commit the candidacy: git add candidates/<cycle>/\*/\*;
-  git commit -m "Adding <your_name> candidacy for <project_name>"
-* Submit your candidacy: git review
+* Commit the candidacy::
+
+   git add candidates/<cycle>/*/*
+   git commit -m "Adding <your_name> candidacy for <project_name>"
+
+* Submit your candidacy::
+
+   git review
 
 For example Dana Developer (ddev on IRC) would compose a platform in a file
 named "candidates/newton/Nova/dana\@inconnu.org" to submit a Newton Nova PTL
