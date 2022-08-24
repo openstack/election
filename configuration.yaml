@@ -1,26 +1,26 @@
 ---
-release: zed
+release: antelope
 election_type: combined
-tag: 0.12.0
-tc_seats: 5
+tag: oct-2022-elections
+tc_seats: 4
 timeframe:
-  name: Xena-Yoga
-  start: 2021-03-26T00:00
-  end: 2022-02-15T00:00
-  email_deadline: 2022-02-15T00:00
+  name: Yoga-Zed
+  start: 2021-09-17T00:00
+  end: 2022-08-31T00:00
+  email_deadline: 2022-08-31T00:00
 timeline:
   - name: PTL Nominations
-    start: 2022-02-08T23:45
-    end: 2022-02-15T23:45
+    start: 2022-08-24T23:45
+    end: 2022-08-31T23:45
   - name: TC Nominations
-    start: 2022-02-08T23:45
-    end: 2022-02-15T23:45
+    start: 2022-08-24T23:45
+    end: 2022-08-31T23:45
   - name: TC Campaigning
-    start: 2022-02-15T23:45
-    end: 2022-02-22T23:45
+    start: 2022-08-31T23:45
+    end: 2022-09-07T23:45
   - name: PTL Election
-    start: 2022-02-22T23:45
-    end: 2022-02-24T23:45
+    start: 2022-09-07T23:45
+    end: 2022-09-14T23:45
   - name: TC Election
-    start: 2022-02-22T23:45
-    end: 2022-02-24T23:45
+    start: 2022-09-07T23:45
+    end: 2022-09-14T23:45
