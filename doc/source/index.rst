@@ -41,6 +41,7 @@ Our current election officials are:
 * Belmiro Moreira (belmoreira), moreira.belmiro.email.lists at gmail.com
 * Ghanshyam Mann (gmann), gmann at ghanshyammann dot com
 * Jay Bryant (jungleboyj), jsbryant at electronicjungle.net
+* Kristi Nikolla (knikolla), knikolla at bu.edu
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
