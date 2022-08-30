@@ -6,15 +6,15 @@ tc_seats: 4
 timeframe:
   name: Yoga-Zed
   start: 2021-09-17T00:00
-  end: 2022-08-31T00:00
-  email_deadline: 2022-08-31T00:00
+  end: 2022-09-07T00:00
+  email_deadline: 2022-09-07T00:00
 timeline:
   - name: PTL Nominations
     start: 2022-08-24T23:45
-    end: 2022-08-31T23:45
+    end: 2022-09-07T23:45
   - name: TC Nominations
     start: 2022-08-24T23:45
-    end: 2022-08-31T23:45
+    end: 2022-09-07T23:45
   - name: TC Campaigning
     start: 2022-08-31T23:45
     end: 2022-09-07T23:45
