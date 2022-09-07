@@ -1,7 +1,7 @@
 ---
 release: antelope
 election_type: combined
-tag: oct-2022-elections
+tag: 0.13.0
 tc_seats: 4
 timeframe:
   name: Yoga-Zed
