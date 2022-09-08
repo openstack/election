@@ -16,11 +16,11 @@ timeline:
     start: 2022-08-24T23:45
     end: 2022-09-07T23:45
   - name: TC Campaigning
-    start: 2022-08-31T23:45
-    end: 2022-09-07T23:45
+    start: 2022-09-07T23:45
+    end: 2022-09-12T23:45
   - name: PTL Election
-    start: 2022-09-07T23:45
-    end: 2022-09-14T23:45
+    start: 2022-09-12T23:45
+    end: 2022-09-19T23:45
   - name: TC Election
-    start: 2022-09-07T23:45
-    end: 2022-09-14T23:45
+    start: 2022-09-12T23:45
+    end: 2022-09-19T23:45
