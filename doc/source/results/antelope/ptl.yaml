@@ -1,0 +1,293 @@
+candidates:
+  Barbican:
+  - elected: true
+    email: xek@redhat.com
+    fullname: Grzegorz Grasza
+    ircname: xek
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Barbican/xek%40redhat.com
+  Blazar:
+  - elected: true
+    email: pierre@stackhpc.com
+    fullname: Pierre Riteau
+    ircname: priteau
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Blazar/pierre%40stackhpc.com
+  Cinder:
+  - elected: true
+    email: rajatdhasmana@gmail.com
+    fullname: Rajat Dhasmana
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Cinder/rajatdhasmana%40gmail.com
+  Cloudkitty:
+  - elected: true
+    email: rafael@apache.org
+    fullname: Rafael Weingartner
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Cloudkitty/rafael%40apache.org
+  Cyborg:
+  - elected: true
+    email: songwenping@inspur.com
+    fullname: alex song
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Cyborg/songwenping%40inspur.com
+  Designate:
+  - elected: true
+    email: johnsomor@gmail.com
+    fullname: Michael Johnson
+    ircname: johnsom
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Designate/johnsomor%40gmail.com
+  Ec2_Api:
+  - elected: true
+    email: andrey.mp@gmail.com
+    fullname: Andrey Pavlov
+    ircname: andrey-mp
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Ec2_Api/andrey.mp%40gmail.com
+  Freezer:
+  - elected: true
+    email: ge.cong@zte.com.cn
+    fullname: ge cong
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Freezer/ge.cong%40zte.com.cn
+  Glance:
+  - elected: true
+    email: pdeore@redhat.com
+    fullname: Pranali Deore
+    ircname: pdeore
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Glance/pdeore%40redhat.com
+  Heat:
+  - elected: true
+    email: bshephar@redhat.com
+    fullname: Brendan Shephard
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Heat/bshephar%40redhat.com
+  Horizon:
+  - elected: true
+    email: manchandavishal143@gmail.com
+    fullname: Vishal Manchanda
+    ircname: vishalmanchanda
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Horizon/manchandavishal143%40gmail.com
+  Ironic:
+  - elected: false
+    email: iurygregory@gmail.com
+    fullname: Iury Gregory Melo Ferreira
+    ircname: iurygregory
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Ironic/iurygregory%40gmail.com
+  - elected: true
+    email: jay@jvf.cc
+    fullname: Jay Faulkner
+    ircname: JayF
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Ironic/jay%40jvf.cc
+  Kolla:
+  - elected: true
+    email: mnasiadka@gmail.com
+    fullname: Michal Nasiadka
+    ircname: mnasiadka
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Kolla/mnasiadka%40gmail.com
+  Kuryr:
+  - elected: true
+    email: gryf73@gmail.com
+    fullname: Roman Dobosz
+    ircname: gryf
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Kuryr/gryf73%40gmail.com
+  Magnum:
+  - elected: true
+    email: jake.yip@unimelb.edu.au
+    fullname: Jake Yip
+    ircname: jakeyip
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Magnum/jake.yip%40unimelb.edu.au
+  Manila:
+  - elected: true
+    email: ces.eduardo98@gmail.com
+    fullname: Carlos Silva
+    ircname: carloss
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Manila/ces.eduardo98%40gmail.com
+  Monasca:
+  - elected: true
+    email: martin@chaconpiza.com
+    fullname: Martin Chacon Piza
+    ircname: chaconpiza
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Monasca/martin%40chaconpiza.com
+  Murano:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Murano/aaronzhu1121%40gmail.com
+  Neutron:
+  - elected: true
+    email: ralonsoh@redhat.com
+    fullname: Rodolfo Alonso Hernandez
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Neutron/ralonsoh%40redhat.com
+  Nova:
+  - elected: true
+    email: sbauza@redhat.com
+    fullname: Sylvain Bauza
+    ircname: bauzas
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Nova/sbauza%40redhat.com
+  Octavia:
+  - elected: true
+    email: gthiemon@redhat.com
+    fullname: Gregory Thiemonge
+    ircname: gthiemonge
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Octavia/gthiemon%40redhat.com
+  OpenStackAnsible:
+  - elected: true
+    email: noonedeadpunk@gmail.com
+    fullname: Dmitriy Rabotyagov
+    ircname: noonedeadpunk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/OpenStackAnsible/noonedeadpunk%40gmail.com
+  OpenStackSDK:
+  - elected: true
+    email: artem.goncharov@gmail.com
+    fullname: Artem Goncharov
+    ircname: gtema
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/OpenStackSDK/artem.goncharov%40gmail.com
+  OpenStack_Helm:
+  - elected: true
+    email: gagehugo@gmail.com
+    fullname: Gage Hugo
+    ircname: gagehugo
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/OpenStack_Helm/gagehugo%40gmail.com
+  Openstack_Chef:
+  - elected: true
+    email: lance@osuosl.org
+    fullname: Lance Albertson
+    ircname: Ramereth
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Openstack_Chef/lance%40osuosl.org
+  Puppet_OpenStack:
+  - elected: true
+    email: tkajinam@redhat.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Puppet_OpenStack/tkajinam%40redhat.com
+  Quality_Assurance:
+  - elected: true
+    email: mkopec@redhat.com
+    fullname: Martin Kopec
+    ircname: kopecmartin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Quality_Assurance/mkopec%40redhat.com
+  Rally:
+  - elected: true
+    email: andr.kurilin@gmail.com
+    fullname: Andrey Kurilin
+    ircname: andreykurilin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Rally/andr.kurilin%40gmail.com
+  Skyline:
+  - elected: true
+    email: wu.wenxiang@99cloud.net
+    fullname: Wenxiang Wu
+    ircname: wu_wenxiang
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Skyline/wu.wenxiang%4099cloud.net
+  Solum:
+  - elected: true
+    email: aaronzhu1121@gmail.com
+    fullname: Rong Zhu
+    ircname: zhurong
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Solum/aaronzhu1121%40gmail.com
+  Storlets:
+  - elected: true
+    email: tkajinam@redhat.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Storlets/tkajinam%40redhat.com
+  Tacker:
+  - elected: true
+    email: yasufum.o@gmail.com
+    fullname: Yasufumi Ogawa
+    ircname: yasufum
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Tacker/yasufum.o%40gmail.com
+  Telemetry:
+  - elected: true
+    email: mrunge@redhat.com
+    fullname: Matthias Runge
+    ircname: mrunge
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Telemetry/mrunge%40redhat.com
+  Tripleo:
+  - elected: true
+    email: ramishra@redhat.com
+    fullname: Rabi Mishra
+    ircname: ramishra
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Tripleo/ramishra%40redhat.com
+  Trove:
+  - elected: true
+    email: wchy1001@gmail.com
+    fullname: wu chunyang
+    ircname: wuchunyang
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Trove/wchy1001%40gmail.com
+  Vitrage:
+  - elected: true
+    email: eyalb1@gmail.com
+    fullname: Eyal Bar-Ilan
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Vitrage/eyalb1%40gmail.com
+  Watcher:
+  - elected: true
+    email: chen.ke14@zte.com.cn
+    fullname: chen ke
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Watcher/chen.ke14%40zte.com.cn
+  Winstackers:
+  - elected: true
+    email: lpetrut@cloudbasesolutions.com
+    fullname: Lucian Petrut
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Winstackers/lpetrut%40cloudbasesolutions.com
+  Zaqar:
+  - elected: true
+    email: sxmatch1986@gmail.com
+    fullname: Hao Wang
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/antelope/Zaqar/sxmatch1986%40gmail.com
+election: antelope
+elections_results:
+  Ironic: https://civs1.civs.us/cgi-bin/results.pl?id=E_c7d81a19f30c67f0
+leaderless:
+- Keystone
+- Venus
+- Zun
+- OpenStack_Charms
+- Adjutant
+- Senlin
+- Sahara
+- Swift
+- Masakari
+projects:
+- Barbican
+- Puppet_OpenStack
+- Magnum
+- Blazar
+- Horizon
+- Neutron
+- OpenStack_Helm
+- Cyborg
+- Trove
+- Cloudkitty
+- Cinder
+- Storlets
+- Openstack_Chef
+- Rally
+- Solum
+- Ec2_Api
+- Quality_Assurance
+- Designate
+- Murano
+- Monasca
+- Kolla
+- Manila
+- Kuryr
+- Telemetry
+- Heat
+- Winstackers
+- Vitrage
+- Zaqar
+- Skyline
+- OpenStackAnsible
+- Freezer
+- Ironic
+- Tripleo
+- Watcher
+- Nova
+- Glance
+- Octavia
+- OpenStackSDK
+- Tacker
