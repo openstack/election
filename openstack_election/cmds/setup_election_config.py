@@ -54,9 +54,9 @@ def valid_date(opt):
     return d.replace(tzinfo=pytz.UTC)
 
 
-def first_tuesday(date):
+def find_previous_wednesday(date):
     # The are smarter ways to do this
-    while date.weekday() != 1:
+    while date.weekday() != 2:
         date -= datetime.timedelta(days=1)
     return date
 
@@ -164,8 +164,8 @@ def main():
                                                  args.date.date()))
     end = args.date - offset
     print('Latest possible completion is at: %s' % (end.date()))
-    end = first_tuesday(end)
-    print('Moving back to Tuesday: %s' % (end.date()))
+    end = find_previous_wednesday(end)
+    print('Moving back to Wednesday: %s' % (end.date()))
 
     end = end.replace(hour=23, minute=45)
     events = []
