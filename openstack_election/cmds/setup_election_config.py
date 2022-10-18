@@ -140,6 +140,9 @@ def main():
     if (args.date is None):
         schedule = utils.get_schedule_data(names[idx+1])
         args.date = select_release_end_date(schedule)
+        if args.date is None:
+            print("Error: no end date found in series data")
+            exit(1)
 
     # Given the release history:
     #  Stein, Rocky[0], Queens[1], Pike[2], Ocata[3]
