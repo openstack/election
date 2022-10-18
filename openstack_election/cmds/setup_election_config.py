@@ -122,7 +122,6 @@ def main():
                              'YYYY-MM-DD')
 
     args = parser.parse_args()
-    args.date = args.date
     args.release = args.release.lower()
 
     params = election_parameters[args.type]
