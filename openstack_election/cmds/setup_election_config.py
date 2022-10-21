@@ -97,10 +97,11 @@ def validate_tc_charter(election_type, release_schedule,
         exit(1)
 
 
-def select_release_end_date(release_schedule):
+def select_release_end_date(release_name, release_schedule):
     date = None
+    event = '%s-final' % (release_name[0:1])
     for week in release_schedule.get('cycle', []):
-        if 'x-final' in week.get('x-project', {}):
+        if event in week.get('x-project', []):
             date = datetime.datetime.strptime(
                        week['end'],
                        "%Y-%m-%d").replace(tzinfo=pytz.UTC)
@@ -139,7 +140,7 @@ def main():
     # select the release end date.
     if (args.date is None):
         schedule = utils.get_schedule_data(names[idx+1])
-        args.date = select_release_end_date(schedule)
+        args.date = select_release_end_date(names[idx+1], schedule)
         if args.date is None:
             print("Error: no end date found in series data")
             exit(1)
