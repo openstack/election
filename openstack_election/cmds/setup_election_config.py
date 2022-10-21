@@ -102,9 +102,7 @@ def select_release_end_date(release_name, release_schedule):
     event = '%s-final' % (release_name[0:1])
     for week in release_schedule.get('cycle', []):
         if event in week.get('x-project', []):
-            date = datetime.datetime.strptime(
-                       week['end'],
-                       "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+            date = valid_date(week['end'])
     return date
 
 
@@ -157,10 +155,8 @@ def main():
     schedule = utils.get_schedule_data(names[idx+3])
     event = '%s-rc1' % (names[idx+3][0:1])
     for week in schedule.get('cycle', []):
-        if event in week.get('x-project', {}):
-            timeframe_start = datetime.datetime.strptime(week['end'],
-                                                         "%Y-%m-%d")
-    timeframe_start = timeframe_start.replace(tzinfo=pytz.UTC)
+        if event in week.get('x-project', []):
+            timeframe_start = valid_date(week['end'])
 
     print('Setting %s Election\n%s is at: %s' % (args.type,
                                                  params['milestone'],
