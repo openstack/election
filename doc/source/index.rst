@@ -35,6 +35,8 @@ help.
 Our current election officials are:
 
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
+* Tony Breeds (tonyb), tony at bake your noodle dot com
+
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
