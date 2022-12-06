@@ -34,13 +34,7 @@ help.
 
 Our current election officials are:
 
-* Andy McCrae (andymccr), andy dot mccrae at gmail dot com
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
-* Helena Spease (hspease), `helena@openinfra.dev <mailto:helena@openinfra.dev>`_
-* Amy Marrich (spotz), amy at demarco dot com
-* Belmiro Moreira (belmoreira), moreira.belmiro.email.lists at gmail.com
-* Jay Bryant (jungleboyj), jsbryant at electronicjungle.net
-* Kristi Nikolla (knikolla), knikolla at bu.edu
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
