@@ -1,5 +1,5 @@
 ---
-release: bugbear
+release: 2023.2
 election_type: combined
 tag: 0.14.0
 tc_seats: 5
@@ -9,12 +9,18 @@ timeframe:
   end: 2023-02-15T00:00
   email_deadline: 2023-02-15T00:00
 timeline:
-  - name: TC & PTL Nominations
+  - name: TC Nominations
+    start: 2023-02-01T23:45
+    end: 2023-02-15T23:45
+  - name: PTL Nominations
     start: 2023-02-01T23:45
     end: 2023-02-15T23:45
   - name: TC Campaigning
     start: 2023-02-15T23:45
     end: 2023-02-22T23:45
-  - name: TC & PTL Voting
+  - name: TC Election
+    start: 2023-02-22T23:45
+    end: 2023-03-08T23:45
+  - name: PTL Election
     start: 2023-02-22T23:45
     end: 2023-03-08T23:45
