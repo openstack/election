@@ -368,6 +368,14 @@ def main(options):
                                             'commit']['committer']['email']
                                     break
 
+                            # If the E-mail address is not found, skip
+                            # since the item cannot be validated any more
+                            if email is None:
+                                print(
+                                    'ACCOUNT PREFERRED EMAIL IS NONE: %s'
+                                    % owner, file=sys.stderr)
+                                continue
+
                             # Find duplicate addresses and merge
                             # accounts when that happens
                             address = normalize_email(email)
