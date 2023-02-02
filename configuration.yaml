@@ -1,5 +1,5 @@
 ---
-release: 2023.2
+release: bobcat
 election_type: combined
 tag: 0.14.0
 tc_seats: 5
