@@ -27,6 +27,7 @@ def parse_datetime(iso_format):
 
 def load_conf():
     conf = yaml.safe_load(open('configuration.yaml'))
+    conf['release'] = str(conf['release'])
     for key in ('start', 'end', 'email_deadline'):
         date = parse_datetime(conf['timeframe'][key])
         conf['timeframe'][key] = date

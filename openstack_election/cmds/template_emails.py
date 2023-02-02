@@ -43,7 +43,7 @@ if election_type in ['tc', 'combined']:
         election_start=utils.get_event('TC Election')['start_str'],
         election_end=utils.get_event('TC Election')['end_str'],
         poll_name='OpenStack %s Cycle Technical Committee Election Poll' % (
-            conf['release'].capitalize()),
+            conf['release']),
     ))
     template_names += ['campaigning_kickoff']
 

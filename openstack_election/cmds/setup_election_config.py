@@ -45,6 +45,16 @@ def _dict_representer(dumper, data):
     return dumper.represent_dict(data.items())
 
 
+def valid_version(value):
+    try:
+        value = float(value)
+    except ValueError:
+        msg = ("{} is not an valid release version. Pass release version, for"
+               " example 2023.1".format(value))
+        raise Exception(msg)
+    return value
+
+
 def valid_date(opt):
     try:
         d = datetime.datetime.strptime(opt, "%Y-%m-%d")
@@ -110,7 +120,8 @@ def main():
     parser = argparse.ArgumentParser(description=('Given a release '
                                                   'date pick some dates for '
                                                   'the election'))
-    parser.add_argument('release', help='release name')
+    parser.add_argument('release', type=valid_version,
+                        help='release version. Example 2023.2')
     parser.add_argument('type', choices=['TC', 'PTL', 'combined'])
     parser.add_argument('--tc-seats', default=4, choices=['4', '5'],
                         help='number of TC seats up for election')
@@ -121,7 +132,6 @@ def main():
                              'YYYY-MM-DD')
 
     args = parser.parse_args()
-    args.release = args.release.lower()
 
     params = election_parameters[args.type]
     offset = datetime.timedelta(weeks=params['weeks_prior'])
@@ -129,11 +139,25 @@ def main():
     # We need to know the releases in order.  Fortunately this data exists
     # in the releases repo in a really easy format to understand.
     series_data = utils.get_series_data()
-    names = [x['name'].lower() for x in series_data]
+    # TODO(gmann): release versions (release-id) is introduced from 2023.1
+    # (Antelope) cycle and before that we have only release 'name'. We fetch
+    # last 3 release data here so until 2023.1 we can fecth release-ids and
+    # rest with 'name'.
+    # We will use release version for election tooling and release repo is not
+    # yet fully moved to the release version so continue using the release
+    # name to fetch the data from release repo.
+    release_data = []
+    names = []
+    for x in series_data:
+        names.append(x['name'])
+        if 'release-id' in x:
+            release_data.append(str(x['release-id']))
+        else:
+            release_data.append(x['name'])
     # Find where in the list the requested release sits.  This will typically
     # be very early but don't assume that.
-    idx = names.index(args.release) if args.release in names else -1
-
+    idx = (release_data.index(str(args.release)) if str(args.release)
+           in release_data else -1)
     # If date is not passed to this script then autimatically
     # select the release end date.
     if (args.date is None):
@@ -147,8 +171,8 @@ def main():
     #  Stein, Rocky[0], Queens[1], Pike[2], Ocata[3]
     # For the Stein elections candidates come from the previous 2 cycles so:
     #   Rocky and Queens.
-    timeframe_name = '%s-%s' % (names[idx+2].capitalize(),
-                                names[idx+1].capitalize())
+    timeframe_name = '%s-%s' % (release_data[idx+2].capitalize(),
+                                release_data[idx+1].capitalize())
 
     # The Queens development cycle begins when we branch Pike-RC1, so collect
     # that date from the releases data.
@@ -222,9 +246,9 @@ def main():
             timeframe_end = email_deadline
             print('Setting TC timeframe end to email_deadline')
 
-    print('Begining of %s Cycle @ %s' % (names[idx+2].capitalize(),
+    print('Begining of %s Cycle @ %s' % (release_data[idx+2].capitalize(),
                                          timeframe_start))
-    print('End of %s cycle @ %s' % (names[idx+1].capitalize(),
+    print('End of %s cycle @ %s' % (release_data[idx+1].capitalize(),
                                     timeframe_end))
 
     timeframe_span = timeframe_end - timeframe_start
@@ -240,7 +264,7 @@ def main():
         print('Maximum: %s' % (datetime.timedelta(13*365/12)))
 
     configuration = OrderedDict(
-        release=args.release.lower(),
+        release=args.release,
         election_type=args.type.lower(),
         tag=args.date.strftime('%b-%Y-elections').lower(),
         tc_seats=int(args.tc_seats),
