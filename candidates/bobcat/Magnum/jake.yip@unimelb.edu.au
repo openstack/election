@@ -1,0 +1,32 @@
+Hi all,
+
+I would like to announce my candidacy for Magnum PTL for the Bobcat Cycle.
+
+I have been the PTL for the Antelope Cycle. During this cycle, the team has
+achieved the following:
+
+* Removed most of Mesos code
+
+* Kept Magnum up to date, with support for Fedora CoreOS 37 and Kubernetes 1.24
+
+For the Bobcat cycle, I would like to focus on the following:
+
+* Support the team to merge the ClusterAPI driver for Magnum. This is the top
+  priority for Magnum to remain relevant in the long term.
+
+* Drive the effort to remove more unsupported features and drivers. This is
+  important for keeping the code base clean and makes tests easier.
+
+* Improve testing to improve merge confidence and velocity.
+
+* Clean up the documentation. Users have pointed out that the documentation is
+  out of date and needs correction.
+
+Being a first time PTL last cycle, I had a lot to learn. I am grateful to the
+team and broader OpenStack contributors for showing me the way. Now that I am a
+bit more experienced, I hope to be able to contribute with greater efficiency.
+Therefore, I nominate myself for the PTL role in this cycle. Thank you for
+considering my candidacy.
+
+Regards,
+Jake
