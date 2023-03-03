@@ -194,13 +194,11 @@ def main():
     end = end.replace(hour=23, minute=45)
     events = []
     for event in params['events']:
+        e_types = [args.type]
         if args.type == 'combined':
+            e_types = ['PTL', 'TC']
             if event == 'Campaigning':
-                name = 'TC %s' % event
-            else:
-                name = 'TC & PTL %s' % event
-        else:
-            name = '%s %s' % (args.type, event)
+                e_types = ['TC']
         start = end - TWO_WEEK
         # For a TC or combined election we want the email deadline to match the
         # beginning of the Campaigning period, which gives the officials time
@@ -218,10 +216,12 @@ def main():
         if event == 'Election':
             schedule = utils.get_schedule_data(names[idx+1])
             validate_tc_charter(args.type, schedule, start, end)
-        events.insert(0, OrderedDict(name=name,
-                                     start=iso_fmt(start),
-                                     end=iso_fmt(end)))
-        print('%s from %s to %s' % (name, iso_fmt(start), iso_fmt(end)))
+        for e_type in e_types:
+            name = '%s %s' % (e_type, event)
+            events.insert(0, OrderedDict(name=name,
+                                         start=iso_fmt(start),
+                                         end=iso_fmt(end)))
+            print('%s from %s to %s' % (name, iso_fmt(start), iso_fmt(end)))
         end = start
 
     print('Set email_deadline to %s' % (iso_fmt(email_deadline)))
