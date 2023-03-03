@@ -22,20 +22,21 @@ from openstack_election.config import ISO_FMT
 from openstack_election import utils
 
 ONE_WEEK = datetime.timedelta(weeks=1)
+TWO_WEEK = datetime.timedelta(weeks=2)
 election_parameters = {
     'PTL': {
         'milestone': 'Release',
-        'weeks_prior': 3,
+        'weeks_prior': 2,
         'events': ['Election', 'Nominations', ],
     },
     'TC': {
         'milestone': 'Release',
-        'weeks_prior': 4,
+        'weeks_prior': 2,
         'events': ['Election', 'Campaigning', 'Nominations', ],
     },
     'combined': {
         'milestone': 'Release',
-        'weeks_prior': 4,
+        'weeks_prior': 2,
         'events': ['Election', 'Campaigning', 'Nominations'],
     },
 }
@@ -79,26 +80,26 @@ def validate_tc_charter(election_type, release_schedule,
                         selected_start, selected_end):
     # NOTE (gmann): This function will validate the selected start and
     # end date by this script against what TC charter says.
-    # As per current charter(2021-07-21):
-    # - PTL election needs to be held(start and end) on or before R-3 week
-    # - TC election needs to be held(start and end) in between of R-6 to R-4
+    # As per the translation from current charter(as of 2023-03-03):
+    # - PTL election needs to be held(start and end) on or before R-2 week
+    # - TC election needs to be held(start and end) in between of R-8 to R-2
     # week.
+    expected_start_date = 0
+    expected_end_date = 0
     for week in release_schedule.get('cycle', []):
         if election_type == 'PTL':
             expected_start_date = datetime.datetime.strptime(
                         str(release_schedule['start-week']),
                         "%Y-%m-%d").replace(tzinfo=pytz.UTC)
-            if week.get('name') == 'R-3':
-                expected_end_date = datetime.datetime.strptime(
-                        week['end'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
-                break
         else:
-            if week.get('name') == 'R-6':
+            if week.get('name') == 'R-8':
                 expected_start_date = datetime.datetime.strptime(
                         week['start'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
-            if week.get('name') == 'R-4':
-                expected_end_date = datetime.datetime.strptime(
-                        week['end'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+        if week.get('name') == 'R-2':
+            expected_end_date = datetime.datetime.strptime(
+                    week['end'], "%Y-%m-%d").replace(tzinfo=pytz.UTC)
+        if expected_start_date and expected_end_date:
+            break
     if (selected_start < expected_start_date or
             selected_end > expected_end_date):
         print("Error: generated start and end date as per given dates in\n"
@@ -200,7 +201,20 @@ def main():
                 name = 'TC & PTL %s' % event
         else:
             name = '%s %s' % (args.type, event)
-        start = end - ONE_WEEK
+        start = end - TWO_WEEK
+        # For a TC or combined election we want the email deadline to match the
+        # beginning of the Campaigning period, which gives the officials time
+        # to validate the rolls
+        if args.type in ['TC', 'combined'] and event == 'Campaigning':
+            # NOTE(gmann): As per TC charter, TC campaigning duration is
+            # one week.
+            start = end - ONE_WEEK
+            email_deadline = start.replace(hour=0, minute=0)
+        # Otherwise for a PTL election we want to set the email deadline to the
+        # begining of the Nomination period, again to give officials time to
+        # validate the rolls
+        elif args.type == 'PTL' and event == 'Nominations':
+            email_deadline = start.replace(hour=0, minute=0)
         if event == 'Election':
             schedule = utils.get_schedule_data(names[idx+1])
             validate_tc_charter(args.type, schedule, start, end)
@@ -208,16 +222,6 @@ def main():
                                      start=iso_fmt(start),
                                      end=iso_fmt(end)))
         print('%s from %s to %s' % (name, iso_fmt(start), iso_fmt(end)))
-        # For a TC or combined election we want the email deadline to match the
-        # beginning of the Campaigning period, which gives the officials time
-        # to validate the rolls
-        if args.type in ['TC', 'combined'] and event == 'Campaigning':
-            email_deadline = start.replace(hour=0, minute=0)
-        # Otherise for a PTL election we want to set the email deadline to the
-        # begining of the Nomination period, agin to give officials time to
-        # validate the rolls
-        elif args.type == 'PTL' and event == 'Nominations':
-            email_deadline = start.replace(hour=0, minute=0)
         end = start
 
     print('Set email_deadline to %s' % (iso_fmt(email_deadline)))
