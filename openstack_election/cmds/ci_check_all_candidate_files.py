@@ -44,6 +44,21 @@ def validate_filename(filepath):
     return is_valid
 
 
+def validate_project(filepath, projects):
+    print('Validate the project requires a PTL')
+    print('-----------------------------------')
+
+    project_name = utils.get_project(filepath)
+    leadership_type = projects.get(project_name, {}).get("leadership_type")
+    is_valid = leadership_type not in ["distributed"]
+
+    print('Project Name: %s [%s]' % (project_name, filepath))
+    print('Leadership Type: %s %s' % (leadership_type,
+                                      {True: 'PASS', False: 'FAIL'}[is_valid]))
+    print('')
+    return is_valid
+
+
 def validate_member(filepath, verbose=0):
     print('Validate email address is OSF member')
     print('------------------------------------')
@@ -148,6 +163,7 @@ def main():
         candidate_ok = True
 
         candidate_ok &= validate_filename(filepath)
+        candidate_ok &= validate_project(filepath, projects)
         candidate_ok &= validate_member(filepath, verbose=args.verbose)
 
         if candidate_ok:

@@ -22,7 +22,12 @@ def main():
 
     base_dir = "candidates/%s" % utils.conf['release']
     projects = utils.get_projects()
-    project_list = list(projects.keys())
+    project_list = []
+    for project_name, project_data in projects.items():
+        # leadership_type is an optional property and currently (2023-06-29)
+        # the only valid enumeration is 'distributed'.
+        if project_data.get("leadership_type", "") not in ["distributed"]:
+            project_list.append(project_name)
     project_list.sort()
     for project in project_list + ["TC"]:
         dpath = "%s/%s" % (base_dir, utils.name2dir(project))
