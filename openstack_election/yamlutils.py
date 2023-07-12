@@ -32,3 +32,9 @@ def loads(blob):
     """Load a yaml blob and retain key ordering."""
     yaml = ruamel.yaml.YAML()
     return yaml.load(blob)
+
+
+def load(path):
+    with open(path) as f:
+        data = f.read()
+    return loads(data)

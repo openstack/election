@@ -11,119 +11,187 @@
 # under the License.
 
 import argparse
+import datetime
+import enum
 import os
-import re
+from pprint import pprint  # noqa
 
+from openstack_election import config
 from openstack_election import utils
+from openstack_election import yamlutils
+import ruamel.yaml
+from ruamel.yaml.comments import CommentedMap
+
+conf = config.load_conf()
 
 
-def set_TC_apointee(candidates_list, project, candidate):
-    print('TC Appointee for %s (%s/%s/%s)' %
-          (project, candidate['fullname'], candidate['ircname'],
-           candidate['email']))
-    candidates_list['candidates'][project] = [candidate]
+class TC_Status(enum.Enum):
+    CANDIDATE = 0
+    EXISTING = 1
+    EXPIRED = 2
+    ELECTED = 3
 
 
-def set_election_winner(candidates_list, project, idx):
-    candidate = candidates_list['candidates'][project][idx]
-    print('Setting %s PTL from election to (%s/%s/%s)' %
-          (project, candidate['fullname'], candidate['ircname'],
-           candidate['email']))
-    candidates_list['candidates'][project] = [candidate]
+def load_election_results(election):
+    ptl_results_fname = os.path.join(".", "doc", "source", "results",
+                                     election, "ptl.yaml")
+    ptl_data = yamlutils.load(ptl_results_fname)
+    print("PTL data loaded")
 
+    tc_results_fname = os.path.join(".", "doc", "source", "results",
+                                    election, "tc.yaml")
+    tc_data = yamlutils.load(tc_results_fname)
+    print("TC data loaded")
 
-def do_fixup(candidates_list, project, idx, key, value):
-    old = candidates_list['candidates'][project][0][key]
-    print('Fixing %s/%s(%d) changing %s to %s' %
-          (project, key, idx, old, value))
-    candidates_list['candidates'][project][0][key] = value
-
-
-def load_candidates():
-    print('Loading Candidates')
-    candidates_list = utils.build_candidates_list()
-    print('Done')
-    return candidates_list
+    return {"ptl": ptl_data, "tc": tc_data["candidates"]["TC"]}
 
 
 def load_projects(projects_fname):
-    with open(projects_fname) as fh:
-        data = fh.readlines()
-
-    return data
+    return yamlutils.load(projects_fname)
 
 
-def update_projects(projects_fname, candidates_list, projects):
-    results = utils.get_ptl_results()
-    project_count = 0
-    with open(projects_fname, 'w') as fh:
-        skip = 0
-        for line in projects:
-            if skip > 0:
-                skip -= 1
-                continue
-            # Projects are detectable as they have no whitespace in column 0
-            match = re.match('^([^ \t][^:]+?):$', line)
-            if match:
-                project_count += 1
-                p = utils.name2dir(match.group(1))
-                try:
-                    candidates = candidates_list['candidates'][p]
-                except KeyError:
-                    # Add placeholder for required TC appointment in cases
-                    # where there is no candidate
-                    candidates = [{
-                        'fullname': 'APPOINTMENT NEEDED',
-                        'ircname': '',
-                        'email': 'example@example.org',
-                        }]
-                    print('TC to appoint PTL for %s' % (p))
-                nr_candidates = len(candidates)
-                # Remove non-elected candidates if the election is closed
-                # TODO(fungi): rework this entire function to just use the
-                # election results file if we have one and not iterate over
-                # the candidates tree
-                if nr_candidates > 1:
-                    for c1 in results['candidates'].get(p, []):
-                        if not c1['elected']:
-                            for c2 in list(candidates):
-                                if c1['email'] == c2['email']:
-                                    candidates.remove(c2)
-                nr_candidates = len(candidates)
-                # Only update the PTL if there is a single candidate
-                if nr_candidates == 1:
-                    # Replace empty IRC nick strings with something useful
-                    if not candidates[0]['ircname']:
-                        candidates[0]['ircname'] = 'No nick supplied'
-                    line += (('  ptl:\n' +
-                              '    name: %(fullname)s\n' +
-                              '    irc: %(ircname)s\n' +
-                              '    email: %(email)s\n') % (candidates[0]))
-                    # This is a little fragile but the std. form is that the 4
-                    # lines after the project name are the PTL details.  We've
-                    # just written out new record so skip the next 4 lines in
-                    # the projects file.
-                    skip = 4
-                else:
-                    print('Skipping %s election in progress %d candidates' %
-                          (p, nr_candidates))
-            fh.write(line)
+def write_projects(projects_fname, projects):
+    # FIXME: Extract the rumel code from _write_tc and use here.
+    with open(projects_fname, "w") as f:
+        f.write(yamlutils.dumps(projects))
 
-    print('Processed %d projects' % (project_count))
+
+def update_projects(projects, results):
+    project_count_ptl = 0
+    project_count_leaderless = 0
+    project_count_distributed = 0
+    for project_name in projects:
+        dir_name = utils.name2dir(project_name)
+        ptl = projects[project_name].get("ptl", {})
+        leadership_type = projects[project_name].get("leadership_type")
+        if dir_name in results["ptl"]["candidates"]:
+            elected_ptl = results["ptl"]["candidates"][dir_name][0]
+            ptl["name"] = elected_ptl["fullname"] or ptl["name"]
+            ptl["irc"] = elected_ptl["ircname"] or ptl["irc"]
+            ptl["email"] = elected_ptl["email"] or ptl["email"]
+            project_count_ptl += 1
+        elif dir_name in results["ptl"]["leaderless"]:
+            ptl["name"] = "APPOINTMENT NEEDED"
+            ptl["irc"] = "No nick supplied"
+            ptl["email"] = "example@example.org"
+            print(f"leaderless project: {project_name}")
+            project_count_leaderless += 1
+        elif leadership_type in ["distributed"]:
+            print(f"{leadership_type} leadership type: {project_name}")
+            project_count_distributed += 1
+        else:
+            print(f"{project_name} is Unknown to the election tooling")
+
+    print("==================================")
+    print(f"Processed - {project_count_ptl} PTLs")
+    print(f"Leaderless projects: {project_count_leaderless}")
+    print(f"Distributed leadership projects: {project_count_distributed}")
+
+
+def load_tc_members(tc_members_fname):
+    return yamlutils.load(tc_members_fname)
+
+
+def write_tc_members(tc_members_fname, tc_members):
+    def none_representer(dumper, data):
+        return dumper.represent_scalar('tag:yaml.org,2002:null', 'null')
+
+    # This is copied from the governance/yamltools.py
+    yaml = ruamel.yaml.YAML(typ='rt')
+    yaml.width = 256
+    yaml.allow_duplicate_keys = True
+    yaml.representer.add_representer(type(None), none_representer)
+    yaml.indent(mapping=2, sequence=4, offset=2)
+    yaml.Constructor.add_constructor(
+        '!encrypted/pkcs1-oaep',
+        ruamel.yaml.SafeConstructor.construct_yaml_seq,
+    )
+
+    with open(tc_members_fname, "w") as f:
+        yaml.dump(tc_members, f)
+
+
+def update_tc_members(tc_members, results):
+    now = datetime.datetime.now().date()
+    memberid_map = {}
+
+    for tc_member in tc_members:
+        memberid = tc_member["memberid"]
+        memberid_map[memberid] = tc_member
+
+        date = datetime.datetime.strptime(tc_member["date"], "%B %Y").date()
+        tc_status = TC_Status.EXISTING
+        # Find candidates that were elected more than 10 months ago
+        # Using 40 weeks incase the election schedules are off by a little.
+        if (now - date) > datetime.timedelta(weeks=40):
+            # We don't remove them at this stage as it's possible an existing
+            # TC member will be re-elected so flag them and remoev them later
+            # if needed
+            tc_status = TC_Status.EXPIRED
+        tc_member["tc_status"] = tc_status
+        tc_member["role"] = None
+
+    for candidate in results["tc"]:
+        if not candidate["elected"]:
+            continue
+        tc_status = TC_Status.ELECTED
+        memberid = utils.lookup_member(candidate["email"])["data"][0]["id"]
+        if memberid in memberid_map:
+            memberid_map[memberid]["date"] = now.strftime("%B %Y")
+            memberid_map[memberid]["tc_status"] = tc_status
+        else:
+            member = CommentedMap()
+            member["name"] = candidate["fullname"]
+            member["irc"] = candidate["ircname"]
+            member["email"] = candidate["email"]
+            member["memberid"] = memberid
+            member["date"] = now.strftime("%B %Y")
+            member["role"] = None
+            member["tc_status"] = tc_status
+            tc_members.append(member)
+
+    # Mutate the existing list to remove the expired TC members
+    tc_members[:] = [m for m in tc_members if m["tc_status"] != TC_Status.EXPIRED]  # noqa E501
+
+    # The TC members file has elements separated by blank lines.
+    # This preserves that to reduce the diff.
+    blank_line = ruamel.yaml.tokens.CommentToken('\n\n',
+                                                 ruamel.yaml.error.CommentMark(10),  # noqa E501
+                                                 None)
+    for member in tc_members:
+        member.ca.items['role'] = [None, None, blank_line, None]
+        # Remove the synthetic tc_status element as we don't need that written
+        # to disk
+        del member["tc_status"]
+    # Also, remove the last blank line.
+    del member.ca.items['role']
 
 
 def main():
-    description = ('Update openstack/gorernance:reference/projects.yaml '
-                   ' with the new PTL details')
+    description = ("Update openstack/gorernance:reference/projects.yaml "
+                   " with the new PTL details")
     parser = argparse.ArgumentParser(description)
-    parser.add_argument('--governance-repo', dest='governance_repo',
+    parser.add_argument("--governance-repo", dest="governance_repo",
                         required=True,
-                        help=('Path to a clone of the governance repo'))
+                        help=("Path to a clone of the governance repo"))
+    parser.add_argument("--election-name", dest="election",
+                        default=conf["release"],
+                        help=("Election name or  "
+                              "default: '%(default)s' value  "
+                              "from the configuration.yaml will be used"))
 
     args = parser.parse_args()
+    results = load_election_results(args.election)
+
     projects_fname = os.path.join(os.path.expanduser(args.governance_repo),
-                                  'reference', 'projects.yaml')
+                                  "reference", "projects.yaml")
     projects = load_projects(projects_fname)
-    candidates_list = load_candidates()
-    update_projects(projects_fname, candidates_list, projects)
+    update_projects(projects, results)
+    write_projects(projects_fname, projects)
+
+    tc_members_fname = os.path.join(os.path.expanduser(args.governance_repo),
+                                    "reference", "members.yaml")
+    tc_members = load_tc_members(tc_members_fname)
+    update_tc_members(tc_members, results)
+    write_tc_members(tc_members_fname, tc_members)
     return 0
