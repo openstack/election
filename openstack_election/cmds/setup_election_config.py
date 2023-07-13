@@ -270,7 +270,7 @@ def main():
     configuration = OrderedDict(
         release=args.release,
         election_type=args.type.lower(),
-        tag=args.date.strftime('%b-%Y-elections').lower(),
+        tag='to-be-released',
         tc_seats=int(args.tc_seats),
         timeframe=OrderedDict(name=timeframe_name,
                               start=iso_fmt(timeframe_start),
