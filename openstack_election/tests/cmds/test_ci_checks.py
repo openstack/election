@@ -10,6 +10,10 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+import os
+import textwrap
+import yaml
+
 from unittest import mock
 
 from openstack_election.cmds import ci_check_all_candidate_files
@@ -51,3 +55,39 @@ class TestFindModifiedCandidateFiles(base.ElectionTestCase):
         filenames = \
             ci_check_all_candidate_files.find_modified_candidate_files()
         self.assertEqual(expected_filenames, filenames)
+
+
+class TestValidateProject(base.ElectionTestCase):
+    projects_str = textwrap.dedent("""
+                    ---
+                    project:
+                      ptl:
+                          name: PTL Name
+                          email: ptl@example.com
+                          irc: ptl_nic
+                    distributed_project:
+                      leadership_type: distributed
+                    """)
+    fake_projects = yaml.safe_load(projects_str)
+
+    def test_ptl_project(self):
+        file_path = os.path.join("...", utils.CANDIDATE_PATH,
+                                 "project/candidate@email")
+        is_ok = \
+            ci_check_all_candidate_files.validate_project(file_path,
+                                                          self.fake_projects)
+
+        self.assertTrue(is_ok)
+
+    # A project with a "distributed" leadership_type should not have
+    # candidates
+    def test_distributed_project(self):
+        file_path = os.path.join("...", utils.CANDIDATE_PATH,
+                                 "distributed_project/candidate@email")
+        is_ok = \
+            ci_check_all_candidate_files.validate_project(file_path,
+                                                          self.fake_projects)
+
+        self.assertFalse(is_ok)
+
+# TODO(tonyb): Add more validate_* tests here

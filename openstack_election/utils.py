@@ -176,6 +176,11 @@ def get_email(filepath):
     return os.path.basename(filepath)
 
 
+def get_project(filepath):
+    path = os.path.dirname(filepath)
+    return os.path.basename(path)
+
+
 def get_gerrit_account(email):
     accounts = gerrit_query('%s/accounts/' % (GERRIT_BASE),
                             params={'q': email, 'o': ['DETAILS']})
