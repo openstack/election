@@ -23,6 +23,7 @@ import jinja2.environment
 from sphinx.util import logging
 from sphinx.util.nodes import nested_parse_with_titles
 
+from openstack_election import series_sorting
 from openstack_election import utils
 
 LOG = logging.getLogger(__name__)
@@ -110,7 +111,9 @@ def build_lists(app):
         ""
     ]
     archived_dir = os.path.join(".", "doc", "source", "results")
-    for previous in sorted(os.listdir(archived_dir), reverse=True):
+    dirs = sorted(os.listdir(archived_dir), key=series_sorting.keyfunc,
+                  reverse=True)
+    for previous in dirs:
         if build_archive(previous, "ptl"):
             previous_toc.append("    results/%s/ptl.rst" % previous)
         if build_archive(previous, "tc"):
