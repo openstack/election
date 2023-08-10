@@ -4,6 +4,7 @@
 doc/build
 *.egg-info
 pbr*.egg
+.eggs
 reference/projects/*.rst
 *.pyc
 AUTHORS
