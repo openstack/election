@@ -56,13 +56,16 @@ Electorate
 ==========
 
 The electorate for this election are the Foundation individual members that
-are also committers for one of the `official project teams`_ repositories over
-the |Timeframe|.
+are also `contributors`_ to one of the `official project teams`_ repositories over
+the |Timeframe| or have been conferred `contributor status by the TC`_
 
 The electorate is requested to confirm their email address in gerrit,
-review.openstack.org > Settings > Contact Information > Preferred Email,
+review.opendev.org > Settings > Contact Information > Preferred Email,
 prior to |PreferredEmailDeadLine| so that the emailed ballots are mailed
 to the correct email address.
+
+As the CIVS elections are private you will need to allow this email address to
+receive emails from CIVS.  You can do this at: https://civs1.civs.us/cgi-bin/opt_in.pl
 
 The electorate is expected to abide by the following general resolution:
 https://governance.openstack.org/resolutions/20140711-election-activities.html.
@@ -185,3 +188,5 @@ See above `How to submit a candidacy`_ documentation.
 .. _Governance_TieBreaking: https://wiki.openstack.org/wiki/Governance/TieBreaking
 .. _TC charter: https://governance.openstack.org/reference/charter.html
 .. _official project teams: https://governance.openstack.org/reference/projects/index.html
+.. _contributors: https://governance.openstack.org/tc/reference/charter.html#voters-for-ptl-seats-apc
+.. _contributor status by the TC: https://governance.openstack.org/tc/reference/charter.html#voters-for-tc-seats-ac
