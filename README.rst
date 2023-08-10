@@ -20,8 +20,11 @@ Things to keep in mind when selecting election dates:
 * Consider extra-atcs approval deadlines
 * Allow at least a week for nomination period
 
-``setup-election-config`` can be used to pick some obvous dates that need to be
-checked by the election officials and TC
+``tox -evenv -- setup-election-config`` can be used to pick some possible dates that need to be
+checked by the election officials and TC.  Once these dates are confirmed/merged
+election officials can create a change against the `releases repo <https://opendev.org/openstack/releases>`_
+to include these dates in the development schedule.  A helper tool ``tox -evenv -- update-releases-calendar``
+will generate this change, but needs to be verified before publishing
 
 
 Preparation
@@ -73,7 +76,7 @@ During the PTL Candidacy round:
 * To +Workflow, checks the previous +2 details, find another commits using
   ``--limit 5`` (optional)
 * Check candidate list and fix badly generated names through changes to the
-  ``exception.txt`` file or requesting the candidate to update thier OSF member
+  ``exception.txt`` file or requesting the candidate to update their OSF member
   profile.
 
 Once the email deadline is reached:
