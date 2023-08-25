@@ -1,0 +1,28 @@
+Hi all,
+
+I would like to announce my candidacy for Magnum PTL for the 2024.1 Cycle.
+
+I have been the PTL since the Antelope Cycle. During the Bobcat cycle, the team
+has achieved the following:
+
+* Kept Magnum up to date, with support for Fedora CoreOS 37 and Kubernetes 1.25
+
+* Get team consensus to drop support for Kubernetes 1.23
+
+* Review and test patches for Secure RBAC and ClusterAPI
+
+For the 2024.1 cycle, I would like to focus on the following:
+
+* Support the team to merge the ClusterAPI driver for Magnum. This is a big
+  change and critical for Magnum's continued relevancy.
+
+* Support the team to merge the Secure RBAC changes. Huge thanks to ricolin for
+  proposing this.
+
+* Remove features that the team has deprecated. Getting rid of stale code and
+  out dated features improves cuts down on tech debt.
+
+* Continue clean up on the documentation.
+
+Regards,
+Jake
