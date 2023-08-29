@@ -64,4 +64,4 @@ function setup_timeline() {
         document.getElementById('eventname').innerHTML = next_events.join(" and ") + ' start in';
     }
 }
-$(document).ready(setup_timeline);
+window.onload = function () { setup_timeline() }
