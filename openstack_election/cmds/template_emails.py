@@ -20,7 +20,7 @@ start_release, _, end_release = conf['timeframe']['name'].partition('-')
 
 template_names = ['election_season', 'nominations_kickoff',
                   'nominations_last_days', 'end_nominations',
-                  'voting_kickoff', 'voting_last_days']
+                  'voting_optin_civs', 'voting_kickoff', 'voting_last_days']
 fmt_args = dict(
     email_deadline=conf['timeframe']['email_deadline'],
     end_release=end_release,

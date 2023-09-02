@@ -112,10 +112,14 @@ When PTL Candidacy submission ends:
 PTL Election Round
 ------------------
 
-When PTL Election begins:
+Before PTL Election begins:
 
-* Send email to eligible electorates to opt in to CIVS voting system using
-  their Gerrit email address in https://civs1.civs.us/cgi-bin/opt_in.pl
+* Send email to the mailing list or eligible electorates to opt in to
+  CIVS voting system using their Gerrit email address in https://civs1.civs.us/cgi-bin/opt_in.pl
+
+  * ``tox -e venv -- template-emails voting_optin_civs``
+
+When PTL Election begins:
 
 * `Create CIVS page
   <https://wiki.openstack.org/wiki/Election_Officiating_Guidelines#Running_the_election_itself>`_
@@ -242,14 +246,15 @@ with:
 
 * ``tox -e venv -- template-emails campaigning_kickoff``
 
-
 TC Election Round
 -----------------
 
 Before TC Election begins:
 
-* Send email to eligible electorates to opt in to CIVS voting system using
-  their Gerrit email address in https://civs1.civs.us/cgi-bin/opt_in.pl
+* Send email to the mailing list to opt in to CIVS voting system using their
+  Gerrit email address in https://civs1.civs.us/cgi-bin/opt_in.pl
+
+  * ``tox -e venv -- template-emails voting_optin_civs``
 
 * Create CIVS page
 

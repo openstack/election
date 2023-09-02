@@ -21,16 +21,19 @@ start_release }} to {{ end_release }}) or if you are in that team's
 list of extra-atcs[2].
 
 If you are eligible to vote in an election, you should find your
-email with a link to the Condorcet page to cast your vote in the
-inbox of your Gerrit preferred email[3].
+email with a link to the Condorcet Internet Voting Service (CIVS) page
+to cast your vote in the inbox of your Gerrit preferred email[3].
 
 What to do if you don't see the email and have a commit in at
 least one of the projects having an election:
-* due to a new CIVS policy, to vote in a private CIVS pool,
+* due to a new CIVS policy, to get the email from poll supervisors,
     you must opt in to email communication
-    opt in with your gerrit email address at:
+    opt in with your Gerrit email address at:
     https://civs1.civs.us/cgi-bin/opt_in.pl
-* check the trash or spam folders of your gerrit Preferred
+* eligible voters who opt in to email communication late
+  can see a pending poll invitation and vote
+  until {{ election_end }}.
+* check the trash or spam folders of your Gerrit Preferred
     Email address, in case it went into trash or spam
 * wait a bit and check again, in case your email server is a bit slow
 * find the sha of at least one commit from the project's deliverable
