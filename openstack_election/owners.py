@@ -136,13 +136,13 @@ def main(options):
     else:
         sigs_file = None
 
-    # Whether to omit "extra ATCs"
-    if options.no_extra_atcs:
-        no_extra_atcs = options.no_extra_atcs
-    elif 'no-extra-atcs' in config:
-        no_extra_atcs = config['no-extra-atcs']
+    # Whether to omit "extra ACs"
+    if options.no_extra_acs:
+        no_extra_acs = options.no_extra_acs
+    elif 'no-extra-acs' in config:
+        no_extra_acs = config['no-extra-acs']
     else:
-        no_extra_atcs = False
+        no_extra_acs = False
 
     # Output file directory
     if options.outdir:
@@ -237,14 +237,14 @@ def main(options):
     for sig in sigs_repos:
         for repo in sigs_repos[sig]:
             if 'sigs' not in gov_projects:
-                gov_projects['sigs'] = {'deliverables': {}, 'extra-atcs': []}
+                gov_projects['sigs'] = {'deliverables': {}, 'extra-acs': []}
             if sig not in gov_projects['sigs']['deliverables']:
                 gov_projects['sigs']['deliverables'][sig] = {'repos': []}
             gov_projects['sigs']['deliverables'][sig]['repos'].append(
                 repo['repo'])
-            extra_atcs = repo.get('extra-atcs', [])
-            if extra_atcs:
-                gov_projects['sigs']['extra-atcs'].extend(extra_atcs)
+            extra_acs = repo.get('extra-acs', [])
+            if extra_acs:
+                gov_projects['sigs']['extra-acs'].extend(extra_acs)
 
     # A cache of full repo names existing in Gerrit, used to filter out repos
     # listed in governance which don't actually exist
@@ -503,12 +503,12 @@ def main(options):
     else:
         stamp = start.isoformat(sep=' ').split('.')[0]
 
-    # Iterate over all extra-atcs entries
-    if not no_extra_atcs:
+    # Iterate over all extra-acs entries
+    if not no_extra_acs:
         for project in gov_projects:
-            for extra_atc in gov_projects[project].get('extra-atcs', []):
-                name = extra_atc['name']
-                email = extra_atc['email']
+            for extra_ac in gov_projects[project].get('extra-acs', []):
+                name = extra_ac['name']
+                email = extra_ac['email']
                 address = normalize_email(email)
                 if address in all_emails:
                     owner = all_emails[address]

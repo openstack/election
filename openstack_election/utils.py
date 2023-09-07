@@ -234,10 +234,10 @@ def candidate_files(review):
 
 
 # Governance functions
-def check_atc_date(atc):
-    if 'expires-in' not in atc:
+def check_ac_date(ac):
+    if 'expires-in' not in ac:
         return False
-    expires_in = datetime.datetime.strptime(atc['expires-in'], '%B %Y')
+    expires_in = datetime.datetime.strptime(ac['expires-in'], '%B %Y')
     expires_in = expires_in.replace(tzinfo=pytz.utc)
     return conf['timeframe']['end'] < expires_in
 

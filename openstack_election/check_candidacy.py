@@ -37,9 +37,9 @@ def check_candidate(project_name, email, projects, limit=1, verbose=0):
         project_list = [projects[project_name]]
 
     for project in project_list:
-        for atc in project.get('extra-atcs', []):
-            if (atc['email'] == email and utils.check_atc_date(atc)):
-                print("%2d: Valid extra ATC record:\n\t%s" % (found, atc))
+        for ac in project.get('extra-acs', []):
+            if (ac['email'] == email and utils.check_ac_date(ac)):
+                print("%2d: Valid extra AC record:\n\t%s" % (found, ac))
                 found += 1
                 if found >= limit:
                     return found

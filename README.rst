@@ -17,7 +17,7 @@ Things to keep in mind when selecting election dates:
   which is "The election is held no later than 3 weeks prior to each
   cycle final release date(on or before ‘R-3’ week)"
 * At least 48 hours in between email deadline and poll start
-* Consider extra-atcs approval deadlines
+* Consider extra-acs approval deadlines
 * Allow at least a week for nomination period
 
 ``tox -evenv -- setup-election-config`` can be used to pick some possible dates that need to be
@@ -103,10 +103,10 @@ When PTL Candidacy submission ends:
 
   * ``tox -e venv -- template-emails end_nominations``
 
-* When the tag is available, generate ATC rolls, e.g.:
+* When the tag is available, generate AC rolls, e.g.:
 
   * ``tox -evenv -- generate-rolls``
-  * Compare ATC rolls with at least one other election official
+  * Compare AC rolls with at least one other election official
 
 
 PTL Election Round

@@ -110,8 +110,8 @@ def usage(argv=sys.argv):
     parser.add_argument("-i", "--ignore", help="Account Id numbers to skip",
                         action='append')
     parser.add_argument("-l", "--legacy", help="Path to legacy projects file")
-    parser.add_argument("-n", "--no-extra-atcs", help='Omit "extra ATCs"',
-                        dest='no_extra_atcs', action='store_true')
+    parser.add_argument("-n", "--no-extra-acs", help='Omit "extra ACs"',
+                        dest='no_extra_acs', action='store_true')
     parser.add_argument("-o", "--outdir", help="Create an output directory")
     parser.add_argument("-p", "--projects", help="Path to local projects file")
     parser.add_argument("-r", "--ref", help="Specify a Governance refname")
