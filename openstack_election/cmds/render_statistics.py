@@ -17,7 +17,7 @@ import pytz
 
 from openstack_election import utils
 
-counts = {'projects': 0, 'nominations': 0, 'with_candidate': 0}
+counts = {'projects': 0, 'nominations': 0, 'with_candidate': 0, 'tc': 0, }
 need_election = []
 without_candidate = []
 
@@ -39,8 +39,6 @@ def collect_project_stats(basedir, verbose, projects):
 
     for directory, dirnames, filenames in sorted(os.walk(basedir)):
         project = directory[len(basedir):]
-        if project == "TC":
-            continue
 
         if project in projects:
             if verbose:
@@ -50,19 +48,22 @@ def collect_project_stats(basedir, verbose, projects):
         candidates = list(filter(lambda x: '@' in x, filenames))
         candidates_count = len(candidates)
 
-        if not filenames == []:
-            counts['projects'] += 1
-            if candidates_count != 0:
-                counts['with_candidate'] += 1
-            else:
-                without_candidate.append(project)
-            if candidates_count >= 2:
-                counts['nominations'] += 1
-                need_election.append(project)
+        if project == "TC":
+            counts['tc'] = candidates_count
+        else:
+            if not filenames == []:
+                counts['projects'] += 1
+                if candidates_count != 0:
+                    counts['with_candidate'] += 1
+                else:
+                    without_candidate.append(project)
+                if candidates_count >= 2:
+                    counts['nominations'] += 1
+                    need_election.append(project)
 
-            if verbose:
-                print("%-25s : (%d) %s" % (project, len(candidates),
-                                           ', '.join(candidates)))
+                if verbose:
+                    print("%-25s : (%d) %s" % (project, len(candidates),
+                                               ', '.join(candidates)))
 
 
 def election_summary():
@@ -79,6 +80,8 @@ def election_summary():
     p_candidate = as_percentage(counts['with_candidate'], counts['projects'])
     p_nominations = as_percentage(counts['nominations'], counts['projects'])
 
+    election_type = utils.conf.get('election_type', '').lower()
+
     need_election.sort()
     without_candidate.sort()
 
@@ -88,23 +91,32 @@ def election_summary():
     output += ("%-25s : %s\n" % ("Nominations duration", duration))
     output += ("%-25s : %s\n" % ("Nominations remaining", remaining))
     output += ("%-25s : %6.2f%%\n" % ("Nominations progress", p_progress))
-    output += ("-" * 51)
-    output += ("\n")
-    output += ("%-25s : %5d\n" % ("Projects[1]", counts['projects']))
-    output += ("%-25s : %5d (%6.2f%%)\n" % ("Projects with candidates",
-                                            counts['with_candidate'],
-                                            p_candidate))
-    output += ("%-25s : %5d (%6.2f%%)\n" % ("Projects with election",
-                                            counts['nominations'],
-                                            p_nominations))
-    output += ("-" * 51)
-    output += ("\n")
-    output += ("%-25s : %d (%s)\n" % ("Need election",
-                                      len(need_election),
-                                      " ".join(need_election)))
-    output += ("%-25s : %d (%s)\n" % ("Need appointment",
-                                      len(without_candidate),
-                                      " ".join(without_candidate)))
+
+    if election_type in ['ptl', 'combined']:
+        output += ("-" * 51)
+        output += ("\n")
+        output += ("%-25s : %5d\n" % ("Projects[1]", counts['projects']))
+        output += ("%-25s : %5d (%6.2f%%)\n" % ("Projects with candidates",
+                                                counts['with_candidate'],
+                                                p_candidate))
+        output += ("%-25s : %5d (%6.2f%%)\n" % ("Projects with election",
+                                                counts['nominations'],
+                                                p_nominations))
+        output += ("-" * 51)
+        output += ("\n")
+        output += ("%-25s : %d (%s)\n" % ("Need election",
+                                          len(need_election),
+                                          " ".join(need_election)))
+        output += ("%-25s : %d (%s)\n" % ("Need appointment",
+                                          len(without_candidate),
+                                          " ".join(without_candidate)))
+
+    if election_type in ['tc', 'combined']:
+        output += ("-" * 51)
+        output += ("\n")
+        output += ("%-25s : %d (%d Required)\n" % ("TC Candidates",
+                                                   counts['tc'],
+                                                   utils.conf['tc_seats']))
     output += ("=" * 51)
     output += ("\n")
     output += ("%-25s @ %s\n" % ("Stats gathered", as_utctime(now)))
@@ -128,14 +140,6 @@ def main():
                               'approved'))
 
     args = parser.parse_args()
-
-    # NOTE(tonyb): If we're a "combined" election we'll have the required
-    # events for the statistics to render collectly so we can just use a quick
-    # 'is_tc' check here
-    if utils.is_tc_election():
-        print('This tool only works for PTL elections not TC')
-        return 0
-
     args.basedir = os.path.join(args.basedir, 'candidates', args.release, '')
     args.basedir = os.path.expanduser(args.basedir)
     collect_project_stats(args.basedir, args.verbose, args.projects)
