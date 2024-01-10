@@ -112,7 +112,7 @@ def main():
         return 1
 
     description = ('Update development cycle in openstack/releases with '
-                   ' key election events')
+                   'key election events')
     parser = argparse.ArgumentParser(description)
     parser.add_argument('--releases-repo', dest='releases_repo',
                         required=True,
