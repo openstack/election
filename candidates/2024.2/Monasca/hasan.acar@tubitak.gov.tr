@@ -1,0 +1,15 @@
+Hello everyone!
+
+I would like to announce my candidacy for the role of PTL of Monasca during
+the 2024.2 (Dalmatian) cycle.
+
+I am currently working with full focus on the maintenance and development of Monasca
+and fixed all the Monasca API gates. Now, waiting for it to be approved and merged.
+If I am selected as PTL, I will have permissions for maintenance and development and pay
+attention to the following topics:
+* Switching from Elasticsearch to Opensearch on the log side
+* Keep up with latest supported versions of software, like Kafka, Storm and Influxdb
+* Diversing the API endpoints
+* Updating documentation
+
+Thank you for your consideration!
