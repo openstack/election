@@ -111,7 +111,7 @@ def lookup_osf(email, group_slug=None, verbose=0):
     """A requests wrapper to querying the OSF member directory API"""
 
     params = {
-        'expand': 'groups',
+        'expand': 'groups,all_affiliations,all_affiliations.organization',
         'filter[]': ['email==%s' % email],
         'relations': 'affiliations,groups',
         }

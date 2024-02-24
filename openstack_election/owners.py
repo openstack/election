@@ -584,8 +584,8 @@ def main(options):
         if profile['data']:
             if 'country' in profile['data'][0]:
                 owners[owner]['country'] = profile['data'][0]['country']
-            if 'affiliations' in profile['data'][0]:
-                affiliations = profile['data'][0]['affiliations']
+            if 'all_affiliations' in profile['data'][0]:
+                affiliations = profile['data'][0]['all_affiliations']
                 if affiliations:
                     owners[owner]['affiliations'] = []
                 for affiliation in affiliations:
