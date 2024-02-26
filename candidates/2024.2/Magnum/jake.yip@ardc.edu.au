@@ -1,0 +1,24 @@
+Hi all,
+
+I would like to announce my candidacy for Magnum PTL for the 2024.2 Cycle.
+
+I have been the PTL since the Antelope Cycle. During the Caracal cycle, the team
+has achieved the following:
+
+* Improved CI and reintroduced testing on fedora_coreos_v1
+
+* Drop Swarm COE.
+
+* Drop Fedora Ironic driver
+
+* Improved driver discovery code
+
+For the 2024.2 cycle, I would like to focus on the following:
+
+* Support the team to merge the ClusterAPI driver for Magnum. This is a big
+  change and critical for Magnum's continued relevancy.
+
+* Continue clean up on the documentation.
+
+Regards,
+Jake
