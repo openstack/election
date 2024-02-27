@@ -1,0 +1,10 @@
+Hello everyone,
+I want to propose myself, Axel Vanzaghi from OVHcloud, as PTL for Mistral again.
+
+We, at OVHcloud, intensively use Mistral for internal purpose and don't want the
+the project to be abandonned.
+I liked my first uses of Mistral, and since we want to maintain the project,
+there was a discussion about one of us becoming PTL. I naturally proposed myself.
+I'm kinda new to the project, however, I participated in fixing the gates.
+Our first goal is to maintain existing functionnalities, but I think we can do
+great things with Mistral, and improve it further more.
