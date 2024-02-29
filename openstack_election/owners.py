@@ -590,8 +590,9 @@ def main(options):
                     owners[owner]['affiliations'] = []
                 for affiliation in affiliations:
                     if (not affiliation['end_date']
-                            or datetime.datetime.fromtmiestamp(
-                                affiliation['end_date']) > after):
+                            or datetime.datetime.fromtimestamp(
+                                affiliation['end_date']) >
+                            datetime.datetime.strptime(after, "%Y-%m-%d")):
                         owners[owner]['affiliations'].append(
                             affiliation['organization']['name'])
         invite = [owners[owner].get(

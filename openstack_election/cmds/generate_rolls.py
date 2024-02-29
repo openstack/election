@@ -23,7 +23,7 @@ from openstack_election import utils
 
 
 def change_owners_options_proxy(after, before, ref, outdir='./', sieve=None,
-                                no_extra_atcs=False):
+                                no_extra_acs=False):
     options = argparse.Namespace()
 
     options.config = None
@@ -34,7 +34,7 @@ def change_owners_options_proxy(after, before, ref, outdir='./', sieve=None,
     options.outdir = outdir
     options.ref = ref
 
-    options.no_extra_atcs = no_extra_atcs
+    options.no_extra_acs = no_extra_acs
     options.sieve = sieve
     options.legacy = None
     options.projects = None
@@ -91,7 +91,7 @@ def main():
         # owners.main() potentially mutates options so create a fresh one
         options = change_owners_options_proxy(args.after, args.before,
                                               args.tag, tmp_dir,
-                                              no_extra_atcs=True,
+                                              no_extra_acs=True,
                                               sieve="branch:^stable/.*")
         owners.main(options)
         print("Finished (Stable) roll generation @%s" % time.ctime())
