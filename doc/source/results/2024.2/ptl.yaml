@@ -1,0 +1,267 @@
+candidates:
+  Adjutant:
+  - elected: true
+    email: dale@catalystcloud.nz
+    fullname: Dale Smith
+    ircname: dalees
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Adjutant/dale%40catalystcloud.nz
+  Barbican:
+  - elected: true
+    email: xek@redhat.com
+    fullname: Grzegorz Grasza
+    ircname: xek
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Barbican/xek%40redhat.com
+  Blazar:
+  - elected: true
+    email: pierre@stackhpc.com
+    fullname: Pierre Riteau
+    ircname: priteau
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Blazar/pierre%40stackhpc.com
+  Cinder:
+  - elected: true
+    email: jobernar@redhat.com
+    fullname: Jon Bernard
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Cinder/jobernar%40redhat.com
+  Cloudkitty:
+  - elected: true
+    email: rafael@apache.org
+    fullname: Rafael Weingartner
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Cloudkitty/rafael%40apache.org
+  Cyborg:
+  - elected: true
+    email: songwenping@inspur.com
+    fullname: alex song
+    ircname: songwenping
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Cyborg/songwenping%40inspur.com
+  Designate:
+  - elected: true
+    email: johnsomor@gmail.com
+    fullname: Michael Johnson
+    ircname: johnsom
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Designate/johnsomor%40gmail.com
+  Glance:
+  - elected: true
+    email: pdeore@redhat.com
+    fullname: Pranali Deore
+    ircname: pdeore
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Glance/pdeore%40redhat.com
+  Heat:
+  - elected: true
+    email: kajinamit@oss.nttdata.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Heat/kajinamit%40oss.nttdata.com
+  Horizon:
+  - elected: true
+    email: t.v.ovtchinnikova@gmail.com
+    fullname: Tatiana Ovchinnikova
+    ircname: tmazur
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Horizon/t.v.ovtchinnikova%40gmail.com
+  Ironic:
+  - elected: true
+    email: elfosardo@gmail.com
+    fullname: Riccardo Pittau
+    ircname: rpittau
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Ironic/elfosardo%40gmail.com
+  Keystone:
+  - elected: true
+    email: dwilde@redhat.com
+    fullname: Dave Wilde
+    ircname: d34dh0r53
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Keystone/dwilde%40redhat.com
+  Kolla:
+  - elected: true
+    email: mnasiadka@gmail.com
+    fullname: Michal Nasiadka
+    ircname: mnasiadka
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Kolla/mnasiadka%40gmail.com
+  Magnum:
+  - elected: true
+    email: jake.yip@ardc.edu.au
+    fullname: Jake Yip
+    ircname: jakeyip
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Magnum/jake.yip%40ardc.edu.au
+  Manila:
+  - elected: true
+    email: ces.eduardo98@gmail.com
+    fullname: Carlos Silva
+    ircname: carloss
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Manila/ces.eduardo98%40gmail.com
+  Masakari:
+  - elected: true
+    email: suzhengwei@inspur.com
+    fullname: sam sue
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Masakari/suzhengwei%40inspur.com
+  Mistral:
+  - elected: true
+    email: avanzaghi.osf@axellink.fr
+    fullname: axel vanzaghi
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Mistral/avanzaghi.osf%40axellink.fr
+  Monasca:
+  - elected: true
+    email: hasan.acar@tubitak.gov.tr
+    fullname: Hasan Acar
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Monasca/hasan.acar%40tubitak.gov.tr
+  Neutron:
+  - elected: true
+    email: haleyb.dev@gmail.com
+    fullname: Brian Haley
+    ircname: haleyb
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Neutron/haleyb.dev%40gmail.com
+  Nova:
+  - elected: true
+    email: sbauza@redhat.com
+    fullname: Sylvain Bauza
+    ircname: bauzas
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Nova/sbauza%40redhat.com
+  Octavia:
+  - elected: true
+    email: gthiemon@redhat.com
+    fullname: Gregory Thiemonge
+    ircname: gthiemonge
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Octavia/gthiemon%40redhat.com
+  OpenStackAnsible:
+  - elected: true
+    email: noonedeadpunk@gmail.com
+    fullname: Dmitriy Rabotyagov
+    ircname: noonedeadpunk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/OpenStackAnsible/noonedeadpunk%40gmail.com
+  OpenStackSDK:
+  - elected: true
+    email: artem.goncharov@gmail.com
+    fullname: Artem Goncharov
+    ircname: gtema
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/OpenStackSDK/artem.goncharov%40gmail.com
+  OpenStack_Helm:
+  - elected: true
+    email: kozhukalov@gmail.com
+    fullname: Vladimir Kozhukalov
+    ircname: kozhukalov
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/OpenStack_Helm/kozhukalov%40gmail.com
+  Puppet_OpenStack:
+  - elected: true
+    email: kajinamit@oss.nttdata.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Puppet_OpenStack/kajinamit%40oss.nttdata.com
+  Quality_Assurance:
+  - elected: true
+    email: mkopec@redhat.com
+    fullname: Martin Kopec
+    ircname: kopecmartin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Quality_Assurance/mkopec%40redhat.com
+  Rally:
+  - elected: true
+    email: andr.kurilin@gmail.com
+    fullname: Andrey Kurilin
+    ircname: andreykurilin
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Rally/andr.kurilin%40gmail.com
+  Storlets:
+  - elected: true
+    email: kajinamit@oss.nttdata.com
+    fullname: Takashi Kajinami
+    ircname: tkajinam
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Storlets/kajinamit%40oss.nttdata.com
+  Sunbeam:
+  - elected: true
+    email: hemanth.nakkina@canonical.com
+    fullname: Hemanth Nakkina
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Sunbeam/hemanth.nakkina%40canonical.com
+  Swift:
+  - elected: true
+    email: tburke@nvidia.com
+    fullname: Tim Burke
+    ircname: timburke
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Swift/tburke%40nvidia.com
+  Tacker:
+  - elected: true
+    email: yasufum.o@gmail.com
+    fullname: Yasufumi Ogawa
+    ircname: yasufum
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Tacker/yasufum.o%40gmail.com
+  Telemetry:
+  - elected: true
+    email: jokke@usr.fi
+    fullname: Erno Kuvaja
+    ircname: jokke_
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Telemetry/jokke%40usr.fi
+  Venus:
+  - elected: true
+    email: zhanglf01@inspur.com
+    fullname: Eric Zhang
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Venus/zhanglf01%40inspur.com
+  Vitrage:
+  - elected: true
+    email: noonedeadpunk@gmail.com
+    fullname: Dmitriy Rabotyagov
+    ircname: noonedeadpunk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Vitrage/noonedeadpunk%40gmail.com
+  Zaqar:
+  - elected: true
+    email: sxmatch1986@gmail.com
+    fullname: Hao Wang
+    ircname: wanghao
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Zaqar/sxmatch1986%40gmail.com
+  Zun:
+  - elected: true
+    email: hongbin034@gmail.com
+    fullname: Hongbin Lu
+    ircname: ''
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/Zun/hongbin034%40gmail.com
+election: '2024.2'
+leaderless:
+- OpenStack_Charms
+- Skyline
+- Freezer
+- Murano
+- Ec2_Api
+- Senlin
+- Trove
+- Kuryr
+- Sahara
+- Solum
+- Watcher
+projects:
+- Horizon
+- Glance
+- Monasca
+- Neutron
+- Venus
+- Magnum
+- Designate
+- Tacker
+- Cloudkitty
+- Cinder
+- Octavia
+- OpenStack_Helm
+- Mistral
+- Sunbeam
+- Vitrage
+- OpenStackAnsible
+- Puppet_OpenStack
+- Cyborg
+- Adjutant
+- Storlets
+- Rally
+- Keystone
+- Barbican
+- Manila
+- Zun
+- Quality_Assurance
+- Zaqar
+- OpenStackSDK
+- Telemetry
+- Nova
+- Blazar
+- Heat
+- Ironic
+- Masakari
+- Swift
+- Kolla

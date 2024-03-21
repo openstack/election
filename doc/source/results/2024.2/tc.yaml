@@ -1,0 +1,42 @@
+candidates:
+  TC:
+  - elected: true
+    email: amy@demarco.com
+    fullname: Amy Marrich
+    ircname: spotz
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/amy%40demarco.com
+  - elected: false
+    email: artem.goncharov@gmail.com
+    fullname: Artem Goncharov
+    ircname: gtema
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/artem.goncharov%40gmail.com
+  - elected: true
+    email: gouthampravi@gmail.com
+    fullname: Goutham Pacha Ravi
+    ircname: gouthamr
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/gouthampravi%40gmail.com
+  - elected: false
+    email: james.page@canonical.com
+    fullname: James Page
+    ircname: jamespage
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/james.page%40canonical.com
+  - elected: true
+    email: noonedeadpunk@gmail.com
+    fullname: Dmitriy Rabotyagov
+    ircname: noonedeadpunk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/noonedeadpunk%40gmail.com
+  - elected: true
+    email: sbauza@redhat.com
+    fullname: Sylvain Bauza
+    ircname: bauzas
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/sbauza%40redhat.com
+  - elected: true
+    email: skaplons@redhat.com
+    fullname: Slawek Kaplonski
+    ircname: slaweq
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2024.2/TC/skaplons%40redhat.com
+election: '2024.2'
+elections_results:
+  TC: https://civs1.civs.us/cgi-bin/results.pl?id=E_f8044ce7af316bf3
+projects:
+- TC
