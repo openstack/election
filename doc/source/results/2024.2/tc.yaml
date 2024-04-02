@@ -38,5 +38,6 @@ candidates:
 election: '2024.2'
 elections_results:
   TC: https://civs1.civs.us/cgi-bin/results.pl?id=E_f8044ce7af316bf3
+  TC_resolution: https://governance.openstack.org/tc/resolutions/20240322-adjudication-of-2024.2-tc-election.html
 projects:
 - TC

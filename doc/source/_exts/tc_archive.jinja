@@ -11,6 +11,12 @@
 Results
 -------
 * `TC <{{ elections_results['TC'] }}>`_
+{% if elections_results['TC_resolution'] %}
+
+.. Note::  The elected candidates did not form a valid Technical Committee.
+   See `TC Resolution <{{ elections_results['TC_resolution'] }}>`__ for more information.
+
+{% endif %}
 
 {{ election.capitalize() }} TC Candidates
 ======================
