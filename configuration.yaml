@@ -1,26 +1,26 @@
 ---
-release: 2024.2
+release: 2025.1
 election_type: combined
-tag: 0.16.0
-tc_seats: 5
+tag: to-be-released
+tc_seats: 4
 timeframe:
-  name: 2023.2-2024.1
-  start: 2023-03-03T00:00
-  end: 2024-02-28T00:00
-  email_deadline: 2024-02-28T00:00
+  name: 2024.1-2024.2
+  start: 2023-09-15T00:00
+  end: 2024-08-28T00:00
+  email_deadline: 2024-08-28T00:00
 timeline:
   - name: TC Nominations
-    start: 2024-02-14T23:45
-    end: 2024-02-28T23:45
+    start: 2024-08-14T23:45
+    end: 2024-08-28T23:45
   - name: PTL Nominations
-    start: 2024-02-14T23:45
-    end: 2024-02-28T23:45
+    start: 2024-08-14T23:45
+    end: 2024-08-28T23:45
   - name: TC Campaigning
-    start: 2024-02-28T23:45
-    end: 2024-03-06T23:45
+    start: 2024-08-28T23:45
+    end: 2024-09-04T23:45
   - name: TC Election
-    start: 2024-03-06T23:45
-    end: 2024-03-20T23:45
+    start: 2024-09-04T23:45
+    end: 2024-09-18T23:45
   - name: PTL Election
-    start: 2024-03-06T23:45
-    end: 2024-03-20T23:45
+    start: 2024-09-04T23:45
+    end: 2024-09-18T23:45
