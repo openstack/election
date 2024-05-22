@@ -42,6 +42,11 @@ election_parameters = {
 }
 
 
+class IndentDumper(yaml.Dumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super().increase_indent(flow, False)
+
+
 def _dict_representer(dumper, data):
     return dumper.represent_dict(data.items())
 
@@ -280,8 +285,9 @@ def main():
         timeline=events,
     )
     yaml.Dumper.add_representer(OrderedDict, _dict_representer)
-    print(yaml.dump(configuration, default_flow_style=False,
-                    default_style='', explicit_start=True))
+    print(yaml.dump(configuration, Dumper=IndentDumper,
+                    default_flow_style=False, default_style='',
+                    explicit_start=True))
 
     return 0 if timeframe_span_ok else 1
 
