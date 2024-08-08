@@ -133,6 +133,15 @@ def lookup_osf(email, group_slug=None, verbose=0):
     return result
 
 
+def current_member_affiliation(member):
+    organization = ""
+    if member.get('data'):
+        for affiliation in member["data"][0].get("all_affiliations", []):
+            if affiliation.get("is_current", False):
+                organization = affiliation.get("organization", {}).get("name")
+    return organization
+
+
 def lookup_member(email, verbose=0):
     """Lookup profiles of OSF members"""
 
