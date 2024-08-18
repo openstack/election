@@ -73,6 +73,18 @@ def validate_member(filepath, verbose=0):
     return is_valid
 
 
+# NOTE(tonyb): Currently verbose isn't used but it's included to keep
+#              the interface the same as the validate_*() functions.
+def show_affiliation(filepath, verbose=0):
+    print('Show member affiliation if available')
+    print('------------------------------------')
+
+    email = utils.get_email(filepath)
+    member = utils.lookup_member(email)
+
+    print('Affiliation: %s' % (utils.current_member_affiliation(member)))
+
+
 def check_for_changes(projects, filepath, limit, verbose=0):
     print('Looking for validating changes')
     print('------------------------------')
@@ -165,6 +177,7 @@ def main():
         candidate_ok &= validate_filename(filepath)
         candidate_ok &= validate_project(filepath, projects)
         candidate_ok &= validate_member(filepath, verbose=args.verbose)
+        show_affiliation(filepath, verbose=args.verbose)
 
         if candidate_ok:
             if (election_type == 'ptl'
