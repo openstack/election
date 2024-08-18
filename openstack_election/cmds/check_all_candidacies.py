@@ -11,7 +11,6 @@
 # under the License.
 
 import argparse
-import input
 import os
 
 from openstack_election.cmds import ci_check_all_candidate_files as checks
