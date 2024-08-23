@@ -19,7 +19,8 @@ time_frame = "%(start_str)s - %(end_str)s" % (conf['timeframe'])
 start_release, _, end_release = conf['timeframe']['name'].partition('-')
 
 template_names = ['election_season', 'nominations_kickoff',
-                  'nominations_last_days', 'end_nominations',
+                  'nominations_last_days', 'nominations_direct_reminder',
+                  'end_nominations',
                   'voting_optin_civs', 'voting_kickoff', 'voting_last_days']
 fmt_args = dict(
     email_deadline=conf['timeframe']['email_deadline'],
@@ -68,10 +69,49 @@ if election_type in ['ptl', 'combined']:
 
 
 def main():
+    timeframe_start_date = conf['timeframe']['start'].strftime('%Y-%m-%d')
+    timeframe_end_date = conf['timeframe']['end'].strftime('%Y-%m-%d')
     parser = argparse.ArgumentParser('Tool to generate form emails')
     parser.add_argument('template', choices=template_names)
+    parser.add_argument('-p', '--project-name', required=False,
+                        help="Specify name of the project for which template "
+                             "will be generated. Required only for the "
+                             "'nominations_direct_reminder' template")
+    parser.add_argument('-o', '--owners-dir', required=False,
+                        help="Path to the owners outdir. "
+                             "It can be generated with: "
+                             "'tox -e venv -- owners -a %s -b %s "
+                             "-o <owners_dir>'" % (
+                                 timeframe_start_date, timeframe_end_date))
 
     args = parser.parse_args()
+
+    if args.template == 'nominations_direct_reminder':
+        if not args.project_name:
+            print("Project name is required for the "
+                  "'nominations_direct_reminder' template to be generated",
+                  file=sys.stderr)
+            return 1
+        if not args.owners_dir:
+            print("Please provide path to the owners directory. "
+                  "It can be generated with command: "
+                  "tox -e venv -- owners -a %s -b %s "
+                  "-o <owners_dir>" % (timeframe_start_date,
+                                       timeframe_end_date),
+                  file=sys.stderr)
+            return 1
+        project_owners_file = "%s/%s.txt" % (
+            args.owners_dir, args.project_name.lower())
+        contributors = ""
+        with open(project_owners_file) as f:
+            contributors = ", ".join([
+                email.strip() for email in f.readlines()])
+
+        fmt_args.update(dict(
+            project_name=args.project_name.title(),
+            contributors=contributors
+        ))
+
     func_name = ('%(election_type)s_%(template)s' %
                  (dict(election_type=conf['election_type'],
                        template=args.template)))

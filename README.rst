@@ -97,6 +97,12 @@ A couple of days before the candidacy submission ends:
 
   * ``tox -e venv -- template-emails nominations_last_days``
 
+* Optionally send direct *PTL nominations Last Days* email to the members of the
+  teams with no PTL candidates proposed:
+
+  * ``tox -evenv -- template-emails nominations_direct_reminder -p
+    <project_name> -o <owners_dir>``
+
 When PTL Candidacy submission ends:
 
 * Send *PTL Nominations End* email
