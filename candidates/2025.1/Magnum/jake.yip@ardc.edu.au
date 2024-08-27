@@ -1,0 +1,19 @@
+Hi all,
+
+I would like to announce my candidacy for Magnum PTL for the 2025.1 Cycle.
+
+During the Dalmatian cycle, the team has been mostly working on bugfixes and
+the ClusterAPI driver effort.
+
+For the 2025.1 cycle, I would like to focus on the following:
+
+* Work with Azimuth Cloud project on ClusterAPI driver.
+
+* Create tests for ClusterAPI driver and helm charts.
+
+* Keep the project alive by supporting users.
+
+I hope you will consider my candidacy.
+
+Regards,
+Jake
