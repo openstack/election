@@ -252,7 +252,7 @@ def check_ac_date(ac):
 
 
 def _get_projects(tag=None):
-    if tag:
+    if tag and tag != 'to-be-released':
         url = PROJECTS_URL % '/'.join(('tag', tag))
         cache_file = '.projects.%s.pkl' % tag
     else:
