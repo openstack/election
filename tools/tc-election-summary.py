@@ -131,6 +131,12 @@ data = [
         'votes_cast': 57,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_f8044ce7af316bf3')
     },
+    {
+        'election': '09/2024',  # 2025.1 Epoxy
+        'electorate': 284,
+        'votes_cast': 61,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_079cc0f0dda5010c')
+    },
 ]
 
 
