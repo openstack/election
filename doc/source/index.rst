@@ -32,11 +32,17 @@ continuous integration jobs. The TC is always looking for volunteers interested
 in officiating future elections, so reach out to them if you would like to
 help.
 
+
+.. note::
+
+    Election officials should not run for election themselves. They must
+    also maintain strict neutrality in reviewing election candidates, when
+    setting up elections and in handling their results.
+
 Our current election officials are:
 
 * Ian Y. Choi (ianychoi), ianyrchoi at gmail dot com
 * Slawek Kaplonski (slaweq), skaplons at redhat dot com
-
 
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
