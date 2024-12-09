@@ -41,6 +41,19 @@ Our current election officials are:
 For any questions, please contact officials by mail or over irc at
 #openstack-dev OFTC channel.
 
+TC liaison
+==========
+
+The TC liaison is a current TC member who is not running for re-election
+and will serve as the primary point of contact for the election officials.
+The TC liaison is responsible for ensuring that elections are conducted on
+schedule and that there are enough election officials available to manage
+the election. If necessary, the liaison can add or remove election officials
+from the Gerrit ACL group.
+
+Current TC Liaison:
+
+* Sylvain Bauza (bauzas), sbauza at redhat dot com
 
 .. _Election system:
 
