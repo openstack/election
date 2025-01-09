@@ -21,8 +21,13 @@ from collections import OrderedDict
 from openstack_election.config import ISO_FMT
 from openstack_election import utils
 
-ONE_WEEK = datetime.timedelta(weeks=1)
-TWO_WEEK = datetime.timedelta(weeks=2)
+MIN_NOMINATION_WEEKS = 2
+MIN_VOTING_WEEKS = 2
+MIN_CAMPAIGNING_WEEKS = 1
+MIN_NOMINATION_PERIOD = datetime.timedelta(weeks=MIN_NOMINATION_WEEKS)
+MIN_VOTING_PERIOD = datetime.timedelta(weeks=MIN_VOTING_WEEKS)
+MIN_CAMPAIGNING_PERIOD = datetime.timedelta(weeks=MIN_CAMPAIGNING_WEEKS)
+
 election_parameters = {
     'PTL': {
         'milestone': 'Release',
@@ -68,6 +73,47 @@ def valid_date(opt):
         msg = "Not a valid date: '{0}'.".format(opt)
         raise argparse.ArgumentTypeError(msg)
     return d.replace(tzinfo=pytz.UTC)
+
+
+def valid_nomination_period(period_opt):
+    try:
+        period = datetime.timedelta(weeks=int(period_opt))
+    except ValueError:
+        msg = "Not a valid number of weeks."
+        raise argparse.ArgumentTypeError(msg)
+
+    if period < MIN_NOMINATION_PERIOD:
+        msg = "Minimum nomination period is {0} weeks ".format(
+              MIN_NOMINATION_WEEKS)
+        raise argparse.ArgumentTypeError(msg)
+    return period
+
+
+def valid_voting_period(period_opt):
+    try:
+        period = datetime.timedelta(weeks=int(period_opt))
+    except ValueError:
+        msg = "Not a valid number of weeks."
+        raise argparse.ArgumentTypeError(msg)
+
+    if period < MIN_VOTING_PERIOD:
+        msg = "Minimum voting period is {0} weeks ".format(MIN_VOTING_WEEKS)
+        raise argparse.ArgumentTypeError(msg)
+    return period
+
+
+def valid_campaigning_period(period_opt):
+    try:
+        period = datetime.timedelta(weeks=int(period_opt))
+    except ValueError:
+        msg = "Not a valid number of weeks."
+        raise argparse.ArgumentTypeError(msg)
+
+    if period < MIN_CAMPAIGNING_PERIOD:
+        msg = "Minimum campaigning period is {0} weeks ".format(
+            MIN_CAMPAIGNING_WEEKS)
+        raise argparse.ArgumentTypeError(msg)
+    return period
 
 
 def find_previous_wednesday(date):
@@ -136,6 +182,21 @@ def main():
     parser.add_argument('--date', default=None, type=valid_date,
                         help='Date from release schedule in the form '
                              'YYYY-MM-DD')
+    parser.add_argument('--nomination-weeks', default=MIN_NOMINATION_PERIOD,
+                        type=valid_nomination_period,
+                        help='How long nomination period should be held. '
+                             'Default value (week) is %s.' %
+                             MIN_NOMINATION_WEEKS)
+    parser.add_argument('--voting-weeks', default=MIN_VOTING_PERIOD,
+                        type=valid_voting_period,
+                        help='How long voting period should be held. '
+                             'Default value (week) is %s.' %
+                             MIN_VOTING_WEEKS)
+    parser.add_argument('--campaigning-weeks', default=MIN_CAMPAIGNING_PERIOD,
+                        type=valid_campaigning_period,
+                        help='How long campaigning should be held. '
+                             'Default value (week) is %s.' %
+                             MIN_CAMPAIGNING_WEEKS)
 
     args = parser.parse_args()
 
@@ -204,14 +265,16 @@ def main():
             e_types = ['PTL', 'TC']
             if event == 'Campaigning':
                 e_types = ['TC']
-        start = end - TWO_WEEK
+        if event == 'Campaigning':
+            start = end - args.campaigning_weeks
+        elif event == 'Nominations':
+            start = end - args.nomination_weeks
+        else:
+            start = end - args.voting_weeks
         # For a TC or combined election we want the email deadline to match the
         # beginning of the Campaigning period, which gives the officials time
         # to validate the rolls
         if args.type in ['TC', 'combined'] and event == 'Campaigning':
-            # NOTE(gmann): As per TC charter, TC campaigning duration is
-            # one week.
-            start = end - ONE_WEEK
             email_deadline = start.replace(hour=0, minute=0)
         # Otherwise for a PTL election we want to set the email deadline to the
         # begining of the Nomination period, again to give officials time to
