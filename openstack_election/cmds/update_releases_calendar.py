@@ -22,12 +22,12 @@ from openstack_election import yamlutils
 conf = config.load_conf()
 rst_template = textwrap.dedent("""
     {release} TC and PTL Elections
-    ---------------------------
+    ===========================
 
     .. _{nrl}-election-email-deadline:
 
     {release} Election Email Deadline
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ------------------------------
     Contributors that will be in the electorate for the upcoming election
     should confirm their gerrit email addresses by this date ({deadline_date}
     at {deadline_time} UTC). Electorate rolls are generated after this date and ballots will
@@ -36,7 +36,7 @@ rst_template = textwrap.dedent("""
     .. _{nrl}-election-nominations:
 
     {release} Election Nomination Begins
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ---------------------------------
     Candidates interested in serving for the next calendar year (TC), or
     development cycle (PTL) should announce their candidacies and platforms during
     this week.  Please see the `Election site`_ for specific timing information.
@@ -44,7 +44,7 @@ rst_template = textwrap.dedent("""
     .. _{nrl}-election-campaigning:
 
     {release} Election Campaigning Begins
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ----------------------------------
     The electorate has time to ask candidates questions about their platforms
     and debate topics before polling begins.  Please see the `Election site`_ for
     specific timing information.
@@ -52,14 +52,14 @@ rst_template = textwrap.dedent("""
     .. _{nrl}-election-voting:
 
     {release} Election Polling Begins
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    --------------------------------
     Election polling for open seats on the TC and any required PTL elections.
     Please see the `Election site`_ for specific timing information.
 
     .. _{nrl}-election-close:
 
     {release} Election Polling Ends
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ----------------------------
     All polls close in the {release} Election and results announced.  Please see the
     `Election site`_ for specific timing information.
 
