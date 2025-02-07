@@ -26,6 +26,18 @@ def check_candidate(project_name, email, projects, limit=1, verbose=0):
         return dt.strftime('%Y-%m-%d')
 
     found = 0
+
+    # OSF member validation with verbose output
+    member = utils.lookup_member(email, verbose=1)
+    is_valid = member.get('data', []) != []
+    if is_valid is False:
+        print('Email address not found in OSF member list')
+        return found
+
+    # Print member affiliation if available
+    print('Affiliation: %s' % (utils.current_member_affiliation(member)))
+
+    # Looking for validating changes
     branch = None
     timeframe = utils.conf['timeframe']
     owner = utils.get_gerrit_account(email)['username']
