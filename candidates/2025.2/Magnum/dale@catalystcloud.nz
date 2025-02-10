@@ -1,0 +1,26 @@
+Hello,
+
+I would like to announce my candidacy for Magnum PTL for the 2025.2 cycle.
+
+I'd like to thank Jake Yip for his leadership and time holding the PTL position
+for the previous 5 cycles during a period of major change towards the
+ClusterAPI driver model.
+
+For the 2025.2 cycle, I have both technical and leadership goals that include:
+
+* Keeping Magnum API stable and functional for both ClusterAPI drivers.
+
+* Continue to deprecate and remove code that is no longer supportable.
+
+* Improve consistency of Magnum's API, CLI and UI, in particular; admin
+  permissions and better updating of a running cluster.
+
+* Lead regular meetings and encourage community involvement.
+
+I'm looking forward to continuing to work with Jake and all other Magnum Core
+Reviewers in the coming cycle.
+
+Thank you for your consideration,
+
+Dale Smith
+Catalyst Cloud
