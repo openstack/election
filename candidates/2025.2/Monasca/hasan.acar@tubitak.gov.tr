@@ -1,0 +1,23 @@
+Hi,
+
+I want to propose my candidacy and continue serving as Monasca PTL in the
+new cycle 2025.2 release:
+
+As the Monasca team, During the 2025.1 cycle, we were unable to dedicate the 
+necessary focus to Monasca as much as we had hoped. However, in the upcoming cycle, 
+I am fully committed to prioritizing Monasca’s stability and improvement, ensuring that 
+we address critical tasks with full focus and dedication.
+
+In the new cycle, I would like to continue serving this project
+and aim to make the project more stable and reliable and meet new requirements
+
+There are some major works which still needs to do in new cycle:
+
+1.Migration from Elasticsearch to Opensearch on the log management side
+2.Update monasca integrations in other projects
+3.Make Monasca stable and reliable
+
+Thank you for your support,
+I will do my best in the new cycle.
+
+Hasan Acar (hasanacar)
