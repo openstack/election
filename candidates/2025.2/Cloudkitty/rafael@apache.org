@@ -1,0 +1,6 @@
+Hello guys,
+I would like to self-nominate for the role of PTL of CloudKitty for the 2025.2 release cycle. I am the current PTL for the 2025.2 cycle and I am willing to continue in this role.
+
+I will keep working with existing contributors to maintain CloudKitty for their use cases and encourage the addition of new functionalities.
+
+Thank you for your support.
