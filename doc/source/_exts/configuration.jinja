@@ -1,4 +1,8 @@
 .. |Timeframe| replace:: {{ timeframe['name'] }} timeframe ({{ timeframe['start_str'] }} to {{ timeframe['end_str'] }})
 .. |PreferredEmailDeadLine| replace:: {{ timeframe['email_deadline_str'] }}
+{% if tag == 'to-be-released' %}
+.. |Projects.yaml| replace:: https://opendev.org/openstack/governance/src/branch/master/reference/projects.yaml
+{% else %}
 .. |Projects.yaml| replace:: https://opendev.org/openstack/governance/src/tag/{{ tag }}/reference/projects.yaml
+{% endif %}
 .. |TCSeats| replace:: {{ tc_seats }}

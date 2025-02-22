@@ -36,6 +36,12 @@ As early as possible but at least a month before election starts:
 
   * ``edit configuration.yaml``
 
+  .. note::
+
+     ``to-be-released`` tag value is used during the election process.
+     After the election is over, the tag value is updated
+     for ``openstack/governance`` repository.
+
 * Prepare new election, e.g.:
 
   * ``tox -evenv -- create-directories``
