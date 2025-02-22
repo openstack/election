@@ -1,0 +1,32 @@
+candidates:
+  TC:
+  - elected: true
+    email: amy@demarco.com
+    fullname: Amy Marrich
+    ircname: spotz
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/TC/amy%40demarco.com
+  - elected: true
+    email: artem.goncharov@gmail.com
+    fullname: Artem Goncharov
+    ircname: gtema
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/TC/artem.goncharov%40gmail.com
+  - elected: true
+    email: gouthampravi@gmail.com
+    fullname: Goutham Pacha Ravi
+    ircname: gouthamr
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/TC/gouthampravi%40gmail.com
+  - elected: true
+    email: mnasiadka@gmail.com
+    fullname: Michal Nasiadka
+    ircname: mnasiadka
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/TC/mnasiadka%40gmail.com
+  - elected: true
+    email: noonedeadpunk@gmail.com
+    fullname: Dmitriy Rabotyagov
+    ircname: noonedeadpunk
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/TC/noonedeadpunk%40gmail.com
+election: '2025.2'
+elections_results:
+  TC: no poll required
+projects:
+- TC
