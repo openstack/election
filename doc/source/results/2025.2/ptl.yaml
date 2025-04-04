@@ -15,7 +15,7 @@ candidates:
   - elected: true
     email: jobernar@redhat.com
     fullname: Jon Bernard
-    ircname: ''
+    ircname: 'jbernard'
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/Cinder/jobernar%40redhat.com
   Cloudkitty:
   - elected: true
@@ -39,7 +39,7 @@ candidates:
   - elected: true
     email: cyril@redhat.com
     fullname: Cyril Roelandt
-    ircname: ''
+    ircname: 'croelandt'
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/Glance/cyril%40redhat.com
   Heat:
   - elected: true
@@ -99,7 +99,7 @@ candidates:
   - elected: true
     email: rene.ribaud@gmail.com
     fullname: "Ren\xE9 Ribaud"
-    ircname: ''
+    ircname: 'Uggla'
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/2025.2/Nova/rene.ribaud%40gmail.com
   Octavia:
   - elected: true
