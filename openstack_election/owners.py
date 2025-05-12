@@ -136,6 +136,14 @@ def main(options):
     else:
         sigs_file = None
 
+    # TC repos file path
+    if options.tc_repos:
+        tc_repos_file = options.tc_repos
+    elif 'tc_repos' in config:
+        tc_repos_file = config['tc_repos']
+    else:
+        tc_repos_file = None
+
     # Whether to omit "extra ACs"
     if options.no_extra_acs:
         no_extra_acs = options.no_extra_acs
@@ -245,6 +253,30 @@ def main(options):
             extra_acs = repo.get('extra-acs', [])
             if extra_acs:
                 gov_projects['sigs']['extra-acs'].extend(extra_acs)
+
+    # The set of repositories managed by The Technical Committee
+    if tc_repos_file:
+        tc_repos = utils.load_yaml(open(tc_repos_file).read())
+    elif projects_file:
+        tc_repos = []
+    else:
+        tc_repos = utils.get_from_git('openstack/governance',
+                                      'reference/'
+                                      'technical-committee-repos.yaml',
+                                      {'h': ref})
+    if tc_repos:
+        tc_repos = tc_repos[next(iter(tc_repos))]  # drop the top key
+        gov_projects['tc'] = {
+            'deliverables': {
+                'tc': {'repos': []},
+            },
+            'extra-acs': [],
+        }
+        for repo in tc_repos:
+            gov_projects['tc']['deliverables']['tc']['repos'].append(
+                repo['repo']
+            )
+            gov_projects['tc']['extra-acs'].extend(repo.get('extra_acs') or [])
 
     # A cache of full repo names existing in Gerrit, used to filter out repos
     # listed in governance which don't actually exist
