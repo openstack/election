@@ -59,7 +59,7 @@ from the Gerrit ACL group.
 
 Current TC Liaison:
 
-* Sylvain Bauza (bauzas), sbauza at redhat dot com
+* Goutham Pacha Ravi (gouthamr), gouthampravi at gmail dot com
 
 .. _Election system:
 
