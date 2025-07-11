@@ -107,7 +107,7 @@ def get_schedule_data(series):
                         'branch/master/doc/source/%s/schedule.yaml' % (series))
 
 
-def lookup_osf(email, group_slug=None, verbose=0):
+def lookup_osf(email, membership_type=None, verbose=0):
     """A requests wrapper to querying the OSF member directory API"""
 
     params = {
@@ -115,8 +115,8 @@ def lookup_osf(email, group_slug=None, verbose=0):
         'filter[]': ['email==%s' % email],
         'relations': 'affiliations,groups',
         }
-    if group_slug:
-        params['filter[]'].append('group_slug==%s' % group_slug)
+    if membership_type:
+        params['filter[]'].append('membership_type==%s' % membership_type)
 
     # URL pattern for querying foundation profiles by E-mail address
     raw = requester(
@@ -146,7 +146,7 @@ def lookup_member(email, verbose=0):
     """Lookup profiles of OSF members"""
 
     return lookup_osf(
-        email=email, group_slug='foundation-members', verbose=verbose)
+        email=email, membership_type='Individual', verbose=verbose)
 
 
 def load_exceptions():
