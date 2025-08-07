@@ -32,6 +32,6 @@ class ElectionException(Exception):
 
 
 class MemberNotFoundException(ElectionException):
-    msg_fmt = ('No Openstack Foundation (OSF) data found for %(email)s please '
-               'check that %(email)s is a valid email address and linked to a '
-               'valid OSF account')
+    msg_fmt = ('No Open Infrastructure Foundation (OIF) data found for'
+               '%(email)s please check that %(email)s is a valid email address'
+               ' and linked to a valid OIF account')

@@ -107,8 +107,8 @@ def get_schedule_data(series):
                         'branch/master/doc/source/%s/schedule.yaml' % (series))
 
 
-def lookup_osf(email, membership_type=None, verbose=0):
-    """A requests wrapper to querying the OSF member directory API"""
+def lookup_oif(email, membership_type=None, verbose=0):
+    """A requests wrapper to querying the OIF member directory API"""
 
     params = {
         'expand': 'groups,all_affiliations,all_affiliations.organization',
@@ -143,9 +143,9 @@ def current_member_affiliation(member):
 
 
 def lookup_member(email, verbose=0):
-    """Lookup profiles of OSF members"""
+    """Lookup profiles of OIF members"""
 
-    return lookup_osf(
+    return lookup_oif(
         email=email, membership_type='Individual', verbose=verbose)
 
 

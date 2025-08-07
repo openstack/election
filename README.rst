@@ -82,8 +82,8 @@ During the PTL Candidacy round:
 * To +Workflow, checks the previous +2 details, find another commits using
   ``--limit 5`` (optional)
 * Check candidate list and fix badly generated names through changes to the
-  ``exception.txt`` file or requesting the candidate to update their OSF member
-  profile.
+  ``exception.txt`` file or requesting the candidate to update their OIF
+  member profile.
 
 Once the email deadline is reached:
 

@@ -60,7 +60,7 @@ def validate_project(filepath, projects):
 
 
 def validate_member(filepath, verbose=0):
-    print('Validate email address is OSF member')
+    print('Validate email address is OIF member')
     print('------------------------------------')
 
     email = utils.get_email(filepath)
