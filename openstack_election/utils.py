@@ -127,7 +127,7 @@ def lookup_osf(email, membership_type=None, verbose=0):
     # Print the profile if verbosity is 1 or higher
     if verbose >= 1 and result['data']:
         print("Found: "
-              "https://openstack.org/community/members/profile/%s"
+              "https://openinfra.org/a/community/members/%s"
               % result['data'][0]['id'])
 
     return result
