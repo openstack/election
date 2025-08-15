@@ -58,7 +58,7 @@ def check_candidate(project_name, email, projects, limit=1, verbose=0):
 
         for deliverable in project['deliverables'].values():
             for repo_name in deliverable["repos"]:
-                query = ('is:merged after:"%s" before:"%s" '
+                query = ('is:merged mergedafter:"%s" mergedbefore:"%s" '
                          'owner:%s project:%s' %
                          (utils.gerrit_datetime(timeframe['start']),
                           utils.gerrit_datetime(timeframe['end']),
