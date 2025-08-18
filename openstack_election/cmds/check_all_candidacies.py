@@ -30,7 +30,7 @@ def print_member(filepath, verbose=0):
     member = utils.lookup_member(email, verbose=verbose)
     member_id = member.get('data', [{}])[0].get('id')
     base = 'https://openinfra.org/a/community/members'
-    print('OSF member profile: %s/%s' % (base, member_id))
+    print('OIF member profile: %s/%s' % (base, member_id))
 
 
 def main():
