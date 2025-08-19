@@ -1,0 +1,23 @@
+Hello,
+
+I would like to announce my candidacy for Magnum PTL for the 2026.1 cycle.
+
+I held the PTL position for 2025.2 and continue to work with the other core
+developers to enhance core Magnum for the future as Cluster API drivers
+become the way to use the service.
+
+For the 2026.1 cycle, my technical and leadership goals continue from the 2025.2 cycle:
+
+* Keeping Magnum API stable and functional for both ClusterAPI drivers.
+
+* Continue to deprecate and remove code that is no longer supportable.
+
+* Improve consistency of Magnum's API, CLI and UI, in particular; admin
+  permissions and better updating of a running cluster.
+
+* Lead regular meetings and encourage community involvement.
+
+Thank you for your consideration,
+
+Dale Smith
+Catalyst Cloud
