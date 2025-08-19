@@ -89,6 +89,14 @@ receive emails from CIVS.  You can do this at: https://civs1.civs.us/cgi-bin/opt
 The electorate is expected to abide by the following general resolution:
 https://governance.openstack.org/resolutions/20140711-election-activities.html.
 
+.. note::
+
+   Following OpenInfra's integration with the Linux Foundation in 2025, all
+   election candidates and voters are required to `complete a brief renewal
+   process <https://openinfra.org/a/renew-membership>`_ in order to maintain
+   their voting rights and remain eligible to participate in the election
+   process, if they have not yet completed it.
+
 
 Candidates
 ==========
