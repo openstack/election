@@ -20,7 +20,7 @@ start_release, _, end_release = conf['timeframe']['name'].partition('-')
 
 template_names = ['election_season', 'nominations_kickoff',
                   'nominations_last_days', 'nominations_direct_reminder',
-                  'end_nominations',
+                  'end_nominations', 'voting_optin_civs_direct_reminder',
                   'voting_optin_civs', 'voting_kickoff', 'voting_last_days']
 fmt_args = dict(
     email_deadline=conf['timeframe']['email_deadline'],
@@ -110,6 +110,21 @@ def main():
         fmt_args.update(dict(
             project_name=args.project_name.title(),
             contributors=contributors
+        ))
+
+    if args.template == 'voting_optin_civs_direct_reminder':
+        if not args.project_name:
+            print("Project name is required for the "
+                  "'voting_optin_civs_direct_reminder' template to be "
+                  "generated", file=sys.stderr)
+            return 1
+
+        # Note: purposely set election_type as tc for combined election
+        if args.project_name == 'tc':
+            conf['election_type'] = 'tc'
+
+        fmt_args.update(dict(
+            project_name=args.project_name.title()
         ))
 
     func_name = ('%(election_type)s_%(template)s' %
