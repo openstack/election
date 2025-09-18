@@ -1,0 +1,37 @@
+candidates:
+  TC:
+  - elected: false
+    email: berendt@osism.tech
+    fullname: Christian Berendt
+    ircname: berendt
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2026.1/TC/berendt%40osism.tech
+  - elected: true
+    email: cardoe@cardoe.com
+    fullname: Doug Goldstein
+    ircname: cardoe
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2026.1/TC/cardoe%40cardoe.com
+  - elected: false
+    email: chkumar@redhat.com
+    fullname: Chandan Kumar
+    ircname: chandankumar
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2026.1/TC/chkumar%40redhat.com
+  - elected: true
+    email: frickler@offenerstapel.de
+    fullname: Dr. Jens Harbott
+    ircname: frickler
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2026.1/TC/frickler%40offenerstapel.de
+  - elected: true
+    email: sbauza@redhat.com
+    fullname: Sylvain Bauza
+    ircname: bauzas
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2026.1/TC/sbauza%40redhat.com
+  - elected: true
+    email: tony@bakeyournoodle.com
+    fullname: Tony Breeds
+    ircname: tonyb
+    url: https://opendev.org/openstack/election/raw/branch/master/candidates/2026.1/TC/tony%40bakeyournoodle.com
+election: '2026.1'
+elections_results:
+  TC: https://civs1.civs.us/cgi-bin/results.pl?id=E_6cede1084d4586eb
+projects:
+- TC
