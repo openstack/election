@@ -56,6 +56,12 @@ def write_projects(projects_fname, projects):
         f.write(yamlutils.dumps(projects))
 
 
+def get_elected_ptl(candidates):
+    for candidate in candidates:
+        if candidate["elected"]:
+            return candidate
+
+
 def update_projects(projects, results):
     project_count_ptl = 0
     project_count_leaderless = 0
@@ -65,10 +71,14 @@ def update_projects(projects, results):
         ptl = projects[project_name].get("ptl", {})
         leadership_type = projects[project_name].get("leadership_type")
         if dir_name in results["ptl"]["candidates"]:
-            elected_ptl = results["ptl"]["candidates"][dir_name][0]
-            ptl["name"] = elected_ptl["fullname"] or ptl["name"]
-            ptl["irc"] = elected_ptl["ircname"] or ptl["irc"]
-            ptl["email"] = elected_ptl["email"] or ptl["email"]
+            elected_ptl = get_elected_ptl(
+                results["ptl"]["candidates"][dir_name])
+            if not elected_ptl:
+                print(f"No elected PTL found for '{project_name}'")
+                continue
+            ptl["name"] = elected_ptl["fullname"]
+            ptl["irc"] = elected_ptl["ircname"] or "No nick supplied"
+            ptl["email"] = elected_ptl["email"]
             project_count_ptl += 1
         elif dir_name in results["ptl"]["leaderless"]:
             ptl["name"] = "APPOINTMENT NEEDED"
