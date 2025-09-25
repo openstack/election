@@ -137,6 +137,12 @@ data = [
         'votes_cast': 61,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_079cc0f0dda5010c')
     },
+    {
+        'election': '09/2025',  # 2026.1 Gazpacho
+        'electorate': 171,
+        'votes_cast': 78,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_6cede1084d4586eb')
+    },
 ]
 
 
