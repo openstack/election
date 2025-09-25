@@ -144,6 +144,12 @@ When PTL Election begins:
 
   * ``tox -e venv -- template-emails voting_kickoff``
 
+* Optionally send direct *voting opt-in CIVS direct reminder* email to the members
+  who are not activated to CIVS voting system
+
+  * ``tox -evenv -- template-emails voting_optin_civs_direct_reminder -p
+    <project_name>``
+
 A couple of days before the PTL Election ends:
 
 * Send *PTL Voting Last Days* email
@@ -286,6 +292,13 @@ When TC Election begins:
     without crashing, limit to 500 at a time* Send *TC Voting Kickoff* email
 
   * ``tox -e venv -- template-emails voting_kickoff``
+
+* Optionally send direct *voting opt-in CIVS direct reminder* email to the members
+  who are not activated to CIVS voting system
+  (for combined election, put -p argument as 'tc' value)
+
+  * ``tox -evenv -- template-emails voting_optin_civs_direct_reminder -p
+    <project_name>``
 
 A couple of days before the TC Election ends:
 
