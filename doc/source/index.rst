@@ -59,7 +59,7 @@ from the Gerrit ACL group.
 
 Current TC Liaison:
 
-* Goutham Pacha Ravi (gouthamr), gouthampravi at gmail dot com
+* Tony Breeds (tonyb), tony at bakeyournoodle dot com
 
 .. _Election system:
 
