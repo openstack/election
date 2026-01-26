@@ -189,7 +189,9 @@ def main(options):
     # The query identifying relevant changes
     match = 'status:merged'
     if after:
-        match = '%s after:"%s"' % (match, after)
+        match = '%s mergedafter:"%s"' % (match, after)
+    if before:
+        match = '%s mergedbefore:"%s"' % (match, before)
     if sieve:
         match = '%s %s' % (match, sieve)
 
