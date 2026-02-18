@@ -43,7 +43,7 @@ def collect_project_stats(basedir, verbose, projects):
         if project in projects:
             if verbose:
                 print('Adding manual entry for project: %s' % (project))
-            filenames = ['fake@placeholder']
+            filenames += ['fake@placeholder']
 
         candidates = list(filter(lambda x: '@' in x, filenames))
         candidates_count = len(candidates)
@@ -136,7 +136,7 @@ def main():
     parser.add_argument('--projects', dest='projects', nargs='+',
                         default=[],
                         help=('These projects have candidates that are '
-                              'validated by one election but not yet'
+                              'validated by one election official but not yet '
                               'approved'))
 
     args = parser.parse_args()
@@ -149,6 +149,6 @@ def main():
     print(election_summary())
     print("")
     print("[1] These numbers include the following projects that have a "
-          "candidate that is approved my only a single election official:"
+          "candidate that is approved by only a single election official:"
           "\n\t%s\n" % (" ".join(args.projects)))
     return 0
