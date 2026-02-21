@@ -3,17 +3,15 @@
       - build-openstack-docs-pti
     check:
       jobs:
-        - openstack-tox-py38
-        - openstack-tox-py39
         - openstack-tox-py310
+        - openstack-tox-py313
         - openstack-tox-linters
         - election-tox-ci-checks-review
         - election-tox-ci-checks-election
     gate:
       jobs:
-        - openstack-tox-py38
-        - openstack-tox-py39
         - openstack-tox-py310
+        - openstack-tox-py313
         - openstack-tox-linters
         - election-tox-ci-checks-election
     promote:
