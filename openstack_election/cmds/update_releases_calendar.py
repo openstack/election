@@ -35,30 +35,30 @@ rst_template = textwrap.dedent("""
 
     .. _{nrl}-election-nominations:
 
-    {release} Election Nomination Begins
-    ---------------------------------
+    {release} Election Nomination Open
+    -------------------------------
     Candidates interested in serving for the next calendar year (TC), or
     development cycle (PTL) should announce their candidacies and platforms during
     this week.  Please see the `Election site`_ for specific timing information.
 
     .. _{nrl}-election-campaigning:
 
-    {release} Election Campaigning Begins
-    ----------------------------------
+    {release} Election Campaigning Open
+    --------------------------------
     The electorate has time to ask candidates questions about their platforms
     and debate topics before polling begins.  Please see the `Election site`_ for
     specific timing information.
 
     .. _{nrl}-election-voting:
 
-    {release} Election Polling Begins
-    --------------------------------
+    {release} Election Polling Open
+    ----------------------------
     Election polling for open seats on the TC and any required PTL elections.
     Please see the `Election site`_ for specific timing information.
 
     .. _{nrl}-election-close:
 
-    {release} Election Polling Ends
+    {release} Election Polling Closes
     ----------------------------
     All polls close in the {release} Election and results announced.  Please see the
     `Election site`_ for specific timing information.
