@@ -32,18 +32,22 @@ class TC_Status(enum.Enum):
     ELECTED = 3
 
 
-def load_election_results(election):
+def load_election_results_ptl(election):
     ptl_results_fname = os.path.join(".", "doc", "source", "results",
                                      election, "ptl.yaml")
     ptl_data = yamlutils.load(ptl_results_fname)
     print("PTL data loaded")
 
+    return {"ptl": ptl_data}
+
+
+def load_election_results_tc(election):
     tc_results_fname = os.path.join(".", "doc", "source", "results",
                                     election, "tc.yaml")
     tc_data = yamlutils.load(tc_results_fname)
     print("TC data loaded")
 
-    return {"ptl": ptl_data, "tc": tc_data["candidates"]["TC"]}
+    return {"tc": tc_data["candidates"]["TC"]}
 
 
 def load_projects(projects_fname):
@@ -189,19 +193,29 @@ def main():
                         help=("Election name or  "
                               "default: '%(default)s' value  "
                               "from the configuration.yaml will be used"))
+    parser.add_argument('--round', default=utils.conf['election_type'],
+                        choices=('ptl', 'tc', 'combined'))
 
     args = parser.parse_args()
-    results = load_election_results(args.election)
 
-    projects_fname = os.path.join(os.path.expanduser(args.governance_repo),
-                                  "reference", "projects.yaml")
-    projects = load_projects(projects_fname)
-    update_projects(projects, results)
-    write_projects(projects_fname, projects)
+    if args.round in ['ptl', 'combined']:
+        results = load_election_results_ptl(args.election)
 
-    tc_members_fname = os.path.join(os.path.expanduser(args.governance_repo),
-                                    "reference", "members.yaml")
-    tc_members = load_tc_members(tc_members_fname)
-    update_tc_members(tc_members, results)
-    write_tc_members(tc_members_fname, tc_members)
+        projects_fname = os.path.join(os.path.expanduser(args.governance_repo),
+                                      "reference", "projects.yaml")
+        projects = load_projects(projects_fname)
+        update_projects(projects, results)
+        write_projects(projects_fname, projects)
+
+    if args.round in ['tc', 'combined']:
+        results = load_election_results_tc(args.election)
+
+        tc_members_fname = os.path.join(
+            os.path.expanduser(args.governance_repo),
+            "reference", "members.yaml")
+
+        tc_members = load_tc_members(tc_members_fname)
+        update_tc_members(tc_members, results)
+        write_tc_members(tc_members_fname, tc_members)
+
     return 0
