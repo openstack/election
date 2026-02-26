@@ -59,7 +59,7 @@ rst_template = textwrap.dedent("""
     .. _{nrl}-election-close:
 
     {release} Election Polling Closes
-    ----------------------------
+    ------------------------------
     All polls close in the {release} Election and results announced.  Please see the
     `Election site`_ for specific timing information.
 
