@@ -59,7 +59,7 @@ from the Gerrit ACL group.
 
 Current TC Liaison:
 
-* Tony Breeds (tonyb), tony at bakeyournoodle dot com
+* Amy Marrich (spotz), amy at demarco dot com
 
 .. _Election system:
 
