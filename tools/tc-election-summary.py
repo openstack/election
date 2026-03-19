@@ -143,6 +143,8 @@ data = [
         'votes_cast': 78,
         'results': '%s?id=%s' % (CIVS_BASE, 'E_6cede1084d4586eb')
     },
+    # 2026.2 Hibiscus is missing as we didn't have an election because
+    # the number of candidates matched the number of available seats
 ]
 
 
