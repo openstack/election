@@ -1,26 +1,26 @@
 ---
-release: 2026.2
+release: 2027.1
 election_type: combined
-tag: 0.20.0
-tc_seats: 5
+tag: to-be-released
+tc_seats: 4
 timeframe:
-  name: 2025.2-2026.1
-  start: 2025-03-14T00:00
-  end: 2026-02-18T00:00
-  email_deadline: 2026-02-18T00:00
+  name: 2026.1-2026.2
+  start: 2025-09-12T00:00
+  end: 2026-08-19T00:00
+  email_deadline: 2026-08-19T00:00
 timeline:
   - name: TC Nominations
-    start: 2026-02-04T23:45
-    end: 2026-02-18T23:45
+    start: 2026-08-05T23:45
+    end: 2026-08-19T23:45
   - name: PTL Nominations
-    start: 2026-02-04T23:45
-    end: 2026-02-18T23:45
+    start: 2026-08-05T23:45
+    end: 2026-08-19T23:45
   - name: TC Campaigning
-    start: 2026-02-18T23:45
-    end: 2026-02-25T23:45
+    start: 2026-08-19T23:45
+    end: 2026-08-26T23:45
   - name: TC Election
-    start: 2026-02-25T23:45
-    end: 2026-03-18T23:45
+    start: 2026-08-26T23:45
+    end: 2026-09-16T23:45
   - name: PTL Election
-    start: 2026-02-25T23:45
-    end: 2026-03-18T23:45
+    start: 2026-08-26T23:45
+    end: 2026-09-16T23:45
