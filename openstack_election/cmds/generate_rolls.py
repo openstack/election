@@ -57,7 +57,7 @@ def main():
     parser.add_argument('--rolls_dir', default="./rolls/%s" % (
                         utils.conf['tag']), help=('The output directory.  '
                         'Default: %(default)s'))
-    parser.add_argument('--before', default=end.strftime("%Y-%m-%d %H-%M-%S"),
+    parser.add_argument('--before', default=end.strftime("%Y-%m-%d"),
                         help=('The start date.  Default: %(default)s'))
     parser.add_argument('--after', default=start.strftime("%Y-%m-%d"),
                         help=('The end date.  Default: %(default)s'))
