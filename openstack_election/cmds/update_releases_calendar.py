@@ -84,14 +84,12 @@ def add_election_event_to_schedule(nrl, election_events,
                                    schedule_events, schedule_data):
     election_event_idx = 0
     for cycle_event in schedule_data["cycle"]:
-        (cycle_event_start, cycle_event_end) = (
-            datetime.date.fromisoformat(cycle_event["start"]),
-            datetime.date.fromisoformat(cycle_event["end"]))
+        cycle_event_end = datetime.date.fromisoformat(cycle_event["end"])
         event_type = election_events[election_event_idx]
         event_label = f"{nrl}-election-{event_type}"
         (event_start, event_end) = schedule_events[event_label]
 
-        if cycle_event_start < event_start.date():
+        if cycle_event_end < event_start.date():
             continue
 
         if "x-project" not in cycle_event:
