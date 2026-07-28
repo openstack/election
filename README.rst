@@ -175,7 +175,7 @@ When PTL Election ends:
 
 * Update governance repo:
 
-  * ``tox -e venv update-governance -- --governance-repo ../governance/``
+  * ``tox -e venv -- update-governance --governance-repo ../governance/``
 
 
 TC Elections
@@ -325,6 +325,7 @@ When TC Election ends:
   * Add new members
   * Remove ``chair`` and ``vice-chair`` from file
   * Commit change and push review
+  * Or run: ``tox -e venv -- update-governance --governance-repo ../governance/ --round tc``
 
 * Update ``tc-election-summary.py`` with election statistics
 * Optionally send *TC Election Statistics* email
