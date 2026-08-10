@@ -1,0 +1,29 @@
+Hi everyone!
+
+I'd like to announce my candidacy for PTL of the OpenStack Trove
+project for the upcoming 2027.1 cycle. This would be my second
+consecutive cycle serving as PTL.
+
+During the 2026.2 cycle, I've accomplished most of the planned items,
+but there is still a lot of work to be done.
+
+Key priorities for the 2027.1 cycle:
+- Continue improving stability and reliability by merging pending bug
+  fixes and strengthening testing and CI coverage
+- Enhance security, including AppArmor profiles for Docker containers
+- Improve backup tools and add support for S3 storage
+- Restore support for older database versions
+- Support contributors and help align efforts toward common priorities
+
+The longer-term direction remains the same:
+- Expand the ecosystem of supported managers based on community
+  demand and operational feasibility, including KeyDB, Kafka,
+  ClickHouse, MongoDB, and others
+
+I believe Trove’s key strength is its flexibility and integration
+within the OpenStack ecosystem. My goal is to ensure that the project
+remains stable, secure, and relevant for both existing and new users.
+
+Thank you for your time and consideration.
+
+Erkin Mussurmankulov
