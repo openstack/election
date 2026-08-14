@@ -58,11 +58,13 @@ def check_candidate(project_name, email, projects, limit=1, verbose=0):
 
         for deliverable in project['deliverables'].values():
             for repo_name in deliverable["repos"]:
+                # Treat core reviewer votes the same as change ownership
                 query = ('is:merged mergedafter:"%s" mergedbefore:"%s" '
-                         'owner:%s project:%s' %
+                         '(owner:%s OR label:Code-Review=+2,user=%s OR '
+                         'label:Workflow=+1,user=%s) project:%s' %
                          (utils.gerrit_datetime(timeframe['start']),
                           utils.gerrit_datetime(timeframe['end']),
-                          owner, repo_name))
+                          owner, owner, owner, repo_name))
                 if branch:
                     query += (' branch:%s' % (branch))
                 if verbose >= 1:

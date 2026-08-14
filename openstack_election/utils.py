@@ -230,7 +230,7 @@ def get_fullname(member, filepath=None):
 
 
 def get_reviews(query, verbose=0):
-    opts = ['CURRENT_REVISION', 'CURRENT_FILES', 'DETAILED_ACCOUNTS']
+    opts = ['CURRENT_REVISION', 'CURRENT_FILES', 'DETAILED_ACCOUNTS', 'LABELS']
     opts_str = '&o=%s' % ('&o='.join(opts))
     url = ('%s/changes/?q=%s%s' %
            (GERRIT_BASE, quote_plus(query, safe='/:=><^.*'), opts_str))

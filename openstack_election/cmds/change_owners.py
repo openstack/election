@@ -120,6 +120,9 @@ def usage(argv=sys.argv):
                         dest='tc_repos')
     parser.add_argument("-v", "--verbose", action="count", default=0,
                         help="Increase program verbosity")
+    parser.add_argument("--no-core-reviewers",
+                        help="Don't include core reviewers",
+                        dest='no_core_reviewers', action='store_true')
 
     return parser.parse_args(argv[1:])
 

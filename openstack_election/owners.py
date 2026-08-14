@@ -104,8 +104,9 @@ def record_contributor(
     # account details
     if new:
         # If the owner has no preferred address, use the committer address for
-        # the first revision
-        if not email:
+        # the first revision, but only if we're not incrementing the change as
+        # this is not an appropriate fallback for reviewers without addresses
+        if increment and not email:
             print(
                 'ACCOUNT WITHOUT PREFERRED EMAIL: %s' % owner, file=sys.stderr)
             full = utils.query_gerrit('changes/', params={
@@ -221,6 +222,32 @@ def record_contributor(
         projects[project][owner]['oldest_id'] = number
 
 
+def get_core_reviewers(change):
+    """All users who set Code-Review +2 or Workflow +1 on the change"""
+
+    cores = dict()
+
+    if 'labels' in change:
+
+        if 'Code-Review' in change['labels']:
+            for approval in change['labels']['Code-Review']['all']:
+                if approval['value'] == 2:
+                    cores[approval['_account_id']] = {
+                        'email': approval.get('email'),
+                        'name': approval.get('name'),
+                        'username': approval.get('username')}
+
+        if 'Workflow' in change['labels']:
+            for approval in change['labels']['Workflow']['all']:
+                if approval['value'] == 1:
+                    cores[approval['_account_id']] = {
+                        'email': approval.get('email'),
+                        'name': approval.get('name'),
+                        'username': approval.get('username')}
+
+    return cores
+
+
 def main(options):
     """The giant pile of spaghetti which does everything else"""
 
@@ -289,6 +316,14 @@ def main(options):
         no_extra_acs = config['no-extra-acs']
     else:
         no_extra_acs = False
+
+    # Whether to omit "core reviewers"
+    if options.no_core_reviewers:
+        no_core_reviewers = options.no_core_reviewers
+    elif 'no-core-reviewers' in config:
+        no_core_reviewers = config['no-core-reviewers']
+    else:
+        no_core_reviewers = False
 
     # Output file directory
     if options.outdir:
@@ -472,6 +507,7 @@ def main(options):
                                 'CURRENT_COMMIT',
                                 'CURRENT_REVISION',
                                 'DETAILED_ACCOUNTS',
+                                'LABELS',
                                 ],
                             }, verbose=options.verbose)
                         if changes and changes[-1].get('_more_changes', False):
@@ -503,6 +539,18 @@ def main(options):
                             change['owner'].get('username'), owners, ignore,
                             duplicates, all_emails, project, projects,
                             change, merged, number, revisions, options)
+
+                        # Include core reviewers but don't increment their
+                        # change and revision counts
+                        if not no_core_reviewers:
+                            for core, detail in get_core_reviewers(
+                                    change).items():
+                                record_contributor(
+                                    core, detail['email'], detail['name'],
+                                    detail['username'], owners, ignore,
+                                    duplicates, all_emails, project, projects,
+                                    change, merged, number, revisions, options,
+                                    increment=False)
 
     # The negative counter will be used as a makeshift account Id
     # for non-code contributors; those with owned changes use their
