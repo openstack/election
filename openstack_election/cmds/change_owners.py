@@ -104,20 +104,20 @@ def usage(argv=sys.argv):
     parser.add_argument("-b", "--before", help="End date for matching merges")
     parser.add_argument("-c", "--config", help="Path to script configuration")
     parser.add_argument("-g", "--sigs", help="Path to SIGs repos file")
-    parser.add_argument("-t", "--tc-repos", help="Path to TC repos file",
-                        dest='tc_repos')
-    parser.add_argument("-m", "--nonmember",
-                        help="include non-foundation-members in electorate",
-                        action="store_true")
     parser.add_argument("-i", "--ignore", help="Account Id numbers to skip",
                         action='append')
     parser.add_argument("-l", "--legacy", help="Path to legacy projects file")
+    parser.add_argument("-m", "--nonmember",
+                        help="include non-foundation-members in electorate",
+                        action="store_true")
     parser.add_argument("-n", "--no-extra-acs", help='Omit "extra ACs"',
                         dest='no_extra_acs', action='store_true')
     parser.add_argument("-o", "--outdir", help="Create an output directory")
     parser.add_argument("-p", "--projects", help="Path to local projects file")
     parser.add_argument("-r", "--ref", help="Specify a Governance refname")
     parser.add_argument("-s", "--sieve", help="Add Gerrit query parameters")
+    parser.add_argument("-t", "--tc-repos", help="Path to TC repos file",
+                        dest='tc_repos')
     parser.add_argument("-v", "--verbose", action="count", default=0,
                         help="Increase program verbosity")
 
