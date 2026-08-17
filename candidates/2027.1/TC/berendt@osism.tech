@@ -1,0 +1,44 @@
+Hereby I am declaring my candidacy for the Technical Committee.
+
+My involvement with OpenStack began back in 2014 and I've since become core
+reviewer for OpenStack Docs and Kolla.
+
+I use OpenStack quite intensively, and I am very familiar with the ecosystem,
+history of the project, and everything else related to it. I actively develop
+OSISM, an open source deployment and lifecycle management framework for
+OpenStack, Ceph and Kubernetes and a reference implementation of the
+Sovereign Cloud Stack, as well as Cobalt Core, an open source,
+Kubernetes-native OpenStack distribution initiated by SAP for operating
+hosted control planes across multi-cluster topologies. With OSISM we are also
+an active member of the Sovereign Cloud Stack community and a member of the
+OpenInfra Foundation.
+
+Around this, I build and support additional tooling, for example Northwatch,
+a real-time analyzer, visualizer and monitor for OVN, or Dizzy, a
+scenario-driven load and consistency tester for OpenStack control planes. I
+also try to bring projects like these, which are currently not part of the
+OpenInfra ecosystem, closer to it or at least make them better known within
+the community.
+
+Beyond that, I am active in the extended board and the Technical Steering
+Committee of ALASCA, an associate member of the OpenInfra Foundation, and I
+am a member of the Governing Board of the NeoNephos Foundation. Through
+these roles I have gained a lot of experience with this kind of governance
+and cross-community work, and I can help ensure that OpenStack stays well
+connected with these adjacent communities and initiatives.
+
+One focus of my work in the TC would be to improve the operability of
+OpenStack. Through my current work on Cobalt Core, this insight is once again
+very fresh: the individual services differ significantly when it comes to
+deployment and configuration, their integration into logging, metering and
+tracing, and topics like machine-to-machine authentication with service
+accounts. Making all services fully consistent overnight is certainly not
+realistic, but I would like to push for incremental steps in that direction,
+for example through additional shared oslo libraries and middleware layers,
+to make OpenStack easier to deploy and to operate.
+
+I haven't been active in the TC yet. I think that my many years of experience
+in deployment and operation in a wide variety of environments will enable me
+to contribute quite well.
+
+OpenInfra Profile: https://openinfra.dev/a/community/members/147081
