@@ -1,0 +1,21 @@
+Hello,
+
+I would like to announce my candidacy for Adjutant PTL for the 2027.1 cycle.
+
+I have served as the PTL for the first time in the 2026.2 cycle. During this
+cycle we have started working on maintainability improvements such as
+bringing the Adjutant repositories up to date with the latest Python
+packaging standards, and introducing DevStack plugins for Adjutant and
+Adjutant UI. We have also started working in earnest on new features
+such as adding support for quota management of more OpenStack services
+and Keystone user group management.
+
+For the 2027.1 cycle we intend to continue this work to ensure these
+new features can be landed successfully, and generally continue to keep
+Adjutant up to date for clouds using it. I would appreciate the opportunity
+to continue to lead these efforts as PTL.
+
+Thank you for your consideration,
+
+Callum Dickinson
+Catalyst Cloud
