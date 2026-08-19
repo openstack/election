@@ -83,6 +83,171 @@ def date_merged(change, after=None, before=None):
     return date
 
 
+def record_contributor(
+        owner, owners, ignore, duplicates, all_emails, project, projects,
+        change, merged, number, revisions, options):
+    # If this owner is in the blacklist of Ids
+    # to skip, then move on to the next change
+    if owner in ignore:
+        return False
+
+    # Seen this owner already?
+    new_owner = owner
+    new = False
+    if owner in duplicates:
+        owner = duplicates[owner]
+    elif owner not in owners:
+        new = True
+
+    # For new additions, initialize this as
+    # their first and record specific account
+    # details
+    if new:
+        # Get the E-mail address preferred in
+        # Gerrit for this owner's account
+        email = change['owner'].get('email')
+
+        # If the owner has no preferred address, use the
+        # committer address for the first revision
+        if not email:
+            print(
+                'ACCOUNT WITHOUT PREFERRED EMAIL: %s'
+                % owner,
+                file=sys.stderr)
+            full = utils.query_gerrit('changes/', params={
+                'q': change['_number'],
+                'o': [
+                    'ALL_COMMITS',
+                    'ALL_REVISIONS',
+                    'DETAILED_ACCOUNTS',
+                    ],
+                }, verbose=options.verbose)[0]
+            for rev in full['revisions'].values():
+                if rev['_number'] == 1:
+                    email = rev[
+                        'commit']['committer']['email']
+                break
+
+        # If the E-mail address is not found, skip
+        # since the item cannot be validated any more
+        if email is None:
+            print(
+                'ACCOUNT PREFERRED EMAIL IS NONE: %s'
+                % owner, file=sys.stderr)
+            return False
+
+        # Find duplicate addresses and merge
+        # accounts when that happens
+        address = normalize_email(email)
+        if address in all_emails:
+            owner = all_emails[address]
+            duplicates[new_owner] = owner
+            print(
+                'MERGING DUPLICATE ACCOUNT: %s into %s'
+                % (new_owner, owner), file=sys.stderr)
+            return False
+
+    # For newly found non-duplicate owners,
+    # initialize the global change count,
+    # newest/oldest merged dates, and an empty
+    # list where extra E-mail addresses can be
+    # added; also track their full name and
+    # Gerrit username
+    if new and owner == new_owner:
+        # TODO(fungi): this is a prime candidate
+        # to become a struct, or maybe a class
+        owners[owner] = {
+            'count': 1,
+            'extra': [],
+            'name': change['owner'].get('name'),
+            'newest': merged,
+            'newest_id': number,
+            'oldest': merged,
+            'oldest_id': number,
+            'revisions': revisions,
+            'username': change['owner'].get('username'),
+        }
+
+    # If we've seen this owner on another change
+    # in any repo then just iterate their global
+    # change counter and update newest/oldest
+    # dates
+    else:
+        owners[owner]['count'] += 1
+        owners[owner]['revisions'] += revisions
+        if merged > owners[owner]['newest']:
+            owners[owner]['newest'] = merged
+            owners[owner]['newest_id'] = number
+        elif merged < owners[owner]['oldest']:
+            owners[owner]['oldest'] = merged
+            owners[owner]['oldest_id'] = number
+
+    # We only want to add addresses if this is a
+    # new owner or a new duplicate
+    if new:
+        # Normalize the address before
+        # performing any matching since
+        # Gerrit doesn't do a great job of
+        # this on its own
+        address = normalize_email(email)
+
+        # Track this in the full list of all
+        # known E-mail addresses
+        all_emails[address] = owner
+
+        # Store the preferred E-mail address
+        # under its own key since it has a
+        # special status, but only if this
+        # is not a duplicate account
+        if owner == new_owner:
+            owners[owner]['preferred'] = email
+
+            # If this was already added to
+            # the extras list due to an
+            # additional pre-normalized
+            # copy, remove it there
+            if address in owners[owner]['extra']:
+                owners[owner]['extra'].remove(address)
+
+        # Store a list of non-preferred
+        # addresses, deduplicating them in
+        # case they match post-normalization
+        # and treating duplicate preferred
+        # addresses as # non-preferred
+        else:
+            if ((address not in owners[owner]['extra'])
+                    and (address != owners[owner].get(
+                        'preferred', ''))):
+                owners[owner]['extra'].append(address)
+
+    # If we've seen this owner on another change
+    # in a repo under this project-team then
+    # just iterate their team change counter and
+    # update newest/oldest dates
+    if owner in projects[project]:
+        projects[project][owner]['count'] += 1
+        projects[project][owner]['revisions'] += revisions
+        if merged > projects[project][owner]['newest']:
+            projects[project][owner]['newest'] = merged
+            projects[project][owner]['newest_id'] = number
+        elif merged < projects[project][owner]['oldest']:
+            projects[project][owner]['oldest'] = merged
+            projects[project][owner]['oldest_id'] = number
+
+    # ...otherwise initialize this as their
+    # first
+    else:
+        # TODO(fungi): another potential struct
+        projects[project][owner] = {
+            'count': 1,
+            'newest': merged,
+            'newest_id': number,
+            'oldest': merged,
+            'oldest_id': number,
+            'revisions': revisions,
+        }
+
+
 def main(options):
     """The giant pile of spaghetti which does everything else"""
 
@@ -358,168 +523,10 @@ def main(options):
 
                         # We index owners by their unique Gerrit
                         # account Id numbers
-                        owner = change['owner']['_account_id']
-
-                        # If this owner is in the blacklist of Ids
-                        # to skip, then move on to the next change
-                        if owner in ignore:
-                            continue
-
-                        # Seen this owner already?
-                        new_owner = owner
-                        new = False
-                        if owner in duplicates:
-                            owner = duplicates[owner]
-                        elif owner not in owners:
-                            new = True
-
-                        # For new additions, initialize this as
-                        # their first and record specific account
-                        # details
-                        if new:
-                            # Get the E-mail address preferred in
-                            # Gerrit for this owner's account
-                            email = change['owner'].get('email')
-
-                            # If the owner has no preferred address, use the
-                            # committer address for the first revision
-                            if not email:
-                                print(
-                                    'ACCOUNT WITHOUT PREFERRED EMAIL: %s'
-                                    % owner,
-                                    file=sys.stderr)
-                                full = utils.query_gerrit('changes/', params={
-                                    'q': change['_number'],
-                                    'o': [
-                                        'ALL_COMMITS',
-                                        'ALL_REVISIONS',
-                                        'DETAILED_ACCOUNTS',
-                                        ],
-                                    }, verbose=options.verbose)[0]
-                                for rev in full['revisions'].values():
-                                    if rev['_number'] == 1:
-                                        email = rev[
-                                            'commit']['committer']['email']
-                                    break
-
-                            # If the E-mail address is not found, skip
-                            # since the item cannot be validated any more
-                            if email is None:
-                                print(
-                                    'ACCOUNT PREFERRED EMAIL IS NONE: %s'
-                                    % owner, file=sys.stderr)
-                                continue
-
-                            # Find duplicate addresses and merge
-                            # accounts when that happens
-                            address = normalize_email(email)
-                            if address in all_emails:
-                                owner = all_emails[address]
-                                duplicates[new_owner] = owner
-                                print(
-                                    'MERGING DUPLICATE ACCOUNT: %s into %s'
-                                    % (new_owner, owner), file=sys.stderr)
-                                continue
-
-                        # For newly found non-duplicate owners,
-                        # initialize the global change count,
-                        # newest/oldest merged dates, and an empty
-                        # list where extra E-mail addresses can be
-                        # added; also track their full name and
-                        # Gerrit username
-                        if new and owner == new_owner:
-                            # TODO(fungi): this is a prime candidate
-                            # to become a struct, or maybe a class
-                            owners[owner] = {
-                                'count': 1,
-                                'extra': [],
-                                'name': change['owner'].get('name'),
-                                'newest': merged,
-                                'newest_id': number,
-                                'oldest': merged,
-                                'oldest_id': number,
-                                'revisions': revisions,
-                                'username': change['owner'].get('username'),
-                            }
-
-                        # If we've seen this owner on another change
-                        # in any repo then just iterate their global
-                        # change counter and update newest/oldest
-                        # dates
-                        else:
-                            owners[owner]['count'] += 1
-                            owners[owner]['revisions'] += revisions
-                            if merged > owners[owner]['newest']:
-                                owners[owner]['newest'] = merged
-                                owners[owner]['newest_id'] = number
-                            elif merged < owners[owner]['oldest']:
-                                owners[owner]['oldest'] = merged
-                                owners[owner]['oldest_id'] = number
-
-                        # We only want to add addresses if this is a
-                        # new owner or a new duplicate
-                        if new:
-                            # Normalize the address before
-                            # performing any matching since
-                            # Gerrit doesn't do a great job of
-                            # this on its own
-                            address = normalize_email(email)
-
-                            # Track this in the full list of all
-                            # known E-mail addresses
-                            all_emails[address] = owner
-
-                            # Store the preferred E-mail address
-                            # under its own key since it has a
-                            # special status, but only if this
-                            # is not a duplicate account
-                            if owner == new_owner:
-                                owners[owner]['preferred'] = email
-
-                                # If this was already added to
-                                # the extras list due to an
-                                # additional pre-normalized
-                                # copy, remove it there
-                                if address in owners[owner]['extra']:
-                                    owners[owner]['extra'].remove(address)
-
-                            # Store a list of non-preferred
-                            # addresses, deduplicating them in
-                            # case they match post-normalization
-                            # and treating duplicate preferred
-                            # addresses as # non-preferred
-                            else:
-                                if ((address not in owners[owner]['extra'])
-                                        and (address != owners[owner].get(
-                                            'preferred', ''))):
-                                    owners[owner]['extra'].append(address)
-
-                        # If we've seen this owner on another change
-                        # in a repo under this project-team then
-                        # just iterate their team change counter and
-                        # update newest/oldest dates
-                        if owner in projects[project]:
-                            projects[project][owner]['count'] += 1
-                            projects[project][owner]['revisions'] += revisions
-                            if merged > projects[project][owner]['newest']:
-                                projects[project][owner]['newest'] = merged
-                                projects[project][owner]['newest_id'] = number
-                            elif merged < projects[project][owner]['oldest']:
-                                projects[project][owner]['oldest'] = merged
-                                projects[project][owner]['oldest_id'] = number
-
-                        # ...otherwise initialize this as their
-                        # first
-                        else:
-                            # TODO(fungi): another potential struct
-                            projects[project][owner] = {
-                                'count': 1,
-                                'newest': merged,
-                                'newest_id': number,
-                                'oldest': merged,
-                                'oldest_id': number,
-                                'revisions': revisions,
-                            }
+                        record_contributor(
+                            change['owner']['_account_id'], owners, ignore,
+                            duplicates, all_emails, project, projects,
+                            change, merged, number, revisions, options)
 
     # The negative counter will be used as a makeshift account Id
     # for non-code contributors; those with owned changes use their
