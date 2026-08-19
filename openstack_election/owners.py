@@ -86,8 +86,8 @@ def date_merged(change, after=None, before=None):
 def record_contributor(
         owner, owners, ignore, duplicates, all_emails, project, projects,
         change, merged, number, revisions, options):
-    # If this owner is in the blacklist of Ids
-    # to skip, then move on to the next change
+    # If this owner is in the blacklist of Ids to skip, then move on to the
+    # next change
     if owner in ignore:
         return False
 
@@ -99,21 +99,17 @@ def record_contributor(
     elif owner not in owners:
         new = True
 
-    # For new additions, initialize this as
-    # their first and record specific account
-    # details
+    # For new additions, initialize this as their first and record specific
+    # account details
     if new:
-        # Get the E-mail address preferred in
-        # Gerrit for this owner's account
+        # Get the E-mail address preferred in Gerrit for this owner's account
         email = change['owner'].get('email')
 
-        # If the owner has no preferred address, use the
-        # committer address for the first revision
+        # If the owner has no preferred address, use the committer address for
+        # the first revision
         if not email:
             print(
-                'ACCOUNT WITHOUT PREFERRED EMAIL: %s'
-                % owner,
-                file=sys.stderr)
+                'ACCOUNT WITHOUT PREFERRED EMAIL: %s' % owner, file=sys.stderr)
             full = utils.query_gerrit('changes/', params={
                 'q': change['_number'],
                 'o': [
@@ -124,38 +120,32 @@ def record_contributor(
                 }, verbose=options.verbose)[0]
             for rev in full['revisions'].values():
                 if rev['_number'] == 1:
-                    email = rev[
-                        'commit']['committer']['email']
+                    email = rev['commit']['committer']['email']
                 break
 
-        # If the E-mail address is not found, skip
-        # since the item cannot be validated any more
+        # If the E-mail address is not found, skip since the item cannot be
+        # validated any more
         if email is None:
             print(
-                'ACCOUNT PREFERRED EMAIL IS NONE: %s'
-                % owner, file=sys.stderr)
+                'ACCOUNT PREFERRED EMAIL IS NONE: %s' % owner, file=sys.stderr)
             return False
 
-        # Find duplicate addresses and merge
-        # accounts when that happens
+        # Find duplicate addresses and merge accounts when that happens
         address = normalize_email(email)
         if address in all_emails:
             owner = all_emails[address]
             duplicates[new_owner] = owner
             print(
-                'MERGING DUPLICATE ACCOUNT: %s into %s'
-                % (new_owner, owner), file=sys.stderr)
+                'MERGING DUPLICATE ACCOUNT: %s into %s' % (new_owner, owner),
+                file=sys.stderr)
             return False
 
-    # For newly found non-duplicate owners,
-    # initialize the global change count,
-    # newest/oldest merged dates, and an empty
-    # list where extra E-mail addresses can be
-    # added; also track their full name and
-    # Gerrit username
+    # For newly found non-duplicate owners, initialize the global change count,
+    # newest/oldest merged dates, and an empty list where extra E-mail
+    # addresses can be added; also track their full name and Gerrit username
     if new and owner == new_owner:
-        # TODO(fungi): this is a prime candidate
-        # to become a struct, or maybe a class
+        # TODO(fungi): this is a prime candidate to become a struct, or maybe a
+        # class
         owners[owner] = {
             'count': 1,
             'extra': [],
@@ -168,10 +158,8 @@ def record_contributor(
             'username': change['owner'].get('username'),
         }
 
-    # If we've seen this owner on another change
-    # in any repo then just iterate their global
-    # change counter and update newest/oldest
-    # dates
+    # If we've seen this owner on another change in any repo then just iterate
+    # their global change counter and update newest/oldest dates
     else:
         owners[owner]['count'] += 1
         owners[owner]['revisions'] += revisions
@@ -182,48 +170,36 @@ def record_contributor(
             owners[owner]['oldest'] = merged
             owners[owner]['oldest_id'] = number
 
-    # We only want to add addresses if this is a
-    # new owner or a new duplicate
+    # We only want to add addresses if this is a new owner or a new duplicate
     if new:
-        # Normalize the address before
-        # performing any matching since
-        # Gerrit doesn't do a great job of
-        # this on its own
+        # Normalize the address before performing any matching since Gerrit
+        # doesn't do a great job of this on its own
         address = normalize_email(email)
 
-        # Track this in the full list of all
-        # known E-mail addresses
+        # Track this in the full list of all known E-mail addresses
         all_emails[address] = owner
 
-        # Store the preferred E-mail address
-        # under its own key since it has a
-        # special status, but only if this
-        # is not a duplicate account
+        # Store the preferred E-mail address under its own key since it has a
+        # special status, but only if this is not a duplicate account
         if owner == new_owner:
             owners[owner]['preferred'] = email
 
-            # If this was already added to
-            # the extras list due to an
-            # additional pre-normalized
-            # copy, remove it there
+            # If this was already added to the extras list due to an additional
+            # pre-normalized copy, remove it there
             if address in owners[owner]['extra']:
                 owners[owner]['extra'].remove(address)
 
-        # Store a list of non-preferred
-        # addresses, deduplicating them in
-        # case they match post-normalization
-        # and treating duplicate preferred
+        # Store a list of non-preferred addresses, deduplicating them in case
+        # they match post-normalization and treating duplicate preferred
         # addresses as # non-preferred
         else:
             if ((address not in owners[owner]['extra'])
-                    and (address != owners[owner].get(
-                        'preferred', ''))):
+                    and (address != owners[owner].get('preferred', ''))):
                 owners[owner]['extra'].append(address)
 
-    # If we've seen this owner on another change
-    # in a repo under this project-team then
-    # just iterate their team change counter and
-    # update newest/oldest dates
+    # If we've seen this owner on another change in a repo under this
+    # project-team then just iterate their team change counter and update
+    # newest/oldest dates
     if owner in projects[project]:
         projects[project][owner]['count'] += 1
         projects[project][owner]['revisions'] += revisions
@@ -234,8 +210,7 @@ def record_contributor(
             projects[project][owner]['oldest'] = merged
             projects[project][owner]['oldest_id'] = number
 
-    # ...otherwise initialize this as their
-    # first
+    # ...otherwise initialize this as their first
     else:
         # TODO(fungi): another potential struct
         projects[project][owner] = {
