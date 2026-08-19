@@ -84,8 +84,9 @@ def date_merged(change, after=None, before=None):
 
 
 def record_contributor(
-        owner, owners, ignore, duplicates, all_emails, project, projects,
-        change, merged, number, revisions, options, increment=True):
+        owner, email, name, username, owners, ignore, duplicates, all_emails,
+        project, projects, change, merged, number, revisions, options,
+        increment=True):
     # If this owner is in the blacklist of Ids to skip, then move on to the
     # next change
     if owner in ignore:
@@ -102,9 +103,6 @@ def record_contributor(
     # For new additions, initialize this as their first and record specific
     # account details
     if new:
-        # Get the E-mail address preferred in Gerrit for this owner's account
-        email = change['owner'].get('email')
-
         # If the owner has no preferred address, use the committer address for
         # the first revision
         if not email:
@@ -149,13 +147,13 @@ def record_contributor(
         owners[owner] = {
             'count': 0,
             'extra': [],
-            'name': change['owner'].get('name'),
+            'name': name,
             'newest': merged,
             'newest_id': number,
             'oldest': merged,
             'oldest_id': number,
             'revisions': 0,
-            'username': change['owner'].get('username'),
+            'username': username,
         }
 
     # If this is a code contribution (not a core review vote) then increment
@@ -499,7 +497,10 @@ def main(options):
                         # We index owners by their unique Gerrit
                         # account Id numbers
                         record_contributor(
-                            change['owner']['_account_id'], owners, ignore,
+                            change['owner']['_account_id'],
+                            change['owner'].get('email'),
+                            change['owner'].get('name'),
+                            change['owner'].get('username'), owners, ignore,
                             duplicates, all_emails, project, projects,
                             change, merged, number, revisions, options)
 
