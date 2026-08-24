@@ -1,7 +1,7 @@
 ---
 release: 2027.1
 election_type: combined
-tag: to-be-released
+tag: 0.23.0
 tc_seats: 4
 timeframe:
   name: 2026.1-2026.2
