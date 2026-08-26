@@ -205,7 +205,6 @@ candidates:
     url: https://opendev.org/openstack/election/raw/branch/master/candidates/2027.1/Zun/lazekteam%40gmail.com
 election: '2027.1'
 leaderless:
-- TC
 - Glance
 - Masakari
 - Skyline
