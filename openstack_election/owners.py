@@ -85,7 +85,7 @@ def date_merged(change, after=None, before=None):
 
 def record_contributor(
         owner, owners, ignore, duplicates, all_emails, project, projects,
-        change, merged, number, revisions, options):
+        change, merged, number, revisions, options, increment=True):
     # If this owner is in the blacklist of Ids to skip, then move on to the
     # next change
     if owner in ignore:
@@ -147,28 +147,30 @@ def record_contributor(
         # TODO(fungi): this is a prime candidate to become a struct, or maybe a
         # class
         owners[owner] = {
-            'count': 1,
+            'count': 0,
             'extra': [],
             'name': change['owner'].get('name'),
             'newest': merged,
             'newest_id': number,
             'oldest': merged,
             'oldest_id': number,
-            'revisions': revisions,
+            'revisions': 0,
             'username': change['owner'].get('username'),
         }
 
-    # If we've seen this owner on another change in any repo then just iterate
-    # their global change counter and update newest/oldest dates
-    else:
+    # If this is a code contribution (not a core review vote) then increment
+    # their global change counter
+    if increment:
         owners[owner]['count'] += 1
         owners[owner]['revisions'] += revisions
-        if merged > owners[owner]['newest']:
-            owners[owner]['newest'] = merged
-            owners[owner]['newest_id'] = number
-        elif merged < owners[owner]['oldest']:
-            owners[owner]['oldest'] = merged
-            owners[owner]['oldest_id'] = number
+
+    # update newest/oldest dates
+    if merged > owners[owner]['newest']:
+        owners[owner]['newest'] = merged
+        owners[owner]['newest_id'] = number
+    elif merged < owners[owner]['oldest']:
+        owners[owner]['oldest'] = merged
+        owners[owner]['oldest_id'] = number
 
     # We only want to add addresses if this is a new owner or a new duplicate
     if new:
@@ -197,30 +199,28 @@ def record_contributor(
                     and (address != owners[owner].get('preferred', ''))):
                 owners[owner]['extra'].append(address)
 
-    # If we've seen this owner on another change in a repo under this
-    # project-team then just iterate their team change counter and update
-    # newest/oldest dates
-    if owner in projects[project]:
-        projects[project][owner]['count'] += 1
-        projects[project][owner]['revisions'] += revisions
-        if merged > projects[project][owner]['newest']:
-            projects[project][owner]['newest'] = merged
-            projects[project][owner]['newest_id'] = number
-        elif merged < projects[project][owner]['oldest']:
-            projects[project][owner]['oldest'] = merged
-            projects[project][owner]['oldest_id'] = number
-
-    # ...otherwise initialize this as their first
-    else:
+    # Initialize if this is their first
+    if owner not in projects[project]:
         # TODO(fungi): another potential struct
         projects[project][owner] = {
-            'count': 1,
+            'count': 0,
             'newest': merged,
             'newest_id': number,
             'oldest': merged,
             'oldest_id': number,
-            'revisions': revisions,
+            'revisions': 0,
         }
+
+    if increment:
+        projects[project][owner]['count'] += 1
+        projects[project][owner]['revisions'] += revisions
+
+    if merged > projects[project][owner]['newest']:
+        projects[project][owner]['newest'] = merged
+        projects[project][owner]['newest_id'] = number
+    elif merged < projects[project][owner]['oldest']:
+        projects[project][owner]['oldest'] = merged
+        projects[project][owner]['oldest_id'] = number
 
 
 def main(options):
