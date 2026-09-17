@@ -59,6 +59,7 @@ def build_archive(serie, list_type):
         return
     db = yaml.safe_load(open(db_file))
     # Check for appointed or incumbent footnote
+    db['release'] = utils.conf['release']
     db['tc_seats'] = utils.conf['tc_seats']
     db['tags'] = {}
     for project in db['projects']:
