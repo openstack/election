@@ -145,6 +145,12 @@ data = [
     },
     # 2026.2 Hibiscus is missing as we didn't have an election because
     # the number of candidates matched the number of available seats
+    {
+        'election': '09/2026',  # 2027.1 Indri
+        'electorate': 258,
+        'votes_cast': 77,
+        'results': '%s?id=%s' % (CIVS_BASE, 'E_ba65f3841b999226')
+    },
 ]
 
 
