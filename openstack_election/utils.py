@@ -324,7 +324,7 @@ def find_all_projects(election=conf['release']):
     return project_list
 
 
-def find_candidate_files(election=conf['release']):
+def find_election_projects(election=conf['release']):
     project_list = find_all_projects(election)
     election_type = conf.get('election_type', '').lower()
     if election_type == 'tc':
@@ -337,6 +337,12 @@ def find_candidate_files(election=conf['release']):
             lambda p: p not in ['TC'],
             project_list
         ))
+
+    return project_list
+
+
+def find_candidate_files(election=conf['release']):
+    project_list = find_election_projects(election)
 
     election_path = os.path.join(CANDIDATE_PATH, election)
     candidate_files = []
@@ -377,7 +383,7 @@ def build_candidates_list(election=conf['release']):
             'fullname': get_fullname(member, filepath=filepath)
         })
 
-    leaderless = set(find_all_projects(election)) - projects
+    leaderless = set(find_election_projects(election)) - projects
     return {'election': election,
             'projects': list(projects),
             'leaderless': list(leaderless),
