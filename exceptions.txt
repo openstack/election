@@ -137,7 +137,7 @@ candidates/queens/Zaqar/flwang.txt: Feilong Wang
 candidates/queens/Zun/hongbin.txt: Hongbin Lu
 # Rocky names extracted between 19:30 and 20:00 UTC 2018-Feb-08 from queries
 # on preferred email addresses against the Foundation member database via
-# https://openstackid-resources.openstack.org/api/public/v1/members?expand=groups&relations=all_affiliations,groups&filter[]=email==${VALUE}
+# https://oifapi.openinfra.dev/api/public/v1/members?expand=groups&relations=all_affiliations,groups&filter[]=email==${VALUE}
 candidates/rocky/Karbor/chenying.txt: Ying Chen
 candidates/rocky/Mistral/rakhmerov.txt: Renat Akhmerov
 candidates/rocky/Murano/zhurong.txt: Rong Zhu
