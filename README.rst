@@ -82,7 +82,7 @@ During the PTL Candidacy round:
 * To +Workflow, checks the previous +2 details, find another commits using
   ``--limit 5`` (optional)
 * Check candidate list and fix badly generated names through changes to the
-  ``exception.txt`` file or requesting the candidate to update their OIF
+  ``exceptions.txt`` file or requesting the candidate to update their OIF
   member profile.
 
 Once the email deadline is reached:
@@ -161,7 +161,7 @@ When PTL Election ends:
 * Close the election and update the results:
 
   * ``tox -evenv -- close-election --round ptl``
-  * ``edit doc/sources/results/release/ptl.yaml`` and set election winners to ``true``
+  * ``edit doc/source/results/release/ptl.yaml`` and set election winners to ``true``
   * NOTE: We no longer need document TC-APPOINTMENT or LEADERLESS as the
     ``update-governance`` step will communicate that to the TC and the process
     in that repo will set the project leader.
@@ -289,7 +289,9 @@ When TC Election begins:
 * Upload rolls
 
   * CIVS has a maximum number of electorate emails you can upload at a time
-    without crashing, limit to 500 at a time* Send *TC Voting Kickoff* email
+    without crashing, limit to 500 at a time
+
+* Send *TC Voting Kickoff* email
 
   * ``tox -e venv -- template-emails voting_kickoff``
 
