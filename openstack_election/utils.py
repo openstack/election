@@ -120,7 +120,7 @@ def lookup_oif(email, membership_type=None, verbose=0):
 
     # URL pattern for querying foundation profiles by E-mail address
     raw = requester(
-        'https://openstackid-resources.openstack.org/api/public/v1/members',
+        'https://oifapi.openinfra.dev/api/public/v1/members',
         params, headers={'Accept': 'application/json'}, verbose=verbose)
     result = decode_json(raw)
 
